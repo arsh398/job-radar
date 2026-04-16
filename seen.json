@@ -24,6 +24,11 @@
     "company": "Anyscale",
     "title": "Software Engineer (Ray Core)"
   },
+  "ashby:anyscale:8b29c5e5-d56f-4c52-8887-a6a1827cf042": {
+    "firstSeen": "2026-04-16T11:52:08.016Z",
+    "company": "Anyscale",
+    "title": "Software Engineer (Ray Core)"
+  },
   "ashby:anyscale:8f0c4ea9-72b4-4ab2-a984-4cf93cb017df": {
     "firstSeen": "2026-04-16T11:26:03.367Z",
     "company": "Anyscale",
@@ -69,6 +74,11 @@
     "company": "Character AI",
     "title": "Machine Learning Infrastructure Engineer"
   },
+  "ashby:character:140e81c9-c989-4e95-9768-f4f6e7f6759c": {
+    "firstSeen": "2026-04-16T11:52:08.016Z",
+    "company": "Character AI",
+    "title": "Software Engineer, Core Product"
+  },
   "ashby:character:2673e467-097e-43c0-ba0d-83e54b3a9cb1": {
     "firstSeen": "2026-04-16T11:26:03.367Z",
     "company": "Character AI",
@@ -113,6 +123,11 @@
     "firstSeen": "2026-04-16T11:26:03.367Z",
     "company": "Character AI",
     "title": "Software Engineer, Backend/Applied ML (Safety & Integrity)"
+  },
+  "ashby:character:902c3060-f41f-4bb0-b23d-988055e94f3c": {
+    "firstSeen": "2026-04-16T11:52:08.016Z",
+    "company": "Character AI",
+    "title": "Software Engineer, Monetization"
   },
   "ashby:character:a7ddb640-466f-4a1f-9a94-7465006aad05": {
     "firstSeen": "2026-04-16T11:26:03.367Z",
@@ -388,6 +403,11 @@
     "firstSeen": "2026-04-16T11:44:21.402Z",
     "company": "Cursor",
     "title": "Commercial Account Executive"
+  },
+  "ashby:cursor:94cc6684-9dbf-43f9-8ffc-405614e64ddd": {
+    "firstSeen": "2026-04-16T11:52:08.016Z",
+    "company": "Cursor",
+    "title": "Software Engineer, Security"
   },
   "ashby:cursor:9e9c4f45-debf-426b-b594-51e79431ac3d": {
     "firstSeen": "2026-04-16T11:44:21.402Z",
@@ -1088,6 +1108,11 @@
     "firstSeen": "2026-04-16T11:26:03.367Z",
     "company": "OpenAI",
     "title": "Supply Chain Operations Program Manager, AI Infrastructure"
+  },
+  "ashby:openai:07153f7c-7e8b-4283-a879-cb07a224e083": {
+    "firstSeen": "2026-04-16T11:52:08.016Z",
+    "company": "OpenAI",
+    "title": "Software Engineer, Privacy Infrastructure"
   },
   "ashby:openai:07d62dc2-9bbc-4149-ba43-d4ab748a21f4": {
     "firstSeen": "2026-04-16T11:26:03.367Z",
@@ -2529,6 +2554,11 @@
     "company": "OpenAI",
     "title": "Data Center Physical Security Regional Lead"
   },
+  "ashby:openai:7649205e-20dc-4bb4-9358-69474a851132": {
+    "firstSeen": "2026-04-16T11:52:08.016Z",
+    "company": "OpenAI",
+    "title": "Software Engineer, Compute - Storage"
+  },
   "ashby:openai:7676e558-7700-4fb9-aedd-e311c5e8d021": {
     "firstSeen": "2026-04-16T11:26:03.367Z",
     "company": "OpenAI",
@@ -2774,6 +2804,11 @@
     "company": "OpenAI",
     "title": "Software Engineer, Codex Ecosystem & Enterprise"
   },
+  "ashby:openai:8a1b804f-b070-4c61-bd3d-cdf39ef9d935": {
+    "firstSeen": "2026-04-16T11:52:08.016Z",
+    "company": "OpenAI",
+    "title": "Software Engineer, Privacy"
+  },
   "ashby:openai:8a950265-0527-48f8-be3c-2923d7d96940": {
     "firstSeen": "2026-04-16T11:26:03.367Z",
     "company": "OpenAI",
@@ -2993,6 +3028,11 @@
     "firstSeen": "2026-04-16T11:26:03.367Z",
     "company": "OpenAI",
     "title": "Researcher, Safety Oversight"
+  },
+  "ashby:openai:9b2c68f2-5ce8-44f9-a30c-d8016ac66d86": {
+    "firstSeen": "2026-04-16T11:52:08.016Z",
+    "company": "OpenAI",
+    "title": "Connectivity Software Engineer"
   },
   "ashby:openai:9b64afcc-c0e0-4b2f-acce-4212b02da23a": {
     "firstSeen": "2026-04-16T11:26:03.367Z",
@@ -4779,6 +4819,11 @@
     "company": "Replit",
     "title": "GRC Lead (Governance, Risk, and Compliance)"
   },
+  "ashby:replit:34afefd8-f698-4c46-a517-9ced6695b59b": {
+    "firstSeen": "2026-04-16T11:52:08.016Z",
+    "company": "Replit",
+    "title": "Software Engineer, Product Infrastructure (TypeScript DevEx)"
+  },
   "ashby:replit:37f81c18-c742-4f7d-bf81-34c3f5142973": {
     "firstSeen": "2026-04-16T11:26:03.367Z",
     "company": "Replit",
@@ -4843,6 +4888,11 @@
     "firstSeen": "2026-04-16T11:26:03.367Z",
     "company": "Replit",
     "title": "VP of Consumer & Brand Marketing"
+  },
+  "ashby:replit:659a8e1e-69ba-44c0-a632-96665051a3e8": {
+    "firstSeen": "2026-04-16T11:52:08.016Z",
+    "company": "Replit",
+    "title": "Software Engineer, Compute Platform"
   },
   "ashby:replit:705620d0-74cd-4628-89c0-1e1bf39a998a": {
     "firstSeen": "2026-04-16T11:26:03.367Z",
@@ -4968,6 +5018,11 @@
     "firstSeen": "2026-04-16T11:26:03.367Z",
     "company": "Replit",
     "title": "Trust & Safety Specialist"
+  },
+  "ashby:replit:b5e81eae-06f9-4798-8988-2d06ca936dbc": {
+    "firstSeen": "2026-04-16T11:52:08.016Z",
+    "company": "Replit",
+    "title": "Software Engineer - New Grad (Summer 2026)"
   },
   "ashby:replit:b7f12834-78d2-424d-bf83-0c942815fbf7": {
     "firstSeen": "2026-04-16T11:44:21.402Z",
@@ -35869,6 +35924,11 @@
     "company": "Stripe",
     "title": "Backend Engineer, Core Technology"
   },
+  "greenhouse:stripe:6163230": {
+    "firstSeen": "2026-04-16T11:52:08.016Z",
+    "company": "Stripe",
+    "title": "Backend Engineer, Payments and Risk"
+  },
   "greenhouse:stripe:6176758": {
     "firstSeen": "2026-04-16T11:26:03.367Z",
     "company": "Stripe",
@@ -36463,6 +36523,11 @@
     "firstSeen": "2026-04-16T11:26:03.367Z",
     "company": "Stripe",
     "title": "Operations Associate, GTM Onboarding Specialist"
+  },
+  "greenhouse:stripe:7393167": {
+    "firstSeen": "2026-04-16T11:52:08.016Z",
+    "company": "Stripe",
+    "title": "Account Executive, Product Sales, Billing"
   },
   "greenhouse:stripe:7393169": {
     "firstSeen": "2026-04-16T11:26:03.367Z",
@@ -37219,6 +37284,11 @@
     "company": "Stripe",
     "title": "Integration Engineer "
   },
+  "greenhouse:stripe:7597613": {
+    "firstSeen": "2026-04-16T11:52:08.016Z",
+    "company": "Stripe",
+    "title": "F&S COE Analyst"
+  },
   "greenhouse:stripe:7597622": {
     "firstSeen": "2026-04-16T11:26:03.367Z",
     "company": "Stripe",
@@ -37924,6 +37994,11 @@
     "company": "Stripe",
     "title": "Engineering Manager of Managers, Data Platform"
   },
+  "greenhouse:stripe:7747636": {
+    "firstSeen": "2026-04-16T11:52:08.016Z",
+    "company": "Stripe",
+    "title": "Forward Deployed AI Accelerator, Marketing"
+  },
   "greenhouse:stripe:7747640": {
     "firstSeen": "2026-04-16T11:26:03.367Z",
     "company": "Stripe",
@@ -38123,6 +38198,11 @@
     "firstSeen": "2026-04-16T11:26:03.367Z",
     "company": "Stripe",
     "title": "Sales Strategy & Operations, Sales Business Partner"
+  },
+  "greenhouse:stripe:7790433": {
+    "firstSeen": "2026-04-16T11:52:08.016Z",
+    "company": "Stripe",
+    "title": "EMEA Sales Programs Manager"
   },
   "greenhouse:stripe:7793069": {
     "firstSeen": "2026-04-16T11:26:03.367Z",
