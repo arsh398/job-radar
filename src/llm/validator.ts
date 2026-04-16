@@ -14,6 +14,15 @@ function extractNumbers(s: string): string[] {
   return (s.match(/\b\d[\d,.]*\b/g) ?? []).map((n) => n.replace(/[,]/g, ""));
 }
 
+function isGenericNumber(n: string): boolean {
+  const val = parseFloat(n);
+  if (!Number.isFinite(val)) return true;
+  // Allow tiny standalone digits (1-10) since they're often part of language
+  // ("3 sentences", "2 years"), not invented metrics.
+  if (val >= 0 && val <= 10) return true;
+  return false;
+}
+
 export function validateTailoring(
   response: TailoringResponse,
   resumeMd: string
@@ -21,6 +30,7 @@ export function validateTailoring(
   const warnings: string[] = [];
   const resume = resumeMd.toLowerCase();
 
+  // Strip skills not present in resume.
   const skillsStr = response.resume_edits.skills;
   const skillTokens = skillsStr
     .split(/[,|•·\n]/)
@@ -36,6 +46,7 @@ export function validateTailoring(
     }
   }
 
+  // Drop bullets that introduce numbers not present in the resume.
   const resumeNumbers = new Set(extractNumbers(resumeMd));
   const cleanedExperience = response.resume_edits.experience.map((exp) => {
     const cleanedBullets: string[] = [];
@@ -46,12 +57,28 @@ export function validateTailoring(
       );
       if (inventedNumbers.length > 0) {
         warnings.push(
-          `Bullet has invented numbers [${inventedNumbers.join(", ")}] in ${exp.role}`
+          `Bullet dropped (invented numbers ${inventedNumbers.join(", ")}): ${bullet.slice(0, 80)}`
         );
+        continue;
       }
       cleanedBullets.push(bullet);
     }
     return { role: exp.role, bullets: cleanedBullets };
+  });
+
+  // Drop projects with invented numbers in description.
+  const cleanedProjects = response.resume_edits.projects.filter((p) => {
+    const nums = extractNumbers(p.description);
+    const invented = nums.filter(
+      (n) => !resumeNumbers.has(n) && !isGenericNumber(n)
+    );
+    if (invented.length > 0) {
+      warnings.push(
+        `Project dropped (invented numbers ${invented.join(", ")}): ${p.name}`
+      );
+      return false;
+    }
+    return true;
   });
 
   const cleaned: TailoringResponse = {
@@ -60,31 +87,9 @@ export function validateTailoring(
       ...response.resume_edits,
       skills: filteredSkills.join(", "),
       experience: cleanedExperience,
+      projects: cleanedProjects,
     },
   };
 
   return { cleaned, warnings };
-}
-
-function isGenericNumber(n: string): boolean {
-  const val = parseFloat(n);
-  if (!Number.isFinite(val)) return true;
-  const generic = new Set([
-    "0",
-    "1",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9",
-    "10",
-    "100",
-    "1000",
-    "2",
-    "3",
-  ]);
-  return generic.has(n);
 }

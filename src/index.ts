@@ -19,7 +19,7 @@ import { tailorForJob } from "./llm/index.ts";
 import {
   sendJobAlert,
   sendBrokenSourcesAlert,
-  formatAlert,
+  formatJobMessages,
 } from "./telegram/index.ts";
 import type { Job, JobAlert, FilteredJob, LlmOutput } from "./types.ts";
 
@@ -140,7 +140,23 @@ async function main(): Promise<void> {
 
     if (DRY_RUN) {
       console.log("\n========= ALERT PREVIEW =========");
-      console.log(formatAlert(alert));
+      const msgs = formatJobMessages(alert);
+      if (msgs) {
+        console.log("--- HEADER ---");
+        console.log(msgs.header);
+        if (msgs.resumeEdits) {
+          console.log("--- RESUME EDITS ---");
+          console.log(msgs.resumeEdits);
+        }
+        if (msgs.referral) {
+          console.log("--- REFERRAL ---");
+          console.log(msgs.referral);
+        }
+        if (msgs.coverNote) {
+          console.log("--- COVER NOTE ---");
+          console.log(msgs.coverNote);
+        }
+      }
       console.log("=================================\n");
       sentCount++;
       continue;
@@ -203,8 +219,7 @@ function shouldSendAlert(alert: JobAlert): boolean {
   if (DRY_RUN) return true;
   const { llm } = alert;
   if (!llm.ok) return true;
-  if (llm.kind !== "full") return true;
-  if (llm.data.match.verdict === "skip") {
+  if (llm.data.verdict === "skip") {
     return ALERT_SKIPS;
   }
   return true;

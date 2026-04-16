@@ -2,12 +2,14 @@ import type { FilteredJob, LlmOutput } from "../types.ts";
 import { TailoringResponseSchema } from "../types.ts";
 import { SYSTEM_PROMPT, buildUserPrompt } from "./prompt.ts";
 
-const DEEPSEEK_MODEL = "deepseek/deepseek-chat-v3.1:free";
+// OpenRouter free fallback. DeepSeek free was removed from OpenRouter's free
+// tier; Llama 3.3 70B is the strongest reliable free model now (verified 2026-04).
+const FALLBACK_MODEL = "meta-llama/llama-3.3-70b-instruct:free";
 const OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions";
 
 const JSON_REMINDER = `\n\nRESPOND ONLY WITH A SINGLE JSON OBJECT matching the required schema. No markdown fences, no prose before or after.`;
 
-export async function callDeepSeek(
+export async function callOpenRouter(
   resumeMd: string,
   job: FilteredJob
 ): Promise<LlmOutput> {
@@ -29,7 +31,7 @@ export async function callDeepSeek(
         "x-title": "job-radar",
       },
       body: JSON.stringify({
-        model: DEEPSEEK_MODEL,
+        model: FALLBACK_MODEL,
         temperature: 0.3,
         response_format: { type: "json_object" },
         messages: [
@@ -44,7 +46,7 @@ export async function callDeepSeek(
       const body = await res.text().catch(() => "");
       return {
         ok: false,
-        error: `DeepSeek HTTP ${res.status}: ${body.slice(0, 200)}`,
+        error: `OpenRouter HTTP ${res.status}: ${body.slice(0, 200)}`,
       };
     }
 
@@ -53,7 +55,7 @@ export async function callDeepSeek(
     };
     const text = json.choices?.[0]?.message?.content;
     if (!text) {
-      return { ok: false, error: "DeepSeek returned empty response" };
+      return { ok: false, error: "OpenRouter returned empty response" };
     }
 
     let parsed: unknown;
@@ -64,7 +66,7 @@ export async function callDeepSeek(
       if (!match) {
         return {
           ok: false,
-          error: `DeepSeek returned non-JSON: ${text.slice(0, 200)}`,
+          error: `OpenRouter returned non-JSON: ${text.slice(0, 200)}`,
         };
       }
       parsed = JSON.parse(match[0]);
@@ -74,7 +76,7 @@ export async function callDeepSeek(
     if (!result.success) {
       return {
         ok: false,
-        error: `DeepSeek schema validation failed: ${result.error.message}`,
+        error: `OpenRouter schema validation failed: ${result.error.message}`,
       };
     }
 
@@ -82,12 +84,15 @@ export async function callDeepSeek(
       ok: true,
       kind: "full",
       data: result.data,
-      model: DEEPSEEK_MODEL,
+      model: FALLBACK_MODEL,
     };
   } catch (err) {
     return {
       ok: false,
-      error: `DeepSeek error: ${err instanceof Error ? err.message : String(err)}`,
+      error: `OpenRouter error: ${err instanceof Error ? err.message : String(err)}`,
     };
   }
 }
+
+// Backwards-compat alias (file name kept for now).
+export const callDeepSeek = callOpenRouter;

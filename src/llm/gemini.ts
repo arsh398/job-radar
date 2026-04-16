@@ -7,9 +7,9 @@ import {
   buildUserPrompt,
 } from "./prompt.ts";
 
-const MODELS = ["gemini-2.5-pro", "gemini-2.5-flash"] as const;
-
-type GeminiModel = (typeof MODELS)[number];
+// Flash primary: 10 RPM, 1M TPM, 500 RPD on free tier — fits 20 jobs/run easily.
+// Pro is too restrictive (5 RPM) for our burst pattern; skip it for now.
+const PRIMARY_MODEL = "gemini-2.5-flash";
 
 function client(): GoogleGenAI | null {
   const apiKey = process.env["GOOGLE_AI_STUDIO_API_KEY"];
@@ -20,7 +20,7 @@ function client(): GoogleGenAI | null {
 export async function callGemini(
   resumeMd: string,
   job: FilteredJob,
-  model: GeminiModel
+  model: string = PRIMARY_MODEL
 ): Promise<LlmOutput> {
   const ai = client();
   if (!ai) return { ok: false, error: "GOOGLE_AI_STUDIO_API_KEY missing" };
@@ -81,22 +81,4 @@ export async function callGemini(
       error: `${model} error: ${err instanceof Error ? err.message : String(err)}`,
     };
   }
-}
-
-export async function callGeminiWithFallback(
-  resumeMd: string,
-  job: FilteredJob
-): Promise<LlmOutput> {
-  for (const model of MODELS) {
-    const result = await callGemini(resumeMd, job, model);
-    if (result.ok) return result;
-    const isRateLimit =
-      /429|quota|rate[- ]?limit|RESOURCE_EXHAUSTED/i.test(result.error);
-    const isServerError = /5\d\d|UNAVAILABLE|timeout/i.test(result.error);
-    if (!isRateLimit && !isServerError) {
-      return result;
-    }
-    console.warn(`[gemini] ${model} failed (${result.error.slice(0, 100)}), trying next`);
-  }
-  return { ok: false, error: "All Gemini models exhausted" };
 }

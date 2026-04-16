@@ -14,7 +14,19 @@ function chunkMessage(text: string): string[] {
   return chunks;
 }
 
-export async function sendTelegramMessage(text: string): Promise<void> {
+type SendOptions = {
+  parseMode?: "MarkdownV2" | "HTML";
+  replyToMessageId?: number;
+  disableWebPagePreview?: boolean;
+  disableNotification?: boolean;
+};
+
+export type SendResult = { messageId: number };
+
+export async function sendTelegramMessage(
+  text: string,
+  opts: SendOptions = {}
+): Promise<SendResult> {
   const token = process.env["TELEGRAM_BOT_TOKEN"];
   const chatId = process.env["TELEGRAM_CHAT_ID"];
   if (!token || !chatId) {
@@ -22,19 +34,30 @@ export async function sendTelegramMessage(text: string): Promise<void> {
   }
   const url = `https://api.telegram.org/bot${token}/sendMessage`;
   const chunks = chunkMessage(text);
+  let lastMessageId = 0;
   for (const chunk of chunks) {
+    const body: Record<string, unknown> = {
+      chat_id: chatId,
+      text: chunk,
+      disable_web_page_preview: opts.disableWebPagePreview ?? true,
+    };
+    if (opts.parseMode) body["parse_mode"] = opts.parseMode;
+    if (opts.replyToMessageId) body["reply_to_message_id"] = opts.replyToMessageId;
+    if (opts.disableNotification) body["disable_notification"] = true;
+
     const res = await fetch(url, {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify({
-        chat_id: chatId,
-        text: chunk,
-        disable_web_page_preview: false,
-      }),
+      body: JSON.stringify(body),
     });
     if (!res.ok) {
-      const body = await res.text().catch(() => "");
-      throw new Error(`Telegram API ${res.status}: ${body.slice(0, 200)}`);
+      const respBody = await res.text().catch(() => "");
+      throw new Error(`Telegram API ${res.status}: ${respBody.slice(0, 300)}`);
     }
+    const json = (await res.json()) as {
+      result?: { message_id?: number };
+    };
+    if (json.result?.message_id) lastMessageId = json.result.message_id;
   }
+  return { messageId: lastMessageId };
 }

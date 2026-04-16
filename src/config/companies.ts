@@ -16,31 +16,27 @@ export type CompanyConfig = {
   notes?: string;
 };
 
+// All slugs below verified against live APIs (HTTP 200) on 2026-04-16.
+// Companies not listed here either:
+//   (a) moved to a custom portal (need custom_scraper) — see comments below
+//   (b) use Workday (need workday adapter — pending)
+//   (c) use a different ATS we haven't added yet
 export const COMPANIES: CompanyConfig[] = [
+  // === Greenhouse (verified working) ===
   { name: "Stripe", ats: "greenhouse", slug: "stripe" },
   { name: "Airbnb", ats: "greenhouse", slug: "airbnb" },
   { name: "Coinbase", ats: "greenhouse", slug: "coinbase" },
   { name: "Databricks", ats: "greenhouse", slug: "databricks" },
-  { name: "Snowflake", ats: "greenhouse", slug: "snowflake" },
   { name: "Figma", ats: "greenhouse", slug: "figma" },
-  { name: "Notion", ats: "greenhouse", slug: "notion" },
-  { name: "Ramp", ats: "greenhouse", slug: "ramp" },
-  { name: "Atlassian", ats: "greenhouse", slug: "atlassian" },
   { name: "Cloudflare", ats: "greenhouse", slug: "cloudflare" },
   { name: "GitLab", ats: "greenhouse", slug: "gitlab" },
-  { name: "HashiCorp", ats: "greenhouse", slug: "hashicorp" },
   { name: "MongoDB", ats: "greenhouse", slug: "mongodb" },
-  { name: "DoorDash", ats: "greenhouse", slug: "doordash" },
-  { name: "Plaid", ats: "greenhouse", slug: "plaid" },
   { name: "Robinhood", ats: "greenhouse", slug: "robinhood" },
   { name: "Discord", ats: "greenhouse", slug: "discord" },
   { name: "Reddit", ats: "greenhouse", slug: "reddit" },
-  { name: "Rippling", ats: "greenhouse", slug: "rippling" },
   { name: "Brex", ats: "greenhouse", slug: "brex" },
   { name: "Postman", ats: "greenhouse", slug: "postman" },
-  { name: "Confluent", ats: "greenhouse", slug: "confluent" },
   { name: "Datadog", ats: "greenhouse", slug: "datadog" },
-  { name: "Shopify", ats: "greenhouse", slug: "shopify" },
   { name: "Pinterest", ats: "greenhouse", slug: "pinterest" },
   { name: "Dropbox", ats: "greenhouse", slug: "dropbox" },
   { name: "Lyft", ats: "greenhouse", slug: "lyft" },
@@ -48,56 +44,30 @@ export const COMPANIES: CompanyConfig[] = [
   { name: "Asana", ats: "greenhouse", slug: "asana" },
   { name: "Okta", ats: "greenhouse", slug: "okta" },
   { name: "PagerDuty", ats: "greenhouse", slug: "pagerduty" },
-  { name: "1Password", ats: "greenhouse", slug: "1password" },
-  { name: "Canva", ats: "greenhouse", slug: "canva" },
-  { name: "Miro", ats: "greenhouse", slug: "miro" },
   { name: "Airtable", ats: "greenhouse", slug: "airtable" },
   { name: "Webflow", ats: "greenhouse", slug: "webflow" },
-  { name: "Zapier", ats: "greenhouse", slug: "zapier" },
   { name: "Affirm", ats: "greenhouse", slug: "affirm" },
   { name: "Anthropic", ats: "greenhouse", slug: "anthropic" },
-  { name: "CrowdStrike", ats: "greenhouse", slug: "crowdstrike" },
   { name: "LaunchDarkly", ats: "greenhouse", slug: "launchdarkly" },
-  { name: "Sentry", ats: "greenhouse", slug: "sentry" },
   { name: "Temporal", ats: "greenhouse", slug: "temporal" },
   { name: "PlanetScale", ats: "greenhouse", slug: "planetscale" },
-  { name: "Supabase", ats: "greenhouse", slug: "supabase" },
   { name: "Scale AI", ats: "greenhouse", slug: "scaleai" },
-  { name: "Hugging Face", ats: "greenhouse", slug: "huggingface" },
   { name: "Together AI", ats: "greenhouse", slug: "togetherai" },
   { name: "Fireworks AI", ats: "greenhouse", slug: "fireworksai" },
-  { name: "Docker", ats: "greenhouse", slug: "docker" },
   { name: "Algolia", ats: "greenhouse", slug: "algolia" },
   { name: "Netlify", ats: "greenhouse", slug: "netlify" },
   { name: "Twilio", ats: "greenhouse", slug: "twilio" },
-  { name: "Cohere", ats: "greenhouse", slug: "cohere" },
-  { name: "Mistral AI", ats: "greenhouse", slug: "mistral" },
-  { name: "Weights & Biases", ats: "greenhouse", slug: "wandb" },
-  { name: "Glean", ats: "greenhouse", slug: "glean" },
-  { name: "ElevenLabs", ats: "greenhouse", slug: "elevenlabs" },
-  { name: "Harvey", ats: "greenhouse", slug: "harvey" },
-  { name: "Writer", ats: "greenhouse", slug: "writer" },
-  { name: "UiPath", ats: "greenhouse", slug: "uipath" },
-  { name: "Nutanix", ats: "greenhouse", slug: "nutanix" },
   { name: "Rubrik", ats: "greenhouse", slug: "rubrik" },
   { name: "Druva", ats: "greenhouse", slug: "druva" },
   { name: "Celonis", ats: "greenhouse", slug: "celonis" },
-  { name: "Wise", ats: "greenhouse", slug: "wise" },
   { name: "Mercury", ats: "greenhouse", slug: "mercury" },
-  { name: "Harness", ats: "greenhouse", slug: "harness" },
-  { name: "Coda", ats: "greenhouse", slug: "coda" },
+  { name: "Ramp", ats: "greenhouse", slug: "rampnetwork" },
+  { name: "Glean", ats: "greenhouse", slug: "gleanwork" },
 
-  { name: "Elastic", ats: "lever", slug: "elastic" },
-  { name: "Mixpanel", ats: "lever", slug: "mixpanel" },
-  { name: "BrowserStack", ats: "lever", slug: "browserstack" },
-  { name: "Groww", ats: "lever", slug: "groww" },
-  { name: "Freshworks", ats: "lever", slug: "freshworks" },
-  { name: "Zepto", ats: "lever", slug: "zepto" },
-  { name: "Dream11", ats: "lever", slug: "dream11" },
-  { name: "MPL", ats: "lever", slug: "mpl" },
+  // === Lever (verified working) ===
   { name: "CRED", ats: "lever", slug: "cred" },
-  { name: "Razorpay", ats: "lever", slug: "razorpay" },
 
+  // === Ashby (verified working) ===
   { name: "Perplexity", ats: "ashby", slug: "perplexity" },
   { name: "Linear", ats: "ashby", slug: "linear" },
   { name: "Vercel", ats: "ashby", slug: "vercel" },
@@ -106,13 +76,13 @@ export const COMPANIES: CompanyConfig[] = [
   { name: "Statsig", ats: "ashby", slug: "statsig" },
   { name: "OpenAI", ats: "ashby", slug: "openai" },
   { name: "Character AI", ats: "ashby", slug: "character" },
-  { name: "Runway", ats: "ashby", slug: "runwayml" },
   { name: "LangChain", ats: "ashby", slug: "langchain" },
   { name: "Pinecone", ats: "ashby", slug: "pinecone" },
   { name: "Anyscale", ats: "ashby", slug: "anyscale" },
-  { name: "Cursor", ats: "ashby", slug: "anysphere" },
+  { name: "Runway", ats: "ashby", slug: "runway" },
+  { name: "Cursor", ats: "ashby", slug: "cursor" },
 
-  // Workday tenants — pending workday.ts adapter implementation
+  // === Workday tenants (adapter not yet built) ===
   { name: "Adobe", ats: "workday", slug: "adobe", tenant: "adobe" },
   { name: "Oracle", ats: "workday", slug: "oracle", tenant: "oracle" },
   { name: "Salesforce", ats: "workday", slug: "salesforce", tenant: "salesforce" },
@@ -128,7 +98,7 @@ export const COMPANIES: CompanyConfig[] = [
   { name: "Intel", ats: "workday", slug: "intel", tenant: "intel" },
   { name: "Dell", ats: "workday", slug: "dell", tenant: "dell" },
 
-  // Custom JSON — pending per-company adapters
+  // === Custom JSON APIs (per-company adapters not yet built) ===
   { name: "Amazon", ats: "custom_json", slug: "amazon" },
   { name: "Google", ats: "custom_json", slug: "google" },
   { name: "Microsoft", ats: "custom_json", slug: "microsoft" },
@@ -138,7 +108,7 @@ export const COMPANIES: CompanyConfig[] = [
   { name: "ServiceNow", ats: "custom_json", slug: "servicenow" },
   { name: "Samsung R&D", ats: "custom_json", slug: "samsung_rd" },
 
-  // Indian custom portals — pending per-company scrapers
+  // === Indian custom portals (per-company scrapers not yet built) ===
   { name: "Flipkart", ats: "custom_scraper", slug: "flipkart" },
   { name: "Myntra", ats: "custom_scraper", slug: "myntra" },
   { name: "Swiggy", ats: "custom_scraper", slug: "swiggy" },
@@ -153,6 +123,14 @@ export const COMPANIES: CompanyConfig[] = [
   { name: "Sarvam AI", ats: "custom_scraper", slug: "sarvam" },
   { name: "Krutrim", ats: "custom_scraper", slug: "krutrim" },
   { name: "Ola Krutrim", ats: "custom_scraper", slug: "ola_krutrim" },
+
+  // === Pending — moved off public ATS or need investigation ===
+  // Notion, Atlassian, Snowflake, HashiCorp, DoorDash, Plaid, Rippling, Confluent,
+  // Shopify, 1Password, Canva, Miro, Zapier, CrowdStrike, Sentry, Supabase,
+  // Hugging Face, Docker, Cohere, Mistral, Weights & Biases, ElevenLabs, Harvey,
+  // Writer, UiPath, Nutanix, Wise, Harness, Coda, Elastic, Mixpanel, BrowserStack,
+  // Groww, Freshworks, Zepto, Dream11, MPL, Razorpay
+  // → most likely on Workday (build workday adapter) or own portal (custom_scraper)
 ];
 
 export const BY_ATS = {

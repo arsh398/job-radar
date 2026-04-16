@@ -75,43 +75,17 @@ export const ResumeEditsSchema = z.object({
 });
 
 export const TailoringResponseSchema = z.object({
-  match: z.object({
-    score: z.number().min(0).max(10),
-    verdict: z.enum(["apply", "apply_with_referral", "stretch", "skip"]),
-    reasoning: z.string(),
-    yoe_fit: z.enum(["match", "stretch", "underqualified"]),
-  }),
-  requirements: z.object({
-    met: z.array(z.string()),
-    missing: z.array(z.string()),
-    stretch: z.array(z.string()),
-  }),
+  verdict: z.enum(["apply", "apply_with_referral", "stretch", "skip"]),
+  missing_keywords: z.array(z.string()).max(8),
   resume_edits: ResumeEditsSchema,
-  referral_draft: z.object({
-    message: z.string(),
-    hook: z.string(),
-  }),
+  referral_draft: z.string(),
   cover_note: z.string(),
-  company_context: z.string(),
-  concerns: z.array(z.string()),
 });
 
 export type TailoringResponse = z.infer<typeof TailoringResponseSchema>;
 
-export const SkipResponseSchema = z.object({
-  match: z.object({
-    score: z.number().min(0).max(10),
-    verdict: z.literal("skip"),
-    reasoning: z.string(),
-    yoe_fit: z.enum(["match", "stretch", "underqualified"]),
-  }),
-});
-
-export type SkipResponse = z.infer<typeof SkipResponseSchema>;
-
 export type LlmOutput =
   | { ok: true; kind: "full"; data: TailoringResponse; model: string }
-  | { ok: true; kind: "skip"; data: SkipResponse; model: string }
   | { ok: false; error: string };
 
 export type JobAlert = {
