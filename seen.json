@@ -6049,6 +6049,11 @@
     "company": "Airbnb",
     "title": "Senior Data Engineer, Payments"
   },
+  "greenhouse:airbnb:7258829": {
+    "firstSeen": "2026-04-16T22:06:15.594Z",
+    "company": "Airbnb",
+    "title": "Localization Manager, Canada"
+  },
   "greenhouse:airbnb:7258830": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Airbnb",
@@ -6218,6 +6223,11 @@
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Airbnb",
     "title": "Senior Staff Software Engineer, Payments"
+  },
+  "greenhouse:airbnb:7526372": {
+    "firstSeen": "2026-04-16T22:06:15.594Z",
+    "company": "Airbnb",
+    "title": "Senior Data Scientist, Platform - Identity/Algorithms"
   },
   "greenhouse:airbnb:7528577": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
@@ -9684,6 +9694,11 @@
     "company": "Anthropic",
     "title": "Art Director, Enterprise"
   },
+  "greenhouse:anthropic:5188431008": {
+    "firstSeen": "2026-04-16T22:06:15.594Z",
+    "company": "Anthropic",
+    "title": "Copy Lead, Enterprise"
+  },
   "greenhouse:anthropic:5188606008": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Anthropic",
@@ -9723,6 +9738,11 @@
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Anthropic",
     "title": "Revenue Strategy & Operations"
+  },
+  "greenhouse:anthropic:5191226008": {
+    "firstSeen": "2026-04-16T22:06:15.594Z",
+    "company": "Anthropic",
+    "title": "Software Engineer, Research Data Platform"
   },
   "greenhouse:asana:5480143": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
@@ -26249,6 +26269,11 @@
     "company": "LaunchDarkly",
     "title": "Content Marketing Manager"
   },
+  "greenhouse:launchdarkly:7703477003": {
+    "firstSeen": "2026-04-16T22:06:15.594Z",
+    "company": "LaunchDarkly",
+    "title": "Staff Engineer – Experimentation Team"
+  },
   "greenhouse:lyft:7888101002": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Lyft",
@@ -26774,6 +26799,11 @@
     "company": "Lyft",
     "title": "IT Service Lead"
   },
+  "greenhouse:lyft:8481812002": {
+    "firstSeen": "2026-04-16T22:06:15.594Z",
+    "company": "Lyft",
+    "title": "Senior Privacy Analyst"
+  },
   "greenhouse:lyft:8481872002": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Lyft",
@@ -26898,6 +26928,11 @@
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Lyft",
     "title": "Senior Specialist, Policy Operations"
+  },
+  "greenhouse:lyft:8503994002": {
+    "firstSeen": "2026-04-16T22:06:15.594Z",
+    "company": "Lyft",
+    "title": "Data Engineer"
   },
   "greenhouse:lyft:8503999002": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
@@ -29604,6 +29639,11 @@
     "company": "Okta",
     "title": "Staff Software Engineer - ISPM"
   },
+  "greenhouse:okta:7463561": {
+    "firstSeen": "2026-04-16T22:06:15.594Z",
+    "company": "Okta",
+    "title": "Strategic Account Executive, Auth0"
+  },
   "greenhouse:okta:7463779": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Okta",
@@ -30059,6 +30099,11 @@
     "company": "Okta",
     "title": "Principal Operations Manager"
   },
+  "greenhouse:okta:7600740": {
+    "firstSeen": "2026-04-16T22:06:15.594Z",
+    "company": "Okta",
+    "title": "Senior Corporate Counsel, Commercial"
+  },
   "greenhouse:okta:7600755": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Okta",
@@ -30489,6 +30534,11 @@
     "company": "Okta",
     "title": "APJ Lead and Senior Corporate Counsel"
   },
+  "greenhouse:okta:7703326": {
+    "firstSeen": "2026-04-16T22:06:15.594Z",
+    "company": "Okta",
+    "title": "Staff Engineer, FGA Developer Tooling"
+  },
   "greenhouse:okta:7703330": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Okta",
@@ -30554,10 +30604,20 @@
     "company": "Okta",
     "title": "Public Sector Account Executive "
   },
+  "greenhouse:okta:7725948": {
+    "firstSeen": "2026-04-16T22:06:15.594Z",
+    "company": "Okta",
+    "title": "Staff Software Engineer"
+  },
   "greenhouse:okta:7726034": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Okta",
     "title": "Software Engineer II (L2) – AV & UC Automations"
+  },
+  "greenhouse:okta:7726050": {
+    "firstSeen": "2026-04-16T22:06:15.594Z",
+    "company": "Okta",
+    "title": "Atlassian System Engineer"
   },
   "greenhouse:okta:7727730": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
@@ -31018,6 +31078,11 @@
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Okta",
     "title": "Senior Product Manager, Okta for AI Agents"
+  },
+  "greenhouse:okta:7821930": {
+    "firstSeen": "2026-04-16T22:06:15.594Z",
+    "company": "Okta",
+    "title": "Staff Software Engineer, End User Protection (Auth0)"
   },
   "greenhouse:pagerduty:5634303004": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
@@ -31963,6 +32028,11 @@
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Pinterest",
     "title": "Sr. Staff Data & Applied Scientist, GenAI & Labeling Platforms"
+  },
+  "greenhouse:pinterest:7775690": {
+    "firstSeen": "2026-04-16T22:06:15.594Z",
+    "company": "Pinterest",
+    "title": "Principal Engineer, Agentic Engineering"
   },
   "greenhouse:pinterest:7775727": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
@@ -38544,6 +38614,11 @@
     "company": "Twilio",
     "title": "Staff Product Manager - Core Commerce Platform"
   },
+  "greenhouse:twilio:7188174": {
+    "firstSeen": "2026-04-16T22:06:15.594Z",
+    "company": "Twilio",
+    "title": "Software Engineer (L2)"
+  },
   "greenhouse:twilio:7206764": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Twilio",
@@ -38673,6 +38748,11 @@
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Twilio",
     "title": "Director, Product Management"
+  },
+  "greenhouse:twilio:7588505": {
+    "firstSeen": "2026-04-16T22:06:15.594Z",
+    "company": "Twilio",
+    "title": "Senior Strategic Account Executive"
   },
   "greenhouse:twilio:7595407": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
@@ -38863,6 +38943,11 @@
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Twilio",
     "title": "Social Media Specialist"
+  },
+  "greenhouse:twilio:7699251": {
+    "firstSeen": "2026-04-16T22:06:15.594Z",
+    "company": "Twilio",
+    "title": "Software Engineer"
   },
   "greenhouse:twilio:7700603": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
@@ -39079,6 +39164,16 @@
     "company": "Twilio",
     "title": "Executive Business Partner"
   },
+  "greenhouse:twilio:7786432": {
+    "firstSeen": "2026-04-16T22:06:15.594Z",
+    "company": "Twilio",
+    "title": "Strategic Account Executive 4"
+  },
+  "greenhouse:twilio:7789427": {
+    "firstSeen": "2026-04-16T22:06:15.594Z",
+    "company": "Twilio",
+    "title": "Senior Software Engineer"
+  },
   "greenhouse:twilio:7805163": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Twilio",
@@ -39108,6 +39203,11 @@
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Twilio",
     "title": "Growth Marketing Manager"
+  },
+  "greenhouse:twilio:7815483": {
+    "firstSeen": "2026-04-16T22:06:15.594Z",
+    "company": "Twilio",
+    "title": "Technical Account Manager 3"
   },
   "greenhouse:twilio:7818178": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
