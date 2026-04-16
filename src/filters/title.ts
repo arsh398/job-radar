@@ -1,15 +1,60 @@
 import type { Track } from "../types.ts";
 
-const SDE_RE =
-  /\b(sde|swe|software\s+(dev|engineer)|backend(?:\s+eng)?|front[- ]?end(?:\s+eng)?|full[- ]?stack|application\s+eng|product\s+eng|infrastructure\s+eng|platform\s+eng|systems\s+eng|devops|sre|site\s+reliability|data\s+engineer|developer)\b/i;
+// Match "Engineer", "engineer", "Eng", "eng", "Developer", "Dev"
+const ENG = "(?:eng(?:ineer)?|developer|dev)";
 
-const AI_RE =
-  /\b(ml\s+eng|ai\s+eng|machine\s+learning|applied\s+scientist|research\s+eng|mle|deep\s+learning|data\s+scientist|nlp\s+eng|computer\s+vision|gen\s*ai|llm\s+eng|ai\s+research|genai)\b/i;
+// SDE-track titles. Each branch ends at a word boundary.
+const SDE_RE = new RegExp(
+  [
+    `\\bsde(?:[\\s-]*\\d+)?\\b`,
+    `\\bswe\\b`,
+    `\\bsoftware\\s+${ENG}\\b`,
+    `\\bbackend(?:\\s+${ENG})?\\b`,
+    `\\bfront[- ]?end(?:\\s+${ENG})?\\b`,
+    `\\bfull[- ]?stack(?:\\s+${ENG})?\\b`,
+    `\\bapplication\\s+${ENG}\\b`,
+    `\\bproduct\\s+${ENG}\\b`,
+    `\\binfrastructure\\s+${ENG}\\b`,
+    `\\bplatform\\s+${ENG}\\b`,
+    `\\bsystems\\s+${ENG}\\b`,
+    `\\bdevops(?:\\s+${ENG})?\\b`,
+    `\\bsre\\b`,
+    `\\bsite\\s+reliability(?:\\s+${ENG})?\\b`,
+    `\\bdata\\s+${ENG}\\b`,
+    `\\bcloud\\s+${ENG}\\b`,
+    `\\bdeveloper\\b`,
+  ].join("|"),
+  "i"
+);
 
+// AI/ML-track titles.
+const AI_RE = new RegExp(
+  [
+    `\\bml(?:\\s+${ENG})?\\b`,
+    `\\bai(?:\\s+${ENG})?\\b`,
+    `\\bmachine\\s+learning(?:\\s+${ENG})?\\b`,
+    `\\bapplied\\s+scientist\\b`,
+    `\\bresearch\\s+${ENG}\\b`,
+    `\\bmle\\b`,
+    `\\bdeep\\s+learning(?:\\s+${ENG})?\\b`,
+    `\\bdata\\s+scientist\\b`,
+    `\\bnlp(?:\\s+${ENG})?\\b`,
+    `\\bcomputer\\s+vision\\b`,
+    `\\bgen\\s*ai(?:\\s+${ENG})?\\b`,
+    `\\bllm(?:\\s+${ENG})?\\b`,
+    `\\bai\\s+research\\b`,
+    `\\bgenai(?:\\s+${ENG})?\\b`,
+  ].join("|"),
+  "i"
+);
+
+// Drop these regardless — too senior or wrong function.
 const EXCLUDE_RE =
-  /\b(staff|principal|senior\s+staff|distinguished|fellow|architect|vp|director|head\s+of|manager|engineering\s+manager|cto|product\s+manager|program\s+manager|technical\s+lead|research\s+scientist)\b/i;
+  /\b(staff|principal|senior\s+staff|distinguished|fellow|architect|vp|director|head\s+of|manager|engineering\s+manager|cto|product\s+manager|program\s+manager|technical\s+lead|tech\s+lead|research\s+scientist|recruiter|designer)\b/i;
 
-const LEAD_SE_RE = /\blead\s+(software|backend|frontend|platform|data|ml|ai)\b/i;
+// "Lead Software Engineer" / "Lead Backend" etc. is allowed despite "Lead".
+const LEAD_SE_RE =
+  /\blead\s+(software|backend|frontend|full[- ]?stack|platform|data|ml|ai|infra)\b/i;
 
 export type TitleMatch =
   | { pass: true; track: Track }
