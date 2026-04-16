@@ -1,0 +1,53 @@
+name: poll-jobs
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  workflow_dispatch:
+
+concurrency:
+  group: job-radar
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: Install deps
+        run: pnpm install --frozen-lockfile
+
+      - name: Run job-radar
+        env:
+          GOOGLE_AI_STUDIO_API_KEY: ${{ secrets.GOOGLE_AI_STUDIO_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          MAX_LLM_PER_RUN: '20'
+          ALERT_SKIPS: '1'
+        run: pnpm start
+
+      - name: Commit state
+        run: |
+          git config user.name "job-radar-bot"
+          git config user.email "actions@github.com"
+          if [ -n "$(git status --porcelain seen.json source_health.json 2>/dev/null)" ]; then
+            git add seen.json source_health.json
+            git commit -m "chore(state): update seen + health [skip ci]"
+            git push
+          else
+            echo "No state changes to commit"
+          fi

@@ -1,0 +1,28 @@
+{
+  "name": "job-radar",
+  "version": "0.1.0",
+  "description": "Polls job boards, filters by location/title/YOE, tailors resume edits per JD via Gemini, alerts via Telegram",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "dry-run": "DRY_RUN=1 tsx src/index.ts",
+    "build": "tsc --noEmit",
+    "start": "tsx src/index.ts"
+  },
+  "dependencies": {
+    "@google/genai": "^0.14.0",
+    "dotenv": "^16.4.7",
+    "turndown": "^7.2.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.5",
+    "@types/turndown": "^5.0.5",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
