@@ -16339,6 +16339,11 @@
     "company": "Databricks",
     "title": "Sr. Engineering Manager  - Photon Team (San Francisco)"
   },
+  "greenhouse:databricks:8114836002": {
+    "firstSeen": "2026-04-16T21:09:34.915Z",
+    "company": "Databricks",
+    "title": "Sr. Resident Solutions Architect"
+  },
   "greenhouse:databricks:8125173002": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Databricks",
@@ -16564,6 +16569,16 @@
     "company": "Databricks",
     "title": "Staff Software Engineer - Ingestion"
   },
+  "greenhouse:databricks:8201686002": {
+    "firstSeen": "2026-04-16T21:09:34.915Z",
+    "company": "Databricks",
+    "title": "Staff Software Engineer - Ingestion"
+  },
+  "greenhouse:databricks:8201768002": {
+    "firstSeen": "2026-04-16T21:09:34.915Z",
+    "company": "Databricks",
+    "title": "Director of Engineering (Service Foundations)"
+  },
   "greenhouse:databricks:8202670002": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Databricks",
@@ -16653,6 +16668,11 @@
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Databricks",
     "title": "Sr. Staff Fullstack Engineer, Agentic Applications"
+  },
+  "greenhouse:databricks:8220993002": {
+    "firstSeen": "2026-04-16T21:09:34.915Z",
+    "company": "Databricks",
+    "title": "Director of Engineering (Data Infrastructure)"
   },
   "greenhouse:databricks:8221491002": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
@@ -16803,6 +16823,11 @@
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Databricks",
     "title": "Manager, Field Engineering"
+  },
+  "greenhouse:databricks:8294304002": {
+    "firstSeen": "2026-04-16T21:09:34.915Z",
+    "company": "Databricks",
+    "title": "Senior Software Engineer (App-Framework)"
   },
   "greenhouse:databricks:8294402002": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
@@ -17219,6 +17244,11 @@
     "company": "Databricks",
     "title": "Solutions Architect: Data & AI"
   },
+  "greenhouse:databricks:8356289002": {
+    "firstSeen": "2026-04-16T21:09:34.915Z",
+    "company": "Databricks",
+    "title": "Resident Solutions Architect - Public Sector"
+  },
   "greenhouse:databricks:8356420002": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Databricks",
@@ -17248,6 +17278,11 @@
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Databricks",
     "title": "Technical Escalation Manager"
+  },
+  "greenhouse:databricks:8367019002": {
+    "firstSeen": "2026-04-16T21:09:34.915Z",
+    "company": "Databricks",
+    "title": "Staff Backend Software Engineer- (AI Platform)"
   },
   "greenhouse:databricks:8367023002": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
@@ -18213,6 +18248,11 @@
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Databricks",
     "title": "Sr. Technical Program Manager, Professional Services - Healthcare & Life Sciences (HLS)"
+  },
+  "greenhouse:databricks:8438803002": {
+    "firstSeen": "2026-04-16T21:09:34.915Z",
+    "company": "Databricks",
+    "title": "Lead Engagement Manager, Healthcare & Life Sciences"
   },
   "greenhouse:databricks:8438914002": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
@@ -19439,6 +19479,11 @@
     "company": "Databricks",
     "title": "Solutions Architect (Taiwan)"
   },
+  "greenhouse:databricks:8500326002": {
+    "firstSeen": "2026-04-16T21:09:34.915Z",
+    "company": "Databricks",
+    "title": "Solutions Architect"
+  },
   "greenhouse:databricks:8501026002": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Databricks",
@@ -19513,6 +19558,11 @@
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Databricks",
     "title": "Senior Software Engineer - AI Product (NYC)"
+  },
+  "greenhouse:databricks:8509189002": {
+    "firstSeen": "2026-04-16T21:09:34.915Z",
+    "company": "Databricks",
+    "title": "Sr. Engagement Manager, Professional Services - Digital Native Business (DNB)"
   },
   "greenhouse:databricks:8509230002": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
@@ -27234,6 +27284,11 @@
     "company": "Mercury",
     "title": "Senior Credit Operations Analyst - Loan Operations"
   },
+  "greenhouse:mercury:5972922004": {
+    "firstSeen": "2026-04-16T21:09:34.915Z",
+    "company": "Mercury",
+    "title": "Senior Benefits Consultant"
+  },
   "greenhouse:mongodb:5573926": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "MongoDB",
@@ -27364,6 +27419,11 @@
     "company": "MongoDB",
     "title": "Enterprise Account Executive, Federal"
   },
+  "greenhouse:mongodb:7032023": {
+    "firstSeen": "2026-04-16T21:09:34.915Z",
+    "company": "MongoDB",
+    "title": "Enterprise Account Executive, Growth"
+  },
   "greenhouse:mongodb:7078334": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "MongoDB",
@@ -27488,6 +27548,11 @@
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "MongoDB",
     "title": "Enterprise Account Executive, Growth"
+  },
+  "greenhouse:mongodb:7227836": {
+    "firstSeen": "2026-04-16T21:09:34.915Z",
+    "company": "MongoDB",
+    "title": "Senior Enterprise Account Executive"
   },
   "greenhouse:mongodb:7228531": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
@@ -29203,6 +29268,11 @@
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "MongoDB",
     "title": "Site Reliability Engineer (Senior or Staff), Storage Layer Services (SLS)"
+  },
+  "greenhouse:mongodb:7795864": {
+    "firstSeen": "2026-04-16T21:09:34.915Z",
+    "company": "MongoDB",
+    "title": "Solutions Architect"
   },
   "greenhouse:mongodb:7799392": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
@@ -33369,6 +33439,11 @@
     "company": "Robinhood",
     "title": "Senior Analytics Engineer, Corporate Strategy"
   },
+  "greenhouse:robinhood:7350823": {
+    "firstSeen": "2026-04-16T21:09:34.915Z",
+    "company": "Robinhood",
+    "title": "Android Engineer"
+  },
   "greenhouse:robinhood:7412037": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Robinhood",
@@ -37359,6 +37434,11 @@
     "company": "Stripe",
     "title": "Engineering Manager - Fraud Risk "
   },
+  "greenhouse:stripe:7656504": {
+    "firstSeen": "2026-04-16T21:09:34.915Z",
+    "company": "Stripe",
+    "title": "Program Manager, GTM Planning"
+  },
   "greenhouse:stripe:7656562": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Stripe",
@@ -38769,6 +38849,11 @@
     "company": "Twilio",
     "title": "Product Engineer (Backend)"
   },
+  "greenhouse:twilio:7688855": {
+    "firstSeen": "2026-04-16T21:09:34.915Z",
+    "company": "Twilio",
+    "title": "Digital Sales Representative"
+  },
   "greenhouse:twilio:7689065": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Twilio",
@@ -38858,6 +38943,11 @@
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Twilio",
     "title": "Evangelist Intern"
+  },
+  "greenhouse:twilio:7735455": {
+    "firstSeen": "2026-04-16T21:09:34.915Z",
+    "company": "Twilio",
+    "title": "Strategic Account Executive 3"
   },
   "greenhouse:twilio:7736162": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
@@ -38953,6 +39043,11 @@
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Twilio",
     "title": "Software Engineer (L3) Infrastructure"
+  },
+  "greenhouse:twilio:7768645": {
+    "firstSeen": "2026-04-16T21:09:34.915Z",
+    "company": "Twilio",
+    "title": "Strategic Account Executive 4"
   },
   "greenhouse:twilio:7772685": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
