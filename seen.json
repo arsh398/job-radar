@@ -6059,6 +6059,11 @@
     "company": "Airbnb",
     "title": "Localization Manager, Canada"
   },
+  "greenhouse:airbnb:7258830": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Airbnb",
+    "title": "Localization Manager, Canada"
+  },
   "greenhouse:airbnb:7288960": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Airbnb",
@@ -7448,6 +7453,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Airtable",
     "title": "Performance Marketing Specialist Contractor"
+  },
+  "greenhouse:airtable:8509851002": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Airtable",
+    "title": " Account Executive, Strategic Accounts | DACH "
   },
   "greenhouse:algolia:5166189004": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -15864,6 +15874,11 @@
     "company": "Databricks",
     "title": "Staff Product Manager"
   },
+  "greenhouse:databricks:7651326002": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Databricks",
+    "title": "Senior Staff Software Engineer (Backend)"
+  },
   "greenhouse:databricks:7651345002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Databricks",
@@ -16429,6 +16444,11 @@
     "company": "Databricks",
     "title": "Sr. Engineering Manager  - Photon Team (San Francisco)"
   },
+  "greenhouse:databricks:8114836002": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Databricks",
+    "title": "Sr. Resident Solutions Architect"
+  },
   "greenhouse:databricks:8125173002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Databricks",
@@ -16608,6 +16628,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Databricks",
     "title": "Enterprise Account Executive"
+  },
+  "greenhouse:databricks:8196585002": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Databricks",
+    "title": "Sr. Financial Analyst"
   },
   "greenhouse:databricks:8196833002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -16889,10 +16914,20 @@
     "company": "Databricks",
     "title": "Director of Engineering (Data Infrastructure)"
   },
+  "greenhouse:databricks:8290839002": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Databricks",
+    "title": "Director of Engineering (Service Foundations)"
+  },
   "greenhouse:databricks:8291077002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Databricks",
     "title": "Manager, Field Engineering"
+  },
+  "greenhouse:databricks:8294304002": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Databricks",
+    "title": "Senior Software Engineer (App-Framework)"
   },
   "greenhouse:databricks:8294402002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -17023,6 +17058,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Databricks",
     "title": "Senior Software Engineer - Backend"
+  },
+  "greenhouse:databricks:8320187002": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Databricks",
+    "title": "Staff Software Engineer - Backend"
   },
   "greenhouse:databricks:8321575002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -17349,6 +17389,11 @@
     "company": "Databricks",
     "title": "Technical Escalation Manager"
   },
+  "greenhouse:databricks:8362888002": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Databricks",
+    "title": "Sr. Manager, Field Engineering"
+  },
   "greenhouse:databricks:8363121002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Databricks",
@@ -17356,6 +17401,11 @@
   },
   "greenhouse:databricks:8367021002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
+    "company": "Databricks",
+    "title": "Staff Backend Software Engineer- (AI Platform)"
+  },
+  "greenhouse:databricks:8367023002": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
     "company": "Databricks",
     "title": "Staff Backend Software Engineer- (AI Platform)"
   },
@@ -19414,6 +19464,11 @@
     "company": "Databricks",
     "title": "Resident Solutions Architect - Public Sector"
   },
+  "greenhouse:databricks:8494128002": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Databricks",
+    "title": "Resident Solutions Architect - Public Sector"
+  },
   "greenhouse:databricks:8494130002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Databricks",
@@ -19533,6 +19588,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Databricks",
     "title": "Solutions Architect (Taiwan)"
+  },
+  "greenhouse:databricks:8500326002": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Databricks",
+    "title": "Solutions Architect"
   },
   "greenhouse:databricks:8501026002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -19769,10 +19829,20 @@
     "company": "Datadog",
     "title": "Commercial Account Executive"
   },
+  "greenhouse:datadog:6512326": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Datadog",
+    "title": "Commercial Account Executive"
+  },
   "greenhouse:datadog:6512586": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Datadog",
     "title": "Commercial Account Executive"
+  },
+  "greenhouse:datadog:6522009": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Datadog",
+    "title": "Mid Market Account Executive"
   },
   "greenhouse:datadog:6522720": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -19839,6 +19909,11 @@
     "company": "Datadog",
     "title": "Sales Development Representative"
   },
+  "greenhouse:datadog:6703351": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Datadog",
+    "title": "Enterprise Sales Engineer"
+  },
   "greenhouse:datadog:6781197": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Datadog",
@@ -19888,6 +19963,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Datadog",
     "title": "Senior Staff GenAI Engineer - Application Performance Monitoring (APM)"
+  },
+  "greenhouse:datadog:6998241": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Datadog",
+    "title": "Sales Development Representative (Middle East)"
   },
   "greenhouse:datadog:7016097": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -20219,6 +20299,11 @@
     "company": "Datadog",
     "title": "Enterprise Customer Success Manager"
   },
+  "greenhouse:datadog:7436312": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Datadog",
+    "title": "Enterprise Customer Success Manager"
+  },
   "greenhouse:datadog:7437215": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Datadog",
@@ -20228,6 +20313,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Datadog",
     "title": "Strategic Account Executive"
+  },
+  "greenhouse:datadog:7439149": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Datadog",
+    "title": "Strategic Account Executive, Public Sector Japan, FED"
   },
   "greenhouse:datadog:7439569": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -20391,6 +20481,11 @@
   },
   "greenhouse:datadog:7481124": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
+    "company": "Datadog",
+    "title": "Commercial & Mid Market Sales Engineer"
+  },
+  "greenhouse:datadog:7483199": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
     "company": "Datadog",
     "title": "Commercial & Mid Market Sales Engineer"
   },
@@ -21219,6 +21314,11 @@
     "company": "Datadog",
     "title": "Head of Enterprise Sales, Japan"
   },
+  "greenhouse:datadog:7730200": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Datadog",
+    "title": "Head of Enterprise Sales, Japan"
+  },
   "greenhouse:datadog:7731292": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Datadog",
@@ -21563,6 +21663,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Datadog",
     "title": "Enterprise Sales Engineer"
+  },
+  "greenhouse:datadog:7798052": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Datadog",
+    "title": "Privacy Counsel"
   },
   "greenhouse:datadog:7798672": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -27449,6 +27554,11 @@
     "company": "MongoDB",
     "title": "Enterprise Account Executive, Growth"
   },
+  "greenhouse:mongodb:7026136": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "MongoDB",
+    "title": "Enterprise Account Executive"
+  },
   "greenhouse:mongodb:7027409": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "MongoDB",
@@ -27588,6 +27698,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "MongoDB",
     "title": "Enterprise Account Executive, Growth"
+  },
+  "greenhouse:mongodb:7227836": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "MongoDB",
+    "title": "Senior Enterprise Account Executive"
   },
   "greenhouse:mongodb:7228531": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -29119,6 +29234,11 @@
     "company": "MongoDB",
     "title": "Manager, Sales Development"
   },
+  "greenhouse:mongodb:7765523": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "MongoDB",
+    "title": "Senior Software Engineer, DevTools"
+  },
   "greenhouse:mongodb:7765634": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "MongoDB",
@@ -29224,6 +29344,11 @@
     "company": "MongoDB",
     "title": "Staff Engineer, AMP"
   },
+  "greenhouse:mongodb:7773483": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "MongoDB",
+    "title": "Solutions Architect"
+  },
   "greenhouse:mongodb:7774143": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "MongoDB",
@@ -29243,6 +29368,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "MongoDB",
     "title": "Senior Staff Engineer, Quote-to-Cash"
+  },
+  "greenhouse:mongodb:7779026": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "MongoDB",
+    "title": "Senior Administrator - Business Systems"
   },
   "greenhouse:mongodb:7779540": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -29298,6 +29428,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "MongoDB",
     "title": "Site Reliability Engineer (Senior or Staff), Storage Layer Services (SLS)"
+  },
+  "greenhouse:mongodb:7799392": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "MongoDB",
+    "title": "Senior Executive Assistant"
   },
   "greenhouse:mongodb:7806547": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -29969,6 +30104,11 @@
     "company": "Okta",
     "title": "Public Sector Account Executive, Auth0"
   },
+  "greenhouse:okta:7582318": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Okta",
+    "title": "Staff Software Engineer"
+  },
   "greenhouse:okta:7582660": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Okta",
@@ -30614,6 +30754,11 @@
     "company": "Okta",
     "title": "ServiceNow IT Asset Management Developer"
   },
+  "greenhouse:okta:7727749": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Okta",
+    "title": "Atlassian System Engineer"
+  },
   "greenhouse:okta:7727835": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Okta",
@@ -30934,6 +31079,11 @@
     "company": "Okta",
     "title": "Senior Delivery Success Manager"
   },
+  "greenhouse:okta:7779191": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Okta",
+    "title": "Corporate Counsel, IP"
+  },
   "greenhouse:okta:7782510": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Okta",
@@ -31044,6 +31194,11 @@
     "company": "Okta",
     "title": "Associate Technical Account Manager - Auth0 Enterprise"
   },
+  "greenhouse:okta:7819280": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Okta",
+    "title": "Senior Product Manager, Okta for AI Agents"
+  },
   "greenhouse:okta:7819794": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Okta",
@@ -31143,6 +31298,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "PagerDuty",
     "title": "Account Manager (US)"
+  },
+  "greenhouse:pagerduty:5818466004": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "PagerDuty",
+    "title": "Program Manager, Professional Services"
   },
   "greenhouse:pagerduty:5819452004": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -33519,6 +33679,11 @@
     "company": "Robinhood",
     "title": "Senior Analytics Engineer, Corporate Strategy"
   },
+  "greenhouse:robinhood:7350823": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Robinhood",
+    "title": "Android Engineer"
+  },
   "greenhouse:robinhood:7412037": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Robinhood",
@@ -34499,6 +34664,11 @@
     "company": "Rubrik",
     "title": "Senior Data Analyst - Support Operations & Reporting"
   },
+  "greenhouse:rubrik:7494096": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Rubrik",
+    "title": "Senior Customer Success Engineer (Monday - Friday shift: 9am-6pm ET) - FedRAMP"
+  },
   "greenhouse:rubrik:7496010": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Rubrik",
@@ -34958,6 +35128,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Rubrik",
     "title": "Product Management Intern"
+  },
+  "greenhouse:rubrik:7776333": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Rubrik",
+    "title": "Engineering Manager"
   },
   "greenhouse:rubrik:7777883": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -36234,6 +36409,11 @@
     "company": "Stripe",
     "title": "Risk Operations Analyst"
   },
+  "greenhouse:stripe:7232592": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Stripe",
+    "title": "Backend Engineer, Payments and Risk"
+  },
   "greenhouse:stripe:7235875": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Stripe",
@@ -36278,6 +36458,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Stripe",
     "title": "Software Engineer, Bridge"
+  },
+  "greenhouse:stripe:7277406": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Stripe",
+    "title": "Account Executive, SMB (New Business)"
   },
   "greenhouse:stripe:7278434": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -36531,6 +36716,11 @@
   },
   "greenhouse:stripe:7393167": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
+    "company": "Stripe",
+    "title": "Account Executive, Product Sales, Billing"
+  },
+  "greenhouse:stripe:7393169": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
     "company": "Stripe",
     "title": "Account Executive, Product Sales, Billing"
   },
@@ -37289,6 +37479,11 @@
     "company": "Stripe",
     "title": "Finance & Strategy - Finance Analytics Analyst"
   },
+  "greenhouse:stripe:7597624": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Stripe",
+    "title": "F&S COE Analyst"
+  },
   "greenhouse:stripe:7600571": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Stripe",
@@ -37986,6 +38181,11 @@
   },
   "greenhouse:stripe:7747636": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
+    "company": "Stripe",
+    "title": "Forward Deployed AI Accelerator, Marketing"
+  },
+  "greenhouse:stripe:7747638": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
     "company": "Stripe",
     "title": "Forward Deployed AI Accelerator, Marketing"
   },
@@ -38784,6 +38984,11 @@
     "company": "Twilio",
     "title": "Software Engineer"
   },
+  "greenhouse:twilio:7607358": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Twilio",
+    "title": "Strategic Account Executive 4"
+  },
   "greenhouse:twilio:7610261": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Twilio",
@@ -38919,6 +39124,11 @@
     "company": "Twilio",
     "title": "Product Engineer (Backend)"
   },
+  "greenhouse:twilio:7688855": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Twilio",
+    "title": "Digital Sales Representative"
+  },
   "greenhouse:twilio:7689065": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Twilio",
@@ -39014,6 +39224,11 @@
     "company": "Twilio",
     "title": "Evangelist Intern"
   },
+  "greenhouse:twilio:7735455": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Twilio",
+    "title": "Strategic Account Executive 3"
+  },
   "greenhouse:twilio:7736718": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Twilio",
@@ -39043,6 +39258,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Twilio",
     "title": "Finance Manager, R&D"
+  },
+  "greenhouse:twilio:7745949": {
+    "firstSeen": "2026-04-16T14:20:28.891Z",
+    "company": "Twilio",
+    "title": "Account Executive 4"
   },
   "greenhouse:twilio:7747550": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
