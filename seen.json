@@ -1714,6 +1714,11 @@
     "company": "OpenAI",
     "title": "Manager, AI Deployment Engineering - Health & Life Sciences"
   },
+  "ashby:openai:37f3bee3-f291-421d-9e42-5497bd3c46fc": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "OpenAI",
+    "title": "Partner Manager"
+  },
   "ashby:openai:3874db80-f3ec-4dd1-8d56-6441e8f7299d": {
     "firstSeen": "2026-04-16T12:14:38.391Z",
     "company": "OpenAI",
@@ -11574,6 +11579,11 @@
     "company": "Brex",
     "title": "Finance Manager, Commissions"
   },
+  "greenhouse:brex:8495712002": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Brex",
+    "title": "Marketing Senior Finance Manager"
+  },
   "greenhouse:brex:8495718002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Brex",
@@ -11713,6 +11723,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Brex",
     "title": "Senior Executive Recruiter "
+  },
+  "greenhouse:brex:8510493002": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Brex",
+    "title": "Data Engineer"
   },
   "greenhouse:celonis:5928673003": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -13209,6 +13224,11 @@
     "company": "Cloudflare",
     "title": "Consultant, Developer Platform"
   },
+  "greenhouse:cloudflare:7383015": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Cloudflare",
+    "title": "Consultant, Developer Platform"
+  },
   "greenhouse:cloudflare:7389902": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Cloudflare",
@@ -13694,6 +13714,11 @@
     "company": "Cloudflare",
     "title": "Senior Professional Services Devops Manager"
   },
+  "greenhouse:cloudflare:7534033": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Cloudflare",
+    "title": "Senior Cloudflare One GTM Specialist"
+  },
   "greenhouse:cloudflare:7534995": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Cloudflare",
@@ -13743,6 +13768,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Cloudflare",
     "title": "Director, Partner Solutions Engineering EMEA"
+  },
+  "greenhouse:cloudflare:7547537": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Cloudflare",
+    "title": "Customer Success Manager"
   },
   "greenhouse:cloudflare:7547552": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -13868,6 +13898,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Cloudflare",
     "title": "Physical Security Intern (Summer 2026)"
+  },
+  "greenhouse:cloudflare:7577564": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Cloudflare",
+    "title": "GRC Team Intern (Summer 2026) "
   },
   "greenhouse:cloudflare:7577962": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -14379,6 +14414,11 @@
     "company": "Cloudflare",
     "title": "Technical Program Manager Intern (Summer 2026)"
   },
+  "greenhouse:cloudflare:7708660": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Cloudflare",
+    "title": "People Team Intern - HR Operations & AI Innovation (Summer 2026)"
+  },
   "greenhouse:cloudflare:7712472": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Cloudflare",
@@ -14489,6 +14529,11 @@
     "company": "Cloudflare",
     "title": "Territory Solutions Engineer, SSA"
   },
+  "greenhouse:cloudflare:7735965": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Cloudflare",
+    "title": "Senior Named Account Executive, CIS Region"
+  },
   "greenhouse:cloudflare:7736431": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Cloudflare",
@@ -14519,6 +14564,11 @@
     "company": "Cloudflare",
     "title": "Systems Engineer, MAPS"
   },
+  "greenhouse:cloudflare:7743202": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Cloudflare",
+    "title": "Customer Advocacy Intern (Summer 2026)"
+  },
   "greenhouse:cloudflare:7746621": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Cloudflare",
@@ -14528,6 +14578,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Cloudflare",
     "title": "Chief of Staff, APAC Revenue (Based in Singapore)"
+  },
+  "greenhouse:cloudflare:7748727": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Cloudflare",
+    "title": "Software Engineer- Resiliency"
   },
   "greenhouse:cloudflare:7749122": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -14688,6 +14743,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Cloudflare",
     "title": "Senior Solutions Engineer - Calgary"
+  },
+  "greenhouse:cloudflare:7778816": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Cloudflare",
+    "title": "Forward Deployed Engineer"
   },
   "greenhouse:cloudflare:7778849": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -15564,6 +15624,11 @@
     "company": "Databricks",
     "title": "Staff Software Engineer - Backend"
   },
+  "greenhouse:databricks:5445641002": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Databricks",
+    "title": "Senior Software Engineer - Fullstack"
+  },
   "greenhouse:databricks:5507088002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Databricks",
@@ -16058,6 +16123,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Databricks",
     "title": "Senior Software Engineer - Search"
+  },
+  "greenhouse:databricks:7845320002": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Databricks",
+    "title": "Senior Technical Solutions Engineer (Platform)"
   },
   "greenhouse:databricks:7845334002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -16758,6 +16828,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Databricks",
     "title": "GTM Talent Sourcer (Contract)"
+  },
+  "greenhouse:databricks:8200692002": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Databricks",
+    "title": "Staff Software Engineer - Ingestion"
   },
   "greenhouse:databricks:8201686002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -18644,6 +18719,11 @@
     "company": "Databricks",
     "title": "Delivery Solutions Architect"
   },
+  "greenhouse:databricks:8442287002": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Databricks",
+    "title": "AI Enablement Lead, Talent & Leadership Development"
+  },
   "greenhouse:databricks:8442976002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Databricks",
@@ -19889,6 +19969,11 @@
     "company": "Datadog",
     "title": "Enterprise Sales Executive (Sweden) "
   },
+  "greenhouse:datadog:6009779": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Datadog",
+    "title": "Customer Success Associate"
+  },
   "greenhouse:datadog:6016967": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Datadog",
@@ -20063,6 +20148,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Datadog",
     "title": "Strategic Account Executive"
+  },
+  "greenhouse:datadog:6882229": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Datadog",
+    "title": "Technical Support Engineer 1 - 2"
   },
   "greenhouse:datadog:6883301": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -20254,6 +20344,11 @@
     "company": "Datadog",
     "title": "Enterprise Sales Engineer - Brazil"
   },
+  "greenhouse:datadog:7276497": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Datadog",
+    "title": "Manager, Mid Market Sales"
+  },
   "greenhouse:datadog:7276749": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Datadog",
@@ -20271,6 +20366,11 @@
   },
   "greenhouse:datadog:7309633": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
+    "company": "Datadog",
+    "title": "Director, Enterprise Sales - Public Sector (State, Local, Education/SLED)"
+  },
+  "greenhouse:datadog:7309775": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
     "company": "Datadog",
     "title": "Director, Enterprise Sales - Public Sector (State, Local, Education/SLED)"
   },
@@ -21319,6 +21419,11 @@
     "company": "Datadog",
     "title": "Enterprise Sales Executive"
   },
+  "greenhouse:datadog:7703553": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Datadog",
+    "title": "Field CTO (Japan)"
+  },
   "greenhouse:datadog:7704689": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Datadog",
@@ -21719,6 +21824,11 @@
     "company": "Datadog",
     "title": "Field Enablement Manager (Customer Success)"
   },
+  "greenhouse:datadog:7787715": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Datadog",
+    "title": "Manager 1, Technical Account Management - Chicago/Denver"
+  },
   "greenhouse:datadog:7789198": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Datadog",
@@ -21726,6 +21836,11 @@
   },
   "greenhouse:datadog:7790048": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
+    "company": "Datadog",
+    "title": "Customer Success Manager"
+  },
+  "greenhouse:datadog:7790098": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
     "company": "Datadog",
     "title": "Customer Success Manager"
   },
@@ -21803,6 +21918,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Datadog",
     "title": "Product Marketing Manager - Log Management"
+  },
+  "greenhouse:datadog:7804736": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Datadog",
+    "title": "Front Desk Associate - Dublin"
   },
   "greenhouse:datadog:7805001": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -24694,6 +24814,11 @@
     "company": "GitLab",
     "title": "Major Account Executive - San Francisco "
   },
+  "greenhouse:gitlab:8497108002": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "GitLab",
+    "title": "Business Development Representative - East "
+  },
   "greenhouse:gitlab:8497359002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "GitLab",
@@ -24743,6 +24868,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "GitLab",
     "title": "Customer Success Manager, EMEA"
+  },
+  "greenhouse:gitlab:8504801002": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "GitLab",
+    "title": "CX Forward Deployed Engineer "
   },
   "greenhouse:gitlab:8505529002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -27069,6 +27199,11 @@
     "company": "Lyft",
     "title": "IT Service Lead"
   },
+  "greenhouse:lyft:8481812002": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Lyft",
+    "title": "Senior Privacy Analyst"
+  },
   "greenhouse:lyft:8481872002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Lyft",
@@ -27253,6 +27388,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Lyft",
     "title": "Staff Technical Program Manager, Mergers & Acquisition"
+  },
+  "greenhouse:lyft:8509119002": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Lyft",
+    "title": "Counsel, Product & Commercial (Rideshare & Safety)"
   },
   "greenhouse:mercury:5267749004": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -27708,6 +27848,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "MongoDB",
     "title": "Enterprise Account Executive, Federal"
+  },
+  "greenhouse:mongodb:7032023": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "MongoDB",
+    "title": "Enterprise Account Executive, Growth"
   },
   "greenhouse:mongodb:7078334": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -28188,6 +28333,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "MongoDB",
     "title": "Senior Developer Advocate"
+  },
+  "greenhouse:mongodb:7523751": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "MongoDB",
+    "title": "Product Pricing & Monetization Strategy Senior Analyst"
   },
   "greenhouse:mongodb:7523797": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -29359,6 +29509,11 @@
     "company": "MongoDB",
     "title": "Senior Manager, Business Operations"
   },
+  "greenhouse:mongodb:7760222": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "MongoDB",
+    "title": "Business Operations & Strategy Associate"
+  },
   "greenhouse:mongodb:7760225": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "MongoDB",
@@ -29459,6 +29614,16 @@
     "company": "MongoDB",
     "title": "Candidate Experience Coordinator"
   },
+  "greenhouse:mongodb:7769758": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "MongoDB",
+    "title": "Program Manager"
+  },
+  "greenhouse:mongodb:7769760": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "MongoDB",
+    "title": "Program Manager"
+  },
   "greenhouse:mongodb:7771677": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "MongoDB",
@@ -29518,6 +29683,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "MongoDB",
     "title": "Senior Staff Engineer, Quote-to-Cash"
+  },
+  "greenhouse:mongodb:7779013": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "MongoDB",
+    "title": "Senior Engineer - GTM Tech"
   },
   "greenhouse:mongodb:7779026": {
     "firstSeen": "2026-04-16T14:20:28.891Z",
@@ -29628,6 +29798,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "MongoDB",
     "title": "Team Lead, Site Reliability Engineering - Storage Layer Service"
+  },
+  "greenhouse:mongodb:7819441": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "MongoDB",
+    "title": "Director, Employee Communications"
   },
   "greenhouse:netlify:4224129002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -30344,6 +30519,11 @@
     "company": "Okta",
     "title": "Staff Engineer - Fullstack"
   },
+  "greenhouse:okta:7593692": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Okta",
+    "title": "Staff Software Engineer"
+  },
   "greenhouse:okta:7595065": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Okta",
@@ -30829,6 +31009,11 @@
     "company": "Okta",
     "title": "Staff Engineer, FGA Developer Tooling"
   },
+  "greenhouse:okta:7703330": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Okta",
+    "title": "Staff Engineer, FGA Developer Tooling"
+  },
   "greenhouse:okta:7703344": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Okta",
@@ -31044,6 +31229,11 @@
     "company": "Okta",
     "title": "Senior Software Engineer, Security Engineering"
   },
+  "greenhouse:okta:7744352": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Okta",
+    "title": "Senior Software Engineer, Security Engineering"
+  },
   "greenhouse:okta:7745062": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Okta",
@@ -31234,6 +31424,16 @@
     "company": "Okta",
     "title": "Corporate Counsel, IP"
   },
+  "greenhouse:okta:7779195": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Okta",
+    "title": "Corporate Counsel, IP"
+  },
+  "greenhouse:okta:7781674": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Okta",
+    "title": "Principal Software Engineer"
+  },
   "greenhouse:okta:7782510": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Okta",
@@ -31339,6 +31539,11 @@
     "company": "Okta",
     "title": "Sr. Analyst, Sales Strategy & Operations (AMER Commercial)"
   },
+  "greenhouse:okta:7818869": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Okta",
+    "title": "Manager, Global Tradeshows & Sponsorship Strategy"
+  },
   "greenhouse:okta:7818930": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Okta",
@@ -31353,6 +31558,26 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Okta",
     "title": "Technical Support Engineer - Federal (Night Shift)"
+  },
+  "greenhouse:okta:7821587": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Okta",
+    "title": "Sr. Designer, Auth0"
+  },
+  "greenhouse:okta:7821640": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Okta",
+    "title": "Design Manager"
+  },
+  "greenhouse:okta:7821769": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Okta",
+    "title": "Senior Product Manager, Okta for AI Agents"
+  },
+  "greenhouse:okta:7821773": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Okta",
+    "title": "Senior Product Manager, Okta for AI Agents"
   },
   "greenhouse:pagerduty:5634303004": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -31774,6 +31999,11 @@
     "company": "Pinterest",
     "title": "Senior Channel Lead, Marketing Sites"
   },
+  "greenhouse:pinterest:7435596": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Pinterest",
+    "title": "Staff Data Scientist, Monetization"
+  },
   "greenhouse:pinterest:7459675": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Pinterest",
@@ -32193,6 +32423,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Pinterest",
     "title": "Sr. Staff GenAI Content & Conversational Designer, Monetization"
+  },
+  "greenhouse:pinterest:7684634": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Pinterest",
+    "title": "Staff Software Engineer, Merchants & Ads Review"
   },
   "greenhouse:pinterest:7685105": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -37579,6 +37814,11 @@
     "company": "Stripe",
     "title": "Indirect Tax Advisory Consultant"
   },
+  "greenhouse:stripe:7589402": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Stripe",
+    "title": "Commercial Counsel"
+  },
   "greenhouse:stripe:7589897": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Stripe",
@@ -39224,6 +39464,11 @@
     "company": "Twilio",
     "title": "Applications Engineer 2"
   },
+  "greenhouse:twilio:7647708": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Twilio",
+    "title": "Software Engineer"
+  },
   "greenhouse:twilio:7650625": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Twilio",
@@ -39399,6 +39644,11 @@
     "company": "Twilio",
     "title": "Strategic Account Executive 3"
   },
+  "greenhouse:twilio:7736162": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Twilio",
+    "title": "Strategic Account Executive 3"
+  },
   "greenhouse:twilio:7736718": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Twilio",
@@ -39488,6 +39738,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Twilio",
     "title": "Onboarding Operations Specialist 1"
+  },
+  "greenhouse:twilio:7765981": {
+    "firstSeen": "2026-04-16T17:51:16.497Z",
+    "company": "Twilio",
+    "title": "Strategic Account Executive 4"
   },
   "greenhouse:twilio:7767260": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
