@@ -529,6 +529,11 @@
     "company": "LangChain",
     "title": "JavaScript Engineer (Open Source Team) "
   },
+  "ashby:langchain:0a5dd30c-6da1-4095-bd96-b16f27eeb333": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "LangChain",
+    "title": "Solutions Architect (Remote)"
+  },
   "ashby:langchain:0f8d1529-fcf7-4291-9f76-d0b01c2b7614": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "LangChain",
@@ -10464,6 +10469,11 @@
     "company": "Asana",
     "title": "Senior Software Engineer, AI Teammates Experience"
   },
+  "greenhouse:asana:7793721": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "Asana",
+    "title": "Talent Acquisition Partner"
+  },
   "greenhouse:asana:7799194": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Asana",
@@ -13099,6 +13109,11 @@
     "company": "Cloudflare",
     "title": "Distributed Systems Engineer - Data Platform - Logs and Audit Logs"
   },
+  "greenhouse:cloudflare:7340474": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "Cloudflare",
+    "title": "Distributed Systems Engineer - Data Platform - Analytics and Alerts"
+  },
   "greenhouse:cloudflare:7353450": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Cloudflare",
@@ -13151,6 +13166,11 @@
   },
   "greenhouse:cloudflare:7362080": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
+    "company": "Cloudflare",
+    "title": "Product Manager Intern (Summer 2026)"
+  },
+  "greenhouse:cloudflare:7362113": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
     "company": "Cloudflare",
     "title": "Product Manager Intern (Summer 2026)"
   },
@@ -13744,6 +13764,11 @@
     "company": "Cloudflare",
     "title": "Infrastructure Services Engineer"
   },
+  "greenhouse:cloudflare:7541212": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "Cloudflare",
+    "title": "Customer Success Manager"
+  },
   "greenhouse:cloudflare:7542636": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Cloudflare",
@@ -13898,6 +13923,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Cloudflare",
     "title": "Physical Security Intern (Summer 2026)"
+  },
+  "greenhouse:cloudflare:7577205": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "Cloudflare",
+    "title": "Threat Detection and Incident Response Intern (Summer 2026)"
   },
   "greenhouse:cloudflare:7577564": {
     "firstSeen": "2026-04-16T17:51:16.497Z",
@@ -14453,6 +14483,16 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Cloudflare",
     "title": "Technical Support Engineer Intern (Summer 2026)"
+  },
+  "greenhouse:cloudflare:7726977": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "Cloudflare",
+    "title": "Technical Support Engineer Intern (Summer 2026)"
+  },
+  "greenhouse:cloudflare:7728103": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "Cloudflare",
+    "title": "Forward Deployed Engineer"
   },
   "greenhouse:cloudflare:7729606": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -16969,6 +17009,11 @@
     "company": "Databricks",
     "title": "Solutions Architect - Digital Native Business, Strategic"
   },
+  "greenhouse:databricks:8231134002": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "Databricks",
+    "title": "Strategy & Execution Manager, Professional Services"
+  },
   "greenhouse:databricks:8231231002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Databricks",
@@ -18844,6 +18889,11 @@
     "company": "Databricks",
     "title": "Sr. Forward Deployed Engineer"
   },
+  "greenhouse:databricks:8450648002": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "Databricks",
+    "title": "Sr. Solutions Engineer"
+  },
   "greenhouse:databricks:8451296002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Databricks",
@@ -19324,6 +19374,11 @@
     "company": "Databricks",
     "title": "Sr. Product Designer, Enterprise Platform"
   },
+  "greenhouse:databricks:8476064002": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "Databricks",
+    "title": "Sr. Solutions Architect"
+  },
   "greenhouse:databricks:8476403002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Databricks",
@@ -19603,6 +19658,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Databricks",
     "title": "Senior Engineering Manager, AI Runtime"
+  },
+  "greenhouse:databricks:8490649002": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "Databricks",
+    "title": "Sr. Technical Program Manager, Professional Services - Public Sector"
   },
   "greenhouse:databricks:8490858002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -22419,6 +22479,11 @@
     "company": "Discord",
     "title": "Consumer Revenue Strategy & Operations Manager "
   },
+  "greenhouse:discord:8509325002": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "Discord",
+    "title": "Engineering Manager, Social Commerce"
+  },
   "greenhouse:dropbox:6330388": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Dropbox",
@@ -22834,6 +22899,11 @@
     "company": "Dropbox",
     "title": "Senior Data Scientist, AI Products"
   },
+  "greenhouse:dropbox:7729764": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "Dropbox",
+    "title": "Senior Data Scientist, AI Products"
+  },
   "greenhouse:dropbox:7739553": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Dropbox",
@@ -22943,6 +23013,11 @@
     "firstSeen": "2026-04-16T16:05:18.083Z",
     "company": "Dropbox",
     "title": "Product Manager, GTM Systems"
+  },
+  "greenhouse:dropbox:7811605": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "Dropbox",
+    "title": "Manager, IT Support & Service Operations (Global)"
   },
   "greenhouse:druva:7679725002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -23818,6 +23893,16 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Figma",
     "title": "Business Systems Analyst"
+  },
+  "greenhouse:figma:5971689004": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "Figma",
+    "title": "Technical Quality Specialist  - Figma Weave (Tel Aviv, Israel) "
+  },
+  "greenhouse:figma:5971708004": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "Figma",
+    "title": "Technical Quality Specialist - Figma Weave (London, United Kingdom) "
   },
   "greenhouse:fireworksai:4000239009": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -27713,6 +27798,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Mercury",
     "title": "Senior Recruiter - Sales"
+  },
+  "greenhouse:mercury:5972760004": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "Mercury",
+    "title": "Senior Credit Operations Analyst - Loan Operations"
   },
   "greenhouse:mongodb:5573926": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -32024,6 +32114,11 @@
     "company": "Pinterest",
     "title": "Tax Analyst II"
   },
+  "greenhouse:pinterest:7494562": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "Pinterest",
+    "title": "Technical Accounting, Manager I"
+  },
   "greenhouse:pinterest:7494576": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Pinterest",
@@ -33128,6 +33223,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Postman",
     "title": "Senior Digital Marketing Manager"
+  },
+  "greenhouse:postman:7699284003": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "Postman",
+    "title": "Deal Operations Analyst"
   },
   "greenhouse:postman:7699288003": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -34709,6 +34809,11 @@
     "company": "Robinhood",
     "title": "Senior Pentester"
   },
+  "greenhouse:robinhood:7821803": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "Robinhood",
+    "title": "Staff Product Manager, Cortex"
+  },
   "greenhouse:rubrik:2146030": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Rubrik",
@@ -34939,6 +35044,11 @@
     "company": "Rubrik",
     "title": " Sr Accountant, Corporate Accounting "
   },
+  "greenhouse:rubrik:7439514": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "Rubrik",
+    "title": "Production Engineer/Site Reliability Engineer (Shift Basis)"
+  },
   "greenhouse:rubrik:7439521": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Rubrik",
@@ -34983,6 +35093,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Rubrik",
     "title": "Senior User Researcher II"
+  },
+  "greenhouse:rubrik:7462898": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "Rubrik",
+    "title": "Sales Engineer, Cloud Product Line Specialist"
   },
   "greenhouse:rubrik:7462910": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -35528,6 +35643,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Rubrik",
     "title": "Global Alliances Director"
+  },
+  "greenhouse:rubrik:7782340": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "Rubrik",
+    "title": " Director of Field Enablement,  North America"
   },
   "greenhouse:rubrik:7783894": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -36678,6 +36798,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Stripe",
     "title": "Account Executive, Enterprise (Sao Paulo, Brazil)"
+  },
+  "greenhouse:stripe:7115730": {
+    "firstSeen": "2026-04-16T19:10:42.234Z",
+    "company": "Stripe",
+    "title": "Billing Solutions Architect"
   },
   "greenhouse:stripe:7118945": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
