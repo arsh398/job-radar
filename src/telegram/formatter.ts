@@ -7,8 +7,6 @@ const VERDICT_EMOJI: Record<string, string> = {
   skip: "🔴",
 };
 
-// Telegram MarkdownV2 reserved characters that need escaping inside text.
-// (Inside a code block, only ` and \ need escaping.)
 const MDV2_ESCAPE_RE = /[_*\[\]()~`>#+\-=|{}.!]/g;
 
 function escMd(s: string): string {
@@ -40,98 +38,105 @@ function yoeLabel(job: FilteredJob): string {
   return max != null ? `${min}-${max} yrs` : `${min}+ yrs`;
 }
 
+const MAX_CODE_BLOCK = 3500;
+
 function codeBlock(content: string): string {
-  return "```\n" + escCode(content.trim()) + "\n```";
+  let trimmed = content.trim();
+  if (trimmed.length > MAX_CODE_BLOCK) {
+    trimmed = trimmed.slice(0, MAX_CODE_BLOCK) + "\n…(truncated)";
+  }
+  return "```\n" + escCode(trimmed) + "\n```";
 }
 
+// Each section becomes its own short Telegram message so we never split a
+// code block across the 4000-char API limit.
 export type FormattedAlert = {
   header: string;
-  resumeEdits: string;
-  referral: string;
-  coverNote: string;
+  followUps: string[];
 };
 
-export function formatJobMessages(alert: JobAlert): FormattedAlert | null {
+export function formatJobMessages(alert: JobAlert): FormattedAlert {
   const { job, llm } = alert;
   const verdict = llm.ok ? llm.data.verdict : "stretch";
   const emoji = VERDICT_EMOJI[verdict] ?? "⚪";
 
-  if (!llm.ok) {
-    const header = [
-      `${emoji} *${escMd(job.company)}* — ${escMd(job.title)}`,
-      `📍 ${escMd(job.location || "location unspecified")} · ${escMd(yoeLabel(job))} · ${escMd(postedAgo(job.postedAt))}`,
-      `🔗 ${escMd(job.url)}`,
-      ``,
-      `⚠️ LLM unavailable: ${escMd(llm.error.slice(0, 160))}`,
-    ].join("\n");
-    return { header, resumeEdits: "", referral: "", coverNote: "" };
-  }
-
-  const d: TailoringResponse = llm.data;
-
-  // Skip alerts: header only with one-line reason.
-  if (verdict === "skip") {
-    const header = [
-      `${emoji} *${escMd(job.company)}* — ${escMd(job.title)}`,
-      `📍 ${escMd(job.location || "location unspecified")} · ${escMd(yoeLabel(job))} · ${escMd(postedAgo(job.postedAt))}`,
-      `🔗 ${escMd(job.url)}`,
-      ``,
-      `Skip${d.missing_keywords.length ? `: missing ${escMd(d.missing_keywords.slice(0, 4).join(", "))}` : ""}`,
-    ].join("\n");
-    return { header, resumeEdits: "", referral: "", coverNote: "" };
-  }
-
-  const headerLines = [
+  const headerBase = [
     `${emoji} *${escMd(job.company)}* — ${escMd(job.title)}`,
     `📍 ${escMd(job.location || "location unspecified")} · ${escMd(yoeLabel(job))} · ${escMd(postedAgo(job.postedAt))}`,
     `🔗 ${escMd(job.url)}`,
   ];
+
+  if (!llm.ok) {
+    return {
+      header: [
+        ...headerBase,
+        ``,
+        `⚠️ LLM unavailable: ${escMd(llm.error.slice(0, 160))}`,
+      ].join("\n"),
+      followUps: [],
+    };
+  }
+
+  const d: TailoringResponse = llm.data;
+
+  if (verdict === "skip") {
+    const reason = d.missing_keywords.length
+      ? `Skip: missing ${escMd(d.missing_keywords.slice(0, 4).join(", "))}`
+      : `Skip`;
+    return {
+      header: [...headerBase, ``, reason].join("\n"),
+      followUps: [],
+    };
+  }
+
   if (d.missing_keywords.length) {
-    headerLines.push("");
-    headerLines.push(
+    headerBase.push("");
+    headerBase.push(
       `❌ *Missing:* ${escMd(d.missing_keywords.slice(0, 6).join(", "))}`
     );
   }
-  const header = headerLines.join("\n");
 
-  // Resume edits: each section as its own labeled code block.
-  const editLines: string[] = ["📝 *RESUME EDITS*"];
+  const followUps: string[] = [];
 
   if (d.resume_edits.summary) {
-    editLines.push("");
-    editLines.push("*Summary:*");
-    editLines.push(codeBlock(d.resume_edits.summary));
+    followUps.push(
+      ["📝 *Summary*", codeBlock(d.resume_edits.summary)].join("\n")
+    );
   }
 
   if (d.resume_edits.skills) {
-    editLines.push("");
-    editLines.push("*Skills:*");
-    editLines.push(codeBlock(d.resume_edits.skills));
+    followUps.push(
+      ["🛠 *Skills*", codeBlock(d.resume_edits.skills)].join("\n")
+    );
   }
 
   for (const exp of d.resume_edits.experience) {
     if (!exp.bullets.length) continue;
-    editLines.push("");
-    editLines.push(`*${escMd(exp.role)}:*`);
-    editLines.push(codeBlock(exp.bullets.map((b) => `• ${b}`).join("\n")));
-  }
-
-  if (d.resume_edits.projects.length) {
-    editLines.push("");
-    editLines.push("*Projects:*");
-    editLines.push(
-      codeBlock(
-        d.resume_edits.projects.map((p) => `${p.name} — ${p.description}`).join("\n\n")
-      )
+    followUps.push(
+      [
+        `💼 *${escMd(exp.role)}*`,
+        codeBlock(exp.bullets.map((b) => `• ${b}`).join("\n")),
+      ].join("\n")
     );
   }
 
-  const resumeEdits = editLines.join("\n");
+  if (d.resume_edits.projects.length) {
+    followUps.push(
+      [
+        "🧪 *Projects*",
+        codeBlock(
+          d.resume_edits.projects
+            .map((p) => `${p.name} — ${p.description}`)
+            .join("\n\n")
+        ),
+      ].join("\n")
+    );
+  }
 
-  const referral = ["💬 *REFERRAL*", codeBlock(d.referral_draft)].join("\n");
-  const coverNote = ["✉️ *COVER NOTE*", codeBlock(d.cover_note)].join("\n");
+  followUps.push(["💬 *Referral*", codeBlock(d.referral_draft)].join("\n"));
+  followUps.push(["✉️ *Cover note*", codeBlock(d.cover_note)].join("\n"));
 
-  return { header, resumeEdits, referral, coverNote };
+  return { header: headerBase.join("\n"), followUps };
 }
 
 export function formatSourceBroken(sources: string[]): string {

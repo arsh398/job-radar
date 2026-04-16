@@ -141,21 +141,11 @@ async function main(): Promise<void> {
     if (DRY_RUN) {
       console.log("\n========= ALERT PREVIEW =========");
       const msgs = formatJobMessages(alert);
-      if (msgs) {
-        console.log("--- HEADER ---");
-        console.log(msgs.header);
-        if (msgs.resumeEdits) {
-          console.log("--- RESUME EDITS ---");
-          console.log(msgs.resumeEdits);
-        }
-        if (msgs.referral) {
-          console.log("--- REFERRAL ---");
-          console.log(msgs.referral);
-        }
-        if (msgs.coverNote) {
-          console.log("--- COVER NOTE ---");
-          console.log(msgs.coverNote);
-        }
+      console.log("--- HEADER ---");
+      console.log(msgs.header);
+      for (let i = 0; i < msgs.followUps.length; i++) {
+        console.log(`--- FOLLOWUP ${i + 1} ---`);
+        console.log(msgs.followUps[i]);
       }
       console.log("=================================\n");
       sentCount++;
