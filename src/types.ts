@@ -55,40 +55,55 @@ export type SourceHealth = {
 
 export type SourceHealthMap = Record<string, SourceHealth>;
 
-export const ResumeEditsSchema = z.object({
-  summary: z.string(),
-  skills: z.string(),
-  experience: z.array(
-    z.object({
-      role: z.string(),
-      bullets: z.array(z.string()),
-    })
-  ),
-  projects: z
-    .array(
-      z.object({
-        name: z.string(),
-        description: z.string(),
-      })
-    )
-    .default([]),
+// Diff-based tailoring plan: LLM decides which existing bullets to keep, hide,
+// or rephrase. It cannot invent new bullets. Every rephrase is validated
+// against the source bullet + JD vocabulary. This kills hallucination at the
+// schema level, not after-the-fact.
+export const BulletActionSchema = z.object({
+  id: z.string(),
+  keep: z.boolean(),
+  // Lower = earlier in rendered output. 0..100. Only used when keep=true.
+  priority: z.number().min(0).max(100).default(50),
+  // Optional rewrite; if present it replaces the bullet text. Must pass
+  // token-level validation against source bullet + JD vocab.
+  new_text: z.string().optional(),
 });
 
-export const TailoringResponseSchema = z.object({
+export const TailoringPlanSchema = z.object({
   verdict: z.enum(["apply", "apply_with_referral", "stretch", "skip"]),
-  missing_keywords: z.array(z.string()).max(8),
-  resume_edits: ResumeEditsSchema,
-  referral_draft: z.string(),
-  cover_note: z.string(),
+  // Why we're recommending this verdict — one line, max ~160 chars.
+  verdict_reason: z.string().max(300).default(""),
+  // JD keywords that are genuine dealbreakers AND missing from the resume.
+  missing_keywords: z.array(z.string()).max(8).default([]),
+  // Rewrite of the summary. Validated against the whole resume + JD.
+  new_summary: z.string().nullable().default(null),
+  // Plan for bullets across achievements + experience + projects.
+  bullet_plan: z.array(BulletActionSchema).default([]),
+  // Skills to emphasize — existing skill items only, reordered first.
+  // Each string must match an item already in resume.skills.
+  skill_emphasis: z.array(z.string()).max(20).default([]),
+  referral_draft: z.string().default(""),
+  cover_note: z.string().default(""),
 });
 
-export type TailoringResponse = z.infer<typeof TailoringResponseSchema>;
+export type BulletAction = z.infer<typeof BulletActionSchema>;
+export type TailoringPlan = z.infer<typeof TailoringPlanSchema>;
 
 export type LlmOutput =
-  | { ok: true; kind: "full"; data: TailoringResponse; model: string }
+  | { ok: true; kind: "plan"; data: TailoringPlan; model: string }
   | { ok: false; error: string };
+
+// ATS keyword-match signal — computed deterministically, no LLM.
+export type AtsMatch = {
+  score: number; // 0..1
+  matched: string[];
+  missing: string[];
+};
 
 export type JobAlert = {
   job: FilteredJob;
   llm: LlmOutput;
+  atsMatch: AtsMatch;
+  // Generated tailored resume PDF, if successful.
+  pdf?: { buffer: Uint8Array; filename: string };
 };

@@ -1,22 +1,21 @@
 import type { FilteredJob, LlmOutput } from "../types.ts";
-import { TailoringResponseSchema } from "../types.ts";
+import { TailoringPlanSchema } from "../types.ts";
+import type { ParsedResume } from "../resume/parser.ts";
 import { SYSTEM_PROMPT, buildUserPrompt } from "./prompt.ts";
 
-// OpenRouter free fallback. DeepSeek free was removed from OpenRouter's free
-// tier; Llama 3.3 70B is the strongest reliable free model now (verified 2026-04).
 const FALLBACK_MODEL = "meta-llama/llama-3.3-70b-instruct:free";
 const OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions";
 
 const JSON_REMINDER = `\n\nRESPOND ONLY WITH A SINGLE JSON OBJECT matching the required schema. No markdown fences, no prose before or after.`;
 
 export async function callOpenRouter(
-  resumeMd: string,
+  resume: ParsedResume,
   job: FilteredJob
 ): Promise<LlmOutput> {
   const apiKey = process.env["OPENROUTER_API_KEY"];
   if (!apiKey) return { ok: false, error: "OPENROUTER_API_KEY missing" };
 
-  const userPrompt = buildUserPrompt(resumeMd, job) + JSON_REMINDER;
+  const userPrompt = buildUserPrompt(resume, job) + JSON_REMINDER;
 
   try {
     const controller = new AbortController();
@@ -72,7 +71,7 @@ export async function callOpenRouter(
       parsed = JSON.parse(match[0]);
     }
 
-    const result = TailoringResponseSchema.safeParse(parsed);
+    const result = TailoringPlanSchema.safeParse(parsed);
     if (!result.success) {
       return {
         ok: false,
@@ -82,17 +81,18 @@ export async function callOpenRouter(
 
     return {
       ok: true,
-      kind: "full",
+      kind: "plan",
       data: result.data,
       model: FALLBACK_MODEL,
     };
   } catch (err) {
     return {
       ok: false,
-      error: `OpenRouter error: ${err instanceof Error ? err.message : String(err)}`,
+      error: `OpenRouter error: ${
+        err instanceof Error ? err.message : String(err)
+      }`,
     };
   }
 }
 
-// Backwards-compat alias (file name kept for now).
 export const callDeepSeek = callOpenRouter;

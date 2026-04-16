@@ -6,3 +6,6 @@ node_modules/
 dist/
 .tsbuildinfo
 .claude/
+test-resume.pdf
+test-tailored.pdf
+test-tailored.md

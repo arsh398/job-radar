@@ -1,95 +1,49 @@
-import type { TailoringResponse } from "../types.ts";
+import type { ParsedResume } from "../resume/parser.ts";
+import { allBulletIds } from "../resume/parser.ts";
+import type { TailoringPlan } from "../types.ts";
 
-export type ValidationResult = {
-  cleaned: TailoringResponse;
+export type PlanValidationResult = {
+  cleaned: TailoringPlan;
   warnings: string[];
 };
 
-function containsCaseInsensitive(haystack: string, needle: string): boolean {
-  if (!needle) return false;
-  return haystack.toLowerCase().includes(needle.toLowerCase());
-}
-
-function extractNumbers(s: string): string[] {
-  return (s.match(/\b\d[\d,.]*\b/g) ?? []).map((n) => n.replace(/[,]/g, ""));
-}
-
-function isGenericNumber(n: string): boolean {
-  const val = parseFloat(n);
-  if (!Number.isFinite(val)) return true;
-  // Allow tiny standalone digits (1-10) since they're often part of language
-  // ("3 sentences", "2 years"), not invented metrics.
-  if (val >= 0 && val <= 10) return true;
-  return false;
-}
-
-export function validateTailoring(
-  response: TailoringResponse,
-  resumeMd: string
-): ValidationResult {
+// Lightweight plan-shape validation: drop actions that reference unknown IDs,
+// and strip skill_emphasis entries that aren't actually in the resume. The
+// heavy token-level validation lives in resume/apply.ts (where we also have
+// access to the JD vocabulary).
+export function validatePlan(
+  plan: TailoringPlan,
+  resume: ParsedResume
+): PlanValidationResult {
   const warnings: string[] = [];
-  const resume = resumeMd.toLowerCase();
+  const knownIds = allBulletIds(resume);
 
-  // Strip skills not present in resume.
-  const skillsStr = response.resume_edits.skills;
-  const skillTokens = skillsStr
-    .split(/[,|•·\n]/)
-    .map((s) => s.trim())
-    .filter((s) => s.length > 0 && s.length < 80);
-
-  const filteredSkills: string[] = [];
-  for (const s of skillTokens) {
-    if (containsCaseInsensitive(resume, s)) {
-      filteredSkills.push(s);
-    } else {
-      warnings.push(`Skill not in resume, dropped: ${s}`);
-    }
-  }
-
-  // Drop bullets that introduce numbers not present in the resume.
-  const resumeNumbers = new Set(extractNumbers(resumeMd));
-  const cleanedExperience = response.resume_edits.experience.map((exp) => {
-    const cleanedBullets: string[] = [];
-    for (const bullet of exp.bullets) {
-      const bulletNumbers = extractNumbers(bullet);
-      const inventedNumbers = bulletNumbers.filter(
-        (n) => !resumeNumbers.has(n) && !isGenericNumber(n)
-      );
-      if (inventedNumbers.length > 0) {
-        warnings.push(
-          `Bullet dropped (invented numbers ${inventedNumbers.join(", ")}): ${bullet.slice(0, 80)}`
-        );
-        continue;
-      }
-      cleanedBullets.push(bullet);
-    }
-    return { role: exp.role, bullets: cleanedBullets };
-  });
-
-  // Drop projects with invented numbers in description.
-  const cleanedProjects = response.resume_edits.projects.filter((p) => {
-    const nums = extractNumbers(p.description);
-    const invented = nums.filter(
-      (n) => !resumeNumbers.has(n) && !isGenericNumber(n)
-    );
-    if (invented.length > 0) {
-      warnings.push(
-        `Project dropped (invented numbers ${invented.join(", ")}): ${p.name}`
-      );
+  const cleanedBulletPlan = plan.bullet_plan.filter((a) => {
+    if (!knownIds.has(a.id)) {
+      warnings.push(`plan dropped unknown bullet id: ${a.id}`);
       return false;
     }
     return true;
   });
 
-  const cleaned: TailoringResponse = {
-    ...response,
-    resume_edits: {
-      ...response.resume_edits,
-      skills: filteredSkills.join(", "),
-      experience: cleanedExperience,
-      projects: cleanedProjects,
-    },
-  };
+  const knownSkills = new Set<string>();
+  for (const c of resume.skills) {
+    for (const item of c.items) knownSkills.add(item.toLowerCase());
+  }
+  const cleanedEmphasis = plan.skill_emphasis.filter((s) => {
+    if (!knownSkills.has(s.trim().toLowerCase())) {
+      warnings.push(`skill_emphasis dropped unknown skill: ${s}`);
+      return false;
+    }
+    return true;
+  });
 
-  return { cleaned, warnings };
+  return {
+    cleaned: {
+      ...plan,
+      bullet_plan: cleanedBulletPlan,
+      skill_emphasis: cleanedEmphasis,
+    },
+    warnings,
+  };
 }

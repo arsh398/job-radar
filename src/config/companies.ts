@@ -16,13 +16,11 @@ export type CompanyConfig = {
   notes?: string;
 };
 
-// All slugs below verified against live APIs (HTTP 200) on 2026-04-16.
-// Companies not listed here either:
-//   (a) moved to a custom portal (need custom_scraper) — see comments below
-//   (b) use Workday (need workday adapter — pending)
-//   (c) use a different ATS we haven't added yet
+// All live slugs below verified against their ATS API (HTTP 200) on
+// 2026-04-16. When adding: curl the ATS endpoint and confirm the slug
+// resolves before committing.
 export const COMPANIES: CompanyConfig[] = [
-  // === Greenhouse (verified working) ===
+  // === Greenhouse ===
   { name: "Stripe", ats: "greenhouse", slug: "stripe" },
   { name: "Airbnb", ats: "greenhouse", slug: "airbnb" },
   { name: "Coinbase", ats: "greenhouse", slug: "coinbase" },
@@ -61,76 +59,65 @@ export const COMPANIES: CompanyConfig[] = [
   { name: "Druva", ats: "greenhouse", slug: "druva" },
   { name: "Celonis", ats: "greenhouse", slug: "celonis" },
   { name: "Mercury", ats: "greenhouse", slug: "mercury" },
-  { name: "Ramp", ats: "greenhouse", slug: "rampnetwork" },
   { name: "Glean", ats: "greenhouse", slug: "gleanwork" },
+  { name: "DeepMind", ats: "greenhouse", slug: "deepmind" },
+  { name: "Neuralink", ats: "greenhouse", slug: "neuralink" },
+  { name: "Elastic", ats: "greenhouse", slug: "elastic" },
+  { name: "Mixpanel", ats: "greenhouse", slug: "mixpanel" },
+  { name: "Groww", ats: "greenhouse", slug: "groww" },
 
-  // === Lever (verified working) ===
+  // === Lever ===
   { name: "CRED", ats: "lever", slug: "cred" },
+  { name: "Freshworks", ats: "lever", slug: "freshworks" },
+  { name: "Paytm", ats: "lever", slug: "paytm" },
+  { name: "Meesho", ats: "lever", slug: "meesho" },
+  { name: "Upstox", ats: "lever", slug: "upstox" },
+  { name: "Mistral", ats: "lever", slug: "mistral" },
+  { name: "StackBlitz", ats: "lever", slug: "stackblitz" },
 
-  // === Ashby (verified working) ===
+  // === Ashby ===
   { name: "Perplexity", ats: "ashby", slug: "perplexity" },
   { name: "Linear", ats: "ashby", slug: "linear" },
   { name: "Vercel", ats: "ashby", slug: "vercel" },
   { name: "Retool", ats: "ashby", slug: "retool" },
   { name: "Replit", ats: "ashby", slug: "replit" },
   { name: "Statsig", ats: "ashby", slug: "statsig" },
-  { name: "OpenAI", ats: "ashby", slug: "openai" },
   { name: "Character AI", ats: "ashby", slug: "character" },
   { name: "LangChain", ats: "ashby", slug: "langchain" },
   { name: "Pinecone", ats: "ashby", slug: "pinecone" },
   { name: "Anyscale", ats: "ashby", slug: "anyscale" },
   { name: "Runway", ats: "ashby", slug: "runway" },
   { name: "Cursor", ats: "ashby", slug: "cursor" },
+  { name: "Notion", ats: "ashby", slug: "notion" },
+  { name: "Supabase", ats: "ashby", slug: "supabase" },
+  { name: "Docker", ats: "ashby", slug: "docker" },
+  { name: "Plaid", ats: "ashby", slug: "plaid" },
+  { name: "Confluent", ats: "ashby", slug: "confluent" },
+  { name: "Zapier", ats: "ashby", slug: "zapier" },
+  { name: "Sentry", ats: "ashby", slug: "sentry" },
+  { name: "Ramp", ats: "ashby", slug: "ramp" },
+  { name: "Zip", ats: "ashby", slug: "zip" },
+  { name: "Braintrust", ats: "ashby", slug: "braintrust" },
+  { name: "Poolside", ats: "ashby", slug: "poolside" },
+  { name: "Decagon", ats: "ashby", slug: "decagon" },
+  { name: "Contextual AI", ats: "ashby", slug: "contextual" },
+  { name: "ElevenLabs", ats: "ashby", slug: "elevenlabs" },
+  { name: "Baseten", ats: "ashby", slug: "baseten" },
+  { name: "Nous Research", ats: "ashby", slug: "nous" },
+  { name: "Bolt", ats: "ashby", slug: "bolt" },
+  { name: "Turbopuffer", ats: "ashby", slug: "turbopuffer" },
+  { name: "Sarvam AI", ats: "ashby", slug: "sarvam" },
 
-  // === Workday tenants (adapter not yet built) ===
-  { name: "Adobe", ats: "workday", slug: "adobe", tenant: "adobe" },
-  { name: "Oracle", ats: "workday", slug: "oracle", tenant: "oracle" },
-  { name: "Salesforce", ats: "workday", slug: "salesforce", tenant: "salesforce" },
-  { name: "Walmart", ats: "workday", slug: "walmart", tenant: "walmart" },
-  { name: "Nvidia", ats: "workday", slug: "nvidia", tenant: "nvidia" },
-  { name: "Qualcomm", ats: "workday", slug: "qualcomm", tenant: "qualcomm" },
-  { name: "Mastercard", ats: "workday", slug: "mastercard", tenant: "mastercard" },
-  { name: "Visa", ats: "workday", slug: "visa", tenant: "visa" },
-  { name: "PayPal", ats: "workday", slug: "paypal", tenant: "paypal" },
-  { name: "Block", ats: "workday", slug: "block", tenant: "square" },
-  { name: "Cisco", ats: "workday", slug: "cisco", tenant: "cisco" },
-  { name: "SAP", ats: "workday", slug: "sap", tenant: "sap" },
-  { name: "Intel", ats: "workday", slug: "intel", tenant: "intel" },
-  { name: "Dell", ats: "workday", slug: "dell", tenant: "dell" },
-
-  // === Custom JSON APIs (per-company adapters not yet built) ===
-  { name: "Amazon", ats: "custom_json", slug: "amazon" },
-  { name: "Google", ats: "custom_json", slug: "google" },
-  { name: "Microsoft", ats: "custom_json", slug: "microsoft" },
-  { name: "Apple", ats: "custom_json", slug: "apple" },
-  { name: "Uber", ats: "custom_json", slug: "uber" },
-  { name: "IBM", ats: "custom_json", slug: "ibm" },
-  { name: "ServiceNow", ats: "custom_json", slug: "servicenow" },
-  { name: "Samsung R&D", ats: "custom_json", slug: "samsung_rd" },
-
-  // === Indian custom portals (per-company scrapers not yet built) ===
-  { name: "Flipkart", ats: "custom_scraper", slug: "flipkart" },
-  { name: "Myntra", ats: "custom_scraper", slug: "myntra" },
-  { name: "Swiggy", ats: "custom_scraper", slug: "swiggy" },
-  { name: "Zomato", ats: "custom_scraper", slug: "zomato" },
-  { name: "Paytm", ats: "custom_scraper", slug: "paytm" },
-  { name: "PhonePe", ats: "custom_scraper", slug: "phonepe" },
-  { name: "Juspay", ats: "custom_scraper", slug: "juspay" },
-  { name: "Meesho", ats: "custom_scraper", slug: "meesho" },
-  { name: "Zerodha", ats: "custom_scraper", slug: "zerodha" },
-  { name: "Ola", ats: "custom_scraper", slug: "ola" },
-  { name: "Unacademy", ats: "custom_scraper", slug: "unacademy" },
-  { name: "Sarvam AI", ats: "custom_scraper", slug: "sarvam" },
-  { name: "Krutrim", ats: "custom_scraper", slug: "krutrim" },
-  { name: "Ola Krutrim", ats: "custom_scraper", slug: "ola_krutrim" },
-
-  // === Pending — moved off public ATS or need investigation ===
-  // Notion, Atlassian, Snowflake, HashiCorp, DoorDash, Plaid, Rippling, Confluent,
-  // Shopify, 1Password, Canva, Miro, Zapier, CrowdStrike, Sentry, Supabase,
-  // Hugging Face, Docker, Cohere, Mistral, Weights & Biases, ElevenLabs, Harvey,
-  // Writer, UiPath, Nutanix, Wise, Harness, Coda, Elastic, Mixpanel, BrowserStack,
-  // Groww, Freshworks, Zepto, Dream11, MPL, Razorpay
-  // → most likely on Workday (build workday adapter) or own portal (custom_scraper)
+  // === Pending — need adapter or slug hunt ===
+  // Amazon, Google, Microsoft, Apple, Meta, Uber, IBM — large enterprises,
+  //   likely custom_json or Workday.
+  // Atlassian, Snowflake, HashiCorp, DoorDash, Rippling, Shopify — moved
+  //   off public ATS, need custom_scraper.
+  // Razorpay, Zepto, Dream11, MPL, Flipkart, Myntra, Swiggy, Zomato,
+  //   PhonePe, Juspay, Zerodha, Ola, Unacademy, Krutrim — Indian portals,
+  //   need custom_scraper per-company.
+  // Adobe, Oracle, Salesforce, Nvidia, Qualcomm, Mastercard, Visa, PayPal,
+  //   Cisco, SAP, Intel, Dell — Workday tenants, need Workday adapter.
 ];
 
 export const BY_ATS = {

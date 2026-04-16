@@ -1,4 +1,4 @@
-import type { JobAlert, FilteredJob, TailoringResponse } from "../types.ts";
+import type { FilteredJob, JobAlert, TailoringPlan, AtsMatch } from "../types.ts";
 
 const VERDICT_EMOJI: Record<string, string> = {
   apply: "🟢",
@@ -38,118 +38,101 @@ function yoeLabel(job: FilteredJob): string | null {
   return max != null ? `${min}-${max} yrs` : `${min}+ yrs`;
 }
 
+function atsLabel(m: AtsMatch): string {
+  const pct = Math.round(m.score * 100);
+  return `${pct}% ATS`;
+}
+
 const MAX_CODE_BLOCK = 3500;
 
 function codeBlock(content: string): string {
-  let trimmed = content.trim();
+  let trimmed = (content ?? "").trim();
+  if (!trimmed) return "";
   if (trimmed.length > MAX_CODE_BLOCK) {
     trimmed = trimmed.slice(0, MAX_CODE_BLOCK) + "\n…(truncated)";
   }
   return "```\n" + escCode(trimmed) + "\n```";
 }
 
-// Each section becomes its own short Telegram message so we never split a
-// code block across the 4000-char API limit.
-export type FormattedAlert = {
-  header: string;
-  followUps: string[];
-};
-
-export function formatJobMessages(alert: JobAlert): FormattedAlert {
-  const { job, llm } = alert;
-  const verdict = llm.ok ? llm.data.verdict : "stretch";
-  const emoji = VERDICT_EMOJI[verdict] ?? "⚪";
-
+// Early header — sent BEFORE the LLM runs so Mohammed can click through to
+// the JD within seconds of detection, without waiting for tailoring.
+export function formatEarlyHeader(job: FilteredJob, atsMatch: AtsMatch): string {
   const yoe = yoeLabel(job);
   const metaParts = [
     job.location || "location unspecified",
     ...(yoe ? [yoe] : []),
+    atsLabel(atsMatch),
     postedAgo(job.postedAt),
   ];
-  const headerBase = [
-    `${emoji} *${escMd(job.company)}* — ${escMd(job.title)}`,
+  return [
+    `🆕 *${escMd(job.company)}* — ${escMd(job.title)}`,
     `📍 ${metaParts.map(escMd).join(" · ")}`,
     `🔗 ${escMd(job.url)}`,
-  ];
+  ].join("\n");
+}
+
+// Enrichment follow-up(s) — sent AFTER the LLM completes, threaded under the
+// early header. Returns an array so multiple short messages can stack
+// without exceeding the 4000-char limit.
+export function formatEnrichment(alert: JobAlert): string[] {
+  const { llm, atsMatch } = alert;
+  const out: string[] = [];
 
   if (!llm.ok) {
-    return {
-      header: [
-        ...headerBase,
-        ``,
-        `⚠️ LLM unavailable: ${escMd(llm.error.slice(0, 160))}`,
-      ].join("\n"),
-      followUps: [],
-    };
+    out.push(`⚠️ LLM unavailable: ${escMd(llm.error.slice(0, 200))}`);
+    if (atsMatch.missing.length) {
+      out.push(
+        `❌ *Missing vs JD:* ${escMd(atsMatch.missing.slice(0, 8).join(", "))}`
+      );
+    }
+    return out;
   }
 
-  const d: TailoringResponse = llm.data;
+  const plan = llm.data;
+  const emoji = VERDICT_EMOJI[plan.verdict] ?? "⚪";
+  const verdictLine = `${emoji} *${escMd(plan.verdict)}*${
+    plan.verdict_reason ? ` — ${escMd(plan.verdict_reason)}` : ""
+  }`;
+  const lines: string[] = [verdictLine];
 
-  if (verdict === "skip") {
-    const reason = d.missing_keywords.length
-      ? `Skip: missing ${escMd(d.missing_keywords.slice(0, 4).join(", "))}`
-      : `Skip`;
-    return {
-      header: [...headerBase, ``, reason].join("\n"),
-      followUps: [],
-    };
-  }
-
-  if (d.missing_keywords.length) {
-    headerBase.push("");
-    headerBase.push(
-      `❌ *Missing:* ${escMd(d.missing_keywords.slice(0, 6).join(", "))}`
+  if (plan.missing_keywords.length) {
+    lines.push(
+      `❌ *LLM missing:* ${escMd(plan.missing_keywords.slice(0, 6).join(", "))}`
     );
   }
-
-  const followUps: string[] = [];
-
-  if (d.resume_edits.summary) {
-    followUps.push(
-      ["📝 *Summary*", codeBlock(d.resume_edits.summary)].join("\n")
+  if (atsMatch.missing.length) {
+    lines.push(
+      `🏷 *ATS gaps:* ${escMd(atsMatch.missing.slice(0, 8).join(", "))}`
     );
   }
+  out.push(lines.join("\n"));
 
-  if (d.resume_edits.skills) {
-    followUps.push(
-      ["🛠 *Skills*", codeBlock(d.resume_edits.skills)].join("\n")
-    );
+  if (plan.verdict === "skip") {
+    return out;
   }
 
-  for (const exp of d.resume_edits.experience) {
-    if (!exp.bullets.length) continue;
-    followUps.push(
-      [
-        `💼 *${escMd(exp.role)}*`,
-        codeBlock(exp.bullets.map((b) => `• ${b}`).join("\n")),
-      ].join("\n")
-    );
+  const referral = plan.referral_draft?.trim();
+  if (referral) {
+    out.push(`💬 *Referral DM*\n${codeBlock(referral)}`);
+  }
+  const cover = plan.cover_note?.trim();
+  if (cover) {
+    out.push(`✉️ *Cover note*\n${codeBlock(cover)}`);
   }
 
-  if (d.resume_edits.projects.length) {
-    followUps.push(
-      [
-        "🧪 *Projects*",
-        codeBlock(
-          d.resume_edits.projects
-            .map((p) => `${p.name} — ${p.description}`)
-            .join("\n\n")
-        ),
-      ].join("\n")
-    );
-  }
+  return out;
+}
 
-  followUps.push(["💬 *Referral*", codeBlock(d.referral_draft)].join("\n"));
-  followUps.push(["✉️ *Cover note*", codeBlock(d.cover_note)].join("\n"));
-
-  return { header: headerBase.join("\n"), followUps };
+export function formatPdfCaption(job: FilteredJob, plan: TailoringPlan | null): string {
+  const verdict = plan ? VERDICT_EMOJI[plan.verdict] ?? "⚪" : "📄";
+  const verdictText = plan ? plan.verdict : "resume";
+  const head = `${verdict} ${verdictText} — ${job.company}: ${job.title}`;
+  return head.slice(0, 1000);
 }
 
 export function formatSourceBroken(sources: string[]): string {
   const lines = ["⚠️ *Source\\(s\\) broken or silent for 48h\\+:*", ""];
-  for (const s of sources) {
-    lines.push(`• ${escMd(s)}`);
-  }
+  for (const s of sources) lines.push(`• ${escMd(s)}`);
   lines.push("");
   lines.push("Check GitHub Actions logs\\.");
   return lines.join("\n");

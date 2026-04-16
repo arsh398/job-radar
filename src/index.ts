@@ -17,11 +17,15 @@ import {
 } from "./storage/health.ts";
 import { tailorForJob } from "./llm/index.ts";
 import {
-  sendJobAlert,
+  sendEarlyPing,
+  sendEnrichedFollowUp,
   sendBrokenSourcesAlert,
-  formatJobMessages,
 } from "./telegram/index.ts";
-import type { Job, JobAlert, FilteredJob, LlmOutput } from "./types.ts";
+import { parseResume } from "./resume/parser.ts";
+import { applyPlan } from "./resume/apply.ts";
+import { computeAtsMatch } from "./filters/ats_match.ts";
+import { renderMarkdownToPdf, closePdfBrowser } from "./pdf/render.ts";
+import type { FilteredJob, JobAlert, LlmOutput, AtsMatch } from "./types.ts";
 
 loadEnv();
 
@@ -35,6 +39,7 @@ const MAX_LLM_PER_RUN = Number(process.env["MAX_LLM_PER_RUN"] ?? 20);
 const ALERT_SKIPS = process.env["ALERT_SKIPS"] !== "0";
 const MAX_AGE_DAYS = Number(process.env["MAX_AGE_DAYS"] ?? 14);
 const MAX_PER_COMPANY = Number(process.env["MAX_PER_COMPANY"] ?? 3);
+const ENABLE_PDF = process.env["ENABLE_PDF"] !== "0";
 
 async function loadResume(): Promise<string> {
   try {
@@ -50,8 +55,10 @@ function normalize(s: string): string {
   return (s ?? "").toLowerCase().replace(/\s+/g, " ").trim();
 }
 
-function dedupeAcrossSources(jobs: Job[]): Job[] {
-  const byFingerprint = new Map<string, Job>();
+function dedupeAcrossSources<T extends { company: string; title: string; location: string }>(
+  jobs: T[]
+): T[] {
+  const byFingerprint = new Map<string, T>();
   for (const j of jobs) {
     const fp = `${normalize(j.company)}|${normalize(j.title)}|${normalize(j.location)}`;
     if (!byFingerprint.has(fp)) byFingerprint.set(fp, j);
@@ -75,6 +82,28 @@ function capPerCompany<T extends { company: string }>(
   return out;
 }
 
+function slugFile(s: string): string {
+  return s
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "")
+    .slice(0, 60);
+}
+
+function pdfFilename(job: FilteredJob): string {
+  const company = slugFile(job.company);
+  const title = slugFile(job.title);
+  return `resume-${company}-${title}.pdf`;
+}
+
+function shouldAlert(llm: LlmOutput, atsMatch: AtsMatch): boolean {
+  if (!llm.ok) return true;
+  if (llm.data.verdict === "skip") {
+    return ALERT_SKIPS;
+  }
+  return true;
+}
+
 async function main(): Promise<void> {
   const start = Date.now();
   console.log(
@@ -82,7 +111,10 @@ async function main(): Promise<void> {
   );
 
   const resumeMd = await loadResume();
-  console.log(`[job-radar] resume loaded (${resumeMd.length} chars)`);
+  const parsedResume = parseResume(resumeMd);
+  console.log(
+    `[job-radar] resume loaded (${resumeMd.length} chars, ${parsedResume.experience.length} roles, ${parsedResume.projects.length} projects)`
+  );
 
   const [seen, health] = await Promise.all([
     loadSeen(SEEN_PATH),
@@ -93,7 +125,7 @@ async function main(): Promise<void> {
   );
 
   const sourceResults = await runAllAdapters();
-  const allJobs: Job[] = [];
+  const allJobs = [];
   for (const r of sourceResults) {
     console.log(
       `[job-radar] source=${r.source} ok=${r.ok} jobs=${r.jobs.length} dur=${r.durationMs}ms${r.error ? ` err=${r.error.slice(0, 120)}` : ""}`
@@ -112,8 +144,6 @@ async function main(): Promise<void> {
   const { passed: passedUnsorted, stats, dropReasons } = applyFilters(fresh, {
     maxAgeDays: MAX_AGE_DAYS,
   });
-  // Per-company cap: pick the freshest N per company so one prolific company
-  // (e.g. GitLab) can't drown out 1-off opportunities elsewhere.
   const passedNewestFirst = [...passedUnsorted].sort((a, b) => {
     const ta = a.postedAt ? Date.parse(a.postedAt) : 0;
     const tb = b.postedAt ? Date.parse(b.postedAt) : 0;
@@ -121,13 +151,21 @@ async function main(): Promise<void> {
   });
   const capped = capPerCompany(passedNewestFirst, MAX_PER_COMPANY);
 
-  // Send oldest first → newest last so the freshest job lands at the bottom
-  // of the Telegram chat (most visible when the chat is opened).
-  const passed = [...capped].sort((a, b) => {
-    const ta = a.postedAt ? Date.parse(a.postedAt) : 0;
-    const tb = b.postedAt ? Date.parse(b.postedAt) : 0;
+  // Compute ATS match score per job (deterministic, no LLM).
+  const withMatch: Array<{ job: FilteredJob; atsMatch: AtsMatch }> = capped.map(
+    (job) => ({
+      job,
+      atsMatch: computeAtsMatch(job.descriptionMd || job.description, resumeMd),
+    })
+  );
+
+  // Send oldest first → newest last so freshest lands at the bottom.
+  withMatch.sort((a, b) => {
+    const ta = a.job.postedAt ? Date.parse(a.job.postedAt) : 0;
+    const tb = b.job.postedAt ? Date.parse(b.job.postedAt) : 0;
     return ta - tb;
   });
+
   console.log(
     `[job-radar] filter stats — total=${stats.total} droppedAge=${stats.droppedAge} droppedLoc=${stats.droppedLocation} droppedTitle=${stats.droppedTitle} droppedYoe=${stats.droppedYoe} passed=${stats.passed}`
   );
@@ -140,89 +178,131 @@ async function main(): Promise<void> {
     );
   }
 
-  const toProcess = passed.slice(0, MAX_LLM_PER_RUN);
-  if (passed.length > MAX_LLM_PER_RUN) {
+  const toProcess = withMatch.slice(0, MAX_LLM_PER_RUN);
+  if (withMatch.length > MAX_LLM_PER_RUN) {
     console.warn(
-      `[job-radar] capping LLM calls at ${MAX_LLM_PER_RUN}; ${passed.length - MAX_LLM_PER_RUN} jobs deferred to next run`
+      `[job-radar] capping LLM calls at ${MAX_LLM_PER_RUN}; ${withMatch.length - MAX_LLM_PER_RUN} jobs deferred to next run`
     );
   }
 
-  const alerts: JobAlert[] = [];
-  for (const job of toProcess) {
+  // Stage 1: fire the early ping for EVERY job first (in parallel). This
+  // minimizes time-to-click — Mohammed sees the URL within seconds, before
+  // we spend 5-30s per job on LLM + PDF.
+  const earlyPings = await Promise.all(
+    toProcess.map(async ({ job, atsMatch }) => {
+      if (DRY_RUN) {
+        console.log(
+          `[dry-run] would early-ping: ${job.company} — ${job.title} (${Math.round(atsMatch.score * 100)}% ATS, ${atsMatch.missing.length} missing)`
+        );
+        return { messageId: undefined as number | undefined };
+      }
+      try {
+        const res = await sendEarlyPing(job, atsMatch);
+        return { messageId: res.messageId };
+      } catch (err) {
+        console.error(
+          `[job-radar] early-ping failed for ${job.company}: ${err instanceof Error ? err.message : String(err)}`
+        );
+        return { messageId: undefined };
+      }
+    })
+  );
+
+  // Stage 2: per job, run LLM, render tailored resume PDF, send enrichment.
+  let sentCount = 0;
+  for (let i = 0; i < toProcess.length; i++) {
+    const { job, atsMatch } = toProcess[i]!;
+    const parentMessageId = earlyPings[i]!.messageId;
+
+    let llm: LlmOutput;
     if (DRY_RUN) {
-      console.log(
-        `[dry-run] would LLM: ${job.company} — ${job.title} (${job.location})`
-      );
-      alerts.push({
-        job,
-        llm: { ok: false, error: "DRY_RUN=1, skipped LLM" },
-      });
-      continue;
+      llm = { ok: false, error: "DRY_RUN=1, skipped LLM" };
+    } else {
+      llm = await tailorForJob(parsedResume, job);
     }
-    const llm: LlmOutput = await tailorForJob(resumeMd, job);
-    alerts.push({ job, llm });
     if (!llm.ok) {
       console.error(
         `[job-radar] LLM failed for ${job.company} — ${job.title}: ${llm.error}`
       );
     }
-  }
 
-  let sentCount = 0;
-  for (const alert of alerts) {
-    const shouldSend = shouldSendAlert(alert);
-    if (!shouldSend) continue;
+    let pdf: JobAlert["pdf"] = undefined;
+    if (ENABLE_PDF && !DRY_RUN && llm.ok && llm.data.verdict !== "skip") {
+      try {
+        const jdText = job.descriptionMd || job.description;
+        const { markdown: tailoredMd, warnings } = applyPlan(
+          parsedResume,
+          resumeMd,
+          llm.data,
+          jdText
+        );
+        if (warnings.length) {
+          console.warn(
+            `[apply-plan] ${job.company} — ${job.title}: ${warnings.length} rejections`
+          );
+          for (const w of warnings.slice(0, 3)) console.warn(`  - ${w}`);
+        }
+        const buffer = await renderMarkdownToPdf(tailoredMd);
+        pdf = { buffer, filename: pdfFilename(job) };
+      } catch (err) {
+        console.error(
+          `[pdf] render failed for ${job.company}: ${err instanceof Error ? err.message : String(err)}`
+        );
+      }
+    }
+
+    const alert: JobAlert = { job, llm, atsMatch, pdf };
+    if (!shouldAlert(llm, atsMatch)) {
+      console.log(
+        `[job-radar] skip alert for ${job.company} — ${job.title} (verdict=skip, ALERT_SKIPS=0)`
+      );
+      continue;
+    }
 
     if (DRY_RUN) {
-      console.log("\n========= ALERT PREVIEW =========");
-      const msgs = formatJobMessages(alert);
-      console.log("--- HEADER ---");
-      console.log(msgs.header);
-      for (let i = 0; i < msgs.followUps.length; i++) {
-        console.log(`--- FOLLOWUP ${i + 1} ---`);
-        console.log(msgs.followUps[i]);
+      console.log("\n========= ENRICHMENT PREVIEW =========");
+      console.log(`[${job.company}] ${job.title}`);
+      console.log(
+        `  ATS: ${Math.round(atsMatch.score * 100)}% (${atsMatch.matched.slice(0, 5).join(", ")}...)`
+      );
+      if (llm.ok) {
+        console.log(`  verdict: ${llm.data.verdict} — ${llm.data.verdict_reason}`);
+        console.log(
+          `  bullets: keep=${llm.data.bullet_plan.filter((b) => b.keep).length} hide=${llm.data.bullet_plan.filter((b) => !b.keep).length}`
+        );
       }
-      console.log("=================================\n");
+      console.log("======================================\n");
       sentCount++;
       continue;
     }
 
     try {
-      await sendJobAlert(alert);
+      await sendEnrichedFollowUp(alert, parentMessageId);
       sentCount++;
     } catch (err) {
       console.error(
-        `[job-radar] telegram send failed for ${alert.job.company}: ${err instanceof Error ? err.message : String(err)}`
+        `[job-radar] enrichment send failed for ${job.company}: ${err instanceof Error ? err.message : String(err)}`
       );
     }
   }
-  console.log(`[job-radar] sent ${sentCount} alerts (of ${alerts.length} processed)`);
-
-  const deferred = passed.slice(MAX_LLM_PER_RUN);
-  for (const job of passed) {
-    if (!deferred.includes(job)) continue;
-  }
-
-  const freshToRecord = fresh.filter((j) =>
-    toProcess.some((p) => p.key === j.key) || !passed.some((p) => p.key === j.key)
+  console.log(
+    `[job-radar] sent ${sentCount} enrichments (of ${toProcess.length} processed)`
   );
+
+  // Record every candidate as seen (including ones deferred — no point
+  // LLM-ing them later when they're already 14d old by next run).
+  const freshToRecord = fresh;
   const updatedSeen = recordSeen(seen, freshToRecord);
   const prunedSeen = pruneSeen(updatedSeen);
-  if (!DRY_RUN) {
-    await saveSeen(SEEN_PATH, prunedSeen);
-  }
+  if (!DRY_RUN) await saveSeen(SEEN_PATH, prunedSeen);
 
   const { health: updatedHealth, brokenSources } = updateHealth(
     health,
     sourceResults
   );
-  if (!DRY_RUN) {
-    await saveHealth(HEALTH_PATH, updatedHealth);
-  }
+  if (!DRY_RUN) await saveHealth(HEALTH_PATH, updatedHealth);
   if (brokenSources.length > 0) {
-    console.warn(
-      `[job-radar] broken sources: ${brokenSources.join(", ")}`
-    );
+    console.warn(`[job-radar] broken sources: ${brokenSources.join(", ")}`);
     if (!DRY_RUN) {
       try {
         await sendBrokenSourcesAlert(brokenSources);
@@ -234,20 +314,12 @@ async function main(): Promise<void> {
     }
   }
 
+  await closePdfBrowser();
+
   const durMs = Date.now() - start;
   console.log(
     `[job-radar] done in ${durMs}ms — alerts=${sentCount}, seen_now=${Object.keys(prunedSeen).length}`
   );
-}
-
-function shouldSendAlert(alert: JobAlert): boolean {
-  if (DRY_RUN) return true;
-  const { llm } = alert;
-  if (!llm.ok) return true;
-  if (llm.data.verdict === "skip") {
-    return ALERT_SKIPS;
-  }
-  return true;
 }
 
 main().catch((err) => {
