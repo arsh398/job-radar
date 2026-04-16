@@ -1,16 +1,16 @@
 {
   "ashby": {
-    "lastRun": "2026-04-16T14:20:28.912Z",
-    "lastOk": "2026-04-16T14:20:28.912Z",
+    "lastRun": "2026-04-16T16:05:18.106Z",
+    "lastOk": "2026-04-16T16:05:18.106Z",
     "lastFail": null,
     "consecutiveFailures": 0,
-    "lastJobCount": 1037,
-    "lastJobCountAt": "2026-04-16T14:20:28.912Z",
+    "lastJobCount": 1038,
+    "lastJobCountAt": "2026-04-16T16:05:18.106Z",
     "alerted": false
   },
   "custom_json": {
-    "lastRun": "2026-04-16T14:20:28.912Z",
-    "lastOk": "2026-04-16T14:20:28.912Z",
+    "lastRun": "2026-04-16T16:05:18.106Z",
+    "lastOk": "2026-04-16T16:05:18.106Z",
     "lastFail": null,
     "consecutiveFailures": 0,
     "lastJobCount": 0,
@@ -18,8 +18,8 @@
     "alerted": false
   },
   "custom_scraper": {
-    "lastRun": "2026-04-16T14:20:28.912Z",
-    "lastOk": "2026-04-16T14:20:28.912Z",
+    "lastRun": "2026-04-16T16:05:18.106Z",
+    "lastOk": "2026-04-16T16:05:18.106Z",
     "lastFail": null,
     "consecutiveFailures": 0,
     "lastJobCount": 0,
@@ -27,26 +27,26 @@
     "alerted": false
   },
   "greenhouse": {
-    "lastRun": "2026-04-16T14:20:28.912Z",
-    "lastOk": "2026-04-16T14:20:28.912Z",
+    "lastRun": "2026-04-16T16:05:18.106Z",
+    "lastOk": "2026-04-16T16:05:18.106Z",
     "lastFail": null,
     "consecutiveFailures": 0,
-    "lastJobCount": 7002,
-    "lastJobCountAt": "2026-04-16T14:20:28.912Z",
+    "lastJobCount": 6994,
+    "lastJobCountAt": "2026-04-16T16:05:18.106Z",
     "alerted": false
   },
   "lever": {
-    "lastRun": "2026-04-16T14:20:28.912Z",
-    "lastOk": "2026-04-16T14:20:28.912Z",
+    "lastRun": "2026-04-16T16:05:18.106Z",
+    "lastOk": "2026-04-16T16:05:18.106Z",
     "lastFail": null,
     "consecutiveFailures": 0,
     "lastJobCount": 9,
-    "lastJobCountAt": "2026-04-16T14:20:28.912Z",
+    "lastJobCountAt": "2026-04-16T16:05:18.106Z",
     "alerted": false
   },
   "smartrecruiters": {
-    "lastRun": "2026-04-16T14:20:28.912Z",
-    "lastOk": "2026-04-16T14:20:28.912Z",
+    "lastRun": "2026-04-16T16:05:18.106Z",
+    "lastOk": "2026-04-16T16:05:18.106Z",
     "lastFail": null,
     "consecutiveFailures": 0,
     "lastJobCount": 0,
@@ -54,8 +54,8 @@
     "alerted": false
   },
   "workable": {
-    "lastRun": "2026-04-16T14:20:28.912Z",
-    "lastOk": "2026-04-16T14:20:28.912Z",
+    "lastRun": "2026-04-16T16:05:18.106Z",
+    "lastOk": "2026-04-16T16:05:18.106Z",
     "lastFail": null,
     "consecutiveFailures": 0,
     "lastJobCount": 0,
@@ -63,8 +63,8 @@
     "alerted": false
   },
   "workday": {
-    "lastRun": "2026-04-16T14:20:28.912Z",
-    "lastOk": "2026-04-16T14:20:28.912Z",
+    "lastRun": "2026-04-16T16:05:18.106Z",
+    "lastOk": "2026-04-16T16:05:18.106Z",
     "lastFail": null,
     "consecutiveFailures": 0,
     "lastJobCount": 0,
