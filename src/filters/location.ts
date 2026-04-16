@@ -1,3 +1,8 @@
+// Strict India + truly-global-remote-eligible.
+// "Remote" alone is NOT enough — it must be paired with India, or with a
+// genuinely global term (global, worldwide, anywhere, apac with India context).
+// Hybrid locations like "San Francisco | Remote" or "Remote, US" are dropped.
+
 const INDIA_PATTERNS = [
   /\bindia\b/i,
   /\bbangalore\b/i,
@@ -17,50 +22,39 @@ const INDIA_PATTERNS = [
   /\b(trivandrum|thiruvananthapuram)\b/i,
 ];
 
-const INDIA_ELIGIBLE_GLOBAL_PATTERNS = [
-  /\b(global|worldwide|anywhere)\b/i,
-  /\bapac\b/i,
-  /\basia[- ]?pacific\b/i,
-  /\basia(?!-pacific)\b/i,
+// Truly-global terms that imply India is eligible.
+const TRULY_GLOBAL_PATTERNS = [
+  /\b(global(?!\s+remote)|worldwide|anywhere)\b/i,
+  /\bremote\s*[-:,]?\s*(global|worldwide|anywhere|world)\b/i,
 ];
 
-const EXCLUSIVE_NON_INDIA_REGIONS = [
-  /\bamericas?\b/i,
-  /\bcanada\b/i,
-  /\b(us|usa|united\s+states|u\.s\.|u\.s\.a\.)\b/i,
-  /\b(uk|united\s+kingdom|britain|scotland|wales)\b/i,
-  /\b(eu|europe|european|eea)\b/i,
-  /\bemea\b/i,
-  /\blatam\b/i,
-  /\bmexico\b/i,
-  /\bbrazil\b/i,
-  /\baustralia\b/i,
-  /\bnew\s+zealand\b/i,
-  /\b(japan|korea|south\s+korea|singapore|philippines|thailand|vietnam|indonesia|malaysia|taiwan|hong\s+kong|china)\b/i,
-  /\b(ireland|estonia|germany|france|netherlands|poland|spain|italy|portugal|sweden|denmark|finland|norway|switzerland|austria|belgium|czech|romania|hungary|greece|turkey|ukraine|lithuania|latvia|bulgaria|serbia|croatia|slovenia|slovakia)\b/i,
-  /\b(argentina|chile|colombia|peru|venezuela|uruguay|ecuador)\b/i,
-  /\b(south\s+africa|nigeria|egypt|kenya|morocco)\b/i,
-  /\b(uae|u\.a\.e\.|saudi\s+arabia|israel|qatar|dubai)\b/i,
+// APAC alone is risky — many "APAC" roles are actually Singapore/Japan/Australia
+// only. Require explicit India mention to accept APAC.
+const APAC_INDIA_PATTERNS = [
+  /\bapac\s+including\s+india\b/i,
+  /\bremote\s*[-:,]?\s*apac\s*\(india/i,
+  /\bremote\s*[-:,]?\s*india\s+\/\s+apac\b/i,
 ];
-
-const REMOTE_RE = /\bremote\b/i;
 
 export type LocationMatch = "india" | "global_remote" | "no_match";
 
 export function matchLocation(location: string): LocationMatch {
   if (!location) return "no_match";
+  const text = location.trim();
 
-  if (INDIA_PATTERNS.some((p) => p.test(location))) return "india";
+  // Split multi-location strings on common separators and check each piece.
+  const parts = text.split(/\s*[|;]\s*|\s*\/\s+/);
 
-  if (INDIA_ELIGIBLE_GLOBAL_PATTERNS.some((p) => p.test(location))) {
-    return "global_remote";
+  // If ANY part is India-explicit, accept as india.
+  for (const part of parts) {
+    if (INDIA_PATTERNS.some((p) => p.test(part))) return "india";
   }
 
-  if (EXCLUSIVE_NON_INDIA_REGIONS.some((p) => p.test(location))) {
-    return "no_match";
+  // Else check for truly global eligibility (any part).
+  for (const part of parts) {
+    if (TRULY_GLOBAL_PATTERNS.some((p) => p.test(part))) return "global_remote";
+    if (APAC_INDIA_PATTERNS.some((p) => p.test(part))) return "global_remote";
   }
-
-  if (REMOTE_RE.test(location)) return "global_remote";
 
   return "no_match";
 }

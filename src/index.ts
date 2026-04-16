@@ -33,6 +33,7 @@ const HEALTH_PATH = resolve(ROOT, "source_health.json");
 const DRY_RUN = process.env["DRY_RUN"] === "1";
 const MAX_LLM_PER_RUN = Number(process.env["MAX_LLM_PER_RUN"] ?? 20);
 const ALERT_SKIPS = process.env["ALERT_SKIPS"] !== "0";
+const MAX_AGE_DAYS = Number(process.env["MAX_AGE_DAYS"] ?? 14);
 
 async function loadResume(): Promise<string> {
   try {
@@ -87,14 +88,16 @@ async function main(): Promise<void> {
   const { fresh } = splitNewAndSeen(deduped, seen);
   console.log(`[job-radar] ${fresh.length} new jobs after seen.json dedup`);
 
-  const { passed: passedUnsorted, stats, dropReasons } = applyFilters(fresh);
+  const { passed: passedUnsorted, stats, dropReasons } = applyFilters(fresh, {
+    maxAgeDays: MAX_AGE_DAYS,
+  });
   const passed = [...passedUnsorted].sort((a, b) => {
     const ta = a.postedAt ? Date.parse(a.postedAt) : 0;
     const tb = b.postedAt ? Date.parse(b.postedAt) : 0;
     return tb - ta;
   });
   console.log(
-    `[job-radar] filter stats — total=${stats.total} droppedLoc=${stats.droppedLocation} droppedTitle=${stats.droppedTitle} droppedYoe=${stats.droppedYoe} passed=${stats.passed}`
+    `[job-radar] filter stats — total=${stats.total} droppedAge=${stats.droppedAge} droppedLoc=${stats.droppedLocation} droppedTitle=${stats.droppedTitle} droppedYoe=${stats.droppedYoe} passed=${stats.passed}`
   );
   if (Object.keys(dropReasons).length) {
     const top = Object.entries(dropReasons)
