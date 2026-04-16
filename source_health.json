@@ -1,1 +1,74 @@
-{}
+{
+  "ashby": {
+    "lastRun": "2026-04-16T11:26:03.402Z",
+    "lastOk": "2026-04-16T11:26:03.402Z",
+    "lastFail": null,
+    "consecutiveFailures": 0,
+    "lastJobCount": 957,
+    "lastJobCountAt": "2026-04-16T11:26:03.402Z",
+    "alerted": false
+  },
+  "custom_json": {
+    "lastRun": "2026-04-16T11:26:03.402Z",
+    "lastOk": "2026-04-16T11:26:03.402Z",
+    "lastFail": null,
+    "consecutiveFailures": 0,
+    "lastJobCount": 0,
+    "lastJobCountAt": null,
+    "alerted": false
+  },
+  "custom_scraper": {
+    "lastRun": "2026-04-16T11:26:03.402Z",
+    "lastOk": "2026-04-16T11:26:03.402Z",
+    "lastFail": null,
+    "consecutiveFailures": 0,
+    "lastJobCount": 0,
+    "lastJobCountAt": null,
+    "alerted": false
+  },
+  "greenhouse": {
+    "lastRun": "2026-04-16T11:26:03.402Z",
+    "lastOk": "2026-04-16T11:26:03.402Z",
+    "lastFail": null,
+    "consecutiveFailures": 0,
+    "lastJobCount": 6833,
+    "lastJobCountAt": "2026-04-16T11:26:03.402Z",
+    "alerted": false
+  },
+  "lever": {
+    "lastRun": "2026-04-16T11:26:03.402Z",
+    "lastOk": "2026-04-16T11:26:03.402Z",
+    "lastFail": null,
+    "consecutiveFailures": 0,
+    "lastJobCount": 9,
+    "lastJobCountAt": "2026-04-16T11:26:03.402Z",
+    "alerted": false
+  },
+  "smartrecruiters": {
+    "lastRun": "2026-04-16T11:26:03.402Z",
+    "lastOk": "2026-04-16T11:26:03.402Z",
+    "lastFail": null,
+    "consecutiveFailures": 0,
+    "lastJobCount": 0,
+    "lastJobCountAt": null,
+    "alerted": false
+  },
+  "workable": {
+    "lastRun": "2026-04-16T11:26:03.402Z",
+    "lastOk": "2026-04-16T11:26:03.402Z",
+    "lastFail": null,
+    "consecutiveFailures": 0,
+    "lastJobCount": 0,
+    "lastJobCountAt": null,
+    "alerted": false
+  },
+  "workday": {
+    "lastRun": "2026-04-16T11:26:03.402Z",
+    "lastOk": "2026-04-16T11:26:03.402Z",
+    "lastFail": null,
+    "consecutiveFailures": 0,
+    "lastJobCount": 0,
+    "lastJobCountAt": null,
+    "alerted": false
+  }
+}
