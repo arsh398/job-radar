@@ -13214,6 +13214,11 @@
     "company": "Airbnb",
     "title": "Process & Tools Scalability Specialist "
   },
+  "greenhouse:airbnb:7822704": {
+    "firstSeen": "2026-04-16T23:09:42.547Z",
+    "company": "Airbnb",
+    "title": "Software Engineer, Infrastructure"
+  },
   "greenhouse:airtable:7892134002": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Airtable",
@@ -15813,6 +15818,11 @@
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Anthropic",
     "title": "Revenue Strategy & Operations"
+  },
+  "greenhouse:anthropic:5189848008": {
+    "firstSeen": "2026-04-16T23:09:42.547Z",
+    "company": "Anthropic",
+    "title": "Anthropic STEM Fellow"
   },
   "greenhouse:anthropic:5191226008": {
     "firstSeen": "2026-04-16T22:06:15.594Z",
@@ -50974,6 +50984,11 @@
     "company": "Dell",
     "title": "Senior Specialist - Product Offer Management"
   },
+  "workday:dell:R285602": {
+    "firstSeen": "2026-04-16T23:09:42.547Z",
+    "company": "Dell",
+    "title": "Especialista interno(a) de producto (Preventa) - Presales Academy"
+  },
   "workday:dell:R285674": {
     "firstSeen": "2026-04-16T22:42:43.726Z",
     "company": "Dell",
@@ -51133,6 +51148,11 @@
     "firstSeen": "2026-04-16T22:42:43.726Z",
     "company": "Intel",
     "title": "Sr Product Development Yield Engineer"
+  },
+  "workday:intel:JR0282991": {
+    "firstSeen": "2026-04-16T23:09:42.547Z",
+    "company": "Intel",
+    "title": "S6 CMS/Pick Technician"
   },
   "workday:intel:JR0283014": {
     "firstSeen": "2026-04-16T22:42:43.726Z",
@@ -51884,6 +51904,11 @@
     "company": "PayPal",
     "title": "Sr Software Engineer - Backend (Python)"
   },
+  "workday:paypal:R0134051": {
+    "firstSeen": "2026-04-16T23:09:42.547Z",
+    "company": "PayPal",
+    "title": "Staff Software Engineer"
+  },
   "workday:paypal:R0134342": {
     "firstSeen": "2026-04-16T22:42:43.726Z",
     "company": "PayPal",
@@ -52184,6 +52209,11 @@
     "company": "Salesforce",
     "title": "Senior Director, Global Rewards Business Partner"
   },
+  "workday:salesforce:JR337277": {
+    "firstSeen": "2026-04-16T23:09:42.547Z",
+    "company": "Salesforce",
+    "title": "Senior Manager, Revenue"
+  },
   "workday:salesforce:JR337557": {
     "firstSeen": "2026-04-16T22:42:43.726Z",
     "company": "Salesforce",
@@ -52444,6 +52474,11 @@
     "company": "Walmart",
     "title": "OMNI Customer Fulfillment Associate"
   },
+  "workday:walmart:R-2480929": {
+    "firstSeen": "2026-04-16T23:09:42.547Z",
+    "company": "Walmart",
+    "title": "(CAN) Stock Unloader Associate"
+  },
   "workday:workday:JR-0101594": {
     "firstSeen": "2026-04-16T22:42:43.726Z",
     "company": "Workday",
@@ -52488,6 +52523,11 @@
     "firstSeen": "2026-04-16T22:42:43.726Z",
     "company": "Workday",
     "title": "Account Executive - Medium Enterprise"
+  },
+  "workday:workday:JR-0105121": {
+    "firstSeen": "2026-04-16T23:09:42.547Z",
+    "company": "Workday",
+    "title": "Senior Cybersecurity Engineer (US Federal)"
   },
   "workday:workday:JR-0105191": {
     "firstSeen": "2026-04-16T22:42:43.726Z",
