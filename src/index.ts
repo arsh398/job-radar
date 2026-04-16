@@ -34,6 +34,7 @@ const DRY_RUN = process.env["DRY_RUN"] === "1";
 const MAX_LLM_PER_RUN = Number(process.env["MAX_LLM_PER_RUN"] ?? 20);
 const ALERT_SKIPS = process.env["ALERT_SKIPS"] !== "0";
 const MAX_AGE_DAYS = Number(process.env["MAX_AGE_DAYS"] ?? 14);
+const MAX_PER_COMPANY = Number(process.env["MAX_PER_COMPANY"] ?? 3);
 
 async function loadResume(): Promise<string> {
   try {
@@ -45,13 +46,33 @@ async function loadResume(): Promise<string> {
   }
 }
 
+function normalize(s: string): string {
+  return (s ?? "").toLowerCase().replace(/\s+/g, " ").trim();
+}
+
 function dedupeAcrossSources(jobs: Job[]): Job[] {
   const byFingerprint = new Map<string, Job>();
   for (const j of jobs) {
-    const fp = `${j.company.toLowerCase()}|${j.title.toLowerCase().trim()}|${j.location.toLowerCase().trim()}`;
+    const fp = `${normalize(j.company)}|${normalize(j.title)}|${normalize(j.location)}`;
     if (!byFingerprint.has(fp)) byFingerprint.set(fp, j);
   }
   return [...byFingerprint.values()];
+}
+
+function capPerCompany<T extends { company: string }>(
+  items: T[],
+  maxPerCompany: number
+): T[] {
+  const counts = new Map<string, number>();
+  const out: T[] = [];
+  for (const item of items) {
+    const key = item.company.toLowerCase();
+    const n = counts.get(key) ?? 0;
+    if (n >= maxPerCompany) continue;
+    counts.set(key, n + 1);
+    out.push(item);
+  }
+  return out;
 }
 
 async function main(): Promise<void> {
@@ -91,10 +112,21 @@ async function main(): Promise<void> {
   const { passed: passedUnsorted, stats, dropReasons } = applyFilters(fresh, {
     maxAgeDays: MAX_AGE_DAYS,
   });
-  const passed = [...passedUnsorted].sort((a, b) => {
+  // Per-company cap: pick the freshest N per company so one prolific company
+  // (e.g. GitLab) can't drown out 1-off opportunities elsewhere.
+  const passedNewestFirst = [...passedUnsorted].sort((a, b) => {
     const ta = a.postedAt ? Date.parse(a.postedAt) : 0;
     const tb = b.postedAt ? Date.parse(b.postedAt) : 0;
     return tb - ta;
+  });
+  const capped = capPerCompany(passedNewestFirst, MAX_PER_COMPANY);
+
+  // Send oldest first → newest last so the freshest job lands at the bottom
+  // of the Telegram chat (most visible when the chat is opened).
+  const passed = [...capped].sort((a, b) => {
+    const ta = a.postedAt ? Date.parse(a.postedAt) : 0;
+    const tb = b.postedAt ? Date.parse(b.postedAt) : 0;
+    return ta - tb;
   });
   console.log(
     `[job-radar] filter stats — total=${stats.total} droppedAge=${stats.droppedAge} droppedLoc=${stats.droppedLocation} droppedTitle=${stats.droppedTitle} droppedYoe=${stats.droppedYoe} passed=${stats.passed}`
