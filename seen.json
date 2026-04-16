@@ -7179,6 +7179,11 @@
     "company": "Airbnb",
     "title": "Senior Growth Marketing Manager,  EMEA"
   },
+  "greenhouse:airbnb:7821281": {
+    "firstSeen": "2026-04-16T20:10:01.731Z",
+    "company": "Airbnb",
+    "title": "Marketplace Strategy Manager"
+  },
   "greenhouse:airtable:7892134002": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Airtable",
@@ -13014,6 +13019,11 @@
     "company": "Cloudflare",
     "title": "Principal Systems Engineer, FL"
   },
+  "greenhouse:cloudflare:7267602": {
+    "firstSeen": "2026-04-16T20:10:01.731Z",
+    "company": "Cloudflare",
+    "title": "Distributed Systems Engineer - Data Platform (Delivery, Database, Retrieval)"
+  },
   "greenhouse:cloudflare:7268796": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Cloudflare",
@@ -13123,6 +13133,11 @@
     "firstSeen": "2026-04-16T19:10:42.234Z",
     "company": "Cloudflare",
     "title": "Distributed Systems Engineer - Data Platform - Analytics and Alerts"
+  },
+  "greenhouse:cloudflare:7341019": {
+    "firstSeen": "2026-04-16T20:10:01.731Z",
+    "company": "Cloudflare",
+    "title": "Senior Solutions Engineer"
   },
   "greenhouse:cloudflare:7353450": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -13813,6 +13828,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Cloudflare",
     "title": "Customer Solutions Engineer"
+  },
+  "greenhouse:cloudflare:7547599": {
+    "firstSeen": "2026-04-16T20:10:01.731Z",
+    "company": "Cloudflare",
+    "title": "Customer Success Manager"
   },
   "greenhouse:cloudflare:7547626": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
@@ -39038,6 +39058,11 @@
     "firstSeen": "2026-04-16T12:09:41.449Z",
     "company": "Stripe",
     "title": "Customer Success Manager"
+  },
+  "greenhouse:stripe:7811935": {
+    "firstSeen": "2026-04-16T20:10:01.731Z",
+    "company": "Stripe",
+    "title": "MaaS User Oversight Risk Strategist"
   },
   "greenhouse:stripe:7812163": {
     "firstSeen": "2026-04-16T12:09:41.449Z",
