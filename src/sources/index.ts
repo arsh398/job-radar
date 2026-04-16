@@ -2,21 +2,15 @@ import type { SourceAdapter, SourceResult } from "../types.ts";
 import { greenhouseAdapter } from "./greenhouse.ts";
 import { leverAdapter } from "./lever.ts";
 import { ashbyAdapter } from "./ashby.ts";
-import { workableAdapter } from "./workable.ts";
-import { smartrecruitersAdapter } from "./smartrecruiters.ts";
-import { workdayAdapter } from "./workday.ts";
-import { customJsonAdapter } from "./custom_json.ts";
-import { customScraperAdapter } from "./custom_scraper.ts";
 
+// Only adapters with real implementations are registered. Stubs
+// (workable/smartrecruiters/workday/custom_json/custom_scraper) return empty
+// lists and were polluting source-health with false "ok=true, 0 jobs" signals.
+// Re-add them here once each is implemented.
 export const ALL_ADAPTERS: SourceAdapter[] = [
   greenhouseAdapter,
   leverAdapter,
   ashbyAdapter,
-  workableAdapter,
-  smartrecruitersAdapter,
-  workdayAdapter,
-  customJsonAdapter,
-  customScraperAdapter,
 ];
 
 export async function runAllAdapters(): Promise<SourceResult[]> {

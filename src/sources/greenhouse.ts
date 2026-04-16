@@ -9,6 +9,7 @@ type GreenhouseJob = {
   location: { name: string };
   absolute_url: string;
   updated_at?: string;
+  first_published?: string;
   content?: string;
 };
 
@@ -31,7 +32,7 @@ async function fetchCompany(slug: string, name: string): Promise<Job[]> {
       url: j.absolute_url,
       description: stripHtml(decodedContent),
       descriptionMd: htmlToMarkdown(decodedContent),
-      postedAt: j.updated_at,
+      postedAt: j.first_published ?? j.updated_at,
       fetchedAt: now,
     };
   });

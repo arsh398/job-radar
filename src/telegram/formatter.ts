@@ -31,8 +31,8 @@ function postedAgo(postedAt?: string): string {
   return `${day}d ago`;
 }
 
-function yoeLabel(job: FilteredJob): string {
-  if (job.parsedYoe.unknown) return "YOE: not stated";
+function yoeLabel(job: FilteredJob): string | null {
+  if (job.parsedYoe.unknown) return null;
   const min = job.parsedYoe.min ?? "?";
   const max = job.parsedYoe.max;
   return max != null ? `${min}-${max} yrs` : `${min}+ yrs`;
@@ -60,9 +60,15 @@ export function formatJobMessages(alert: JobAlert): FormattedAlert {
   const verdict = llm.ok ? llm.data.verdict : "stretch";
   const emoji = VERDICT_EMOJI[verdict] ?? "⚪";
 
+  const yoe = yoeLabel(job);
+  const metaParts = [
+    job.location || "location unspecified",
+    ...(yoe ? [yoe] : []),
+    postedAgo(job.postedAt),
+  ];
   const headerBase = [
     `${emoji} *${escMd(job.company)}* — ${escMd(job.title)}`,
-    `📍 ${escMd(job.location || "location unspecified")} · ${escMd(yoeLabel(job))} · ${escMd(postedAgo(job.postedAt))}`,
+    `📍 ${metaParts.map(escMd).join(" · ")}`,
     `🔗 ${escMd(job.url)}`,
   ];
 
