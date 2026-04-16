@@ -100,10 +100,19 @@ export type AtsMatch = {
   missing: string[];
 };
 
+// Combined fit score — deterministic, no LLM. See src/match/score.ts.
+export type FitScore = {
+  overall: number;
+  ats: number;
+  semantic: number;
+  yoe: number;
+};
+
 export type JobAlert = {
   job: FilteredJob;
   llm: LlmOutput;
   atsMatch: AtsMatch;
-  // Generated tailored resume PDF, if successful.
+  fit: FitScore;
+  profileName: string;
   pdf?: { buffer: Uint8Array; filename: string };
 };

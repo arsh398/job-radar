@@ -1,4 +1,4 @@
-import type { FilteredJob, JobAlert, AtsMatch } from "../types.ts";
+import type { FilteredJob, JobAlert, AtsMatch, FitScore } from "../types.ts";
 import {
   formatEarlyHeader,
   formatEnrichment,
@@ -15,9 +15,10 @@ import { sendTelegramDocument, sendTelegramMessage } from "./bot.ts";
 //    the early ping's message ID so the chat stays organized.
 export async function sendEarlyPing(
   job: FilteredJob,
-  atsMatch: AtsMatch
+  atsMatch: AtsMatch,
+  fit?: FitScore
 ): Promise<{ messageId: number }> {
-  const text = formatEarlyHeader(job, atsMatch);
+  const text = formatEarlyHeader(job, atsMatch, fit);
   return sendTelegramMessage(text, { parseMode: "MarkdownV2" });
 }
 

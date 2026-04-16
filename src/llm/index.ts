@@ -40,6 +40,7 @@ const RETRY_AFTER_MS = 30_000;
 
 export async function tailorForJob(
   resume: ParsedResume,
+  resumeMd: string,
   job: FilteredJob
 ): Promise<LlmOutput> {
   let lastErr = "no attempts made";
@@ -56,7 +57,7 @@ export async function tailorForJob(
         : await callOpenRouter(resume, job);
 
     if (result.ok) {
-      const { cleaned, warnings } = validatePlan(result.data, resume);
+      const { cleaned, warnings } = validatePlan(result.data, resume, resumeMd);
       if (warnings.length) {
         console.warn(
           `[plan-validate] ${job.company} — ${job.title}: ${warnings.length} fixes`

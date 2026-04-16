@@ -1,4 +1,10 @@
-import type { FilteredJob, JobAlert, TailoringPlan, AtsMatch } from "../types.ts";
+import type {
+  FilteredJob,
+  JobAlert,
+  TailoringPlan,
+  AtsMatch,
+  FitScore,
+} from "../types.ts";
 
 const VERDICT_EMOJI: Record<string, string> = {
   apply: "🟢",
@@ -43,6 +49,11 @@ function atsLabel(m: AtsMatch): string {
   return `${pct}% ATS`;
 }
 
+function fitLabel(f: FitScore): string {
+  const pct = Math.round(f.overall * 100);
+  return `fit ${pct}%`;
+}
+
 const MAX_CODE_BLOCK = 3500;
 
 function codeBlock(content: string): string {
@@ -56,12 +67,16 @@ function codeBlock(content: string): string {
 
 // Early header — sent BEFORE the LLM runs so Mohammed can click through to
 // the JD within seconds of detection, without waiting for tailoring.
-export function formatEarlyHeader(job: FilteredJob, atsMatch: AtsMatch): string {
+export function formatEarlyHeader(
+  job: FilteredJob,
+  atsMatch: AtsMatch,
+  fit?: FitScore
+): string {
   const yoe = yoeLabel(job);
   const metaParts = [
     job.location || "location unspecified",
     ...(yoe ? [yoe] : []),
-    atsLabel(atsMatch),
+    ...(fit ? [fitLabel(fit)] : [atsLabel(atsMatch)]),
     postedAgo(job.postedAt),
   ];
   return [
@@ -95,14 +110,17 @@ export function formatEnrichment(alert: JobAlert): string[] {
   }`;
   const lines: string[] = [verdictLine];
 
+  // Only surface keywords the resume genuinely lacks. The validator has
+  // already filtered out anything implied by the resume's skill ontology
+  // (so a React engineer won't see HTML/CSS as "missing").
   if (plan.missing_keywords.length) {
     lines.push(
-      `❌ *LLM missing:* ${escMd(plan.missing_keywords.slice(0, 6).join(", "))}`
+      `❌ *Missing:* ${escMd(plan.missing_keywords.slice(0, 6).join(", "))}`
     );
-  }
-  if (atsMatch.missing.length) {
+  } else if (atsMatch.missing.length) {
+    // Fallback to ATS gaps only if the LLM filter left nothing.
     lines.push(
-      `🏷 *ATS gaps:* ${escMd(atsMatch.missing.slice(0, 8).join(", "))}`
+      `🏷 *ATS gaps:* ${escMd(atsMatch.missing.slice(0, 6).join(", "))}`
     );
   }
   out.push(lines.join("\n"));

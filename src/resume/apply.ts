@@ -133,19 +133,39 @@ function renderBullets(bullets: ResumeBullet[]): string {
   return bullets.map((b) => `- ${b.text}`).join("\n");
 }
 
+// Minimum bullets per section — a tailored resume that nukes everything
+// produces a skeleton that's worse than the source. If the plan hides too
+// much, restore the top-priority hidden items to hit the floor.
+export type BulletFloors = {
+  experience: number; // per role
+  project: number; // per project
+  achievement: number; // total across achievements
+};
+
+const DEFAULT_FLOORS: BulletFloors = {
+  experience: 2,
+  project: 1,
+  achievement: 1,
+};
+
 function applyBulletPlan(
   bullets: ResumeBullet[],
   actions: Map<string, BulletAction>,
   sourceJdText: string,
   resumeNumbers: Set<string>,
-  warnings: string[]
+  warnings: string[],
+  floor: number
 ): ResumeBullet[] {
-  type Scored = { b: ResumeBullet; priority: number; order: number };
-  const out: Scored[] = [];
+  type Scored = {
+    b: ResumeBullet;
+    priority: number;
+    order: number;
+    kept: boolean;
+  };
+  const scored: Scored[] = [];
   for (let i = 0; i < bullets.length; i++) {
     const b = bullets[i]!;
     const action = actions.get(b.id);
-    if (action && !action.keep) continue;
     let text = b.text;
     if (action?.new_text && action.new_text.trim() !== b.text.trim()) {
       const v = validateRephrase(action.new_text, b.text, sourceJdText, resumeNumbers);
@@ -158,13 +178,36 @@ function applyBulletPlan(
       }
     }
     const priority = action?.priority ?? 50;
-    out.push({ b: { id: b.id, text }, priority, order: i });
+    const kept = !action ? true : action.keep;
+    scored.push({ b: { id: b.id, text }, priority, order: i, kept });
   }
-  // Sort: lowest priority first, ties broken by original order.
-  out.sort((a, b) =>
+
+  const kept = scored.filter((s) => s.kept);
+  // Sanity floor: if the plan hid so much we're below the floor, restore
+  // the top-priority hidden items until we meet it.
+  if (kept.length < floor) {
+    const hidden = scored
+      .filter((s) => !s.kept)
+      .sort((a, b) =>
+        a.priority !== b.priority ? a.priority - b.priority : a.order - b.order
+      );
+    const needed = Math.min(floor - kept.length, hidden.length);
+    if (needed > 0) {
+      const ids = hidden
+        .slice(0, needed)
+        .map((h) => h.b.id)
+        .join(", ");
+      warnings.push(
+        `restored ${needed} hidden bullet(s) to meet floor ${floor}: ${ids}`
+      );
+      for (let i = 0; i < needed; i++) kept.push(hidden[i]!);
+    }
+  }
+
+  kept.sort((a, b) =>
     a.priority !== b.priority ? a.priority - b.priority : a.order - b.order
   );
-  return out.map((s) => s.b);
+  return kept.map((s) => s.b);
 }
 
 function applyExperiencePlan(
@@ -172,11 +215,19 @@ function applyExperiencePlan(
   actions: Map<string, BulletAction>,
   jdText: string,
   resumeNumbers: Set<string>,
-  warnings: string[]
+  warnings: string[],
+  floors: BulletFloors
 ): ResumeExperience[] {
   return list.map((e) => ({
     ...e,
-    bullets: applyBulletPlan(e.bullets, actions, jdText, resumeNumbers, warnings),
+    bullets: applyBulletPlan(
+      e.bullets,
+      actions,
+      jdText,
+      resumeNumbers,
+      warnings,
+      floors.experience
+    ),
   }));
 }
 
@@ -185,14 +236,21 @@ function applyProjectPlan(
   actions: Map<string, BulletAction>,
   jdText: string,
   resumeNumbers: Set<string>,
-  warnings: string[]
+  warnings: string[],
+  floors: BulletFloors
 ): ResumeProject[] {
   return list
     .map((p) => ({
       ...p,
-      bullets: applyBulletPlan(p.bullets, actions, jdText, resumeNumbers, warnings),
+      bullets: applyBulletPlan(
+        p.bullets,
+        actions,
+        jdText,
+        resumeNumbers,
+        warnings,
+        floors.project
+      ),
     }))
-    // Drop projects that have zero bullets after plan.
     .filter((p) => p.bullets.length > 0);
 }
 
@@ -329,6 +387,7 @@ export function applyPlan(
     }
   }
 
+  const floors = DEFAULT_FLOORS;
   const tailored: ParsedResume = {
     headerMd: source.headerMd,
     summary,
@@ -337,21 +396,24 @@ export function applyPlan(
       actions,
       jdText,
       resumeNumbers,
-      warnings
+      warnings,
+      floors.achievement
     ),
     experience: applyExperiencePlan(
       source.experience,
       actions,
       jdText,
       resumeNumbers,
-      warnings
+      warnings,
+      floors
     ),
     projects: applyProjectPlan(
       source.projects,
       actions,
       jdText,
       resumeNumbers,
-      warnings
+      warnings,
+      floors
     ),
     skills: applySkillEmphasis(source.skills, plan.skill_emphasis),
     educationMd: source.educationMd,

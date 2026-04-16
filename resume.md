@@ -1,6 +1,7 @@
 # Mohammed Arsh Khan
 
 Bangalore, India · mdarshkhan9898@gmail.com · +91 9131110480
+
 LinkedIn: /in/mdarshkhan · GitHub: arshkhann98 · Codeforces: ARSHKHAN98 (Expert) · Leetcode: arshkhann (Knight) · CodeChef: arshkhan17 (5★)
 
 ---

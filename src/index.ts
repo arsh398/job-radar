@@ -1,4 +1,3 @@
-import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { config as loadEnv } from "dotenv";
 import { runAllAdapters } from "./sources/index.ts";
@@ -21,16 +20,24 @@ import {
   sendEnrichedFollowUp,
   sendBrokenSourcesAlert,
 } from "./telegram/index.ts";
-import { parseResume } from "./resume/parser.ts";
+import { loadProfiles, pickProfile } from "./resume/profiles.ts";
+import type { ResumeProfile } from "./resume/profiles.ts";
 import { applyPlan } from "./resume/apply.ts";
 import { computeAtsMatch } from "./filters/ats_match.ts";
+import { computeFitScore } from "./match/score.ts";
+import { embedText } from "./match/embeddings.ts";
 import { renderMarkdownToPdf, closePdfBrowser } from "./pdf/render.ts";
-import type { FilteredJob, JobAlert, LlmOutput, AtsMatch } from "./types.ts";
+import type {
+  AtsMatch,
+  FitScore,
+  FilteredJob,
+  JobAlert,
+  LlmOutput,
+} from "./types.ts";
 
 loadEnv();
 
 const ROOT = resolve(process.cwd());
-const RESUME_PATH = resolve(ROOT, "resume.md");
 const SEEN_PATH = resolve(ROOT, "seen.json");
 const HEALTH_PATH = resolve(ROOT, "source_health.json");
 
@@ -40,16 +47,8 @@ const ALERT_SKIPS = process.env["ALERT_SKIPS"] !== "0";
 const MAX_AGE_DAYS = Number(process.env["MAX_AGE_DAYS"] ?? 14);
 const MAX_PER_COMPANY = Number(process.env["MAX_PER_COMPANY"] ?? 3);
 const ENABLE_PDF = process.env["ENABLE_PDF"] !== "0";
-
-async function loadResume(): Promise<string> {
-  try {
-    return await readFile(RESUME_PATH, "utf8");
-  } catch (err) {
-    throw new Error(
-      `Cannot read resume at ${RESUME_PATH}: ${err instanceof Error ? err.message : String(err)}`
-    );
-  }
-}
+// Skip LLM below this fit score — saves tokens on obvious mismatches.
+const MIN_FIT_FOR_LLM = Number(process.env["MIN_FIT_FOR_LLM"] ?? 0.2);
 
 function normalize(s: string): string {
   return (s ?? "").toLowerCase().replace(/\s+/g, " ").trim();
@@ -91,17 +90,23 @@ function slugFile(s: string): string {
 }
 
 function pdfFilename(job: FilteredJob): string {
-  const company = slugFile(job.company);
-  const title = slugFile(job.title);
-  return `resume-${company}-${title}.pdf`;
+  return `resume-${slugFile(job.company)}-${slugFile(job.title)}.pdf`;
 }
 
-function shouldAlert(llm: LlmOutput, atsMatch: AtsMatch): boolean {
+function shouldAlert(llm: LlmOutput): boolean {
   if (!llm.ok) return true;
-  if (llm.data.verdict === "skip") {
-    return ALERT_SKIPS;
-  }
+  if (llm.data.verdict === "skip") return ALERT_SKIPS;
   return true;
+}
+
+async function ensureProfileEmbedding(
+  profile: ResumeProfile
+): Promise<void> {
+  if (profile.embedding) return;
+  const signal = `${profile.parsed.summary}\n\nSkills: ${profile.parsed.skills
+    .map((c) => `${c.category}: ${c.items.join(", ")}`)
+    .join(" | ")}`;
+  profile.embedding = await embedText(signal, "RETRIEVAL_DOCUMENT");
 }
 
 async function main(): Promise<void> {
@@ -110,11 +115,12 @@ async function main(): Promise<void> {
     `[job-radar] start at ${new Date().toISOString()} (dry_run=${DRY_RUN})`
   );
 
-  const resumeMd = await loadResume();
-  const parsedResume = parseResume(resumeMd);
-  console.log(
-    `[job-radar] resume loaded (${resumeMd.length} chars, ${parsedResume.experience.length} roles, ${parsedResume.projects.length} projects)`
-  );
+  const profiles = await loadProfiles(ROOT);
+  for (const p of profiles) {
+    console.log(
+      `[job-radar] profile=${p.name} (${p.md.length} chars, ${p.parsed.experience.length} roles, ${p.parsed.projects.length} projects)`
+    );
+  }
 
   const [seen, health] = await Promise.all([
     loadSeen(SEEN_PATH),
@@ -144,23 +150,45 @@ async function main(): Promise<void> {
   const { passed: passedUnsorted, stats, dropReasons } = applyFilters(fresh, {
     maxAgeDays: MAX_AGE_DAYS,
   });
-  const passedNewestFirst = [...passedUnsorted].sort((a, b) => {
-    const ta = a.postedAt ? Date.parse(a.postedAt) : 0;
-    const tb = b.postedAt ? Date.parse(b.postedAt) : 0;
-    return tb - ta;
-  });
-  const capped = capPerCompany(passedNewestFirst, MAX_PER_COMPANY);
-
-  // Compute ATS match score per job (deterministic, no LLM).
-  const withMatch: Array<{ job: FilteredJob; atsMatch: AtsMatch }> = capped.map(
-    (job) => ({
-      job,
-      atsMatch: computeAtsMatch(job.descriptionMd || job.description, resumeMd),
-    })
+  const capped = capPerCompany(
+    [...passedUnsorted].sort((a, b) => {
+      const ta = a.postedAt ? Date.parse(a.postedAt) : 0;
+      const tb = b.postedAt ? Date.parse(b.postedAt) : 0;
+      return tb - ta;
+    }),
+    MAX_PER_COMPANY
   );
 
-  // Send oldest first → newest last so freshest lands at the bottom.
-  withMatch.sort((a, b) => {
+  // Pre-warm profile embeddings once (rather than N times per job).
+  for (const p of profiles) await ensureProfileEmbedding(p);
+
+  // For each capped job: pick best profile, compute ATS + fit score.
+  type Enriched = {
+    job: FilteredJob;
+    atsMatch: AtsMatch;
+    fit: FitScore;
+    profile: ResumeProfile;
+  };
+  const enriched: Enriched[] = [];
+  for (const job of capped) {
+    const jdText = job.descriptionMd || job.description;
+    const picked = await pickProfile(profiles, jdText, job.track);
+    const atsMatch = computeAtsMatch(jdText, picked.profile.md);
+    const fit = await computeFitScore(job, atsMatch, picked.profile.embedding);
+    enriched.push({ job, atsMatch, fit, profile: picked.profile });
+  }
+
+  // Rank by fit score — best fits first. Display order sends oldest first
+  // so newest/best lands at the bottom of the chat (most visible).
+  enriched.sort((a, b) => b.fit.overall - a.fit.overall);
+  const toProcess = enriched.slice(0, MAX_LLM_PER_RUN);
+  if (enriched.length > MAX_LLM_PER_RUN) {
+    console.warn(
+      `[job-radar] capping LLM calls at ${MAX_LLM_PER_RUN}; ${enriched.length - MAX_LLM_PER_RUN} jobs deferred`
+    );
+  }
+  // Send oldest first → newest last so the freshest/best is at bottom.
+  const ordered = [...toProcess].sort((a, b) => {
     const ta = a.job.postedAt ? Date.parse(a.job.postedAt) : 0;
     const tb = b.job.postedAt ? Date.parse(b.job.postedAt) : 0;
     return ta - tb;
@@ -177,19 +205,15 @@ async function main(): Promise<void> {
       `[job-radar] top drop reasons: ${top.map(([r, c]) => `${r} (${c})`).join(" | ")}`
     );
   }
-
-  const toProcess = withMatch.slice(0, MAX_LLM_PER_RUN);
-  if (withMatch.length > MAX_LLM_PER_RUN) {
-    console.warn(
-      `[job-radar] capping LLM calls at ${MAX_LLM_PER_RUN}; ${withMatch.length - MAX_LLM_PER_RUN} jobs deferred to next run`
+  for (const e of ordered) {
+    console.log(
+      `[job-radar] candidate ${e.job.company} — ${e.job.title}: fit=${(e.fit.overall * 100).toFixed(0)}% ats=${(e.fit.ats * 100).toFixed(0)}% sem=${(e.fit.semantic * 100).toFixed(0)}% yoe=${(e.fit.yoe * 100).toFixed(0)}% profile=${e.profile.name}`
     );
   }
 
-  // Stage 1: fire the early ping for EVERY job first (in parallel). This
-  // minimizes time-to-click — Mohammed sees the URL within seconds, before
-  // we spend 5-30s per job on LLM + PDF.
+  // Stage 1: early ping for every candidate, in parallel.
   const earlyPings = await Promise.all(
-    toProcess.map(async ({ job, atsMatch }) => {
+    ordered.map(async ({ job, atsMatch, fit }) => {
       if (DRY_RUN) {
         console.log(
           `[dry-run] would early-ping: ${job.company} — ${job.title} (${Math.round(atsMatch.score * 100)}% ATS, ${atsMatch.missing.length} missing)`
@@ -197,7 +221,7 @@ async function main(): Promise<void> {
         return { messageId: undefined as number | undefined };
       }
       try {
-        const res = await sendEarlyPing(job, atsMatch);
+        const res = await sendEarlyPing(job, atsMatch, fit);
         return { messageId: res.messageId };
       } catch (err) {
         console.error(
@@ -208,21 +232,29 @@ async function main(): Promise<void> {
     })
   );
 
-  // Stage 2: per job, run LLM, render tailored resume PDF, send enrichment.
+  // Stage 2: per job — LLM + PDF + enrichment.
   let sentCount = 0;
-  for (let i = 0; i < toProcess.length; i++) {
-    const { job, atsMatch } = toProcess[i]!;
+  for (let i = 0; i < ordered.length; i++) {
+    const { job, atsMatch, fit, profile } = ordered[i]!;
     const parentMessageId = earlyPings[i]!.messageId;
 
     let llm: LlmOutput;
     if (DRY_RUN) {
       llm = { ok: false, error: "DRY_RUN=1, skipped LLM" };
+    } else if (fit.overall < MIN_FIT_FOR_LLM) {
+      llm = {
+        ok: false,
+        error: `skipped LLM — fit ${(fit.overall * 100).toFixed(0)}% < ${(MIN_FIT_FOR_LLM * 100).toFixed(0)}% threshold`,
+      };
+      console.log(
+        `[job-radar] skipping LLM for ${job.company} (fit=${(fit.overall * 100).toFixed(0)}%)`
+      );
     } else {
-      llm = await tailorForJob(parsedResume, job);
+      llm = await tailorForJob(profile.parsed, profile.md, job);
     }
     if (!llm.ok) {
-      console.error(
-        `[job-radar] LLM failed for ${job.company} — ${job.title}: ${llm.error}`
+      console.warn(
+        `[job-radar] LLM skipped/failed for ${job.company} — ${job.title}: ${llm.error}`
       );
     }
 
@@ -231,16 +263,16 @@ async function main(): Promise<void> {
       try {
         const jdText = job.descriptionMd || job.description;
         const { markdown: tailoredMd, warnings } = applyPlan(
-          parsedResume,
-          resumeMd,
+          profile.parsed,
+          profile.md,
           llm.data,
           jdText
         );
         if (warnings.length) {
           console.warn(
-            `[apply-plan] ${job.company} — ${job.title}: ${warnings.length} rejections`
+            `[apply-plan] ${job.company} — ${job.title}: ${warnings.length} fixes`
           );
-          for (const w of warnings.slice(0, 3)) console.warn(`  - ${w}`);
+          for (const w of warnings.slice(0, 5)) console.warn(`  - ${w}`);
         }
         const buffer = await renderMarkdownToPdf(tailoredMd);
         pdf = { buffer, filename: pdfFilename(job) };
@@ -251,8 +283,15 @@ async function main(): Promise<void> {
       }
     }
 
-    const alert: JobAlert = { job, llm, atsMatch, pdf };
-    if (!shouldAlert(llm, atsMatch)) {
+    const alert: JobAlert = {
+      job,
+      llm,
+      atsMatch,
+      fit,
+      profileName: profile.name,
+      pdf,
+    };
+    if (!shouldAlert(llm)) {
       console.log(
         `[job-radar] skip alert for ${job.company} — ${job.title} (verdict=skip, ALERT_SKIPS=0)`
       );
@@ -260,18 +299,9 @@ async function main(): Promise<void> {
     }
 
     if (DRY_RUN) {
-      console.log("\n========= ENRICHMENT PREVIEW =========");
-      console.log(`[${job.company}] ${job.title}`);
       console.log(
-        `  ATS: ${Math.round(atsMatch.score * 100)}% (${atsMatch.matched.slice(0, 5).join(", ")}...)`
+        `[dry-run] enrichment preview: ${job.company} — ${job.title}: fit=${(fit.overall * 100).toFixed(0)}% profile=${profile.name}`
       );
-      if (llm.ok) {
-        console.log(`  verdict: ${llm.data.verdict} — ${llm.data.verdict_reason}`);
-        console.log(
-          `  bullets: keep=${llm.data.bullet_plan.filter((b) => b.keep).length} hide=${llm.data.bullet_plan.filter((b) => !b.keep).length}`
-        );
-      }
-      console.log("======================================\n");
       sentCount++;
       continue;
     }
@@ -286,13 +316,10 @@ async function main(): Promise<void> {
     }
   }
   console.log(
-    `[job-radar] sent ${sentCount} enrichments (of ${toProcess.length} processed)`
+    `[job-radar] sent ${sentCount} enrichments (of ${ordered.length} processed)`
   );
 
-  // Record every candidate as seen (including ones deferred — no point
-  // LLM-ing them later when they're already 14d old by next run).
-  const freshToRecord = fresh;
-  const updatedSeen = recordSeen(seen, freshToRecord);
+  const updatedSeen = recordSeen(seen, fresh);
   const prunedSeen = pruneSeen(updatedSeen);
   if (!DRY_RUN) await saveSeen(SEEN_PATH, prunedSeen);
 
