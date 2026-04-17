@@ -4,6 +4,7 @@ import { leverAdapter } from "./lever.ts";
 import { ashbyAdapter } from "./ashby.ts";
 import { workdayAdapter } from "./workday.ts";
 import { amazonAdapter } from "./amazon.ts";
+import { remoteokAdapter } from "./remoteok.ts";
 
 // Adapters with real implementations only. Remaining stubs (workable,
 // smartrecruiters, custom_scraper) return empty lists and would pollute
@@ -15,6 +16,7 @@ export const ALL_ADAPTERS: SourceAdapter[] = [
   ashbyAdapter,
   workdayAdapter,
   amazonAdapter,
+  remoteokAdapter,
 ];
 
 export async function runAllAdapters(): Promise<SourceResult[]> {

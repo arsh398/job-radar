@@ -28,6 +28,7 @@ import { computeFitScore } from "./match/score.ts";
 import { embedText } from "./match/embeddings.ts";
 import { renderMarkdownToPdf, closePdfBrowser } from "./pdf/render.ts";
 import { buildVariants } from "./resume/variants.ts";
+import { sendAlertToNotion } from "./notion/index.ts";
 import type {
   AtsMatch,
   FitScore,
@@ -49,6 +50,8 @@ const ALERT_SKIPS = process.env["ALERT_SKIPS"] !== "0";
 const MAX_AGE_DAYS = Number(process.env["MAX_AGE_DAYS"] ?? 14);
 const MAX_PER_COMPANY = Number(process.env["MAX_PER_COMPANY"] ?? 3);
 const ENABLE_PDF = process.env["ENABLE_PDF"] !== "0";
+const ENABLE_TELEGRAM = process.env["ENABLE_TELEGRAM"] !== "0";
+const ENABLE_NOTION = process.env["ENABLE_NOTION"] !== "0";
 // Skip LLM below this fit score — saves tokens on obvious mismatches.
 const MIN_FIT_FOR_LLM = Number(process.env["MIN_FIT_FOR_LLM"] ?? 0.2);
 
@@ -242,13 +245,13 @@ async function main(): Promise<void> {
   for (let i = 0; i < ordered.length; i++) {
     const { job, atsMatch, fit, profile } = ordered[i]!;
 
-    // 1. Early header ping (sub-second, URL lands first)
+    // 1. Early header ping (sub-second, URL lands first — Telegram only)
     let parentMessageId: number | undefined;
     if (DRY_RUN) {
       console.log(
         `[dry-run] would early-ping: ${job.company} — ${job.title} (${Math.round(atsMatch.score * 100)}% ATS, ${atsMatch.missing.length} missing)`
       );
-    } else {
+    } else if (ENABLE_TELEGRAM) {
       try {
         const res = await sendEarlyPing(job, atsMatch, fit);
         parentMessageId = res.messageId;
@@ -337,14 +340,23 @@ async function main(): Promise<void> {
       continue;
     }
 
-    try {
-      await sendEnrichedFollowUp(alert, parentMessageId);
-      sentCount++;
-    } catch (err) {
-      console.error(
-        `[job-radar] enrichment send failed for ${job.company}: ${err instanceof Error ? err.message : String(err)}`
+    // Fire Telegram + Notion in parallel per job — Telegram for push,
+    // Notion as the structured source of truth Mohammed sorts through.
+    const delivered: Promise<unknown>[] = [];
+    if (ENABLE_TELEGRAM) {
+      delivered.push(
+        sendEnrichedFollowUp(alert, parentMessageId).catch((err) =>
+          console.error(
+            `[job-radar] telegram enrichment failed for ${job.company}: ${err instanceof Error ? err.message : String(err)}`
+          )
+        )
       );
     }
+    if (ENABLE_NOTION) {
+      delivered.push(sendAlertToNotion(alert));
+    }
+    await Promise.all(delivered);
+    sentCount++;
   }
   console.log(
     `[job-radar] sent ${sentCount} enrichments (of ${ordered.length} processed)`

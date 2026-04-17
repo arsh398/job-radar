@@ -65,6 +65,7 @@ export const COMPANIES: CompanyConfig[] = [
   { name: "Elastic", ats: "greenhouse", slug: "elastic" },
   { name: "Mixpanel", ats: "greenhouse", slug: "mixpanel" },
   { name: "Groww", ats: "greenhouse", slug: "groww" },
+  { name: "PhonePe", ats: "greenhouse", slug: "phonepe" },
 
   // === Lever ===
   { name: "CRED", ats: "lever", slug: "cred" },
