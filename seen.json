@@ -569,6 +569,11 @@
     "company": "Amazon",
     "title": "Sr Pgm Mgr - Value Excellence, Retail Business Services"
   },
+  "amazon:7a9452db-d5ba-4bb5-bfdb-04ca78b1c199": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Amazon",
+    "title": "Programming & Insights Specialist, APAC Programming - Prime Video"
+  },
   "amazon:7ecbd4d7-17bd-4552-a705-29bb6f1d32fd": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Amazon",
@@ -6879,6 +6884,21 @@
     "company": "Sarvam AI",
     "title": "DevOps Engineer"
   },
+  "ashby:sarvam:bcf353ba-c00d-4989-a266-c5e91004fc45": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Sarvam AI",
+    "title": "Account executive - Enterprise Sales"
+  },
+  "ashby:sarvam:c0406fe0-c8c0-44aa-aa3e-b879f2bf1049": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Sarvam AI",
+    "title": "Engagement Manager, Chanakya"
+  },
+  "ashby:sarvam:f46a00ea-a25b-478d-92b9-7a2deb129f5b": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Sarvam AI",
+    "title": "Backend Engineer, API Team"
+  },
   "ashby:sentry:0580bfa2-ee00-41c9-94b8-df3d3b4e7fcc": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Sentry",
@@ -11418,6 +11438,11 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Anthropic",
     "title": "Enterprise Account Executive, System Integrators"
+  },
+  "greenhouse:anthropic:5104760008": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Anthropic",
+    "title": "Enterprise Account Executive, Manufacturing & Automotive"
   },
   "greenhouse:anthropic:5105509008": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -25869,6 +25894,11 @@
     "company": "Dropbox",
     "title": "Senior Data Scientist, AI Products"
   },
+  "greenhouse:dropbox:7729764": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Dropbox",
+    "title": "Senior Data Scientist, AI Products"
+  },
   "greenhouse:dropbox:7739553": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Dropbox",
@@ -25888,6 +25918,11 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Dropbox",
     "title": "Staff Data Engineer"
+  },
+  "greenhouse:dropbox:7751394": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Dropbox",
+    "title": "Full Stack Product Software Engineer"
   },
   "greenhouse:dropbox:7759728": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -25943,6 +25978,11 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Dropbox",
     "title": "Technical Architect, Go-to-Market"
+  },
+  "greenhouse:dropbox:7789386": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Dropbox",
+    "title": "Senior Data Scientist, AI Products"
   },
   "greenhouse:dropbox:7789389": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -35074,6 +35114,11 @@
     "company": "Okta",
     "title": "Staff Engineer - Fullstack"
   },
+  "greenhouse:okta:7593685": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Okta",
+    "title": "Staff Software Engineer"
+  },
   "greenhouse:okta:7595065": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Okta",
@@ -35318,6 +35363,11 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Okta",
     "title": "Vice President, Product Management"
+  },
+  "greenhouse:okta:7645881": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Okta",
+    "title": "Sales Development Representative - German"
   },
   "greenhouse:okta:7645984": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -35629,6 +35679,11 @@
     "company": "Okta",
     "title": "Software Engineer II (L2) – AV & UC Automations"
   },
+  "greenhouse:okta:7726050": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Okta",
+    "title": "Atlassian System Engineer"
+  },
   "greenhouse:okta:7727730": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Okta",
@@ -35766,6 +35821,11 @@
   },
   "greenhouse:okta:7744350": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
+    "company": "Okta",
+    "title": "Senior Software Engineer, Security Engineering"
+  },
+  "greenhouse:okta:7744352": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
     "company": "Okta",
     "title": "Senior Software Engineer, Security Engineering"
   },
@@ -35954,10 +36014,20 @@
     "company": "Okta",
     "title": "Senior Delivery Success Manager"
   },
+  "greenhouse:okta:7779191": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Okta",
+    "title": "Corporate Counsel, IP"
+  },
   "greenhouse:okta:7779195": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Okta",
     "title": "Corporate Counsel, IP"
+  },
+  "greenhouse:okta:7781674": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Okta",
+    "title": "Principal Software Engineer"
   },
   "greenhouse:okta:7782510": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -36318,6 +36388,11 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "PagerDuty",
     "title": "Account Partner, Professional Services "
+  },
+  "greenhouse:pagerduty:5874205004": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "PagerDuty",
+    "title": "Accounts Payable Specialist"
   },
   "greenhouse:pagerduty:5893015004": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -40888,6 +40963,11 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Scale AI",
     "title": "HRBP, Operations"
+  },
+  "greenhouse:scaleai:4686014005": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Scale AI",
+    "title": "Account Executive, Saudi Arabia"
   },
   "greenhouse:stripe:4921361": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -47634,6 +47714,11 @@
     "company": "Autodesk",
     "title": "Enterprise Technical Sales Executive – AECO - Italy"
   },
+  "workday:dell:R272330": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Dell",
+    "title": "Senior Supplier Process Engineer"
+  },
   "workday:dell:R276420": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Dell",
@@ -47729,6 +47814,11 @@
     "company": "Dell",
     "title": "Senior Software Engineer"
   },
+  "workday:dell:R288025": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Dell",
+    "title": "Inside Sales Account Executive 2"
+  },
   "workday:dell:R288050": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Dell",
@@ -47814,6 +47904,11 @@
     "company": "Dell",
     "title": "Specialist, Customer Services"
   },
+  "workday:intel:JR0281329": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Intel",
+    "title": "GPU Logic Design Engineer"
+  },
   "workday:intel:JR0282220": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Intel",
@@ -47858,6 +47953,11 @@
     "firstSeen": "2026-04-17T09:54:02.039Z",
     "company": "Intel",
     "title": "AI Software Solutions Engineer"
+  },
+  "workday:intel:JR0283082": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Intel",
+    "title": "Senior Compiler Engineer"
   },
   "workday:intel:JR0283092": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -47919,6 +48019,16 @@
     "company": "Mastercard",
     "title": "Principal, Strategy & Transformation, Advisors & Consulting Services"
   },
+  "workday:mastercard:R-272364": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Mastercard",
+    "title": "Manager - Product Development , Network Products"
+  },
+  "workday:mastercard:R-272517": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Mastercard",
+    "title": "Senior Specialist, Product Development"
+  },
   "workday:mastercard:R-272626": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Mastercard",
@@ -47958,6 +48068,16 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Mastercard",
     "title": "Commercial Data Integration Platform - Lead Developer"
+  },
+  "workday:mastercard:R-273702": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Mastercard",
+    "title": "Senior Vice President, Software Engineering, Payment Networks"
+  },
+  "workday:mastercard:R-273725": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Mastercard",
+    "title": "Manager, Software Engineering"
   },
   "workday:mastercard:R-273742": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -48023,6 +48143,16 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Mastercard",
     "title": "Sr. Specialist, Customer Success"
+  },
+  "workday:mastercard:R-275023": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Mastercard",
+    "title": "BizOps Engineer II"
+  },
+  "workday:mastercard:R-275085": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Mastercard",
+    "title": "Manager Software Engineering"
   },
   "workday:mastercard:R-275134": {
     "firstSeen": "2026-04-17T09:54:02.039Z",
@@ -48099,10 +48229,25 @@
     "company": "Mastercard",
     "title": "Vice President, Data Engineering"
   },
+  "workday:mastercard:R-275694": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Mastercard",
+    "title": "AI engineer II"
+  },
+  "workday:mastercard:R-275696": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Mastercard",
+    "title": "Director, AI engineering"
+  },
   "workday:mastercard:R-275707": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Mastercard",
     "title": "LAC - FP&A Senior Analyst"
+  },
+  "workday:mastercard:R-275718": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Mastercard",
+    "title": "Lead AI engineer"
   },
   "workday:mastercard:R-275767": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -48594,6 +48739,11 @@
     "company": "Nvidia",
     "title": "Software Embedded Engineer, DOCA"
   },
+  "workday:nvidia:JR2015993": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Nvidia",
+    "title": "Software Engineer, DOCA SDK"
+  },
   "workday:nvidia:JR2016129": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Nvidia",
@@ -48723,6 +48873,11 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "PayPal",
     "title": "Software Engineer, Backend Java"
+  },
+  "workday:paypal:R0134930": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "PayPal",
+    "title": "Machine Learning Engineer PhD Intern"
   },
   "workday:paypal:R0135526": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -49064,10 +49219,20 @@
     "company": "Salesforce",
     "title": "Principal, Technical Architect"
   },
+  "workday:salesforce:JR337781": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Salesforce",
+    "title": "Partner Cloud Account Executive - UKI"
+  },
   "workday:salesforce:JR337863": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Salesforce",
     "title": "Sr. Analyst - Program/Project Management"
+  },
+  "workday:salesforce:JR337907": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Salesforce",
+    "title": "Account Executive Analytics Specialist - Financial Services"
   },
   "workday:salesforce:JR337965": {
     "firstSeen": "2026-04-17T10:54:18.200Z",
@@ -49514,6 +49679,11 @@
     "company": "Workday",
     "title": "Medium Enterprise Customer Base Account Executive - Retail, Hospitality, & Transportation (RHT)"
   },
+  "workday:workday:JR-0106465": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Workday",
+    "title": "Principal, Employee Relations"
+  },
   "workday:workday:JR-0106486": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Workday",
@@ -49548,5 +49718,10 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Workday",
     "title": "Principal Software Development Engineer / Senior Software Development Engineer - Full Stack"
+  },
+  "workday:workday:JR-0106544": {
+    "firstSeen": "2026-04-17T11:51:45.591Z",
+    "company": "Workday",
+    "title": "Business Support, Solutions Success Hub"
   }
 }
