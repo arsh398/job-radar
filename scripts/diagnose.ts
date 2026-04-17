@@ -39,11 +39,19 @@ async function main() {
   }
 
   console.log(`YOE parse: match=${match}, reject=${reject}, unknown=${unknown}`);
-  console.log(`\n=== UNKNOWN samples (where YOE-like text WAS in description) ===`);
-  for (const s of unknownSamples.slice(0, 25)) {
-    console.log(`[${s.company}] ${s.title}`);
-    console.log(`  >> ${s.snippet}`);
+
+  // Show every passed candidate by bucket so we can spot seniority leaks.
+  const buckets: Record<string, string[]> = { match: [], reject: [], unknown: [] };
+  for (const j of candidates) {
+    const p = parseYoe(j.description);
+    const key = p.unknown ? "unknown" : p.min !== null && p.min > 2 ? "reject" : "match";
+    buckets[key]!.push(`[${j.source.split(":")[0]}] ${j.company}: ${j.title} @ ${j.location}`);
   }
+
+  console.log(`\n=== MATCH (≤2 YOE) passes — ${buckets.match!.length} ===`);
+  for (const s of buckets.match!.slice(0, 40)) console.log("  " + s);
+  console.log(`\n=== UNKNOWN (no YOE parseable; passed by default) — ${buckets.unknown!.length} ===`);
+  for (const s of buckets.unknown!.slice(0, 40)) console.log("  " + s);
 
   // Location drop samples — what locations are we rejecting?
   const locDropped = all.filter((j) => matchLocation(j.location) === "no_match");
@@ -55,6 +63,19 @@ async function main() {
   const topLocs = [...locCounts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 20);
   console.log(`\n=== Top 20 dropped locations (out of ${locDropped.length}) ===`);
   for (const [loc, n] of topLocs) console.log(`  ${n}\t${loc}`);
+
+  // Detect India-containing strings that we're dropping (parser failures).
+  const indiaRe = /\b(india|bangalore|bengaluru|hyderabad|pune|mumbai|delhi|gurgaon|gurugram|chennai|noida|kolkata|ahmedabad|jaipur|kochi|trivandrum|thiruvananthapuram)\b/i;
+  const indiaDropped = locDropped.filter((j) => indiaRe.test(j.location));
+  console.log(`\n=== Dropped locations that CONTAIN India — ${indiaDropped.length} roles ===`);
+  const indiaCounts = new Map<string, number>();
+  for (const j of indiaDropped) {
+    const k = `${j.company} @ ${j.location}`;
+    indiaCounts.set(k, (indiaCounts.get(k) ?? 0) + 1);
+  }
+  for (const [k, n] of [...indiaCounts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 20)) {
+    console.log(`  ${n}\t${k}`);
+  }
 }
 
 function findYoeLikeSnippet(text: string): string | null {

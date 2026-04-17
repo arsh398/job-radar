@@ -46,12 +46,24 @@ const AI_RE = new RegExp(
 );
 
 // Hard senior/role exclusions — drop regardless of context.
+//
+// "Senior" / "Sr." / "Sr " now included: the prior assumption (YOE body
+// parser would catch seniority) breaks for Workday (no JD body) and for
+// GitLab-style JDs that describe seniority without naming years. In
+// practice every "Senior X" role targets 4-6+ YOE, not 2.
 const SENIORITY_EXCLUDE_RE =
-  /\b(staff|principal|senior\s+staff|distinguished|fellow|architect|vp|director|head\s+of|engineering\s+manager|cto|product\s+manager|program\s+manager|technical\s+lead|tech\s+lead|research\s+scientist|recruiter|designer|qa\s+(eng|tester|analyst))\b/i;
+  /\b(?:senior|staff|principal|distinguished|fellow|architect|vp|director|head\s+of|engineering\s+manager|cto|product\s+manager|program\s+manager|technical\s+lead|tech\s+lead|research\s+scientist|recruiter|designer|qa\s+(?:eng|tester|analyst))\b|\bsr\.?(?=\s)/i;
 
-// Internal-IT-style roles — wrong career track for product engineers.
+// Role-level exclusion: "Software Engineer III", "SDE 3", "Scientist V" etc.
+// II / 2 is intentionally allowed — at most companies that's still mid-level
+// (Google SWE II, Meta E4) which Mohammed can reach. III / 3 and above are
+// solidly senior (5+ YOE) and should always drop.
+const LEVEL_EXCLUDE_RE =
+  /\b(?:eng(?:ineer)?|sde|swe|developer|scientist|dev|architect)\s*[-_ ]*(?:iii|iv|v|vi|vii|viii|ix|x|[3-9])\b/i;
+
+// Internal-IT-style and non-engineering-track roles.
 const NON_PRODUCT_EXCLUDE_RE =
-  /\b(it\s+automation|it\s+operations|it\s+support|help\s*desk|business\s+analyst|sales\s+eng(?:ineer)?|solutions\s+eng(?:ineer)?|customer\s+(?:success|support)|deal\s+desk|operations\s+(?:associate|specialist|analyst|manager))\b/i;
+  /\b(it\s+automation|it\s+operations|it\s+support|help\s*desk|business\s+analyst|sales\s+eng(?:ineer)?|solutions\s+eng(?:ineer)?|customer\s+(?:success|support)|deal\s+desk|operations\s+(?:associate|specialist|analyst|manager)|data\s+associate|ml\s+data\s+associate|content\s+(?:moderator|reviewer)|annotation\s+(?:specialist|associate))\b/i;
 
 // On-call / shift-based roles — different career path, often grueling.
 const SHIFT_EXCLUDE_RE =
@@ -80,11 +92,6 @@ const LEAD_OK_RE =
   /\blead\s+(software|backend|frontend|full[- ]?stack|platform|data|ml|ai|infra(?:structure)?|systems?|cloud)\b/i;
 const LEAD_RE = /\blead\b/i;
 
-// "Senior" with no explicit YOE in title is a problem at GitLab/Atlassian where
-// Senior = 5+ YOE. We KEEP "Senior" titles in the title filter (no auto-exclude),
-// but YOE check on description body catches it. The LLM will mark
-// underqualified if YOE > 2 — handled downstream.
-
 export type TitleMatch =
   | { pass: true; track: Track }
   | { pass: false; reason: string };
@@ -94,6 +101,9 @@ export function matchTitle(title: string): TitleMatch {
 
   if (SENIORITY_EXCLUDE_RE.test(title)) {
     return { pass: false, reason: `excluded seniority: ${title}` };
+  }
+  if (LEVEL_EXCLUDE_RE.test(title)) {
+    return { pass: false, reason: `excluded level: ${title}` };
   }
   if (NON_PRODUCT_EXCLUDE_RE.test(title)) {
     return { pass: false, reason: `non-product role: ${title}` };
