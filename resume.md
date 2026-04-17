@@ -1,12 +1,12 @@
 # Mohammed Arsh Khan
 
-Bangalore, India · mdarshkhan9898@gmail.com · +91 9131110480 · linkedin.com/in/mdarshkhan · github.com/arshkhann98
+Bangalore, India · mdarshkhan9898@gmail.com · +91 9131110480 · linkedin.com/in/mdarshkhan · github.com/arsh398
 
 ---
 
 ## Summary
 
-Product Engineer with 2 years shipping production systems at Juspay (Kubernetes-based remote execution, MCP tooling) and Avalara (customer-facing tax APIs, WCAG-compliant UI). Built AI behavioral testing platforms and deterministic web QA scanners.
+Product Engineer with 2 years shipping production systems end-to-end — Kubernetes infrastructure and MCP tooling at Juspay, customer-facing tax APIs and zero-error WCAG portals at Avalara. Exploring AI safety through hands-on evaluation tooling: built Probe (LLM behavioral testing with zero-AI scoring), Rove (deterministic web QA scanner with 12 heuristic classifiers), and Driftwatch (AI-regression + autonomous browser QA platform).
 
 ## Work Experience
 
@@ -22,8 +22,7 @@ Product Engineer with 2 years shipping production systems at Juspay (Kubernetes-
 *Jul 2024 – Jan 2026 · Pune*
 
 - Built and integrated **10+ RESTful API endpoints** for the MVR (Motor Vehicle Rental) tax filing portal — handling document uploads, draft preparation, and compliance checks used by thousands of customers across US tax jurisdictions.
-- Resolved **50+ WCAG accessibility violations** flagged by axe and WAVE, bringing the customer-facing portal to **zero errors** reported by both tools.
-- Refactored 20+ high-complexity modules, reviewed 100+ merge requests, and maintained CI/CD pipelines using Jest and GitLab CI within a **6-person engineering team**.
+- Resolved **50+ WCAG accessibility violations** flagged by axe and WAVE, bringing the customer-facing portal to **zero errors** reported by both tools. Refactored 20+ high-complexity modules and reviewed 100+ merge requests within a 6-person engineering team.
 
 ## Projects
 
@@ -47,25 +46,22 @@ Scans web applications by testing every interactive element — finds bugs that 
 
 ## Skills
 
-**Languages**: TypeScript, JavaScript, Python, C#
+**Languages**: TypeScript, JavaScript, Python, C#, C, SQL, Bash
 
-**Backend & APIs**: Node.js, Express.js, FastAPI, .NET, REST APIs, Prisma, SQLModel
+**Frontend**: React, Next.js, Redux (Toolkit, Persist, Thunk), Material UI, Tailwind CSS, styled-components, Emotion, Sass/SCSS, HTML5, CSS3, Axios, Socket.io, Stripe Elements, SSE, WebRTC
 
-**Frontend**: React, Next.js, SSE streaming, real-time dashboards
+**Backend**: Node.js, Express.js, FastAPI, Pydantic, uvicorn, .NET, REST APIs, JWT/session/cookie auth, Mongoose, Multer, Stripe, SendGrid, Twilio, Firebase, scikit-learn, pandas, numpy
 
-**AI & LLM Engineering**: Claude Agent SDK, MCP (Model Context Protocol), LLM evaluation and behavioral testing, sentence-transformers, zero-AI scoring pipelines
+**AI/ML & LLM**: PyTorch, HuggingFace Transformers, DistilBERT fine-tuning, ResNet18 transfer learning, autoencoder anomaly detection, Grad-CAM, ONNX, sentence-transformers, Claude Agent SDK, MCP, multi-provider LLM orchestration, RAG, evaluations, PyMuPDF, Tesseract OCR
 
-**Cloud & Infrastructure**: AWS (S3, ECR, EKS, IRSA), GCP (GCS, Autopilot), Docker, Kubernetes, Jenkins, GitLab CI/CD
+**Databases**: PostgreSQL, MongoDB, SQLite, Firebase, Prisma, Mongoose, SQLModel
 
-**Databases**: PostgreSQL, SQLite
+**Cloud & DevOps**: AWS (S3, ECR, EKS, IRSA), GCP (GCS, Autopilot), Docker, Kubernetes, Jenkins, GitLab CI/CD, GitHub Actions, Prometheus
 
-**Testing & Quality**: Jest, Vitest, Playwright, axe-core, WAVE, SonarQube, KS-test statistical analysis
+**Testing**: Jest, Vitest, Playwright, pytest, testing-library, axe-core, WAVE, SonarQube, KS-test, WCAG
 
 ## Education
 
-**Bachelor of Engineering in Computer Science** — 2020–2024
-*Institute of Engineering and Technology, DAVV, Indore* · CGPA 8.32
+**Bachelor of Engineering in Computer Science** — Institute of Engineering and Technology, DAVV, Indore (2020–2024, CGPA 8.32)
 
-## Achievements
-
-- **ICPC Regionalist** (2021, 2023) · **Codeforces Expert** · **Leetcode Knight** · **CodeChef 5★** · 1200+ problems solved across competitive programming platforms
+**Achievements** · **ICPC Regionalist** (2021, 2023) · **Codeforces Expert** · **Leetcode Knight** · **CodeChef 5★** · 1200+ competitive programming problems solved

@@ -328,9 +328,10 @@ function renderResume(r: ParsedResume): string {
       lines.push(`### ${p.heading}`);
       if (p.techStack) lines.push(`*${p.techStack}*`);
       lines.push("");
-      // Intro paragraph intentionally omitted in the rendered PDF —
-      // bullets carry the detail and the intro duplicates. Saves ~1 line
-      // per project on the single-page layout.
+      if (p.intro) {
+        lines.push(p.intro);
+        lines.push("");
+      }
       lines.push(renderBullets(p.bullets));
       lines.push("");
     }

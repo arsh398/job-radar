@@ -38,13 +38,13 @@ const STYLE = `
     color: var(--body);
     font-family: "Inter", "Helvetica Neue", "Arial", "Segoe UI", system-ui, sans-serif;
     font-size: 9pt;
-    line-height: 1.26;
+    line-height: 1.24;
     -webkit-font-smoothing: antialiased;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
   .page {
-    padding: 0.2in 0.45in 0.18in 0.45in;
+    padding: 0.14in 0.4in 0.12in 0.4in;
     max-width: 8.27in;
     margin: 0 auto;
   }
@@ -78,7 +78,7 @@ const STYLE = `
     text-transform: uppercase;
     letter-spacing: 1.1pt;
     color: var(--accent);
-    margin: 5pt 0 1pt 0;
+    margin: 4pt 0 1pt 0;
     padding-bottom: 1pt;
     border-bottom: 0.5pt solid var(--rule);
   }
@@ -88,15 +88,15 @@ const STYLE = `
     font-size: 9.5pt;
     font-weight: 700;
     color: var(--ink);
-    margin: 3pt 0 0 0;
-    line-height: 1.2;
+    margin: 2pt 0 0 0;
+    line-height: 1.18;
   }
   /* Meta line (dates · location OR tech stack) directly under h3 */
   h3 + p {
-    margin: 0 0 0.5pt 0;
+    margin: 0 0 0 0;
     font-size: 8pt;
     color: var(--mute);
-    line-height: 1.25;
+    line-height: 1.22;
   }
   h3 + p em {
     color: var(--mute);
@@ -110,14 +110,14 @@ const STYLE = `
 
   /* Bullet lists */
   ul {
-    margin: 1pt 0 1pt 0;
+    margin: 0.5pt 0 0.5pt 0;
     padding-left: 12pt;
     list-style-type: disc;
   }
   ul > li {
     margin: 0.5pt 0;
     padding-left: 0;
-    line-height: 1.28;
+    line-height: 1.25;
   }
   li > p { margin: 0; display: inline; }
 
@@ -126,8 +126,8 @@ const STYLE = `
   .skills { margin: 0; }
   .skills p {
     margin: 0;
-    line-height: 1.4;
-    font-size: 9pt;
+    line-height: 1.26;
+    font-size: 8.2pt;
   }
   .skills p strong { color: var(--ink); }
 
