@@ -1204,6 +1204,11 @@
     "company": "Baseten",
     "title": "Product Manager - Core Product"
   },
+  "ashby:baseten:3bd6f288-8ba7-4486-8ac4-7e57b44040df": {
+    "firstSeen": "2026-04-17T23:37:48.829Z",
+    "company": "Baseten",
+    "title": "Integrated Marketing Manager"
+  },
   "ashby:baseten:4e507a15-c9bb-4877-b422-f3eb462a3732": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Baseten",
@@ -2243,6 +2248,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Cursor",
     "title": "Campus Lead"
+  },
+  "ashby:cursor:bd555681-82ac-49e9-ae34-30d5f3c40f36": {
+    "firstSeen": "2026-04-17T23:37:48.829Z",
+    "company": "Cursor",
+    "title": "Strategic Events Lead"
   },
   "ashby:cursor:c66cde5e-9cb6-4a2e-a330-9323e1edf2a9": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -8614,6 +8624,11 @@
     "company": "Affirm",
     "title": "Software Engineer I, Full Stack (Consumer Engineering)"
   },
+  "greenhouse:affirm:7609694003": {
+    "firstSeen": "2026-04-17T23:37:48.829Z",
+    "company": "Affirm",
+    "title": "Staff Software Engineer"
+  },
   "greenhouse:affirm:7609696003": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Affirm",
@@ -8658,6 +8673,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Affirm",
     "title": "Staff Product Designer, Design Systems"
+  },
+  "greenhouse:affirm:7617857003": {
+    "firstSeen": "2026-04-17T23:37:48.829Z",
+    "company": "Affirm",
+    "title": "Staff Software Engineer"
   },
   "greenhouse:affirm:7617859003": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -9053,6 +9073,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Affirm",
     "title": "Senior Product Manager, Card Servicing"
+  },
+  "greenhouse:affirm:7695818003": {
+    "firstSeen": "2026-04-17T23:37:48.829Z",
+    "company": "Affirm",
+    "title": "Machine Learning Engineer II (Fraud) "
   },
   "greenhouse:airbnb:6153760": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -12888,6 +12913,11 @@
     "firstSeen": "2026-04-17T22:37:20.730Z",
     "company": "Anthropic",
     "title": "Product Counsel, Claude Platform "
+  },
+  "greenhouse:anthropic:5191785008": {
+    "firstSeen": "2026-04-17T23:37:48.829Z",
+    "company": "Anthropic",
+    "title": "Research Engineer, Safeguards Labs"
   },
   "greenhouse:anthropic:5192104008": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -31169,6 +31199,11 @@
     "company": "Instacart",
     "title": "Senior Program Manager, Commercial"
   },
+  "greenhouse:instacart:7826880": {
+    "firstSeen": "2026-04-17T23:37:48.829Z",
+    "company": "Instacart",
+    "title": "Staff Technical Program Manager"
+  },
   "greenhouse:launchdarkly:6078938003": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "LaunchDarkly",
@@ -37734,6 +37769,11 @@
     "company": "Pinterest",
     "title": "Technical Program Manager II, Platforms"
   },
+  "greenhouse:pinterest:7568861": {
+    "firstSeen": "2026-04-17T23:37:48.829Z",
+    "company": "Pinterest",
+    "title": "Director, Culture Systems & Belonging"
+  },
   "greenhouse:pinterest:7569150": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Pinterest",
@@ -38999,6 +39039,11 @@
     "company": "Reddit",
     "title": "Senior Measurement Lead"
   },
+  "greenhouse:reddit:7561756": {
+    "firstSeen": "2026-04-17T23:37:48.829Z",
+    "company": "Reddit",
+    "title": "Senior Client Partner, Large Customer Sales (Tech)"
+  },
   "greenhouse:reddit:7572902": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Reddit",
@@ -39509,6 +39554,16 @@
     "company": "Reddit",
     "title": "Senior Android Engineer (Clients Platform)"
   },
+  "greenhouse:reddit:7825749": {
+    "firstSeen": "2026-04-17T23:37:48.829Z",
+    "company": "Reddit",
+    "title": "Senior Android Engineer (Clients Platform)"
+  },
+  "greenhouse:reddit:7825753": {
+    "firstSeen": "2026-04-17T23:37:48.829Z",
+    "company": "Reddit",
+    "title": "Senior Android Engineer (Clients Platform)"
+  },
   "greenhouse:robinhood:4738660": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Robinhood",
@@ -39518,6 +39573,16 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Robinhood",
     "title": "Software Developer, Infrastructure"
+  },
+  "greenhouse:robinhood:5319465": {
+    "firstSeen": "2026-04-17T23:37:48.829Z",
+    "company": "Robinhood",
+    "title": "Senior Software Developer, Backend"
+  },
+  "greenhouse:robinhood:5432053": {
+    "firstSeen": "2026-04-17T23:37:48.829Z",
+    "company": "Robinhood",
+    "title": "Software Developer, Backend"
   },
   "greenhouse:robinhood:5702135": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -43874,6 +43939,11 @@
     "company": "Stripe",
     "title": "Staff Software Engineer, Stripe Scale & Bundles"
   },
+  "greenhouse:stripe:7718947": {
+    "firstSeen": "2026-04-17T23:37:48.829Z",
+    "company": "Stripe",
+    "title": "Tech Operations Associate, New Grad (Mexico)"
+  },
   "greenhouse:stripe:7719602": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Stripe",
@@ -45368,6 +45438,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Twilio",
     "title": "Staff, Product Manager"
+  },
+  "greenhouse:twilio:7818577": {
+    "firstSeen": "2026-04-17T23:37:48.829Z",
+    "company": "Twilio",
+    "title": "Project Manager 3"
   },
   "greenhouse:twilio:7818802": {
     "firstSeen": "2026-04-17T18:11:39.577Z",
@@ -49189,6 +49264,11 @@
     "company": "Autodesk",
     "title": "Enterprise Compliance Manager"
   },
+  "workday:autodesk:26WD96145": {
+    "firstSeen": "2026-04-17T23:37:48.829Z",
+    "company": "Autodesk",
+    "title": "Director, Experience Design, PDMS, Canada"
+  },
   "workday:autodesk:26WD96290": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Autodesk",
@@ -49233,6 +49313,11 @@
     "firstSeen": "2026-04-17T17:01:39.638Z",
     "company": "Autodesk",
     "title": "Fullstack Software Developer (React/Node.js)"
+  },
+  "workday:autodesk:26WD96921": {
+    "firstSeen": "2026-04-17T23:37:48.829Z",
+    "company": "Autodesk",
+    "title": "Principal Program Manager, GTM Transformation & Programs"
   },
   "workday:autodesk:26WD96947": {
     "firstSeen": "2026-04-17T15:59:11.806Z",
@@ -49658,6 +49743,11 @@
     "company": "Intel",
     "title": "Senior Density Fill Development Engineer"
   },
+  "workday:intel:JR0282604": {
+    "firstSeen": "2026-04-17T23:37:48.829Z",
+    "company": "Intel",
+    "title": "Experienced Shift 4 Probe Card Metrology Technician"
+  },
   "workday:intel:JR0282741": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Intel",
@@ -49672,6 +49762,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Intel",
     "title": "Physical Design Engineer for Core IP"
+  },
+  "workday:intel:JR0282835": {
+    "firstSeen": "2026-04-17T23:37:48.829Z",
+    "company": "Intel",
+    "title": "Image Processing Engineer (C++/Linux)"
   },
   "workday:intel:JR0282885": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -50233,6 +50328,11 @@
     "company": "Netflix",
     "title": "Product Manager, Ads (Live Ad Serving)"
   },
+  "workday:netflix:JR39155": {
+    "firstSeen": "2026-04-17T23:37:48.829Z",
+    "company": "Netflix",
+    "title": "Senior Product Designer, Payments"
+  },
   "workday:netflix:JR39187": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Netflix",
@@ -50302,6 +50402,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Netflix",
     "title": "Software Engineer - Rendering"
+  },
+  "workday:netflix:JR39996": {
+    "firstSeen": "2026-04-17T23:37:48.829Z",
+    "company": "Netflix",
+    "title": "Staff Product Designer, Games Discovery"
   },
   "workday:netflix:JR40006": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -50627,6 +50732,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Nvidia",
     "title": "Senior System Software Engineer - Slurm"
+  },
+  "workday:nvidia:JR2016646": {
+    "firstSeen": "2026-04-17T23:37:48.829Z",
+    "company": "Nvidia",
+    "title": "Senior Scientist, Synthetic Data and Privacy"
   },
   "workday:nvidia:JR2016660": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
