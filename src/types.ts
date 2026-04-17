@@ -62,8 +62,10 @@ export type SourceHealthMap = Record<string, SourceHealth>;
 export const BulletActionSchema = z.object({
   id: z.string(),
   keep: z.boolean(),
-  // Lower = earlier in rendered output. 0..100. Only used when keep=true.
-  priority: z.number().min(0).max(100).default(50),
+  // Lower = earlier in rendered output. Relative order is what matters;
+  // we intentionally don't bound the range so LLMs can emit any integer
+  // (some like to use 1..N ranks, others 0..100 percentiles).
+  priority: z.number().default(50),
   // Optional rewrite; if present it replaces the bullet text. Must pass
   // token-level validation against source bullet + JD vocab.
   new_text: z.string().optional(),
