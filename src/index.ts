@@ -91,8 +91,25 @@ function slugFile(s: string): string {
     .slice(0, 60);
 }
 
-function pdfFilename(job: FilteredJob, variantLabel: string): string {
-  return `resume-${slugFile(job.company)}-${slugFile(job.title)}-${variantLabel}.pdf`;
+// Candidate name lives in resume.md header — for filenames we use a
+// stable human-readable form. This is what gets uploaded into the ATS
+// portal, so it should read like a normal resume filename, not an
+// internal tool's slugified dump.
+const CANDIDATE_NAME = process.env["CANDIDATE_NAME"] ?? "Mohammed Arsh Khan";
+
+function toTitleSlug(s: string): string {
+  return s
+    .split(/\s+/)
+    .filter(Boolean)
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+    .join("-");
+}
+
+function pdfFilename(job: FilteredJob, variantSuffix: string): string {
+  const name = CANDIDATE_NAME.replace(/\s+/g, "-");
+  const company = toTitleSlug(job.company.replace(/[^\w\s]/g, ""));
+  const suffix = variantSuffix ? `-${variantSuffix}` : "";
+  return `${name}-${company}-Resume${suffix}.pdf`;
 }
 
 const SEND_GAP_MS = 180;
@@ -216,37 +233,34 @@ async function main(): Promise<void> {
     );
   }
 
-  // Stage 1: early ping for every candidate — SEQUENTIAL with a small gap
-  // so Telegram receives them in the intended chronological order (oldest →
-  // newest, so the freshest lands at the bottom of the chat). Parallel
-  // sends can reshuffle server-side based on network jitter.
-  const earlyPings: Array<{ messageId: number | undefined }> = [];
-  for (const { job, atsMatch, fit } of ordered) {
+  // Per-job pipeline, sequential end-to-end. Header fires first so the URL
+  // lands immediately, then LLM + PDF, then enrichment + attachments thread
+  // under that header. Only after all of that completes do we move to the
+  // next job. This keeps the Telegram chat chronologically clean — each
+  // job is a self-contained block, nothing interleaves across jobs.
+  let sentCount = 0;
+  for (let i = 0; i < ordered.length; i++) {
+    const { job, atsMatch, fit, profile } = ordered[i]!;
+
+    // 1. Early header ping (sub-second, URL lands first)
+    let parentMessageId: number | undefined;
     if (DRY_RUN) {
       console.log(
         `[dry-run] would early-ping: ${job.company} — ${job.title} (${Math.round(atsMatch.score * 100)}% ATS, ${atsMatch.missing.length} missing)`
       );
-      earlyPings.push({ messageId: undefined });
-      continue;
+    } else {
+      try {
+        const res = await sendEarlyPing(job, atsMatch, fit);
+        parentMessageId = res.messageId;
+      } catch (err) {
+        console.error(
+          `[job-radar] early-ping failed for ${job.company}: ${err instanceof Error ? err.message : String(err)}`
+        );
+      }
+      await sleep(SEND_GAP_MS);
     }
-    try {
-      const res = await sendEarlyPing(job, atsMatch, fit);
-      earlyPings.push({ messageId: res.messageId });
-    } catch (err) {
-      console.error(
-        `[job-radar] early-ping failed for ${job.company}: ${err instanceof Error ? err.message : String(err)}`
-      );
-      earlyPings.push({ messageId: undefined });
-    }
-    await sleep(SEND_GAP_MS);
-  }
 
-  // Stage 2: per job — LLM + PDF + enrichment.
-  let sentCount = 0;
-  for (let i = 0; i < ordered.length; i++) {
-    const { job, atsMatch, fit, profile } = ordered[i]!;
-    const parentMessageId = earlyPings[i]!.messageId;
-
+    // 2. LLM tailoring (possibly gated on fit score)
     let llm: LlmOutput;
     if (DRY_RUN) {
       llm = { ok: false, error: "DRY_RUN=1, skipped LLM" };
@@ -289,8 +303,8 @@ async function main(): Promise<void> {
           const buffer = await renderMarkdownToPdf(variantMd);
           pdfs.push({
             buffer,
-            filename: pdfFilename(job, v.label),
-            caption: `${v.caption} — ${job.company}: ${job.title}`.slice(0, 1000),
+            filename: pdfFilename(job, v.suffix),
+            caption: v.caption.slice(0, 1000),
           });
         }
       } catch (err) {

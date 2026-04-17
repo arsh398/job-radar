@@ -1,36 +1,38 @@
-// Resume variants — produce N PDFs per job, each with a different caption
-// and a targeted text transform. Mohammed's use case: one variant for cold
-// apply (primary email), another for referral apply (a different email so
-// we can distinguish which channel a callback came through).
+// Resume variants — produce N PDFs per job, each with a different contact
+// detail so Mohammed can tell apart which channel a recruiter came back
+// through. Kept intentionally generic — filenames and captions do not
+// expose internal routing ("cold", "referral") to anyone downstream.
 //
-// Variant selection is free-form — any string-level transform is valid.
-// The most common is an email swap; add more as needed (phone number for
-// a spam-catching second number, different LinkedIn for A/B, etc).
+// Variant transforms are free-form string edits; the default ships an
+// email-swap variant but phone/LinkedIn/etc. are trivially added.
 
 export type ResumeVariant = {
-  label: string; // internal name, appears in filenames
-  caption: string; // Telegram caption prefix
+  // `suffix` is appended to the PDF filename for the non-primary variants;
+  // the primary variant has no suffix so its filename is the cleanest.
+  suffix: string;
+  // Caption shown in the Telegram message attached to the PDF.
+  caption: string;
   transform: (md: string) => string;
 };
 
 const PRIMARY_EMAIL =
   process.env["RESUME_PRIMARY_EMAIL"] ?? "mdarshkhan9898@gmail.com";
-const REFERRAL_EMAIL =
+const ALT_EMAIL =
   process.env["RESUME_REFERRAL_EMAIL"] ?? "mohammedarshkhan686@gmail.com";
 
 export function buildVariants(): ResumeVariant[] {
   const out: ResumeVariant[] = [
     {
-      label: "cold",
-      caption: "📩 Cold apply",
+      suffix: "",
+      caption: `📄 ${PRIMARY_EMAIL}`,
       transform: (md) => md,
     },
   ];
-  if (REFERRAL_EMAIL && REFERRAL_EMAIL !== PRIMARY_EMAIL) {
+  if (ALT_EMAIL && ALT_EMAIL !== PRIMARY_EMAIL) {
     out.push({
-      label: "referral",
-      caption: "🤝 With referral",
-      transform: (md) => md.split(PRIMARY_EMAIL).join(REFERRAL_EMAIL),
+      suffix: "v2",
+      caption: `📄 ${ALT_EMAIL}`,
+      transform: (md) => md.split(PRIMARY_EMAIL).join(ALT_EMAIL),
     });
   }
   return out;
