@@ -24,6 +24,11 @@
     "company": "Amazon",
     "title": "Channel Team Lead - AMZL"
   },
+  "amazon:0b70c034-5a0f-44fc-88a8-efadbf90ad0d": {
+    "firstSeen": "2026-04-17T21:40:12.768Z",
+    "company": "Amazon",
+    "title": "Software Development Engineer 2, AGI Data Services"
+  },
   "amazon:0c0e617d-154e-4836-9e8d-bc2b6e5abacc": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Amazon",
@@ -4378,6 +4383,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Notion",
     "title": "Account Executive, Mid-Market, Nordics"
+  },
+  "ashby:notion:62fa0a9a-acd7-4753-a051-f98617ffbb9b": {
+    "firstSeen": "2026-04-17T21:40:12.768Z",
+    "company": "Notion",
+    "title": "Field Marketing"
   },
   "ashby:notion:63a4ef8e-cab4-440d-86e1-55f7a97a48cb": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -10219,6 +10229,11 @@
     "company": "Airbnb",
     "title": "Partners Operation Manager (6 Month Fixed-Term Contract)"
   },
+  "greenhouse:airbnb:7826679": {
+    "firstSeen": "2026-04-17T21:40:12.768Z",
+    "company": "Airbnb",
+    "title": "Principal Software Engineer, Performance"
+  },
   "greenhouse:airtable:7892134002": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Airtable",
@@ -11163,6 +11178,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Anthropic",
     "title": "Manager, Account Executive (Growth Startup Sales)"
+  },
+  "greenhouse:anthropic:5043427008": {
+    "firstSeen": "2026-04-17T21:40:12.768Z",
+    "company": "Anthropic",
+    "title": "Finance & Strategy, GTM"
   },
   "greenhouse:anthropic:5044994008": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -12833,6 +12853,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Anthropic",
     "title": "Global Leader, Applied AI Architects, Beneficial Deployments"
+  },
+  "greenhouse:anthropic:5192805008": {
+    "firstSeen": "2026-04-17T21:40:12.768Z",
+    "company": "Anthropic",
+    "title": "Solutions Architect, Applied AI (Commercial)"
   },
   "greenhouse:asana:5480143": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -38714,6 +38739,16 @@
     "company": "Reddit",
     "title": "Senior  Machine Learning Engineer, ML Training Platform "
   },
+  "greenhouse:reddit:7131932": {
+    "firstSeen": "2026-04-17T21:40:12.768Z",
+    "company": "Reddit",
+    "title": "Machine Learning Engineer"
+  },
+  "greenhouse:reddit:7131934": {
+    "firstSeen": "2026-04-17T21:40:12.768Z",
+    "company": "Reddit",
+    "title": "Machine Learning Engineer"
+  },
   "greenhouse:reddit:7167631": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Reddit",
@@ -44754,6 +44789,11 @@
     "company": "Twilio",
     "title": "Senior Software Engineer"
   },
+  "greenhouse:twilio:7548056": {
+    "firstSeen": "2026-04-17T21:40:12.768Z",
+    "company": "Twilio",
+    "title": "Counsel, Commercial"
+  },
   "greenhouse:twilio:7551660": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Twilio",
@@ -45188,6 +45228,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Twilio",
     "title": "Executive Business Partner"
+  },
+  "greenhouse:twilio:7786432": {
+    "firstSeen": "2026-04-17T21:40:12.768Z",
+    "company": "Twilio",
+    "title": "Strategic Account Executive 4"
   },
   "greenhouse:twilio:7789427": {
     "firstSeen": "2026-04-17T18:11:39.577Z",
@@ -49378,6 +49423,11 @@
     "company": "Dell",
     "title": "AI Server Platform System Lead"
   },
+  "workday:dell:R287750": {
+    "firstSeen": "2026-04-17T21:40:12.768Z",
+    "company": "Dell",
+    "title": "Senior Software Engineer"
+  },
   "workday:dell:R288025": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Dell",
@@ -49568,10 +49618,20 @@
     "company": "Intel",
     "title": "Emulation Engineer"
   },
+  "workday:intel:JR0282911": {
+    "firstSeen": "2026-04-17T21:40:12.768Z",
+    "company": "Intel",
+    "title": "Software Product Manager"
+  },
   "workday:intel:JR0282937": {
     "firstSeen": "2026-04-17T19:37:03.534Z",
     "company": "Intel",
     "title": "Supply Business Intelligence Analyst"
+  },
+  "workday:intel:JR0282938": {
+    "firstSeen": "2026-04-17T21:40:12.768Z",
+    "company": "Intel",
+    "title": "Division Supply Planning Analyst"
   },
   "workday:intel:JR0282956": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -50153,6 +50213,11 @@
     "company": "Netflix",
     "title": "Technical Research Specialist"
   },
+  "workday:netflix:JR40009": {
+    "firstSeen": "2026-04-17T21:40:12.768Z",
+    "company": "Netflix",
+    "title": "Trust Services and Enforcement Engineering Manager"
+  },
   "workday:netflix:JR40050": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Netflix",
@@ -50307,6 +50372,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Nvidia",
     "title": "Senior Software Engineer, Fabric Networking - GPU"
+  },
+  "workday:nvidia:JR2015287": {
+    "firstSeen": "2026-04-17T21:40:12.768Z",
+    "company": "Nvidia",
+    "title": "Senior Linux Kernel Systems Software Engineer – CSP Engagements"
   },
   "workday:nvidia:JR2015546": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -50763,6 +50833,11 @@
     "company": "Salesforce",
     "title": "Senior Account Solution Engineer, Mid-Market - Singapore"
   },
+  "workday:salesforce:JR329363": {
+    "firstSeen": "2026-04-17T21:40:12.768Z",
+    "company": "Salesforce",
+    "title": "Principal Executive Assistant"
+  },
   "workday:salesforce:JR330736": {
     "firstSeen": "2026-04-17T17:01:39.638Z",
     "company": "Salesforce",
@@ -50847,6 +50922,11 @@
     "firstSeen": "2026-04-17T19:37:03.534Z",
     "company": "Salesforce",
     "title": "Software Engineer - Keynote Demos"
+  },
+  "workday:salesforce:JR335979": {
+    "firstSeen": "2026-04-17T21:40:12.768Z",
+    "company": "Salesforce",
+    "title": "Sr Manager, Event Portfolio Strategy"
   },
   "workday:salesforce:JR336436": {
     "firstSeen": "2026-04-17T19:37:03.534Z",
@@ -51003,6 +51083,11 @@
     "company": "Salesforce",
     "title": "RVP, Sales - Public Sector"
   },
+  "workday:salesforce:JR338820": {
+    "firstSeen": "2026-04-17T21:40:12.768Z",
+    "company": "Salesforce",
+    "title": "Director, Solution Engineering"
+  },
   "workday:salesforce:JR338825": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Salesforce",
@@ -51012,6 +51097,11 @@
     "firstSeen": "2026-04-17T15:59:11.806Z",
     "company": "Salesforce",
     "title": "Renewals Manager. German Speaker"
+  },
+  "workday:salesforce:JR338894": {
+    "firstSeen": "2026-04-17T21:40:12.768Z",
+    "company": "Salesforce",
+    "title": "Design Engineer, Editorial"
   },
   "workday:salesforce:JR338922": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -51218,6 +51308,11 @@
     "company": "Walmart",
     "title": "(CAN) Stock Unloader Associate"
   },
+  "workday:walmart:R-2481922": {
+    "firstSeen": "2026-04-17T21:40:12.768Z",
+    "company": "Walmart",
+    "title": "(USA) Stocking 2 Coach"
+  },
   "workday:walmart:R-2482053": {
     "firstSeen": "2026-04-17T18:11:39.577Z",
     "company": "Walmart",
@@ -51273,6 +51368,11 @@
     "company": "Workday",
     "title": "Customer Success Manager"
   },
+  "workday:workday:JR-0104647": {
+    "firstSeen": "2026-04-17T21:40:12.768Z",
+    "company": "Workday",
+    "title": "Solution Consultant- FINS"
+  },
   "workday:workday:JR-0104772": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Workday",
@@ -51327,6 +51427,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Workday",
     "title": "Principal Software Development Engineer (P5)"
+  },
+  "workday:workday:JR-0105552": {
+    "firstSeen": "2026-04-17T21:40:12.768Z",
+    "company": "Workday",
+    "title": "Sr Software Development Engineer"
   },
   "workday:workday:JR-0105619": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
