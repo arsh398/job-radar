@@ -64,11 +64,11 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
-          MAX_LLM_PER_RUN: ${{ inputs.max_llm || '20' }}
-          MAX_PER_COMPANY: ${{ inputs.max_per_company || '3' }}
+          MAX_LLM_PER_RUN: ${{ inputs.max_llm || '40' }}
+          MAX_PER_COMPANY: ${{ inputs.max_per_company || '8' }}
           ALERT_SKIPS: '1'
           ENABLE_PDF: '1'
-          ENABLE_TELEGRAM: '1'
+          ENABLE_TELEGRAM: '0'
           ENABLE_NOTION: '1'
         run: pnpm start
 
