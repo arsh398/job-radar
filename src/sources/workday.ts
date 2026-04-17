@@ -96,7 +96,9 @@ async function fetchTenant(t: WorkdayTenant): Promise<Job[]> {
     collected.push(...postings);
     if (collected.length >= resp.total) break;
   }
-  const base = `https://${t.tenant}.${t.wdN}.myworkdayjobs.com`;
+  // Job URLs must include the site path — without it Workday returns 404.
+  // e.g. /jobs/job/... (not /job/...).
+  const base = `https://${t.tenant}.${t.wdN}.myworkdayjobs.com/${t.site}`;
   return collected.map((p) => {
     const reqId = p.bulletFields?.[0] ?? p.externalPath.split("_").pop() ?? p.externalPath;
     return {
