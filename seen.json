@@ -744,6 +744,11 @@
     "company": "Amazon",
     "title": "Software Dev Engineer II, Amazon Customer Service"
   },
+  "amazon:a56f5b1a-23f4-4557-a6b4-ff3d110dd7d8": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Amazon",
+    "title": "Marketing Manager I"
+  },
   "amazon:a5765a0f-2354-4122-814f-b0031934fe3d": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Amazon",
@@ -954,10 +959,20 @@
     "company": "Amazon",
     "title": "Senior WiFi Test Engineer, eero"
   },
+  "amazon:de6e6c67-4f9e-42ab-b010-1f57660222d6": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Amazon",
+    "title": "Marketing manager II"
+  },
   "amazon:e07ec589-ffad-46b8-9cb7-41937c17d8db": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Amazon",
     "title": " WHS Officer"
+  },
+  "amazon:e4ab37c2-1797-4359-b8c1-1359790cdc6d": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Amazon",
+    "title": "Tax Intern, International Tax Compliance, APAC ITX Compliance"
   },
   "amazon:e745ddf3-3716-406c-9c97-37fc617160cf": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -6843,6 +6858,11 @@
     "firstSeen": "2026-04-17T09:54:02.039Z",
     "company": "Sarvam AI",
     "title": "Creative Lead"
+  },
+  "ashby:sarvam:674cde1b-17ff-40f7-9b47-cbb9daf28081": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Sarvam AI",
+    "title": "test-marketing-manager"
   },
   "ashby:sarvam:6b2f3e0f-9a6e-4114-a54d-224e82e34fe1": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -19459,6 +19479,11 @@
     "company": "Databricks",
     "title": "Staff Software Engineer - Ingestion"
   },
+  "greenhouse:databricks:8201686002": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Databricks",
+    "title": "Staff Software Engineer - Ingestion"
+  },
   "greenhouse:databricks:8201768002": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Databricks",
@@ -20244,6 +20269,11 @@
     "company": "Databricks",
     "title": "Enterprise Account Executive, Army"
   },
+  "greenhouse:databricks:8373617002": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Databricks",
+    "title": "Sr. Resident Solutions Architect"
+  },
   "greenhouse:databricks:8374096002": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Databricks",
@@ -20809,6 +20839,11 @@
     "company": "Databricks",
     "title": "Candidate Experience Coordinator (Fixed-Term Contract)"
   },
+  "greenhouse:databricks:8421611002": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Databricks",
+    "title": "Senior Business Analyst"
+  },
   "greenhouse:databricks:8421613002": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Databricks",
@@ -20943,6 +20978,11 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Databricks",
     "title": "Staff People Partner, EMEA"
+  },
+  "greenhouse:databricks:8431935002": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Databricks",
+    "title": "Customer Enablement Specialist"
   },
   "greenhouse:databricks:8431937002": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -22054,6 +22094,11 @@
     "company": "Databricks",
     "title": "Solutions Architect - FSI"
   },
+  "greenhouse:databricks:8481719002": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Databricks",
+    "title": "Solutions Architect"
+  },
   "greenhouse:databricks:8482037002": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Databricks",
@@ -22549,6 +22594,11 @@
     "company": "Datadog",
     "title": "Strategic Account Executive (Rome - Italy) "
   },
+  "greenhouse:datadog:5798241": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Datadog",
+    "title": "Commercial Account Executive"
+  },
   "greenhouse:datadog:5925905": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Datadog",
@@ -22558,6 +22608,16 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Datadog",
     "title": "Commercial Account Executive"
+  },
+  "greenhouse:datadog:6009779": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Datadog",
+    "title": "Customer Success Associate"
+  },
+  "greenhouse:datadog:6016967": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Datadog",
+    "title": "Strategic Account Executive"
   },
   "greenhouse:datadog:6163246": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -22588,6 +22648,11 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Datadog",
     "title": "Commercial Account Executive UKI/Nordics"
+  },
+  "greenhouse:datadog:6430289": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Datadog",
+    "title": "Enterprise Sales Engineer"
   },
   "greenhouse:datadog:6430945": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -22638,6 +22703,11 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Datadog",
     "title": "Strategic Account Executive"
+  },
+  "greenhouse:datadog:6523631": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Datadog",
+    "title": "Mid Market Account Executive"
   },
   "greenhouse:datadog:6572400": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -23059,6 +23129,11 @@
     "company": "Datadog",
     "title": "Enterprise Sales Executive (SLED)"
   },
+  "greenhouse:datadog:7435209": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Datadog",
+    "title": "Enterprise Customer Success Manager"
+  },
   "greenhouse:datadog:7436312": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Datadog",
@@ -23083,6 +23158,11 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Datadog",
     "title": "Strategic Account Executive, Public Sector Japan, FED"
+  },
+  "greenhouse:datadog:7439573": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Datadog",
+    "title": "Strategic Account Executive, Public Sector Japan, SLED"
   },
   "greenhouse:datadog:7440341": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -23236,6 +23316,11 @@
   },
   "greenhouse:datadog:7481124": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
+    "company": "Datadog",
+    "title": "Commercial & Mid Market Sales Engineer"
+  },
+  "greenhouse:datadog:7483199": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
     "company": "Datadog",
     "title": "Commercial & Mid Market Sales Engineer"
   },
@@ -23789,6 +23874,11 @@
     "company": "Datadog",
     "title": "Vice President, Internal Audit"
   },
+  "greenhouse:datadog:7660508": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Datadog",
+    "title": "Manager, Sales Development"
+  },
   "greenhouse:datadog:7660700": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Datadog",
@@ -24169,6 +24259,11 @@
     "company": "Datadog",
     "title": "Senior Partner Manager - Channels (Middle East)"
   },
+  "greenhouse:datadog:7747713": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Datadog",
+    "title": "Partner Manager - Channels (Pan-SEMEA)"
+  },
   "greenhouse:datadog:7748975": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Datadog",
@@ -24338,6 +24433,11 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Datadog",
     "title": "Manager, Sales Development"
+  },
+  "greenhouse:datadog:7790048": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Datadog",
+    "title": "Customer Success Manager"
   },
   "greenhouse:datadog:7790098": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -26969,6 +27069,11 @@
     "company": "Elastic",
     "title": "Senior Solution Architect - Public Sector"
   },
+  "greenhouse:elastic:7811852": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Elastic",
+    "title": "Solution Architect"
+  },
   "greenhouse:elastic:7812397": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Elastic",
@@ -28798,6 +28903,11 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "GitLab",
     "title": "Product Design Manager, Platforms, Plan, and Analytics "
+  },
+  "greenhouse:gitlab:8503792002": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "GitLab",
+    "title": "Account Executive - Italy"
   },
   "greenhouse:gitlab:8504039002": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -39114,6 +39224,11 @@
     "company": "Rubrik",
     "title": "Staff Product Manager, Enterprise Data Protection"
   },
+  "greenhouse:rubrik:7310028": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Rubrik",
+    "title": "Account Executive "
+  },
   "greenhouse:rubrik:7310036": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Rubrik",
@@ -39474,6 +39589,11 @@
     "company": "Rubrik",
     "title": "Senior Software Engineer - Hypervisor "
   },
+  "greenhouse:rubrik:7570191": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Rubrik",
+    "title": "Engineering Manager"
+  },
   "greenhouse:rubrik:7570678": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Rubrik",
@@ -39808,6 +39928,11 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Rubrik",
     "title": "Regional Director, Strategics"
+  },
+  "greenhouse:rubrik:7765355": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Rubrik",
+    "title": "Product Management Intern"
   },
   "greenhouse:rubrik:7765581": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -42879,6 +43004,11 @@
     "company": "Stripe",
     "title": "Forward Deployed AI Accelerator, Marketing"
   },
+  "greenhouse:stripe:7747640": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Stripe",
+    "title": "Forward Deployed AI Accelerator, Marketing"
+  },
   "greenhouse:stripe:7748114": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Stripe",
@@ -44463,6 +44593,11 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Meesho",
     "title": "Senior Manager - Production"
+  },
+  "lever:meesho:1f2462b8-3548-466e-908f-dcae91cfaee1": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Meesho",
+    "title": "Manager - Performance Marketing (Seller Growth)"
   },
   "lever:meesho:2091ea2a-f146-41a2-bd57-89f677ca3d67": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -47064,6 +47199,11 @@
     "company": "Paytm",
     "title": "KAM - Team Lead - EDC"
   },
+  "lever:paytm:fd094403-e242-4cb5-9de0-3bf32ef8de5b": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Paytm",
+    "title": "TechOps Engineer"
+  },
   "lever:paytm:fd148428-bc2b-4499-9d4a-5c17dbbf8a01": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Paytm",
@@ -47684,6 +47824,11 @@
     "company": "Intel",
     "title": "Manufacturing Operator"
   },
+  "workday:intel:JR0282905": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Intel",
+    "title": "Emulation Engineer"
+  },
   "workday:intel:JR0282934": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Intel",
@@ -47859,6 +48004,11 @@
     "company": "Mastercard",
     "title": "Sr. Specialist, Customer Success"
   },
+  "workday:mastercard:R-274865": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Mastercard",
+    "title": "Customer Technical Services Analyst II"
+  },
   "workday:mastercard:R-274921": {
     "firstSeen": "2026-04-17T09:54:02.039Z",
     "company": "Mastercard",
@@ -47924,10 +48074,20 @@
     "company": "Mastercard",
     "title": "VP, Technology Regulatory Optimization & Customer Engagements"
   },
+  "workday:mastercard:R-275522": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Mastercard",
+    "title": "Senior BizOps Engineer"
+  },
   "workday:mastercard:R-275530": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Mastercard",
     "title": "Manager Corporate Travel Services"
+  },
+  "workday:mastercard:R-275567": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Mastercard",
+    "title": "Site Reliability Engineer I-2"
   },
   "workday:mastercard:R-275616": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -48298,6 +48458,11 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Nvidia",
     "title": "Engineering Manager - OpenBMC Platform"
+  },
+  "workday:nvidia:JR1997936": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Nvidia",
+    "title": "Senior System Software Engineer, NCCL - Partner Enablement"
   },
   "workday:nvidia:JR1999579": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -48724,6 +48889,11 @@
     "company": "Salesforce",
     "title": "Software Engineering AMTS"
   },
+  "workday:salesforce:JR289537": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Salesforce",
+    "title": "Commercial Graduate Rotation Program  - UK & Ireland Markets"
+  },
   "workday:salesforce:JR312773": {
     "firstSeen": "2026-04-17T09:54:02.039Z",
     "company": "Salesforce",
@@ -48743,6 +48913,11 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Salesforce",
     "title": "User Experience/ Senior User Experience Designer"
+  },
+  "workday:salesforce:JR321835": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Salesforce",
+    "title": "Success Architect-MuleSoft"
   },
   "workday:salesforce:JR325489": {
     "firstSeen": "2026-04-17T09:54:02.039Z",
@@ -48834,6 +49009,11 @@
     "company": "Salesforce",
     "title": "公共ビジネス事業開発本部 - Sales Productivity Coordinator（アシスタント職）【障害者採用】"
   },
+  "workday:salesforce:JR336701": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Salesforce",
+    "title": "Sr. Account Executive – Med Tech / Manu – Sweden"
+  },
   "workday:salesforce:JR336780": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Salesforce",
@@ -48888,6 +49068,11 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Salesforce",
     "title": "Sr. Analyst - Program/Project Management"
+  },
+  "workday:salesforce:JR337965": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Salesforce",
+    "title": "Industry Advisor – Retail & Consumer Goods (RCG)"
   },
   "workday:salesforce:JR338281": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -48998,6 +49183,11 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Walmart",
     "title": "(USA) Cake Decorator"
+  },
+  "workday:walmart:R-2420107": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Walmart",
+    "title": "DISTINGUISHED, SOFTWARE ENGINEER"
   },
   "workday:walmart:R-2422194": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -49184,6 +49374,11 @@
     "company": "Workday",
     "title": "Principal Software Engineer, AI"
   },
+  "workday:workday:JR-0105317": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Workday",
+    "title": "Software Developer - Identity & Authentication Team"
+  },
   "workday:workday:JR-0105416": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Workday",
@@ -49203,6 +49398,11 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Workday",
     "title": "Pricing Director"
+  },
+  "workday:workday:JR-0105619": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Workday",
+    "title": "Adaptive Planning Sales Specialist - Singapore NN & CB"
   },
   "workday:workday:JR-0105645": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -49243,6 +49443,11 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Workday",
     "title": "Senior Technical Support Engineer"
+  },
+  "workday:workday:JR-0106114": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Workday",
+    "title": "Software Development Engineer - Site Reliability - DevOps"
   },
   "workday:workday:JR-0106131": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
@@ -49299,6 +49504,11 @@
     "company": "Workday",
     "title": "Senior Consultant - Payroll, FSI and PS Industries"
   },
+  "workday:workday:JR-0106399": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Workday",
+    "title": "Associate Manager, Software Development Engineering"
+  },
   "workday:workday:JR-0106444": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Workday",
@@ -49323,6 +49533,11 @@
     "firstSeen": "2026-04-17T08:55:41.208Z",
     "company": "Workday",
     "title": "Sr / Software Development Engineer"
+  },
+  "workday:workday:JR-0106509": {
+    "firstSeen": "2026-04-17T10:54:18.200Z",
+    "company": "Workday",
+    "title": "Software Development Manager - Application Development"
   },
   "workday:workday:JR-0106528": {
     "firstSeen": "2026-04-17T08:55:41.208Z",
