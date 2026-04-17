@@ -27,12 +27,14 @@ import { computeAtsMatch } from "./filters/ats_match.ts";
 import { computeFitScore } from "./match/score.ts";
 import { embedText } from "./match/embeddings.ts";
 import { renderMarkdownToPdf, closePdfBrowser } from "./pdf/render.ts";
+import { buildVariants } from "./resume/variants.ts";
 import type {
   AtsMatch,
   FitScore,
   FilteredJob,
   JobAlert,
   LlmOutput,
+  PdfAttachment,
 } from "./types.ts";
 
 loadEnv();
@@ -89,9 +91,12 @@ function slugFile(s: string): string {
     .slice(0, 60);
 }
 
-function pdfFilename(job: FilteredJob): string {
-  return `resume-${slugFile(job.company)}-${slugFile(job.title)}.pdf`;
+function pdfFilename(job: FilteredJob, variantLabel: string): string {
+  return `resume-${slugFile(job.company)}-${slugFile(job.title)}-${variantLabel}.pdf`;
 }
+
+const SEND_GAP_MS = 180;
+const sleep = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
 
 function shouldAlert(llm: LlmOutput): boolean {
   if (!llm.ok) return true;
@@ -211,26 +216,30 @@ async function main(): Promise<void> {
     );
   }
 
-  // Stage 1: early ping for every candidate, in parallel.
-  const earlyPings = await Promise.all(
-    ordered.map(async ({ job, atsMatch, fit }) => {
-      if (DRY_RUN) {
-        console.log(
-          `[dry-run] would early-ping: ${job.company} — ${job.title} (${Math.round(atsMatch.score * 100)}% ATS, ${atsMatch.missing.length} missing)`
-        );
-        return { messageId: undefined as number | undefined };
-      }
-      try {
-        const res = await sendEarlyPing(job, atsMatch, fit);
-        return { messageId: res.messageId };
-      } catch (err) {
-        console.error(
-          `[job-radar] early-ping failed for ${job.company}: ${err instanceof Error ? err.message : String(err)}`
-        );
-        return { messageId: undefined };
-      }
-    })
-  );
+  // Stage 1: early ping for every candidate — SEQUENTIAL with a small gap
+  // so Telegram receives them in the intended chronological order (oldest →
+  // newest, so the freshest lands at the bottom of the chat). Parallel
+  // sends can reshuffle server-side based on network jitter.
+  const earlyPings: Array<{ messageId: number | undefined }> = [];
+  for (const { job, atsMatch, fit } of ordered) {
+    if (DRY_RUN) {
+      console.log(
+        `[dry-run] would early-ping: ${job.company} — ${job.title} (${Math.round(atsMatch.score * 100)}% ATS, ${atsMatch.missing.length} missing)`
+      );
+      earlyPings.push({ messageId: undefined });
+      continue;
+    }
+    try {
+      const res = await sendEarlyPing(job, atsMatch, fit);
+      earlyPings.push({ messageId: res.messageId });
+    } catch (err) {
+      console.error(
+        `[job-radar] early-ping failed for ${job.company}: ${err instanceof Error ? err.message : String(err)}`
+      );
+      earlyPings.push({ messageId: undefined });
+    }
+    await sleep(SEND_GAP_MS);
+  }
 
   // Stage 2: per job — LLM + PDF + enrichment.
   let sentCount = 0;
@@ -258,7 +267,7 @@ async function main(): Promise<void> {
       );
     }
 
-    let pdf: JobAlert["pdf"] = undefined;
+    const pdfs: PdfAttachment[] = [];
     if (ENABLE_PDF && !DRY_RUN && llm.ok && llm.data.verdict !== "skip") {
       try {
         const jdText = job.descriptionMd || job.description;
@@ -274,8 +283,16 @@ async function main(): Promise<void> {
           );
           for (const w of warnings.slice(0, 5)) console.warn(`  - ${w}`);
         }
-        const buffer = await renderMarkdownToPdf(tailoredMd);
-        pdf = { buffer, filename: pdfFilename(job) };
+        const variants = buildVariants();
+        for (const v of variants) {
+          const variantMd = v.transform(tailoredMd);
+          const buffer = await renderMarkdownToPdf(variantMd);
+          pdfs.push({
+            buffer,
+            filename: pdfFilename(job, v.label),
+            caption: `${v.caption} — ${job.company}: ${job.title}`.slice(0, 1000),
+          });
+        }
       } catch (err) {
         console.error(
           `[pdf] render failed for ${job.company}: ${err instanceof Error ? err.message : String(err)}`
@@ -289,7 +306,7 @@ async function main(): Promise<void> {
       atsMatch,
       fit,
       profileName: profile.name,
-      pdf,
+      pdfs,
     };
     if (!shouldAlert(llm)) {
       console.log(

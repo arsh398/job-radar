@@ -2,10 +2,15 @@ import type { FilteredJob, JobAlert, AtsMatch, FitScore } from "../types.ts";
 import {
   formatEarlyHeader,
   formatEnrichment,
-  formatPdfCaption,
   formatSourceBroken,
 } from "./formatter.ts";
 import { sendTelegramDocument, sendTelegramMessage } from "./bot.ts";
+
+// Small delay between Telegram sends keeps ordering strict (server-side
+// ordering can otherwise shuffle concurrent sends) and stays under the
+// soft per-chat rate limit (~1 msg/sec for bots).
+const SEND_GAP_MS = 180;
+const sleep = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
 
 // Two-stage flow:
 // 1) sendEarlyPing — sent immediately when a new job passes filters, BEFORE
@@ -34,16 +39,17 @@ export async function sendEnrichedFollowUp(
       replyToMessageId: parentMessageId,
       disableNotification: true,
     });
+    await sleep(SEND_GAP_MS);
   }
 
-  if (alert.pdf) {
-    const planData = alert.llm.ok ? alert.llm.data : null;
-    await sendTelegramDocument(alert.pdf.buffer, {
-      filename: alert.pdf.filename,
-      caption: formatPdfCaption(alert.job, planData),
+  for (const pdf of alert.pdfs) {
+    await sendTelegramDocument(pdf.buffer, {
+      filename: pdf.filename,
+      caption: pdf.caption,
       replyToMessageId: parentMessageId,
       disableNotification: true,
     });
+    await sleep(SEND_GAP_MS);
   }
 }
 

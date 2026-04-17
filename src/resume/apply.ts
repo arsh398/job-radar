@@ -133,6 +133,14 @@ function renderBullets(bullets: ResumeBullet[]): string {
   return bullets.map((b) => `- ${b.text}`).join("\n");
 }
 
+function escapeHtml(s: string): string {
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
 // Minimum bullets per section — a tailored resume that nukes everything
 // produces a skeleton that's worse than the source. If the plan hides too
 // much, restore the top-priority hidden items to hit the floor.
@@ -300,12 +308,6 @@ function renderResume(r: ParsedResume): string {
     lines.push(r.summary);
     lines.push("");
   }
-  if (r.achievements.length) {
-    lines.push("## Competitive Programming & Achievements");
-    lines.push("");
-    lines.push(renderBullets(r.achievements));
-    lines.push("");
-  }
   if (r.experience.length) {
     lines.push("## Work Experience");
     lines.push("");
@@ -326,10 +328,9 @@ function renderResume(r: ParsedResume): string {
       lines.push(`### ${p.heading}`);
       if (p.techStack) lines.push(`*${p.techStack}*`);
       lines.push("");
-      if (p.intro) {
-        lines.push(p.intro);
-        lines.push("");
-      }
+      // Intro paragraph intentionally omitted in the rendered PDF —
+      // bullets carry the detail and the intro duplicates. Saves ~1 line
+      // per project on the single-page layout.
       lines.push(renderBullets(p.bullets));
       lines.push("");
     }
@@ -337,15 +338,27 @@ function renderResume(r: ParsedResume): string {
   if (r.skills.length) {
     lines.push("## Skills");
     lines.push("");
+    // Emit as raw HTML so CSS can tighten inter-category spacing to
+    // near-zero without affecting the rest of the document.
+    lines.push(`<div class="skills">`);
     for (const c of r.skills) {
-      lines.push(`**${c.category}**: ${c.items.join(", ")}`);
-      lines.push("");
+      lines.push(
+        `  <p><strong>${escapeHtml(c.category)}</strong>: ${escapeHtml(c.items.join(", "))}</p>`
+      );
     }
+    lines.push(`</div>`);
+    lines.push("");
   }
   if (r.educationMd) {
     lines.push("## Education");
     lines.push("");
     lines.push(r.educationMd);
+    lines.push("");
+  }
+  if (r.achievements.length) {
+    lines.push("## Achievements");
+    lines.push("");
+    lines.push(renderBullets(r.achievements));
     lines.push("");
   }
   return lines.join("\n").replace(/\n{3,}/g, "\n\n").trim() + "\n";

@@ -108,11 +108,17 @@ export type FitScore = {
   yoe: number;
 };
 
+export type PdfAttachment = {
+  buffer: Uint8Array;
+  filename: string;
+  caption: string;
+};
+
 export type JobAlert = {
   job: FilteredJob;
   llm: LlmOutput;
   atsMatch: AtsMatch;
   fit: FitScore;
   profileName: string;
-  pdf?: { buffer: Uint8Array; filename: string };
+  pdfs: PdfAttachment[];
 };

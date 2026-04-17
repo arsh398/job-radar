@@ -1,20 +1,12 @@
 # Mohammed Arsh Khan
 
-Bangalore, India · mdarshkhan9898@gmail.com · +91 9131110480
-
-LinkedIn: /in/mdarshkhan · GitHub: arshkhann98 · Codeforces: ARSHKHAN98 (Expert) · Leetcode: arshkhann (Knight) · CodeChef: arshkhan17 (5★)
+Bangalore, India · mdarshkhan9898@gmail.com · +91 9131110480 · linkedin.com/in/mdarshkhan · github.com/arshkhann98
 
 ---
 
-## Professional Summary
+## Summary
 
-Product Engineer with 2 years building full systems end-to-end — Kubernetes-based remote execution environments, AI behavioral testing platforms, and deterministic web QA scanners. ICPC regionalist (2x), Codeforces Expert, 1200+ competitive programming problems solved. Shipped production systems at Juspay (Kubernetes, MCP, Slack AI integration) and Avalara (React, .NET, customer-facing tax APIs). Actively exploring AI safety through hands-on evaluation tooling.
-
-## Competitive Programming & Achievements
-
-- **ICPC regionalist 2021, 2023** — cleared regional qualifiers twice
-- **Codeforces Expert** (ARSHKHAN98) · **Leetcode Knight** (arshkhann) · **CodeChef 5★** (arshkhan17)
-- **1200+ problems solved** across competitive programming platforms
+Product Engineer with 2 years shipping production systems at Juspay (Kubernetes-based remote execution, MCP tooling) and Avalara (customer-facing tax APIs, WCAG-compliant UI). Built AI behavioral testing platforms and deterministic web QA scanners.
 
 ## Work Experience
 
@@ -73,3 +65,7 @@ Scans web applications by testing every interactive element — finds bugs that 
 
 **Bachelor of Engineering in Computer Science** — 2020–2024
 *Institute of Engineering and Technology, DAVV, Indore* · CGPA 8.32
+
+## Achievements
+
+- **ICPC Regionalist** (2021, 2023) · **Codeforces Expert** · **Leetcode Knight** · **CodeChef 5★** · 1200+ problems solved across competitive programming platforms
