@@ -4,6 +4,19 @@ on:
   schedule:
     - cron: '*/30 * * * *'
   workflow_dispatch:
+    inputs:
+      max_llm:
+        description: "LLM calls per run (default 20)"
+        type: string
+        default: "20"
+      max_per_company:
+        description: "Max jobs per company (default 3)"
+        type: string
+        default: "3"
+      wipe_seen:
+        description: "Clear seen.json so all current jobs re-fire"
+        type: boolean
+        default: false
 
 concurrency:
   group: job-radar
@@ -39,6 +52,10 @@ jobs:
       - name: Install Chromium for Puppeteer
         run: pnpm exec puppeteer browsers install chrome
 
+      - name: Wipe seen.json (backfill mode)
+        if: ${{ inputs.wipe_seen == true }}
+        run: echo '{}' > seen.json
+
       - name: Run job-radar
         env:
           GOOGLE_AI_STUDIO_API_KEY: ${{ secrets.GOOGLE_AI_STUDIO_API_KEY }}
@@ -47,7 +64,8 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
-          MAX_LLM_PER_RUN: '20'
+          MAX_LLM_PER_RUN: ${{ inputs.max_llm || '20' }}
+          MAX_PER_COMPANY: ${{ inputs.max_per_company || '3' }}
           ALERT_SKIPS: '1'
           ENABLE_PDF: '1'
           ENABLE_TELEGRAM: '1'
