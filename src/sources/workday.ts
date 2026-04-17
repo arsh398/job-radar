@@ -47,27 +47,41 @@ export const WORKDAY_TENANTS: WorkdayTenant[] = [
   { name: "Workday", tenant: "workday", wdN: "wd5", site: "workday" },
 ];
 
-// Best-effort parse of Workday's relative-date strings into an ISO date.
+// Best-effort parse of Workday's fuzzy relative-date strings into ISO. We
+// use mid-window estimates because Workday's buckets are coarse — "Posted
+// Today" covers the full 0-24h window, not "right this minute". Mapping
+// "Today" to now.toISOString() made jobs posted this morning display as
+// "just now" in Telegram which was misleading.
+//
+// Mapping:
+//   "Posted Today"     → 12h ago (midpoint of 0-24h)
+//   "Posted Yesterday" → 36h ago (midpoint of 24-48h)
+//   "Posted N Days Ago"/"N Days Ago" → N × 24h (lower bound; accurate when
+//     Workday shows exact days, safe when it shows "30+")
+//
 // Examples: "Posted Today", "Posted 3 Days Ago", "Posted 30+ Days Ago".
+const HOUR_MS = 60 * 60 * 1000;
+const DAY_MS = 24 * HOUR_MS;
+
 function parsePostedOn(s: string | undefined): string | undefined {
   if (!s) return undefined;
-  const now = new Date();
+  const now = Date.now();
   const lower = s.toLowerCase();
-  if (lower.includes("today")) {
-    return new Date(now.getTime()).toISOString();
-  }
   if (lower.includes("yesterday")) {
-    return new Date(now.getTime() - 24 * 60 * 60 * 1000).toISOString();
+    return new Date(now - 36 * HOUR_MS).toISOString();
   }
   const m = /posted\s+(\d+)\+?\s+day/i.exec(s);
   if (m) {
     const days = parseInt(m[1]!, 10);
-    return new Date(now.getTime() - days * 24 * 60 * 60 * 1000).toISOString();
+    return new Date(now - days * DAY_MS).toISOString();
   }
   const m2 = /(\d+)\+?\s+days?\s+ago/i.exec(s);
   if (m2) {
     const days = parseInt(m2[1]!, 10);
-    return new Date(now.getTime() - days * 24 * 60 * 60 * 1000).toISOString();
+    return new Date(now - days * DAY_MS).toISOString();
+  }
+  if (lower.includes("today")) {
+    return new Date(now - 12 * HOUR_MS).toISOString();
   }
   return undefined;
 }
