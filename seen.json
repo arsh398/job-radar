@@ -559,6 +559,11 @@
     "company": "Amazon",
     "title": "Sr Pgm Mgr - Value Excellence, Retail Business Services"
   },
+  "amazon:7a91a11a-843f-424d-b4b3-d5dd669c9f02": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Amazon",
+    "title": "Audio - QAE II, SSG"
+  },
   "amazon:7a9452db-d5ba-4bb5-bfdb-04ca78b1c199": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Amazon",
@@ -1668,6 +1673,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Confluent",
     "title": "Senior Software Engineer - Connect Platform"
+  },
+  "ashby:confluent:09b5df3f-2e17-4b95-ab0b-5d7cdb038a0e": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Confluent",
+    "title": "Staff Software Engineer I – Control Plane Core Infrastructure"
   },
   "ashby:confluent:0b2a4106-7f01-4205-813d-81e4fa1abdb4": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -4488,6 +4498,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Notion",
     "title": "Product Marketing Manager, Launch Lead"
+  },
+  "ashby:notion:85e7823f-073c-4fef-9b51-7fc7b725686d": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Notion",
+    "title": "Campaign Manager"
   },
   "ashby:notion:869be97b-30d6-4612-a22b-2101a8b2a190": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -9014,6 +9029,16 @@
     "company": "Affirm",
     "title": "Software Engineering Manager (Servicing Platform)"
   },
+  "greenhouse:affirm:7694294003": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Affirm",
+    "title": "Software Engineer II (ML Feature Platform)"
+  },
+  "greenhouse:affirm:7694296003": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Affirm",
+    "title": "Software Engineer II (ML Feature Platform)"
+  },
   "greenhouse:affirm:7694934003": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Affirm",
@@ -9488,6 +9513,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Airbnb",
     "title": "Senior Staff Machine Learning Engineer, Trust"
+  },
+  "greenhouse:airbnb:7594971": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Airbnb",
+    "title": "Senior Data Scientist, Platform (Algorithms/Trust)"
   },
   "greenhouse:airbnb:7600470": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -12844,10 +12874,20 @@
     "company": "Anthropic",
     "title": "Software Engineer, Research Data Platform"
   },
+  "greenhouse:anthropic:5191332008": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Anthropic",
+    "title": "Sales Strategy & Operational Excellence Lead"
+  },
   "greenhouse:anthropic:5191638008": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Anthropic",
     "title": "Cluster Deployment Engineer"
+  },
+  "greenhouse:anthropic:5191775008": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Anthropic",
+    "title": "Product Counsel, Claude Platform "
   },
   "greenhouse:anthropic:5192104008": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -12863,6 +12903,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Asana",
     "title": "Software Engineer, Reykjavik"
+  },
+  "greenhouse:asana:5677738": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Asana",
+    "title": "Business Development Representative"
   },
   "greenhouse:asana:5844714": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -25889,6 +25934,11 @@
     "company": "Discord",
     "title": "Legal Vendor Program Manager"
   },
+  "greenhouse:discord:8498984002": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Discord",
+    "title": "Staff Software Engineer, Data Platform"
+  },
   "greenhouse:discord:8499094002": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Discord",
@@ -28338,6 +28388,11 @@
     "firstSeen": "2026-04-17T15:59:11.806Z",
     "company": "Figma",
     "title": "Manager, Sales - Figma Weave (New York, United States)"
+  },
+  "greenhouse:figma:5973393004": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Figma",
+    "title": "Manager, AV"
   },
   "greenhouse:fireworksai:4000239009": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -32383,6 +32438,11 @@
     "firstSeen": "2026-04-17T19:37:03.534Z",
     "company": "Mercury",
     "title": "Senior Partner Operations Change Management Strategist"
+  },
+  "greenhouse:mercury:5973909004": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Mercury",
+    "title": "Senior Workforce Strategist"
   },
   "greenhouse:mixpanel:5798832": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -36654,6 +36714,11 @@
     "company": "Okta",
     "title": "Corporate Counsel, IP"
   },
+  "greenhouse:okta:7779196": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Okta",
+    "title": "Corporate Counsel, IP"
+  },
   "greenhouse:okta:7781674": {
     "firstSeen": "2026-04-17T15:59:11.806Z",
     "company": "Okta",
@@ -36823,6 +36888,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Okta",
     "title": "Senior Product Manager, Okta for AI Agents"
+  },
+  "greenhouse:okta:7821776": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Okta",
+    "title": "Communications Data and Insights Manager "
   },
   "greenhouse:okta:7821930": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -49593,6 +49663,11 @@
     "company": "Intel",
     "title": "Foveros Direct Pathfinding Integration"
   },
+  "workday:intel:JR0282746": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Intel",
+    "title": "Senior CPU Power Delivery Engineer"
+  },
   "workday:intel:JR0282748": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Intel",
@@ -49607,6 +49682,11 @@
     "firstSeen": "2026-04-17T15:59:11.806Z",
     "company": "Intel",
     "title": "Robotics Engineer"
+  },
+  "workday:intel:JR0282897": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Intel",
+    "title": "SoC Functional Validation Engineer Intern"
   },
   "workday:intel:JR0282898": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -49658,6 +49738,11 @@
     "company": "Intel",
     "title": "MDCE BEOL Integration Engineer"
   },
+  "workday:intel:JR0283073": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Intel",
+    "title": "GPU Software Development Engineer"
+  },
   "workday:intel:JR0283082": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Intel",
@@ -49677,6 +49762,11 @@
     "firstSeen": "2026-04-17T18:11:39.577Z",
     "company": "Intel",
     "title": "SoC Pre-Silicon Verification Engineer"
+  },
+  "workday:intel:JR0283130": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Intel",
+    "title": "Network Systems and Solutions Engineer"
   },
   "workday:intel:JR0283158": {
     "firstSeen": "2026-04-17T19:37:03.534Z",
@@ -49903,6 +49993,11 @@
     "company": "Mastercard",
     "title": "VP, Technology Regulatory Optimization & Customer Engagements"
   },
+  "workday:mastercard:R-275483": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Mastercard",
+    "title": "Information Security Operations Analyst"
+  },
   "workday:mastercard:R-275522": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Mastercard",
@@ -50123,6 +50218,11 @@
     "company": "Netflix",
     "title": "Ads Central Operations Sr. Associate, Revenue Analytics & Insights"
   },
+  "workday:netflix:JR38565": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Netflix",
+    "title": "Product Manager,  Ads Platform - Audience Measurement"
+  },
   "workday:netflix:JR39101": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Netflix",
@@ -50283,10 +50383,20 @@
     "company": "Nvidia",
     "title": "Senior System Software Engineer, NCCL - Partner Enablement"
   },
+  "workday:nvidia:JR1998405": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Nvidia",
+    "title": "Principal Software Engineer – CSP Engagements"
+  },
   "workday:nvidia:JR1999579": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Nvidia",
     "title": "Senior HPC Architect, Automation and At-Scale Deployment"
+  },
+  "workday:nvidia:JR1999599": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Nvidia",
+    "title": "Senior Firmware Engineer – CSP Engagements"
   },
   "workday:nvidia:JR1999730": {
     "firstSeen": "2026-04-17T19:37:03.534Z",
@@ -50297,6 +50407,16 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Nvidia",
     "title": "Senior Software Engineer, Cloud-Native Stack – CSP Engagements"
+  },
+  "workday:nvidia:JR2002086": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Nvidia",
+    "title": "Deep Learning Software Engineer, FlashInfer - New College Grad 2025"
+  },
+  "workday:nvidia:JR2005063": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Nvidia",
+    "title": "Senior Software Engineer, Humanoid Robotics"
   },
   "workday:nvidia:JR2007277": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -50312,6 +50432,16 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Nvidia",
     "title": "Senior SRAM Circuit Design Engineer"
+  },
+  "workday:nvidia:JR2008574": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Nvidia",
+    "title": "Senior Engineering Manager - Compute Server Bring Up"
+  },
+  "workday:nvidia:JR2008808": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Nvidia",
+    "title": "Senior Data Center Performance Engineer - Benchmarking and Optimization"
   },
   "workday:nvidia:JR2009820": {
     "firstSeen": "2026-04-17T19:37:03.534Z",
@@ -50337,6 +50467,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Nvidia",
     "title": "Senior Datacenter Technical Program Manager, At-Scale AI Clusters"
+  },
+  "workday:nvidia:JR2011909": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Nvidia",
+    "title": " Principal Platform Software Engineer - RAS"
   },
   "workday:nvidia:JR2012293": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -50838,6 +50973,11 @@
     "company": "Salesforce",
     "title": "Principal Executive Assistant"
   },
+  "workday:salesforce:JR329635": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Salesforce",
+    "title": "Sr. Software Manager - Network"
+  },
   "workday:salesforce:JR330736": {
     "firstSeen": "2026-04-17T17:01:39.638Z",
     "company": "Salesforce",
@@ -50927,6 +51067,11 @@
     "firstSeen": "2026-04-17T21:40:12.768Z",
     "company": "Salesforce",
     "title": "Sr Manager, Event Portfolio Strategy"
+  },
+  "workday:salesforce:JR336293": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Salesforce",
+    "title": "Senior Analyst, Sales Strategy & Operations"
   },
   "workday:salesforce:JR336436": {
     "firstSeen": "2026-04-17T19:37:03.534Z",
@@ -51053,6 +51198,11 @@
     "company": "Salesforce",
     "title": "Senior Solution Engineer"
   },
+  "workday:salesforce:JR338334": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Salesforce",
+    "title": "Data Analytics Analyst"
+  },
   "workday:salesforce:JR338475": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Salesforce",
@@ -51092,6 +51242,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Salesforce",
     "title": "Manager, Sales"
+  },
+  "workday:salesforce:JR338846": {
+    "firstSeen": "2026-04-17T22:37:20.730Z",
+    "company": "Salesforce",
+    "title": "AVP, Sales, Enterprise Healthcare"
   },
   "workday:salesforce:JR338879": {
     "firstSeen": "2026-04-17T15:59:11.806Z",
