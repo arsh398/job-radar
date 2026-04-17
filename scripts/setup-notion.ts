@@ -47,10 +47,13 @@ async function main() {
     process.exit(1);
   }
 
+  // Slim schema: only the fields that deserve a table column (triage/
+  // sort/filter signals). Everything else (cover note, referral draft,
+  // missing keywords, full match details) goes into each row's page
+  // body as formatted blocks — click a row to see the rich detail
+  // without cluttering the table view.
   const properties: Record<string, unknown> = {
     Name: { title: {} },
-    Company: { select: { options: [] } },
-    Role: { rich_text: {} },
     Status: {
       select: {
         options: [
@@ -64,6 +67,7 @@ async function main() {
         ],
       },
     },
+    Fit: { number: { format: "number" } },
     Verdict: {
       select: {
         options: [
@@ -75,16 +79,6 @@ async function main() {
         ],
       },
     },
-    Track: {
-      select: {
-        options: [
-          { name: "sde", color: "blue" },
-          { name: "ai", color: "purple" },
-        ],
-      },
-    },
-    "Fit %": { number: { format: "percent" } },
-    "ATS %": { number: { format: "percent" } },
     Posted: { date: {} },
     Source: {
       select: {
@@ -98,23 +92,10 @@ async function main() {
         ],
       },
     },
-    Location: { rich_text: {} },
-    YOE: { rich_text: {} },
     "JD URL": { url: {} },
-    "Missing Keywords": { rich_text: {} },
-    "LLM Reason": { rich_text: {} },
-    "Cover Note": { rich_text: {} },
-    "Referral Draft": { rich_text: {} },
-    "Resume (primary)": { files: {} },
-    "Resume (alt)": { files: {} },
+    Resume: { files: {} },
     Key: { rich_text: {} },
   };
-
-  // The Fit/ATS properties are stored as raw 0-100 integers in code;
-  // "percent" format on Notion just displays them prettily. Adjusting
-  // the format here to number if you prefer the raw integer display.
-  (properties["Fit %"] as { number: { format: string } }).number.format = "number";
-  (properties["ATS %"] as { number: { format: string } }).number.format = "number";
 
   const resp = await apiFetch<{ id: string; url: string }>("/databases", {
     method: "POST",

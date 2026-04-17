@@ -4,7 +4,7 @@
 
 import type { JobAlert } from "../types.ts";
 import { createPage, queryByKey, uploadFile } from "./client.ts";
-import { buildProperties } from "./schema.ts";
+import { buildChildren, buildProperties } from "./schema.ts";
 
 function databaseId(): string | null {
   const id = process.env["NOTION_DATABASE_ID"];
@@ -40,15 +40,13 @@ export async function sendAlertToNotion(alert: JobAlert): Promise<void> {
       }
     }
 
-    const properties = buildProperties(
-      alert,
-      uploads[0],
-      uploads[1]
-    );
+    const properties = buildProperties(alert, uploads);
+    const children = buildChildren(alert);
 
     const res = await createPage({
       parent: { database_id: dbId },
       properties,
+      children,
     });
     console.log(
       `[notion] created ${alert.job.company} — ${alert.job.title} (${res.id.slice(0, 8)})`
