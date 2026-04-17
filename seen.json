@@ -334,6 +334,11 @@
     "company": "Amazon",
     "title": "Senior Manager, IN CXI, Amazon Customer Service"
   },
+  "amazon:54bbedfa-3075-4f45-9d22-0fa1467e3e0f": {
+    "firstSeen": "2026-04-17T00:05:32.181Z",
+    "company": "Amazon",
+    "title": "Software Development Engineer, FTV Frameworks and Performance"
+  },
   "amazon:5643547a-0db7-4e29-a5fe-754ad8d4b917": {
     "firstSeen": "2026-04-16T22:42:43.726Z",
     "company": "Amazon",
@@ -9604,6 +9609,11 @@
     "company": "Ramp",
     "title": "Account Manager | Enterprise"
   },
+  "ashby:ramp:f7c4de3c-1d64-42e9-8111-f38e265327d8": {
+    "firstSeen": "2026-04-17T00:05:32.181Z",
+    "company": "Ramp",
+    "title": " Account Executive | Mid-Market"
+  },
   "ashby:ramp:f8e75f30-738c-4987-8e00-2837af8d8bf6": {
     "firstSeen": "2026-04-16T22:11:44.157Z",
     "company": "Ramp",
@@ -13218,6 +13228,11 @@
     "firstSeen": "2026-04-16T23:09:42.547Z",
     "company": "Airbnb",
     "title": "Software Engineer, Infrastructure"
+  },
+  "greenhouse:airbnb:7822751": {
+    "firstSeen": "2026-04-17T00:05:32.181Z",
+    "company": "Airbnb",
+    "title": "iOS Software Engineer, Host Pricing"
   },
   "greenhouse:airtable:7892134002": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
@@ -33724,6 +33739,16 @@
     "company": "Instacart",
     "title": "Strategic Finance Analyst, Product Finance"
   },
+  "greenhouse:instacart:7813000": {
+    "firstSeen": "2026-04-17T00:05:32.181Z",
+    "company": "Instacart",
+    "title": "Senior Director, Enterprise Software and Growth"
+  },
+  "greenhouse:instacart:7813002": {
+    "firstSeen": "2026-04-17T00:05:32.181Z",
+    "company": "Instacart",
+    "title": "Senior Director, Enterprise Software and Growth"
+  },
   "greenhouse:instacart:7819012": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Instacart",
@@ -34649,6 +34674,11 @@
     "company": "Lyft",
     "title": "Android Engineer, Global Growth"
   },
+  "greenhouse:lyft:8506961002": {
+    "firstSeen": "2026-04-17T00:05:32.181Z",
+    "company": "Lyft",
+    "title": "Senior Director, Strategic Finance"
+  },
   "greenhouse:lyft:8508202002": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Lyft",
@@ -34678,6 +34708,11 @@
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Lyft",
     "title": "Staff Technical Program Manager, Mergers & Acquisition"
+  },
+  "greenhouse:lyft:8511057002": {
+    "firstSeen": "2026-04-17T00:05:32.181Z",
+    "company": "Lyft",
+    "title": "Senior Director, Strategic Finance"
   },
   "greenhouse:mercury:5267749004": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
@@ -39724,6 +39759,11 @@
     "company": "Pinterest",
     "title": "Staff Product Manager, AI/ML Personalization"
   },
+  "greenhouse:pinterest:7368683": {
+    "firstSeen": "2026-04-17T00:05:32.181Z",
+    "company": "Pinterest",
+    "title": "Sr. Strategy & Operations Lead"
+  },
   "greenhouse:pinterest:7371354": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Pinterest",
@@ -40868,6 +40908,16 @@
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Postman",
     "title": "Technical Enablement Program Manager"
+  },
+  "greenhouse:postman:7701221003": {
+    "firstSeen": "2026-04-17T00:05:32.181Z",
+    "company": "Postman",
+    "title": "Renewals Representative"
+  },
+  "greenhouse:postman:7701226003": {
+    "firstSeen": "2026-04-17T00:05:32.181Z",
+    "company": "Postman",
+    "title": "Renewal Representative"
   },
   "greenhouse:postman:7701509003": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
@@ -47324,6 +47374,11 @@
     "company": "Twilio",
     "title": "Finance Manager, R&D"
   },
+  "greenhouse:twilio:7745949": {
+    "firstSeen": "2026-04-17T00:05:32.181Z",
+    "company": "Twilio",
+    "title": "Account Executive 4"
+  },
   "greenhouse:twilio:7747550": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Twilio",
@@ -47468,6 +47523,11 @@
     "firstSeen": "2026-04-16T20:29:16.357Z",
     "company": "Twilio",
     "title": "Staff, Product Manager"
+  },
+  "greenhouse:twilio:7821487": {
+    "firstSeen": "2026-04-17T00:05:32.181Z",
+    "company": "Twilio",
+    "title": "Senior Sales System Engineer 3"
   },
   "greenhouse:twilio:7821526": {
     "firstSeen": "2026-04-16T20:29:16.357Z",
@@ -50659,6 +50719,11 @@
     "company": "Adobe",
     "title": "Engineering Program Manager 5"
   },
+  "workday:adobe:R167039": {
+    "firstSeen": "2026-04-17T00:05:32.181Z",
+    "company": "Adobe",
+    "title": "Software Development Engineer"
+  },
   "workday:adobe:R167096": {
     "firstSeen": "2026-04-16T22:42:43.726Z",
     "company": "Adobe",
@@ -51119,6 +51184,11 @@
     "company": "Dell",
     "title": "Specialist, Customer Services"
   },
+  "workday:intel:JR0282220": {
+    "firstSeen": "2026-04-17T00:05:32.181Z",
+    "company": "Intel",
+    "title": "Sr. Security Architect"
+  },
   "workday:intel:JR0282295": {
     "firstSeen": "2026-04-16T22:42:43.726Z",
     "company": "Intel",
@@ -51189,10 +51259,20 @@
     "company": "Intel",
     "title": "GPU Power Architect"
   },
+  "workday:intel:JR0283173": {
+    "firstSeen": "2026-04-17T00:05:32.181Z",
+    "company": "Intel",
+    "title": "GPU Design Verification"
+  },
   "workday:intel:Spotlight Job": {
     "firstSeen": "2026-04-16T22:42:43.726Z",
     "company": "Intel",
     "title": "Sr. Infrastructure Engineer – Storage"
+  },
+  "workday:mastercard:R-256002": {
+    "firstSeen": "2026-04-17T00:05:32.181Z",
+    "company": "Mastercard",
+    "title": "Associate Consultant, Strategy and Transformation Launch Program - 2026, San Jose, Costa Rica"
   },
   "workday:mastercard:R-270072": {
     "firstSeen": "2026-04-16T22:42:43.726Z",
@@ -51554,6 +51634,11 @@
     "company": "Netflix",
     "title": "Data Engineer (L5)"
   },
+  "workday:netflix:JR38023": {
+    "firstSeen": "2026-04-17T00:05:32.181Z",
+    "company": "Netflix",
+    "title": "Product Manager, Ad Formats (Ads Platform)"
+  },
   "workday:netflix:JR38188": {
     "firstSeen": "2026-04-16T22:42:43.726Z",
     "company": "Netflix",
@@ -51769,6 +51854,11 @@
     "company": "Nvidia",
     "title": "Deep Learning Kernel Software Performance Architect - New College Grad 2026"
   },
+  "workday:nvidia:JR2012860": {
+    "firstSeen": "2026-04-17T00:05:32.181Z",
+    "company": "Nvidia",
+    "title": "Senior Scientific Machine Learning Engineer – Earth-2"
+  },
   "workday:nvidia:JR2013015": {
     "firstSeen": "2026-04-16T22:42:43.726Z",
     "company": "Nvidia",
@@ -51969,6 +52059,11 @@
     "company": "PayPal",
     "title": "Sr Director, Product Management, Debit & Money Management"
   },
+  "workday:paypal:R0135804": {
+    "firstSeen": "2026-04-17T00:05:32.181Z",
+    "company": "PayPal",
+    "title": "Sr Director, Product Management, Revolving Credit"
+  },
   "workday:paypal:R0135809": {
     "firstSeen": "2026-04-16T22:42:43.726Z",
     "company": "PayPal",
@@ -52058,6 +52153,11 @@
     "firstSeen": "2026-04-16T22:42:43.726Z",
     "company": "PayPal",
     "title": "Sr Paralegal, Legal Financial Regulation"
+  },
+  "workday:paypal:R0136218": {
+    "firstSeen": "2026-04-17T00:05:32.181Z",
+    "company": "PayPal",
+    "title": "Sr Auditor"
   },
   "workday:paypal:R0136266": {
     "firstSeen": "2026-04-16T22:42:43.726Z",
@@ -52209,6 +52309,11 @@
     "company": "Salesforce",
     "title": "Senior Director, Global Rewards Business Partner"
   },
+  "workday:salesforce:JR337188": {
+    "firstSeen": "2026-04-17T00:05:32.181Z",
+    "company": "Salesforce",
+    "title": "Manager, Revenue Recognition"
+  },
   "workday:salesforce:JR337277": {
     "firstSeen": "2026-04-16T23:09:42.547Z",
     "company": "Salesforce",
@@ -52223,6 +52328,11 @@
     "firstSeen": "2026-04-16T22:42:43.726Z",
     "company": "Salesforce",
     "title": "Sr. Analyst - Program/Project Management"
+  },
+  "workday:salesforce:JR337942": {
+    "firstSeen": "2026-04-17T00:05:32.181Z",
+    "company": "Salesforce",
+    "title": "Digital Designer"
   },
   "workday:salesforce:JR338174": {
     "firstSeen": "2026-04-16T22:42:43.726Z",
