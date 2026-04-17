@@ -6884,6 +6884,16 @@
     "company": "Runway",
     "title": "⚙️ Engineering Manager"
   },
+  "ashby:sarvam:0fe3d2d1-5d44-4039-b3f5-38a8348f1ebd": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Sarvam AI",
+    "title": "GTM & Strategy, Model API"
+  },
+  "ashby:sarvam:10a352d0-a65b-4599-8998-e09deef34349": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Sarvam AI",
+    "title": "Frontend Engineer, Chanakya"
+  },
   "ashby:sarvam:1dc2a216-60b8-4347-8cf0-73d8b89e0793": {
     "firstSeen": "2026-04-17T19:37:03.534Z",
     "company": "Sarvam AI",
@@ -6894,6 +6904,11 @@
     "company": "Sarvam AI",
     "title": "Backend Engineer, Samvaad"
   },
+  "ashby:sarvam:255816b4-c44d-481c-a093-73ae114d1952": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Sarvam AI",
+    "title": "Researcher, Vision"
+  },
   "ashby:sarvam:282019f4-f86b-4fe0-a643-bbac0cd8a751": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Sarvam AI",
@@ -6903,6 +6918,11 @@
     "firstSeen": "2026-04-17T19:37:03.534Z",
     "company": "Sarvam AI",
     "title": "Principal Security Engineer"
+  },
+  "ashby:sarvam:3e3b1ad5-99bb-42e6-9093-8953b89e552b": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Sarvam AI",
+    "title": "Engagement Principal, Chanakya"
   },
   "ashby:sarvam:441e4c7f-a9f5-479b-84bb-bdfcfbce436d": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -6919,6 +6939,16 @@
     "company": "Sarvam AI",
     "title": "test-role-PM"
   },
+  "ashby:sarvam:6f4a08b2-7192-49d7-866f-f44c948ad0d8": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Sarvam AI",
+    "title": "Machine Learning Engineer , Sarvam Studio"
+  },
+  "ashby:sarvam:6f7347e4-5257-41f0-b3bc-7783deb886e9": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Sarvam AI",
+    "title": "Manager, Finance"
+  },
   "ashby:sarvam:7c42207a-bb56-413c-839f-9ad692df840e": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Sarvam AI",
@@ -6928,6 +6958,21 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Sarvam AI",
     "title": "Backend Engineer, Chanakya"
+  },
+  "ashby:sarvam:87d5a5af-ea7d-4b94-a0fa-81dc64e54907": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Sarvam AI",
+    "title": "Strategic Deployment Engineer, Chanakya"
+  },
+  "ashby:sarvam:974b848a-f66c-46f1-918b-22e29b03b276": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Sarvam AI",
+    "title": "GTM/Product, Vision"
+  },
+  "ashby:sarvam:9a64a3b2-9536-4eb1-b20b-1b972ae23cc3": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Sarvam AI",
+    "title": "Senior Backend Engineer, Vision"
   },
   "ashby:sarvam:9e197c29-5164-42eb-8e74-4f691a794517": {
     "firstSeen": "2026-04-17T19:37:03.534Z",
@@ -6959,6 +7004,11 @@
     "company": "Sarvam AI",
     "title": "Engagement Manager, Chanakya"
   },
+  "ashby:sarvam:c4bb3b2c-7608-4d57-8761-650b4222ac13": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Sarvam AI",
+    "title": "Product Manager"
+  },
   "ashby:sarvam:c770b621-363c-46ba-ac24-8407ecee4af5": {
     "firstSeen": "2026-04-17T19:37:03.534Z",
     "company": "Sarvam AI",
@@ -6989,10 +7039,25 @@
     "company": "Sarvam AI",
     "title": "Backend Engineer , Vision"
   },
+  "ashby:sarvam:e7f783e8-6378-4158-97d5-48a397a91698": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Sarvam AI",
+    "title": "ML Ops Engineer, Chanakya"
+  },
   "ashby:sarvam:f46a00ea-a25b-478d-92b9-7a2deb129f5b": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Sarvam AI",
     "title": "Backend Engineer, API Team"
+  },
+  "ashby:sarvam:f6470ab0-d2b3-4224-9abc-e29333ff91bd": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Sarvam AI",
+    "title": "Product Manager, Chanakya"
+  },
+  "ashby:sarvam:f75c0ab2-35fb-4f65-8c8e-9c2b262ceae5": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Sarvam AI",
+    "title": "QA Engineer / SDET"
   },
   "ashby:sentry:0580bfa2-ee00-41c9-94b8-df3d3b4e7fcc": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -7018,6 +7083,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Sentry",
     "title": "Senior Product Designer"
+  },
+  "ashby:sentry:361dfd45-650b-4f0a-9182-742e70a6c5ee": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Sentry",
+    "title": "Senior Security Engineer, Application & Platform Security"
   },
   "ashby:sentry:37c30441-078e-4575-83e9-d955ca2e15ce": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -12743,6 +12813,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Anthropic",
     "title": "Anthropic STEM Fellow"
+  },
+  "greenhouse:anthropic:5190234008": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Anthropic",
+    "title": "Manager, Partner Account Managers"
   },
   "greenhouse:anthropic:5191226008": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -18554,6 +18629,11 @@
     "company": "Coinbase",
     "title": "Assistant Controller, Global GL Operations"
   },
+  "greenhouse:coinbase:7826757": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Coinbase",
+    "title": "Senior Manager, Strategic Operations"
+  },
   "greenhouse:databricks:4513122002": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Databricks",
@@ -21268,6 +21348,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Databricks",
     "title": "Strategic Core Account Executive - CMEG - Telco "
+  },
+  "greenhouse:databricks:8431927002": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Databricks",
+    "title": "Customer Enablement Specialist"
   },
   "greenhouse:databricks:8431929002": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -30499,6 +30584,16 @@
     "company": "Instacart",
     "title": "Field Sales Representative Contractor"
   },
+  "greenhouse:instacart:7592370": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Instacart",
+    "title": "Associate HR Business Partner"
+  },
+  "greenhouse:instacart:7592372": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Instacart",
+    "title": "Associate HR Business Partner"
+  },
   "greenhouse:instacart:7595169": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Instacart",
@@ -34059,6 +34154,11 @@
     "company": "MongoDB",
     "title": "Staff Site Reliability Engineer, Fabric"
   },
+  "greenhouse:mongodb:7727964": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "MongoDB",
+    "title": "Site Reliability Engineer (Senior or Staff), Atlas"
+  },
   "greenhouse:mongodb:7728267": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "MongoDB",
@@ -37498,6 +37598,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Pinterest",
     "title": "Sr. Data Scientist, Gen AI Automation"
+  },
+  "greenhouse:pinterest:7527881": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Pinterest",
+    "title": "Sr. Product Manager, Enforcement Systems"
   },
   "greenhouse:pinterest:7528427": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -44854,6 +44959,11 @@
     "company": "Twilio",
     "title": "Social Media Specialist"
   },
+  "greenhouse:twilio:7699251": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Twilio",
+    "title": "Software Engineer"
+  },
   "greenhouse:twilio:7700603": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Twilio",
@@ -45463,6 +45573,16 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Webflow",
     "title": "Senior Product Manager, Developer Productivity"
+  },
+  "greenhouse:webflow:7822820": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Webflow",
+    "title": "Senior XDR Enablement Business Partner"
+  },
+  "greenhouse:webflow:7822826": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Webflow",
+    "title": "Senior XDR Enablement Business Partner"
   },
   "greenhouse:webflow:7826080": {
     "firstSeen": "2026-04-17T19:37:03.534Z",
@@ -49124,6 +49244,11 @@
     "company": "Autodesk",
     "title": "Stock Plan Administrator"
   },
+  "workday:autodesk:26WD97563": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Autodesk",
+    "title": "Senior Finance Manager, Customer Success"
+  },
   "workday:autodesk:26WD99035": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Autodesk",
@@ -49393,10 +49518,25 @@
     "company": "Intel",
     "title": "Circuit Design Engineer Intern"
   },
+  "workday:intel:JR0281700": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Intel",
+    "title": "Module Development Engineering Manager"
+  },
   "workday:intel:JR0282018": {
     "firstSeen": "2026-04-17T17:01:39.638Z",
     "company": "Intel",
     "title": "APTM NPI Integration"
+  },
+  "workday:intel:JR0282533": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Intel",
+    "title": "Density Fill PDK Development Engineer"
+  },
+  "workday:intel:JR0282534": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Intel",
+    "title": "Senior Density Fill Development Engineer"
   },
   "workday:intel:JR0282741": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -49483,6 +49623,11 @@
     "company": "Intel",
     "title": "Latin America Payroll Processor"
   },
+  "workday:intel:JR0283161": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Intel",
+    "title": "Human Resources Contact Center Specialist"
+  },
   "workday:intel:Spotlight Job": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Intel",
@@ -49537,6 +49682,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Mastercard",
     "title": "Manager, People Business Partner"
+  },
+  "workday:mastercard:R-273367": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Mastercard",
+    "title": "Senior Specialist, B2B Product Marketing"
   },
   "workday:mastercard:R-273450": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -49653,6 +49803,11 @@
     "company": "Mastercard",
     "title": "Analyst, Business Process Improvement-1"
   },
+  "workday:mastercard:R-275123": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Mastercard",
+    "title": "Sales Manager, Inbound Partnerships"
+  },
   "workday:mastercard:R-275134": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Mastercard",
@@ -49662,6 +49817,11 @@
     "firstSeen": "2026-04-17T15:59:11.806Z",
     "company": "Mastercard",
     "title": "Business Development Manager, Mastercard Services (German speaking)"
+  },
+  "workday:mastercard:R-275287": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Mastercard",
+    "title": "Director, Corporate Treasury"
   },
   "workday:mastercard:R-275330": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -50093,6 +50253,11 @@
     "company": "Nvidia",
     "title": "Senior Solutions Architect, AdTech and Media"
   },
+  "workday:nvidia:JR2009899": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Nvidia",
+    "title": "Senior VLSI Methodology Engineer"
+  },
   "workday:nvidia:JR2009900": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Nvidia",
@@ -50173,6 +50338,11 @@
     "company": "Nvidia",
     "title": "Director, Sustainability Reporting and Compliance"
   },
+  "workday:nvidia:JR2015886": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Nvidia",
+    "title": "System Software Engineer - GPU and SOC"
+  },
   "workday:nvidia:JR2015974": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Nvidia",
@@ -50188,6 +50358,11 @@
     "company": "Nvidia",
     "title": "PR Specialist, Enterprise AI"
   },
+  "workday:nvidia:JR2016051": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Nvidia",
+    "title": "Senior Data Analysis Engineer, AD Metrics - Autonomous Vehicles"
+  },
   "workday:nvidia:JR2016158": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Nvidia",
@@ -50200,6 +50375,11 @@
   },
   "workday:nvidia:JR2016204": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
+    "company": "Nvidia",
+    "title": "Senior HPC Performance Engineer"
+  },
+  "workday:nvidia:JR2016206": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
     "company": "Nvidia",
     "title": "Senior HPC Performance Engineer"
   },
@@ -50268,6 +50448,11 @@
     "company": "PayPal",
     "title": "Manager, Enterprise Risk Management"
   },
+  "workday:paypal:R0130664": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "PayPal",
+    "title": "Software Engineer"
+  },
   "workday:paypal:R0133940": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "PayPal",
@@ -50327,6 +50512,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "PayPal",
     "title": "Sr Analyst, Ads Insights & Analytics"
+  },
+  "workday:paypal:R0135584": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "PayPal",
+    "title": "Sr Manager, Treasury"
   },
   "workday:paypal:R0135781": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -50488,6 +50678,11 @@
     "company": "Salesforce",
     "title": "Software Engineering AMTS"
   },
+  "workday:salesforce:JR285995": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Salesforce",
+    "title": "SMB Prime Territory Account Executive - Data Foundation"
+  },
   "workday:salesforce:JR289537": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Salesforce",
@@ -50597,6 +50792,16 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Salesforce",
     "title": "Director, Global Adoption Strategy & Value Realization"
+  },
+  "workday:salesforce:JR332675": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Salesforce",
+    "title": "Financial Planning & Analysis Senior Manager"
+  },
+  "workday:salesforce:JR333275": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Salesforce",
+    "title": "Employee Success Business Partner Senior Manager"
   },
   "workday:salesforce:JR334116": {
     "firstSeen": "2026-04-17T17:01:39.638Z",
@@ -51018,6 +51223,11 @@
     "company": "Walmart",
     "title": "(CAN) Asset Protection Associate"
   },
+  "workday:walmart:R-2482381": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Walmart",
+    "title": "(CAN) Consumables Associate Part Time"
+  },
   "workday:workday:JR-0094205": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Workday",
@@ -51042,6 +51252,11 @@
     "firstSeen": "2026-04-17T15:12:26.561Z",
     "company": "Workday",
     "title": "Sr Product Manager / Principal Product Manager - Evisort AI"
+  },
+  "workday:workday:JR-0103634": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Workday",
+    "title": "Principal Program Manager - Finance"
   },
   "workday:workday:JR-0103783": {
     "firstSeen": "2026-04-17T15:12:26.561Z",
@@ -51277,5 +51492,10 @@
     "firstSeen": "2026-04-17T19:37:03.534Z",
     "company": "Workday",
     "title": "Sr Software Engineer (Distributed Systems)"
+  },
+  "workday:workday:JR-0106562": {
+    "firstSeen": "2026-04-17T20:42:19.472Z",
+    "company": "Workday",
+    "title": "Engagement Manager, AI Practice"
   }
 }
