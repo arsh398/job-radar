@@ -3,7 +3,14 @@ import { TailoringPlanSchema } from "../types.ts";
 import type { ParsedResume } from "../resume/parser.ts";
 import { SYSTEM_PROMPT, buildUserPrompt } from "./prompt.ts";
 
-const FALLBACK_MODEL = "meta-llama/llama-3.3-70b-instruct:free";
+// Paid Gemini 2.5 Flash-Lite via OpenRouter. Same model we prefer on the
+// Google AI Studio free tier, just via OpenRouter's paid routing — so
+// when the free Gemini daily quota is exhausted, we fall through here
+// and keep the same model quality without waiting for the quota to reset.
+// OpenRouter model ID verified against https://openrouter.ai/models
+// Cost: ~$0.10/M input, $0.40/M output (2026-04).
+const FALLBACK_MODEL =
+  process.env["OPENROUTER_MODEL"] ?? "google/gemini-2.5-flash-lite";
 const OPENROUTER_URL = "https://openrouter.ai/api/v1/chat/completions";
 
 const JSON_REMINDER = `\n\nRESPOND ONLY WITH A SINGLE JSON OBJECT matching the required schema. No markdown fences, no prose before or after.`;
