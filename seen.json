@@ -56799,6 +56799,11 @@
     "company": "Bosch",
     "title": "Technical Lead – IT Services & Project Delivery"
   },
+  "smartrecruiters:Visa:744000120780707": {
+    "firstSeen": "2026-04-18T21:34:04.755Z",
+    "company": "Visa Inc",
+    "title": "Network Analyst"
+  },
   "smartrecruiters:Visa:744000120781713": {
     "firstSeen": "2026-04-18T20:47:28.436Z",
     "company": "Visa Inc",
@@ -58774,6 +58779,11 @@
     "company": "Cadence",
     "title": "Senior Allegro PCB Layout AE"
   },
+  "workday:cadence:R54358": {
+    "firstSeen": "2026-04-18T21:34:04.755Z",
+    "company": "Cadence",
+    "title": "Design Engineer I"
+  },
   "workday:cadence:R54394": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Cadence",
@@ -60263,6 +60273,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Nvidia",
     "title": "Manager, Tegra Software Chip"
+  },
+  "workday:nvidia:JR2016289": {
+    "firstSeen": "2026-04-18T21:34:04.755Z",
+    "company": "Nvidia",
+    "title": "Chip Design Engineer"
   },
   "workday:nvidia:JR2016341": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
