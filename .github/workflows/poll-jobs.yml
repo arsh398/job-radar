@@ -6,13 +6,9 @@ on:
   workflow_dispatch:
     inputs:
       max_llm:
-        description: "LLM calls per run (default 20)"
+        description: "LLM calls per run (safety cap, default 200). The real gate is MIN_FIT_FOR_LLM."
         type: string
-        default: "20"
-      max_per_company:
-        description: "Max jobs per company (default 3)"
-        type: string
-        default: "3"
+        default: "200"
       wipe_seen:
         description: "Clear seen.json so all current jobs re-fire"
         type: boolean
@@ -64,8 +60,7 @@ jobs:
           TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
-          MAX_LLM_PER_RUN: ${{ inputs.max_llm || '40' }}
-          MAX_PER_COMPANY: ${{ inputs.max_per_company || '8' }}
+          MAX_LLM_PER_RUN: ${{ inputs.max_llm || '200' }}
           ALERT_SKIPS: '1'
           ENABLE_PDF: '1'
           ENABLE_TELEGRAM: '0'

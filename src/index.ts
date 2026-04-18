@@ -45,18 +45,22 @@ const SEEN_PATH = resolve(ROOT, "seen.json");
 const HEALTH_PATH = resolve(ROOT, "source_health.json");
 
 const DRY_RUN = process.env["DRY_RUN"] === "1";
-const MAX_LLM_PER_RUN = Number(process.env["MAX_LLM_PER_RUN"] ?? 50);
+// MAX_LLM_PER_RUN is a COST SAFETY CAP, not a feature gate. The real gate
+// is MIN_FIT_FOR_LLM below. Set generously so a single burst of good
+// matches isn't silently clipped. Anything above fit threshold gets an
+// LLM opinion; we only hit this ceiling on true anomaly days.
+const MAX_LLM_PER_RUN = Number(process.env["MAX_LLM_PER_RUN"] ?? 200);
 const ALERT_SKIPS = process.env["ALERT_SKIPS"] !== "0";
 const MAX_AGE_DAYS = Number(process.env["MAX_AGE_DAYS"] ?? 14);
-const MAX_PER_COMPANY = Number(process.env["MAX_PER_COMPANY"] ?? 5);
 const ENABLE_PDF = process.env["ENABLE_PDF"] !== "0";
 const ENABLE_TELEGRAM = process.env["ENABLE_TELEGRAM"] !== "0";
 const ENABLE_NOTION = process.env["ENABLE_NOTION"] !== "0";
-// Skip LLM below this fit score — saves tokens on obvious mismatches.
-// Lowered from 0.2 → 0.08 because Workday/other summary-only sources
-// underscore on semantic fit; jobs with weak embeddings but strong ATS
-// overlap deserve an LLM opinion, not silent elimination.
-const MIN_FIT_FOR_LLM = Number(process.env["MIN_FIT_FOR_LLM"] ?? 0.08);
+// Confidence threshold — the only real gate into LLM scoring. 0.20 is
+// calibrated against observed fit distributions: below 0.20 is typically
+// ats=0% noise (JDs matched only by neutral YOE default), above 0.20 has
+// real ATS overlap or semantic signal. Every confident match above this
+// threshold gets an LLM opinion, no top-N arbitrary cutoff.
+const MIN_FIT_FOR_LLM = Number(process.env["MIN_FIT_FOR_LLM"] ?? 0.2);
 
 function normalize(s: string): string {
   return (s ?? "").toLowerCase().replace(/\s+/g, " ").trim();
@@ -71,22 +75,6 @@ function dedupeAcrossSources<T extends { company: string; title: string; locatio
     if (!byFingerprint.has(fp)) byFingerprint.set(fp, j);
   }
   return [...byFingerprint.values()];
-}
-
-function capPerCompany<T extends { company: string }>(
-  items: T[],
-  maxPerCompany: number
-): T[] {
-  const counts = new Map<string, number>();
-  const out: T[] = [];
-  for (const item of items) {
-    const key = item.company.toLowerCase();
-    const n = counts.get(key) ?? 0;
-    if (n >= maxPerCompany) continue;
-    counts.set(key, n + 1);
-    out.push(item);
-  }
-  return out;
 }
 
 function slugFile(s: string): string {
@@ -178,14 +166,13 @@ async function main(): Promise<void> {
   const { passed: passedUnsorted, stats, dropReasons } = applyFilters(fresh, {
     maxAgeDays: MAX_AGE_DAYS,
   });
-  const capped = capPerCompany(
-    [...passedUnsorted].sort((a, b) => {
-      const ta = a.postedAt ? Date.parse(a.postedAt) : 0;
-      const tb = b.postedAt ? Date.parse(b.postedAt) : 0;
-      return tb - ta;
-    }),
-    MAX_PER_COMPANY
-  );
+  // Sort newest-first. No per-company cap — every confident match flows
+  // through, even if a single company dominates the batch.
+  const capped = [...passedUnsorted].sort((a, b) => {
+    const ta = a.postedAt ? Date.parse(a.postedAt) : 0;
+    const tb = b.postedAt ? Date.parse(b.postedAt) : 0;
+    return tb - ta;
+  });
 
   // Pre-warm profile embeddings once (rather than N times per job).
   for (const p of profiles) await ensureProfileEmbedding(p);
@@ -206,13 +193,22 @@ async function main(): Promise<void> {
     enriched.push({ job, atsMatch, fit, profile: picked.profile });
   }
 
-  // Rank by fit score — best fits first. Display order sends oldest first
-  // so newest/best lands at the bottom of the chat (most visible).
+  // Rank by fit, drop sub-threshold jobs, then cap for cost safety. The
+  // fit threshold is the real gate — every job above it gets an LLM
+  // opinion (no top-N arbitrary cut). The cap only kicks in on anomaly
+  // days when >200 confident matches show up at once.
   enriched.sort((a, b) => b.fit.overall - a.fit.overall);
-  const toProcess = enriched.slice(0, MAX_LLM_PER_RUN);
-  if (enriched.length > MAX_LLM_PER_RUN) {
+  const confident = enriched.filter((e) => e.fit.overall >= MIN_FIT_FOR_LLM);
+  const belowThreshold = enriched.length - confident.length;
+  if (belowThreshold > 0) {
+    console.log(
+      `[job-radar] ${belowThreshold} jobs below fit threshold ${(MIN_FIT_FOR_LLM * 100).toFixed(0)}% — not scored`
+    );
+  }
+  const toProcess = confident.slice(0, MAX_LLM_PER_RUN);
+  if (confident.length > MAX_LLM_PER_RUN) {
     console.warn(
-      `[job-radar] capping LLM calls at ${MAX_LLM_PER_RUN}; ${enriched.length - MAX_LLM_PER_RUN} jobs deferred`
+      `[job-radar] capping LLM calls at ${MAX_LLM_PER_RUN}; ${confident.length - MAX_LLM_PER_RUN} jobs deferred to next run`
     );
   }
   // Send oldest first → newest last so the freshest/best is at bottom.
