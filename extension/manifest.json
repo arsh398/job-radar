@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "Job Radar Apply Assist",
+  "version": "0.1.0",
+  "description": "Auto-fills application forms with your cached profile and surfaces the tailored resume + cover note for the job you're on. Falls back to on-demand tailoring via GitHub Actions.",
+  "permissions": ["storage", "downloads"],
+  "host_permissions": [
+    "https://api.notion.com/*",
+    "https://api.github.com/*",
+    "https://*.greenhouse.io/*",
+    "https://jobs.lever.co/*",
+    "https://jobs.ashbyhq.com/*",
+    "https://apply.workable.com/*",
+    "https://*.workable.com/*",
+    "https://jobs.smartrecruiters.com/*",
+    "https://*.myworkdayjobs.com/*"
+  ],
+  "action": {
+    "default_title": "Job Radar Apply Assist — open options"
+  },
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.greenhouse.io/*",
+        "*://jobs.lever.co/*",
+        "*://jobs.ashbyhq.com/*",
+        "*://apply.workable.com/*",
+        "*://*.workable.com/*",
+        "*://jobs.smartrecruiters.com/*",
+        "*://*.myworkdayjobs.com/*"
+      ],
+      "js": ["content.js"],
+      "css": ["panel.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

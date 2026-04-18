@@ -1,0 +1,93 @@
+#jr-apply-assist-panel {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  z-index: 2147483647;
+  width: 320px;
+  background: #0f172a;
+  color: #e2e8f0;
+  font: 13px/1.4 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  display: none;
+}
+#jr-apply-assist-panel .jr-hdr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background: #1e293b;
+  border-bottom: 1px solid #334155;
+}
+#jr-apply-assist-panel .jr-title {
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+#jr-apply-assist-panel .jr-close {
+  background: transparent;
+  border: 0;
+  color: #94a3b8;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 4px;
+}
+#jr-apply-assist-panel .jr-close:hover { color: #f1f5f9; }
+#jr-apply-assist-panel .jr-body {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#jr-apply-assist-panel .jr-pill {
+  display: inline-block;
+  padding: 3px 8px;
+  background: #064e3b;
+  color: #a7f3d0;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 600;
+  align-self: flex-start;
+}
+#jr-apply-assist-panel .jr-pill-warn {
+  background: #7c2d12;
+  color: #fed7aa;
+}
+#jr-apply-assist-panel .jr-name {
+  font-weight: 600;
+  font-size: 14px;
+}
+#jr-apply-assist-panel .jr-muted {
+  color: #94a3b8;
+  font-size: 12px;
+}
+#jr-apply-assist-panel .jr-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+#jr-apply-assist-panel .jr-btn {
+  display: block;
+  width: 100%;
+  padding: 8px 10px;
+  background: #334155;
+  color: #e2e8f0;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  font: inherit;
+  text-align: left;
+}
+#jr-apply-assist-panel .jr-btn:hover { background: #475569; }
+#jr-apply-assist-panel .jr-btn.jr-primary {
+  background: #2563eb;
+  color: #fff;
+  font-weight: 600;
+}
+#jr-apply-assist-panel .jr-btn.jr-primary:hover { background: #1d4ed8; }
+#jr-apply-assist-panel .jr-status {
+  color: #cbd5e1;
+  font-size: 12px;
+  min-height: 16px;
+}

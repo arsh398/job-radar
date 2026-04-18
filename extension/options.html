@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Job Radar Apply Assist — Options</title>
+  <style>
+    :root { color-scheme: light dark; }
+    body { font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; max-width: 640px; margin: 32px auto; padding: 0 20px; }
+    h1 { font-size: 20px; margin: 0 0 4px; }
+    h2 { font-size: 14px; margin: 24px 0 8px; text-transform: uppercase; letter-spacing: 0.05em; color: #64748b; }
+    label { display: block; margin: 12px 0 4px; font-weight: 500; }
+    input, textarea { width: 100%; box-sizing: border-box; padding: 8px 10px; font: inherit; border: 1px solid #cbd5e1; border-radius: 6px; background: #fff; color: #0f172a; }
+    @media (prefers-color-scheme: dark) { input, textarea { background: #1e293b; color: #e2e8f0; border-color: #334155; } }
+    textarea { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; min-height: 180px; }
+    .hint { color: #64748b; font-size: 12px; margin: 4px 0 0; }
+    button { padding: 10px 20px; font: inherit; font-weight: 600; background: #2563eb; color: #fff; border: 0; border-radius: 6px; cursor: pointer; margin-top: 20px; }
+    button:hover { background: #1d4ed8; }
+    .status { display: inline-block; margin-left: 12px; font-size: 13px; color: #16a34a; }
+  </style>
+</head>
+<body>
+  <h1>Apply Assist — Options</h1>
+  <p class="hint">All values stay in chrome.storage.sync. None leaves your browser except calls to Notion / GitHub, which you authorize below.</p>
+
+  <h2>Notion</h2>
+  <label for="notionToken">Integration token (secret_...)</label>
+  <input id="notionToken" type="password" placeholder="secret_..." />
+  <p class="hint">Create at notion.so/my-integrations. Share your job-radar DB with the integration.</p>
+
+  <label for="notionDatabaseId">Database ID</label>
+  <input id="notionDatabaseId" type="text" placeholder="32-char hex (or with dashes, doesn't matter)" />
+
+  <h2>GitHub (for on-demand tailoring)</h2>
+  <label for="githubToken">Personal access token</label>
+  <input id="githubToken" type="password" placeholder="ghp_... or github_pat_..." />
+  <p class="hint">Needs <code>actions:write</code> / workflow scope. Classic token with <code>repo</code> scope works.</p>
+
+  <label for="githubRepo">Repo (owner/name)</label>
+  <input id="githubRepo" type="text" placeholder="arsh398/job-radar" />
+
+  <h2>Profile (auto-filled into forms)</h2>
+  <label for="profile">JSON — edit fields you have</label>
+  <textarea id="profile" placeholder='{
+  "firstName": "Mohammed Arsh",
+  "lastName": "Khan",
+  "fullName": "Mohammed Arsh Khan",
+  "email": "mdarshkhan9898@gmail.com",
+  "phone": "+91 9131110480",
+  "linkedin": "https://linkedin.com/in/mdarshkhan",
+  "github": "https://github.com/arsh398",
+  "portfolio": "",
+  "location": "Bangalore, India"
+}'></textarea>
+
+  <div>
+    <button id="save">Save</button>
+    <span id="status" class="status"></span>
+  </div>
+
+  <script src="options.js"></script>
+</body>
+</html>
