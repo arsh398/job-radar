@@ -119,6 +119,11 @@
     "company": "Amazon",
     "title": "Sr Integration Specialist, Technical Integration, SmartCommerce"
   },
+  "amazon:24fdeda7-f1b5-41ac-914d-7fa48ef7b819": {
+    "firstSeen": "2026-04-18T18:01:44.722Z",
+    "company": "Amazon",
+    "title": "SDE II, Relay Central"
+  },
   "amazon:25f836ac-2919-4028-9a0c-659f42c11739": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
@@ -844,6 +849,11 @@
     "company": "Amazon",
     "title": "Team Lead (Level 3), Outbound"
   },
+  "amazon:bc024802-0660-4143-9f40-1c60d35fe99b": {
+    "firstSeen": "2026-04-18T18:01:44.722Z",
+    "company": "Amazon",
+    "title": "Financial Analyst I, FOAA"
+  },
   "amazon:bc103b16-ffd3-4977-ab67-e7a7a8e53b45": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
@@ -993,6 +1003,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
     "title": "Support Engineer III, AMC, Measurements & Data Science"
+  },
+  "amazon:eb8e4bef-9620-4873-a40e-166a80baaf3a": {
+    "firstSeen": "2026-04-18T18:01:44.722Z",
+    "company": "Amazon",
+    "title": "HR Business Partner, AMZL - HR"
   },
   "amazon:eceb8f25-69fd-4da5-8edf-6accfcdc6c17": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -43058,6 +43073,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Robinhood",
     "title": "Senior Software Developer, Backend"
+  },
+  "greenhouse:robinhood:5400711": {
+    "firstSeen": "2026-04-18T18:01:44.722Z",
+    "company": "Robinhood",
+    "title": "Senior Software Developer, Derivatives"
   },
   "greenhouse:robinhood:5432053": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
