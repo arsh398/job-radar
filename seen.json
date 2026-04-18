@@ -59594,6 +59594,26 @@
     "company": "Micron",
     "title": "Design Characterization Engineer"
   },
+  "workday:micron:JR96252": {
+    "firstSeen": "2026-04-18T10:38:47.258Z",
+    "company": "Micron",
+    "title": "Thin Films Advanced DRAM Process Development (Open)"
+  },
+  "workday:micron:JR96403": {
+    "firstSeen": "2026-04-18T10:38:47.258Z",
+    "company": "Micron",
+    "title": "Staff Engineer - Thin Films CVD/DIFF Adv DRAM"
+  },
+  "workday:micron:JR96404": {
+    "firstSeen": "2026-04-18T10:38:47.258Z",
+    "company": "Micron",
+    "title": "Thin Films Advanced DRAM Process Development Engineer"
+  },
+  "workday:micron:JR96415": {
+    "firstSeen": "2026-04-18T10:38:47.258Z",
+    "company": "Micron",
+    "title": "R&D Thin Films Process Development Engineer Advanced DRAM"
+  },
   "workday:micron:JR96594": {
     "firstSeen": "2026-04-18T02:09:42.123Z",
     "company": "Micron",
@@ -60573,6 +60593,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Salesforce",
     "title": "LATAM Internship Program | Sales Intern [Mexico]"
+  },
+  "workday:salesforce:JR312773": {
+    "firstSeen": "2026-04-18T10:38:47.258Z",
+    "company": "Salesforce",
+    "title": "Performance Engineer - SMTS"
   },
   "workday:salesforce:JR318261": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
