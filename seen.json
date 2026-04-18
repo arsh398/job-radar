@@ -60124,6 +60124,11 @@
     "company": "Nvidia",
     "title": "Financial Reporting Accountant"
   },
+  "workday:nvidia:JR2009959": {
+    "firstSeen": "2026-04-18T19:14:29.016Z",
+    "company": "Nvidia",
+    "title": "Senior ASIC Design Engineer - XBAR IP"
+  },
   "workday:nvidia:JR2011480": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Nvidia",
@@ -60133,6 +60138,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Nvidia",
     "title": " Principal Platform Software Engineer - RAS"
+  },
+  "workday:nvidia:JR2012231": {
+    "firstSeen": "2026-04-18T19:14:29.016Z",
+    "company": "Nvidia",
+    "title": "Senior CPU Design Engineer"
   },
   "workday:nvidia:JR2012293": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
