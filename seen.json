@@ -269,6 +269,11 @@
     "company": "Amazon",
     "title": "Software Development Engineer, Appstore Developer Experience Team "
   },
+  "amazon:423687f5-efb7-4255-9152-750af73e8342": {
+    "firstSeen": "2026-04-18T09:45:57.876Z",
+    "company": "Amazon",
+    "title": "Manager, Account Management, NA AVS"
+  },
   "amazon:45f1aea3-c80a-457d-b298-2a208fd39886": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
@@ -828,6 +833,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
     "title": "Software Development Manager, Worldwide Grocery Tech, Grocery Operator Experience"
+  },
+  "amazon:bb0590fd-62ec-42cf-830a-a9046c2b6172": {
+    "firstSeen": "2026-04-18T09:45:57.876Z",
+    "company": "Amazon",
+    "title": "GSS - Non-Tech Sourcing Recruiter , WWAS TA C Sourcing"
   },
   "amazon:bc01ed8d-afff-47a1-b0f8-7dc1f66032e7": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -56689,6 +56699,16 @@
     "company": "Bosch",
     "title": "Product Manager(eAxle)_ EM"
   },
+  "smartrecruiters:BoschGroup:744000121575037": {
+    "firstSeen": "2026-04-18T09:45:57.876Z",
+    "company": "Bosch",
+    "title": "生产管理_MA"
+  },
+  "smartrecruiters:BoschGroup:744000121575197": {
+    "firstSeen": "2026-04-18T09:45:57.876Z",
+    "company": "Bosch",
+    "title": "Equipment Engineer_DCCX"
+  },
   "smartrecruiters:Visa:744000120793992": {
     "firstSeen": "2026-04-18T04:55:32.862Z",
     "company": "Visa Inc",
@@ -60618,6 +60638,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Salesforce",
     "title": "Manager, Revenue Recognition"
+  },
+  "workday:salesforce:JR335213": {
+    "firstSeen": "2026-04-18T09:45:57.876Z",
+    "company": "Salesforce",
+    "title": "Senior Manager, Software Engineering (QTC, R2R, Revenue Recognition, and Tax)"
   },
   "workday:salesforce:JR335919": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
