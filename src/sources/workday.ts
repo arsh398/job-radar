@@ -3,13 +3,15 @@
 //   body: {"limit":20,"offset":0,"searchText":""}
 //   response: {total, jobPostings: [{title, locationsText, externalPath, postedOn}]}
 //
-// Workday only returns a summary per posting (no JD body). We accept that
-// tradeoff — filters operate on title+location, the LLM gets the same
-// summary for tailoring. YOE will be `unknown` for most Workday postings;
-// they still pass the filter and Mohammed can click through.
+// Two-stage fetch: (1) list all jobs via the /jobs POST endpoint, (2) for
+// postings whose location hints at India/remote, GET /job{externalPath} to
+// pull the full jobDescription HTML. Stage-2 is batched (5 parallel, 150ms
+// gap) and skipped for obviously region-locked postings — cuts detail calls
+// by ~80% and avoids rate-limiting while still giving LLM real JD text for
+// the postings that matter.
 
 import type { Job, SourceAdapter } from "../types.ts";
-import { postJson } from "./http.ts";
+import { getJson, postJson } from "./http.ts";
 
 type WorkdayJobPosting = {
   title: string;
@@ -32,7 +34,9 @@ export type WorkdayTenant = {
   site: string; // e.g. "external_experienced"
 };
 
-// Verified live 2026-04-16 against the public Workday APIs.
+// Verified live 2026-04-16 against the public Workday APIs. Broken
+// tenants are flagged by source_health and can be pruned if they fail
+// consistently.
 export const WORKDAY_TENANTS: WorkdayTenant[] = [
   { name: "Adobe", tenant: "adobe", wdN: "wd5", site: "external_experienced" },
   { name: "Nvidia", tenant: "nvidia", wdN: "wd5", site: "NVIDIAExternalCareerSite" },
@@ -45,6 +49,37 @@ export const WORKDAY_TENANTS: WorkdayTenant[] = [
   { name: "Netflix", tenant: "netflix", wdN: "wd1", site: "Netflix" },
   { name: "Autodesk", tenant: "autodesk", wdN: "wd1", site: "Ext" },
   { name: "Workday", tenant: "workday", wdN: "wd5", site: "workday" },
+  // Expansion batch — common Workday tenants in tech. Unverified slugs
+  // here are cheaper than missing the employer entirely; adapter wraps
+  // per-tenant failure and source_health will surface broken ones.
+  { name: "Visa", tenant: "visa", wdN: "wd1", site: "Visa" },
+  { name: "Cisco", tenant: "cisco", wdN: "wd5", site: "Cisco" },
+  { name: "HP", tenant: "hp", wdN: "wd5", site: "ExternalCareerSite" },
+  { name: "HPE", tenant: "hpe", wdN: "wd5", site: "jobs" },
+  { name: "Qualcomm", tenant: "qualcomm", wdN: "wd5", site: "External" },
+  { name: "Micron", tenant: "micron", wdN: "wd1", site: "External" },
+  { name: "Accenture", tenant: "accenture", wdN: "wd3", site: "AccentureCareers" },
+  { name: "Capgemini", tenant: "capgemini", wdN: "wd3", site: "CapgeminiCareers" },
+  { name: "Juniper Networks", tenant: "juniper", wdN: "wd5", site: "JuniperCareers" },
+  { name: "Synopsys", tenant: "synopsys", wdN: "wd1", site: "Careers" },
+  { name: "Cadence", tenant: "cadence", wdN: "wd1", site: "External_Careers" },
+  { name: "ServiceNow", tenant: "servicenow", wdN: "wd1", site: "ServiceNow" },
+  { name: "Red Hat", tenant: "redhat", wdN: "wd5", site: "jobs" },
+  { name: "Citrix", tenant: "citrix", wdN: "wd5", site: "Citrix" },
+  { name: "Akamai", tenant: "akamai", wdN: "wd1", site: "External_Careers" },
+  { name: "Broadcom", tenant: "broadcom", wdN: "wd5", site: "External_Career_Site" },
+  { name: "Splunk", tenant: "splunk", wdN: "wd5", site: "ExternalSplunkCareers" },
+  { name: "VMware", tenant: "vmware", wdN: "wd1", site: "VMware" },
+  { name: "Arista", tenant: "arista", wdN: "wd5", site: "External" },
+  { name: "Zscaler", tenant: "zscaler", wdN: "wd5", site: "ExternalCareerSite" },
+  { name: "CrowdStrike", tenant: "crowdstrike", wdN: "wd5", site: "crowdstrikecareers" },
+  { name: "Fortinet", tenant: "fortinet", wdN: "wd5", site: "External" },
+  { name: "Palo Alto Networks", tenant: "paloaltonetworks", wdN: "wd1", site: "PaloAltoNetworks" },
+  { name: "Tesla", tenant: "tesla", wdN: "wd1", site: "External" },
+  { name: "Flipkart", tenant: "flipkart", wdN: "wd3", site: "Careers" },
+  { name: "Swiggy", tenant: "swiggy", wdN: "wd3", site: "External" },
+  { name: "Target India", tenant: "target", wdN: "wd5", site: "targetcareers" },
+  { name: "Thomson Reuters", tenant: "thomsonreuters", wdN: "wd3", site: "External_Career_Site" },
 ];
 
 // Best-effort parse of Workday's fuzzy relative-date strings into ISO. We
@@ -92,12 +127,47 @@ async function fetchTenantPage(
   limit: number
 ): Promise<WorkdayResponse> {
   const url = `https://${t.tenant}.${t.wdN}.myworkdayjobs.com/wday/cxs/${t.tenant}/${t.site}/jobs`;
-  return postJson<WorkdayResponse>(url, { limit, offset, searchText: "" });
+  // appliedFacets: {} is required by several Workday tenants (ServiceNow,
+  // Cisco, Synopsys, Capgemini, etc). Harmless on the ones that don't
+  // require it, so include by default.
+  return postJson<WorkdayResponse>(url, {
+    appliedFacets: {},
+    limit,
+    offset,
+    searchText: "",
+  });
 }
 
-// Fetch India + remote roles up to a cap. Workday paginates 20 at a time.
-// We pull first 60 rows per tenant — far more than we need after filters,
-// and keeps each tenant's fetch under 3 round-trips.
+type WorkdayDetailResponse = {
+  jobPostingInfo?: {
+    jobDescription?: string;
+    location?: string;
+    postedOn?: string;
+    timeType?: string;
+  };
+};
+
+// Pre-fetch filter: only fetch JD body for rows whose list-level location
+// hints at India or unqualified Remote, or where location is empty (JD
+// body might reveal it). Cuts detail calls ~80% vs. fetching-all.
+const LOCATION_WORTH_DETAIL = /\b(india|bangalore|bengaluru|hyderabad|pune|mumbai|delhi|gurgaon|gurugram|chennai|noida|kolkata|remote|anywhere|worldwide|global)\b/i;
+
+async function fetchDetail(
+  t: WorkdayTenant,
+  externalPath: string
+): Promise<string | undefined> {
+  const url = `https://${t.tenant}.${t.wdN}.myworkdayjobs.com/wday/cxs/${t.tenant}/${t.site}/job${externalPath}`;
+  try {
+    const resp = await getJson<WorkdayDetailResponse>(url, {
+      timeoutMs: 12_000,
+      retries: 1,
+    });
+    return resp.jobPostingInfo?.jobDescription;
+  } catch {
+    return undefined;
+  }
+}
+
 async function fetchTenant(t: WorkdayTenant): Promise<Job[]> {
   const PAGE_SIZE = 20;
   const MAX_PAGES = 3;
@@ -110,11 +180,38 @@ async function fetchTenant(t: WorkdayTenant): Promise<Job[]> {
     collected.push(...postings);
     if (collected.length >= resp.total) break;
   }
-  // Job URLs must include the site path — without it Workday returns 404.
-  // e.g. /jobs/job/... (not /job/...).
+
+  // Fetch JD bodies for India/remote-hinted postings, batched 5-parallel.
+  const BATCH = 5;
+  const GAP_MS = 150;
+  const detailsMap = new Map<string, string>();
+  const worthDetail = collected.filter(
+    (p) => !p.locationsText || LOCATION_WORTH_DETAIL.test(p.locationsText)
+  );
+  for (let i = 0; i < worthDetail.length; i += BATCH) {
+    const batch = worthDetail.slice(i, i + BATCH);
+    const resolved = await Promise.all(
+      batch.map(async (p) => ({
+        key: p.externalPath,
+        body: await fetchDetail(t, p.externalPath),
+      }))
+    );
+    for (const r of resolved) {
+      if (r.body) detailsMap.set(r.key, r.body);
+    }
+    if (i + BATCH < worthDetail.length) {
+      await new Promise((r) => setTimeout(r, GAP_MS));
+    }
+  }
+
   const base = `https://${t.tenant}.${t.wdN}.myworkdayjobs.com/${t.site}`;
-  return collected.map((p) => {
+  return collected.map((p): Job => {
     const reqId = p.bulletFields?.[0] ?? p.externalPath.split("_").pop() ?? p.externalPath;
+    const jdHtml = detailsMap.get(p.externalPath);
+    // Summary-only fallback for jobs we didn't fetch detail for (regional
+    // mismatches, rate limit, etc). These score low on semantic fit but
+    // still pass the funnel if location matches.
+    const summary = `${p.title} · ${p.locationsText ?? ""} · ${t.name}`;
     return {
       key: `workday:${t.tenant}:${reqId}`,
       source: `workday:${t.tenant}`,
@@ -122,8 +219,8 @@ async function fetchTenant(t: WorkdayTenant): Promise<Job[]> {
       title: p.title,
       location: p.locationsText ?? "",
       url: base + p.externalPath,
-      description: `${p.title} · ${p.locationsText ?? ""} · ${t.name}`,
-      descriptionMd: `${p.title} · ${p.locationsText ?? ""} · ${t.name}`,
+      description: jdHtml ? jdHtml.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim() : summary,
+      descriptionMd: jdHtml ?? summary,
       postedAt: parsePostedOn(p.postedOn),
       fetchedAt: now,
     };

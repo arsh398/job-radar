@@ -45,15 +45,18 @@ const SEEN_PATH = resolve(ROOT, "seen.json");
 const HEALTH_PATH = resolve(ROOT, "source_health.json");
 
 const DRY_RUN = process.env["DRY_RUN"] === "1";
-const MAX_LLM_PER_RUN = Number(process.env["MAX_LLM_PER_RUN"] ?? 20);
+const MAX_LLM_PER_RUN = Number(process.env["MAX_LLM_PER_RUN"] ?? 50);
 const ALERT_SKIPS = process.env["ALERT_SKIPS"] !== "0";
 const MAX_AGE_DAYS = Number(process.env["MAX_AGE_DAYS"] ?? 14);
-const MAX_PER_COMPANY = Number(process.env["MAX_PER_COMPANY"] ?? 3);
+const MAX_PER_COMPANY = Number(process.env["MAX_PER_COMPANY"] ?? 5);
 const ENABLE_PDF = process.env["ENABLE_PDF"] !== "0";
 const ENABLE_TELEGRAM = process.env["ENABLE_TELEGRAM"] !== "0";
 const ENABLE_NOTION = process.env["ENABLE_NOTION"] !== "0";
 // Skip LLM below this fit score — saves tokens on obvious mismatches.
-const MIN_FIT_FOR_LLM = Number(process.env["MIN_FIT_FOR_LLM"] ?? 0.2);
+// Lowered from 0.2 → 0.08 because Workday/other summary-only sources
+// underscore on semantic fit; jobs with weak embeddings but strong ATS
+// overlap deserve an LLM opinion, not silent elimination.
+const MIN_FIT_FOR_LLM = Number(process.env["MIN_FIT_FOR_LLM"] ?? 0.08);
 
 function normalize(s: string): string {
   return (s ?? "").toLowerCase().replace(/\s+/g, " ").trim();

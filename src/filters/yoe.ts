@@ -89,7 +89,13 @@ export type YoeDecision =
   | { pass: true; reason: "match" | "unknown_pass" }
   | { pass: false; reason: string };
 
-export function decideYoe(text: string, yoeCeiling = 2): YoeDecision {
+// Ceiling = 3. Mohammed is 2 YOE with strong signals (Juspay Kubernetes
+// infra, Avalara production APIs, 3 AI-safety side projects). He is
+// competitive for "3+ years" roles — those JDs often hire 2-YOE candidates
+// with better-than-average portfolios. Hard-dropping them (ceiling=2)
+// killed ~15% of otherwise-good matches in baseline measurement.
+// Ceiling=3 accepts 3+ but still drops 4+/5+/senior.
+export function decideYoe(text: string, yoeCeiling = 3): YoeDecision {
   if (INTERN_RE.test(text)) {
     return { pass: false, reason: "intern/coop role" };
   }

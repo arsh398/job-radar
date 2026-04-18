@@ -5,16 +5,16 @@ import { ashbyAdapter } from "./ashby.ts";
 import { workdayAdapter } from "./workday.ts";
 import { amazonAdapter } from "./amazon.ts";
 import { remoteokAdapter } from "./remoteok.ts";
+import { workableAdapter } from "./workable.ts";
+import { smartrecruitersAdapter } from "./smartrecruiters.ts";
 
-// Adapters with real implementations only. Remaining stubs (workable,
-// smartrecruiters, custom_scraper) return empty lists and would pollute
-// source-health with false "ok=true, 0 jobs" — re-add once they have
-// real fetchers.
 export const ALL_ADAPTERS: SourceAdapter[] = [
   greenhouseAdapter,
   leverAdapter,
   ashbyAdapter,
   workdayAdapter,
+  workableAdapter,
+  smartrecruitersAdapter,
   amazonAdapter,
   remoteokAdapter,
 ];

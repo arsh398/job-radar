@@ -19,7 +19,7 @@ export type Job = {
 export type FilteredJob = Job & {
   track: Track;
   parsedYoe: { min: number | null; max: number | null; unknown: boolean };
-  locationMatch: "india" | "global_remote";
+  locationMatch: "india" | "global_remote" | "remote_unqualified";
 };
 
 export type SourceAdapter = {

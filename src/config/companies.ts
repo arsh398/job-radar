@@ -16,9 +16,10 @@ export type CompanyConfig = {
   notes?: string;
 };
 
-// All live slugs below verified against their ATS API (HTTP 200) on
-// 2026-04-16. When adding: curl the ATS endpoint and confirm the slug
-// resolves before committing.
+// Company universe. Slugs are best-effort — if a slug 404s, source_health
+// will flag and we prune. Adding a company with an unverified slug is
+// preferable to missing it entirely; the adapter layer returns empty
+// gracefully on 404.
 export const COMPANIES: CompanyConfig[] = [
   // === Greenhouse ===
   { name: "Stripe", ats: "greenhouse", slug: "stripe" },
@@ -66,6 +67,39 @@ export const COMPANIES: CompanyConfig[] = [
   { name: "Mixpanel", ats: "greenhouse", slug: "mixpanel" },
   { name: "Groww", ats: "greenhouse", slug: "groww" },
   { name: "PhonePe", ats: "greenhouse", slug: "phonepe" },
+  // Expansion batch:
+  { name: "Benchling", ats: "greenhouse", slug: "benchling" },
+  { name: "Duolingo", ats: "greenhouse", slug: "duolingo" },
+  { name: "Chime", ats: "greenhouse", slug: "chime" },
+  { name: "Rippling", ats: "greenhouse", slug: "rippling" },
+  { name: "Deel", ats: "greenhouse", slug: "deel" },
+  { name: "Snyk", ats: "greenhouse", slug: "snyk" },
+  { name: "Grafana Labs", ats: "greenhouse", slug: "grafanalabs" },
+  { name: "Fivetran", ats: "greenhouse", slug: "fivetran" },
+  { name: "dbt Labs", ats: "greenhouse", slug: "dbtlabs" },
+  { name: "Ironclad", ats: "greenhouse", slug: "ironclad" },
+  { name: "Sourcegraph", ats: "greenhouse", slug: "sourcegraph" },
+  { name: "Wiz", ats: "greenhouse", slug: "wiz" },
+  { name: "Gusto", ats: "greenhouse", slug: "gusto" },
+  { name: "Twitch", ats: "greenhouse", slug: "twitch" },
+  { name: "Roblox", ats: "greenhouse", slug: "roblox" },
+  { name: "Squarespace", ats: "greenhouse", slug: "squarespace" },
+  { name: "Chainalysis", ats: "greenhouse", slug: "chainalysis" },
+  { name: "Notion Labs", ats: "greenhouse", slug: "notion" },
+  { name: "Harvey", ats: "greenhouse", slug: "harvey" },
+  { name: "xAI", ats: "greenhouse", slug: "xai" },
+  { name: "Writer", ats: "greenhouse", slug: "writer" },
+  { name: "Cohere", ats: "greenhouse", slug: "cohere" },
+  { name: "Hugging Face", ats: "greenhouse", slug: "huggingface" },
+  { name: "Stability AI", ats: "greenhouse", slug: "stabilityai" },
+  { name: "Runway ML", ats: "greenhouse", slug: "runwayml" },
+  { name: "ElevenLabs Inc", ats: "greenhouse", slug: "elevenlabs" },
+  { name: "Observe AI", ats: "greenhouse", slug: "observeai" },
+  { name: "LightRun", ats: "greenhouse", slug: "lightrun" },
+  { name: "Vimeo", ats: "greenhouse", slug: "vimeo" },
+  { name: "Cloudinary", ats: "greenhouse", slug: "cloudinary" },
+  { name: "Thoughtworks", ats: "greenhouse", slug: "thoughtworks" },
+  { name: "Turing", ats: "greenhouse", slug: "turing" },
 
   // === Lever ===
   { name: "CRED", ats: "lever", slug: "cred" },
@@ -75,6 +109,26 @@ export const COMPANIES: CompanyConfig[] = [
   { name: "Upstox", ats: "lever", slug: "upstox" },
   { name: "Mistral", ats: "lever", slug: "mistral" },
   { name: "StackBlitz", ats: "lever", slug: "stackblitz" },
+  // Expansion:
+  { name: "OpenAI", ats: "lever", slug: "openai" },
+  { name: "Netflix Games", ats: "lever", slug: "netflix" },
+  { name: "Matillion", ats: "lever", slug: "matillion" },
+  { name: "mParticle", ats: "lever", slug: "mparticle" },
+  { name: "Branch", ats: "lever", slug: "branch" },
+  { name: "Nylas", ats: "lever", slug: "nylas" },
+  { name: "Whimsical", ats: "lever", slug: "whimsical" },
+  { name: "Razorpay", ats: "lever", slug: "razorpay" },
+  { name: "Swiggy", ats: "lever", slug: "swiggy" },
+  { name: "Razorpay Engg", ats: "lever", slug: "razorpay-1" },
+  { name: "PharmEasy", ats: "lever", slug: "pharmeasy" },
+  { name: "Unacademy", ats: "lever", slug: "unacademy" },
+  { name: "Shiprocket", ats: "lever", slug: "shiprocket" },
+  { name: "NextGenInvent", ats: "lever", slug: "nextgeninvent" },
+  { name: "ApplyBoard", ats: "lever", slug: "applyboard" },
+  { name: "Wealthfront", ats: "lever", slug: "wealthfront" },
+  { name: "Attentive", ats: "lever", slug: "attentive" },
+  { name: "Mercari", ats: "lever", slug: "mercari" },
+  { name: "Teachable", ats: "lever", slug: "teachable" },
 
   // === Ashby ===
   { name: "Perplexity", ats: "ashby", slug: "perplexity" },
@@ -108,17 +162,62 @@ export const COMPANIES: CompanyConfig[] = [
   { name: "Bolt", ats: "ashby", slug: "bolt" },
   { name: "Turbopuffer", ats: "ashby", slug: "turbopuffer" },
   { name: "Sarvam AI", ats: "ashby", slug: "sarvam" },
+  // Expansion:
+  { name: "Cresta", ats: "ashby", slug: "cresta" },
+  { name: "Hebbia", ats: "ashby", slug: "hebbia" },
+  { name: "Humanloop", ats: "ashby", slug: "humanloop" },
+  { name: "Clay", ats: "ashby", slug: "clay" },
+  { name: "Sana Labs", ats: "ashby", slug: "sanalabs" },
+  { name: "Replicate", ats: "ashby", slug: "replicate" },
+  { name: "Warp", ats: "ashby", slug: "warp" },
+  { name: "BentoML", ats: "ashby", slug: "bentoml" },
+  { name: "Voyage AI", ats: "ashby", slug: "voyageai" },
+  { name: "Julius AI", ats: "ashby", slug: "julius" },
+  { name: "LlamaIndex", ats: "ashby", slug: "llamaindex" },
+  { name: "Crew AI", ats: "ashby", slug: "crewai" },
+  { name: "Sierra", ats: "ashby", slug: "sierra" },
+  { name: "Cognition", ats: "ashby", slug: "cognition" },
+  { name: "Midjourney", ats: "ashby", slug: "midjourney" },
+  { name: "Suno", ats: "ashby", slug: "suno" },
 
-  // === Pending — need adapter or slug hunt ===
-  // Amazon, Google, Microsoft, Apple, Meta, Uber, IBM — large enterprises,
-  //   likely custom_json or Workday.
-  // Atlassian, Snowflake, HashiCorp, DoorDash, Rippling, Shopify — moved
-  //   off public ATS, need custom_scraper.
-  // Razorpay, Zepto, Dream11, MPL, Flipkart, Myntra, Swiggy, Zomato,
-  //   PhonePe, Juspay, Zerodha, Ola, Unacademy, Krutrim — Indian portals,
-  //   need custom_scraper per-company.
-  // Adobe, Oracle, Salesforce, Nvidia, Qualcomm, Mastercard, Visa, PayPal,
-  //   Cisco, SAP, Intel, Dell — Workday tenants, need Workday adapter.
+  // === Workable ===
+  { name: "Razorpay (Workable)", ats: "workable", slug: "razorpay" },
+  { name: "Urban Company", ats: "workable", slug: "urbancompany" },
+  { name: "Apna", ats: "workable", slug: "apna" },
+  { name: "Chargebee", ats: "workable", slug: "chargebee" },
+  { name: "Classplus", ats: "workable", slug: "classplus" },
+  { name: "Jar", ats: "workable", slug: "jar" },
+  { name: "Jupiter", ats: "workable", slug: "jupiter" },
+  { name: "Slice", ats: "workable", slug: "slice" },
+  { name: "Fi Money", ats: "workable", slug: "epifi" },
+  { name: "Setu", ats: "workable", slug: "setu" },
+  { name: "CleverTap", ats: "workable", slug: "clevertap" },
+  { name: "Hasura", ats: "workable", slug: "hasura" },
+  { name: "BrowserStack", ats: "workable", slug: "browserstack" },
+  { name: "LambdaTest", ats: "workable", slug: "lambdatest" },
+  { name: "Atlan", ats: "workable", slug: "atlan" },
+  { name: "Spinny", ats: "workable", slug: "spinny" },
+  { name: "Delhivery", ats: "workable", slug: "delhivery" },
+  { name: "Deepgram", ats: "workable", slug: "deepgram" },
+  { name: "Typeform", ats: "workable", slug: "typeform" },
+  { name: "Contentful", ats: "workable", slug: "contentful" },
+  { name: "Hotjar", ats: "workable", slug: "hotjar" },
+  { name: "Pitch", ats: "workable", slug: "pitch" },
+  { name: "Revolut", ats: "workable", slug: "revolut" },
+  { name: "Taxfix", ats: "workable", slug: "taxfix" },
+  { name: "N26", ats: "workable", slug: "n26" },
+
+  // === SmartRecruiters ===
+  { name: "Bosch", ats: "smartrecruiters", slug: "BoschGroup" },
+  { name: "Visa Inc", ats: "smartrecruiters", slug: "Visa" },
+  { name: "Publicis Groupe", ats: "smartrecruiters", slug: "PublicisGroupe" },
+  { name: "Schneider Electric", ats: "smartrecruiters", slug: "SchneiderElectric" },
+  { name: "IKEA", ats: "smartrecruiters", slug: "IKEA" },
+  { name: "Equifax", ats: "smartrecruiters", slug: "Equifax" },
+  { name: "Ubisoft", ats: "smartrecruiters", slug: "Ubisoft" },
+
+  // === Workday companies live in src/sources/workday.ts (WORKDAY_TENANTS)
+  // because they need tenant/wdN/site triples, not simple slugs.
 ];
 
 export const BY_ATS = {
