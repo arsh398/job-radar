@@ -35,23 +35,59 @@ async function notionFetch(path, init = {}) {
   return json;
 }
 
+// Strip hash + trailing slash so different entry points (user typed,
+// Notion click, extension detection) normalize to the same comparison
+// key. Must stay aligned with scripts/tailor-one.ts::normalizeUrl.
+function normalizeUrl(u) {
+  try {
+    const url = new URL(u);
+    url.hash = "";
+    if (url.pathname.length > 1 && url.pathname.endsWith("/")) {
+      url.pathname = url.pathname.slice(0, -1);
+    }
+    return url.toString();
+  } catch {
+    return u;
+  }
+}
+
 // Query Notion DB for a row whose "JD URL" property matches the current URL.
-// Returns the page object (with properties) or null.
+// Tries exact match first, then a substring match for URL variants (e.g.
+// user navigated via a tracking-param URL). Returns the first hit or null.
 async function findRowByUrl(url) {
   const { notionDatabaseId } = await cfg();
   if (!notionDatabaseId) throw new Error("Notion database ID not configured.");
-  const body = {
-    filter: {
-      property: "JD URL",
-      url: { equals: url },
-    },
-    page_size: 1,
-  };
-  const data = await notionFetch(`/databases/${notionDatabaseId.replace(/-/g, "")}/query`, {
+  const dbId = notionDatabaseId.replace(/-/g, "");
+  const normalized = normalizeUrl(url);
+
+  // Attempt 1: exact match on normalized URL.
+  const exact = await notionFetch(`/databases/${dbId}/query`, {
     method: "POST",
-    body: JSON.stringify(body),
+    body: JSON.stringify({
+      filter: { property: "JD URL", url: { equals: normalized } },
+      page_size: 1,
+    }),
   });
-  return data.results?.[0] ?? null;
+  if (exact.results?.[0]) return exact.results[0];
+
+  // Attempt 2: contains match on a distinctive URL fragment (path without
+  // host). Catches cases where stored URL has different host variant
+  // (boards.greenhouse.io vs job-boards.greenhouse.io).
+  try {
+    const pathOnly = new URL(normalized).pathname.replace(/^\/+/, "");
+    if (pathOnly.length > 6) {
+      const fuzzy = await notionFetch(`/databases/${dbId}/query`, {
+        method: "POST",
+        body: JSON.stringify({
+          filter: { property: "JD URL", url: { contains: pathOnly } },
+          page_size: 1,
+        }),
+      });
+      if (fuzzy.results?.[0]) return fuzzy.results[0];
+    }
+  } catch { /* bad URL, fall through */ }
+
+  return null;
 }
 
 // Fetch a page's body blocks — we need these for the cover note / referral

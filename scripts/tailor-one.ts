@@ -351,15 +351,38 @@ function pdfFilename(company: string, variantSuffix: string): string {
 
 // ---------- Main ----------
 
+// Strip hash and trailing slash so that URLs from different entry points
+// (user-typed, Notion-clicked, extension auto-detected) normalize to the
+// same string. Keeps query params since some ATSes use them as job keys
+// (e.g. Greenhouse's ?gh_jid=X redirect chain).
+function normalizeUrl(u: string): string {
+  try {
+    const url = new URL(u);
+    url.hash = "";
+    // Strip trailing slash from path unless path is just "/"
+    if (url.pathname.length > 1 && url.pathname.endsWith("/")) {
+      url.pathname = url.pathname.slice(0, -1);
+    }
+    return url.toString();
+  } catch {
+    return u;
+  }
+}
+
 async function main(): Promise<void> {
-  const url = process.argv[2];
-  if (!url) {
+  const rawUrl = process.argv[2];
+  if (!rawUrl) {
     console.error("Usage: tsx scripts/tailor-one.ts <JD_URL>");
     process.exit(2);
   }
+  const url = normalizeUrl(rawUrl);
 
   console.log(`[tailor-one] resolving ${url}`);
   const { job, detected } = await resolveUrl(url);
+  // Override the job's URL with the user-provided (normalized) input URL.
+  // This is what the extension polls against — if we stored the ATS's
+  // canonical URL instead, the poll never matches.
+  job.url = url;
   console.log(`[tailor-one] detected ats=${detected} company="${job.company}" title="${job.title}"`);
 
   const track = inferTrack(job.title);
