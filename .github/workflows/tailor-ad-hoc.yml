@@ -1,0 +1,59 @@
+name: tailor-ad-hoc
+
+# Single-job tailoring. Triggered by the Chrome extension (or manually)
+# with a JD URL. Runs the full pipeline for that one URL — fetches the
+# posting from the ATS, tailors the resume, renders PDF variants, and
+# writes a new row into Notion. Deliberately bypasses cron-time filters.
+
+on:
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "JD URL to tailor for (Greenhouse/Lever/Ashby/Workable/SmartRecruiters/Workday)"
+        type: string
+        required: true
+
+concurrency:
+  group: tailor-ad-hoc-${{ inputs.url }}
+  cancel-in-progress: false
+
+jobs:
+  tailor:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'pnpm'
+
+      - name: Install deps
+        run: pnpm install --frozen-lockfile
+
+      - name: Cache Puppeteer Chromium
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/puppeteer
+          key: puppeteer-chrome-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml') }}
+
+      - name: Install Chromium for Puppeteer
+        run: pnpm exec puppeteer browsers install chrome
+
+      - name: Tailor single job
+        env:
+          GOOGLE_AI_STUDIO_API_KEY: ${{ secrets.GOOGLE_AI_STUDIO_API_KEY }}
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
+          NOTION_DATABASE_ID: ${{ secrets.NOTION_DATABASE_ID }}
+          ENABLE_PDF: '1'
+          ENABLE_NOTION: '1'
+          ENABLE_TELEGRAM: '0'
+        run: pnpm exec tsx scripts/tailor-one.ts "${{ inputs.url }}"
