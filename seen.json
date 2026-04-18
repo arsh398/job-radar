@@ -889,6 +889,11 @@
     "company": "Amazon",
     "title": "Software dev engineer, WWGST Workforce management"
   },
+  "amazon:cbea98e5-b294-45f1-83a1-164062f15a8d": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Amazon",
+    "title": "Technical Program Manager, IESP - Merchant Tech"
+  },
   "amazon:ccd0c548-5ce3-47cd-895c-f2b450abfdb2": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
@@ -5849,6 +5854,11 @@
     "company": "Plaid",
     "title": "Social Media Lead"
   },
+  "ashby:plaid:6dbf0f7f-ef35-4037-9418-6b2460f41345": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Plaid",
+    "title": "Fraud Model Consulting Lead"
+  },
   "ashby:plaid:779a5b90-8630-472a-b819-3710486ef7e9": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Plaid",
@@ -5908,6 +5918,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Plaid",
     "title": "Account Executive Leader - Payments"
+  },
+  "ashby:plaid:98ce8ccb-b894-4a27-8bd5-194dbc64f429": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Plaid",
+    "title": "Senior Machine Learning Engineer (Research Scientist) - Data Foundation & AI"
   },
   "ashby:plaid:991323b8-1dad-4dbe-bccf-8b10bde81186": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -14113,6 +14128,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Anthropic",
     "title": "Sales Strategy & Operational Excellence Lead"
+  },
+  "greenhouse:anthropic:5191437008": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Anthropic",
+    "title": "Partner Business Systems & AI Operations Lead"
   },
   "greenhouse:anthropic:5191638008": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -44809,6 +44829,11 @@
     "company": "Roblox",
     "title": "Manager, Moderation Escalations"
   },
+  "greenhouse:roblox:7744272": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Roblox",
+    "title": "Principal Software Engineer"
+  },
   "greenhouse:roblox:7746749": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Roblox",
@@ -44934,6 +44959,11 @@
     "company": "Roblox",
     "title": "Senior Software Engineer, ML Infra"
   },
+  "greenhouse:roblox:7769510": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Roblox",
+    "title": "Principal Software Engineer - Creator Collaboration"
+  },
   "greenhouse:roblox:7774007": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Roblox",
@@ -44948,6 +44978,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Roblox",
     "title": "Talent Sourcing Partner (Prod/Design), Temporary"
+  },
+  "greenhouse:roblox:7774232": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Roblox",
+    "title": "Senior Product Designer, ConsumerX"
   },
   "greenhouse:roblox:7775004": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -47003,6 +47038,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Squarespace",
     "title": "Senior Product Manager, Commerce "
+  },
+  "greenhouse:squarespace:7789058": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Squarespace",
+    "title": "Software Engineer - Delivery Platform "
   },
   "greenhouse:squarespace:7796885": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -50209,6 +50249,11 @@
     "company": "Twilio",
     "title": "New Business Account Executive "
   },
+  "greenhouse:twilio:7066029": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Twilio",
+    "title": "Senior Manager, Machine Learning"
+  },
   "greenhouse:twilio:7155492": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Twilio",
@@ -50388,6 +50433,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Twilio",
     "title": "Software Engineer"
+  },
+  "greenhouse:twilio:7607358": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Twilio",
+    "title": "Strategic Account Executive 4"
   },
   "greenhouse:twilio:7611862": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -50608,6 +50658,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Twilio",
     "title": "Evangelist Intern"
+  },
+  "greenhouse:twilio:7735455": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Twilio",
+    "title": "Strategic Account Executive 3"
   },
   "greenhouse:twilio:7736718": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -53779,6 +53834,11 @@
     "company": "Mistral",
     "title": "Data Center Operations Manager"
   },
+  "lever:mistral:fbcc92bb-a69e-44a3-a8cc-fa8011e8d75a": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Mistral",
+    "title": "Legal Counsel - US"
+  },
   "lever:mistral:fd865fe4-7344-43b0-9d8d-600e8b366725": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Mistral",
@@ -55998,6 +56058,51 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Headway",
     "title": "Senior React Native Developer"
+  },
+  "remoteok:1131174": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Calendly",
+    "title": "Engineering Manager"
+  },
+  "remoteok:1131175": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Evolve",
+    "title": "Manager Retention"
+  },
+  "remoteok:1131176": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Shields Health Solutions",
+    "title": "Spanish Bilingual Certified Pharmacy Technician Refill & Medication Adherence"
+  },
+  "remoteok:1131177": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Runway",
+    "title": "Creative Director"
+  },
+  "remoteok:1131178": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Promenade",
+    "title": "Technical Support Manager"
+  },
+  "remoteok:1131179": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Highspot",
+    "title": "Senior Solution Consultant"
+  },
+  "remoteok:1131180": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Strive Pharmacy",
+    "title": "Content Compliance Manager OTC Supplements and Cosmetics"
+  },
+  "remoteok:1131181": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Evergreen Nephrology",
+    "title": "Nurse Care Manager Transitions of Care"
+  },
+  "remoteok:1131182": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Clover Health",
+    "title": "Operations Associate Payment Integrity"
   },
   "smartrecruiters:BoschGroup:744000121337448": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -58559,6 +58664,11 @@
     "company": "CrowdStrike",
     "title": "Engineering Manager - Cloud & AI Runtime"
   },
+  "workday:crowdstrike:R28427": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "CrowdStrike",
+    "title": "SMB Account Manager (Hybrid)"
+  },
   "workday:hp:3151359": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "HP",
@@ -58773,6 +58883,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Intel",
     "title": "GPU Software Development Engineer"
+  },
+  "workday:intel:JR0283104": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Intel",
+    "title": "Fullchip Floorplan Design Engineer"
   },
   "workday:intel:JR0283130": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -59229,6 +59344,11 @@
     "company": "Micron",
     "title": "Director, Customer Collaboration & Technology Strategy"
   },
+  "workday:micron:JR96084": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Micron",
+    "title": "Staff Memory Sustaining Physical Design Engineer, HBM"
+  },
   "workday:micron:JR96100": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Micron",
@@ -59243,6 +59363,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Micron",
     "title": "Design Characterization Engineer"
+  },
+  "workday:micron:JR96594": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Micron",
+    "title": "Senior Design Verification Engineer, HBM"
   },
   "workday:micron:JR96600": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -59259,10 +59384,25 @@
     "company": "Micron",
     "title": "DRAM Systems Architecture"
   },
+  "workday:micron:JR97535": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Micron",
+    "title": "Sr Manager Design Development Technical Leadership, HBM"
+  },
   "workday:micron:JR97609": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Micron",
     "title": "Director, Corporate Narrative & Messaging"
+  },
+  "workday:micron:JR97949": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Micron",
+    "title": "Senior Memory Sustaining Design Engineer, HBM"
+  },
+  "workday:micron:JR97954": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Micron",
+    "title": "Staff Memory Sustaining Design Engineer, HBM"
   },
   "workday:micron:JR97971": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -59273,6 +59413,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Micron",
     "title": "Contract TA Operations Specialist – Events, Candidate Experience & Reporting"
+  },
+  "workday:micron:JR98177": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Micron",
+    "title": "Staff Design Verification Engineer, HBM"
   },
   "workday:micron:JR98497": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -60349,6 +60494,11 @@
     "company": "Salesforce",
     "title": "Area Vice President (AVP) of Retail and Consumer Goods (RCG)"
   },
+  "workday:salesforce:JR338810": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Salesforce",
+    "title": "Business Process Analyst"
+  },
   "workday:salesforce:JR338813": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Salesforce",
@@ -60804,6 +60954,11 @@
     "company": "Workday",
     "title": "Principal / Senior HCM Functional Consultant"
   },
+  "workday:workday:JR-0104977": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Workday",
+    "title": "Sr Services Executive - Dirigeant supérieur des services"
+  },
   "workday:workday:JR-0105033": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Workday",
@@ -60843,6 +60998,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Workday",
     "title": "Adaptive Planning Sales Specialist - Singapore NN & CB"
+  },
+  "workday:workday:JR-0105648": {
+    "firstSeen": "2026-04-18T02:09:42.123Z",
+    "company": "Workday",
+    "title": "Large Enterprise- Customer Base Account Executive - oCFO- Healthcare"
   },
   "workday:workday:JR-0105770": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
