@@ -59284,6 +59284,11 @@
     "company": "Intel",
     "title": "Experienced Shift 4 Probe Card Metrology Technician"
   },
+  "workday:intel:JR0282709": {
+    "firstSeen": "2026-04-19T13:14:29.312Z",
+    "company": "Intel",
+    "title": "Window infrastructure & DevOps Student"
+  },
   "workday:intel:JR0282746": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Intel",
@@ -59358,6 +59363,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Mastercard",
     "title": "Consultant, Customer Success Product Specialist"
+  },
+  "workday:mastercard:R-269664": {
+    "firstSeen": "2026-04-19T13:14:29.312Z",
+    "company": "Mastercard",
+    "title": "VP Product Management, Dynamic Yield"
   },
   "workday:mastercard:R-269727": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -59804,6 +59814,16 @@
     "company": "Micron",
     "title": "Director, Customer Collaboration & Technology Strategy"
   },
+  "workday:micron:JR95874": {
+    "firstSeen": "2026-04-19T13:14:29.312Z",
+    "company": "Micron",
+    "title": "Taichung/TongLuo Contamination Control Engineer"
+  },
+  "workday:micron:JR95877": {
+    "firstSeen": "2026-04-19T13:14:29.312Z",
+    "company": "Micron",
+    "title": "Taichung/TongLuo Contamination Control Shift Engineer"
+  },
   "workday:micron:JR96084": {
     "firstSeen": "2026-04-18T02:09:42.123Z",
     "company": "Micron",
@@ -59828,6 +59848,11 @@
     "firstSeen": "2026-04-18T10:38:47.258Z",
     "company": "Micron",
     "title": "Thin Films Advanced DRAM Process Development (Open)"
+  },
+  "workday:micron:JR96255": {
+    "firstSeen": "2026-04-19T13:14:29.312Z",
+    "company": "Micron",
+    "title": "OMT TECHNOLOGY PI1 Device Engineer Lead"
   },
   "workday:micron:JR96403": {
     "firstSeen": "2026-04-18T10:38:47.258Z",
@@ -60499,6 +60524,11 @@
     "company": "PayPal",
     "title": "Software Engineer"
   },
+  "workday:paypal:R0133749": {
+    "firstSeen": "2026-04-19T13:14:29.312Z",
+    "company": "PayPal",
+    "title": "Machine Learning Intern"
+  },
   "workday:paypal:R0133940": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "PayPal",
@@ -60603,6 +60633,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "PayPal",
     "title": "Sr Manager, Audit"
+  },
+  "workday:paypal:R0135983": {
+    "firstSeen": "2026-04-19T13:14:29.312Z",
+    "company": "PayPal",
+    "title": "Manager, Technical Programs"
   },
   "workday:paypal:R0136001": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
