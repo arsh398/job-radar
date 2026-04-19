@@ -59689,6 +59689,11 @@
     "company": "Micron",
     "title": "Senior Engineer, Global Facilities US - Water/Wastewater"
   },
+  "workday:micron:JR90085": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "Micron",
+    "title": "RDA.Metrology Equipment Maintenance Shift Engineer"
+  },
   "workday:micron:JR90851": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Micron",
@@ -59734,10 +59739,20 @@
     "company": "Micron",
     "title": "Design Engineer - Pathfinding Design"
   },
+  "workday:micron:JR93754": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "Micron",
+    "title": "YE ENGINEER"
+  },
   "workday:micron:JR93778": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Micron",
     "title": "Manager, Security Firmware"
+  },
+  "workday:micron:JR94055": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "Micron",
+    "title": "OMT YE SR. ENGINEER"
   },
   "workday:micron:JR94063": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -59804,6 +59819,31 @@
     "company": "Micron",
     "title": "Director, Americas Storage Accounts"
   },
+  "workday:micron:JR95370": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "Micron",
+    "title": "QE  Engineer"
+  },
+  "workday:micron:JR95373": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "Micron",
+    "title": "FY26 NCG_R2R (Run to Run) Engineer"
+  },
+  "workday:micron:JR95375": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "Micron",
+    "title": "FY26 NCG R2R (Run to Run) Engineer"
+  },
+  "workday:micron:JR95454": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "Micron",
+    "title": "FY26 NCG_QE FDC ENGINEER"
+  },
+  "workday:micron:JR95461": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "Micron",
+    "title": "FY26 NCG _ QE FDC ENGINEER"
+  },
   "workday:micron:JR95670": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Micron",
@@ -59823,6 +59863,16 @@
     "firstSeen": "2026-04-19T13:14:29.312Z",
     "company": "Micron",
     "title": "Taichung/TongLuo Contamination Control Shift Engineer"
+  },
+  "workday:micron:JR95918": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "Micron",
+    "title": "Fab16 RDA Operation Engineer"
+  },
+  "workday:micron:JR96017": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "Micron",
+    "title": "FE CPIE Transformative Staff/Senior Engineer"
   },
   "workday:micron:JR96084": {
     "firstSeen": "2026-04-18T02:09:42.123Z",
@@ -59894,20 +59944,40 @@
     "company": "Micron",
     "title": "DRAM Systems Architecture"
   },
+  "workday:micron:JR96831": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "Micron",
+    "title": "ASSOC. ENG, OMT MQC LAB/CC_TY"
+  },
   "workday:micron:JR96847": {
     "firstSeen": "2026-04-19T11:58:41.973Z",
     "company": "Micron",
     "title": "Taichung Cleanroom Contamination Control Night Shift Engineer"
+  },
+  "workday:micron:JR96856": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "Micron",
+    "title": "QE FDC ENGINEER"
   },
   "workday:micron:JR97535": {
     "firstSeen": "2026-04-18T02:09:42.123Z",
     "company": "Micron",
     "title": "Sr Manager Design Development Technical Leadership, HBM"
   },
+  "workday:micron:JR97588": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "Micron",
+    "title": "IE Layout Senior engineer"
+  },
   "workday:micron:JR97609": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Micron",
     "title": "Director, Corporate Narrative & Messaging"
+  },
+  "workday:micron:JR97853": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "Micron",
+    "title": "R2R Engineer"
   },
   "workday:micron:JR97949": {
     "firstSeen": "2026-04-18T02:09:42.123Z",
@@ -59934,8 +60004,23 @@
     "company": "Micron",
     "title": "QE  Engineer"
   },
+  "workday:micron:JR98041": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "Micron",
+    "title": "IE Capacity Engineer"
+  },
+  "workday:micron:JR98042": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "Micron",
+    "title": "ENGINEER, IE MODELING"
+  },
   "workday:micron:JR98072": {
     "firstSeen": "2026-04-19T02:31:39.893Z",
+    "company": "Micron",
+    "title": "TW ID1 RAM Operations Shift Engineer"
+  },
+  "workday:micron:JR98073": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
     "company": "Micron",
     "title": "TW ID1 RAM Operations Shift Engineer"
   },
@@ -60299,6 +60384,16 @@
     "company": "Nvidia",
     "title": "Principal Software Engineer – CSP Engagements"
   },
+  "workday:nvidia:JR1998579": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "Nvidia",
+    "title": "Manager, Software Technical Program Management - Datacenter Systems"
+  },
+  "workday:nvidia:JR1999525": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "Nvidia",
+    "title": "Senior System Software Engineer Platform - OpenBMC"
+  },
   "workday:nvidia:JR1999599": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Nvidia",
@@ -60328,6 +60423,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Nvidia",
     "title": "Director, Software TPM - Server Firmware and System Software"
+  },
+  "workday:nvidia:JR2007944": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "Nvidia",
+    "title": "Senior Software Engineer, Kubernetes and Virtualization - DGX Cloud"
   },
   "workday:nvidia:JR2008574": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -60394,6 +60494,11 @@
     "company": "Nvidia",
     "title": "vGPU Sales Specialist"
   },
+  "workday:nvidia:JR2014282": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "Nvidia",
+    "title": "Senior SBIOS Firmware Engineer - UEFI"
+  },
   "workday:nvidia:JR2014633": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Nvidia",
@@ -60459,6 +60564,11 @@
     "company": "Nvidia",
     "title": "Senior Data Analysis Engineer, AD Metrics - Autonomous Vehicles"
   },
+  "workday:nvidia:JR2016162": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "Nvidia",
+    "title": "Server Factory Planner"
+  },
   "workday:nvidia:JR2016190": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Nvidia",
@@ -60473,6 +60583,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Nvidia",
     "title": "Manager, Tegra Software Chip"
+  },
+  "workday:nvidia:JR2016283": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "Nvidia",
+    "title": "Senior Process Engineer"
   },
   "workday:nvidia:JR2016289": {
     "firstSeen": "2026-04-18T21:34:04.755Z",
@@ -60568,6 +60683,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "PayPal",
     "title": "Staff Machine Learning Engineer"
+  },
+  "workday:paypal:R0134957": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "PayPal",
+    "title": "Sr Director, US Credit Exist Customer Management"
   },
   "workday:paypal:R0135407": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -60978,6 +61098,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Salesforce",
     "title": "Staff Product Data Scientist - Slack"
+  },
+  "workday:salesforce:JR328865": {
+    "firstSeen": "2026-04-19T16:01:52.750Z",
+    "company": "Salesforce",
+    "title": "Territory Account Executive"
   },
   "workday:salesforce:JR329635": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
