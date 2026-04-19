@@ -59069,6 +59069,11 @@
     "company": "CrowdStrike",
     "title": "SMB Account Manager (Hybrid)"
   },
+  "workday:dell:R279272": {
+    "firstSeen": "2026-04-19T11:07:07.408Z",
+    "company": "Dell",
+    "title": "Associate Inside Sales Representative "
+  },
   "workday:hp:3151359": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "HP",
@@ -59233,6 +59238,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "HP",
     "title": "Inside Sales Rep"
+  },
+  "workday:hp:3161416": {
+    "firstSeen": "2026-04-19T11:07:07.408Z",
+    "company": "HP",
+    "title": "Financial Analyst 1"
   },
   "workday:hp:3161551": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
