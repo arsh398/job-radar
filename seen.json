@@ -56334,6 +56334,16 @@
     "company": "Honeycomb.io",
     "title": "Senior Sales Operations Analyst"
   },
+  "remoteok:1131211": {
+    "firstSeen": "2026-04-19T09:13:54.258Z",
+    "company": "Wrike",
+    "title": "Customer Success Engineer"
+  },
+  "remoteok:1131212": {
+    "firstSeen": "2026-04-19T09:13:54.258Z",
+    "company": "TEECOM",
+    "title": "Project Manager I"
+  },
   "smartrecruiters:BoschGroup:744000121337448": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Bosch",
@@ -56843,6 +56853,11 @@
     "firstSeen": "2026-04-18T15:06:08.648Z",
     "company": "Bosch",
     "title": "Technical Lead – IT Services & Project Delivery"
+  },
+  "smartrecruiters:BoschGroup:744000121623657": {
+    "firstSeen": "2026-04-19T09:13:54.258Z",
+    "company": "Bosch",
+    "title": "Software Architect_EM"
   },
   "smartrecruiters:Visa:744000120780707": {
     "firstSeen": "2026-04-18T21:34:04.755Z",
@@ -59294,6 +59309,11 @@
     "company": "Intel",
     "title": "Network Systems and Solutions Engineer"
   },
+  "workday:intel:JR0283137": {
+    "firstSeen": "2026-04-19T09:13:54.258Z",
+    "company": "Intel",
+    "title": "Source To Pay Solutions - Senior Lead"
+  },
   "workday:intel:JR0283161": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Intel",
@@ -59333,6 +59353,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Mastercard",
     "title": "Senior Specialist, Product Development"
+  },
+  "workday:mastercard:R-272932": {
+    "firstSeen": "2026-04-19T09:13:54.258Z",
+    "company": "Mastercard",
+    "title": "Senior Software Engineer (Full-stack Java+React)"
   },
   "workday:mastercard:R-273367": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -59478,6 +59503,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Mastercard",
     "title": "Site Reliability Engineer I-2"
+  },
+  "workday:mastercard:R-275570": {
+    "firstSeen": "2026-04-19T09:13:54.258Z",
+    "company": "Mastercard",
+    "title": "Senior Backend Software Engineer (Python)"
   },
   "workday:mastercard:R-275694": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -59638,6 +59668,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Micron",
     "title": "Principal Engineer-HIG HBM Architecture"
+  },
+  "workday:micron:JR91103": {
+    "firstSeen": "2026-04-19T09:13:54.258Z",
+    "company": "Micron",
+    "title": "MATERIALS SPECIALIST"
   },
   "workday:micron:JR91883": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
