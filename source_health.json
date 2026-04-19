@@ -1,20 +1,20 @@
 {
   "amazon": {
-    "lastRun": "2026-04-19T11:07:07.448Z",
-    "lastOk": "2026-04-19T11:07:07.448Z",
+    "lastRun": "2026-04-19T11:58:42.011Z",
+    "lastOk": "2026-04-19T11:58:42.011Z",
     "lastFail": null,
     "consecutiveFailures": 0,
     "lastJobCount": 300,
-    "lastJobCountAt": "2026-04-19T11:07:07.448Z",
+    "lastJobCountAt": "2026-04-19T11:58:42.011Z",
     "alerted": false
   },
   "ashby": {
-    "lastRun": "2026-04-19T11:07:07.448Z",
-    "lastOk": "2026-04-19T11:07:07.448Z",
+    "lastRun": "2026-04-19T11:58:42.011Z",
+    "lastOk": "2026-04-19T11:58:42.011Z",
     "lastFail": null,
     "consecutiveFailures": 0,
     "lastJobCount": 1696,
-    "lastJobCountAt": "2026-04-19T11:07:07.448Z",
+    "lastJobCountAt": "2026-04-19T11:58:42.011Z",
     "alerted": false
   },
   "custom_json": {
@@ -36,57 +36,57 @@
     "alerted": false
   },
   "greenhouse": {
-    "lastRun": "2026-04-19T11:07:07.448Z",
-    "lastOk": "2026-04-19T11:07:07.448Z",
+    "lastRun": "2026-04-19T11:58:42.011Z",
+    "lastOk": "2026-04-19T11:58:42.011Z",
     "lastFail": null,
     "consecutiveFailures": 0,
     "lastJobCount": 8803,
-    "lastJobCountAt": "2026-04-19T11:07:07.448Z",
+    "lastJobCountAt": "2026-04-19T11:58:42.011Z",
     "alerted": false
   },
   "lever": {
-    "lastRun": "2026-04-19T11:07:07.448Z",
-    "lastOk": "2026-04-19T11:07:07.448Z",
+    "lastRun": "2026-04-19T11:58:42.011Z",
+    "lastOk": "2026-04-19T11:58:42.011Z",
     "lastFail": null,
     "consecutiveFailures": 0,
     "lastJobCount": 580,
-    "lastJobCountAt": "2026-04-19T11:07:07.448Z",
+    "lastJobCountAt": "2026-04-19T11:58:42.011Z",
     "alerted": false
   },
   "remoteok": {
-    "lastRun": "2026-04-19T11:07:07.448Z",
-    "lastOk": "2026-04-19T11:07:07.448Z",
+    "lastRun": "2026-04-19T11:58:42.011Z",
+    "lastOk": "2026-04-19T11:58:42.011Z",
     "lastFail": null,
     "consecutiveFailures": 0,
     "lastJobCount": 96,
-    "lastJobCountAt": "2026-04-19T11:07:07.448Z",
+    "lastJobCountAt": "2026-04-19T11:58:42.011Z",
     "alerted": false
   },
   "smartrecruiters": {
-    "lastRun": "2026-04-19T11:07:07.448Z",
-    "lastOk": "2026-04-19T11:07:07.448Z",
+    "lastRun": "2026-04-19T11:58:42.011Z",
+    "lastOk": "2026-04-19T11:58:42.011Z",
     "lastFail": null,
     "consecutiveFailures": 0,
     "lastJobCount": 200,
-    "lastJobCountAt": "2026-04-19T11:07:07.448Z",
+    "lastJobCountAt": "2026-04-19T11:58:42.011Z",
     "alerted": false
   },
   "workable": {
-    "lastRun": "2026-04-19T11:07:07.448Z",
-    "lastOk": "2026-04-19T11:07:07.448Z",
+    "lastRun": "2026-04-19T11:58:42.011Z",
+    "lastOk": "2026-04-19T11:58:42.011Z",
     "lastFail": null,
     "consecutiveFailures": 0,
     "lastJobCount": 180,
-    "lastJobCountAt": "2026-04-19T11:07:07.448Z",
+    "lastJobCountAt": "2026-04-19T11:58:42.011Z",
     "alerted": false
   },
   "workday": {
-    "lastRun": "2026-04-19T11:07:07.448Z",
-    "lastOk": "2026-04-19T11:07:07.448Z",
+    "lastRun": "2026-04-19T11:58:42.011Z",
+    "lastOk": "2026-04-19T11:58:42.011Z",
     "lastFail": null,
     "consecutiveFailures": 0,
-    "lastJobCount": 621,
-    "lastJobCountAt": "2026-04-19T11:07:07.448Z",
+    "lastJobCount": 620,
+    "lastJobCountAt": "2026-04-19T11:58:42.011Z",
     "alerted": false
   }
 }
