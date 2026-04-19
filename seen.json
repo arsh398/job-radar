@@ -32049,6 +32049,11 @@
     "company": "GitLab",
     "title": "Director of Pricing"
   },
+  "greenhouse:gitlab:8500102002": {
+    "firstSeen": "2026-04-19T19:59:50.558Z",
+    "company": "GitLab",
+    "title": "Director, Technical Writing"
+  },
   "greenhouse:gitlab:8500103002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "GitLab",
@@ -50859,6 +50864,11 @@
     "company": "Twilio",
     "title": "Account Executive 4"
   },
+  "greenhouse:twilio:7746329": {
+    "firstSeen": "2026-04-19T19:59:50.558Z",
+    "company": "Twilio",
+    "title": "Strategic Account Executive 4"
+  },
   "greenhouse:twilio:7747550": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Twilio",
@@ -61668,6 +61678,11 @@
     "firstSeen": "2026-04-18T04:55:32.862Z",
     "company": "Target India",
     "title": "Visual Merchandising & Store Experience Manager"
+  },
+  "workday:target:R0000435886": {
+    "firstSeen": "2026-04-19T19:59:50.558Z",
+    "company": "Target India",
+    "title": "Seasonal DC Target Security Specialist"
   },
   "workday:walmart:R-128829": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
