@@ -60509,6 +60509,11 @@
     "company": "Netflix",
     "title": "Facilities Coordinator, Netflix House - Dallas"
   },
+  "workday:nvidia:JR1973150": {
+    "firstSeen": "2026-04-19T23:34:28.431Z",
+    "company": "Nvidia",
+    "title": "Senior Software Architect - Data Center Systems"
+  },
   "workday:nvidia:JR1996987": {
     "firstSeen": "2026-04-18T04:55:32.862Z",
     "company": "Nvidia",
@@ -61913,6 +61918,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Walmart",
     "title": "(CAN) Consumables Associate Part Time"
+  },
+  "workday:walmart:R-2483549": {
+    "firstSeen": "2026-04-19T23:34:28.431Z",
+    "company": "Walmart",
+    "title": "Food & Consumables Coach"
   },
   "workday:workday:JR-0094205": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
