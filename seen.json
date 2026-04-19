@@ -41144,6 +41144,11 @@
     "company": "Pinterest",
     "title": "Staff Software Engineer, Cloud Platform"
   },
+  "greenhouse:pinterest:7366112": {
+    "firstSeen": "2026-04-19T19:14:12.553Z",
+    "company": "Pinterest",
+    "title": "VP, Ads Quality Engineering"
+  },
   "greenhouse:pinterest:7368194": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Pinterest",
@@ -41423,6 +41428,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Pinterest",
     "title": "Sr. Data Scientist, tvScientific"
+  },
+  "greenhouse:pinterest:7642253": {
+    "firstSeen": "2026-04-19T19:14:12.553Z",
+    "company": "Pinterest",
+    "title": "Staff Data Engineer, tvScientific"
   },
   "greenhouse:pinterest:7642256": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -56914,6 +56924,31 @@
     "company": "Bosch",
     "title": "Software Architect_EM"
   },
+  "smartrecruiters:BoschGroup:744000121636237": {
+    "firstSeen": "2026-04-19T19:14:12.553Z",
+    "company": "Bosch",
+    "title": "Power Electronics Hardware Engineer"
+  },
+  "smartrecruiters:BoschGroup:744000121636307": {
+    "firstSeen": "2026-04-19T19:14:12.553Z",
+    "company": "Bosch",
+    "title": "Gearset & Planetary Gear Design Engineer"
+  },
+  "smartrecruiters:BoschGroup:744000121636437": {
+    "firstSeen": "2026-04-19T19:14:12.553Z",
+    "company": "Bosch",
+    "title": "Mechatronics Integrator"
+  },
+  "smartrecruiters:BoschGroup:744000121636467": {
+    "firstSeen": "2026-04-19T19:14:12.553Z",
+    "company": "Bosch",
+    "title": "Differential Design Lead for Transmission (e-Axle) projects"
+  },
+  "smartrecruiters:BoschGroup:744000121636747": {
+    "firstSeen": "2026-04-19T19:14:12.553Z",
+    "company": "Bosch",
+    "title": "Design Engineer for PS-TC (Mechanical)"
+  },
   "smartrecruiters:Visa:744000120780707": {
     "firstSeen": "2026-04-18T21:34:04.755Z",
     "company": "Visa Inc",
@@ -60088,6 +60123,16 @@
     "firstSeen": "2026-04-19T02:31:39.893Z",
     "company": "Micron",
     "title": "ID1 Dry Etch Shift PE Engineer"
+  },
+  "workday:micron:JR98220": {
+    "firstSeen": "2026-04-19T19:14:12.553Z",
+    "company": "Micron",
+    "title": "Sr GCP Data Engineer, SMAI"
+  },
+  "workday:micron:JR98375": {
+    "firstSeen": "2026-04-19T19:14:12.553Z",
+    "company": "Micron",
+    "title": "Principal, Business and People Partner, US Expansions"
   },
   "workday:micron:JR98497": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
