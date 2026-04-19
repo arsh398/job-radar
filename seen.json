@@ -60844,6 +60844,11 @@
     "company": "Red Hat",
     "title": "Senior Solution Architect - Public Sector"
   },
+  "workday:redhat:R-056165": {
+    "firstSeen": "2026-04-19T15:05:55.316Z",
+    "company": "Red Hat",
+    "title": "Associate Solution Architect - Public Sector"
+  },
   "workday:redhat:R-056277": {
     "firstSeen": "2026-04-19T05:27:46.349Z",
     "company": "Red Hat",
@@ -61034,6 +61039,11 @@
     "company": "Salesforce",
     "title": "Senior Manager, Software Engineering (QTC, R2R, Revenue Recognition, and Tax)"
   },
+  "workday:salesforce:JR335230": {
+    "firstSeen": "2026-04-19T15:05:55.316Z",
+    "company": "Salesforce",
+    "title": "Named Account Executive - IT/ITES & Media"
+  },
   "workday:salesforce:JR335919": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Salesforce",
@@ -61178,6 +61188,11 @@
     "firstSeen": "2026-04-18T20:47:28.436Z",
     "company": "Salesforce",
     "title": "Sr. Director, SI Partnerships"
+  },
+  "workday:salesforce:JR339050": {
+    "firstSeen": "2026-04-19T15:05:55.316Z",
+    "company": "Salesforce",
+    "title": "Senior Manager - Data 360"
   },
   "workday:target:R0000400243": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
