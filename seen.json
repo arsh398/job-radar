@@ -56289,6 +56289,51 @@
     "company": "LG Electronics",
     "title": "Purchasing Specialist III"
   },
+  "remoteok:1131202": {
+    "firstSeen": "2026-04-19T02:31:39.893Z",
+    "company": "Komodo Health",
+    "title": "Performance Marketing Manager"
+  },
+  "remoteok:1131203": {
+    "firstSeen": "2026-04-19T02:31:39.893Z",
+    "company": "Hightouch",
+    "title": "Product Lead Agentic Ads Platform"
+  },
+  "remoteok:1131204": {
+    "firstSeen": "2026-04-19T02:31:39.893Z",
+    "company": "Ardent",
+    "title": "Geospatial Database Administrator"
+  },
+  "remoteok:1131205": {
+    "firstSeen": "2026-04-19T02:31:39.893Z",
+    "company": "Machinify",
+    "title": "VP People Operations"
+  },
+  "remoteok:1131206": {
+    "firstSeen": "2026-04-19T02:31:39.893Z",
+    "company": "UJET",
+    "title": "Senior Site Reliability Engineer"
+  },
+  "remoteok:1131207": {
+    "firstSeen": "2026-04-19T02:31:39.893Z",
+    "company": "Axios",
+    "title": "Local Advertising Account Executive"
+  },
+  "remoteok:1131208": {
+    "firstSeen": "2026-04-19T02:31:39.893Z",
+    "company": "Imagine Pediatrics",
+    "title": "Vice President Marketing"
+  },
+  "remoteok:1131209": {
+    "firstSeen": "2026-04-19T02:31:39.893Z",
+    "company": "Cartwheel",
+    "title": "Certified Medical Coder"
+  },
+  "remoteok:1131210": {
+    "firstSeen": "2026-04-19T02:31:39.893Z",
+    "company": "Honeycomb.io",
+    "title": "Senior Sales Operations Analyst"
+  },
   "smartrecruiters:BoschGroup:744000121337448": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Bosch",
@@ -59784,15 +59829,30 @@
     "company": "Micron",
     "title": "Contract TA Operations Specialist – Events, Candidate Experience & Reporting"
   },
+  "workday:micron:JR98072": {
+    "firstSeen": "2026-04-19T02:31:39.893Z",
+    "company": "Micron",
+    "title": "TW ID1 RAM Operations Shift Engineer"
+  },
   "workday:micron:JR98177": {
     "firstSeen": "2026-04-18T02:09:42.123Z",
     "company": "Micron",
     "title": "Staff Design Verification Engineer, HBM"
   },
+  "workday:micron:JR98188": {
+    "firstSeen": "2026-04-19T02:31:39.893Z",
+    "company": "Micron",
+    "title": "ID1 Dry Etch Shift PE Engineer"
+  },
   "workday:micron:JR98497": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Micron",
     "title": "Financial Analysis Manager"
+  },
+  "workday:micron:JR98710": {
+    "firstSeen": "2026-04-19T02:31:39.893Z",
+    "company": "Micron",
+    "title": "FE CPIE PI MTS"
   },
   "workday:micron:JR98989": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
