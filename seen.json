@@ -309,6 +309,11 @@
     "company": "Amazon",
     "title": "Associate, Quality Services, Alexa Information"
   },
+  "amazon:4a3b0eea-f33f-40bb-8b73-63b0756a2e62": {
+    "firstSeen": "2026-04-19T18:01:56.801Z",
+    "company": "Amazon",
+    "title": "SDE II, Relay Central"
+  },
   "amazon:4a672a86-2b4d-4d51-96d3-7ef88f0fc324": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
@@ -20809,6 +20814,11 @@
     "company": "Databricks",
     "title": "Senior Software Engineer - Data + AI Observability"
   },
+  "greenhouse:databricks:7898766002": {
+    "firstSeen": "2026-04-19T18:01:56.801Z",
+    "company": "Databricks",
+    "title": "Senior Software Engineer - Fullstack"
+  },
   "greenhouse:databricks:7899565002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Databricks",
@@ -21424,6 +21434,11 @@
     "company": "Databricks",
     "title": "Staff Software Engineer - Ingestion"
   },
+  "greenhouse:databricks:8201686002": {
+    "firstSeen": "2026-04-19T18:01:56.801Z",
+    "company": "Databricks",
+    "title": "Staff Software Engineer - Ingestion"
+  },
   "greenhouse:databricks:8201768002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Databricks",
@@ -21673,6 +21688,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Databricks",
     "title": "Manager, Field Engineering"
+  },
+  "greenhouse:databricks:8294304002": {
+    "firstSeen": "2026-04-19T18:01:56.801Z",
+    "company": "Databricks",
+    "title": "Senior Software Engineer (App-Framework)"
   },
   "greenhouse:databricks:8294402002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -21934,6 +21954,11 @@
     "company": "Databricks",
     "title": "Sr. Director, Digital Natives & Emerging Enterprise"
   },
+  "greenhouse:databricks:8342265002": {
+    "firstSeen": "2026-04-19T18:01:56.801Z",
+    "company": "Databricks",
+    "title": "Sr. Solutions Engineer"
+  },
   "greenhouse:databricks:8342273002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Databricks",
@@ -22178,6 +22203,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Databricks",
     "title": "Digital Native Hunter Account Executive"
+  },
+  "greenhouse:databricks:8373617002": {
+    "firstSeen": "2026-04-19T18:01:56.801Z",
+    "company": "Databricks",
+    "title": "Sr. Resident Solutions Architect"
   },
   "greenhouse:databricks:8374096002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
