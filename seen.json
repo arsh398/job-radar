@@ -59869,6 +59869,11 @@
     "company": "Micron",
     "title": "R&D Thin Films Process Development Engineer Advanced DRAM"
   },
+  "workday:micron:JR96563": {
+    "firstSeen": "2026-04-19T14:09:13.157Z",
+    "company": "Micron",
+    "title": "Global Facilities Data Analytics Program Manager"
+  },
   "workday:micron:JR96594": {
     "firstSeen": "2026-04-18T02:09:42.123Z",
     "company": "Micron",
@@ -60353,6 +60358,11 @@
     "firstSeen": "2026-04-18T19:14:29.016Z",
     "company": "Nvidia",
     "title": "Senior ASIC Design Engineer - XBAR IP"
+  },
+  "workday:nvidia:JR2010530": {
+    "firstSeen": "2026-04-19T14:09:13.157Z",
+    "company": "Nvidia",
+    "title": "QA Engineer, DPU Firmware"
   },
   "workday:nvidia:JR2011480": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
