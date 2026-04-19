@@ -59094,6 +59094,11 @@
     "company": "HP",
     "title": "Partner Business Manager"
   },
+  "workday:hp:3158138": {
+    "firstSeen": "2026-04-19T08:08:50.518Z",
+    "company": "HP",
+    "title": "Administrative Assistant for HPS"
+  },
   "workday:hp:3158262": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "HP",
@@ -60254,6 +60259,11 @@
     "company": "Nvidia",
     "title": "Senior Datacenter Technical Program Manager, At-Scale AI Clusters"
   },
+  "workday:nvidia:JR2011531": {
+    "firstSeen": "2026-04-19T08:08:50.518Z",
+    "company": "Nvidia",
+    "title": "Physical Design Backend STA Engineer"
+  },
   "workday:nvidia:JR2011909": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Nvidia",
@@ -60293,6 +60303,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Nvidia",
     "title": "Senior Linux Kernel Systems Software Engineer – CSP Engagements"
+  },
+  "workday:nvidia:JR2015544": {
+    "firstSeen": "2026-04-19T08:08:50.518Z",
+    "company": "Nvidia",
+    "title": "System Validation Engineer, DOCA"
   },
   "workday:nvidia:JR2015796": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -60724,6 +60739,16 @@
     "company": "Red Hat",
     "title": "Project Manager"
   },
+  "workday:redhat:R-056404": {
+    "firstSeen": "2026-04-19T08:08:50.518Z",
+    "company": "Red Hat",
+    "title": "Senior AI Infrastructure Ecosystem Tech Strategist"
+  },
+  "workday:redhat:R-056405": {
+    "firstSeen": "2026-04-19T08:08:50.518Z",
+    "company": "Red Hat",
+    "title": "Senior AI ISV Ecosystem Tech Strategist"
+  },
   "workday:redhat:R-056413": {
     "firstSeen": "2026-04-19T05:27:46.349Z",
     "company": "Red Hat",
@@ -61094,6 +61119,11 @@
     "company": "Target India",
     "title": "Inbound Operations Team Leader"
   },
+  "workday:target:R0000435175": {
+    "firstSeen": "2026-04-19T08:08:50.518Z",
+    "company": "Target India",
+    "title": "FDC Quality Management Technician Wed - Sat 4:15am - 2:30pm"
+  },
   "workday:target:R0000435231": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Target India",
@@ -61108,6 +61138,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Target India",
     "title": "Food Service Team Leader (Hourly Starbucks Supervisor) - Morgan Hill, CA"
+  },
+  "workday:target:R0000435486": {
+    "firstSeen": "2026-04-19T08:08:50.518Z",
+    "company": "Target India",
+    "title": "Target Security Specialist"
   },
   "workday:target:R0000435525": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
