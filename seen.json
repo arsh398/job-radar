@@ -1019,6 +1019,11 @@
     "company": "Amazon",
     "title": "SDE, International Cobranded Credit Cards"
   },
+  "amazon:c2a354fa-e0e7-4342-ba49-4101f9f1d852": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Amazon",
+    "title": "Software Development Engineer, Alexa Endpoint Experiences"
+  },
   "amazon:c3a349c4-2059-4f17-8d38-d8b30f312a4f": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
@@ -6178,6 +6183,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Plaid",
     "title": "Sales Leader - SMB"
+  },
+  "ashby:plaid:9090cb70-de30-4ea4-a7d6-5b280839d210": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Plaid",
+    "title": "Web Marketing Lead"
   },
   "ashby:plaid:94ecbba3-660c-4604-a4f5-071f5c2c74d8": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -14488,6 +14498,16 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Anthropic",
     "title": "Solutions Architect, Applied AI (Commercial)"
+  },
+  "greenhouse:anthropic:5193066008": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Anthropic",
+    "title": "GTM Strategy & Operations, Activations Business Partner"
+  },
+  "greenhouse:anthropic:5194670008": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Anthropic",
+    "title": "Enterprise Account Executive, Federal Civilian Sales"
   },
   "greenhouse:asana:5480143": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -30264,6 +30284,16 @@
     "company": "Elastic",
     "title": "RVP - Pursuit - North Central/Texas"
   },
+  "greenhouse:elastic:7833918": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Elastic",
+    "title": "Sr. Solutions Architect - SLED"
+  },
+  "greenhouse:elastic:7833920": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Elastic",
+    "title": "Senior Solutions Architect - Federal Civilian"
+  },
   "greenhouse:figma:5220003004": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Figma",
@@ -32069,6 +32099,11 @@
     "company": "Fivetran",
     "title": "Senior Demand Generation Manager"
   },
+  "greenhouse:fivetran:7702443003": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Fivetran",
+    "title": "Vice President, Systems Engineering"
+  },
   "greenhouse:fivetran:7702519003": {
     "firstSeen": "2026-04-20T22:09:16.861Z",
     "company": "Fivetran",
@@ -32143,6 +32178,11 @@
     "firstSeen": "2026-04-20T22:09:16.861Z",
     "company": "Fivetran",
     "title": "Partner Development Manager"
+  },
+  "greenhouse:fivetran:7708774003": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Fivetran",
+    "title": "Regional Director, Enterprise"
   },
   "greenhouse:fivetran:7708776003": {
     "firstSeen": "2026-04-20T22:09:16.861Z",
@@ -42033,6 +42073,11 @@
     "firstSeen": "2026-04-20T21:10:47.232Z",
     "company": "Okta",
     "title": "Workplace Site Manager, Toronto"
+  },
+  "greenhouse:okta:7834248": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Okta",
+    "title": "Senior Software Engineer, End User Protection (Auth0)"
   },
   "greenhouse:pagerduty:5634303004": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -52284,6 +52329,11 @@
     "company": "Twilio",
     "title": "Senior Software Engineer"
   },
+  "greenhouse:twilio:7548056": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Twilio",
+    "title": "Counsel, Commercial"
+  },
   "greenhouse:twilio:7551660": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Twilio",
@@ -52679,6 +52729,11 @@
     "company": "Twilio",
     "title": "Technical Support Engineer"
   },
+  "greenhouse:twilio:7765981": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Twilio",
+    "title": "Strategic Account Executive 4"
+  },
   "greenhouse:twilio:7767260": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Twilio",
@@ -52818,6 +52873,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Twilio",
     "title": "Senior Sales System Engineer 3"
+  },
+  "greenhouse:twilio:7821489": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Twilio",
+    "title": "Technical Program Manager (P4)"
   },
   "greenhouse:twilio:7821526": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -53478,6 +53538,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Webflow",
     "title": "Business Development Representative"
+  },
+  "greenhouse:webflow:7832042": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Webflow",
+    "title": "Senior Solutions Engineer - West"
   },
   "greenhouse:webflow:7832069": {
     "firstSeen": "2026-04-20T19:06:43.880Z",
@@ -54658,6 +54723,16 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "xAI",
     "title": "Member of Technical Staff - Multimodal Understanding"
+  },
+  "greenhouse:xai:5112514007": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "xAI",
+    "title": "Data Analyst - Physical Infrastructure"
+  },
+  "greenhouse:xai:5115071007": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "xAI",
+    "title": "Construction Supervisor (Night Shift), Power Generation Plant"
   },
   "lever:cred:150186f5-4eaf-4afe-ae08-bb36c71abb83": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -60449,6 +60524,16 @@
     "company": "Visa Inc",
     "title": "Graphic Design Manager"
   },
+  "smartrecruiters:Visa:744000121888827": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Visa Inc",
+    "title": "Implementation Analyst"
+  },
+  "smartrecruiters:Visa:744000121888867": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Visa Inc",
+    "title": "Implementation Consultant"
+  },
   "workable:apna:01B0CB39DD": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Apna",
@@ -61404,6 +61489,11 @@
     "company": "Adobe",
     "title": "Manager, JAPAC Renewals - Creativity & Productivity"
   },
+  "workday:adobe:R167306": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Adobe",
+    "title": "Senior Product Manager, Acrobat Enterprise"
+  },
   "workday:adobe:R167317": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Adobe",
@@ -61854,6 +61944,11 @@
     "company": "Autodesk",
     "title": "Account Based Renewals Representative"
   },
+  "workday:autodesk:26WD99116": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Autodesk",
+    "title": "Senior Account Based Renewals Representative"
+  },
   "workday:autodesk:26WD99119": {
     "firstSeen": "2026-04-20T16:41:00.570Z",
     "company": "Autodesk",
@@ -61873,6 +61968,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Cadence",
     "title": "Lead Red Hat Linux Architect"
+  },
+  "workday:cadence:R50810": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Cadence",
+    "title": "Software Engineer I"
   },
   "workday:cadence:R51190": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -62103,6 +62203,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Cadence",
     "title": "Software Architect"
+  },
+  "workday:cadence:R54422": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Cadence",
+    "title": "Product Engineering Architect"
   },
   "workday:crowdstrike:R24227": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -62938,6 +63043,16 @@
     "company": "Intel",
     "title": "Process Integration Development Engineer"
   },
+  "workday:intel:JR0283067": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Intel",
+    "title": "Analytical Chemistry Lab Technician - Shift 7"
+  },
+  "workday:intel:JR0283068": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Intel",
+    "title": "Analytical Chemistry Lab Technician - Shift 5"
+  },
   "workday:intel:JR0283073": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Intel",
@@ -63022,6 +63137,11 @@
     "firstSeen": "2026-04-20T08:05:34.211Z",
     "company": "Intel",
     "title": "Advanced Packaging Flagship Curriculum Internship Program"
+  },
+  "workday:intel:JR0283282": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Intel",
+    "title": "Semiconductor Packaging Engineering PHD Intern"
   },
   "workday:intel:Spotlight Job": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -63743,6 +63863,11 @@
     "company": "Micron",
     "title": "Staff Global Account Sales Manager"
   },
+  "workday:micron:JR88321": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Micron",
+    "title": "Intern - Agent Automation"
+  },
   "workday:micron:JR88782": {
     "firstSeen": "2026-04-20T08:05:34.211Z",
     "company": "Micron",
@@ -63822,6 +63947,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Micron",
     "title": "Senior Engineer, Global Facilities US - Water/Wastewater"
+  },
+  "workday:micron:JR89914": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Micron",
+    "title": "Senior Engineer, Global Facilities US - Mechanical"
   },
   "workday:micron:JR90085": {
     "firstSeen": "2026-04-19T16:01:52.750Z",
@@ -64402,10 +64532,20 @@
     "company": "Micron",
     "title": "Intern – Data Analysis & Pattern Recognition AI / Data Science"
   },
+  "workday:micron:JR98595": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Micron",
+    "title": "Semiconductor Process Engineer"
+  },
   "workday:micron:JR98624": {
     "firstSeen": "2026-04-20T22:09:16.861Z",
     "company": "Micron",
     "title": "Sr. Operations Research Analyst"
+  },
+  "workday:micron:JR98629": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Micron",
+    "title": "Engineer, CVD/DIFF DRAM"
   },
   "workday:micron:JR98704": {
     "firstSeen": "2026-04-20T16:41:00.570Z",
@@ -65032,6 +65172,11 @@
     "company": "Nvidia",
     "title": "Firmware SerDes Verification Engineer"
   },
+  "workday:nvidia:JR2013725": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Nvidia",
+    "title": "Physical Design Methodology and DevOps Engineer"
+  },
   "workday:nvidia:JR2014249": {
     "firstSeen": "2026-04-20T02:31:31.176Z",
     "company": "Nvidia",
@@ -65091,6 +65236,11 @@
     "firstSeen": "2026-04-19T08:08:50.518Z",
     "company": "Nvidia",
     "title": "System Validation Engineer, DOCA"
+  },
+  "workday:nvidia:JR2015559": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Nvidia",
+    "title": "Senior Software Developer"
   },
   "workday:nvidia:JR2015686": {
     "firstSeen": "2026-04-20T19:06:43.880Z",
@@ -65225,6 +65375,11 @@
     "firstSeen": "2026-04-20T02:31:31.176Z",
     "company": "Nvidia",
     "title": "Software Engineer, Cloud Platforms"
+  },
+  "workday:nvidia:JR2016412": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Nvidia",
+    "title": "Senior DevOps Engineer"
   },
   "workday:nvidia:JR2016420": {
     "firstSeen": "2026-04-20T02:31:31.176Z",
@@ -65366,6 +65521,11 @@
     "company": "Nvidia",
     "title": "Senior Systems Software Engineer"
   },
+  "workday:nvidia:JR2016621": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Nvidia",
+    "title": "Senior Software Golang Kubernetes Engineer"
+  },
   "workday:nvidia:JR2016624": {
     "firstSeen": "2026-04-20T19:06:43.880Z",
     "company": "Nvidia",
@@ -65390,6 +65550,11 @@
     "firstSeen": "2026-04-20T02:31:31.176Z",
     "company": "Nvidia",
     "title": "Senior Research Engineer - Video Search"
+  },
+  "workday:nvidia:JR2016658": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Nvidia",
+    "title": "Manager, Software Performance Engineering - Autonomous Vehicles"
   },
   "workday:nvidia:JR2016660": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -65451,6 +65616,11 @@
     "company": "PayPal",
     "title": "Account Representative, SMB Outbound Sales"
   },
+  "workday:paypal:R0134033": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "PayPal",
+    "title": "Director, Product Management, Venmo Commerce"
+  },
   "workday:paypal:R0134051": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "PayPal",
@@ -65460,6 +65630,11 @@
     "firstSeen": "2026-04-20T05:40:29.144Z",
     "company": "PayPal",
     "title": "Senior Software Engineer-Full Stack"
+  },
+  "workday:paypal:R0134191": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "PayPal",
+    "title": "Staff Experience Researcher"
   },
   "workday:paypal:R0134342": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -66751,6 +66926,11 @@
     "company": "Target India",
     "title": "Store Director (Store Manager) - Columbus, OH"
   },
+  "workday:target:R0000427486": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Target India",
+    "title": "Director, Solutions Go-To-Market (Roundel)"
+  },
   "workday:target:R0000429888": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Target India",
@@ -67426,6 +67606,11 @@
     "company": "Target India",
     "title": "Visual Merchandiser"
   },
+  "workday:target:R0000436035": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Target India",
+    "title": "Sr Data Analyst - Supply Chain"
+  },
   "workday:target:R0000436036": {
     "firstSeen": "2026-04-20T20:10:39.388Z",
     "company": "Target India",
@@ -67445,6 +67630,11 @@
     "firstSeen": "2026-04-20T22:09:16.861Z",
     "company": "Target India",
     "title": "Assets Protection Specialist"
+  },
+  "workday:target:R0000436069": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Target India",
+    "title": "Service & Engagement Team Leader"
   },
   "workday:walmart:R-128829": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -67850,6 +68040,11 @@
     "firstSeen": "2026-04-20T08:05:34.211Z",
     "company": "Workday",
     "title": "Sr Partner Development Manager"
+  },
+  "workday:workday:JR-0106014": {
+    "firstSeen": "2026-04-20T23:09:22.479Z",
+    "company": "Workday",
+    "title": "Senior UX Designer, Agent Design"
   },
   "workday:workday:JR-0106114": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
