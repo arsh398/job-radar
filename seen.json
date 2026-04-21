@@ -64,6 +64,11 @@
     "company": "Amazon",
     "title": "EU FBA SX-VOS Lead, EU FBA"
   },
+  "amazon:0ea7d69a-c562-46cd-a780-1451bbf61b5c": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Amazon",
+    "title": "Functional App Analyst, AFFS Accounting Onboarding "
+  },
   "amazon:0f2c818f-56c1-47b7-9777-4ab24574b2bd": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
@@ -1278,6 +1283,11 @@
     "firstSeen": "2026-04-21T08:17:08.668Z",
     "company": "Amazon",
     "title": "Capacity Planner AMZL, AMZL"
+  },
+  "amazon:caec722c-d15a-4f0a-8e8b-22bbcde0fe76": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Amazon",
+    "title": "Functional Analyst, AFFS Accounting Onboarding "
   },
   "amazon:cbea98e5-b294-45f1-83a1-164062f15a8d": {
     "firstSeen": "2026-04-18T02:09:42.123Z",
@@ -7309,6 +7319,11 @@
     "company": "Ramp",
     "title": "Senior Account Manager | Commercial"
   },
+  "ashby:ramp:c578c61a-2a0a-4c35-97cc-d18e4725b72f": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Ramp",
+    "title": "Solutions Consultant | Commercial"
+  },
   "ashby:ramp:ca9a8794-b40c-44bc-8f8a-d85182c62c6e": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Ramp",
@@ -12259,6 +12274,11 @@
     "company": "Airbnb",
     "title": "Senior Growth Marketing Manager,  EMEA"
   },
+  "greenhouse:airbnb:7818982": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Airbnb",
+    "title": "Senior Staff Software Engineer, Trust"
+  },
   "greenhouse:airbnb:7821110": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Airbnb",
@@ -12328,6 +12348,11 @@
     "firstSeen": "2026-04-21T00:06:00.750Z",
     "company": "Airbnb",
     "title": "Workshop Operations Manager"
+  },
+  "greenhouse:airbnb:7834481": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Airbnb",
+    "title": "Programs and Business Operations Lead"
   },
   "greenhouse:airbnb:7839237": {
     "firstSeen": "2026-04-21T21:43:39.416Z",
@@ -14479,6 +14504,11 @@
     "company": "Anthropic",
     "title": "Security Risk & Compliance, HIPAA"
   },
+  "greenhouse:anthropic:5161113008": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Anthropic",
+    "title": "Real Estate Occupancy Planner"
+  },
   "greenhouse:anthropic:5161882008": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Anthropic",
@@ -15053,6 +15083,26 @@
     "firstSeen": "2026-04-21T21:43:39.416Z",
     "company": "Anthropic",
     "title": "Corporate Legal Specialist"
+  },
+  "greenhouse:anthropic:5196014008": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Anthropic",
+    "title": "Enterprise Account Executive, Federal Civilian Sales - Transport & Land"
+  },
+  "greenhouse:anthropic:5196015008": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Anthropic",
+    "title": "Enterprise Account Executive, Federal Civilian Sales - State & International"
+  },
+  "greenhouse:anthropic:5196023008": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Anthropic",
+    "title": "Enterprise Account Executive, Federal Civilian Sales - Commerce & Interior"
+  },
+  "greenhouse:anthropic:5196029008": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Anthropic",
+    "title": "Enterprise Account Executive, Federal Civilian Sales - Education & Workforce"
   },
   "greenhouse:asana:5480143": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -20824,6 +20874,11 @@
     "company": "Cloudflare",
     "title": "Senior Solutions Engineer, Enterprise Accounts - San Francisco"
   },
+  "greenhouse:cloudflare:7826916": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Cloudflare",
+    "title": "Solutions Engineering Manager"
+  },
   "greenhouse:cloudflare:7827219": {
     "firstSeen": "2026-04-20T16:41:00.570Z",
     "company": "Cloudflare",
@@ -25518,6 +25573,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Databricks",
     "title": "Senior Solutions Architect - Lakewatch"
+  },
+  "greenhouse:databricks:8493170002": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Databricks",
+    "title": "Sr Software Engineer, Infrastructure"
   },
   "greenhouse:databricks:8493722002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -43044,6 +43104,11 @@
     "company": "Okta",
     "title": "Manager, Global Tradeshows & Sponsorship Strategy"
   },
+  "greenhouse:okta:7818915": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Okta",
+    "title": "Partner Marketing Manager, Technology Partnerships"
+  },
   "greenhouse:okta:7818930": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Okta",
@@ -56654,6 +56719,11 @@
     "company": "Mistral",
     "title": "Software Engineer, Deployment Infrastructure"
   },
+  "lever:mistral:37f53ee5-dd88-43e3-be6a-70e3db159c8f": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Mistral",
+    "title": "Research Engineer, Data Infrastructure"
+  },
   "lever:mistral:3d9a6ece-1f8c-4e0b-a275-fde6300ed1f8": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Mistral",
@@ -64004,6 +64074,11 @@
     "company": "Autodesk",
     "title": "Senior Business Operations Manager"
   },
+  "workday:autodesk:26WD96331": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Autodesk",
+    "title": "Sr Research Engineer, Computer Vision"
+  },
   "workday:autodesk:26WD96433": {
     "firstSeen": "2026-04-20T11:51:56.663Z",
     "company": "Autodesk",
@@ -64424,6 +64499,11 @@
     "company": "Cadence",
     "title": "Sr Principal IC Digital Implementation AE"
   },
+  "workday:cadence:R51880": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Cadence",
+    "title": "Datacenter Operations Manager"
+  },
   "workday:cadence:R52121": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Cadence",
@@ -64613,6 +64693,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Cadence",
     "title": "Data Center Operations Engineer"
+  },
+  "workday:cadence:R54245": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Cadence",
+    "title": "Corporate Counsel - Employment"
   },
   "workday:cadence:R54246": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -65523,6 +65608,11 @@
     "company": "HP",
     "title": "Managed Services Sales Specialist – TCV Growth"
   },
+  "workday:hp:UNI3567": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "HP",
+    "title": "Product Management Intern – Advanced Concepts & Future Technologies"
+  },
   "workday:intel:JR0279204": {
     "firstSeen": "2026-04-20T21:10:47.232Z",
     "company": "Intel",
@@ -65746,6 +65836,11 @@
     "firstSeen": "2026-04-21T20:52:13.436Z",
     "company": "Intel",
     "title": "Module Development Defect Inspection Engineer"
+  },
+  "workday:intel:JR0283023": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Intel",
+    "title": "Head of Government Affairs - Intel Costa Rica"
   },
   "workday:intel:JR0283034": {
     "firstSeen": "2026-04-20T16:41:00.570Z",
@@ -66801,6 +66896,11 @@
     "firstSeen": "2026-04-21T15:51:59.911Z",
     "company": "Mastercard",
     "title": "Senior Managing Consultant, Services Business Development"
+  },
+  "workday:mastercard:R-275628": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Mastercard",
+    "title": "Senior Analyst, Business Development"
   },
   "workday:mastercard:R-275694": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -69071,6 +69171,11 @@
     "company": "Nvidia",
     "title": "Senior Linux Kernel Systems Software Engineer – CSP Engagements"
   },
+  "workday:nvidia:JR2015398": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Nvidia",
+    "title": "Senior DL Software Engineer, Model Optimization and Edge Deployment - Autonomous Vehicles"
+  },
   "workday:nvidia:JR2015530": {
     "firstSeen": "2026-04-21T18:05:48.822Z",
     "company": "Nvidia",
@@ -69185,6 +69290,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Nvidia",
     "title": "Senior Data Analysis Engineer, AD Metrics - Autonomous Vehicles"
+  },
+  "workday:nvidia:JR2016052": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Nvidia",
+    "title": "Senior Machine Learning Engineer, End‑to‑End Autonomous Driving"
   },
   "workday:nvidia:JR2016133": {
     "firstSeen": "2026-04-20T19:06:43.880Z",
@@ -69349,6 +69459,11 @@
     "firstSeen": "2026-04-20T19:06:43.880Z",
     "company": "Nvidia",
     "title": "Senior Cybersecurity Engineer – Identity Platform and Access Management"
+  },
+  "workday:nvidia:JR2016497": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Nvidia",
+    "title": "Senior Technical Program Manager, Safety and Product Life Cycle - Autonomous Vehicles"
   },
   "workday:nvidia:JR2016506": {
     "firstSeen": "2026-04-20T02:31:31.176Z",
@@ -71110,6 +71225,11 @@
     "company": "Salesforce",
     "title": "MuleSoft Account Executive, Federal Civilian (GSA)"
   },
+  "workday:salesforce:JR338532": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Salesforce",
+    "title": "MuleSoft Account Executive, Federal Civilian (Dept of Commerce)"
+  },
   "workday:salesforce:JR338536": {
     "firstSeen": "2026-04-20T17:57:06.553Z",
     "company": "Salesforce",
@@ -71364,6 +71484,11 @@
     "firstSeen": "2026-04-20T21:10:47.232Z",
     "company": "Salesforce",
     "title": "Senior Recruiter - Contractor"
+  },
+  "workday:salesforce:JR339219": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Salesforce",
+    "title": "Lead Product Designer, Slackbot Mobile"
   },
   "workday:salesforce:JR339224": {
     "firstSeen": "2026-04-21T19:46:01.727Z",
@@ -72514,6 +72639,11 @@
     "firstSeen": "2026-04-20T22:09:16.861Z",
     "company": "Target India",
     "title": "Assets Protection Specialist"
+  },
+  "workday:target:R0000436059": {
+    "firstSeen": "2026-04-21T23:34:18.359Z",
+    "company": "Target India",
+    "title": "Executive Team Leader Assets Protection (Assistant Manager Loss Prevention)- Fresno, CA"
   },
   "workday:target:R0000436060": {
     "firstSeen": "2026-04-21T08:17:08.668Z",
