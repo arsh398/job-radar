@@ -88,11 +88,12 @@
   </div>
 
   <h2>4. Install the bookmarklet</h2>
-  <p>Drag this link to your bookmarks bar:</p>
+  <p>After saving, drag this personalized link to your bookmarks bar:</p>
   <p>
     <a id="bookmarklet" class="bm-link" href="#" title="Drag me to your bookmarks bar">🎯 Apply Assist</a>
+    <span id="bmStatus" class="status" style="margin-left:12px"></span>
   </p>
-  <p class="hint">The bookmarklet is under 400 bytes — it loads the real script from GitHub Pages on each click, so updates reach you without re-installing.</p>
+  <p class="hint">Credentials are embedded in the bookmarklet URL (base64, not encrypted — treat this bookmark like a password). Browser storage partitioning means the iframe fallback doesn't work reliably in Canary / Brave / strict privacy settings, so we bake creds into the URL instead. Whenever you change credentials on this page, re-drag the link — the old bookmark still has the stale creds.</p>
 
   <div class="note">
     <strong>Arc / Safari tip:</strong> if the bookmarks bar isn't visible, open View menu → Show Bookmarks Bar. Chrome: <code>Cmd+Shift+B</code>.
@@ -190,19 +191,66 @@
       status.textContent = "Saved ✓";
       status.style.color = "#16a34a";
       setTimeout(() => { status.textContent = ""; }, 2500);
+      refreshBookmarklet();
     }
 
-    // Build the bookmarklet URL — loads the real bookmarklet script from
-    // GitHub Pages on every click so updates propagate without reinstall.
+    // Build a PERSONALIZED bookmarklet URL with credentials embedded. We
+    // can't rely on iframe + localStorage postMessage because Chromium's
+    // Storage Partitioning (default in Canary, rolling out in Stable)
+    // isolates third-party iframe storage. Baking creds in the URL is
+    // the reliable MDM-compatible answer.
+    //
+    // Format: javascript:(function(){window.__jrApplyCreds=JSON.parse(atob('<b64>'));
+    //          var s=...; s.src='.../bookmarklet.js?v=...'; document.body.appendChild(s);})();
     function buildBookmarklet() {
+      const creds = {
+        t: localStorage.getItem("notionToken") || "",
+        d: localStorage.getItem("notionDatabaseId") || "",
+        g: localStorage.getItem("githubToken") || "",
+        r: localStorage.getItem("githubRepo") || "",
+        p: null,
+      };
+      const rawProfile = localStorage.getItem("profile");
+      if (rawProfile) {
+        try { creds.p = JSON.parse(rawProfile); } catch {}
+      }
       const src = location.href.replace(/[?#].*$/, "").replace(/\/$/, "") + "/bookmarklet.js";
-      const loader =
-        "(function(){var d=document,s=d.createElement('script');" +
-        "s.src=" + JSON.stringify(src) + "+'?v='+Date.now();" +
-        "d.body.appendChild(s);})();";
-      return "javascript:" + encodeURIComponent(loader);
+      const hasCreds = creds.t && creds.p;
+      let loader;
+      if (hasCreds) {
+        const b64 = btoa(unescape(encodeURIComponent(JSON.stringify(creds))));
+        loader =
+          "(function(){try{window.__jrApplyCreds=JSON.parse(decodeURIComponent(escape(atob(" +
+          JSON.stringify(b64) +
+          "))));}catch(e){console.error('[apply-assist] creds decode failed',e);}" +
+          "var d=document,s=d.createElement('script');" +
+          "s.src=" + JSON.stringify(src) + "+'?v='+Date.now();" +
+          "d.body.appendChild(s);})();";
+      } else {
+        loader =
+          "(function(){var d=document,s=d.createElement('script');" +
+          "s.src=" + JSON.stringify(src) + "+'?v='+Date.now();" +
+          "d.body.appendChild(s);})();";
+      }
+      return {
+        url: "javascript:" + encodeURIComponent(loader),
+        hasCreds,
+        size: loader.length,
+      };
     }
-    document.getElementById("bookmarklet").href = buildBookmarklet();
+    function refreshBookmarklet() {
+      const { url, hasCreds, size } = buildBookmarklet();
+      document.getElementById("bookmarklet").href = url;
+      const st = document.getElementById("bmStatus");
+      if (hasCreds) {
+        st.textContent = `✓ personalized (${size} chars — drag to bar)`;
+        st.style.color = "#16a34a";
+      } else {
+        st.textContent = "Save creds above first, then re-drag";
+        st.style.color = "#dc2626";
+      }
+    }
+    refreshBookmarklet();
 
     // postMessage bridge — the bookmarklet opens a hidden iframe to this
     // page with ?credrequest=1 to pull credentials + profile into the

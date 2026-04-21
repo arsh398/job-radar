@@ -17,31 +17,27 @@
   window.__jrApplyAssistRunning = true;
 
   const SETUP_ORIGIN = "https://arsh398.github.io";
-  const SETUP_URL = "https://arsh398.github.io/job-radar/apply-assist/?credrequest=1";
+  const SETUP_URL = "https://arsh398.github.io/job-radar/apply-assist/";
   const NOTION_VERSION = "2022-06-28";
 
-  // ---------- cred bridge ----------
+  // ---------- credentials ----------
+  //
+  // Credentials come from the personalized bookmarklet URL itself: the
+  // loader sets `window.__jrApplyCreds = { t, d, g, r, p }`. Storage
+  // partitioning (Canary, Brave, strict privacy) broke the old iframe
+  // postMessage approach, so we bake creds into the URL you drag. Change
+  // creds → re-drag the link from the setup page.
 
-  function fetchCreds() {
-    return new Promise((resolve, reject) => {
-      const iframe = document.createElement("iframe");
-      iframe.src = SETUP_URL;
-      iframe.style.cssText = "position:absolute;width:1px;height:1px;opacity:0;pointer-events:none;border:0;left:-9999px;";
-      const cleanup = () => {
-        window.removeEventListener("message", onMsg);
-        try { iframe.remove(); } catch {}
-      };
-      const onMsg = (e) => {
-        if (e.origin !== SETUP_ORIGIN) return;
-        const d = e.data;
-        if (!d || d.type !== "apply-assist-creds") return;
-        cleanup();
-        resolve(d);
-      };
-      window.addEventListener("message", onMsg);
-      document.documentElement.appendChild(iframe);
-      setTimeout(() => { cleanup(); reject(new Error("timeout waiting for setup page")); }, 8000);
-    });
+  function getCreds() {
+    const c = window.__jrApplyCreds;
+    if (!c) return null;
+    return {
+      notionToken: c.t || "",
+      notionDatabaseId: c.d || "",
+      githubToken: c.g || "",
+      githubRepo: c.r || "",
+      profile: c.p || null,
+    };
   }
 
   // ---------- Notion API ----------
@@ -588,9 +584,9 @@
     try {
       injectStyles();
       setPanel(`<div class="jr-muted">Loading profile…</div>`);
-      const creds = await fetchCreds();
-      if (!creds.notionToken || !creds.profile) {
-        setPanel(`<div class="jr-pill jr-pill-warn">Not configured</div><div class="jr-muted">Open <a href="${SETUP_URL.replace("?credrequest=1","")}" target="_blank" style="color:#93c5fd">the setup page</a> and paste your Notion token + profile, then click the bookmark again.</div>`);
+      const creds = getCreds();
+      if (!creds || !creds.notionToken || !creds.profile) {
+        setPanel(`<div class="jr-pill jr-pill-warn">Not configured</div><div class="jr-muted">Open <a href="${SETUP_URL}" target="_blank" style="color:#93c5fd">the setup page</a>, save your creds, then re-drag the 🎯 Apply Assist link to replace this bookmark. Credentials are baked into the URL — the old bookmark has no data.</div>`);
         return;
       }
       const stdFilled = fillStandardFields(creds.profile);
