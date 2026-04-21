@@ -1,32 +1,33 @@
 // Apply Assist bookmarklet. Loaded into whatever page the user is on when
-// they click the bookmark. Single-shot: fills what it can, shows a panel,
-// exits. Re-click to re-run (e.g., on a new page of a multi-step form).
+// they click the bookmark. Autofills common fields + Notion prefill data
+// for the matched job, shows a floating panel with downloads / copies /
+// mark-applied. Re-click to re-run on the same or next page.
 //
-// Flow:
-//   1. Open hidden iframe to the setup page with ?credrequest=1
-//   2. Setup page posts credentials + profile via postMessage
-//   3. This script queries Notion for current URL, reads Prefill Data
-//   4. Fills every matchable field (profile + prefill_answers map)
-//   5. Renders floating panel with download / copy / mark-applied / tailor
+// Supported input types:
+//   - standard text / email / tel / url / number / password / textarea
+//   - <select> native dropdowns (value-match then text-contains)
+//   - role="combobox" / role="listbox" React dropdowns (click → pick → click)
+//   - type="radio" groups (Yes/No and multi-option)
+//   - type="checkbox" for specific Yes/No-as-checkbox patterns
+// Skipped by design:
+//   - type=file / hidden / submit / button
+//   - type=date / datetime-local / month / week / time (no dates in profile)
 
 (function () {
   "use strict";
 
-  // Guard against double-fire when user clicks twice in quick succession.
   if (window.__jrApplyAssistRunning) return;
   window.__jrApplyAssistRunning = true;
 
   const SETUP_ORIGIN = "https://arsh398.github.io";
   const SETUP_URL = "https://arsh398.github.io/job-radar/apply-assist/";
   const NOTION_VERSION = "2022-06-28";
+  const DEBUG = true;
+
+  function log(...args) { if (DEBUG && window.console) console.log("[apply-assist]", ...args); }
+  function warn(...args) { if (DEBUG && window.console) console.warn("[apply-assist]", ...args); }
 
   // ---------- credentials ----------
-  //
-  // Credentials come from the personalized bookmarklet URL itself: the
-  // loader sets `window.__jrApplyCreds = { t, d, g, r, p }`. Storage
-  // partitioning (Canary, Brave, strict privacy) broke the old iframe
-  // postMessage approach, so we bake creds into the URL you drag. Change
-  // creds → re-drag the link from the setup page.
 
   function getCreds() {
     const c = window.__jrApplyCreds;
@@ -69,7 +70,6 @@
   async function findRow(token, dbId, url) {
     const db = dbId.replace(/-/g, "");
     const normalized = normalizeUrl(url);
-    // Try exact match first
     try {
       const r = await notionFetch(token, "/databases/" + db + "/query", {
         method: "POST",
@@ -79,8 +79,7 @@
         }),
       });
       if (r.results && r.results[0]) return r.results[0];
-    } catch (err) { console.warn("[apply-assist] exact match failed:", err.message); }
-    // Fuzzy: pathname contains
+    } catch (err) { warn("exact url match failed:", err.message); }
     try {
       const path = new URL(normalized).pathname.replace(/^\/+/, "");
       if (path.length > 6) {
@@ -130,22 +129,18 @@
     try { return JSON.parse(text); } catch { return { answers: {}, standard_hints: {} }; }
   }
 
-  // ---------- autofill ----------
+  // ---------- FIELD_MAP ----------
 
   const FIELD_MAP = {
     first_name: {
       aliases: ["first_name","firstName","first-name","fname","givenName","given-name","given_name","_systemfield_firstname","firstname","candidate_first_name","job_application[first_name]"],
-      labels: ["first name","given name","first"], type: null, key: "firstName",
+      labels: ["first name","given name"], type: null, key: "firstName",
     },
     last_name: {
       aliases: ["last_name","lastName","last-name","lname","familyName","family-name","family_name","surname","_systemfield_lastname","lastname","candidate_last_name","job_application[last_name]"],
       labels: ["last name","family name","surname"], type: null, key: "lastName",
     },
     full_name: {
-      // Removed bare "name" alias — too ambiguous, substring-matches in
-      // fields like "company_name", "school_name". We now match "name"
-      // only via the exact-name check (el.name === "name") and via
-      // specific label "full name".
       aliases: ["fullName","full_name","full-name","candidate_name","applicant_name","your_name","candidate[name]"],
       labels: ["full name","your name"], type: null, key: "fullName",
     },
@@ -154,54 +149,57 @@
       labels: ["email","e-mail","email address"], type: "email", key: "email",
     },
     phone: {
-      aliases: ["phone","phoneNumber","phone_number","mobile","telephone","cell","cellular","_systemfield_phonenumber","job_application[phone]","candidate[phone]","phone_main"],
-      labels: ["phone","phone number","mobile","mobile number","telephone"], type: "tel", key: "phone",
+      aliases: ["phone","phoneNumber","phone_number","mobile","telephone","cell","_systemfield_phonenumber","job_application[phone]","candidate[phone]"],
+      labels: ["phone number","mobile number","telephone","phone"], type: "tel", key: "phone",
     },
     linkedin: {
       aliases: ["linkedin","linkedinUrl","linkedin_url","linkedin-url","linkedInUrl","urls[LinkedIn]","urls[linkedin]","_systemfield_linkedin","linkedin_profile"],
-      labels: ["linkedin","linkedin profile","linkedin url","linkedin.com"], type: null, key: "linkedin",
+      labels: ["linkedin profile","linkedin url","linkedin.com","linkedin"], type: null, key: "linkedin",
     },
     github: {
       aliases: ["github","githubUrl","github_url","github-url","githubProfile","urls[GitHub]","urls[github]","_systemfield_github"],
-      labels: ["github","github profile","github url","github.com"], type: null, key: "github",
+      labels: ["github profile","github url","github.com","github"], type: null, key: "github",
     },
     portfolio: {
-      aliases: ["portfolio","website","portfolio_url","personalSite","personalWebsite","urls[Portfolio]","urls[Website]","urls[website]","personal_website"],
-      labels: ["portfolio","website","personal website","personal site"], type: null, key: "portfolio",
+      aliases: ["portfolio","portfolio_url","personalSite","personalWebsite","urls[Portfolio]","urls[Website]","urls[website]","personal_website"],
+      labels: ["personal website","portfolio website","personal site","website url","portfolio"], type: null, key: "portfolio",
     },
     location: {
-      aliases: ["location","city","currentLocation","current_location","_systemfield_location","candidate_location","current_city"],
-      labels: ["location","current location","city","current city"], type: null, key: "location",
+      aliases: ["location","currentLocation","current_location","_systemfield_location","candidate_location","current_city"],
+      labels: ["current location","current city"], type: null, key: "location",
+    },
+    city: {
+      aliases: ["city"],
+      labels: ["city"], type: null, key: "city",
+    },
+    country: {
+      aliases: ["country"],
+      labels: ["country"], type: null, key: "country",
     },
     current_company: {
-      aliases: ["org","company","currentCompany","current_company","employer","currentEmployer","current_employer"],
-      labels: ["current company","current employer","company","employer"], type: null, key: "currentCompany",
+      aliases: ["org","currentCompany","current_company","currentEmployer","current_employer"],
+      labels: ["current company","current employer","company where you currently work"], type: null, key: "currentCompany",
     },
     current_title: {
-      aliases: ["currentTitle","current_title","job_title","jobTitle","position","role"],
-      labels: ["current title","current role","job title","position"], type: null, key: "currentTitle",
+      aliases: ["currentTitle","current_title"],
+      labels: ["current title","current role","current job title"], type: null, key: "currentTitle",
     },
     years_exp: {
-      aliases: ["yearsOfExperience","years_of_experience","yoe","experience"],
-      labels: ["years of experience","experience (years)","yoe","total experience"], type: null, key: "yearsOfExperience",
+      aliases: ["yearsOfExperience","years_of_experience","yoe"],
+      labels: ["years of experience","total experience","years of total experience"], type: null, key: "yearsOfExperience",
     },
     notice: {
-      // Removed ambiguous bare "notice" alias and label — was matching
-      // things like "Legal notices" acknowledgment checkboxes.
       aliases: ["noticePeriod","notice_period"],
       labels: ["notice period"], type: null, key: "noticePeriod",
     },
     earliest_start: {
-      // Tightened: bare "start date" / "start_date" also match work-
-      // history rows' Start Date columns which are actual date pickers,
-      // not free-text. Require the stronger phrasing.
       aliases: ["earliestStartDate","earliestStart","availableFrom","available_from"],
       labels: ["earliest start","available from","when can you join","when can you start","earliest you can start"],
       type: null, key: "earliestStartDate",
     },
     expected_salary_inr: {
       aliases: ["expectedSalary","expected_salary","salaryExpectation","ctc","expected_ctc"],
-      labels: ["expected salary","ctc","compensation","expected compensation"], type: null, key: "expectedSalaryINR",
+      labels: ["expected salary","ctc","expected compensation","salary expectation"], type: null, key: "expectedSalaryINR",
     },
     expected_salary_usd: {
       aliases: ["expectedSalaryUSD"],
@@ -209,46 +207,46 @@
     },
     willing_relocate: {
       aliases: ["willingToRelocate","relocate","relocation"],
-      labels: ["willing to relocate","relocate","relocation"], type: null, key: "willingToRelocate",
+      labels: ["willing to relocate","open to relocation"], type: null, key: "willingToRelocate",
     },
     work_auth_us: {
       aliases: ["workAuthUS","authorized_to_work_us","us_work_authorization"],
-      labels: ["authorized to work in the us","us work authorization","work in us","require sponsorship"], type: null, key: "workAuthUS",
+      labels: ["authorized to work in the us","us work authorization","require sponsorship","authorized to work in the united states"], type: null, key: "workAuthUS",
     },
     sponsorship: {
       aliases: ["sponsorship","sponsorshipRequired","visaSponsorship","visa_sponsorship"],
-      labels: ["visa sponsorship","sponsorship","require sponsorship"], type: null, key: "sponsorshipRequired",
+      labels: ["visa sponsorship","require sponsorship","need sponsorship"], type: null, key: "sponsorshipRequired",
     },
     gender: {
       aliases: ["gender","gender_identity"],
-      labels: ["gender","gender identity"], type: null, key: "gender",
+      labels: ["gender identity","gender"], type: null, key: "gender",
     },
     race: {
       aliases: ["race","ethnicity","raceEthnicity"],
-      labels: ["race","ethnicity","race/ethnicity","race and ethnicity"], type: null, key: "raceEthnicity",
+      labels: ["race/ethnicity","race and ethnicity","race","ethnicity"], type: null, key: "raceEthnicity",
     },
     hispanic: {
       aliases: ["hispanic","hispanicLatino","latino"],
-      labels: ["hispanic","latino","hispanic or latino"], type: null, key: "hispanicLatino",
+      labels: ["hispanic or latino","hispanic/latino","hispanic","latino"], type: null, key: "hispanicLatino",
     },
     veteran: {
-      aliases: ["veteran","veteranStatus","military"],
-      labels: ["veteran","veteran status","protected veteran","military service"], type: null, key: "veteranStatus",
+      aliases: ["veteran","veteranStatus"],
+      labels: ["veteran status","protected veteran","military service status"], type: null, key: "veteranStatus",
     },
     disability: {
       aliases: ["disability","disabilityStatus","disability_status"],
-      labels: ["disability","disability status"], type: null, key: "disabilityStatus",
+      labels: ["disability status","do you have a disability"], type: null, key: "disabilityStatus",
     },
     orientation: {
-      aliases: ["sexualOrientation","orientation"],
-      labels: ["sexual orientation","orientation"], type: null, key: "sexualOrientation",
+      aliases: ["sexualOrientation"],
+      labels: ["sexual orientation"], type: null, key: "sexualOrientation",
     },
     pronouns: {
       aliases: ["pronouns","preferredPronouns"],
       labels: ["pronouns","preferred pronouns"], type: null, key: "pronouns",
     },
     password: {
-      aliases: ["password","pass","passwd","new_password","create_password"],
+      aliases: ["password","new_password","create_password"],
       labels: ["password","create password","new password"], type: "password", key: "defaultPassword",
     },
     password_confirm: {
@@ -260,8 +258,8 @@
       labels: ["security question","security answer","mother's maiden","pet's name","first pet"], type: null, key: "securityQuestionAnswer",
     },
     how_heard: {
-      aliases: ["how_did_you_hear","howDidYouHear","referral_source","source"],
-      labels: ["how did you hear","how you heard","referral source","source"], type: null, key: "howDidYouHear",
+      aliases: ["how_did_you_hear","howDidYouHear","referral_source"],
+      labels: ["how did you hear","how you heard about"], type: null, key: "howDidYouHear",
     },
     felony: {
       aliases: ["felony","felonyConviction","criminal_record"],
@@ -269,16 +267,14 @@
     },
     accommodation: {
       aliases: ["accommodation","requireAccommodation"],
-      labels: ["accommodation","disability accommodation","workplace accommodation"], type: null, key: "requireAccommodation",
+      labels: ["disability accommodation","workplace accommodation","require accommodation"], type: null, key: "requireAccommodation",
     },
     noncompete: {
       aliases: ["nonCompete","non_compete","non-compete"],
-      labels: ["non-compete","noncompete","non compete"], type: null, key: "nonCompete",
+      labels: ["non-compete","noncompete","non compete agreement"], type: null, key: "nonCompete",
     },
   };
 
-  // Prefill-answer textarea matching: map common question-title patterns
-  // to PrefillAnswers keys from the Notion row's Prefill Data.
   const QA_LABEL_MAP = [
     { key: "why_company", patterns: ["why.*(this|our).*(company|organization|team)", "why.*work.*here", "why.*interested.*(us|this role)", "what attracts you"] },
     { key: "why_role", patterns: ["why.*this role", "why.*this position", "why.*this job", "what interests you about this"] },
@@ -290,21 +286,121 @@
     { key: "ai_experience", patterns: ["ai.*experience", "llm.*experience", "machine learning experience", "gen.?ai experience"] },
   ];
 
-  function setValue(el, value) {
-    if (!el || value == null || value === "") return false;
-    const tag = el.tagName;
-    if (tag === "SELECT") return setSelect(el, value);
-    const proto = tag === "TEXTAREA" ? HTMLTextAreaElement.prototype : HTMLInputElement.prototype;
+  // ---------- label detection ----------
+
+  // Find the human-readable label for an input. Checks in order:
+  //   1. <label for="id">
+  //   2. ancestor <label>
+  //   3. aria-labelledby / aria-label
+  //   4. preceding sibling text (common in React forms)
+  //   5. parent's immediate text content (stripping the input's own text)
+  function labelTextFor(el) {
+    const parts = [];
+    if (el.id) {
+      try {
+        const lbl = document.querySelector('label[for="' + CSS.escape(el.id) + '"]');
+        if (lbl) parts.push(lbl.textContent || "");
+      } catch {}
+    }
+    const wrap = el.closest("label");
+    if (wrap) parts.push(wrap.textContent || "");
+    const labelledBy = el.getAttribute("aria-labelledby");
+    if (labelledBy) {
+      for (const id of labelledBy.split(/\s+/)) {
+        const ref = document.getElementById(id);
+        if (ref) parts.push(ref.textContent || "");
+      }
+    }
+    const aria = el.getAttribute("aria-label");
+    if (aria) parts.push(aria);
+    // Proximity: look at the preceding sibling's text, or a labeled wrapper
+    // div. Common React pattern: <div class="field-label">Email</div><input>.
+    let node = el.previousElementSibling;
+    let tries = 0;
+    while (node && tries < 3) {
+      const txt = (node.textContent || "").trim();
+      if (txt && txt.length < 120) { parts.push(txt); break; }
+      node = node.previousElementSibling;
+      tries++;
+    }
+    // Ancestor with a short text header
+    let anc = el.parentElement;
+    let depth = 0;
+    while (anc && depth < 3) {
+      const first = anc.firstChild;
+      if (first && first.nodeType === 3) {
+        const t = (first.textContent || "").trim();
+        if (t && t.length < 80 && !t.includes(el.value || "__x__")) { parts.push(t); break; }
+      }
+      anc = anc.parentElement;
+      depth++;
+    }
+    return parts.join(" ").toLowerCase().replace(/\s+/g, " ").trim();
+  }
+
+  // ---------- match scoring ----------
+
+  function matchesField(el, spec) {
+    const name = (el.name || "").toLowerCase();
+    const id = (el.id || "").toLowerCase();
+    const aria = (el.getAttribute("aria-label") || "").toLowerCase();
+    const ph = (el.placeholder || "").toLowerCase();
+    const autoc = (el.autocomplete || "").toLowerCase();
+    const label = labelTextFor(el);
+    const typeAttr = (el.type || "").toLowerCase();
+
+    // Exact name/id alias match — strongest
+    for (const a of spec.aliases) {
+      const al = a.toLowerCase();
+      if (name === al || id === al) return 4;
+    }
+    // autocomplete attribute match — standards-compliant, very reliable
+    for (const a of spec.aliases) {
+      if (autoc && autoc === a.toLowerCase()) return 4;
+    }
+    // Input type match (email, tel) — strong but only for types we specified
+    if (spec.type && typeAttr === spec.type) return 3;
+    // Label exact/contains match
+    for (const l of spec.labels) {
+      if (label === l) return 3;
+    }
+    for (const l of spec.labels) {
+      if (label && label.includes(l)) return 2;
+    }
+    // Aria / placeholder
+    for (const l of spec.labels) {
+      if (aria.includes(l) || ph.includes(l)) return 2;
+    }
+    // Name/id substring — weakest, high false-positive risk
+    for (const a of spec.aliases) {
+      const al = a.toLowerCase();
+      if (al.length < 4) continue; // "org" too short for substring
+      if ((name && name.includes(al)) || (id && id.includes(al))) return 1;
+    }
+    return 0;
+  }
+
+  // ---------- value setters ----------
+
+  function setNativeValue(el, value) {
+    const proto = el.tagName === "TEXTAREA" ? HTMLTextAreaElement.prototype : HTMLInputElement.prototype;
     const setter = Object.getOwnPropertyDescriptor(proto, "value") && Object.getOwnPropertyDescriptor(proto, "value").set;
     if (setter) setter.call(el, value);
     else el.value = value;
+  }
+
+  function fireInputEvents(el) {
     el.dispatchEvent(new Event("input", { bubbles: true }));
     el.dispatchEvent(new Event("change", { bubbles: true }));
     el.dispatchEvent(new Event("blur", { bubbles: true }));
-    return true;
   }
 
-  function setSelect(el, value) {
+  function setTextValue(el, value) {
+    setNativeValue(el, value);
+    fireInputEvents(el);
+  }
+
+  function setSelectValue(el, value) {
     const target = String(value).toLowerCase();
     const opt = Array.from(el.options).find((o) =>
       o.value.toLowerCase() === target ||
@@ -318,95 +414,118 @@
     return true;
   }
 
-  function labelTextFor(el) {
-    const parts = [];
-    if (el.id) {
-      try {
-        const lbl = document.querySelector('label[for="' + CSS.escape(el.id) + '"]');
-        if (lbl) parts.push(lbl.textContent || "");
-      } catch {}
+  // Match a radio/checkbox group by label. For a group keyed by `name`,
+  // find the specific option whose label matches `value`.
+  function setRadioGroup(name, value) {
+    if (!name) return false;
+    const radios = Array.from(document.querySelectorAll(
+      'input[type="radio"][name="' + CSS.escape(name) + '"], input[type="checkbox"][name="' + CSS.escape(name) + '"]'
+    ));
+    if (!radios.length) return false;
+    const target = String(value).toLowerCase();
+    const pick = radios.find((r) => {
+      const lbl = labelTextFor(r).toLowerCase();
+      const rv = (r.value || "").toLowerCase();
+      if (rv === target || lbl === target) return true;
+      if (target.length > 2 && (lbl.includes(target) || target.includes(lbl))) return true;
+      if (rv && (target.includes(rv) || rv.includes(target))) return true;
+      return false;
+    });
+    if (!pick) return false;
+    if (!pick.checked) {
+      pick.checked = true;
+      pick.dispatchEvent(new Event("click", { bubbles: true }));
+      pick.dispatchEvent(new Event("change", { bubbles: true }));
     }
-    const wrap = el.closest("label");
-    if (wrap) parts.push(wrap.textContent || "");
-    const aria = el.getAttribute("aria-labelledby");
-    if (aria) {
-      const ref = document.getElementById(aria);
-      if (ref) parts.push(ref.textContent || "");
-    }
-    return parts.join(" ").toLowerCase().replace(/\s+/g, " ").trim();
+    return true;
   }
 
-  function matchesField(el, spec) {
-    const name = (el.name || "").toLowerCase();
-    const id = (el.id || "").toLowerCase();
-    const aria = (el.getAttribute("aria-label") || "").toLowerCase();
-    const ph = (el.placeholder || "").toLowerCase();
-    const autoc = (el.autocomplete || "").toLowerCase();
-    const label = labelTextFor(el);
-    const typeAttr = (el.type || "").toLowerCase();
-    for (const a of spec.aliases) {
-      const al = a.toLowerCase();
-      if (name === al || id === al) return 3;
+  // React-custom dropdown: role="combobox" / role="listbox" / similar.
+  // Strategy: click trigger to open, wait for options to appear, find
+  // matching option text, click it.
+  async function setCustomDropdown(trigger, value) {
+    const target = String(value).toLowerCase();
+    // Open
+    trigger.click();
+    await sleep(180);
+    // Options can be siblings, descendants, or in a portal elsewhere in DOM
+    let options = Array.from(document.querySelectorAll('[role="option"], [role="listbox"] li, [role="listbox"] [role="menuitem"]'));
+    // Filter to only those visible (width+height > 0)
+    options = options.filter((o) => {
+      const r = o.getBoundingClientRect();
+      return r.width > 0 && r.height > 0;
+    });
+    if (!options.length) return false;
+    const pick = options.find((o) => {
+      const t = (o.textContent || "").trim().toLowerCase();
+      return t === target || t.includes(target) || target.includes(t);
+    });
+    if (!pick) {
+      // Close dropdown cleanly
+      trigger.click();
+      return false;
     }
-    if (spec.type && typeAttr === spec.type) return 3;
-    for (const a of spec.aliases) {
-      if (autoc === a.toLowerCase()) return 3;
-    }
-    for (const l of spec.labels) {
-      if (label && (label === l || label.includes(l))) return 2;
-    }
-    for (const l of spec.labels) {
-      if (aria.includes(l) || ph.includes(l)) return 2;
-    }
-    for (const a of spec.aliases) {
-      const al = a.toLowerCase();
-      if ((name && name.includes(al)) || (id && id.includes(al))) return 1;
-    }
-    return 0;
+    pick.click();
+    await sleep(80);
+    return true;
   }
 
-  function findField(spec, used) {
-    const inputs = document.querySelectorAll("input, select, textarea");
-    let best = null;
-    let bestScore = 0;
-    for (const el of inputs) {
-      if (used.has(el)) continue;
-      if (el.disabled || el.readOnly || (el.value && el.tagName !== "SELECT")) continue;
-      const t = (el.type || "").toLowerCase();
-      if (t === "hidden" || t === "submit" || t === "button" || t === "file" || t === "checkbox" || t === "radio") continue;
-      const s = matchesField(el, spec);
-      if (s > bestScore) { best = el; bestScore = s; if (s === 3) break; }
-    }
-    return best;
+  function sleep(ms) { return new Promise((r) => setTimeout(r, ms)); }
+
+  // ---------- visual feedback ----------
+
+  const HIGHLIGHT = "outline: 2px solid #16a34a !important; outline-offset: 2px; transition: outline 0.2s;";
+  const HIGHLIGHT_MISS = "outline: 2px dashed #f59e0b !important; outline-offset: 2px;";
+
+  function markFilled(el) {
+    const prev = el.getAttribute("style") || "";
+    el.setAttribute("style", prev + ";" + HIGHLIGHT);
+    setTimeout(() => {
+      try { el.setAttribute("style", prev); } catch {}
+    }, 8000);
   }
 
-  // Per-input best-match fill. Previously iterated per-spec and let the
-  // first high-score match steal the input, which meant full_name's
-  // substring match on "name" could claim Company fields before
-  // current_company had a chance to match them stronger.
-  //
-  // New algorithm: for each input, find the spec with the highest score
-  // across ALL specs. Sort matches by score desc, fill one per spec key
-  // (so a single currentCompany value only fills the first Company-
-  // looking input, not both [0] and [1]).
-  //
-  // Also skip type="date" inputs — profile values are strings like
-  // "2 months from offer", not ISO dates.
-  function fillStandardFields(profile) {
-    if (!profile) return { filled: 0, detail: [] };
+  function markMiss(el) {
+    const prev = el.getAttribute("style") || "";
+    el.setAttribute("style", prev + ";" + HIGHLIGHT_MISS);
+  }
+
+  // ---------- main fill algorithm ----------
+
+  function elIsFillable(el) {
+    if (!el) return false;
+    if (el.disabled || el.readOnly) return false;
+    const t = (el.type || "").toLowerCase();
+    if (["hidden","submit","button","file","date","datetime-local","month","week","time"].includes(t)) return false;
+    return true;
+  }
+
+  function buildEnriched(profile) {
     const fullName = profile.fullName || [profile.firstName, profile.lastName].filter(Boolean).join(" ");
-    const enriched = Object.assign({}, profile, { fullName });
+    return Object.assign({}, profile, { fullName });
+  }
 
-    const inputs = document.querySelectorAll("input, select, textarea");
+  // Per-input best-match. For each input, pick the spec with highest score.
+  // Sort by score desc, fill one value per spec key. Overwrite even if the
+  // input is already filled (e.g. by Chrome Autofill) when our match is
+  // strong (score >= 3).
+  async function fillStandardFields(profile) {
+    if (!profile) return { filled: 0, detail: [], missed: [] };
+    const enriched = buildEnriched(profile);
     const specEntries = Object.entries(FIELD_MAP);
+    const seen = new WeakSet();
     const candidates = [];
 
+    // Gather text/textarea/select candidates
+    const inputs = document.querySelectorAll("input, select, textarea, [role='combobox']");
     for (const el of inputs) {
-      if (el.disabled || el.readOnly) continue;
-      if (el.value && el.tagName !== "SELECT") continue;
-      const t = (el.type || "").toLowerCase();
-      if (["hidden","submit","button","file","checkbox","radio","date","datetime-local","month","week","time"].includes(t)) continue;
-
+      if (seen.has(el)) continue;
+      seen.add(el);
+      if (el.tagName === "INPUT") {
+        const t = (el.type || "").toLowerCase();
+        if (t === "radio" || t === "checkbox") continue; // handled separately
+      }
+      if (!elIsFillable(el)) continue;
       let bestKey = null, bestScore = 0;
       for (const [k, spec] of specEntries) {
         const s = matchesField(el, spec);
@@ -414,63 +533,137 @@
       }
       if (bestKey && bestScore > 0) candidates.push({ el, specKey: bestKey, score: bestScore });
     }
-
     candidates.sort((a, b) => b.score - a.score);
 
     const usedSpecKeys = new Set();
-    // Password + confirm should both fill from defaultPassword.
-    const MULTI_FILL_KEYS = new Set(["password_confirm"]);
-    let filled = 0;
+    const MULTI_FILL = new Set(["password_confirm"]);
     const detail = [];
+    const missed = [];
+    let filled = 0;
 
     for (const { el, specKey, score } of candidates) {
       const spec = FIELD_MAP[specKey];
       const value = enriched[spec.key];
       if (!value) continue;
-      if (usedSpecKeys.has(specKey) && !MULTI_FILL_KEYS.has(specKey)) continue;
-      if (setValue(el, value)) {
+      if (usedSpecKeys.has(specKey) && !MULTI_FILL.has(specKey)) continue;
+      // Skip pre-filled inputs UNLESS our match is strong (score >= 3).
+      // Chrome Autofill often pre-fills with saved values that may or may
+      // not match our profile — if we have a definitive match, overwrite.
+      if (el.value && el.tagName !== "SELECT" && score < 3) continue;
+
+      let ok = false;
+      try {
+        if (el.tagName === "SELECT") {
+          ok = setSelectValue(el, value);
+        } else if (el.getAttribute("role") === "combobox") {
+          ok = await setCustomDropdown(el, value);
+        } else {
+          setTextValue(el, value);
+          ok = true;
+        }
+      } catch (err) {
+        warn("set failed", specKey, err.message);
+      }
+
+      if (ok) {
         usedSpecKeys.add(specKey);
         filled++;
-        detail.push({
-          spec: specKey,
-          score,
-          value: String(value).slice(0, 60),
-          field: (el.name || el.id || "(unnamed)").slice(0, 60),
-        });
+        markFilled(el);
+        detail.push({ spec: specKey, score, value: String(value).slice(0, 60), field: (el.name || el.id || "(unnamed)").slice(0, 60) });
+      } else {
+        markMiss(el);
+        missed.push({ spec: specKey, reason: "couldn't set value", field: (el.name || el.id || "(unnamed)").slice(0, 60) });
       }
     }
-    // Log to console so it's easy to debug which fields got what.
-    if (window.console && console.table && detail.length) {
-      console.log("%c[apply-assist] filled:", "color:#2563eb;font-weight:bold");
+
+    // Radio/checkbox groups — match by name attr
+    const radioNames = new Set();
+    document.querySelectorAll('input[type="radio"], input[type="checkbox"]').forEach((r) => {
+      if (r.name && !r.disabled) radioNames.add(r.name);
+    });
+    for (const name of radioNames) {
+      if (usedSpecKeys.has("radio:" + name)) continue;
+      // Find best spec for this group by label text of any member
+      const firstRadio = document.querySelector('input[type="radio"][name="' + CSS.escape(name) + '"]');
+      if (!firstRadio) continue;
+      // Use the radio's fieldset legend, wrapping div label, or input name
+      // to find the question text
+      const fieldset = firstRadio.closest("fieldset");
+      let groupLabel = "";
+      if (fieldset) {
+        const legend = fieldset.querySelector("legend");
+        if (legend) groupLabel = legend.textContent || "";
+      }
+      if (!groupLabel) groupLabel = labelTextFor(firstRadio);
+      if (!groupLabel) groupLabel = name;
+      groupLabel = groupLabel.toLowerCase();
+
+      let bestKey = null, bestScore = 0;
+      for (const [k, spec] of specEntries) {
+        let s = 0;
+        for (const l of spec.labels) {
+          if (groupLabel.includes(l)) { s = Math.max(s, 2); }
+        }
+        for (const a of spec.aliases) {
+          if (name.toLowerCase() === a.toLowerCase()) { s = Math.max(s, 3); }
+          else if (name.toLowerCase().includes(a.toLowerCase()) && a.length >= 4) { s = Math.max(s, 1); }
+        }
+        if (s > bestScore) { bestKey = k; bestScore = s; }
+      }
+      if (bestKey && bestScore > 0) {
+        const value = enriched[FIELD_MAP[bestKey].key];
+        if (value) {
+          const ok = setRadioGroup(name, value);
+          if (ok) {
+            usedSpecKeys.add("radio:" + name);
+            filled++;
+            const picked = document.querySelector('input[type="radio"][name="' + CSS.escape(name) + '"]:checked, input[type="checkbox"][name="' + CSS.escape(name) + '"]:checked');
+            if (picked) markFilled(picked);
+            detail.push({ spec: bestKey, score: bestScore, value: String(value).slice(0, 40), field: "radio:" + name });
+          } else {
+            missed.push({ spec: bestKey, reason: "no radio option matched value", field: "radio:" + name });
+          }
+        }
+      }
+    }
+
+    if (detail.length && window.console && console.table) {
+      console.log("%c[apply-assist] filled:", "color:#16a34a;font-weight:bold");
       console.table(detail);
     }
-    return { filled, detail };
+    if (missed.length && window.console && console.table) {
+      console.log("%c[apply-assist] missed:", "color:#f59e0b;font-weight:bold");
+      console.table(missed);
+    }
+    return { filled, detail, missed };
   }
 
-  function fillPrefillAnswers(answers) {
-    if (!answers) return 0;
-    const textareas = document.querySelectorAll("textarea");
+  // ---------- Prefill-answer matching ----------
+
+  async function fillPrefillAnswers(answers) {
+    if (!answers) return { filled: 0 };
+    const candidates = Array.from(document.querySelectorAll('textarea, input[type="text"][maxlength]:not([maxlength="1"]):not([maxlength="2"]):not([maxlength="3"])'));
     let filled = 0;
-    for (const ta of textareas) {
-      if (ta.disabled || ta.readOnly || ta.value) continue;
-      const label = labelTextFor(ta);
-      const aria = (ta.getAttribute("aria-label") || "").toLowerCase();
-      const ph = (ta.placeholder || "").toLowerCase();
-      const hay = (label + " " + aria + " " + ph).toLowerCase();
+    for (const ta of candidates) {
+      if (!elIsFillable(ta)) continue;
+      if (ta.value) continue;
+      const hay = (labelTextFor(ta) + " " + (ta.getAttribute("aria-label") || "") + " " + (ta.placeholder || "")).toLowerCase();
       if (!hay.trim()) continue;
       for (const { key, patterns } of QA_LABEL_MAP) {
         const ans = answers[key];
         if (!ans || !ans.trim()) continue;
         if (patterns.some((p) => new RegExp(p, "i").test(hay))) {
-          if (setValue(ta, ans)) filled++;
+          setTextValue(ta, ans);
+          markFilled(ta);
+          filled++;
           break;
         }
       }
     }
-    return filled;
+    return { filled };
   }
 
-  // ---------- panel ----------
+  // ---------- panel UI ----------
 
   function injectStyles() {
     if (document.getElementById("jr-aa-style")) return;
@@ -492,6 +685,9 @@
       #jr-aa-panel .jr-pill-warn { background:#7c2d12;color:#fed7aa; }
       #jr-aa-panel .jr-name { font-weight:600;font-size:14px; }
       #jr-aa-panel .jr-muted { color:#94a3b8;font-size:12px; }
+      #jr-aa-panel .jr-count { font-size:12px; color:#cbd5e1; }
+      #jr-aa-panel .jr-count strong { color:#a7f3d0; }
+      #jr-aa-panel .jr-count em { color:#fed7aa; font-style:normal; }
       #jr-aa-panel .jr-actions { display:flex;flex-direction:column;gap:6px; }
       #jr-aa-panel .jr-btn { display:block;width:100%;padding:8px 10px;background:#334155;
         color:#e2e8f0;border:0;border-radius:6px;cursor:pointer;font:inherit;text-align:left; }
@@ -571,7 +767,14 @@
     );
   }
 
-  function renderMatched(creds, page, props, prefill, stdFilled, qaFilled) {
+  function countText({ filled, detail, missed }, qaFilled) {
+    const parts = [`<strong>${filled}</strong> filled`];
+    if (qaFilled) parts.push(`<strong>${qaFilled}</strong> answers`);
+    if (missed && missed.length) parts.push(`<em>${missed.length} missed</em>`);
+    return parts.join(" · ");
+  }
+
+  function renderMatched(creds, page, props, prefill, standardResult, qaResult) {
     const verdict = props.verdict || "unknown";
     const resumes = props.resumeFiles
       .map((f, i) => `<button class="jr-btn" data-act="dl" data-i="${i}">${escape(f.name || "Download resume")}</button>`)
@@ -584,7 +787,7 @@
       <div class="jr-pill">Matched · ${escape(verdict)} · ${props.fit ?? "–"}% fit</div>
       ${qwPill}
       <div class="jr-name">${escape(props.name || "")}</div>
-      <div class="jr-muted">Filled ${stdFilled} standard + ${qaFilled} textarea answers</div>
+      <div class="jr-count">${countText(standardResult, qaResult.filled)}</div>
       <div class="jr-actions">
         ${resumes || '<div class="jr-muted">No tailored PDF on file</div>'}
         ${cover ? '<button class="jr-btn" data-act="cover">Copy Cover Note</button>' : ""}
@@ -613,10 +816,10 @@
     }));
   }
 
-  function renderUnmatched(creds, stdFilled) {
+  function renderUnmatched(creds, standardResult) {
     setPanel(`
       <div class="jr-pill jr-pill-warn">No Notion row for this URL</div>
-      <div class="jr-muted">Filled ${stdFilled} standard fields from your profile</div>
+      <div class="jr-count">${countText(standardResult, 0)}</div>
       <div class="jr-actions">
         <button class="jr-btn jr-primary" data-act="tailor">Tailor for this URL</button>
       </div>
@@ -646,23 +849,43 @@
       setPanel(`<div class="jr-muted">Loading profile…</div>`);
       const creds = getCreds();
       if (!creds || !creds.notionToken || !creds.profile) {
-        setPanel(`<div class="jr-pill jr-pill-warn">Not configured</div><div class="jr-muted">Open <a href="${SETUP_URL}" target="_blank" style="color:#93c5fd">the setup page</a>, save your creds, then re-drag the 🎯 Apply Assist link to replace this bookmark. Credentials are baked into the URL — the old bookmark has no data.</div>`);
+        setPanel(`<div class="jr-pill jr-pill-warn">Not configured</div><div class="jr-muted">Open <a href="${SETUP_URL}" target="_blank" style="color:#93c5fd">the setup page</a>, save creds, then re-drag the 🎯 link to replace this bookmark.</div>`);
         return;
       }
-      const { filled: stdFilled } = fillStandardFields(creds.profile);
+
+      // First pass
+      let standardResult = await fillStandardFields(creds.profile);
+
+      // Retry on late-loading forms (React hydration). Set up a MutationObserver
+      // that re-runs fill if new form inputs appear within 4 sec.
+      const observer = new MutationObserver(async (muts) => {
+        for (const m of muts) {
+          for (const node of m.addedNodes) {
+            if (node.nodeType === 1 && (node.tagName === "INPUT" || node.tagName === "SELECT" || node.tagName === "TEXTAREA" || (node.querySelectorAll && node.querySelectorAll("input,select,textarea").length))) {
+              const more = await fillStandardFields(creds.profile);
+              standardResult.filled += more.filled;
+              standardResult.detail.push(...more.detail);
+              standardResult.missed.push(...more.missed);
+              return;
+            }
+          }
+        }
+      });
+      observer.observe(document.body || document.documentElement, { childList: true, subtree: true });
+      setTimeout(() => observer.disconnect(), 4000);
 
       let page = null;
       if (creds.notionDatabaseId) {
         try { page = await findRow(creds.notionToken, creds.notionDatabaseId, location.href); }
-        catch (e) { console.warn("[apply-assist] Notion query failed:", e.message); }
+        catch (e) { warn("Notion query failed:", e.message); }
       }
       if (page) {
         const props = readProperties(page);
         const prefill = parsePrefill(props.prefillData);
-        const qaFilled = fillPrefillAnswers(prefill.answers || {});
-        renderMatched(creds, page, props, prefill, stdFilled, qaFilled);
+        const qaResult = await fillPrefillAnswers(prefill.answers || {});
+        renderMatched(creds, page, props, prefill, standardResult, qaResult);
       } else {
-        renderUnmatched(creds, stdFilled);
+        renderUnmatched(creds, standardResult);
       }
     } catch (err) {
       setPanel(`<div class="jr-pill jr-pill-warn">Error</div><div class="jr-muted">${escape(err && err.message || String(err))}</div>`);
