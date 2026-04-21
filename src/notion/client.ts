@@ -83,6 +83,47 @@ export async function queryByKey(
   return resp.results[0] ?? null;
 }
 
+export type NotionPage = {
+  id: string;
+  properties: Record<string, unknown>;
+  url?: string;
+};
+
+// Paginated query — iterates all pages in the database. Caller filters.
+// Optional `pageSize` defaults to 100 (Notion max).
+export async function* queryAllPages(
+  databaseId: string,
+  pageSize = 100
+): AsyncGenerator<NotionPage, void, void> {
+  let cursor: string | undefined;
+  do {
+    const body: AnyRecord = { page_size: pageSize };
+    if (cursor) body.start_cursor = cursor;
+    const resp = await apiFetch<{
+      results: NotionPage[];
+      has_more: boolean;
+      next_cursor?: string | null;
+    }>(`/databases/${databaseId}/query`, {
+      method: "POST",
+      body: JSON.stringify(body),
+    });
+    for (const page of resp.results) yield page;
+    cursor = resp.has_more ? resp.next_cursor ?? undefined : undefined;
+  } while (cursor);
+}
+
+// PATCH page properties. Only the properties included in the body are
+// updated — other properties (Status, Applied At, etc.) are preserved.
+export async function patchPageProperties(
+  pageId: string,
+  properties: AnyRecord
+): Promise<void> {
+  await apiFetch<unknown>(`/pages/${pageId}`, {
+    method: "PATCH",
+    body: JSON.stringify({ properties }),
+  });
+}
+
 // ---------- File uploads ----------
 
 // Two-step: POST /v1/file_uploads to get an upload URL, then PUT the bytes
