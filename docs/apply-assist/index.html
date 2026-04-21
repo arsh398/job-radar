@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Apply Assist — Setup</title>
+  <style>
+    :root { color-scheme: light dark; }
+    * { box-sizing: border-box; }
+    body {
+      font: 14px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, sans-serif;
+      max-width: 720px; margin: 40px auto; padding: 0 20px;
+      background: #f8fafc; color: #0f172a;
+    }
+    @media (prefers-color-scheme: dark) { body { background: #0b1220; color: #e2e8f0; } }
+    h1 { font-size: 24px; margin: 0 0 8px; }
+    h2 { font-size: 14px; margin: 28px 0 10px; letter-spacing: 0.08em;
+         text-transform: uppercase; color: #64748b; }
+    p { margin: 0 0 12px; }
+    p.hint { color: #64748b; font-size: 12px; }
+    label { display: block; font-weight: 500; margin: 12px 0 4px; }
+    input, textarea {
+      width: 100%; padding: 9px 11px; font: inherit;
+      border: 1px solid #cbd5e1; border-radius: 6px;
+      background: #fff; color: #0f172a;
+    }
+    @media (prefers-color-scheme: dark) {
+      input, textarea { background: #1e293b; color: #e2e8f0; border-color: #334155; }
+    }
+    textarea { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12px; min-height: 220px; }
+    .row { display: flex; gap: 12px; align-items: center; margin-top: 20px; }
+    button {
+      padding: 10px 22px; font: inherit; font-weight: 600; cursor: pointer;
+      background: #2563eb; color: #fff; border: 0; border-radius: 6px;
+    }
+    button:hover { background: #1d4ed8; }
+    .status { font-size: 13px; }
+    .bm-link {
+      display: inline-block; padding: 12px 20px; margin: 8px 0;
+      background: #0f172a; color: #fff; font-weight: 600;
+      border-radius: 6px; text-decoration: none; cursor: move;
+      user-select: none;
+    }
+    .bm-link:hover { background: #1e293b; }
+    .note {
+      padding: 10px 12px; border-left: 3px solid #f59e0b;
+      background: #fef3c7; color: #92400e; font-size: 13px;
+      border-radius: 4px; margin: 10px 0;
+    }
+    @media (prefers-color-scheme: dark) {
+      .note { background: #3f3516; color: #fcd34d; }
+    }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+           background: rgba(128,128,128,0.15); padding: 1px 5px; border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <h1>Apply Assist — Setup</h1>
+  <p class="hint">Configure once, drag the bookmark to your bar, then click it on any job apply page. Everything stays in localStorage on this origin — nothing leaves your browser except calls to Notion / GitHub that you authorize below.</p>
+
+  <h2>1. Notion</h2>
+
+  <label for="notionToken">Integration token (<code>secret_...</code>)</label>
+  <input id="notionToken" type="password" placeholder="secret_..." autocomplete="off" />
+  <p class="hint">Create at <code>notion.so/my-integrations</code>. Share your Job Radar DB with it.</p>
+
+  <label for="notionDatabaseId">Database ID (32-char hex, with or without dashes)</label>
+  <input id="notionDatabaseId" type="text" autocomplete="off" />
+
+  <h2>2. GitHub (for on-demand tailoring)</h2>
+
+  <label for="githubToken">Personal access token</label>
+  <input id="githubToken" type="password" placeholder="ghp_... or github_pat_..." autocomplete="off" />
+  <p class="hint">Needs <code>workflow</code> or <code>actions:write</code> scope.</p>
+
+  <label for="githubRepo">Repo (<code>owner/name</code>)</label>
+  <input id="githubRepo" type="text" value="arsh398/job-radar" autocomplete="off" />
+
+  <h2>3. Profile (autofill defaults)</h2>
+
+  <label for="profile">JSON blob — edit your real values</label>
+  <textarea id="profile" spellcheck="false"></textarea>
+
+  <div class="row">
+    <button id="save">Save</button>
+    <span id="status" class="status"></span>
+  </div>
+
+  <h2>4. Install the bookmarklet</h2>
+  <p>Drag this link to your bookmarks bar:</p>
+  <p>
+    <a id="bookmarklet" class="bm-link" href="#" title="Drag me to your bookmarks bar">🎯 Apply Assist</a>
+  </p>
+  <p class="hint">The bookmarklet is under 400 bytes — it loads the real script from GitHub Pages on each click, so updates reach you without re-installing.</p>
+
+  <div class="note">
+    <strong>Arc / Safari tip:</strong> if the bookmarks bar isn't visible, open View menu → Show Bookmarks Bar. Chrome: <code>Cmd+Shift+B</code>.
+  </div>
+
+  <h2>5. How to use</h2>
+  <ol>
+    <li>Open any apply page on Greenhouse / Lever / Ashby / Workable / SmartRecruiters / Workday, or a signup/login portal.</li>
+    <li>Click the <strong>Apply Assist</strong> bookmark.</li>
+    <li>Panel appears top-right. Common fields autofill. If the URL matches a Notion row, tailored cover note + apply-form answers load.</li>
+    <li>If it's a new JD not in Notion: click <strong>Tailor for this URL</strong> → workflow runs → click the bookmark again after 2-3 min.</li>
+    <li>Drag the tailored PDF into the upload field manually (browser security blocks programmatic uploads).</li>
+    <li>Review, click Submit yourself.</li>
+  </ol>
+
+  <script>
+    const DEFAULT_PROFILE = {
+      firstName: "Mohammed Arsh",
+      lastName: "Khan",
+      fullName: "Mohammed Arsh Khan",
+      email: "mdarshkhan9898@gmail.com",
+      phone: "9131110480",
+      phoneCountryCode: "+91",
+      phoneFull: "+919131110480",
+      linkedin: "https://www.linkedin.com/in/mohammed-arsh-khan-03900121a/",
+      github: "https://github.com/arsh398",
+      githubSecondary: "https://github.com/ARSHKHAN98",
+      portfolio: "",
+      location: "Bangalore, India",
+      city: "Bangalore",
+      country: "India",
+      workAuthIndia: "Yes, I am authorized to work in India without sponsorship (citizen)",
+      workAuthUS: "No, I will require sponsorship",
+      workAuthUK: "No, I will require sponsorship",
+      workAuthEU: "No, I will require sponsorship",
+      workAuthCanada: "No, I will require sponsorship",
+      sponsorshipRequired: "Yes (outside India)",
+      passportHolder: "Yes",
+      noticePeriod: "60 days",
+      earliestStartDate: "2 months from offer",
+      expectedSalaryINR: "25 LPA",
+      expectedSalaryUSD: "$55,000",
+      willingToRelocate: "Yes",
+      workPreference: "Open to remote, hybrid, or office",
+      gender: "Male",
+      genderIdentity: "Man",
+      pronouns: "He/Him",
+      raceEthnicity: "Asian",
+      hispanicLatino: "No",
+      sexualOrientation: "Straight",
+      veteranStatus: "I am not a protected veteran",
+      disabilityStatus: "No, I do not have a disability",
+      felonyConviction: "No",
+      requireAccommodation: "No",
+      nonCompete: "No",
+      eligibleToWorkIndia: "Yes",
+      defaultPassword: "Arsh@123",
+      securityQuestionAnswer: "STUFU",
+      howDidYouHear: "LinkedIn",
+      yearsOfExperience: "2",
+      currentTitle: "Product Engineer",
+      currentCompany: "Juspay",
+      previousTitle: "Software Engineer",
+      previousCompany: "Avalara"
+    };
+
+    const fields = ["notionToken", "notionDatabaseId", "githubToken", "githubRepo"];
+
+    function load() {
+      for (const f of fields) {
+        const v = localStorage.getItem(f);
+        if (v) document.getElementById(f).value = v;
+      }
+      const p = localStorage.getItem("profile");
+      document.getElementById("profile").value = p
+        ? JSON.stringify(JSON.parse(p), null, 2)
+        : JSON.stringify(DEFAULT_PROFILE, null, 2);
+    }
+
+    function save() {
+      const status = document.getElementById("status");
+      for (const f of fields) {
+        localStorage.setItem(f, document.getElementById(f).value.trim());
+      }
+      const raw = document.getElementById("profile").value.trim();
+      if (raw) {
+        try { JSON.parse(raw); }
+        catch (err) {
+          status.textContent = "Profile JSON invalid: " + err.message;
+          status.style.color = "#dc2626";
+          return;
+        }
+        localStorage.setItem("profile", raw);
+      }
+      status.textContent = "Saved ✓";
+      status.style.color = "#16a34a";
+      setTimeout(() => { status.textContent = ""; }, 2500);
+    }
+
+    // Build the bookmarklet URL — loads the real bookmarklet script from
+    // GitHub Pages on every click so updates propagate without reinstall.
+    function buildBookmarklet() {
+      const src = location.href.replace(/[?#].*$/, "").replace(/\/$/, "") + "/bookmarklet.js";
+      const loader =
+        "(function(){var d=document,s=d.createElement('script');" +
+        "s.src=" + JSON.stringify(src) + "+'?v='+Date.now();" +
+        "d.body.appendChild(s);})();";
+      return "javascript:" + encodeURIComponent(loader);
+    }
+    document.getElementById("bookmarklet").href = buildBookmarklet();
+
+    // postMessage bridge — the bookmarklet opens a hidden iframe to this
+    // page with ?credrequest=1 to pull credentials + profile into the
+    // calling origin. We respond only if the request comes from our own
+    // iframe context (top window is the job site, this is the iframe).
+    if (location.search.includes("credrequest=1") && window.parent !== window) {
+      const payload = {
+        type: "apply-assist-creds",
+        notionToken: localStorage.getItem("notionToken") || "",
+        notionDatabaseId: localStorage.getItem("notionDatabaseId") || "",
+        githubToken: localStorage.getItem("githubToken") || "",
+        githubRepo: localStorage.getItem("githubRepo") || "",
+        profile: localStorage.getItem("profile")
+          ? JSON.parse(localStorage.getItem("profile"))
+          : null,
+      };
+      // Post to parent without origin check — parent is the job site,
+      // which is arbitrary. The bookmarklet filters by `type` on receive.
+      window.parent.postMessage(payload, "*");
+    }
+
+    document.getElementById("save").addEventListener("click", save);
+    load();
+  </script>
+</body>
+</html>
