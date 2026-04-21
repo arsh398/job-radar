@@ -121,12 +121,30 @@ function sourceOf(alert: JobAlert): string {
 
 // ---------- public API ----------
 
-// Slim property set: only the triage signals that deserve a column.
+// Slim property set: only the triage signals that deserve a column, plus
+// the bookmarklet-facing Prefill Data blob and observability properties
+// for later A/B analysis.
+//
+// NOTE: these new properties must exist in the Notion DB. If you don't
+// have them yet, add as follows (type shown):
+//   - "Prefill Data"    rich_text   (bookmarklet reads this JSON)
+//   - "Prompt Version"  select      (enum of prompt semantic versions)
+//   - "Resume Variant"  select      (default / ai / backend / frontend)
+//   - "Quality Warnings" rich_text  (recruiter-quality check results)
+//   - "Applied At"      date        (stamped by extension on Mark Applied)
+//   - "Response Type"   select      (None / Auto-reject / Human / Interview)
+//   - "Response At"     date        (manually filled when you hear back)
+// Missing properties are silently ignored by Notion on write (they just
+// won't store), so the code is safe to deploy before the DB schema is
+// updated.
 export function buildProperties(
   alert: JobAlert,
   pdfUploads: Array<{ uploadId: string; attachment: PdfAttachment }>
 ): AnyProp {
   const verdict = alert.llm.ok ? alert.llm.data.verdict : "unknown";
+  const qwSummary = alert.qualityWarnings?.length
+    ? `${alert.qualityWarnings.length} warning(s): ${alert.qualityWarnings.slice(0, 3).join(" | ")}`
+    : "";
   return {
     Name: title(`${alert.job.company} — ${alert.job.title}`),
     Status: select("New"),
@@ -142,6 +160,11 @@ export function buildProperties(
       }))
     ),
     Key: richText(alert.job.key),
+    // New observability + bookmarklet-support properties:
+    "Prefill Data": richText(alert.prefillData),
+    "Prompt Version": select(alert.promptVersion),
+    "Resume Variant": select(alert.profileName),
+    "Quality Warnings": richText(qwSummary),
   };
 }
 
@@ -212,6 +235,44 @@ export function buildChildren(alert: JobAlert): AnyBlock[] {
   if (cover) {
     blocks.push(headingBlock("Cover Note"));
     blocks.push(codeBlock(cover));
+  }
+
+  // Pre-generated apply-form answers. Each rendered as its own labeled
+  // code block for easy copy-paste into the actual form. Bookmarklet
+  // reads the same data from the "Prefill Data" property.
+  const pfa = plan?.prefill_answers;
+  if (pfa) {
+    const answerPairs: Array<[string, string]> = [
+      ["Why this company?", pfa.why_company],
+      ["Why this role?", pfa.why_role],
+      ["Most challenging project", pfa.challenging_proj],
+      ["Most impactful project", pfa.impactful_proj],
+      ["Failure story", pfa.failure_story],
+      ["Strengths", pfa.strengths],
+      ["Why leaving current role?", pfa.why_leaving],
+      ["AI / LLM experience", pfa.ai_experience],
+    ];
+    const filled = answerPairs.filter(([, v]) => v && v.trim());
+    if (filled.length) {
+      blocks.push(headingBlock("Apply-Form Answers"));
+      for (const [label, text] of filled) {
+        blocks.push(paragraphBlock(`▸ ${label}`));
+        blocks.push(codeBlock(text.trim()));
+      }
+    }
+  }
+
+  // Quality warnings block — visible at-a-glance before sending.
+  if (alert.qualityWarnings?.length) {
+    blocks.push(headingBlock("⚠ Quality Warnings"));
+    blocks.push(
+      paragraphBlock(
+        `${alert.qualityWarnings.length} check(s) failed — review cover note and prefill answers before sending:`
+      )
+    );
+    for (const w of alert.qualityWarnings.slice(0, 10)) {
+      blocks.push(bulletedListBlock(w));
+    }
   }
 
   return blocks;

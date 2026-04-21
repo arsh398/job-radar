@@ -24,6 +24,9 @@ import { loadProfiles, pickProfile } from "./resume/profiles.ts";
 import type { ResumeProfile } from "./resume/profiles.ts";
 import { applyPlan } from "./resume/apply.ts";
 import { computeAtsMatch } from "./filters/ats_match.ts";
+import { detectGhost } from "./filters/ghost.ts";
+import { runQualityChecks } from "./llm/validator.ts";
+import { PROMPT_VERSION } from "./llm/prompt.ts";
 import { computeFitScore } from "./match/score.ts";
 import { embedText } from "./match/embeddings.ts";
 import { renderMarkdownToPdf, closePdfBrowser } from "./pdf/render.ts";
@@ -55,12 +58,13 @@ const MAX_AGE_DAYS = Number(process.env["MAX_AGE_DAYS"] ?? 14);
 const ENABLE_PDF = process.env["ENABLE_PDF"] !== "0";
 const ENABLE_TELEGRAM = process.env["ENABLE_TELEGRAM"] !== "0";
 const ENABLE_NOTION = process.env["ENABLE_NOTION"] !== "0";
-// Confidence threshold — the only real gate into LLM scoring. 0.20 is
-// calibrated against observed fit distributions: below 0.20 is typically
-// ats=0% noise (JDs matched only by neutral YOE default), above 0.20 has
-// real ATS overlap or semantic signal. Every confident match above this
-// threshold gets an LLM opinion, no top-N arbitrary cutoff.
-const MIN_FIT_FOR_LLM = Number(process.env["MIN_FIT_FOR_LLM"] ?? 0.2);
+// Confidence threshold — the only real gate into LLM scoring. Raised to
+// 0.30 for a quality-first apply strategy: fewer, stronger matches flow
+// through to the LLM + tailoring + Notion. Below 0.30 is typically weak
+// ATS overlap + neutral YOE + middling semantic fit, which produces
+// generic tailoring and wasted apply attempts. Every match clearing
+// 0.30 gets an LLM opinion.
+const MIN_FIT_FOR_LLM = Number(process.env["MIN_FIT_FOR_LLM"] ?? 0.3);
 
 function normalize(s: string): string {
   return (s ?? "").toLowerCase().replace(/\s+/g, " ").trim();
@@ -166,9 +170,30 @@ async function main(): Promise<void> {
   const { passed: passedUnsorted, stats, dropReasons } = applyFilters(fresh, {
     maxAgeDays: MAX_AGE_DAYS,
   });
+
+  // Ghost-job filter — deterministic, no LLM. Drops postings that are
+  // stale, boilerplate-heavy, or vague (likely filled/template reqs).
+  let ghostDropped = 0;
+  const afterGhost = passedUnsorted.filter((job) => {
+    const g = detectGhost(job);
+    if (g.isGhost) {
+      ghostDropped++;
+      if (ghostDropped <= 5) {
+        console.log(
+          `[ghost] drop ${job.company} — ${job.title} (score=${g.score.toFixed(2)}, ${g.reasons.join("; ")})`
+        );
+      }
+      return false;
+    }
+    return true;
+  });
+  if (ghostDropped > 0) {
+    console.log(`[job-radar] ghost filter dropped ${ghostDropped} jobs`);
+  }
+
   // Sort newest-first. No per-company cap — every confident match flows
   // through, even if a single company dominates the batch.
-  const capped = [...passedUnsorted].sort((a, b) => {
+  const capped = [...afterGhost].sort((a, b) => {
     const ta = a.postedAt ? Date.parse(a.postedAt) : 0;
     const tb = b.postedAt ? Date.parse(b.postedAt) : 0;
     return tb - ta;
@@ -185,12 +210,27 @@ async function main(): Promise<void> {
     profile: ResumeProfile;
   };
   const enriched: Enriched[] = [];
+  let embeddingOk = 0;
+  let embeddingMiss = 0;
   for (const job of capped) {
     const jdText = job.descriptionMd || job.description;
     const picked = await pickProfile(profiles, jdText, job.track);
     const atsMatch = computeAtsMatch(jdText, picked.profile.md);
     const fit = await computeFitScore(job, atsMatch, picked.profile.embedding);
+    if (fit.semantic > 0) embeddingOk++;
+    else embeddingMiss++;
     enriched.push({ job, atsMatch, fit, profile: picked.profile });
+  }
+  if (capped.length > 0) {
+    const rate = embeddingOk / capped.length;
+    console.log(
+      `[job-radar] embedding health: ${embeddingOk}/${capped.length} scored (${(rate * 100).toFixed(0)}% ok, ${embeddingMiss} missing)`
+    );
+    if (rate < 0.8) {
+      console.warn(
+        `[job-radar] ⚠ embedding health low — GOOGLE_AI_STUDIO_API_KEY may be missing or rate-limited. Pre-rank is ATS+YOE only, semantic signal is degraded.`
+      );
+    }
   }
 
   // Rank by fit, drop sub-threshold jobs, then cap for cost safety. The
@@ -316,6 +356,34 @@ async function main(): Promise<void> {
       }
     }
 
+    // Recruiter-quality checks — surface warnings in Notion so Mohammed
+    // knows which rows need eyeballing before send. Does not block send.
+    const qualityResults = llm.ok ? runQualityChecks(llm.data, job) : [];
+    const qualityWarnings = qualityResults
+      .filter((r) => !r.passes)
+      .flatMap((r) => r.warnings.map((w) => `${r.field}: ${w}`));
+    if (qualityWarnings.length) {
+      console.warn(
+        `[quality] ${job.company} — ${job.title}: ${qualityWarnings.length} warnings`
+      );
+      for (const w of qualityWarnings.slice(0, 5)) console.warn(`  - ${w}`);
+    }
+
+    // Prefill Data — everything the bookmarklet needs to autofill the
+    // apply form. Kept as a compact JSON string; the extension parses it.
+    const prefillAnswers = llm.ok ? llm.data.prefill_answers : null;
+    const prefillData = JSON.stringify({
+      version: PROMPT_VERSION,
+      answers: prefillAnswers ?? {},
+      // Profile hints the extension can fall back on if the user's
+      // browser profile JSON is missing a field (e.g. early setup).
+      standard_hints: {
+        cover_note: llm.ok ? llm.data.cover_note : "",
+        referral_draft: llm.ok ? llm.data.referral_draft : "",
+        why_company_summary: prefillAnswers?.why_company ?? "",
+      },
+    });
+
     const alert: JobAlert = {
       job,
       llm,
@@ -323,6 +391,9 @@ async function main(): Promise<void> {
       fit,
       profileName: profile.name,
       pdfs,
+      qualityWarnings,
+      promptVersion: PROMPT_VERSION,
+      prefillData,
     };
     if (!shouldAlert(llm)) {
       console.log(

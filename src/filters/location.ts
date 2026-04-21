@@ -1,15 +1,15 @@
-// Location match — three-tier:
-//   - "india"              : explicit India city/word → accept (highest confidence)
-//   - "global_remote"      : worldwide/global/anywhere terms → accept (high)
-//   - "remote_unqualified" : "Remote" alone, no disqualifying region → accept
-//                            with the caveat that LLM may later mark skip if
-//                            the JD itself demands US/EU work authorization
-//   - "no_match"           : explicit region-only (US-only, EMEA, etc) → drop
+// Location match — two-tier:
+//   - "india"         : explicit India city/word → accept (highest confidence)
+//   - "global_remote" : worldwide/global/anywhere (India-eligible by language) → accept
+//   - "no_match"      : everything else — region-only remote (US/EMEA/etc),
+//                       "Remote" without qualifier (usually US-auth-required),
+//                       non-remote geos → drop
 //
-// Rationale: the previous strict rule ("Remote must be paired with India or
-// 'global'") killed 60–70% of genuinely India-eligible remote roles. Most
-// startups list "Remote" without specifying region. We now accept unqualified
-// remote and let the LLM reality-check work-authorization requirements.
+// Rationale: after measuring, the "unqualified Remote" pass-through we had
+// before was leaking 70%+ US-only postings (the JD body reveals US work
+// authorization even when the location says "Remote"). These polluted
+// Notion and burned LLM budget on jobs he can't take. For low-volume /
+// high-quality apply, explicit India or worldwide wording is required.
 
 const INDIA_PATTERNS = [
   /\bindia\b/i,
@@ -63,9 +63,7 @@ const REGION_ONLY_REMOTE_RE = new RegExp(
   "i"
 );
 
-const REMOTE_RE = /\bremote\b/i;
-
-export type LocationMatch = "india" | "global_remote" | "remote_unqualified" | "no_match";
+export type LocationMatch = "india" | "global_remote" | "no_match";
 
 export function matchLocation(location: string): LocationMatch {
   if (!location) return "no_match";
@@ -83,13 +81,9 @@ export function matchLocation(location: string): LocationMatch {
     if (APAC_INDIA_PATTERNS.some((p) => p.test(part))) return "global_remote";
   }
 
-  // 3. Explicit region-only remote (US-only, EMEA, etc) → drop. Checked
-  //    BEFORE unqualified-remote so we don't accept "Remote - US".
-  if (REGION_ONLY_REMOTE_RE.test(text)) return "no_match";
-
-  // 4. Plain "Remote" without a disqualifying region → accept with caveat.
-  //    LLM pass may still mark skip if JD body demands local auth.
-  if (REMOTE_RE.test(text)) return "remote_unqualified";
-
+  // 3. Everything else → drop. Includes region-only remotes (US-only,
+  //    EMEA, etc.) and unqualified "Remote" that historically resolves
+  //    to region-locked JDs. If a role really is India-eligible, the
+  //    posting will say so explicitly.
   return "no_match";
 }

@@ -19,6 +19,8 @@ import { computeAtsMatch } from "../src/filters/ats_match.ts";
 import { computeFitScore } from "../src/match/score.ts";
 import { embedText } from "../src/match/embeddings.ts";
 import { tailorForJob } from "../src/llm/index.ts";
+import { runQualityChecks } from "../src/llm/validator.ts";
+import { PROMPT_VERSION } from "../src/llm/prompt.ts";
 import { renderMarkdownToPdf, closePdfBrowser } from "../src/pdf/render.ts";
 import { sendAlertToNotion } from "../src/notion/index.ts";
 import { getJson, postJson } from "../src/sources/http.ts";
@@ -461,6 +463,26 @@ async function main(): Promise<void> {
     }
   }
 
+  const qualityResults = llm.ok ? runQualityChecks(llm.data, filtered) : [];
+  const qualityWarnings = qualityResults
+    .filter((r) => !r.passes)
+    .flatMap((r) => r.warnings.map((w) => `${r.field}: ${w}`));
+  if (qualityWarnings.length) {
+    console.warn(`[tailor-one] ${qualityWarnings.length} quality warning(s)`);
+    for (const w of qualityWarnings.slice(0, 5)) console.warn(`  - ${w}`);
+  }
+
+  const prefillAnswers = llm.ok ? llm.data.prefill_answers : null;
+  const prefillData = JSON.stringify({
+    version: PROMPT_VERSION,
+    answers: prefillAnswers ?? {},
+    standard_hints: {
+      cover_note: llm.ok ? llm.data.cover_note : "",
+      referral_draft: llm.ok ? llm.data.referral_draft : "",
+      why_company_summary: prefillAnswers?.why_company ?? "",
+    },
+  });
+
   const alert: JobAlert = {
     job: filtered,
     llm,
@@ -468,6 +490,9 @@ async function main(): Promise<void> {
     fit,
     profileName: picked.profile.name,
     pdfs,
+    qualityWarnings,
+    promptVersion: PROMPT_VERSION,
+    prefillData,
   };
 
   await sendAlertToNotion(alert);
