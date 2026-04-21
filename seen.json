@@ -924,6 +924,11 @@
     "company": "Amazon",
     "title": "Virtual Customer Support Associate - Delhi, India"
   },
+  "amazon:a0Rar000002ZFKnEAO": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Amazon",
+    "title": "Customer Service Associate - Pune, India (Work from Office)"
+  },
   "amazon:a28ab5d5-26f9-4a06-aa47-6d60c000fdde": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
@@ -933,6 +938,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
     "title": "Team Lead, AMXL"
+  },
+  "amazon:a336ab36-9bd8-44ab-83a7-8325abc0993f": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Amazon",
+    "title": "Listing Specialist , International Seller Growth"
   },
   "amazon:a3da3050-4494-41b0-b7ef-91822f5e8bda": {
     "firstSeen": "2026-04-20T13:26:29.603Z",
@@ -17699,6 +17709,11 @@
     "company": "Celonis",
     "title": "Senior Customer Support Engineer"
   },
+  "greenhouse:celonis:7709606003": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Celonis",
+    "title": "Applied AI Solution Consultant Intern (UKI Market)"
+  },
   "greenhouse:chime:8112504002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Chime",
@@ -24723,6 +24738,11 @@
     "firstSeen": "2026-04-18T04:55:32.862Z",
     "company": "Databricks",
     "title": "Named Core Account Executive - Energy"
+  },
+  "greenhouse:databricks:8462016002": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Databricks",
+    "title": "Data & AI Platform Architect (Professional Services)"
   },
   "greenhouse:databricks:8462697002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -40029,6 +40049,11 @@
     "company": "MongoDB",
     "title": "Engineer 3 - CPQ"
   },
+  "greenhouse:mongodb:7779019": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "MongoDB",
+    "title": "Engineer 3 - CPQ"
+  },
   "greenhouse:mongodb:7779026": {
     "firstSeen": "2026-04-20T08:05:34.211Z",
     "company": "MongoDB",
@@ -40198,6 +40223,11 @@
     "firstSeen": "2026-04-20T20:10:39.388Z",
     "company": "MongoDB",
     "title": "Strategic Customer Success Manager"
+  },
+  "greenhouse:mongodb:7829707": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "MongoDB",
+    "title": "Partner Programs Lead"
   },
   "greenhouse:mongodb:7830989": {
     "firstSeen": "2026-04-20T11:51:56.663Z",
@@ -52149,6 +52179,11 @@
     "company": "Thoughtworks",
     "title": "Principal Data Architect"
   },
+  "greenhouse:thoughtworks:7693175": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Thoughtworks",
+    "title": "Senior Developer (Golang, AWS, React) "
+  },
   "greenhouse:thoughtworks:7694200": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Thoughtworks",
@@ -56473,6 +56508,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Paytm",
     "title": "Deputy Manager-Manager- Risk Management (Commodities)Paytm Money"
+  },
+  "lever:paytm:05fe181e-428b-4cc7-afab-373fbc90f19e": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Paytm",
+    "title": "Area Collection Manager - Manager - Lending Collections (EM Recovery)"
   },
   "lever:paytm:07f65ed4-d191-4e35-9783-edd97d089dbb": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -60804,6 +60844,41 @@
     "company": "Bosch",
     "title": "Werkstudent im (System-) Testing industrieller Presssysteme (w/m/div.)"
   },
+  "smartrecruiters:BoschGroup:744000122003717": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Bosch",
+    "title": "Werkstudent im (System-) Testing industrieller Presssysteme (w/m/div.)"
+  },
+  "smartrecruiters:BoschGroup:744000122004402": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Bosch",
+    "title": "Teamleiter im Service Center für einen Premium-Automobilhersteller (w/m/div.)"
+  },
+  "smartrecruiters:BoschGroup:744000122005138": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Bosch",
+    "title": "IN_DCIN_Bosch Rexroth India_Senior Manager/Manager_Bangalore"
+  },
+  "smartrecruiters:BoschGroup:744000122005662": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Bosch",
+    "title": "Fleet Concept Manager"
+  },
+  "smartrecruiters:BoschGroup:744000122007227": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Bosch",
+    "title": "[ESC XC-NE] Hardware related Software Engineer (HN)"
+  },
+  "smartrecruiters:BoschGroup:744000122011837": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Bosch",
+    "title": "Group Manager: Software Engineering for Cloud-based Industrial AI and Software Applications"
+  },
+  "smartrecruiters:BoschGroup:744000122011987": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Bosch",
+    "title": "Group Manager: Artificial Intelligence"
+  },
   "smartrecruiters:Visa:744000120780707": {
     "firstSeen": "2026-04-18T21:34:04.755Z",
     "company": "Visa Inc",
@@ -63544,6 +63619,11 @@
     "company": "CrowdStrike",
     "title": "Manager, Corporate Sales - North"
   },
+  "workday:crowdstrike:R27482": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "CrowdStrike",
+    "title": "DevOps II - CICD - SDA"
+  },
   "workday:crowdstrike:R27494": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "CrowdStrike",
@@ -64047,6 +64127,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "HP",
     "title": "North America Consumer and Gaming Creator Lead"
+  },
+  "workday:hp:3161618": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "HP",
+    "title": "Support to Chief Of Staff - Intern"
   },
   "workday:hp:3161955": {
     "firstSeen": "2026-04-20T16:41:00.570Z",
@@ -64847,6 +64932,11 @@
     "company": "Mastercard",
     "title": "Lead Technical Program Manager"
   },
+  "workday:mastercard:R-274354": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Mastercard",
+    "title": "Associate Managing Consultant, Advisors & Consulting Services, Strategy & Transformation"
+  },
   "workday:mastercard:R-274452": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Mastercard",
@@ -65016,6 +65106,11 @@
     "firstSeen": "2026-04-21T11:17:40.182Z",
     "company": "Mastercard",
     "title": "Senior Accountant - Controller"
+  },
+  "workday:mastercard:R-275113": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Mastercard",
+    "title": "Software Engineer - Workday Integrations"
   },
   "workday:mastercard:R-275114": {
     "firstSeen": "2026-04-20T16:41:00.570Z",
@@ -66276,6 +66371,11 @@
     "company": "Micron",
     "title": "FY26 Hiring RDA NPI Process Engineer"
   },
+  "workday:micron:JR98823": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Micron",
+    "title": "MGR, F16 ME DE"
+  },
   "workday:micron:JR98825": {
     "firstSeen": "2026-04-20T02:31:31.176Z",
     "company": "Micron",
@@ -66300,6 +66400,11 @@
     "firstSeen": "2026-04-18T04:55:32.862Z",
     "company": "Micron",
     "title": "HBM Talent Pool – Engineering, Manufacturing & Facilities (HBM人才專區-台中后里)"
+  },
+  "workday:micron:JR99070": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Micron",
+    "title": "Intern - Photolithography Process Development"
   },
   "workday:micron:JR99099": {
     "firstSeen": "2026-04-20T08:05:34.211Z",
@@ -68215,6 +68320,11 @@
     "company": "Salesforce",
     "title": "Sr. Software Manager - Network"
   },
+  "workday:salesforce:JR329656": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Salesforce",
+    "title": "Product Strategy Lead, Missionforce"
+  },
   "workday:salesforce:JR329680": {
     "firstSeen": "2026-04-20T08:05:34.211Z",
     "company": "Salesforce",
@@ -68730,6 +68840,11 @@
     "company": "Salesforce",
     "title": "Technical Business Analyst (CPQ), Product & Pricing Ops"
   },
+  "workday:salesforce:JR338639": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Salesforce",
+    "title": "Workplace Services Analyst"
+  },
   "workday:salesforce:JR338664": {
     "firstSeen": "2026-04-20T16:41:00.570Z",
     "company": "Salesforce",
@@ -68970,6 +69085,11 @@
     "company": "Target India",
     "title": "Seasonal Full Time Hourly Warehouse Worker Openings Only (T0600)"
   },
+  "workday:target:R0000400300": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Target India",
+    "title": "Seasonal Full Time Hourly Warehouse Operations Openings (T0590)"
+  },
   "workday:target:R0000400301": {
     "firstSeen": "2026-04-21T11:17:40.182Z",
     "company": "Target India",
@@ -68995,6 +69115,11 @@
     "company": "Target India",
     "title": "Full Time Hourly Warehouse Operations Openings (T3802)"
   },
+  "workday:target:R0000422633": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Target India",
+    "title": "Full Time Hourly Warehouse Operations Hiring both Overnight and Weekend Shifts (T0589)"
+  },
   "workday:target:R0000425205": {
     "firstSeen": "2026-04-20T21:10:47.232Z",
     "company": "Target India",
@@ -69005,6 +69130,11 @@
     "company": "Target India",
     "title": "Store Director (Store Manager) - Columbus, OH"
   },
+  "workday:target:R0000427293": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Target India",
+    "title": "Seasonal Full Time Hourly Warehouse Operations Openings (T3803)"
+  },
   "workday:target:R0000427296": {
     "firstSeen": "2026-04-21T11:17:40.182Z",
     "company": "Target India",
@@ -69014,6 +69144,11 @@
     "firstSeen": "2026-04-20T23:09:22.479Z",
     "company": "Target India",
     "title": "Director, Solutions Go-To-Market (Roundel)"
+  },
+  "workday:target:R0000427582": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Target India",
+    "title": "Warehouse Worker - Food Distribution Center (T3727)"
   },
   "workday:target:R0000429888": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -69119,6 +69254,11 @@
     "firstSeen": "2026-04-21T03:51:07.459Z",
     "company": "Target India",
     "title": "Operations Manager - Regional Distribution Center - Fontana, California"
+  },
+  "workday:target:R0000434934": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Target India",
+    "title": "Full time Hourly Warehouse Operations Hiring Evening/Overnight Shifts (T0560)"
   },
   "workday:target:R0000434966": {
     "firstSeen": "2026-04-21T10:00:31.304Z",
@@ -69244,6 +69384,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Target India",
     "title": "Executive Team Leader Assets Protection (Assistant Manager Loss Prevention) - Moorpark, CA"
+  },
+  "workday:target:R0000435531": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Target India",
+    "title": "Lead Specialist Property Mgmt"
   },
   "workday:target:R0000435534": {
     "firstSeen": "2026-04-20T10:16:06.886Z",
@@ -69695,6 +69840,11 @@
     "company": "Target India",
     "title": "Target Security Specialist"
   },
+  "workday:target:R0000435982": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Target India",
+    "title": "Target Security Specialist"
+  },
   "workday:target:R0000435983": {
     "firstSeen": "2026-04-21T10:00:31.304Z",
     "company": "Target India",
@@ -69759,6 +69909,11 @@
     "firstSeen": "2026-04-21T08:17:08.668Z",
     "company": "Target India",
     "title": "Human Resources Expert"
+  },
+  "workday:target:R0000436002": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Target India",
+    "title": "Target Security Specialist"
   },
   "workday:target:R0000436005": {
     "firstSeen": "2026-04-20T19:06:43.880Z",
@@ -69830,6 +69985,11 @@
     "company": "Target India",
     "title": "Target Security Specialist"
   },
+  "workday:target:R0000436052": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Target India",
+    "title": "Human Resources Expert"
+  },
   "workday:target:R0000436058": {
     "firstSeen": "2026-04-20T22:09:16.861Z",
     "company": "Target India",
@@ -69864,6 +70024,41 @@
     "firstSeen": "2026-04-21T06:02:25.193Z",
     "company": "Target India",
     "title": "Target Security Specialist"
+  },
+  "workday:target:R0000436096": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Target India",
+    "title": "4am Inbound (Stocking) (T1011)"
+  },
+  "workday:target:R0000436097": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Target India",
+    "title": "4am Inbound (Stocking) (T0830)"
+  },
+  "workday:target:R0000436098": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Target India",
+    "title": "Seasonal: 4am Inbound (Stocking) (T1288)"
+  },
+  "workday:target:R0000436099": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Target India",
+    "title": "Seasonal: 6am Inbound (Stocking) (T1288)"
+  },
+  "workday:target:R0000436101": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Target India",
+    "title": "Seasonal: Overnight Inbound (Stocking) (T1288)"
+  },
+  "workday:target:R0000436103": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Target India",
+    "title": "4am Inbound (Stocking) (T2501)"
+  },
+  "workday:target:R0000436104": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Target India",
+    "title": "4am Inbound (Stocking) (T1237)"
   },
   "workday:walmart:R-128829": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -70310,6 +70505,11 @@
     "company": "Workday",
     "title": "Software Development Engineer - Site Reliability - DevOps"
   },
+  "workday:workday:JR-0106115": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Workday",
+    "title": "Sr HCM Solution Consultant"
+  },
   "workday:workday:JR-0106120": {
     "firstSeen": "2026-04-20T17:57:06.553Z",
     "company": "Workday",
@@ -70404,6 +70604,11 @@
     "firstSeen": "2026-04-21T11:17:40.182Z",
     "company": "Workday",
     "title": "Sr Software Engineer - Sana"
+  },
+  "workday:workday:JR-0106415": {
+    "firstSeen": "2026-04-21T12:14:30.827Z",
+    "company": "Workday",
+    "title": "Sr Machine Learning Engineer"
   },
   "workday:workday:JR-0106423": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
