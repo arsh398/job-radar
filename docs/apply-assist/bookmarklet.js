@@ -142,8 +142,12 @@
       labels: ["last name","family name","surname"], type: null, key: "lastName",
     },
     full_name: {
-      aliases: ["fullName","full_name","full-name","name","candidate_name","applicant_name","your_name","candidate[name]"],
-      labels: ["full name","your name","name"], type: null, key: "fullName",
+      // Removed bare "name" alias — too ambiguous, substring-matches in
+      // fields like "company_name", "school_name". We now match "name"
+      // only via the exact-name check (el.name === "name") and via
+      // specific label "full name".
+      aliases: ["fullName","full_name","full-name","candidate_name","applicant_name","your_name","candidate[name]"],
+      labels: ["full name","your name"], type: null, key: "fullName",
     },
     email: {
       aliases: ["email","emailAddress","email_address","e-mail","_systemfield_email","candidate_email","applicant_email","job_application[email]"],
@@ -182,12 +186,18 @@
       labels: ["years of experience","experience (years)","yoe","total experience"], type: null, key: "yearsOfExperience",
     },
     notice: {
-      aliases: ["noticePeriod","notice_period","notice"],
-      labels: ["notice period","notice","when can you start"], type: null, key: "noticePeriod",
+      // Removed ambiguous bare "notice" alias and label — was matching
+      // things like "Legal notices" acknowledgment checkboxes.
+      aliases: ["noticePeriod","notice_period"],
+      labels: ["notice period"], type: null, key: "noticePeriod",
     },
     earliest_start: {
-      aliases: ["earliestStartDate","start_date","availableFrom"],
-      labels: ["earliest start","start date","available from","when can you join"], type: null, key: "earliestStartDate",
+      // Tightened: bare "start date" / "start_date" also match work-
+      // history rows' Start Date columns which are actual date pickers,
+      // not free-text. Require the stronger phrasing.
+      aliases: ["earliestStartDate","earliestStart","availableFrom","available_from"],
+      labels: ["earliest start","available from","when can you join","when can you start","earliest you can start"],
+      type: null, key: "earliestStartDate",
     },
     expected_salary_inr: {
       aliases: ["expectedSalary","expected_salary","salaryExpectation","ctc","expected_ctc"],
@@ -370,21 +380,71 @@
     return best;
   }
 
+  // Per-input best-match fill. Previously iterated per-spec and let the
+  // first high-score match steal the input, which meant full_name's
+  // substring match on "name" could claim Company fields before
+  // current_company had a chance to match them stronger.
+  //
+  // New algorithm: for each input, find the spec with the highest score
+  // across ALL specs. Sort matches by score desc, fill one per spec key
+  // (so a single currentCompany value only fills the first Company-
+  // looking input, not both [0] and [1]).
+  //
+  // Also skip type="date" inputs — profile values are strings like
+  // "2 months from offer", not ISO dates.
   function fillStandardFields(profile) {
-    if (!profile) return 0;
+    if (!profile) return { filled: 0, detail: [] };
     const fullName = profile.fullName || [profile.firstName, profile.lastName].filter(Boolean).join(" ");
     const enriched = Object.assign({}, profile, { fullName });
+
+    const inputs = document.querySelectorAll("input, select, textarea");
+    const specEntries = Object.entries(FIELD_MAP);
+    const candidates = [];
+
+    for (const el of inputs) {
+      if (el.disabled || el.readOnly) continue;
+      if (el.value && el.tagName !== "SELECT") continue;
+      const t = (el.type || "").toLowerCase();
+      if (["hidden","submit","button","file","checkbox","radio","date","datetime-local","month","week","time"].includes(t)) continue;
+
+      let bestKey = null, bestScore = 0;
+      for (const [k, spec] of specEntries) {
+        const s = matchesField(el, spec);
+        if (s > bestScore) { bestKey = k; bestScore = s; }
+      }
+      if (bestKey && bestScore > 0) candidates.push({ el, specKey: bestKey, score: bestScore });
+    }
+
+    candidates.sort((a, b) => b.score - a.score);
+
+    const usedSpecKeys = new Set();
+    // Password + confirm should both fill from defaultPassword.
+    const MULTI_FILL_KEYS = new Set(["password_confirm"]);
     let filled = 0;
-    const used = new WeakSet();
-    for (const spec of Object.values(FIELD_MAP)) {
+    const detail = [];
+
+    for (const { el, specKey, score } of candidates) {
+      const spec = FIELD_MAP[specKey];
       const value = enriched[spec.key];
       if (!value) continue;
-      const el = findField(spec, used);
-      if (el) {
-        if (setValue(el, value)) { used.add(el); filled++; }
+      if (usedSpecKeys.has(specKey) && !MULTI_FILL_KEYS.has(specKey)) continue;
+      if (setValue(el, value)) {
+        usedSpecKeys.add(specKey);
+        filled++;
+        detail.push({
+          spec: specKey,
+          score,
+          value: String(value).slice(0, 60),
+          field: (el.name || el.id || "(unnamed)").slice(0, 60),
+        });
       }
     }
-    return filled;
+    // Log to console so it's easy to debug which fields got what.
+    if (window.console && console.table && detail.length) {
+      console.log("%c[apply-assist] filled:", "color:#2563eb;font-weight:bold");
+      console.table(detail);
+    }
+    return { filled, detail };
   }
 
   function fillPrefillAnswers(answers) {
@@ -589,7 +649,7 @@
         setPanel(`<div class="jr-pill jr-pill-warn">Not configured</div><div class="jr-muted">Open <a href="${SETUP_URL}" target="_blank" style="color:#93c5fd">the setup page</a>, save your creds, then re-drag the 🎯 Apply Assist link to replace this bookmark. Credentials are baked into the URL — the old bookmark has no data.</div>`);
         return;
       }
-      const stdFilled = fillStandardFields(creds.profile);
+      const { filled: stdFilled } = fillStandardFields(creds.profile);
 
       let page = null;
       if (creds.notionDatabaseId) {
