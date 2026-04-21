@@ -6784,6 +6784,11 @@
     "company": "Poolside",
     "title": "Member of Engineering (Scalability)"
   },
+  "ashby:poolside:7662c253-27bf-4a64-a52a-ecd221887993": {
+    "firstSeen": "2026-04-21T22:37:30.210Z",
+    "company": "Poolside",
+    "title": "Member of Engineering (Post-training)"
+  },
   "ashby:poolside:819757ab-8e03-4c7b-8fed-be7451372cb4": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Poolside",
@@ -15018,6 +15023,11 @@
     "firstSeen": "2026-04-20T23:09:22.479Z",
     "company": "Anthropic",
     "title": "Enterprise Account Executive, Federal Civilian Sales"
+  },
+  "greenhouse:anthropic:5194769008": {
+    "firstSeen": "2026-04-21T22:37:30.210Z",
+    "company": "Anthropic",
+    "title": "Head of Portfolio Marketing "
   },
   "greenhouse:anthropic:5194827008": {
     "firstSeen": "2026-04-21T19:46:01.727Z",
@@ -25834,6 +25844,16 @@
     "company": "Databricks",
     "title": "Manager, AI Forward Deployed Engineering (FDE)"
   },
+  "greenhouse:databricks:8517555002": {
+    "firstSeen": "2026-04-21T22:37:30.210Z",
+    "company": "Databricks",
+    "title": "Staff Software Engineer- Public Sector"
+  },
+  "greenhouse:databricks:8517577002": {
+    "firstSeen": "2026-04-21T22:37:30.210Z",
+    "company": "Databricks",
+    "title": "Sr Production Engineer- Public Sector"
+  },
   "greenhouse:datadog:1497543": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Datadog",
@@ -36244,6 +36264,11 @@
     "company": "Gusto",
     "title": "Summer Opportunities - Retirement Sales AE"
   },
+  "greenhouse:gusto:7834234": {
+    "firstSeen": "2026-04-21T22:37:30.210Z",
+    "company": "Gusto",
+    "title": "Partner Manager"
+  },
   "greenhouse:gusto:7838275": {
     "firstSeen": "2026-04-21T16:59:23.076Z",
     "company": "Gusto",
@@ -37959,10 +37984,20 @@
     "company": "Lyft",
     "title": "Senior Product Manager - Autonomous Vehicles (AV) "
   },
+  "greenhouse:lyft:8514400002": {
+    "firstSeen": "2026-04-21T22:37:30.210Z",
+    "company": "Lyft",
+    "title": "Data Analyst - Global Growth Luxury Strategy"
+  },
   "greenhouse:lyft:8514419002": {
     "firstSeen": "2026-04-20T21:10:47.232Z",
     "company": "Lyft",
     "title": "Operations Associate"
+  },
+  "greenhouse:lyft:8514422002": {
+    "firstSeen": "2026-04-21T22:37:30.210Z",
+    "company": "Lyft",
+    "title": "Senior Analyst, Global Expansion Strategy"
   },
   "greenhouse:lyft:8515037002": {
     "firstSeen": "2026-04-20T16:41:00.570Z",
@@ -39378,6 +39413,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "MongoDB",
     "title": "SDET Engineer, Query"
+  },
+  "greenhouse:mongodb:7571308": {
+    "firstSeen": "2026-04-21T22:37:30.210Z",
+    "company": "MongoDB",
+    "title": "Senior Developer Advocate"
   },
   "greenhouse:mongodb:7571473": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -44229,6 +44269,11 @@
     "company": "Pinterest",
     "title": "Engineering Manager I, Growth AI"
   },
+  "greenhouse:pinterest:7683967": {
+    "firstSeen": "2026-04-21T22:37:30.210Z",
+    "company": "Pinterest",
+    "title": "Sr. Director, Product Management - Ads Measurement"
+  },
   "greenhouse:pinterest:7684573": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Pinterest",
@@ -46583,6 +46628,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Robinhood",
     "title": "Staff Product Manager, Cortex"
+  },
+  "greenhouse:robinhood:7839260": {
+    "firstSeen": "2026-04-21T22:37:30.210Z",
+    "company": "Robinhood",
+    "title": "Chief Compliance Officer, Money"
   },
   "greenhouse:roblox:6470334": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -65817,6 +65867,11 @@
     "company": "Intel",
     "title": "Source To Pay Solutions - Senior Lead"
   },
+  "workday:intel:JR0283139": {
+    "firstSeen": "2026-04-21T22:37:30.210Z",
+    "company": "Intel",
+    "title": "Engineering FPnA Analyst"
+  },
   "workday:intel:JR0283143": {
     "firstSeen": "2026-04-20T20:10:39.388Z",
     "company": "Intel",
@@ -69046,6 +69101,11 @@
     "company": "Nvidia",
     "title": "Software Engineering Intern, Robot Learning Platform - Fall 2026"
   },
+  "workday:nvidia:JR2015578": {
+    "firstSeen": "2026-04-21T22:37:30.210Z",
+    "company": "Nvidia",
+    "title": "Senior Software Engineer, AI Networking"
+  },
   "workday:nvidia:JR2015659": {
     "firstSeen": "2026-04-21T21:43:39.416Z",
     "company": "Nvidia",
@@ -70880,6 +70940,11 @@
     "company": "Salesforce",
     "title": "Engagement Delivery Director"
   },
+  "workday:salesforce:JR337930": {
+    "firstSeen": "2026-04-21T22:37:30.210Z",
+    "company": "Salesforce",
+    "title": "Customer Success Manager - Core (Public Sector/Federal Civilian)"
+  },
   "workday:salesforce:JR337973": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Salesforce",
@@ -71075,10 +71140,25 @@
     "company": "Salesforce",
     "title": "Named Account Executive, Aerospace and Defense"
   },
+  "workday:salesforce:JR338547": {
+    "firstSeen": "2026-04-21T22:37:30.210Z",
+    "company": "Salesforce",
+    "title": "Mulesoft  Account Executive, A&D"
+  },
   "workday:salesforce:JR338549": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Salesforce",
     "title": "Named Account Executive"
+  },
+  "workday:salesforce:JR338551": {
+    "firstSeen": "2026-04-21T22:37:30.210Z",
+    "company": "Salesforce",
+    "title": "Mulesoft Aerospace Account Executive"
+  },
+  "workday:salesforce:JR338552": {
+    "firstSeen": "2026-04-21T22:37:30.210Z",
+    "company": "Salesforce",
+    "title": "Mulesoft A&D Account Executive"
   },
   "workday:salesforce:JR338566": {
     "firstSeen": "2026-04-20T21:10:47.232Z",
@@ -71099,6 +71179,11 @@
     "firstSeen": "2026-04-20T11:51:56.663Z",
     "company": "Salesforce",
     "title": "Technical Business Analyst (CPQ), Product & Pricing Ops"
+  },
+  "workday:salesforce:JR338637": {
+    "firstSeen": "2026-04-21T22:37:30.210Z",
+    "company": "Salesforce",
+    "title": "Security GRC Lead"
   },
   "workday:salesforce:JR338638": {
     "firstSeen": "2026-04-21T16:59:23.076Z",
@@ -71334,6 +71419,11 @@
     "firstSeen": "2026-04-21T18:05:48.822Z",
     "company": "Salesforce",
     "title": "Salesforce Technical Architect- Agentforce"
+  },
+  "workday:salesforce:JR339409": {
+    "firstSeen": "2026-04-21T22:37:30.210Z",
+    "company": "Salesforce",
+    "title": "Missionforce - Director/Sr. Director, Product Management (Sovereign Cloud)"
   },
   "workday:target:R0000400241": {
     "firstSeen": "2026-04-21T11:17:40.182Z",
@@ -72560,6 +72650,11 @@
     "company": "Target India",
     "title": "Service & Engagement Executive Team Leader"
   },
+  "workday:target:R0000436224": {
+    "firstSeen": "2026-04-21T22:37:30.210Z",
+    "company": "Target India",
+    "title": "Assets Protection Team Leader"
+  },
   "workday:walmart:R-128829": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Walmart",
@@ -73169,6 +73264,11 @@
     "firstSeen": "2026-04-20T16:41:00.570Z",
     "company": "Workday",
     "title": "Senior Project Manager"
+  },
+  "workday:workday:JR-0106314": {
+    "firstSeen": "2026-04-21T22:37:30.210Z",
+    "company": "Workday",
+    "title": "Manager, Infrastructure Engineering"
   },
   "workday:workday:JR-0106321": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
