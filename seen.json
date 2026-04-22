@@ -5644,6 +5644,11 @@
     "company": "Notion",
     "title": "Account Executive, Enterprise, Nordics"
   },
+  "ashby:notion:560ce3fc-49b3-4a64-bdc8-0df39f4af269": {
+    "firstSeen": "2026-04-22T23:43:49.054Z",
+    "company": "Notion",
+    "title": "Account Executive, Business Growth Sales"
+  },
   "ashby:notion:5703a1d4-e1a2-4286-af10-a48c65fd4114": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Notion",
@@ -6363,6 +6368,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Perplexity",
     "title": "Member of Technical Staff (Data Scientist, Evals)"
+  },
+  "ashby:perplexity:4c0ac8bb-55bf-4fb0-b7d7-36d69f55e6c8": {
+    "firstSeen": "2026-04-22T23:43:49.054Z",
+    "company": "Perplexity",
+    "title": "Member of Technical Staff (Software Engineer, Computer)"
   },
   "ashby:perplexity:598e1f7d-b802-4de2-99ac-90eb2bc33315": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -15584,6 +15594,16 @@
     "company": "Anthropic",
     "title": "Director, Infrastructure & Energy Accounting "
   },
+  "greenhouse:anthropic:5196221008": {
+    "firstSeen": "2026-04-22T23:43:49.054Z",
+    "company": "Anthropic",
+    "title": "Director, Infrastructure Capex Accounting"
+  },
+  "greenhouse:anthropic:5196230008": {
+    "firstSeen": "2026-04-22T23:43:49.054Z",
+    "company": "Anthropic",
+    "title": "Senior Manager, Infrastructure Capex Accounting"
+  },
   "greenhouse:asana:5480143": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Asana",
@@ -18989,6 +19009,11 @@
     "company": "Chime",
     "title": "Lead, Strategic Operations"
   },
+  "greenhouse:chime:8509309002": {
+    "firstSeen": "2026-04-22T23:43:49.054Z",
+    "company": "Chime",
+    "title": "Physical Security Lead"
+  },
   "greenhouse:chime:8510354002": {
     "firstSeen": "2026-04-22T16:58:08.367Z",
     "company": "Chime",
@@ -18998,6 +19023,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Chime",
     "title": "Associate Creative Director"
+  },
+  "greenhouse:chime:8512628002": {
+    "firstSeen": "2026-04-22T23:43:49.054Z",
+    "company": "Chime",
+    "title": "IT Support Technician"
   },
   "greenhouse:chime:8517214002": {
     "firstSeen": "2026-04-21T19:46:01.727Z",
@@ -38214,6 +38244,11 @@
     "company": "Lyft",
     "title": "Data Scientist, Algorithms - Lyft Ads"
   },
+  "greenhouse:lyft:8330779002": {
+    "firstSeen": "2026-04-22T23:43:49.054Z",
+    "company": "Lyft",
+    "title": "Senior Product Manager, Payments, Identity or Integrity"
+  },
   "greenhouse:lyft:8332302002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Lyft",
@@ -39308,6 +39343,11 @@
     "firstSeen": "2026-04-22T05:12:38.592Z",
     "company": "Mercury",
     "title": "Senior Credit Underwriting Analyst"
+  },
+  "greenhouse:mercury:5979496004": {
+    "firstSeen": "2026-04-22T23:43:49.054Z",
+    "company": "Mercury",
+    "title": "Engineering Manager - Mercury Accounting"
   },
   "greenhouse:mixpanel:5798832": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -47104,6 +47144,11 @@
     "company": "Reddit",
     "title": "Software Engineer, ACE"
   },
+  "greenhouse:reddit:7844238": {
+    "firstSeen": "2026-04-22T23:43:49.054Z",
+    "company": "Reddit",
+    "title": "Senior Staff Software Engineer, Indexing & Retrieval Platform"
+  },
   "greenhouse:robinhood:4738660": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Robinhood",
@@ -49408,6 +49453,11 @@
     "firstSeen": "2026-04-22T20:53:56.740Z",
     "company": "Roblox",
     "title": "Principal Software Engineer, Crash Reporting"
+  },
+  "greenhouse:roblox:7844201": {
+    "firstSeen": "2026-04-22T23:43:49.054Z",
+    "company": "Roblox",
+    "title": "Senior Software Engineer (Full Stack), Ads Experience "
   },
   "greenhouse:rubrik:2146030": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -63989,6 +64039,11 @@
     "company": "Bosch",
     "title": "Junior Manager Program - Logistics"
   },
+  "smartrecruiters:BoschGroup:744000122349209": {
+    "firstSeen": "2026-04-22T23:43:49.054Z",
+    "company": "Bosch",
+    "title": "Technical Drafter"
+  },
   "smartrecruiters:Visa:744000120780707": {
     "firstSeen": "2026-04-18T21:34:04.755Z",
     "company": "Visa Inc",
@@ -68172,6 +68227,11 @@
     "company": "Intel",
     "title": "C4 Module Equipment Technician (Nightshift)"
   },
+  "workday:intel:JR0281201": {
+    "firstSeen": "2026-04-22T23:43:49.054Z",
+    "company": "Intel",
+    "title": "Compiler Engineer"
+  },
   "workday:intel:JR0281218": {
     "firstSeen": "2026-04-20T21:10:47.232Z",
     "company": "Intel",
@@ -71581,6 +71641,11 @@
     "company": "Micron",
     "title": "Industry 4.0 Analyst"
   },
+  "workday:micron:JR98647": {
+    "firstSeen": "2026-04-22T23:43:49.054Z",
+    "company": "Micron",
+    "title": "Manager/E4 Lead, Photo Scanner Equipment"
+  },
   "workday:micron:JR98693": {
     "firstSeen": "2026-04-22T02:25:27.006Z",
     "company": "Micron",
@@ -73410,6 +73475,11 @@
     "company": "Nvidia",
     "title": "Technical Marketing Engineer"
   },
+  "workday:nvidia:JR2016950": {
+    "firstSeen": "2026-04-22T23:43:49.054Z",
+    "company": "Nvidia",
+    "title": "Deep Learning Architect, LLM Inference - New College Grad 2026"
+  },
   "workday:paypal:R0127935": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "PayPal",
@@ -73549,6 +73619,11 @@
     "company": "PayPal",
     "title": "Senior Lead Product Manager"
   },
+  "workday:paypal:R0135515": {
+    "firstSeen": "2026-04-22T23:43:49.054Z",
+    "company": "PayPal",
+    "title": "Lead Outbound Product Manager"
+  },
   "workday:paypal:R0135526": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "PayPal",
@@ -73664,6 +73739,11 @@
     "company": "PayPal",
     "title": "Chief of Staff"
   },
+  "workday:paypal:R0135935": {
+    "firstSeen": "2026-04-22T23:43:49.054Z",
+    "company": "PayPal",
+    "title": "Lead Product Manager"
+  },
   "workday:paypal:R0135946": {
     "firstSeen": "2026-04-21T16:59:23.076Z",
     "company": "PayPal",
@@ -73718,6 +73798,11 @@
     "firstSeen": "2026-04-22T19:46:46.967Z",
     "company": "PayPal",
     "title": "Sr Director, Ad Sales"
+  },
+  "workday:paypal:R0136057": {
+    "firstSeen": "2026-04-22T23:43:49.054Z",
+    "company": "PayPal",
+    "title": "Lead Product Manager"
   },
   "workday:paypal:R0136064": {
     "firstSeen": "2026-04-20T16:41:00.570Z",
@@ -73814,6 +73899,11 @@
     "company": "PayPal",
     "title": "Sr Software Engineer"
   },
+  "workday:paypal:R0136209": {
+    "firstSeen": "2026-04-22T23:43:49.054Z",
+    "company": "PayPal",
+    "title": "Senior Product Manager - Product Growth"
+  },
   "workday:paypal:R0136213": {
     "firstSeen": "2026-04-21T16:59:23.076Z",
     "company": "PayPal",
@@ -73843,6 +73933,11 @@
     "firstSeen": "2026-04-20T19:06:43.880Z",
     "company": "PayPal",
     "title": "Senior Data Scientist - Marketing"
+  },
+  "workday:paypal:R0136308": {
+    "firstSeen": "2026-04-22T23:43:49.054Z",
+    "company": "PayPal",
+    "title": "Senior Product Manager"
   },
   "workday:paypal:R0136312": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -75313,6 +75408,16 @@
     "firstSeen": "2026-04-21T18:05:48.822Z",
     "company": "Salesforce",
     "title": "MuleSoft Account Executive, Federal Civilian (GSA)"
+  },
+  "workday:salesforce:JR338529": {
+    "firstSeen": "2026-04-22T23:43:49.054Z",
+    "company": "Salesforce",
+    "title": "Named Account Executive, Federal Civilian (DOE)"
+  },
+  "workday:salesforce:JR338530": {
+    "firstSeen": "2026-04-22T23:43:49.054Z",
+    "company": "Salesforce",
+    "title": "Named Account Executive, Federal Civilian (NASA)"
   },
   "workday:salesforce:JR338532": {
     "firstSeen": "2026-04-21T23:34:18.359Z",
@@ -78122,6 +78227,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Workday",
     "title": "Principal Software Development Engineer / Senior Software Development Engineer - Full Stack"
+  },
+  "workday:workday:JR-0106538": {
+    "firstSeen": "2026-04-22T23:43:49.054Z",
+    "company": "Workday",
+    "title": "Senior Manager, Finance Process Owner (Hire to Retire)"
   },
   "workday:workday:JR-0106544": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
