@@ -614,10 +614,20 @@
     "company": "Amazon",
     "title": "Business Intelligence Engineer III, Routing and Planning"
   },
+  "amazon:5c423e41-0125-404e-8c7c-28f72046afc2": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Amazon",
+    "title": "Support Engineer III, AMC, Measurements & Data Science"
+  },
   "amazon:5c7fe323-bda4-484e-a513-57bad3e816f4": {
     "firstSeen": "2026-04-21T08:17:08.668Z",
     "company": "Amazon",
     "title": "Software Development Engineer, Rembrandt"
+  },
+  "amazon:5cbd06c0-64f7-456a-ab1b-ef85fb64b9cc": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Amazon",
+    "title": "Network Development Engineer, Office Network Reliability Engineering"
   },
   "amazon:5d4f2c44-836b-4054-8db3-218866a8e0be": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -1233,6 +1243,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
     "title": "Customer Experience Specialist, GAR Customer Experience"
+  },
+  "amazon:af32d2bb-643b-4183-a770-50acd75ac0ad": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Amazon",
+    "title": "Business Intelligence Engineer, Amazon"
   },
   "amazon:af5e27bd-e6cc-40e6-b7b1-ec25bdf1a4d1": {
     "firstSeen": "2026-04-22T09:07:02.079Z",
@@ -9379,6 +9394,11 @@
     "company": "Suno",
     "title": "Head of Security Engineering"
   },
+  "ashby:suno:595acf0b-1ae7-4bb2-9cfe-20d780ee38b1": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Suno",
+    "title": "Senior Technical Recruiter"
+  },
   "ashby:suno:5f96f2c4-cf09-40e5-8d95-b8e6102bee55": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Suno",
@@ -10763,6 +10783,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Affirm",
     "title": "Partner Growth Manager"
+  },
+  "greenhouse:affirm:7590373003": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Affirm",
+    "title": "Software Engineer II, Backend (PMI Integrations)"
   },
   "greenhouse:affirm:7590445003": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -17174,6 +17199,11 @@
     "company": "Brex",
     "title": "Finance Manager, Commissions"
   },
+  "greenhouse:brex:8495712002": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Brex",
+    "title": "Marketing Senior Finance Manager"
+  },
   "greenhouse:brex:8495718002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Brex",
@@ -17338,6 +17368,16 @@
     "firstSeen": "2026-04-21T00:06:00.750Z",
     "company": "Brex",
     "title": "Brex Rotational Program"
+  },
+  "greenhouse:brex:8519256002": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Brex",
+    "title": "Relationship Manager"
+  },
+  "greenhouse:brex:8519265002": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Brex",
+    "title": "Relationship Manager"
   },
   "greenhouse:celonis:5928673003": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -18743,6 +18783,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Chime",
     "title": "Lead, Strategic Operations"
+  },
+  "greenhouse:chime:8510354002": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Chime",
+    "title": "Principal People Strategy & Program Manager"
   },
   "greenhouse:chime:8510657002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -22048,6 +22093,16 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Databricks",
     "title": "Solutions Architect, Retail - CPG"
+  },
+  "greenhouse:databricks:6679259002": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Databricks",
+    "title": "Solutions Architect"
+  },
+  "greenhouse:databricks:6679262002": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Databricks",
+    "title": "Solutions Architect - Montreal"
   },
   "greenhouse:databricks:6704975002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -29624,6 +29679,16 @@
     "company": "Dropbox",
     "title": "Company Operations Lead"
   },
+  "greenhouse:dropbox:7644886": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Dropbox",
+    "title": "Senior Machine Learning Engineer, Dash Agentic AI "
+  },
+  "greenhouse:dropbox:7644890": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Dropbox",
+    "title": "Senior Machine Learning Engineer, Dash Agentic AI"
+  },
   "greenhouse:dropbox:7646405": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Dropbox",
@@ -34499,6 +34564,11 @@
     "company": "GitLab",
     "title": "Vice President, Data & Insights"
   },
+  "greenhouse:gitlab:8511100002": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "GitLab",
+    "title": "Solutions Architect, Financial Services"
+  },
   "greenhouse:gitlab:8512133002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "GitLab",
@@ -36298,6 +36368,16 @@
     "firstSeen": "2026-04-22T14:01:55.467Z",
     "company": "Grafana Labs",
     "title": "Staff Backend Engineer - Session Replay | Canada | Remote"
+  },
+  "greenhouse:grafanalabs:5979012004": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Grafana Labs",
+    "title": "Senior Fullstack Engineer - Observability Real User Monitoring (RUM) | US | Remote"
+  },
+  "greenhouse:grafanalabs:5979016004": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Grafana Labs",
+    "title": "Senior Fullstack Engineer - Observability Real User Monitoring (RUM) | Canada | Remote"
   },
   "greenhouse:groww:4528378101": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -41399,6 +41479,11 @@
     "company": "MongoDB",
     "title": "Strategic Customer Success Manager"
   },
+  "greenhouse:mongodb:7826031": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "MongoDB",
+    "title": "Head of AI Platform, GM "
+  },
   "greenhouse:mongodb:7829707": {
     "firstSeen": "2026-04-21T12:14:30.827Z",
     "company": "MongoDB",
@@ -43664,6 +43749,11 @@
     "company": "Okta",
     "title": "Senior Solutions Engineer (Montreal)"
   },
+  "greenhouse:okta:7819476": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Okta",
+    "title": "Staff Backend Engineer, Non Human Identities "
+  },
   "greenhouse:okta:7819478": {
     "firstSeen": "2026-04-21T18:05:48.822Z",
     "company": "Okta",
@@ -43821,6 +43911,21 @@
   },
   "greenhouse:okta:7838837": {
     "firstSeen": "2026-04-21T21:43:39.416Z",
+    "company": "Okta",
+    "title": "Senior Manager, Recruiting Operations"
+  },
+  "greenhouse:okta:7841999": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Okta",
+    "title": "Director, Product Management (IAM) - Auth0"
+  },
+  "greenhouse:okta:7843096": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Okta",
+    "title": "Senior Manager, Recruiting Operations"
+  },
+  "greenhouse:okta:7843097": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
     "company": "Okta",
     "title": "Senior Manager, Recruiting Operations"
   },
@@ -54964,6 +55069,11 @@
     "company": "Twilio",
     "title": "Payroll Analyst II"
   },
+  "greenhouse:twilio:7833997": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Twilio",
+    "title": "Regulatory and Inventory Operations Engineer"
+  },
   "greenhouse:twilio:7834116": {
     "firstSeen": "2026-04-22T10:48:14.412Z",
     "company": "Twilio",
@@ -57728,6 +57838,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Mistral",
     "title": "Account Manager - Morocco"
+  },
+  "lever:mistral:ac195fdb-1731-4ce2-b47e-c1bb8c72c59d": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Mistral",
+    "title": "Applied AI Engineer, Prototyping"
   },
   "lever:mistral:aceffeba-c4e9-4b3b-adff-e7e78b986c5c": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -60693,6 +60808,26 @@
     "firstSeen": "2026-04-22T14:01:55.467Z",
     "company": "Happily",
     "title": "Product Growth Marketer"
+  },
+  "remoteok:1131246": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Radformation",
+    "title": "Product Manager ChartCheck"
+  },
+  "remoteok:1131247": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Adswerve, Inc",
+    "title": "Digital Media Strategist"
+  },
+  "remoteok:1131248": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Adswerve, Inc",
+    "title": "Manager Digital Media Strategy"
+  },
+  "remoteok:1131249": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Keyloop",
+    "title": "Senior Account Manager"
   },
   "smartrecruiters:BoschGroup:744000121337448": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -64289,6 +64424,16 @@
     "company": "Visa Inc",
     "title": "Senior Product Sales Manager- Cross Border"
   },
+  "smartrecruiters:Visa:744000122297828": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Visa Inc",
+    "title": "Employee Card Program - Sr. Finance Analyst"
+  },
+  "smartrecruiters:Visa:744000122304399": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Visa Inc",
+    "title": "Sr. Manager, Global Corporate Development"
+  },
   "workable:apna:01B0CB39DD": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Apna",
@@ -65854,6 +65999,11 @@
     "company": "Autodesk",
     "title": "Experience Design Professional"
   },
+  "workday:autodesk:26WD97474": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Autodesk",
+    "title": "Principal Vendor Management"
+  },
   "workday:autodesk:26WD97479": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Autodesk",
@@ -65918,6 +66068,11 @@
     "firstSeen": "2026-04-22T11:59:47.776Z",
     "company": "Autodesk",
     "title": "Software QA Engineer"
+  },
+  "workday:autodesk:26WD97657": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Autodesk",
+    "title": "AI Developer"
   },
   "workday:autodesk:26WD99035": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -66123,6 +66278,11 @@
     "firstSeen": "2026-04-20T08:05:34.211Z",
     "company": "Cadence",
     "title": "Software Engineer II"
+  },
+  "workday:cadence:R53830": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Cadence",
+    "title": "SoC architect"
   },
   "workday:cadence:R53880": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -67223,6 +67383,11 @@
     "company": "HP",
     "title": "Support to Chief Of Staff - Intern"
   },
+  "workday:hp:3161805": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "HP",
+    "title": "AI Software Engineer - HP IQ"
+  },
   "workday:hp:3161895": {
     "firstSeen": "2026-04-21T14:15:53.104Z",
     "company": "HP",
@@ -67301,6 +67466,11 @@
     "firstSeen": "2026-04-20T08:05:34.211Z",
     "company": "Intel",
     "title": "Physical Design Timing Engineer"
+  },
+  "workday:intel:JR0281359": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Intel",
+    "title": "AI Software Research Intern"
   },
   "workday:intel:JR0281444": {
     "firstSeen": "2026-04-22T15:50:57.008Z",
@@ -67391,6 +67561,11 @@
     "firstSeen": "2026-04-21T14:15:53.104Z",
     "company": "Intel",
     "title": "DARC Reporting and Data Analyst"
+  },
+  "workday:intel:JR0282454": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Intel",
+    "title": "Mask Manufacturing Technician"
   },
   "workday:intel:JR0282484": {
     "firstSeen": "2026-04-20T15:04:21.505Z",
@@ -67537,6 +67712,11 @@
     "company": "Intel",
     "title": "Senior Technical Solutions Engineer - Advanced Packaging"
   },
+  "workday:intel:JR0283018": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Intel",
+    "title": "Analog Circuit Design Engineer"
+  },
   "workday:intel:JR0283023": {
     "firstSeen": "2026-04-21T23:34:18.359Z",
     "company": "Intel",
@@ -67634,6 +67814,11 @@
   },
   "workday:intel:JR0283107": {
     "firstSeen": "2026-04-21T00:06:00.750Z",
+    "company": "Intel",
+    "title": "GPU Validation Engineer"
+  },
+  "workday:intel:JR0283114": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
     "company": "Intel",
     "title": "GPU Validation Engineer"
   },
@@ -67801,6 +67986,11 @@
     "firstSeen": "2026-04-22T02:25:27.006Z",
     "company": "Intel",
     "title": "Supply Chain Planning Analyst"
+  },
+  "workday:intel:JR0283210": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Intel",
+    "title": "Design Integration Lead"
   },
   "workday:intel:JR0283212": {
     "firstSeen": "2026-04-21T20:52:13.436Z",
@@ -68422,6 +68612,11 @@
     "company": "Mastercard",
     "title": "Director, Government Affairs & Policy"
   },
+  "workday:mastercard:R-274234": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Mastercard",
+    "title": "Senior Specialist, Communications"
+  },
   "workday:mastercard:R-274320": {
     "firstSeen": "2026-04-21T19:46:01.727Z",
     "company": "Mastercard",
@@ -68466,6 +68661,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Mastercard",
     "title": "Manager, Product Management"
+  },
+  "workday:mastercard:R-274658": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Mastercard",
+    "title": "Vice President, Integrated Marketing Communications -  Intelligence & Financial Operations, Americas"
   },
   "workday:mastercard:R-274663": {
     "firstSeen": "2026-04-22T07:12:20.418Z",
@@ -68692,6 +68892,11 @@
     "company": "Mastercard",
     "title": "Specialist, Product Management"
   },
+  "workday:mastercard:R-275173": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Mastercard",
+    "title": "Manager, Account Management"
+  },
   "workday:mastercard:R-275179": {
     "firstSeen": "2026-04-20T15:04:21.505Z",
     "company": "Mastercard",
@@ -68726,6 +68931,11 @@
     "firstSeen": "2026-04-20T16:41:00.570Z",
     "company": "Mastercard",
     "title": "Senior Platform Business Analyst"
+  },
+  "workday:mastercard:R-275303": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Mastercard",
+    "title": "Managing Consultant, Business Development – Fuel & Convenience"
   },
   "workday:mastercard:R-275305": {
     "firstSeen": "2026-04-20T16:41:00.570Z",
@@ -69081,6 +69291,11 @@
     "firstSeen": "2026-04-20T08:05:34.211Z",
     "company": "Mastercard",
     "title": "Senior Software Engineer - Devops"
+  },
+  "workday:mastercard:R-276204": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Mastercard",
+    "title": "Senior Data Analyst"
   },
   "workday:mastercard:R-276267": {
     "firstSeen": "2026-04-22T14:01:55.467Z",
@@ -70556,6 +70771,11 @@
     "company": "Micron",
     "title": "Wafer Fab Warehouse Supervisor"
   },
+  "workday:micron:JR99262": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Micron",
+    "title": "Senior Strategic Category Analyst"
+  },
   "workday:micron:JR99274": {
     "firstSeen": "2026-04-22T02:25:27.006Z",
     "company": "Micron",
@@ -71236,6 +71456,11 @@
     "company": "Nvidia",
     "title": "Senior Physical Design Methodology Engineer, Innovus Flows"
   },
+  "workday:nvidia:JR2011698": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Nvidia",
+    "title": "Senior Firmware Engineer - Memory Subsystem"
+  },
   "workday:nvidia:JR2011699": {
     "firstSeen": "2026-04-21T00:06:00.750Z",
     "company": "Nvidia",
@@ -71305,6 +71530,11 @@
     "firstSeen": "2026-04-21T19:46:01.727Z",
     "company": "Nvidia",
     "title": "Senior Formal Verification Engineer - LPU"
+  },
+  "workday:nvidia:JR2012554": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Nvidia",
+    "title": "Senior I/O Subsystem Architect"
   },
   "workday:nvidia:JR2012860": {
     "firstSeen": "2026-04-20T22:09:16.861Z",
@@ -71405,6 +71635,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Nvidia",
     "title": "Senior System Firmware Engineer - BIOS UEFI"
+  },
+  "workday:nvidia:JR2014749": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Nvidia",
+    "title": "Senior Package Layout Engineer - Hardware"
   },
   "workday:nvidia:JR2014785": {
     "firstSeen": "2026-04-20T05:40:29.144Z",
@@ -71555,6 +71790,11 @@
     "firstSeen": "2026-04-20T05:40:29.144Z",
     "company": "Nvidia",
     "title": "Senior Software Engineer - Server Manageability"
+  },
+  "workday:nvidia:JR2015960": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Nvidia",
+    "title": "Client Platform Architect"
   },
   "workday:nvidia:JR2015993": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -71724,6 +71964,11 @@
     "firstSeen": "2026-04-20T02:31:31.176Z",
     "company": "Nvidia",
     "title": "Software QA Engineer, DOCA SDK"
+  },
+  "workday:nvidia:JR2016478": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Nvidia",
+    "title": "Senior Software Engineer - Omniverse"
   },
   "workday:nvidia:JR2016481": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -71969,6 +72214,11 @@
     "firstSeen": "2026-04-21T21:43:39.416Z",
     "company": "Nvidia",
     "title": "HR Business Partner - Employee Relations"
+  },
+  "workday:nvidia:JR2016829": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Nvidia",
+    "title": "SWQA Test Developer Engineer, SDET"
   },
   "workday:paypal:R0127935": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -72590,6 +72840,11 @@
     "company": "Red Hat",
     "title": "Software Engineer, Telco"
   },
+  "workday:redhat:R-055730": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Red Hat",
+    "title": "Senior Digital Strategist, APAC"
+  },
   "workday:redhat:R-055738": {
     "firstSeen": "2026-04-21T15:51:59.911Z",
     "company": "Red Hat",
@@ -72980,6 +73235,11 @@
     "company": "Salesforce",
     "title": "Named Account Executive, Mid-Market: Non-Profit"
   },
+  "workday:salesforce:JR324811": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Salesforce",
+    "title": "Customer Success Manager Life Sciences"
+  },
   "workday:salesforce:JR324868": {
     "firstSeen": "2026-04-22T11:59:47.776Z",
     "company": "Salesforce",
@@ -73165,6 +73425,11 @@
     "company": "Salesforce",
     "title": "Account Executive, Marketing Cloud (Nonprofit)"
   },
+  "workday:salesforce:JR332309": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Salesforce",
+    "title": "Employee Success Lead Data Engineer"
+  },
   "workday:salesforce:JR332344": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Salesforce",
@@ -73179,6 +73444,11 @@
     "firstSeen": "2026-04-22T02:25:27.006Z",
     "company": "Salesforce",
     "title": "Customer Success Manager - Slack"
+  },
+  "workday:salesforce:JR332570": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Salesforce",
+    "title": "Customer Success Manager – Tableau"
   },
   "workday:salesforce:JR332606": {
     "firstSeen": "2026-04-20T13:26:29.603Z",
@@ -73514,6 +73784,11 @@
     "firstSeen": "2026-04-21T16:59:23.076Z",
     "company": "Salesforce",
     "title": "Government & Higher Ed Specialist Account Executive - Platform Sales"
+  },
+  "workday:salesforce:JR337145": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Salesforce",
+    "title": "Executive Assistant/Senior Executive Assistant"
   },
   "workday:salesforce:JR337186": {
     "firstSeen": "2026-04-20T16:41:00.570Z",
@@ -73860,6 +74135,11 @@
     "company": "Salesforce",
     "title": "Summer 2026 Intern - Employer Brand Content"
   },
+  "workday:salesforce:JR338749": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Salesforce",
+    "title": "Principal Solution Engineer"
+  },
   "workday:salesforce:JR338779": {
     "firstSeen": "2026-04-20T13:26:29.603Z",
     "company": "Salesforce",
@@ -74020,6 +74300,11 @@
     "company": "Salesforce",
     "title": "Recruiting Operations Analyst - 3 month Contractor Role"
   },
+  "workday:salesforce:JR339194": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Salesforce",
+    "title": "Sr. Software Engineer, Backend"
+  },
   "workday:salesforce:JR339198": {
     "firstSeen": "2026-04-20T19:06:43.880Z",
     "company": "Salesforce",
@@ -74054,6 +74339,11 @@
     "firstSeen": "2026-04-21T03:51:07.459Z",
     "company": "Salesforce",
     "title": "Product Marketing Sr Lead, Content Strategy"
+  },
+  "workday:salesforce:JR339259": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Salesforce",
+    "title": "Principal Architect, Platform Identity"
   },
   "workday:salesforce:JR339270": {
     "firstSeen": "2026-04-21T06:02:25.193Z",
@@ -74429,6 +74719,11 @@
     "firstSeen": "2026-04-20T21:10:47.232Z",
     "company": "Target India",
     "title": "Operations Manager- Fulfillment Center- Joliet, IL"
+  },
+  "workday:target:R0000434607": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Target India",
+    "title": "Loyalty Guest Engagement Lead, Gamification"
   },
   "workday:target:R0000434657": {
     "firstSeen": "2026-04-21T18:05:48.822Z",
@@ -75525,6 +75820,16 @@
     "company": "Target India",
     "title": "Executive Team Leader Specialty Sales (Assistant Manager Merchandising and Service)- Fort Collins, CO"
   },
+  "workday:target:R0000436305": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Target India",
+    "title": "DC Target Security Specialist B Mid"
+  },
+  "workday:target:R0000436308": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Target India",
+    "title": "Assets Protection Specialist"
+  },
   "workday:walmart:R-128829": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Walmart",
@@ -75820,6 +76125,11 @@
     "company": "Walmart",
     "title": "(USA) Freight Flow Associate"
   },
+  "workday:walmart:R-2487192": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Walmart",
+    "title": "(USA) Optician Sam's Part Time"
+  },
   "workday:workday:JR-0093733": {
     "firstSeen": "2026-04-21T21:43:39.416Z",
     "company": "Workday",
@@ -76005,10 +76315,25 @@
     "company": "Workday",
     "title": "Senior Partner Success Advisor - Absence, Time Tracking & Scheduling"
   },
+  "workday:workday:JR-0105462": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Workday",
+    "title": "Sr Sales Analytics and Commission Analyst"
+  },
+  "workday:workday:JR-0105463": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Workday",
+    "title": "Contracts Administrator"
+  },
   "workday:workday:JR-0105468": {
     "firstSeen": "2026-04-22T02:25:27.006Z",
     "company": "Workday",
     "title": "Principal Managing Partner - State & Local and Higher Education (SLED) practice"
+  },
+  "workday:workday:JR-0105484": {
+    "firstSeen": "2026-04-22T16:58:08.367Z",
+    "company": "Workday",
+    "title": "Analytics Sr Software Engineer (US Federal)"
   },
   "workday:workday:JR-0105546": {
     "firstSeen": "2026-04-22T15:50:57.008Z",
