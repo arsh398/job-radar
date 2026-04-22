@@ -884,6 +884,11 @@
     "company": "Amazon",
     "title": "Software Development Manager, Ads Tech"
   },
+  "amazon:858e16a1-c5e0-444e-a753-475e22ea9cb7": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Amazon",
+    "title": "Transaction Risk Investigator"
+  },
   "amazon:8684e7cc-7c55-43f4-aefc-89bf81d4cf0a": {
     "firstSeen": "2026-04-22T09:07:02.079Z",
     "company": "Amazon",
@@ -923,6 +928,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
     "title": "Senior Operations Executive, Transportation S&OP"
+  },
+  "amazon:8b3a7121-5271-4a7b-bdc6-d6cb134eca47": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Amazon",
+    "title": "Area Manager, AMXL"
   },
   "amazon:8c52597a-50f7-4043-9590-9c3c8be413cc": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -1419,6 +1429,11 @@
     "company": "Amazon",
     "title": "Vendor Management Assistant I, Translation Services Operations"
   },
+  "amazon:d18ff794-6a31-4a3b-8324-0ea88cc0cf76": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Amazon",
+    "title": "Learning Experience Associate, Finance-as-a-Service(FaaS)"
+  },
   "amazon:d1e28c83-0b27-411e-a195-9fbfe0a359c6": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
@@ -1443,6 +1458,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
     "title": "Big Data Engineer II, Profit Intelligence"
+  },
+  "amazon:d6cc5708-7b61-4b2c-bd51-52108a5a52b3": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Amazon",
+    "title": "Sr. Manager Process Engineering, INFC Central Operations"
   },
   "amazon:d6f777c5-4adc-4b37-add1-60f2c5169e69": {
     "firstSeen": "2026-04-21T08:17:08.668Z",
@@ -4013,6 +4033,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Docker",
     "title": "Senior Implementation Engineer - Customer Onboarding (East Coast Time Zone)"
+  },
+  "ashby:elevenlabs:01d0899b-0e40-4af2-a859-5d21962666b1": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "ElevenLabs",
+    "title": "Infrastructure Engineer (Data & Automations)"
   },
   "ashby:elevenlabs:03cefd49-972f-45b2-b6c7-9a42d133af0c": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -6933,6 +6958,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Poolside",
     "title": "Member of Engineering (Data Platform Lead)"
+  },
+  "ashby:poolside:4d04f031-394c-4db3-90ee-298bec4d6814": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Poolside",
+    "title": "Head of Experience"
   },
   "ashby:poolside:6659a321-9780-4f5a-bfa7-b285e0b56c62": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -21059,6 +21089,11 @@
     "company": "Cloudflare",
     "title": "Senior Territory Account Executive, Digital Native"
   },
+  "greenhouse:cloudflare:7831414": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Cloudflare",
+    "title": "Solutions Engineer, Central & Eastern Europe - Czech Speaking"
+  },
   "greenhouse:cloudflare:7834688": {
     "firstSeen": "2026-04-21T03:51:07.459Z",
     "company": "Cloudflare",
@@ -26099,6 +26134,11 @@
     "company": "Databricks",
     "title": "Manager, AI Forward Deployed Engineering (FDE)"
   },
+  "greenhouse:databricks:8516118002": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Databricks",
+    "title": "Deployment Strategist"
+  },
   "greenhouse:databricks:8517555002": {
     "firstSeen": "2026-04-21T22:37:30.210Z",
     "company": "Databricks",
@@ -29144,6 +29184,11 @@
     "company": "Discord",
     "title": "Engineering Manager, Social Commerce"
   },
+  "greenhouse:dropbox:6330377": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Dropbox",
+    "title": "Infrastructure Software Engineer"
+  },
   "greenhouse:dropbox:6333181": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Dropbox",
@@ -31048,6 +31093,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Elastic",
     "title": "Sales Enablement Instructional Designer"
+  },
+  "greenhouse:elastic:7766695": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Elastic",
+    "title": "Enterprise Account Executive "
   },
   "greenhouse:elastic:7768018": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -35949,6 +35999,11 @@
     "company": "Grafana Labs",
     "title": "Senior Observability Architect | EST or PST | Remote "
   },
+  "greenhouse:grafanalabs:5972097004": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Grafana Labs",
+    "title": "Regional Marketing Associate | CST or EST | Remote"
+  },
   "greenhouse:grafanalabs:5973672004": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Grafana Labs",
@@ -36018,6 +36073,11 @@
     "firstSeen": "2026-04-21T03:51:07.459Z",
     "company": "Grafana Labs",
     "title": "Sales Sourcer - Talent Architect "
+  },
+  "greenhouse:grafanalabs:5977771004": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Grafana Labs",
+    "title": "Regional Marketing Manager | EST | Remote"
   },
   "greenhouse:grafanalabs:5977877004": {
     "firstSeen": "2026-04-21T15:51:59.911Z",
@@ -36108,6 +36168,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Groww",
     "title": "Manager - Growth (Performance Marketing)"
+  },
+  "greenhouse:groww:4811770101": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Groww",
+    "title": "Assistant Manager - Visual Designer"
   },
   "greenhouse:gusto:6348898": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -41148,6 +41213,11 @@
     "firstSeen": "2026-04-21T14:15:53.104Z",
     "company": "MongoDB",
     "title": "Senior Customer Success Manager"
+  },
+  "greenhouse:mongodb:7837073": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "MongoDB",
+    "title": "Principal Partner Specialist"
   },
   "greenhouse:mongodb:7837577": {
     "firstSeen": "2026-04-22T07:12:20.418Z",
@@ -52764,6 +52834,11 @@
     "company": "Stripe",
     "title": "Customer Success Manager"
   },
+  "greenhouse:stripe:7768979": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Stripe",
+    "title": "Product Manager, EMEA Payments Lead"
+  },
   "greenhouse:stripe:7769829": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Stripe",
@@ -53438,6 +53513,11 @@
     "firstSeen": "2026-04-20T08:05:34.211Z",
     "company": "Thoughtworks",
     "title": "Portfolio Delivery Director - Singapore"
+  },
+  "greenhouse:thoughtworks:7829890": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Thoughtworks",
+    "title": "Principal Developer"
   },
   "greenhouse:thoughtworks:7836838": {
     "firstSeen": "2026-04-22T07:12:20.418Z",
@@ -54608,6 +54688,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Twilio",
     "title": "Payroll Analyst II"
+  },
+  "greenhouse:twilio:7834116": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Twilio",
+    "title": "Manager, Sales Support Specialists"
   },
   "greenhouse:twilio:7834118": {
     "firstSeen": "2026-04-21T18:05:48.822Z",
@@ -57379,6 +57464,11 @@
     "company": "Mistral",
     "title": "M&A Tech Engineer"
   },
+  "lever:mistral:b002e59e-c262-4c68-86a8-4af575f5c4df": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Mistral",
+    "title": "Engineering Team Lead, DevEx"
+  },
   "lever:mistral:b1005559-123a-4207-97c1-60fcd67bef5b": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Mistral",
@@ -57423,6 +57513,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Mistral",
     "title": "Legal Tech & Ops Associate (IP & Licensing Business)"
+  },
+  "lever:mistral:bd88179e-de69-4675-8a6c-74e2547a85ac": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Mistral",
+    "title": "Code Data Quality Specialist"
   },
   "lever:mistral:bedfc2aa-f1b6-4136-bd17-b3abe4c06120": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -60294,6 +60389,11 @@
     "company": "Patreon",
     "title": "Software Engineer Identity & Access"
   },
+  "remoteok:1131243": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Fox GLobal Assets",
+    "title": "Crypto Trader"
+  },
   "smartrecruiters:BoschGroup:744000121337448": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Bosch",
@@ -62649,6 +62749,116 @@
     "company": "Bosch",
     "title": "Pflichtpraktikum im technischen Einkauf im Bereich des Innovationsmanagements"
   },
+  "smartrecruiters:BoschGroup:744000122204787": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Bosch",
+    "title": "Werkstudent KPI Reporting und Projekt - weltweiter Kundendienst (w/m/div.)"
+  },
+  "smartrecruiters:BoschGroup:744000122206028": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Bosch",
+    "title": "设备设计制造经理/Machine Design & Build Manager_PT   "
+  },
+  "smartrecruiters:BoschGroup:744000122206307": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Bosch",
+    "title": "Vision Systems Expert - Assistant Manager"
+  },
+  "smartrecruiters:BoschGroup:744000122206326": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Bosch",
+    "title": "Praktikum im Bereich Logistik-Qualität"
+  },
+  "smartrecruiters:BoschGroup:744000122207067": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Bosch",
+    "title": "Research Engineer - Training Large Behavior Models with Reinforcement Learning (EG16, f/m/div.)"
+  },
+  "smartrecruiters:BoschGroup:744000122207798": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Bosch",
+    "title": "Business Process Modeler - Signavio"
+  },
+  "smartrecruiters:BoschGroup:744000122208627": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Bosch",
+    "title": "项目采购工程师_DCCC"
+  },
+  "smartrecruiters:BoschGroup:744000122209620": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Bosch",
+    "title": "Praktikum im Bereich Baugruppenvorfertigung"
+  },
+  "smartrecruiters:BoschGroup:744000122210212": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Bosch",
+    "title": "MDG Consultant"
+  },
+  "smartrecruiters:BoschGroup:744000122211766": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Bosch",
+    "title": "Masterarbeit Kollisionsfreie Echtzeitbahnplanung für Industrieroboter auf CAD-Basis"
+  },
+  "smartrecruiters:BoschGroup:744000122213917": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Bosch",
+    "title": "Praktikum im Venture Capital Investment Management"
+  },
+  "smartrecruiters:BoschGroup:744000122214277": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Bosch",
+    "title": "[BD] Senior IT Product & Service Manager - Business Workflow Platform"
+  },
+  "smartrecruiters:BoschGroup:744000122214372": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Bosch",
+    "title": "Pflichtpraktikum Strategisches Marketing Marktforschung Power Solutions "
+  },
+  "smartrecruiters:BoschGroup:744000122214730": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Bosch",
+    "title": "Praktikum Globale Talent Management Prozesse"
+  },
+  "smartrecruiters:BoschGroup:744000122215225": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Bosch",
+    "title": "Pflichtpraktikum Angular Frontend Entwicklung / Webdesign"
+  },
+  "smartrecruiters:BoschGroup:744000122216302": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Bosch",
+    "title": "Praktikum in der Entwicklung und Konstruktion im Sondermaschinenbau mit Fokus auf Produktionsmaschinen für eMobility"
+  },
+  "smartrecruiters:BoschGroup:744000122220756": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Bosch",
+    "title": "Junior Electronics Engineer"
+  },
+  "smartrecruiters:BoschGroup:744000122221232": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Bosch",
+    "title": "Pflichtpraktikum im technischen Einkauf im Bereich des Innovationsmanagements"
+  },
+  "smartrecruiters:BoschGroup:744000122221482": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Bosch",
+    "title": "Praktikum im Controlling – Digitalisierung, Personal- und Gemeinkosten"
+  },
+  "smartrecruiters:BoschGroup:744000122222297": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Bosch",
+    "title": "[BD] Lead Front-end Developer"
+  },
+  "smartrecruiters:BoschGroup:744000122222681": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Bosch",
+    "title": "Deputy manager / Manager - Technical Assisstant to RBU (OFE)"
+  },
+  "smartrecruiters:BoschGroup:744000122222866": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Bosch",
+    "title": "JD_TestSW-VnP-Engineer"
+  },
   "smartrecruiters:Visa:744000120780707": {
     "firstSeen": "2026-04-18T21:34:04.755Z",
     "company": "Visa Inc",
@@ -63594,6 +63804,16 @@
     "company": "Visa Inc",
     "title": "Senior Manager, eCommerce Strategy"
   },
+  "smartrecruiters:Visa:744000122211267": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Visa Inc",
+    "title": "Consulting SM"
+  },
+  "smartrecruiters:Visa:744000122222407": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Visa Inc",
+    "title": "Corporate Communications, Caucasus"
+  },
   "workable:apna:01B0CB39DD": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Apna",
@@ -64424,6 +64644,11 @@
     "company": "Apna",
     "title": "Data Scientist - Recommendation Systems"
   },
+  "workday:adobe:R162044": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Adobe",
+    "title": "Sr Computer Scientist II"
+  },
   "workday:adobe:R162540": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Adobe",
@@ -64794,6 +65019,11 @@
     "company": "Autodesk",
     "title": "Director, Experience Design, PDMS, Canada"
   },
+  "workday:autodesk:26WD96216": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Autodesk",
+    "title": "Senior Cloud Developer"
+  },
   "workday:autodesk:26WD96247": {
     "firstSeen": "2026-04-20T16:41:00.570Z",
     "company": "Autodesk",
@@ -64853,6 +65083,11 @@
     "firstSeen": "2026-04-20T19:06:43.880Z",
     "company": "Autodesk",
     "title": "Sr. Technical Program Manager – AI & Agentic Personalization"
+  },
+  "workday:autodesk:26WD96749": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Autodesk",
+    "title": "Senior Software QA Engineer – Cloud Service Automation"
   },
   "workday:autodesk:26WD96752": {
     "firstSeen": "2026-04-22T02:25:27.006Z",
@@ -64968,6 +65203,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Autodesk",
     "title": "Senior AP Analyst"
+  },
+  "workday:autodesk:26WD97231": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Autodesk",
+    "title": "Client Services Specialist"
   },
   "workday:autodesk:26WD97243": {
     "firstSeen": "2026-04-20T20:10:39.388Z",
@@ -65154,6 +65394,11 @@
     "company": "Autodesk",
     "title": "Software Developer, Viewer Platform"
   },
+  "workday:autodesk:26WD97612": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Autodesk",
+    "title": "SWD Engineer"
+  },
   "workday:autodesk:26WD97613": {
     "firstSeen": "2026-04-21T19:46:01.727Z",
     "company": "Autodesk",
@@ -65329,6 +65574,11 @@
     "company": "Cadence",
     "title": "Junior Application Engineer in CFD"
   },
+  "workday:cadence:R53557": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Cadence",
+    "title": "Design Engineer II"
+  },
   "workday:cadence:R53589": {
     "firstSeen": "2026-04-21T19:46:01.727Z",
     "company": "Cadence",
@@ -65459,6 +65709,21 @@
     "company": "Cadence",
     "title": "Lead Software Engineer (Synthesis software)"
   },
+  "workday:cadence:R54304": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Cadence",
+    "title": "PRINCIPLE SOFTWARE ENGINEER"
+  },
+  "workday:cadence:R54307": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Cadence",
+    "title": "PRINCIPLE SOFTWARE ENGIREER"
+  },
+  "workday:cadence:R54308": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Cadence",
+    "title": "Sr Principal Software Engineer"
+  },
   "workday:cadence:R54310": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Cadence",
@@ -65498,6 +65763,11 @@
     "firstSeen": "2026-04-21T18:05:48.822Z",
     "company": "Cadence",
     "title": "Software Architect, Physical Verification"
+  },
+  "workday:cadence:R54367": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Cadence",
+    "title": "Lead Software Engineer"
   },
   "workday:cadence:R54368": {
     "firstSeen": "2026-04-20T13:26:29.603Z",
@@ -65944,10 +66214,20 @@
     "company": "CrowdStrike",
     "title": "Sr. Corporate Account Executive"
   },
+  "workday:crowdstrike:R28472": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "CrowdStrike",
+    "title": "Enterprise Sales Development Representative, Italy"
+  },
   "workday:crowdstrike:R28474": {
     "firstSeen": "2026-04-20T16:41:00.570Z",
     "company": "CrowdStrike",
     "title": "Director, Data Analytics"
+  },
+  "workday:crowdstrike:R28475": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "CrowdStrike",
+    "title": "Customer Development Representative, Benelux & Nordics"
   },
   "workday:crowdstrike:R28477": {
     "firstSeen": "2026-04-20T16:41:00.570Z",
@@ -66018,6 +66298,11 @@
     "firstSeen": "2026-04-20T16:41:00.570Z",
     "company": "CrowdStrike",
     "title": "Platform Professional Services Senior Consultant, AI (Remote)"
+  },
+  "workday:crowdstrike:R28540": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "CrowdStrike",
+    "title": "Sales Development Representative - German Speaking (Hybrid, ESP)"
   },
   "workday:crowdstrike:R28544": {
     "firstSeen": "2026-04-22T02:25:27.006Z",
@@ -66987,6 +67272,11 @@
     "company": "Intel",
     "title": "Manufacturing Operations Manager"
   },
+  "workday:intel:JR0283288": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Intel",
+    "title": "Technical Sales Graduate Intern"
+  },
   "workday:intel:JR0283290": {
     "firstSeen": "2026-04-21T20:52:13.436Z",
     "company": "Intel",
@@ -67116,6 +67406,11 @@
     "firstSeen": "2026-04-20T08:05:34.211Z",
     "company": "Mastercard",
     "title": "Creative Director"
+  },
+  "workday:mastercard:R-268979": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Mastercard",
+    "title": "Associate Specialist, Implementation"
   },
   "workday:mastercard:R-269446": {
     "firstSeen": "2026-04-20T11:51:56.663Z",
@@ -67446,6 +67741,11 @@
     "firstSeen": "2026-04-21T03:51:07.459Z",
     "company": "Mastercard",
     "title": "Manager, Network Solutions and Switching, Sales"
+  },
+  "workday:mastercard:R-273859": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Mastercard",
+    "title": "Senior Analyst, Product Delivery"
   },
   "workday:mastercard:R-273860": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -68592,6 +68892,11 @@
     "company": "Micron",
     "title": "Facilities Control Technician"
   },
+  "workday:micron:JR94022": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Micron",
+    "title": "Facilities Technician, Control"
+  },
   "workday:micron:JR94042": {
     "firstSeen": "2026-04-22T07:12:20.418Z",
     "company": "Micron",
@@ -69035,6 +69340,11 @@
     "firstSeen": "2026-04-20T13:26:29.603Z",
     "company": "Micron",
     "title": "Project Controller, Global Facilities & Construction North Asia"
+  },
+  "workday:micron:JR97409": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Micron",
+    "title": "Associate Engineer, DEG Layout"
   },
   "workday:micron:JR97426": {
     "firstSeen": "2026-04-21T08:17:08.668Z",
@@ -69535,6 +69845,11 @@
     "firstSeen": "2026-04-21T10:00:31.304Z",
     "company": "Micron",
     "title": "For 2026/4/6-9 Event Participants"
+  },
+  "workday:micron:JR99305": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Micron",
+    "title": "Design Engineer"
   },
   "workday:micron:JR99319": {
     "firstSeen": "2026-04-21T20:52:13.436Z",
@@ -70311,6 +70626,11 @@
     "company": "Nvidia",
     "title": "Senior Compiler Tools Engineer - CUDA Tile"
   },
+  "workday:nvidia:JR2014232": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Nvidia",
+    "title": "DevOps and Build Engineer - Compiler"
+  },
   "workday:nvidia:JR2014249": {
     "firstSeen": "2026-04-20T02:31:31.176Z",
     "company": "Nvidia",
@@ -70925,6 +71245,11 @@
     "company": "PayPal",
     "title": "Software Engineer"
   },
+  "workday:paypal:R0131264": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "PayPal",
+    "title": "Data Scientist"
+  },
   "workday:paypal:R0132840": {
     "firstSeen": "2026-04-21T16:59:23.076Z",
     "company": "PayPal",
@@ -71064,6 +71389,11 @@
     "firstSeen": "2026-04-20T21:10:47.232Z",
     "company": "PayPal",
     "title": "Sr Manager, Branded Checkout, Sales Strategy and Execution"
+  },
+  "workday:paypal:R0135744": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "PayPal",
+    "title": "Account Manager, Large Enterprise Commercial"
   },
   "workday:paypal:R0135781": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -71279,6 +71609,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "PayPal",
     "title": "Sr Auditor"
+  },
+  "workday:paypal:R0136273": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "PayPal",
+    "title": "Sr Software Engineer"
   },
   "workday:paypal:R0136282": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -71570,6 +71905,11 @@
     "company": "Red Hat",
     "title": "Technical Content Marketing Writer, Developer Advocate"
   },
+  "workday:redhat:R-056287": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Red Hat",
+    "title": "Partner Marketing Manager Cloud Services"
+  },
   "workday:redhat:R-056313": {
     "firstSeen": "2026-04-20T16:41:00.570Z",
     "company": "Red Hat",
@@ -71834,6 +72174,16 @@
     "firstSeen": "2026-04-20T15:04:21.505Z",
     "company": "Salesforce",
     "title": "Senior Account Executive - Insurance - Amsterdam"
+  },
+  "workday:salesforce:JR322019": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Salesforce",
+    "title": "Senior Manager, Controllership Data Stewardship & Insight Enablement"
+  },
+  "workday:salesforce:JR322020": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Salesforce",
+    "title": "Director, Controllership Data Stewardship & Workday Reporting Operations"
   },
   "workday:salesforce:JR323204": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -72775,6 +73125,11 @@
     "company": "Salesforce",
     "title": "Solution Engineering, Early Career"
   },
+  "workday:salesforce:JR339068": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Salesforce",
+    "title": "Partner Solution Advisor, Senior Manager"
+  },
   "workday:salesforce:JR339078": {
     "firstSeen": "2026-04-20T10:16:06.886Z",
     "company": "Salesforce",
@@ -72875,6 +73230,11 @@
     "company": "Salesforce",
     "title": "Specialist Solution Engineer"
   },
+  "workday:salesforce:JR339327": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Salesforce",
+    "title": "Sales Development Representative - Spanish & italian - NGO and Public Sector"
+  },
   "workday:salesforce:JR339383": {
     "firstSeen": "2026-04-21T18:05:48.822Z",
     "company": "Salesforce",
@@ -72904,6 +73264,11 @@
     "firstSeen": "2026-04-22T09:07:02.079Z",
     "company": "Salesforce",
     "title": "Forward Deployed Engineer Associate"
+  },
+  "workday:salesforce:JR339486": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Salesforce",
+    "title": "Sales Development Representative - French Speaker - NGO and Public Sector"
   },
   "workday:target:R0000400241": {
     "firstSeen": "2026-04-21T11:17:40.182Z",
@@ -74135,6 +74500,11 @@
     "company": "Target India",
     "title": "ICQA Team Member - Replensihment W2"
   },
+  "workday:target:R0000436151": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Target India",
+    "title": "Target Security Specialist"
+  },
   "workday:target:R0000436156": {
     "firstSeen": "2026-04-22T09:07:02.079Z",
     "company": "Target India",
@@ -74149,6 +74519,11 @@
     "firstSeen": "2026-04-21T16:59:23.076Z",
     "company": "Target India",
     "title": "Store Director (Huntington Beach, CA)"
+  },
+  "workday:target:R0000436181": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Target India",
+    "title": "Target Security Specialist"
   },
   "workday:target:R0000436186": {
     "firstSeen": "2026-04-21T19:46:01.727Z",
@@ -74469,6 +74844,16 @@
     "firstSeen": "2026-04-21T19:46:01.727Z",
     "company": "Walmart",
     "title": "OMNI Customer Fulfillment Associate"
+  },
+  "workday:walmart:R-2486739": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Walmart",
+    "title": "(CAN) Over-the-Counter Associate"
+  },
+  "workday:walmart:R-2486743": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Walmart",
+    "title": "(CAN) Pharmacy Assistant"
   },
   "workday:workday:JR-0093733": {
     "firstSeen": "2026-04-21T21:43:39.416Z",
@@ -74794,6 +75179,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Workday",
     "title": "Sr Associate Automation Analyst - Workday Success Plans"
+  },
+  "workday:workday:JR-0106209": {
+    "firstSeen": "2026-04-22T10:48:14.412Z",
+    "company": "Workday",
+    "title": "Manager Site Reliability Engineer"
   },
   "workday:workday:JR-0106218": {
     "firstSeen": "2026-04-20T08:05:34.211Z",
