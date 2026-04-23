@@ -10674,6 +10674,11 @@
     "company": "Zip",
     "title": "Strategic Account Executive"
   },
+  "ashby:zip:4f2ba8b4-144e-43c8-a83d-72ea40f70123": {
+    "firstSeen": "2026-04-23T23:43:09.541Z",
+    "company": "Zip",
+    "title": "Software Engineer, Backend (All Levels)"
+  },
   "ashby:zip:500787f7-91e2-44c3-85af-b62330a04ae2": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Zip",
@@ -11053,6 +11058,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Zip",
     "title": "Enterprise Account Executive"
+  },
+  "ashby:zip:e7bcd788-ca5f-4e90-9728-0de7b57026a1": {
+    "firstSeen": "2026-04-23T23:43:09.541Z",
+    "company": "Zip",
+    "title": "Software Engineer, Backend (All Levels)"
   },
   "ashby:zip:e86ad8eb-adf0-46b5-ba75-9c1f926121f2": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -46444,6 +46454,11 @@
     "company": "Pinterest",
     "title": "Engineering Manager I, Innovative Ad Formats"
   },
+  "greenhouse:pinterest:7684618": {
+    "firstSeen": "2026-04-23T23:43:09.541Z",
+    "company": "Pinterest",
+    "title": "Staff Product Owner, Finance & Business Operations"
+  },
   "greenhouse:pinterest:7684626": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Pinterest",
@@ -48988,6 +49003,11 @@
     "firstSeen": "2026-04-23T17:41:45.053Z",
     "company": "Robinhood",
     "title": "Senior Engineering Manager, AI"
+  },
+  "greenhouse:robinhood:7848821": {
+    "firstSeen": "2026-04-23T23:43:09.541Z",
+    "company": "Robinhood",
+    "title": "Senior Software Developer, Ops Platform and Fraud Investigations"
   },
   "greenhouse:roblox:6470334": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -58214,6 +58234,11 @@
     "company": "xAI",
     "title": "Senior Data Center Operations Technician"
   },
+  "greenhouse:xai:5051966007": {
+    "firstSeen": "2026-04-23T23:43:09.541Z",
+    "company": "xAI",
+    "title": "Member of Technical Staff - Voice Model"
+  },
   "greenhouse:xai:5051970007": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "xAI",
@@ -65939,6 +65964,11 @@
     "company": "Bosch",
     "title": "ASSISTENTE DE COMPRAS (34242)"
   },
+  "smartrecruiters:BoschGroup:744000122557487": {
+    "firstSeen": "2026-04-23T23:43:09.541Z",
+    "company": "Bosch",
+    "title": "Director, Simulation and Evaluation - Autonomous Driving"
+  },
   "smartrecruiters:Visa:744000120780707": {
     "firstSeen": "2026-04-18T21:34:04.755Z",
     "company": "Visa Inc",
@@ -69848,6 +69878,11 @@
     "company": "CrowdStrike",
     "title": "Regional Sales Engineer - Enterprise Accounts, Queensland (Remote, AUS)"
   },
+  "workday:crowdstrike:R28377": {
+    "firstSeen": "2026-04-23T23:43:09.541Z",
+    "company": "CrowdStrike",
+    "title": "Regional Sales Engineer (Remote)"
+  },
   "workday:crowdstrike:R28378": {
     "firstSeen": "2026-04-23T20:31:32.514Z",
     "company": "CrowdStrike",
@@ -69867,6 +69902,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "CrowdStrike",
     "title": "Engineering Manager - Cloud & AI Runtime"
+  },
+  "workday:crowdstrike:R28413": {
+    "firstSeen": "2026-04-23T23:43:09.541Z",
+    "company": "CrowdStrike",
+    "title": "Sr. Intelligence Analyst (Remote, AUS)"
   },
   "workday:crowdstrike:R28427": {
     "firstSeen": "2026-04-18T02:09:42.123Z",
@@ -75905,6 +75945,11 @@
     "company": "Nvidia",
     "title": "Senior Formal Verification Engineer - LPU"
   },
+  "workday:nvidia:JR2012496": {
+    "firstSeen": "2026-04-23T23:43:09.541Z",
+    "company": "Nvidia",
+    "title": "Senior Quantum Computing Libraries Engineer"
+  },
   "workday:nvidia:JR2012546": {
     "firstSeen": "2026-04-21T19:46:01.727Z",
     "company": "Nvidia",
@@ -76025,6 +76070,11 @@
     "company": "Nvidia",
     "title": "Senior Full-Stack Software Engineer"
   },
+  "workday:nvidia:JR2014131": {
+    "firstSeen": "2026-04-23T23:43:09.541Z",
+    "company": "Nvidia",
+    "title": "Account Manager – Manufacturing Industry and Physical AI"
+  },
   "workday:nvidia:JR2014219": {
     "firstSeen": "2026-04-23T05:16:43.075Z",
     "company": "Nvidia",
@@ -76104,6 +76154,11 @@
     "firstSeen": "2026-04-20T05:40:29.144Z",
     "company": "Nvidia",
     "title": "Senior Software Engineer, AI Storage"
+  },
+  "workday:nvidia:JR2014787": {
+    "firstSeen": "2026-04-23T23:43:09.541Z",
+    "company": "Nvidia",
+    "title": "Senior Global Channel NPI Program Manager"
   },
   "workday:nvidia:JR2014873": {
     "firstSeen": "2026-04-23T02:28:52.602Z",
@@ -76260,6 +76315,11 @@
     "company": "Nvidia",
     "title": "Senior Cell Modeling and Verification Engineer"
   },
+  "workday:nvidia:JR2015666": {
+    "firstSeen": "2026-04-23T23:43:09.541Z",
+    "company": "Nvidia",
+    "title": "Senior Systems Software Engineer - Autonomous Vehicles"
+  },
   "workday:nvidia:JR2015686": {
     "firstSeen": "2026-04-20T19:06:43.880Z",
     "company": "Nvidia",
@@ -76305,6 +76365,11 @@
     "company": "Nvidia",
     "title": "Applied AI Engineer, Silicon Co-Design Group, New College Grad 2026"
   },
+  "workday:nvidia:JR2015863": {
+    "firstSeen": "2026-04-23T23:43:09.541Z",
+    "company": "Nvidia",
+    "title": "Senior Software Engineer, RL Post-Training Frameworks"
+  },
   "workday:nvidia:JR2015868": {
     "firstSeen": "2026-04-18T15:06:08.648Z",
     "company": "Nvidia",
@@ -76329,6 +76394,11 @@
     "firstSeen": "2026-04-20T16:41:00.570Z",
     "company": "Nvidia",
     "title": "Senior Linux Developer - Networking"
+  },
+  "workday:nvidia:JR2015916": {
+    "firstSeen": "2026-04-23T23:43:09.541Z",
+    "company": "Nvidia",
+    "title": "Senior Software Golang Kubernetes Engineer"
   },
   "workday:nvidia:JR2015933": {
     "firstSeen": "2026-04-22T21:50:38.710Z",
@@ -76779,6 +76849,11 @@
     "company": "Nvidia",
     "title": "Software QA Engineer, Networking"
   },
+  "workday:nvidia:JR2016607": {
+    "firstSeen": "2026-04-23T23:43:09.541Z",
+    "company": "Nvidia",
+    "title": "Firmware QA Engineer"
+  },
   "workday:nvidia:JR2016616": {
     "firstSeen": "2026-04-23T05:16:43.075Z",
     "company": "Nvidia",
@@ -76929,6 +77004,11 @@
     "company": "Nvidia",
     "title": "System Verification Engineer"
   },
+  "workday:nvidia:JR2016711": {
+    "firstSeen": "2026-04-23T23:43:09.541Z",
+    "company": "Nvidia",
+    "title": "Senior Applied AI Researcher, Digital Biology"
+  },
   "workday:nvidia:JR2016712": {
     "firstSeen": "2026-04-21T21:43:39.416Z",
     "company": "Nvidia",
@@ -76944,6 +77024,11 @@
     "company": "Nvidia",
     "title": "Senior CPU and SOC Verification Engineer"
   },
+  "workday:nvidia:JR2016739": {
+    "firstSeen": "2026-04-23T23:43:09.541Z",
+    "company": "Nvidia",
+    "title": "Senior Strategic Alliance Manager, AI for Chemistry and Material Science - HER"
+  },
   "workday:nvidia:JR2016745": {
     "firstSeen": "2026-04-21T19:46:01.727Z",
     "company": "Nvidia",
@@ -76953,6 +77038,11 @@
     "firstSeen": "2026-04-22T18:03:08.011Z",
     "company": "Nvidia",
     "title": "Manager, Deep Learning – Autonomous Vehicles and Robotics"
+  },
+  "workday:nvidia:JR2016782": {
+    "firstSeen": "2026-04-23T23:43:09.541Z",
+    "company": "Nvidia",
+    "title": "Senior Technical Marketing Engineer - EDA and Semiconductor"
   },
   "workday:nvidia:JR2016783": {
     "firstSeen": "2026-04-23T02:28:52.602Z",
@@ -77028,6 +77118,11 @@
     "firstSeen": "2026-04-23T05:16:43.075Z",
     "company": "Nvidia",
     "title": "Principal Engineer, Data Center Power Software"
+  },
+  "workday:nvidia:JR2016912": {
+    "firstSeen": "2026-04-23T23:43:09.541Z",
+    "company": "Nvidia",
+    "title": "Senior Software Engineer – PyTorch and AI Frameworks"
   },
   "workday:nvidia:JR2016917": {
     "firstSeen": "2026-04-23T20:31:32.514Z",
@@ -81982,6 +82077,11 @@
     "company": "Target India",
     "title": "Senior Target Security Specialist - Regional Distribution Center - Rialto, CA"
   },
+  "workday:target:R0000436514": {
+    "firstSeen": "2026-04-23T23:43:09.541Z",
+    "company": "Target India",
+    "title": "Strategic Partnerships Associate"
+  },
   "workday:target:R0000436521": {
     "firstSeen": "2026-04-23T19:06:04.826Z",
     "company": "Target India",
@@ -82001,6 +82101,11 @@
     "firstSeen": "2026-04-23T22:42:07.291Z",
     "company": "Target India",
     "title": "General Merchandise Team Leader"
+  },
+  "workday:target:R0000436564": {
+    "firstSeen": "2026-04-23T23:43:09.541Z",
+    "company": "Target India",
+    "title": "General Merchandise Team Leader- (West Valley Phoenix, AZ)"
   },
   "workday:walmart:R-128829": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -82326,6 +82431,11 @@
     "firstSeen": "2026-04-23T19:06:04.826Z",
     "company": "Walmart",
     "title": "(USA) Backroom Associate - Sam's Club"
+  },
+  "workday:walmart:R-2489093": {
+    "firstSeen": "2026-04-23T23:43:09.541Z",
+    "company": "Walmart",
+    "title": "Meat Associate"
   },
   "workday:workday:JR-0093733": {
     "firstSeen": "2026-04-21T21:43:39.416Z",
