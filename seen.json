@@ -17149,6 +17149,11 @@
     "company": "Asana",
     "title": "Junior Software Engineer, Reykjavik"
   },
+  "greenhouse:asana:7769478": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Asana",
+    "title": "Administrative Business Partner"
+  },
   "greenhouse:asana:7770046": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Asana",
@@ -30769,6 +30774,11 @@
     "company": "Discord",
     "title": "Workplace Operations Program Manager"
   },
+  "greenhouse:discord:8431594002": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Discord",
+    "title": "Travel Services Manager"
+  },
   "greenhouse:discord:8431671002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Discord",
@@ -33303,6 +33313,11 @@
     "firstSeen": "2026-04-24T16:04:12.533Z",
     "company": "Elastic",
     "title": "Senior Software Engineer - Timeseries - Elasticsearch"
+  },
+  "greenhouse:elastic:7852721": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Elastic",
+    "title": "Site Reliability Engineer (Mid / Senior) - Platform Infrastructure"
   },
   "greenhouse:figma:5220003004": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -36274,6 +36289,11 @@
     "company": "GitLab",
     "title": "CX Services Program Manager"
   },
+  "greenhouse:gitlab:8500233002": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "GitLab",
+    "title": "Lead Commercial Legal Counsel "
+  },
   "greenhouse:gitlab:8502364002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "GitLab",
@@ -38808,6 +38828,11 @@
     "firstSeen": "2026-04-24T17:29:56.807Z",
     "company": "Gusto",
     "title": "Head of Customer Referral & Emerging Channels"
+  },
+  "greenhouse:gusto:7848767": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Gusto",
+    "title": "Legal AI Engineer (Contractor)"
   },
   "greenhouse:instacart:4949335": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -43974,6 +43999,11 @@
     "company": "Neuralink",
     "title": "Electrical Engineer Intern, Implant Embedded Systems"
   },
+  "greenhouse:neuralink:7713975003": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Neuralink",
+    "title": "Quality Engineering Technician"
+  },
   "greenhouse:observeai:4173623008": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Observe AI",
@@ -47623,6 +47653,11 @@
     "firstSeen": "2026-04-22T19:46:46.967Z",
     "company": "Pinterest",
     "title": "IT/AV Production Events Specialist II"
+  },
+  "greenhouse:pinterest:7848208": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Pinterest",
+    "title": "Software Engineer II, Web Platform"
   },
   "greenhouse:pinterest:7848210": {
     "firstSeen": "2026-04-24T21:13:02.330Z",
@@ -67774,6 +67809,11 @@
     "company": "Bosch",
     "title": "LÍDER TIME LOGÍSTICA JR"
   },
+  "smartrecruiters:BoschGroup:744000122764880": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Bosch",
+    "title": "VS Manager VSL2"
+  },
   "smartrecruiters:Visa:744000120780707": {
     "firstSeen": "2026-04-18T21:34:04.755Z",
     "company": "Visa Inc",
@@ -70873,6 +70913,11 @@
     "company": "Autodesk",
     "title": "Recruiter - AMER Go-To-Market (6-month contract)"
   },
+  "workday:autodesk:26WD97783": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Autodesk",
+    "title": "Senior Development Manager, Platforms Development AI/ML San Francisco, CA"
+  },
   "workday:autodesk:26WD99035": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Autodesk",
@@ -71417,6 +71462,11 @@
     "firstSeen": "2026-04-22T19:46:46.967Z",
     "company": "Cadence",
     "title": "Jasper Formal Verification - Sr Principal Application Engineer"
+  },
+  "workday:cadence:R54501": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Cadence",
+    "title": "Lead Scientific Developer – Biologics & Protein Design"
   },
   "workday:cadence:R54508": {
     "firstSeen": "2026-04-24T07:18:08.204Z",
@@ -73570,6 +73620,11 @@
     "firstSeen": "2026-04-24T17:29:56.807Z",
     "company": "Intel",
     "title": "Design Verification Student Worker"
+  },
+  "workday:intel:JR0283313": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Intel",
+    "title": "Electrical Validation Intern"
   },
   "workday:intel:JR0283315": {
     "firstSeen": "2026-04-24T18:08:16.453Z",
@@ -78640,6 +78695,11 @@
     "company": "Nvidia",
     "title": "Senior ASIC Verification Engineer"
   },
+  "workday:nvidia:JR2009745": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Nvidia",
+    "title": "Software Engineering Intern, JAX - Fall 2026"
+  },
   "workday:nvidia:JR2009820": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Nvidia",
@@ -80388,6 +80448,11 @@
     "company": "PayPal",
     "title": "Software Engineer - Backend (Java)"
   },
+  "workday:paypal:R0135645": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "PayPal",
+    "title": "Software Engineer (Full Stack JavaScript)"
+  },
   "workday:paypal:R0135648": {
     "firstSeen": "2026-04-20T20:10:39.388Z",
     "company": "PayPal",
@@ -80587,6 +80652,11 @@
     "firstSeen": "2026-04-24T21:13:02.330Z",
     "company": "PayPal",
     "title": "Software Engineer (Full Stack JavaScript)"
+  },
+  "workday:paypal:R0136087": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "PayPal",
+    "title": "Sr Software Engineer (Full Stack JavaScript)"
   },
   "workday:paypal:R0136089": {
     "firstSeen": "2026-04-24T21:13:02.330Z",
@@ -80988,6 +81058,16 @@
     "company": "Red Hat",
     "title": "Senior Product Security Engineer - Automation (EMEA)"
   },
+  "workday:redhat:R-053058": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Red Hat",
+    "title": "Principal Machine Learning Engineer"
+  },
+  "workday:redhat:R-053059": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Red Hat",
+    "title": "Senior Machine Learning Engineer"
+  },
   "workday:redhat:R-053062": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Red Hat",
@@ -81227,6 +81307,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Red Hat",
     "title": "Senior Software Engineer - Automotive Kernel Linux Engineering (Ireland)"
+  },
+  "workday:redhat:R-055973": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Red Hat",
+    "title": "Sr. Software Engineer"
   },
   "workday:redhat:R-055978": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -82663,6 +82748,11 @@
     "company": "Salesforce",
     "title": "AI Consultant"
   },
+  "workday:salesforce:JR337555": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Salesforce",
+    "title": "Staff Software Engineer, Android"
+  },
   "workday:salesforce:JR337566": {
     "firstSeen": "2026-04-21T15:51:59.911Z",
     "company": "Salesforce",
@@ -83063,6 +83153,16 @@
     "company": "Salesforce",
     "title": "Workplace Services Analyst"
   },
+  "workday:salesforce:JR338648": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Salesforce",
+    "title": "Lead Data Engineer, AI"
+  },
+  "workday:salesforce:JR338651": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Salesforce",
+    "title": "Lead Decision Scientist"
+  },
   "workday:salesforce:JR338664": {
     "firstSeen": "2026-04-20T16:41:00.570Z",
     "company": "Salesforce",
@@ -83367,6 +83467,11 @@
     "firstSeen": "2026-04-24T16:04:12.533Z",
     "company": "Salesforce",
     "title": "Enterprise Analytics Account Executive"
+  },
+  "workday:salesforce:JR339232": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Salesforce",
+    "title": "Informatica Cloud Account Executive, Data Integration"
   },
   "workday:salesforce:JR339239": {
     "firstSeen": "2026-04-20T22:09:16.861Z",
@@ -83687,6 +83792,11 @@
     "firstSeen": "2026-04-23T10:53:10.068Z",
     "company": "Target India",
     "title": "Seasonal: 4am Inbound (Stocking) (T2902)"
+  },
+  "workday:target:R0000393867": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Target India",
+    "title": "Lead UX Operations Manager - Portfolio Management"
   },
   "workday:target:R0000400241": {
     "firstSeen": "2026-04-21T11:17:40.182Z",
@@ -84116,6 +84226,11 @@
     "firstSeen": "2026-04-20T21:10:47.232Z",
     "company": "Target India",
     "title": "Operations Manager- Fulfillment Center- Joliet, IL"
+  },
+  "workday:target:R0000434506": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Target India",
+    "title": "Specialty Sales Team Leader, Balcones Heights, TX"
   },
   "workday:target:R0000434521": {
     "firstSeen": "2026-04-23T16:00:36.159Z",
@@ -85982,6 +86097,11 @@
     "company": "Target India",
     "title": "Operations Manager - Flow Center - Chicago, IL"
   },
+  "workday:target:R0000436661": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Target India",
+    "title": "Executive Team Leader Specialty Sales (Assistant Manager Merchandising & Service) - Portage"
+  },
   "workday:walmart:R-128829": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Walmart",
@@ -86396,6 +86516,11 @@
     "firstSeen": "2026-04-24T17:29:56.807Z",
     "company": "Workday",
     "title": "Sr Software Development Engineer"
+  },
+  "workday:workday:JR-0103569": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Workday",
+    "title": "Sr Site Reliability Engineer (US Federal)"
   },
   "workday:workday:JR-0103634": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -86881,6 +87006,11 @@
     "company": "Workday",
     "title": "Commercial Account Executive"
   },
+  "workday:workday:JR-0106234": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Workday",
+    "title": "Principal Agent Development Engineer - Agent Platform"
+  },
   "workday:workday:JR-0106247": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Workday",
@@ -87250,5 +87380,10 @@
     "firstSeen": "2026-04-24T19:28:52.807Z",
     "company": "Workday",
     "title": "Full Stack Software Development Engineer III - Agent Platform"
+  },
+  "workday:workday:JR-0106812": {
+    "firstSeen": "2026-04-24T22:08:30.165Z",
+    "company": "Workday",
+    "title": "Machine Learning Engineer III / Senior Machine Learning Engineer - AI Platform"
   }
 }
