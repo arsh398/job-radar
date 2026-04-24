@@ -5354,6 +5354,11 @@
     "company": "LangChain",
     "title": "Engagement Manager (NYC)  "
   },
+  "ashby:langchain:1683a053-1bca-4a54-9889-bc32259df4e1": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "LangChain",
+    "title": "EMEA Deal Strategy & Operations Manager"
+  },
   "ashby:langchain:1a588677-0507-45a4-8a14-506e89d2444f": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "LangChain",
@@ -9263,6 +9268,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Sentry",
     "title": "Senior Software Engineer, Analytics Platform"
+  },
+  "ashby:sentry:70b48ffb-b413-49d1-8557-acc37b0e407e": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Sentry",
+    "title": "Senior Software Engineer, Streaming Platform"
   },
   "ashby:sentry:725e606d-3299-4aea-a120-d202ffbdc1aa": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -31014,6 +31024,11 @@
     "company": "Discord",
     "title": "Administrative Business Lead"
   },
+  "greenhouse:discord:8523903002": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Discord",
+    "title": "Recruiting Data Analyst"
+  },
   "greenhouse:dropbox:6330333": {
     "firstSeen": "2026-04-23T07:14:22.981Z",
     "company": "Dropbox",
@@ -48669,6 +48684,11 @@
     "company": "Reddit",
     "title": "Experience Partner, Real Estate Leasing and Operations "
   },
+  "greenhouse:reddit:7687749": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Reddit",
+    "title": "Staff Engineer - Ads Trust, Fraud and Safety"
+  },
   "greenhouse:reddit:7694751": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Reddit",
@@ -49168,6 +49188,11 @@
     "firstSeen": "2026-04-24T19:28:52.807Z",
     "company": "Reddit",
     "title": "Staff Machine Learning Engineer, Ads Content Understanding"
+  },
+  "greenhouse:reddit:7852824": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Reddit",
+    "title": "Staff Engineer, Ads Trust, Fraud and Safety"
   },
   "greenhouse:robinhood:4738660": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -51499,6 +51524,11 @@
     "company": "Roblox",
     "title": "Talent Business Partner, Business (Short Term)"
   },
+  "greenhouse:roblox:7838662": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Roblox",
+    "title": "General Manager, South East Asia"
+  },
   "greenhouse:roblox:7839207": {
     "firstSeen": "2026-04-22T20:53:56.740Z",
     "company": "Roblox",
@@ -51528,6 +51558,11 @@
     "firstSeen": "2026-04-24T14:53:21.466Z",
     "company": "Roblox",
     "title": "Associate Developer Community Manager"
+  },
+  "greenhouse:roblox:7852284": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Roblox",
+    "title": "Senior Engineering Manager, Data Engineering"
   },
   "greenhouse:rubrik:2146030": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -55208,6 +55243,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Stripe",
     "title": "Paid Digital Marketing Manager"
+  },
+  "greenhouse:stripe:7618067": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Stripe",
+    "title": "Corporate Accountant"
   },
   "greenhouse:stripe:7618545": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -59813,6 +59853,11 @@
     "firstSeen": "2026-04-24T19:28:52.807Z",
     "company": "xAI",
     "title": "Backend Engineer - API"
+  },
+  "greenhouse:xai:5120884007": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "xAI",
+    "title": "Data Engineer"
   },
   "lever:cred:150186f5-4eaf-4afe-ae08-bb36c71abb83": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -68999,6 +69044,11 @@
     "company": "Visa Inc",
     "title": "Director, Global Technology Sourcing"
   },
+  "smartrecruiters:Visa:744000122769294": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Visa Inc",
+    "title": "Sr. Director, Consumer Card Products"
+  },
   "workable:apna:01B0CB39DD": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Apna",
@@ -70548,6 +70598,11 @@
     "company": "Autodesk",
     "title": "Digital Renewal Sales Rep, Hebrew Speaking"
   },
+  "workday:autodesk:26WD97210": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Autodesk",
+    "title": "Business Strategist, AI Foundation Models"
+  },
   "workday:autodesk:26WD97231": {
     "firstSeen": "2026-04-22T10:48:14.412Z",
     "company": "Autodesk",
@@ -71002,6 +71057,11 @@
     "firstSeen": "2026-04-23T22:42:07.291Z",
     "company": "Cadence",
     "title": "Software Engineering Intern - Circuit Simulation infrastructure"
+  },
+  "workday:cadence:R51782": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Cadence",
+    "title": "Group Director,  Design Engineering - Front End"
   },
   "workday:cadence:R51880": {
     "firstSeen": "2026-04-21T23:34:18.359Z",
@@ -73721,6 +73781,11 @@
     "company": "Intel",
     "title": "Platform Validation Intern"
   },
+  "workday:intel:JR0283388": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Intel",
+    "title": "Technical Project Manager"
+  },
   "workday:intel:JR0283391": {
     "firstSeen": "2026-04-24T05:22:25.358Z",
     "company": "Intel",
@@ -73760,6 +73825,11 @@
     "firstSeen": "2026-04-24T21:13:02.330Z",
     "company": "Intel",
     "title": "Component Retail Sales Operations Manager"
+  },
+  "workday:intel:JR0283446": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Intel",
+    "title": "Retail Sales Manager"
   },
   "workday:intel:JR0283451": {
     "firstSeen": "2026-04-24T10:51:13.773Z",
@@ -76311,6 +76381,11 @@
     "company": "Micron",
     "title": "Test Technician 1"
   },
+  "workday:micron:JR92536": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Micron",
+    "title": "Product Yield Enhancement  Engineer"
+  },
   "workday:micron:JR92702": {
     "firstSeen": "2026-04-23T02:28:52.602Z",
     "company": "Micron",
@@ -76625,6 +76700,11 @@
     "firstSeen": "2026-04-21T16:59:23.076Z",
     "company": "Micron",
     "title": "Yield Analysis Lead (Remote support)"
+  },
+  "workday:micron:JR95009": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Micron",
+    "title": "Senior Software Development Engineer, IT MFG & TPG"
   },
   "workday:micron:JR95084": {
     "firstSeen": "2026-04-20T10:16:06.886Z",
@@ -78009,6 +78089,11 @@
     "firstSeen": "2026-04-24T05:22:25.358Z",
     "company": "Micron",
     "title": "Senior Manager, FE Labor Prod. & Data Engrg"
+  },
+  "workday:micron:JR99741": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Micron",
+    "title": "Operation Improvement Engineer"
   },
   "workday:micron:JR99749": {
     "firstSeen": "2026-04-24T07:18:08.204Z",
@@ -80773,6 +80858,11 @@
     "company": "PayPal",
     "title": "Software Engineer"
   },
+  "workday:paypal:R0136180": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "PayPal",
+    "title": "Manager, Software Engineering"
+  },
   "workday:paypal:R0136182": {
     "firstSeen": "2026-04-23T14:00:05.982Z",
     "company": "PayPal",
@@ -81857,6 +81947,11 @@
     "firstSeen": "2026-04-20T19:06:43.880Z",
     "company": "Salesforce",
     "title": "Named Account Executive, Mid-Market: Non-Profit"
+  },
+  "workday:salesforce:JR324787": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Salesforce",
+    "title": "Senior Lead, Software Engineer"
   },
   "workday:salesforce:JR324811": {
     "firstSeen": "2026-04-22T16:58:08.367Z",
@@ -83588,6 +83683,11 @@
     "company": "Salesforce",
     "title": "Missionforce - Director/Sr. Director, Product Management (Sovereign Cloud)"
   },
+  "workday:salesforce:JR339421": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Salesforce",
+    "title": "Slack Ecosystem Director"
+  },
   "workday:salesforce:JR339465": {
     "firstSeen": "2026-04-24T10:51:13.773Z",
     "company": "Salesforce",
@@ -83772,6 +83872,11 @@
     "firstSeen": "2026-04-24T10:51:13.773Z",
     "company": "Salesforce",
     "title": "Business Development Representative - Turkish Speakers"
+  },
+  "workday:salesforce:JR339867": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Salesforce",
+    "title": "Legal Technology Operations Senior Analyst"
   },
   "workday:salesforce:JR339912": {
     "firstSeen": "2026-04-24T17:29:56.807Z",
@@ -86467,6 +86572,11 @@
     "company": "Workday",
     "title": "Software Development Engineer"
   },
+  "workday:workday:JR-0098542": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Workday",
+    "title": "Senior Devops Engineer, Alpaca Engineer (US Federal)"
+  },
   "workday:workday:JR-0102019": {
     "firstSeen": "2026-04-24T17:29:56.807Z",
     "company": "Workday",
@@ -86527,6 +86637,11 @@
     "company": "Workday",
     "title": "Principal Program Manager - Finance"
   },
+  "workday:workday:JR-0103679": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Workday",
+    "title": "Sr. Software Development Engineer (US Federal)"
+  },
   "workday:workday:JR-0103681": {
     "firstSeen": "2026-04-24T18:08:16.453Z",
     "company": "Workday",
@@ -86546,6 +86661,11 @@
     "firstSeen": "2026-04-24T21:13:02.330Z",
     "company": "Workday",
     "title": "Software Development Engineer (US Federal)"
+  },
+  "workday:workday:JR-0103794": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Workday",
+    "title": "Regional Sales Director, Large Enterprise Customer Base- Retail, Hospitality & Transportation"
   },
   "workday:workday:JR-0103832": {
     "firstSeen": "2026-04-20T05:40:29.144Z",
@@ -87020,6 +87140,21 @@
     "firstSeen": "2026-04-24T19:28:52.807Z",
     "company": "Workday",
     "title": "Product Manager: Platform Enablement, Core Services"
+  },
+  "workday:workday:JR-0106270": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Workday",
+    "title": "Principal Full Stack Engineer - Agent Platform"
+  },
+  "workday:workday:JR-0106273": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Workday",
+    "title": "Full  Stack Software Engineer - Agent Platform"
+  },
+  "workday:workday:JR-0106274": {
+    "firstSeen": "2026-04-24T23:07:02.821Z",
+    "company": "Workday",
+    "title": "Agent Development Engineer  - Agent Platform"
   },
   "workday:workday:JR-0106278": {
     "firstSeen": "2026-04-21T10:00:31.304Z",
