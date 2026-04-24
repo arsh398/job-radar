@@ -4334,6 +4334,11 @@
     "company": "Decagon",
     "title": "Senior Software Engineer, Agents"
   },
+  "ashby:decagon:d32da775-c5ea-420d-a07e-13412044c27b": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "Decagon",
+    "title": "Technical Program Manager"
+  },
   "ashby:decagon:d62476d8-8fa6-4c34-8e72-d9e2740f891d": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Decagon",
@@ -30009,6 +30014,11 @@
     "company": "Datadog",
     "title": "Field CTO (Retail & E-commerce)"
   },
+  "greenhouse:datadog:7851446": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "Datadog",
+    "title": "DataPUPS Early ID Summit"
+  },
   "greenhouse:deepmind:7094457": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "DeepMind",
@@ -42633,6 +42643,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "MongoDB",
     "title": "Head of Post Sales Technology"
+  },
+  "greenhouse:mongodb:7707200": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "MongoDB",
+    "title": "Customer Advocate, Office of the CCO"
   },
   "greenhouse:mongodb:7711189": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -56039,6 +56054,11 @@
     "company": "Stripe",
     "title": "Backend Engineer, AI Security"
   },
+  "greenhouse:stripe:7826843": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "Stripe",
+    "title": "Head of Revenue and Growth, Canada"
+  },
   "greenhouse:stripe:7827182": {
     "firstSeen": "2026-04-20T15:04:21.505Z",
     "company": "Stripe",
@@ -67579,6 +67599,11 @@
     "company": "Bosch",
     "title": "OT (Operational Technology) Technician - 1st shift"
   },
+  "smartrecruiters:BoschGroup:744000122755599": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "Bosch",
+    "title": "Promotor (a) de Ventas - Lima Norte (canal tradicional y múltiple)"
+  },
   "smartrecruiters:Visa:744000120780707": {
     "firstSeen": "2026-04-18T21:34:04.755Z",
     "company": "Visa Inc",
@@ -70893,6 +70918,21 @@
     "company": "Cadence",
     "title": "SI/PI for 3DIC Sr Principle Solutions Engineer"
   },
+  "workday:cadence:R53594": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "Cadence",
+    "title": "Principal Solutions Engineer: Allegro Package Designer"
+  },
+  "workday:cadence:R53595": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "Cadence",
+    "title": "Principal Solutions Engineer: Integrity"
+  },
+  "workday:cadence:R53596": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "Cadence",
+    "title": "Lead Solutions Engineer: SI/PI/Thermal Analysis"
+  },
   "workday:cadence:R53682": {
     "firstSeen": "2026-04-20T22:09:16.861Z",
     "company": "Cadence",
@@ -73301,10 +73341,20 @@
     "company": "Intel",
     "title": "SOC Design Verification Engineer"
   },
+  "workday:intel:JR0283292": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "Intel",
+    "title": "AI Tools Development Intern"
+  },
   "workday:intel:JR0283302": {
     "firstSeen": "2026-04-24T19:28:52.807Z",
     "company": "Intel",
     "title": "Pre-Si Systems Intern"
+  },
+  "workday:intel:JR0283304": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "Intel",
+    "title": "SoC Functional Validation Engineering Intern"
   },
   "workday:intel:JR0283311": {
     "firstSeen": "2026-04-24T17:29:56.807Z",
@@ -75751,6 +75801,16 @@
     "company": "Micron",
     "title": "TW ID1 RDA Operation Engineer"
   },
+  "workday:micron:JR89828": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "Micron",
+    "title": "EUV Lithography Process Development Engineer- TPG"
+  },
+  "workday:micron:JR89829": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "Micron",
+    "title": "EUV Lithography Pathfinding Engineer- TPG"
+  },
   "workday:micron:JR89830": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Micron",
@@ -78090,6 +78150,11 @@
     "company": "Nvidia",
     "title": "Senior Firmware Engineer – CSP Engagements"
   },
+  "workday:nvidia:JR1999623": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "Nvidia",
+    "title": "Firmware Infrastructure Engineer - GPU"
+  },
   "workday:nvidia:JR1999730": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Nvidia",
@@ -78199,6 +78264,11 @@
     "firstSeen": "2026-04-22T15:50:57.008Z",
     "company": "Nvidia",
     "title": "EDA Workflow Optimization Engineer"
+  },
+  "workday:nvidia:JR2005482": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "Nvidia",
+    "title": "Senior Deep Learning Software Engineer - Autonomous Vehicles"
   },
   "workday:nvidia:JR2006503": {
     "firstSeen": "2026-04-20T05:40:29.144Z",
@@ -78439,6 +78509,11 @@
     "firstSeen": "2026-04-22T14:01:55.467Z",
     "company": "Nvidia",
     "title": "Senior Physical Design Methodology Engineer, Innovus Flows"
+  },
+  "workday:nvidia:JR2011653": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "Nvidia",
+    "title": "Senior Cloud Software Engineer, Developer Tools"
   },
   "workday:nvidia:JR2011698": {
     "firstSeen": "2026-04-22T16:58:08.367Z",
@@ -79064,6 +79139,11 @@
     "firstSeen": "2026-04-23T05:16:43.075Z",
     "company": "Nvidia",
     "title": "Senior Compute System Software Engineer"
+  },
+  "workday:nvidia:JR2016090": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "Nvidia",
+    "title": "Senior Multi‑GPU Signal Processing and System Architecture Engineer"
   },
   "workday:nvidia:JR2016101": {
     "firstSeen": "2026-04-23T22:42:07.291Z",
@@ -80248,6 +80328,11 @@
     "company": "PayPal",
     "title": "Executive Director & President, PayPal Giving Fund Canada"
   },
+  "workday:paypal:R0136090": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "PayPal",
+    "title": "Sr Software Engineer, Fullstack"
+  },
   "workday:paypal:R0136091": {
     "firstSeen": "2026-04-20T20:10:39.388Z",
     "company": "PayPal",
@@ -80272,6 +80357,11 @@
     "firstSeen": "2026-04-21T03:51:07.459Z",
     "company": "PayPal",
     "title": "Staff Software Engineer - iOS"
+  },
+  "workday:paypal:R0136100": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "PayPal",
+    "title": "Staff Software Engineer, Backend"
   },
   "workday:paypal:R0136101": {
     "firstSeen": "2026-04-23T14:00:05.982Z",
@@ -81383,6 +81473,11 @@
     "company": "Salesforce",
     "title": "Principal Backend Engineer, Agentforce for Supply Chain"
   },
+  "workday:salesforce:JR322187": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "Salesforce",
+    "title": "Senior Fullstack Engineer,  Agentforce for Supply Chain"
+  },
   "workday:salesforce:JR323204": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Salesforce",
@@ -82103,6 +82198,11 @@
     "company": "Salesforce",
     "title": "Technical Support Engineer - GVC Cloud (US Citizen Only)"
   },
+  "workday:salesforce:JR336513": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "Salesforce",
+    "title": "Solution Developer - Demos Engineering"
+  },
   "workday:salesforce:JR336573": {
     "firstSeen": "2026-04-24T05:22:25.358Z",
     "company": "Salesforce",
@@ -82317,6 +82417,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Salesforce",
     "title": "Senior Recruiter – Applied Science, Machine Learning & Data Science Recruiting"
+  },
+  "workday:salesforce:JR338000": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "Salesforce",
+    "title": "Senior Software Engineer, Contract Lifecycle Management (CLM)"
   },
   "workday:salesforce:JR338024": {
     "firstSeen": "2026-04-22T09:07:02.079Z",
@@ -83083,6 +83188,11 @@
     "company": "Salesforce",
     "title": "Summer 2026 Intern - ES Product Management, Digital Experience and Research"
   },
+  "workday:salesforce:JR339402": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "Salesforce",
+    "title": "Manager, Financial Planning & Analysis - Sales"
+  },
   "workday:salesforce:JR339409": {
     "firstSeen": "2026-04-21T22:37:30.210Z",
     "company": "Salesforce",
@@ -83282,6 +83392,11 @@
     "firstSeen": "2026-04-24T19:28:52.807Z",
     "company": "Salesforce",
     "title": "Services Sales Solutions Director - HLS"
+  },
+  "workday:salesforce:JR339947": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "Salesforce",
+    "title": "Senior Infrastructure Architect (TS/SCI Clearance)"
   },
   "workday:target:R0000370649": {
     "firstSeen": "2026-04-23T10:53:10.068Z",
@@ -85447,6 +85562,11 @@
     "company": "Target India",
     "title": "Target Security Specialist"
   },
+  "workday:target:R0000436530": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "Target India",
+    "title": "Seasonal Target Security Specialist - Regional Distribution Center - Woodland, CA"
+  },
   "workday:target:R0000436545": {
     "firstSeen": "2026-04-24T07:18:08.204Z",
     "company": "Target India",
@@ -85486,6 +85606,11 @@
     "firstSeen": "2026-04-23T22:42:07.291Z",
     "company": "Target India",
     "title": "General Merchandise Team Leader"
+  },
+  "workday:target:R0000436562": {
+    "firstSeen": "2026-04-24T20:09:34.944Z",
+    "company": "Target India",
+    "title": "Seasonal HR Specialist - GSCL"
   },
   "workday:target:R0000436564": {
     "firstSeen": "2026-04-23T23:43:09.541Z",
