@@ -2074,6 +2074,11 @@
     "company": "Amazon",
     "title": "Software Development Engineer, FinTech, FinTech"
   },
+  "amazon:e358bf90-5f1b-405a-86d9-7744954a030b": {
+    "firstSeen": "2026-04-25T10:42:13.011Z",
+    "company": "Amazon",
+    "title": "Business Analyst II, Customer Partner Trust"
+  },
   "amazon:e4ab37c2-1797-4359-b8c1-1359790cdc6d": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
@@ -68034,6 +68039,11 @@
     "company": "Bosch",
     "title": "[BD] IT Project Operation Assistant - 6-Month Internship"
   },
+  "smartrecruiters:BoschGroup:744000122915779": {
+    "firstSeen": "2026-04-25T10:42:13.011Z",
+    "company": "Bosch",
+    "title": "[BD] IT Project Operation Assistant - 6-Month Internship"
+  },
   "smartrecruiters:Visa:744000104778816": {
     "firstSeen": "2026-04-25T07:13:07.357Z",
     "company": "Visa Inc",
@@ -71002,6 +71012,11 @@
     "firstSeen": "2026-04-23T16:00:36.159Z",
     "company": "Autodesk",
     "title": "Application Security Engineer"
+  },
+  "workday:autodesk:26WD95416": {
+    "firstSeen": "2026-04-25T10:42:13.011Z",
+    "company": "Autodesk",
+    "title": "Client Services Specialist"
   },
   "workday:autodesk:26WD95491": {
     "firstSeen": "2026-04-23T16:00:36.159Z",
