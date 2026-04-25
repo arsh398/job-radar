@@ -284,6 +284,11 @@
     "company": "Amazon",
     "title": "Data Engineering Manager"
   },
+  "amazon:2355456a-9330-472c-92f2-db2877635df0": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Amazon",
+    "title": "Manager - Investigations , KYC"
+  },
   "amazon:23c82b89-32b3-4650-8729-474267a67a8d": {
     "firstSeen": "2026-04-20T13:26:29.603Z",
     "company": "Amazon",
@@ -368,6 +373,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
     "title": "Account Mgmt Associate - Spanish, B2B, International Seller Growth"
+  },
+  "amazon:2d84041f-0465-43b7-8f98-a7e5f97cf45f": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Amazon",
+    "title": "Software Development Engineer II, Tax Services"
   },
   "amazon:2e40f75e-6190-4b28-be2a-c3a85fb19096": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -868,6 +878,11 @@
     "firstSeen": "2026-04-21T03:51:07.459Z",
     "company": "Amazon",
     "title": "Program Analyst, AMZL"
+  },
+  "amazon:60c17a71-aee7-4eff-b9ed-4aea3f022f91": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Amazon",
+    "title": "ITS Support Engineer I , GSD"
   },
   "amazon:61236cac-d194-4614-b825-6fb4d5b7acb6": {
     "firstSeen": "2026-04-24T09:17:05.832Z",
@@ -1588,6 +1603,11 @@
     "firstSeen": "2026-04-21T18:05:48.822Z",
     "company": "Amazon",
     "title": "Associate Solution Architect, Startups"
+  },
+  "amazon:ac22298c-8b78-4973-8d17-22968d791a68": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Amazon",
+    "title": "ITS Support Associate, IT Services (Global Service Desk)"
   },
   "amazon:ac7bb24e-d2eb-4c50-b88b-2c6e51cfc773": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -12419,6 +12439,11 @@
     "company": "Airbnb",
     "title": "Product Manager, LATAM (Miami or San Francisco)"
   },
+  "greenhouse:airbnb:7158963": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Airbnb",
+    "title": "AI-Enabled Insights Lead"
+  },
   "greenhouse:airbnb:7160064": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Airbnb",
@@ -16528,6 +16553,11 @@
     "firstSeen": "2026-04-24T13:23:06.904Z",
     "company": "Anthropic",
     "title": "Revenue Strategy & Operations"
+  },
+  "greenhouse:anthropic:5200670008": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Anthropic",
+    "title": "Head of Resilience Operations, Global Safety, Intelligence & Security"
   },
   "greenhouse:asana:5480143": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -41349,6 +41379,16 @@
     "company": "Mixpanel",
     "title": "AP & Employee Expense Specialist"
   },
+  "greenhouse:mixpanel:7850958": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Mixpanel",
+    "title": "Software Engineer, Backend"
+  },
+  "greenhouse:mixpanel:7850960": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Mixpanel",
+    "title": "Senior Software Engineer, AI Product Insights"
+  },
   "greenhouse:mixpanel:7850982": {
     "firstSeen": "2026-04-24T13:23:06.904Z",
     "company": "Mixpanel",
@@ -58354,6 +58394,16 @@
     "company": "Twitch",
     "title": "Tech Bus Dev Manager"
   },
+  "greenhouse:twitch:8517748002": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Twitch",
+    "title": "AV & IT Support Engineer"
+  },
+  "greenhouse:twitch:8519628002": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Twitch",
+    "title": "Software Engineer I, Ad Supply Experiences"
+  },
   "greenhouse:webflow:6124408": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Webflow",
@@ -64084,6 +64134,46 @@
     "company": "Amigo",
     "title": "Applied AI Engineer Europe"
   },
+  "remoteok:1131297": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "TLDR",
+    "title": "Strategy & Operations"
+  },
+  "remoteok:1131298": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Zeta Global",
+    "title": "Senior Account Executive Publishers"
+  },
+  "remoteok:1131299": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "TeleMed2U",
+    "title": "Neurologist TX Licensed BC PT FT Fully Virtual"
+  },
+  "remoteok:1131300": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "MissionWired",
+    "title": "Controller"
+  },
+  "remoteok:1131301": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Distro",
+    "title": "Bilingual Legal Personal Injury"
+  },
+  "remoteok:1131302": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Fleetio",
+    "title": "TEST JOB"
+  },
+  "remoteok:1131303": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Envision Horizons LLC",
+    "title": "Full Stack Developer"
+  },
+  "remoteok:1131304": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Diversified Radiology",
+    "title": "Overnight Neuroradiologist Partner Track 10p 7a MST 7 on 14 off"
+  },
   "smartrecruiters:BoschGroup:744000121337448": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Bosch",
@@ -67908,6 +67998,131 @@
     "firstSeen": "2026-04-24T22:08:30.165Z",
     "company": "Bosch",
     "title": "VS Manager VSL2"
+  },
+  "smartrecruiters:BoschGroup:744000122855071": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Bosch",
+    "title": "ADAS高级架构师_XC"
+  },
+  "smartrecruiters:BoschGroup:744000122858168": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Bosch",
+    "title": "ADAS车载通讯专家_XC"
+  },
+  "smartrecruiters:Visa:744000119194307": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Visa Inc",
+    "title": "Senior Manager, Payments Optimization"
+  },
+  "smartrecruiters:Visa:744000119236237": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Visa Inc",
+    "title": "Senior Manager, Financial Analysis"
+  },
+  "smartrecruiters:Visa:744000119612673": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Visa Inc",
+    "title": "Senior Associate Counsel, People Legal"
+  },
+  "smartrecruiters:Visa:744000119653992": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Visa Inc",
+    "title": "Senior Director, Global Brand and Marketing Communications"
+  },
+  "smartrecruiters:Visa:744000119687360": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Visa Inc",
+    "title": "Director – Global Tax Policy, Global Government Affairs"
+  },
+  "smartrecruiters:Visa:744000120009376": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Visa Inc",
+    "title": "Product Analyst - Generative AI Platform"
+  },
+  "smartrecruiters:Visa:744000120032817": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Visa Inc",
+    "title": "Manager, Risk Products & Solutions – A2A"
+  },
+  "smartrecruiters:Visa:744000120032987": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Visa Inc",
+    "title": "Manager, Risk Products & Solutions – A2A"
+  },
+  "smartrecruiters:Visa:744000120037838": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Visa Inc",
+    "title": "Senior Manager, Visa Direct Sales Executive"
+  },
+  "smartrecruiters:Visa:744000120066996": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Visa Inc",
+    "title": "Sr. SW Engineer"
+  },
+  "smartrecruiters:Visa:744000120070277": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Visa Inc",
+    "title": "Digital Sales Representative"
+  },
+  "smartrecruiters:Visa:744000120294607": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Visa Inc",
+    "title": "Director"
+  },
+  "smartrecruiters:Visa:744000120445667": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Visa Inc",
+    "title": "Analyst, Solutions Management"
+  },
+  "smartrecruiters:Visa:744000120470631": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Visa Inc",
+    "title": "Sr. Product Manager - Digital Experiences & Capabilities"
+  },
+  "smartrecruiters:Visa:744000120472147": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Visa Inc",
+    "title": "Sr. Product Manager - Digital Experiences & Capabilities"
+  },
+  "smartrecruiters:Visa:744000120472482": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Visa Inc",
+    "title": "Senior Director, Global Brand and Marketing Communications"
+  },
+  "smartrecruiters:Visa:744000120472568": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Visa Inc",
+    "title": "Director, US Client Marketing Partnerships"
+  },
+  "smartrecruiters:Visa:744000120527247": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Visa Inc",
+    "title": "Manager, Global Client Services Communications"
+  },
+  "smartrecruiters:Visa:744000120527387": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Visa Inc",
+    "title": "Product Manager, Token Authentication Strategy & eCommerce Programs"
+  },
+  "smartrecruiters:Visa:744000120589967": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Visa Inc",
+    "title": "Senior Product Manager, Flex & Installments Strategy (Global)"
+  },
+  "smartrecruiters:Visa:744000120740667": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Visa Inc",
+    "title": " Senior Director, Head of B2B Large and Middle Market Product"
+  },
+  "smartrecruiters:Visa:744000120771917": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Visa Inc",
+    "title": "Product Manager, Agentic Solutioning"
+  },
+  "smartrecruiters:Visa:744000120780219": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Visa Inc",
+    "title": "Senior Manager – SMB Insights & Market Intelligence – VCS Global SMB"
   },
   "smartrecruiters:Visa:744000120780707": {
     "firstSeen": "2026-04-18T21:34:04.755Z",
@@ -73651,6 +73866,11 @@
     "company": "Intel",
     "title": "Process Integration and Yield Engineer"
   },
+  "workday:intel:JR0283267": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Intel",
+    "title": "Senior CPU Design Engineer- FE Integration and FE Flow"
+  },
   "workday:intel:JR0283271": {
     "firstSeen": "2026-04-24T17:29:56.807Z",
     "company": "Intel",
@@ -78010,6 +78230,11 @@
     "company": "Micron",
     "title": "Semiconductor Process Engineer"
   },
+  "workday:micron:JR99271": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Micron",
+    "title": "FAB Engineer"
+  },
   "workday:micron:JR99274": {
     "firstSeen": "2026-04-22T02:25:27.006Z",
     "company": "Micron",
@@ -79104,6 +79329,11 @@
     "firstSeen": "2026-04-21T19:46:01.727Z",
     "company": "Nvidia",
     "title": "Senior 3D Modeler and Asset Prep Artist"
+  },
+  "workday:nvidia:JR2013280": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Nvidia",
+    "title": "Technical Project Manager - Finance"
   },
   "workday:nvidia:JR2013348": {
     "firstSeen": "2026-04-20T22:09:16.861Z",
@@ -81152,6 +81382,11 @@
     "firstSeen": "2026-04-22T19:46:46.967Z",
     "company": "PayPal",
     "title": "Sr Staff Content Designer, Platforms & Tools - E2E Servicing"
+  },
+  "workday:redhat:R-040324": {
+    "firstSeen": "2026-04-25T03:39:42.666Z",
+    "company": "Red Hat",
+    "title": "Senior Consultant"
   },
   "workday:redhat:R-046238": {
     "firstSeen": "2026-04-24T09:17:05.832Z",
