@@ -3644,6 +3644,11 @@
     "company": "Cursor",
     "title": "Software Engineer, Agent Evaluation and Quality"
   },
+  "ashby:cursor:2d45b285-d676-41b5-8585-ed90ec435ae5": {
+    "firstSeen": "2026-04-25T00:04:07.249Z",
+    "company": "Cursor",
+    "title": "Head of EMEA Field Marketing"
+  },
   "ashby:cursor:34cecd0c-c392-4454-8ef5-261310541011": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Cursor",
@@ -3683,6 +3688,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Cursor",
     "title": "Strategic Account Executive, Retail / Hospitality / Entertainment"
+  },
+  "ashby:cursor:413e0e15-4b48-4c9c-be9d-85dc46ff60c2": {
+    "firstSeen": "2026-04-25T00:04:07.249Z",
+    "company": "Cursor",
+    "title": "Head of APAC Field Marketing"
   },
   "ashby:cursor:45c815b0-5100-4934-8558-0e750b8aed79": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -3873,6 +3883,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Cursor",
     "title": "Field CTO"
+  },
+  "ashby:cursor:d225fc95-a56f-466a-9588-d75a7f38c426": {
+    "firstSeen": "2026-04-25T00:04:07.249Z",
+    "company": "Cursor",
+    "title": "Head of Americas Field Marketing"
   },
   "ashby:cursor:d4956c00-6138-479b-9649-2874c2dabc0f": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -34319,6 +34334,11 @@
     "company": "Fireworks AI",
     "title": "Executive Assistant - Senior Leadership Team"
   },
+  "greenhouse:fireworksai:4232629009": {
+    "firstSeen": "2026-04-25T00:04:07.249Z",
+    "company": "Fireworks AI",
+    "title": "People Operations Lead"
+  },
   "greenhouse:fivetran:4289730003": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Fivetran",
@@ -36413,6 +36433,11 @@
     "firstSeen": "2026-04-22T19:46:46.967Z",
     "company": "GitLab",
     "title": "Intermediate Software Security Engineer "
+  },
+  "greenhouse:gitlab:8517571002": {
+    "firstSeen": "2026-04-25T00:04:07.249Z",
+    "company": "GitLab",
+    "title": "Staff Program Manager, Enterprise Technology & AI"
   },
   "greenhouse:gitlab:8518629002": {
     "firstSeen": "2026-04-24T16:04:12.533Z",
@@ -39569,6 +39594,16 @@
     "company": "Instacart",
     "title": "Senior Software Engineer II, (ML/AI Platform)"
   },
+  "greenhouse:instacart:7838736": {
+    "firstSeen": "2026-04-25T00:04:07.249Z",
+    "company": "Instacart",
+    "title": "Senior Product Manager, In-Store Integrations"
+  },
+  "greenhouse:instacart:7838738": {
+    "firstSeen": "2026-04-25T00:04:07.249Z",
+    "company": "Instacart",
+    "title": "Senior Product Manager, In-Store Integrations"
+  },
   "greenhouse:instacart:7838936": {
     "firstSeen": "2026-04-21T19:46:01.727Z",
     "company": "Instacart",
@@ -40673,6 +40708,16 @@
     "firstSeen": "2026-04-22T19:46:46.967Z",
     "company": "Lyft",
     "title": "Group Product Manager, Matching and Fulfillment (Rideshare)"
+  },
+  "greenhouse:lyft:8524002002": {
+    "firstSeen": "2026-04-25T00:04:07.249Z",
+    "company": "Lyft",
+    "title": "Senior Manager, Global Equity Programs"
+  },
+  "greenhouse:lyft:8524003002": {
+    "firstSeen": "2026-04-25T00:04:07.249Z",
+    "company": "Lyft",
+    "title": "Senior Manager, Global Equity Programs"
   },
   "greenhouse:mercury:5267749004": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -47308,6 +47353,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Pinterest",
     "title": "Sr. People Tech Specialist"
+  },
+  "greenhouse:pinterest:7678730": {
+    "firstSeen": "2026-04-25T00:04:07.249Z",
+    "company": "Pinterest",
+    "title": "Lead Program Manager, Global SMB Vendor Operations"
   },
   "greenhouse:pinterest:7678748": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -70838,6 +70888,11 @@
     "company": "Autodesk",
     "title": "GTM-Support Specialist"
   },
+  "workday:autodesk:26WD97552": {
+    "firstSeen": "2026-04-25T00:04:07.249Z",
+    "company": "Autodesk",
+    "title": "Sr. Manager, Customer Reliability - AECO"
+  },
   "workday:autodesk:26WD97554": {
     "firstSeen": "2026-04-23T19:06:04.826Z",
     "company": "Autodesk",
@@ -73110,6 +73165,11 @@
     "firstSeen": "2026-04-22T14:01:55.467Z",
     "company": "Intel",
     "title": "Atom CPU Architecture Engineer"
+  },
+  "workday:intel:JR0282767": {
+    "firstSeen": "2026-04-25T00:04:07.249Z",
+    "company": "Intel",
+    "title": "Product Packaging Engineer"
   },
   "workday:intel:JR0282770": {
     "firstSeen": "2026-04-21T19:46:01.727Z",
@@ -78920,6 +78980,11 @@
     "company": "Nvidia",
     "title": "Senior ASIC Timing Engineer"
   },
+  "workday:nvidia:JR2011877": {
+    "firstSeen": "2026-04-25T00:04:07.249Z",
+    "company": "Nvidia",
+    "title": "Senior Software Engineer, Metropolis Vision AI"
+  },
   "workday:nvidia:JR2011901": {
     "firstSeen": "2026-04-20T19:06:43.880Z",
     "company": "Nvidia",
@@ -79934,6 +79999,11 @@
     "company": "Nvidia",
     "title": "Senior System Reliability Engineer"
   },
+  "workday:nvidia:JR2016592": {
+    "firstSeen": "2026-04-25T00:04:07.249Z",
+    "company": "Nvidia",
+    "title": "Senior Compiler Engineer - AI"
+  },
   "workday:nvidia:JR2016593": {
     "firstSeen": "2026-04-24T16:04:12.533Z",
     "company": "Nvidia",
@@ -80318,6 +80388,11 @@
     "firstSeen": "2026-04-24T18:08:16.453Z",
     "company": "Nvidia",
     "title": "Deep Learning Software Engineer, FlashInfer - New College Grad 2026"
+  },
+  "workday:nvidia:JR2017100": {
+    "firstSeen": "2026-04-25T00:04:07.249Z",
+    "company": "Nvidia",
+    "title": "Software Engineer, AI Networking- New College Grad 2026"
   },
   "workday:paypal:R0127935": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -86207,6 +86282,16 @@
     "company": "Target India",
     "title": "Executive Team Leader Specialty Sales (Assistant Manager Merchandising & Service) - Portage"
   },
+  "workday:target:R0000436667": {
+    "firstSeen": "2026-04-25T00:04:07.249Z",
+    "company": "Target India",
+    "title": "Style Team Leader"
+  },
+  "workday:target:R0000436684": {
+    "firstSeen": "2026-04-25T00:04:07.249Z",
+    "company": "Target India",
+    "title": "Specialty Sales Team Leader"
+  },
   "workday:walmart:R-128829": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Walmart",
@@ -86561,6 +86646,11 @@
     "firstSeen": "2026-04-24T16:04:12.533Z",
     "company": "Walmart",
     "title": "Self Checkout Attendant"
+  },
+  "workday:walmart:R-2490368": {
+    "firstSeen": "2026-04-25T00:04:07.249Z",
+    "company": "Walmart",
+    "title": "Merchandising Lead – New Club Opening Lathrop, CA!"
   },
   "workday:workday:JR-0093733": {
     "firstSeen": "2026-04-21T21:43:39.416Z",
