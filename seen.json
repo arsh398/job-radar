@@ -1239,6 +1239,11 @@
     "company": "Amazon",
     "title": "IT APP Dev Engineer II, Corp FP&A"
   },
+  "amazon:8583f834-3dae-4d61-bbac-a6e7420a75c1": {
+    "firstSeen": "2026-04-25T18:04:18.573Z",
+    "company": "Amazon",
+    "title": "Team Lead, ACES, IN GSF"
+  },
   "amazon:858e16a1-c5e0-444e-a753-475e22ea9cb7": {
     "firstSeen": "2026-04-22T10:48:14.412Z",
     "company": "Amazon",
@@ -72307,6 +72312,11 @@
     "firstSeen": "2026-04-24T14:53:21.466Z",
     "company": "Cadence",
     "title": "Application Engineer I: Thermal Analysis (CFD and FEM)"
+  },
+  "workday:cadence:R54562": {
+    "firstSeen": "2026-04-25T18:04:18.573Z",
+    "company": "Cadence",
+    "title": "Application Engineer – JedAI/Pulse Installation & Enablement"
   },
   "workday:crowdstrike:R22720": {
     "firstSeen": "2026-04-23T20:31:32.514Z",
