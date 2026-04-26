@@ -2234,6 +2234,11 @@
     "company": "Amazon",
     "title": "Senior Applied Scientist , Buyer Risk Prevention (BRP)"
   },
+  "amazon:eff9898e-8dee-471b-8454-38b1ea362991": {
+    "firstSeen": "2026-04-26T16:40:44.548Z",
+    "company": "Amazon",
+    "title": "Technical Customer Solutions Manager, India CSM Team"
+  },
   "amazon:f0e923eb-c7a1-42f4-8968-19abbd314f43": {
     "firstSeen": "2026-04-23T17:41:45.053Z",
     "company": "Amazon",
@@ -68244,6 +68249,16 @@
     "company": "Bosch",
     "title": "[BD] AI Engineer Intern (AI-Native Global Product | Agentic AI | Real-World Enterprise Systems) - 6 months Internship"
   },
+  "smartrecruiters:BoschGroup:744000123068869": {
+    "firstSeen": "2026-04-26T16:40:44.548Z",
+    "company": "Bosch",
+    "title": "[BD] AI Engineer Intern (AI-Native Global Product | Agentic AI | Real-World Enterprise Systems) - 6 months Internship"
+  },
+  "smartrecruiters:BoschGroup:744000123069289": {
+    "firstSeen": "2026-04-26T16:40:44.548Z",
+    "company": "Bosch",
+    "title": "Customer Service Associate - L1 (Order Management)"
+  },
   "smartrecruiters:Visa:744000104778816": {
     "firstSeen": "2026-04-25T07:13:07.357Z",
     "company": "Visa Inc",
@@ -79065,6 +79080,11 @@
     "company": "Micron",
     "title": "Principal Category Supplier Manager"
   },
+  "workday:micron:JR99518": {
+    "firstSeen": "2026-04-26T16:40:44.548Z",
+    "company": "Micron",
+    "title": "GQ FECQE Process Engineer"
+  },
   "workday:micron:JR99538": {
     "firstSeen": "2026-04-23T05:16:43.075Z",
     "company": "Micron",
@@ -79789,6 +79809,11 @@
     "firstSeen": "2026-04-21T16:59:23.076Z",
     "company": "Nvidia",
     "title": "Senior SOC Design Engineer"
+  },
+  "workday:nvidia:JR2009388": {
+    "firstSeen": "2026-04-26T16:40:44.548Z",
+    "company": "Nvidia",
+    "title": "SoC Clocks Design Automation Engineer"
   },
   "workday:nvidia:JR2009482": {
     "firstSeen": "2026-04-21T15:51:59.911Z",
@@ -84997,6 +85022,11 @@
     "firstSeen": "2026-04-24T17:29:56.807Z",
     "company": "Salesforce",
     "title": "Principal Customer Success Manager - Slack"
+  },
+  "workday:salesforce:JR339914": {
+    "firstSeen": "2026-04-26T16:40:44.548Z",
+    "company": "Salesforce",
+    "title": "Senior Manager, Global Partner Initiatives & Strategy"
   },
   "workday:salesforce:JR339942": {
     "firstSeen": "2026-04-24T19:28:52.807Z",
