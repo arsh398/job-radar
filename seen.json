@@ -2074,6 +2074,11 @@
     "company": "Amazon",
     "title": "Sr. Software Development Engineer, Alexa Devices, Sales & Marketing"
   },
+  "amazon:e0333b47-5f5f-4b81-a7b6-948e4709fc71": {
+    "firstSeen": "2026-04-26T06:23:10.393Z",
+    "company": "Amazon",
+    "title": "Account Manager, Focus Next, Focus Next, AWS India"
+  },
   "amazon:e07ec589-ffad-46b8-9cb7-41937c17d8db": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
@@ -80130,6 +80135,11 @@
     "company": "Nvidia",
     "title": "Product Manager, Internal Project Management Platforms"
   },
+  "workday:nvidia:JR2015050": {
+    "firstSeen": "2026-04-26T06:23:10.393Z",
+    "company": "Nvidia",
+    "title": "DFT Engineer"
+  },
   "workday:nvidia:JR2015085": {
     "firstSeen": "2026-04-22T18:03:08.011Z",
     "company": "Nvidia",
@@ -81033,6 +81043,11 @@
     "firstSeen": "2026-04-23T05:16:43.075Z",
     "company": "Nvidia",
     "title": "Senior CPU and SOC Verification Engineer"
+  },
+  "workday:nvidia:JR2016738": {
+    "firstSeen": "2026-04-26T06:23:10.393Z",
+    "company": "Nvidia",
+    "title": "Applied Research PhD Student, Foundation Models for Materials Science"
   },
   "workday:nvidia:JR2016739": {
     "firstSeen": "2026-04-23T23:43:09.541Z",
@@ -86566,6 +86581,26 @@
     "firstSeen": "2026-04-22T14:01:55.467Z",
     "company": "Target India",
     "title": "Executive Team Leader Human Resources (Assistant Manager HR)- Dallas, TX"
+  },
+  "workday:target:R0000436280": {
+    "firstSeen": "2026-04-26T06:23:10.393Z",
+    "company": "Target India",
+    "title": "Specialty Sales Team Leader - Liberty Hill, TX"
+  },
+  "workday:target:R0000436281": {
+    "firstSeen": "2026-04-26T06:23:10.393Z",
+    "company": "Target India",
+    "title": "Visual Merchandiser - Liberty Hill, TX"
+  },
+  "workday:target:R0000436282": {
+    "firstSeen": "2026-04-26T06:23:10.393Z",
+    "company": "Target India",
+    "title": "Starbucks (Food Service) Team Leader - Liberty Hill, TX"
+  },
+  "workday:target:R0000436283": {
+    "firstSeen": "2026-04-26T06:23:10.393Z",
+    "company": "Target India",
+    "title": "Service & Engagement Team Leader - Liberty Hill, TX"
   },
   "workday:target:R0000436284": {
     "firstSeen": "2026-04-22T21:50:38.710Z",
