@@ -2489,6 +2489,11 @@
     "company": "Baseten",
     "title": "Software Engineer - Training Product"
   },
+  "ashby:baseten:1824c984-2717-4d60-8f8e-f9496dccdd90": {
+    "firstSeen": "2026-04-26T21:36:12.068Z",
+    "company": "Baseten",
+    "title": "Software Engineer - Realtime Systems"
+  },
   "ashby:baseten:1dc3b76d-cf9a-4980-8d78-50829cc04345": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Baseten",
@@ -2614,6 +2619,11 @@
     "company": "Baseten",
     "title": "Site Reliability Engineer (SRE)"
   },
+  "ashby:baseten:9a0e1cdb-f2f7-4998-be7b-18083c05e71a": {
+    "firstSeen": "2026-04-26T21:36:12.068Z",
+    "company": "Baseten",
+    "title": "Software Engineer - Voice Agent"
+  },
   "ashby:baseten:9d293c95-898b-4dbe-9479-c8f0e0b35688": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Baseten",
@@ -2633,6 +2643,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Baseten",
     "title": "Software Engineer - Infrastructure"
+  },
+  "ashby:baseten:aef40249-e1fa-48d8-972d-c6d76fde0639": {
+    "firstSeen": "2026-04-26T21:36:12.068Z",
+    "company": "Baseten",
+    "title": "Software Engineer - GPU Inference"
   },
   "ashby:baseten:b1b5ab31-f90c-41f9-b9f2-13408b1c072b": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -79605,6 +79620,11 @@
     "company": "Nvidia",
     "title": "Senior Software Architect - Deep Learning and HPC Communications"
   },
+  "workday:nvidia:JR2001225": {
+    "firstSeen": "2026-04-26T21:36:12.068Z",
+    "company": "Nvidia",
+    "title": "Senior Mechanical Hardware Design Engineer, IC Product"
+  },
   "workday:nvidia:JR2001987": {
     "firstSeen": "2026-04-23T16:00:36.159Z",
     "company": "Nvidia",
@@ -80669,6 +80689,11 @@
     "company": "Nvidia",
     "title": "Robotic Solution Architecture Intern - 2026"
   },
+  "workday:nvidia:JR2016245": {
+    "firstSeen": "2026-04-26T21:36:12.068Z",
+    "company": "Nvidia",
+    "title": "Senior Tools Development Engineer"
+  },
   "workday:nvidia:JR2016253": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Nvidia",
@@ -81319,6 +81344,11 @@
     "company": "Nvidia",
     "title": "System Software Engineer - GPU"
   },
+  "workday:nvidia:JR2016826": {
+    "firstSeen": "2026-04-26T21:36:12.068Z",
+    "company": "Nvidia",
+    "title": "Senior Software Development Engineer in Test - SDET"
+  },
   "workday:nvidia:JR2016829": {
     "firstSeen": "2026-04-22T16:58:08.367Z",
     "company": "Nvidia",
@@ -81409,6 +81439,11 @@
     "company": "Nvidia",
     "title": "Deep Learning Architect, LLM Inference - New College Grad 2026"
   },
+  "workday:nvidia:JR2016977": {
+    "firstSeen": "2026-04-26T21:36:12.068Z",
+    "company": "Nvidia",
+    "title": "Senior Developer Technology Engineer - Windows AI Platform"
+  },
   "workday:nvidia:JR2016978": {
     "firstSeen": "2026-04-23T10:53:10.068Z",
     "company": "Nvidia",
@@ -81423,6 +81458,11 @@
     "firstSeen": "2026-04-24T17:29:56.807Z",
     "company": "Nvidia",
     "title": "Solutions Architect, Data Processing - New College Grad 2026"
+  },
+  "workday:nvidia:JR2017041": {
+    "firstSeen": "2026-04-26T21:36:12.068Z",
+    "company": "Nvidia",
+    "title": "ASIC Verification Engineer"
   },
   "workday:nvidia:JR2017076": {
     "firstSeen": "2026-04-24T18:08:16.453Z",
