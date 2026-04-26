@@ -78165,6 +78165,11 @@
     "company": "Micron",
     "title": "SR Assembly & Test Supply Management (System Integration System Materials)"
   },
+  "workday:micron:JR97478": {
+    "firstSeen": "2026-04-26T22:36:26.985Z",
+    "company": "Micron",
+    "title": "NY1 - Wastewater Engineer - FAC"
+  },
   "workday:micron:JR97525": {
     "firstSeen": "2026-04-20T10:16:06.886Z",
     "company": "Micron",
@@ -80224,6 +80229,11 @@
     "firstSeen": "2026-04-20T02:31:31.176Z",
     "company": "Nvidia",
     "title": "Senior ASIC Engineer, Power Integrity"
+  },
+  "workday:nvidia:JR2014259": {
+    "firstSeen": "2026-04-26T22:36:26.985Z",
+    "company": "Nvidia",
+    "title": "Senior System and Reporting Analyst"
   },
   "workday:nvidia:JR2014280": {
     "firstSeen": "2026-04-23T22:42:07.291Z",
