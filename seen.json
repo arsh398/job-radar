@@ -1804,6 +1804,11 @@
     "company": "Amazon",
     "title": "Sr Ops Exec, Distribution"
   },
+  "amazon:bab36a37-6695-4b58-9f07-08d07bf00690": {
+    "firstSeen": "2026-04-26T13:46:02.609Z",
+    "company": "Amazon",
+    "title": "Embedded and Firmware, Alexa Excellence"
+  },
   "amazon:bae5219f-6a31-40da-b6e8-ed82d57ba014": {
     "firstSeen": "2026-04-23T09:12:45.660Z",
     "company": "Amazon",
@@ -2038,6 +2043,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
     "title": "Big Data Engineer II, Profit Intelligence"
+  },
+  "amazon:d5f27429-1184-4482-a14a-a11e992824c9": {
+    "firstSeen": "2026-04-26T13:46:02.609Z",
+    "company": "Amazon",
+    "title": "SDE-II, Amazon Business"
   },
   "amazon:d6cc5708-7b61-4b2c-bd51-52108a5a52b3": {
     "firstSeen": "2026-04-22T10:48:14.412Z",
@@ -61189,6 +61199,11 @@
     "company": "Mistral",
     "title": "Software Engineer, Backend (Paris)"
   },
+  "lever:mistral:e84a89a7-1792-41c2-ae14-f311c4f1f6eb": {
+    "firstSeen": "2026-04-26T13:46:02.609Z",
+    "company": "Mistral",
+    "title": "Solution Operations Manager - Paris"
+  },
   "lever:mistral:e9e2c848-2128-4c59-968d-ccf2ae35b438": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Mistral",
@@ -68208,6 +68223,11 @@
     "firstSeen": "2026-04-26T12:03:04.405Z",
     "company": "Bosch",
     "title": "[BD] IT Project Operation Assistant - 6-Month Internship"
+  },
+  "smartrecruiters:BoschGroup:744000123067019": {
+    "firstSeen": "2026-04-26T13:46:02.609Z",
+    "company": "Bosch",
+    "title": "Tech Lead – MASTRO"
   },
   "smartrecruiters:Visa:744000104778816": {
     "firstSeen": "2026-04-25T07:13:07.357Z",
@@ -79400,6 +79420,16 @@
     "company": "Nvidia",
     "title": "Senior Mask Design Engineer - Hardware"
   },
+  "workday:nvidia:JR1987671": {
+    "firstSeen": "2026-04-26T13:46:02.609Z",
+    "company": "Nvidia",
+    "title": "Formal Verification Engineer"
+  },
+  "workday:nvidia:JR1988648": {
+    "firstSeen": "2026-04-26T13:46:02.609Z",
+    "company": "Nvidia",
+    "title": "Senior Chip Design Engineer, Formal Verification"
+  },
   "workday:nvidia:JR1989004": {
     "firstSeen": "2026-04-21T06:02:25.193Z",
     "company": "Nvidia",
@@ -82997,6 +83027,11 @@
     "firstSeen": "2026-04-22T11:59:47.776Z",
     "company": "Salesforce",
     "title": "Enterprise Account Executive - Energy & Utilities"
+  },
+  "workday:salesforce:JR325519": {
+    "firstSeen": "2026-04-26T13:46:02.609Z",
+    "company": "Salesforce",
+    "title": "Commercial Graduate Sales Path  - Israel Market (Hebrew Speaker)"
   },
   "workday:salesforce:JR325847": {
     "firstSeen": "2026-04-24T19:28:52.807Z",
