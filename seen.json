@@ -1364,6 +1364,11 @@
     "company": "Amazon",
     "title": "Support Engineer III, Crossborder Tech"
   },
+  "amazon:908d53b7-e050-49da-869f-3151eabb1b01": {
+    "firstSeen": "2026-04-26T08:00:54.926Z",
+    "company": "Amazon",
+    "title": "Financial Analyst CA Industrial Trainee, AMET Operations Finance"
+  },
   "amazon:90c2b67a-66d7-4560-9014-73a7675ed3cb": {
     "firstSeen": "2026-04-23T07:14:22.981Z",
     "company": "Amazon",
@@ -71858,6 +71863,11 @@
     "company": "Cadence",
     "title": "Lead Software Engineer (Computational Electromagnetics, Numerical Analysis, Field Solver)"
   },
+  "workday:cadence:R51222": {
+    "firstSeen": "2026-04-26T08:00:54.926Z",
+    "company": "Cadence",
+    "title": "C++ Software Engineer"
+  },
   "workday:cadence:R51323": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Cadence",
@@ -72597,6 +72607,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "CrowdStrike",
     "title": "Sr. Data Engineer - Cloud Security"
+  },
+  "workday:crowdstrike:R27230": {
+    "firstSeen": "2026-04-26T08:00:54.926Z",
+    "company": "CrowdStrike",
+    "title": "Sr. Engineer, Cloud (Hybrid ISR)"
   },
   "workday:crowdstrike:R27280": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -78105,6 +78120,11 @@
     "company": "Micron",
     "title": "STAFF Engineer -DEG Layout"
   },
+  "workday:micron:JR97772": {
+    "firstSeen": "2026-04-26T08:00:54.926Z",
+    "company": "Micron",
+    "title": "PRINCIPAL ENGINEER, SSD VALIDATION"
+  },
   "workday:micron:JR97775": {
     "firstSeen": "2026-04-22T20:53:56.740Z",
     "company": "Micron",
@@ -79590,6 +79610,11 @@
     "company": "Nvidia",
     "title": "Senior Software Engineer, Kubernetes and Virtualization - DGX Cloud"
   },
+  "workday:nvidia:JR2008434": {
+    "firstSeen": "2026-04-26T08:00:54.926Z",
+    "company": "Nvidia",
+    "title": "Formal Verification Student"
+  },
   "workday:nvidia:JR2008501": {
     "firstSeen": "2026-04-20T02:31:31.176Z",
     "company": "Nvidia",
@@ -80509,6 +80534,11 @@
     "company": "Nvidia",
     "title": "Test Development Engineer - DataCenter System Software"
   },
+  "workday:nvidia:JR2016296": {
+    "firstSeen": "2026-04-26T08:00:54.926Z",
+    "company": "Nvidia",
+    "title": "Software Student - DOCA SDK Verification Team"
+  },
   "workday:nvidia:JR2016305": {
     "firstSeen": "2026-04-23T05:16:43.075Z",
     "company": "Nvidia",
@@ -80528,6 +80558,11 @@
     "firstSeen": "2026-04-23T19:06:04.826Z",
     "company": "Nvidia",
     "title": "Formal Verification Engineer"
+  },
+  "workday:nvidia:JR2016332": {
+    "firstSeen": "2026-04-26T08:00:54.926Z",
+    "company": "Nvidia",
+    "title": "Performance Research and Analysis Student"
   },
   "workday:nvidia:JR2016333": {
     "firstSeen": "2026-04-20T02:31:31.176Z",
@@ -81033,6 +81068,11 @@
     "firstSeen": "2026-04-24T05:22:25.358Z",
     "company": "Nvidia",
     "title": "Senior Package Engineer"
+  },
+  "workday:nvidia:JR2016723": {
+    "firstSeen": "2026-04-26T08:00:54.926Z",
+    "company": "Nvidia",
+    "title": "PCIe Firmware Student"
   },
   "workday:nvidia:JR2016729": {
     "firstSeen": "2026-04-23T05:16:43.075Z",
@@ -82102,6 +82142,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Red Hat",
     "title": "Principal Software Engineer - Backend AI Engineer"
+  },
+  "workday:redhat:R-053185": {
+    "firstSeen": "2026-04-26T08:00:54.926Z",
+    "company": "Red Hat",
+    "title": "Principal Software Engineer - NVIDIA AI Ecosystem"
   },
   "workday:redhat:R-053333": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -83663,6 +83708,11 @@
     "company": "Salesforce",
     "title": "Senior Technical Writer (Trailhead)"
   },
+  "workday:salesforce:JR336886": {
+    "firstSeen": "2026-04-26T08:00:54.926Z",
+    "company": "Salesforce",
+    "title": "Senior Technical Writer"
+  },
   "workday:salesforce:JR336887": {
     "firstSeen": "2026-04-23T11:58:55.333Z",
     "company": "Salesforce",
@@ -84147,6 +84197,11 @@
     "firstSeen": "2026-04-20T11:51:56.663Z",
     "company": "Salesforce",
     "title": "Technical Business Analyst (CPQ), Product & Pricing Ops"
+  },
+  "workday:salesforce:JR338624": {
+    "firstSeen": "2026-04-26T08:00:54.926Z",
+    "company": "Salesforce",
+    "title": "Student Worker -Software Engineering"
   },
   "workday:salesforce:JR338633": {
     "firstSeen": "2026-04-22T11:59:47.776Z",
@@ -84718,6 +84773,11 @@
     "company": "Salesforce",
     "title": "Talent Advisor"
   },
+  "workday:salesforce:JR339706": {
+    "firstSeen": "2026-04-26T08:00:54.926Z",
+    "company": "Salesforce",
+    "title": "SMB Field Marketing Manager- French Market"
+  },
   "workday:salesforce:JR339720": {
     "firstSeen": "2026-04-23T16:00:36.159Z",
     "company": "Salesforce",
@@ -84812,6 +84872,11 @@
     "firstSeen": "2026-04-24T20:09:34.944Z",
     "company": "Salesforce",
     "title": "Senior Infrastructure Architect (TS/SCI Clearance)"
+  },
+  "workday:salesforce:JR339975": {
+    "firstSeen": "2026-04-26T08:00:54.926Z",
+    "company": "Salesforce",
+    "title": "Lead Full Stack Engineer, Backend Oriented"
   },
   "workday:target:R0000370649": {
     "firstSeen": "2026-04-23T10:53:10.068Z",
@@ -87146,6 +87211,11 @@
     "firstSeen": "2026-04-24T21:13:02.330Z",
     "company": "Target India",
     "title": "Operations Manager - Flow Center - Chicago, IL"
+  },
+  "workday:target:R0000436644": {
+    "firstSeen": "2026-04-26T08:00:54.926Z",
+    "company": "Target India",
+    "title": "Assets Protection Specialist"
   },
   "workday:target:R0000436661": {
     "firstSeen": "2026-04-24T22:08:30.165Z",
