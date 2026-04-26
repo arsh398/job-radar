@@ -58054,6 +58054,11 @@
     "company": "Twilio",
     "title": "Strategic Account Executive 4"
   },
+  "greenhouse:twilio:7834208": {
+    "firstSeen": "2026-04-26T11:11:14.265Z",
+    "company": "Twilio",
+    "title": "Strategic Account Executive 4"
+  },
   "greenhouse:twilio:7835625": {
     "firstSeen": "2026-04-21T10:00:31.304Z",
     "company": "Twilio",
@@ -80803,6 +80808,11 @@
     "firstSeen": "2026-04-20T02:31:31.176Z",
     "company": "Nvidia",
     "title": "Software Engineer - NVLink Switch"
+  },
+  "workday:nvidia:JR2016510": {
+    "firstSeen": "2026-04-26T11:11:14.265Z",
+    "company": "Nvidia",
+    "title": "System Software Engineer"
   },
   "workday:nvidia:JR2016511": {
     "firstSeen": "2026-04-21T19:46:01.727Z",
