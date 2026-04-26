@@ -1599,6 +1599,11 @@
     "company": "Amazon",
     "title": "Escalation Process Specialist, SAS, SAS"
   },
+  "amazon:a9d2fd1d-d491-4bdd-978e-43f727ad9097": {
+    "firstSeen": "2026-04-26T04:02:06.358Z",
+    "company": "Amazon",
+    "title": "SDE II, Alexa Connected Devices, Alexa Connected Devices"
+  },
   "amazon:a9f5ab4b-0fb2-486f-801e-24be31234f15": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
@@ -1623,6 +1628,11 @@
     "firstSeen": "2026-04-25T03:39:42.666Z",
     "company": "Amazon",
     "title": "ITS Support Associate, IT Services (Global Service Desk)"
+  },
+  "amazon:ac6f6326-3312-4290-9396-5964d34041df": {
+    "firstSeen": "2026-04-26T04:02:06.358Z",
+    "company": "Amazon",
+    "title": "Software Development Engineer, Alexa Devices, Sales & Marketing"
   },
   "amazon:ac7bb24e-d2eb-4c50-b88b-2c6e51cfc773": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -64244,6 +64254,41 @@
     "company": "Montu UK",
     "title": "B2B Marketing Manager"
   },
+  "remoteok:1131317": {
+    "firstSeen": "2026-04-26T04:02:06.358Z",
+    "company": "Advizex",
+    "title": "Proposal Manager @Advizex"
+  },
+  "remoteok:1131318": {
+    "firstSeen": "2026-04-26T04:02:06.358Z",
+    "company": "Submittable",
+    "title": "Implementation Specialist"
+  },
+  "remoteok:1131319": {
+    "firstSeen": "2026-04-26T04:02:06.358Z",
+    "company": "Clariti Cloud Inc.",
+    "title": "Technical Account Manager"
+  },
+  "remoteok:1131320": {
+    "firstSeen": "2026-04-26T04:02:06.358Z",
+    "company": "Pine Services Group",
+    "title": "Vice President of Marketing"
+  },
+  "remoteok:1131321": {
+    "firstSeen": "2026-04-26T04:02:06.358Z",
+    "company": "Evry Health",
+    "title": "Medical Director for Health Plan"
+  },
+  "remoteok:1131322": {
+    "firstSeen": "2026-04-26T04:02:06.358Z",
+    "company": "Everfield",
+    "title": "HQ AI Enablement Lead"
+  },
+  "remoteok:1131323": {
+    "firstSeen": "2026-04-26T04:02:06.358Z",
+    "company": "TENEX.AI",
+    "title": "Territory Account Manager"
+  },
   "smartrecruiters:BoschGroup:744000121337448": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Bosch",
@@ -68103,6 +68148,11 @@
     "firstSeen": "2026-04-25T16:05:08.286Z",
     "company": "Bosch",
     "title": "[BD] AI Software QA (Next-Gen & AI-Driven Testing) - 6 months Internship "
+  },
+  "smartrecruiters:BoschGroup:744000123016497": {
+    "firstSeen": "2026-04-26T04:02:06.358Z",
+    "company": "Bosch",
+    "title": "Manager Business Development Region Asia & Africa_ PT"
   },
   "smartrecruiters:Visa:744000104778816": {
     "firstSeen": "2026-04-25T07:13:07.357Z",
@@ -87006,6 +87056,11 @@
     "firstSeen": "2026-04-24T10:51:13.773Z",
     "company": "Target India",
     "title": "4am Inbound (Stocking) (T1386)"
+  },
+  "workday:target:R0000436599": {
+    "firstSeen": "2026-04-26T04:02:06.358Z",
+    "company": "Target India",
+    "title": "4am Inbound (Stocking) (T1445)"
   },
   "workday:target:R0000436600": {
     "firstSeen": "2026-04-24T10:51:13.773Z",
