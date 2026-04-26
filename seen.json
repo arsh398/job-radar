@@ -80635,6 +80635,11 @@
     "company": "Nvidia",
     "title": "Server Factory Planner"
   },
+  "workday:nvidia:JR2016165": {
+    "firstSeen": "2026-04-26T18:52:22.056Z",
+    "company": "Nvidia",
+    "title": "System Software Engineer, GPU Development Tools"
+  },
   "workday:nvidia:JR2016166": {
     "firstSeen": "2026-04-21T18:05:48.822Z",
     "company": "Nvidia",
@@ -82527,6 +82532,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Red Hat",
     "title": "Technical Account Manager - OpenStack (m/f/d)"
+  },
+  "workday:redhat:R-056005": {
+    "firstSeen": "2026-04-26T18:52:22.056Z",
+    "company": "Red Hat",
+    "title": "Product Owner - Subscriptions"
   },
   "workday:redhat:R-056047": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -87781,6 +87791,11 @@
     "firstSeen": "2026-04-25T16:05:08.286Z",
     "company": "Walmart",
     "title": "(CAN) Overnight Associate"
+  },
+  "workday:walmart:R-2491277": {
+    "firstSeen": "2026-04-26T18:52:22.056Z",
+    "company": "Walmart",
+    "title": "(USA) Prepared Food Lead"
   },
   "workday:workday:JR-0093733": {
     "firstSeen": "2026-04-21T21:43:39.416Z",
