@@ -64299,6 +64299,21 @@
     "company": "TENEX.AI",
     "title": "Territory Account Manager"
   },
+  "remoteok:1131324": {
+    "firstSeen": "2026-04-26T09:30:41.614Z",
+    "company": "Pivotal Health",
+    "title": "Regional Sales Executive"
+  },
+  "remoteok:1131325": {
+    "firstSeen": "2026-04-26T09:30:41.614Z",
+    "company": "Practice Better",
+    "title": "Director of Revenue Operations"
+  },
+  "remoteok:1131326": {
+    "firstSeen": "2026-04-26T09:30:41.614Z",
+    "company": "Weekday",
+    "title": "Tax AI Expert"
+  },
   "smartrecruiters:BoschGroup:744000121337448": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Bosch",
@@ -68163,6 +68178,11 @@
     "firstSeen": "2026-04-26T04:02:06.358Z",
     "company": "Bosch",
     "title": "Manager Business Development Region Asia & Africa_ PT"
+  },
+  "smartrecruiters:BoschGroup:744000123060129": {
+    "firstSeen": "2026-04-26T09:30:41.614Z",
+    "company": "Bosch",
+    "title": "Key Account Manager - Power tools"
   },
   "smartrecruiters:Visa:744000104778816": {
     "firstSeen": "2026-04-25T07:13:07.357Z",
@@ -72607,6 +72627,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "CrowdStrike",
     "title": "Sr. Data Engineer - Cloud Security"
+  },
+  "workday:crowdstrike:R27228": {
+    "firstSeen": "2026-04-26T09:30:41.614Z",
+    "company": "CrowdStrike",
+    "title": "Sr. Data Engineer - Cloud Security (Hybrid, ISR)"
   },
   "workday:crowdstrike:R27230": {
     "firstSeen": "2026-04-26T08:00:54.926Z",
@@ -77750,6 +77775,11 @@
     "company": "Micron",
     "title": "HBM SoC Physical Design Engineer"
   },
+  "workday:micron:JR96206": {
+    "firstSeen": "2026-04-26T09:30:41.614Z",
+    "company": "Micron",
+    "title": "Shift Engineer, MTB PWF WET"
+  },
   "workday:micron:JR96216": {
     "firstSeen": "2026-04-22T07:12:20.418Z",
     "company": "Micron",
@@ -77784,6 +77814,11 @@
     "firstSeen": "2026-04-23T02:28:52.602Z",
     "company": "Micron",
     "title": "Principal I4.0 Business Analyst – SMAI Planning & Operations"
+  },
+  "workday:micron:JR96342": {
+    "firstSeen": "2026-04-26T09:30:41.614Z",
+    "company": "Micron",
+    "title": "Shift Engineer, MTB PWF THINNING"
   },
   "workday:micron:JR96362": {
     "firstSeen": "2026-04-21T08:17:08.668Z",
@@ -78104,6 +78139,11 @@
     "firstSeen": "2026-04-23T10:53:10.068Z",
     "company": "Micron",
     "title": "Technician - F10 PEE ODT"
+  },
+  "workday:micron:JR97654": {
+    "firstSeen": "2026-04-26T09:30:41.614Z",
+    "company": "Micron",
+    "title": "MGR, F16 HVM PROCESS WET/CMP"
   },
   "workday:micron:JR97678": {
     "firstSeen": "2026-04-22T09:07:02.079Z",
