@@ -76526,6 +76526,11 @@
     "company": "Mastercard",
     "title": "Senior Vice President, Security Threat and Response Management"
   },
+  "workday:mastercard:R-275956": {
+    "firstSeen": "2026-04-26T23:37:35.501Z",
+    "company": "Mastercard",
+    "title": "Principal Network Platform Engineer"
+  },
   "workday:mastercard:R-275964": {
     "firstSeen": "2026-04-21T11:17:40.182Z",
     "company": "Mastercard",
@@ -84597,6 +84602,11 @@
     "firstSeen": "2026-04-20T16:41:00.570Z",
     "company": "Salesforce",
     "title": "Senior Analyst, Sales Programs (PACE OU)"
+  },
+  "workday:salesforce:JR338958": {
+    "firstSeen": "2026-04-26T23:37:35.501Z",
+    "company": "Salesforce",
+    "title": "Account Executive - Enterprise Corporate Sales (Polish speaker)"
   },
   "workday:salesforce:JR338960": {
     "firstSeen": "2026-04-22T05:12:38.592Z",
