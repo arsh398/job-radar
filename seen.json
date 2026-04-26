@@ -74201,6 +74201,11 @@
     "company": "Intel",
     "title": "Engineering FPnA Analyst"
   },
+  "workday:intel:JR0283088": {
+    "firstSeen": "2026-04-26T10:25:57.076Z",
+    "company": "Intel",
+    "title": "Engineering Student for Intel Kiryat Gat (System Operations & AI Automation)​ ​"
+  },
   "workday:intel:JR0283090": {
     "firstSeen": "2026-04-21T18:05:48.822Z",
     "company": "Intel",
@@ -80459,6 +80464,11 @@
     "firstSeen": "2026-04-22T16:58:08.367Z",
     "company": "Nvidia",
     "title": "Client Platform Architect"
+  },
+  "workday:nvidia:JR2015984": {
+    "firstSeen": "2026-04-26T10:25:57.076Z",
+    "company": "Nvidia",
+    "title": "High Speed Optical Transceiver Design Engineering Student"
   },
   "workday:nvidia:JR2015993": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
