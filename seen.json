@@ -19299,6 +19299,11 @@
     "company": "Brex",
     "title": "Software Engineer II, Product "
   },
+  "greenhouse:brex:8525702002": {
+    "firstSeen": "2026-04-27T22:50:50.939Z",
+    "company": "Brex",
+    "title": "Finance Associate "
+  },
   "greenhouse:celonis:5928673003": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Celonis",
@@ -20848,6 +20853,11 @@
     "firstSeen": "2026-04-21T19:46:01.727Z",
     "company": "Chime",
     "title": "Offline Media Planner"
+  },
+  "greenhouse:chime:8525701002": {
+    "firstSeen": "2026-04-27T22:50:50.939Z",
+    "company": "Chime",
+    "title": "Media Planner"
   },
   "greenhouse:cloudflare:4886734": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -42004,6 +42014,11 @@
     "company": "Mercury",
     "title": "Engineering Manager - Mercury Accounting"
   },
+  "greenhouse:mercury:5983046004": {
+    "firstSeen": "2026-04-27T22:50:50.939Z",
+    "company": "Mercury",
+    "title": "Lifecycle Marketer"
+  },
   "greenhouse:mixpanel:5798832": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Mixpanel",
@@ -47233,6 +47248,11 @@
     "firstSeen": "2026-04-27T16:26:00.933Z",
     "company": "Okta",
     "title": "Director of Corporate Treasury"
+  },
+  "greenhouse:okta:7859310": {
+    "firstSeen": "2026-04-27T22:50:50.939Z",
+    "company": "Okta",
+    "title": "Senior Business Architect"
   },
   "greenhouse:pagerduty:5634303004": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -52688,6 +52708,11 @@
     "firstSeen": "2026-04-27T17:49:04.219Z",
     "company": "Roblox",
     "title": "Data Analyst, Operations (IP & Legal Compliance)"
+  },
+  "greenhouse:roblox:7859238": {
+    "firstSeen": "2026-04-27T22:50:50.939Z",
+    "company": "Roblox",
+    "title": "Sr Talent Business Partner, Product/Design"
   },
   "greenhouse:rubrik:2146030": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -69894,6 +69919,11 @@
     "company": "Bosch",
     "title": "Production Supervisor - SC"
   },
+  "smartrecruiters:BoschGroup:744000123314219": {
+    "firstSeen": "2026-04-27T22:50:50.939Z",
+    "company": "Bosch",
+    "title": "Practicante Pre Profesional - FCM"
+  },
   "smartrecruiters:Visa:744000104778816": {
     "firstSeen": "2026-04-25T07:13:07.357Z",
     "company": "Visa Inc",
@@ -72729,6 +72759,11 @@
     "company": "Adobe",
     "title": "Senior Data Science Engineer, GenAI Platforms & Data Infrastructure"
   },
+  "workday:adobe:R168188": {
+    "firstSeen": "2026-04-27T22:50:50.939Z",
+    "company": "Adobe",
+    "title": "Software Development Engineer - Front End"
+  },
   "workday:autodesk:25WD85333": {
     "firstSeen": "2026-04-23T10:53:10.068Z",
     "company": "Autodesk",
@@ -73997,6 +74032,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Cadence",
     "title": "IT Staff Storage Engineer"
+  },
+  "workday:cadence:R53957": {
+    "firstSeen": "2026-04-27T22:50:50.939Z",
+    "company": "Cadence",
+    "title": "Application Engineering Director - IC Design Verification"
   },
   "workday:cadence:R53997": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -75747,6 +75787,11 @@
     "company": "HP",
     "title": "Senior Software Engineer, AI Experience"
   },
+  "workday:hp:3162743": {
+    "firstSeen": "2026-04-27T22:50:50.939Z",
+    "company": "HP",
+    "title": "Senior Quality Assurance Engineer"
+  },
   "workday:hp:HPOC3157304": {
     "firstSeen": "2026-04-20T11:51:56.663Z",
     "company": "HP",
@@ -76726,6 +76771,11 @@
     "company": "Intel",
     "title": "AI Tools Development Intern"
   },
+  "workday:intel:JR0283293": {
+    "firstSeen": "2026-04-27T22:50:50.939Z",
+    "company": "Intel",
+    "title": "Software Simulation Intern"
+  },
   "workday:intel:JR0283294": {
     "firstSeen": "2026-04-24T21:13:02.330Z",
     "company": "Intel",
@@ -76966,6 +77016,11 @@
     "company": "Intel",
     "title": "Facilities Mechanical Intern"
   },
+  "workday:intel:JR0283441": {
+    "firstSeen": "2026-04-27T22:50:50.939Z",
+    "company": "Intel",
+    "title": "Power Delivery Validation Intern"
+  },
   "workday:intel:JR0283446": {
     "firstSeen": "2026-04-24T23:07:02.821Z",
     "company": "Intel",
@@ -76980,6 +77035,11 @@
     "firstSeen": "2026-04-24T10:51:13.773Z",
     "company": "Intel",
     "title": "Software Enabling and Optimization Engineer"
+  },
+  "workday:intel:JR0283455": {
+    "firstSeen": "2026-04-27T22:50:50.939Z",
+    "company": "Intel",
+    "title": "Wet Etch Cleans Technical Manager"
   },
   "workday:intel:JR0283465": {
     "firstSeen": "2026-04-27T08:22:04.778Z",
@@ -81870,6 +81930,26 @@
     "company": "Micron",
     "title": "Principal, Global Procurement Center of Excellence Strategy & Operations"
   },
+  "workday:micron:JR99888": {
+    "firstSeen": "2026-04-27T22:50:50.939Z",
+    "company": "Micron",
+    "title": "Photolithography Process Engineer"
+  },
+  "workday:micron:JR99897": {
+    "firstSeen": "2026-04-27T22:50:50.939Z",
+    "company": "Micron",
+    "title": "Process Integration Engineer"
+  },
+  "workday:micron:JR99900": {
+    "firstSeen": "2026-04-27T22:50:50.939Z",
+    "company": "Micron",
+    "title": "ID1 Principal Program Manager"
+  },
+  "workday:micron:JR99901": {
+    "firstSeen": "2026-04-27T22:50:50.939Z",
+    "company": "Micron",
+    "title": "Senior Engineer, Facilities Instrumentation and Controls"
+  },
   "workday:netflix:JR28706": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Netflix",
@@ -84468,6 +84548,11 @@
     "company": "Nvidia",
     "title": "Principal Cloud Services Software Engineer"
   },
+  "workday:nvidia:JR2017171": {
+    "firstSeen": "2026-04-27T22:50:50.939Z",
+    "company": "Nvidia",
+    "title": "Senior Product Manager - Hardware Infrastructure"
+  },
   "workday:paypal:R0119279": {
     "firstSeen": "2026-04-27T16:26:00.933Z",
     "company": "PayPal",
@@ -85311,6 +85396,11 @@
     "firstSeen": "2026-04-27T14:35:00.073Z",
     "company": "PayPal",
     "title": "Backend Software Engineer"
+  },
+  "workday:paypal:R0136580": {
+    "firstSeen": "2026-04-27T22:50:50.939Z",
+    "company": "PayPal",
+    "title": "Software Engineer 3"
   },
   "workday:redhat:R-040324": {
     "firstSeen": "2026-04-25T03:39:42.666Z",
@@ -88986,6 +89076,11 @@
     "company": "Target India",
     "title": "Maintenance Technician 2 - $5,000 Sign-On Bonus - Food Distribution Center - Cedar Falls, IA"
   },
+  "workday:target:R0000432621": {
+    "firstSeen": "2026-04-27T22:50:50.939Z",
+    "company": "Target India",
+    "title": "Closing Team Leader"
+  },
   "workday:target:R0000432638": {
     "firstSeen": "2026-04-21T15:51:59.911Z",
     "company": "Target India",
@@ -90361,6 +90456,11 @@
     "company": "Target India",
     "title": "Closing Team Leader (Muncie, IN)"
   },
+  "workday:target:R0000436211": {
+    "firstSeen": "2026-04-27T22:50:50.939Z",
+    "company": "Target India",
+    "title": "Sr Engineer - Incident Response Engineering"
+  },
   "workday:target:R0000436214": {
     "firstSeen": "2026-04-23T07:14:22.981Z",
     "company": "Target India",
@@ -90475,6 +90575,11 @@
     "firstSeen": "2026-04-22T21:50:38.710Z",
     "company": "Target India",
     "title": "Food & Beverage Team Leader"
+  },
+  "workday:target:R0000436289": {
+    "firstSeen": "2026-04-27T22:50:50.939Z",
+    "company": "Target India",
+    "title": "Lead Engineer - Incident Response Engineering"
   },
   "workday:target:R0000436290": {
     "firstSeen": "2026-04-23T07:14:22.981Z",
@@ -92100,6 +92205,11 @@
     "firstSeen": "2026-04-27T17:49:04.219Z",
     "company": "Workday",
     "title": "Software Development Engineer - ML Ops (US Federal)"
+  },
+  "workday:workday:JR-0105396": {
+    "firstSeen": "2026-04-27T22:50:50.939Z",
+    "company": "Workday",
+    "title": "Sr. Full Stack Software Engineer- Air Gapped - (US Federal)"
   },
   "workday:workday:JR-0105415": {
     "firstSeen": "2026-04-20T10:16:06.886Z",
