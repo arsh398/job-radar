@@ -34199,6 +34199,11 @@
     "company": "Elastic",
     "title": "Enterprise Account Executive - Canada"
   },
+  "greenhouse:elastic:7859326": {
+    "firstSeen": "2026-04-27T23:52:26.805Z",
+    "company": "Elastic",
+    "title": "Senior Customer Architect (West)"
+  },
   "greenhouse:figma:5220003004": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Figma",
@@ -35033,6 +35038,11 @@
     "firstSeen": "2026-04-22T22:45:08.249Z",
     "company": "Figma",
     "title": "Enterprise Support Specialist, Japanese Speaking (Tokyo, Japan)"
+  },
+  "greenhouse:figma:5982531004": {
+    "firstSeen": "2026-04-27T23:52:26.805Z",
+    "company": "Figma",
+    "title": "IT Audit Manager"
   },
   "greenhouse:fireworksai:4000239009": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -40531,6 +40541,11 @@
   },
   "greenhouse:instacart:7858144": {
     "firstSeen": "2026-04-27T16:26:00.933Z",
+    "company": "Instacart",
+    "title": "iOS Engineer II"
+  },
+  "greenhouse:instacart:7858998": {
+    "firstSeen": "2026-04-27T23:52:26.805Z",
     "company": "Instacart",
     "title": "iOS Engineer II"
   },
@@ -48514,6 +48529,11 @@
     "company": "Pinterest",
     "title": "Staff Product Manager, AI Safety"
   },
+  "greenhouse:pinterest:7724254": {
+    "firstSeen": "2026-04-27T23:52:26.805Z",
+    "company": "Pinterest",
+    "title": "Sr. Staff Machine Learning Engineer, Content Quality"
+  },
   "greenhouse:pinterest:7732971": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Pinterest",
@@ -52714,6 +52734,11 @@
     "company": "Roblox",
     "title": "Sr Talent Business Partner, Product/Design"
   },
+  "greenhouse:roblox:7859395": {
+    "firstSeen": "2026-04-27T23:52:26.805Z",
+    "company": "Roblox",
+    "title": "Senior Manager, Technical Recruiting"
+  },
   "greenhouse:rubrik:2146030": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Rubrik",
@@ -54908,6 +54933,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Stripe",
     "title": "Data Governance Lead"
+  },
+  "greenhouse:stripe:5956528": {
+    "firstSeen": "2026-04-27T23:52:26.805Z",
+    "company": "Stripe",
+    "title": "Strategy & Business Performance, Central S&O"
   },
   "greenhouse:stripe:6042172": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -58548,6 +58578,11 @@
     "firstSeen": "2026-04-18T19:59:26.806Z",
     "company": "Twilio",
     "title": "Senior Strategic Account Executive"
+  },
+  "greenhouse:twilio:7593382": {
+    "firstSeen": "2026-04-27T23:52:26.805Z",
+    "company": "Twilio",
+    "title": "Staff Product Manager - Data Platforms"
   },
   "greenhouse:twilio:7595407": {
     "firstSeen": "2026-04-18T19:59:26.806Z",
@@ -69924,6 +69959,21 @@
     "company": "Bosch",
     "title": "Practicante Pre Profesional - FCM"
   },
+  "smartrecruiters:BoschGroup:744000123317630": {
+    "firstSeen": "2026-04-27T23:52:26.805Z",
+    "company": "Bosch",
+    "title": "Undergraduate Marketing and Social Media Student – Motorsport"
+  },
+  "smartrecruiters:BoschGroup:744000123317744": {
+    "firstSeen": "2026-04-27T23:52:26.805Z",
+    "company": "Bosch",
+    "title": "Quality Engineer (Change & Risk Management)"
+  },
+  "smartrecruiters:BoschGroup:744000123318219": {
+    "firstSeen": "2026-04-27T23:52:26.805Z",
+    "company": "Bosch",
+    "title": "Ingeniero de Aseguranza de Calidad"
+  },
   "smartrecruiters:Visa:744000104778816": {
     "firstSeen": "2026-04-25T07:13:07.357Z",
     "company": "Visa Inc",
@@ -77321,6 +77371,11 @@
     "company": "Mastercard",
     "title": "Managing Consultant – Strategy & Transformation, Advisors & Consulting Services"
   },
+  "workday:mastercard:R-269900": {
+    "firstSeen": "2026-04-27T23:52:26.805Z",
+    "company": "Mastercard",
+    "title": "Senior Software Engineer (Mainframe)"
+  },
   "workday:mastercard:R-269971": {
     "firstSeen": "2026-04-23T11:58:55.333Z",
     "company": "Mastercard",
@@ -81055,6 +81110,11 @@
     "company": "Micron",
     "title": "Staff/Principal Engineer. ASIC Design Verification (DDR expert)"
   },
+  "workday:micron:JR98070": {
+    "firstSeen": "2026-04-27T23:52:26.805Z",
+    "company": "Micron",
+    "title": "New College Grad - Design Engineer"
+  },
   "workday:micron:JR98072": {
     "firstSeen": "2026-04-19T02:31:39.893Z",
     "company": "Micron",
@@ -81219,6 +81279,11 @@
     "firstSeen": "2026-04-21T18:05:48.822Z",
     "company": "Micron",
     "title": "Principal TCAD Device Engineer"
+  },
+  "workday:micron:JR98366": {
+    "firstSeen": "2026-04-27T23:52:26.805Z",
+    "company": "Micron",
+    "title": "Principal Platform Engineer"
   },
   "workday:micron:JR98373": {
     "firstSeen": "2026-04-23T19:06:04.826Z",
@@ -83155,6 +83220,11 @@
     "company": "Nvidia",
     "title": "Senior SBIOS Firmware Engineer - Bootloader"
   },
+  "workday:nvidia:JR2014328": {
+    "firstSeen": "2026-04-27T23:52:26.805Z",
+    "company": "Nvidia",
+    "title": "Senior Applied Machine Learning Engineer - VLSI Design"
+  },
   "workday:nvidia:JR2014497": {
     "firstSeen": "2026-04-24T17:29:56.807Z",
     "company": "Nvidia",
@@ -83988,6 +84058,11 @@
     "company": "Nvidia",
     "title": "Senior Solutions Architect, AI Infrastructure"
   },
+  "workday:nvidia:JR2016557": {
+    "firstSeen": "2026-04-27T23:52:26.805Z",
+    "company": "Nvidia",
+    "title": "Software Engineer - NVLink GPU Networking"
+  },
   "workday:nvidia:JR2016562": {
     "firstSeen": "2026-04-21T20:52:13.436Z",
     "company": "Nvidia",
@@ -84438,6 +84513,11 @@
     "company": "Nvidia",
     "title": "Senior AI and ML HPC Cluster Engineer"
   },
+  "workday:nvidia:JR2016910": {
+    "firstSeen": "2026-04-27T23:52:26.805Z",
+    "company": "Nvidia",
+    "title": "SoC Product Architect, Telecom AI RAN"
+  },
   "workday:nvidia:JR2016912": {
     "firstSeen": "2026-04-23T23:43:09.541Z",
     "company": "Nvidia",
@@ -84478,10 +84558,20 @@
     "company": "Nvidia",
     "title": "Deep Learning Architect, LLM Inference - New College Grad 2026"
   },
+  "workday:nvidia:JR2016955": {
+    "firstSeen": "2026-04-27T23:52:26.805Z",
+    "company": "Nvidia",
+    "title": "Senior System Software Engineer, Tegra Boot Stack"
+  },
   "workday:nvidia:JR2016967": {
     "firstSeen": "2026-04-27T08:22:04.778Z",
     "company": "Nvidia",
     "title": "Solutions Architect"
+  },
+  "workday:nvidia:JR2016976": {
+    "firstSeen": "2026-04-27T23:52:26.805Z",
+    "company": "Nvidia",
+    "title": "Senior Host Management Architect"
   },
   "workday:nvidia:JR2016977": {
     "firstSeen": "2026-04-26T21:36:12.068Z",
@@ -84507,6 +84597,11 @@
     "firstSeen": "2026-04-27T19:18:17.160Z",
     "company": "Nvidia",
     "title": "Senior System Software Test Engineer, Networking"
+  },
+  "workday:nvidia:JR2017036": {
+    "firstSeen": "2026-04-27T23:52:26.805Z",
+    "company": "Nvidia",
+    "title": "Senior System Software Engineer - Video"
   },
   "workday:nvidia:JR2017041": {
     "firstSeen": "2026-04-26T21:36:12.068Z",
@@ -92949,5 +93044,10 @@
     "firstSeen": "2026-04-27T20:39:30.089Z",
     "company": "Workday",
     "title": "Senior Software Engineer - Data Platform and Agent Trust"
+  },
+  "workday:workday:JR-0106851": {
+    "firstSeen": "2026-04-27T23:52:26.805Z",
+    "company": "Workday",
+    "title": "FinOps Specialist"
   }
 }
