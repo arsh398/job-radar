@@ -5459,6 +5459,11 @@
     "company": "ElevenLabs",
     "title": "Enterprise Solutions Engineer - North America"
   },
+  "ashby:elevenlabs:2ab9c007-12fc-4d27-bd6a-f2961bf041c9": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "ElevenLabs",
+    "title": "Collections Analyst"
+  },
   "ashby:elevenlabs:2f121da5-8c9a-401a-9332-3156c5d33113": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "ElevenLabs",
@@ -5684,6 +5689,11 @@
     "company": "ElevenLabs",
     "title": "Enterprise Solutions Engineer - Mexico"
   },
+  "ashby:elevenlabs:83452e49-ac85-4782-abb5-a0de1aa33ce2": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "ElevenLabs",
+    "title": "Technical Accountant"
+  },
   "ashby:elevenlabs:86e1e4d5-203a-43c2-95c0-0a99dea1ee8c": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "ElevenLabs",
@@ -5754,6 +5764,11 @@
     "company": "ElevenLabs",
     "title": "Marketing Intern"
   },
+  "ashby:elevenlabs:a0a8450e-3606-407b-8aeb-acd4fe029d3e": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "ElevenLabs",
+    "title": "Senior Accountant"
+  },
   "ashby:elevenlabs:a3097257-a07a-4a7e-b9fe-b8555c1a0fa7": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "ElevenLabs",
@@ -5793,6 +5808,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "ElevenLabs",
     "title": "Account Executive - DACH - Commercial"
+  },
+  "ashby:elevenlabs:b31cc569-cf74-49c9-ab06-b837bdb358dc": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "ElevenLabs",
+    "title": "Accounts Receivable Lead"
   },
   "ashby:elevenlabs:b3700233-a7b6-4454-ada0-9474630e92be": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -5858,6 +5878,11 @@
     "firstSeen": "2026-04-20T10:16:06.886Z",
     "company": "ElevenLabs",
     "title": "General Manager - Chile"
+  },
+  "ashby:elevenlabs:d3fc9a6f-69ba-48b3-a44b-564d37eb0ed1": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "ElevenLabs",
+    "title": "Revenue Accountant"
   },
   "ashby:elevenlabs:d961d827-4529-4c70-9eff-c521b8923744": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -14553,6 +14578,11 @@
     "firstSeen": "2026-04-28T17:45:40.634Z",
     "company": "Airbnb",
     "title": "iOS Software Engineer, Airbnb - New Grad"
+  },
+  "greenhouse:airbnb:7859591": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Airbnb",
+    "title": "Engineering Manager, Checkout (Booking & Pricing)"
   },
   "greenhouse:airbnb:7861915": {
     "firstSeen": "2026-04-28T15:43:55.621Z",
@@ -23899,6 +23929,11 @@
     "company": "Cloudflare",
     "title": "Business Development Representative - Italian Speaking"
   },
+  "greenhouse:cloudflare:7863245": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Cloudflare",
+    "title": "Hardware Asset Management Intern"
+  },
   "greenhouse:coinbase:6233713": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Coinbase",
@@ -29133,6 +29168,11 @@
     "firstSeen": "2026-04-22T20:53:56.740Z",
     "company": "Databricks",
     "title": "Commercial Account Executive"
+  },
+  "greenhouse:databricks:8520024002": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Databricks",
+    "title": "Solutions Architect - Financial Services (Strategic Data Providers)"
   },
   "greenhouse:databricks:8521090002": {
     "firstSeen": "2026-04-27T12:20:26.011Z",
@@ -48044,6 +48084,11 @@
     "company": "Okta",
     "title": "Manager- Site Reliability Engineering"
   },
+  "greenhouse:okta:7847166": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Okta",
+    "title": "Manager, Field Analytics"
+  },
   "greenhouse:okta:7849034": {
     "firstSeen": "2026-04-27T08:22:04.778Z",
     "company": "Okta",
@@ -48943,6 +48988,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Pinterest",
     "title": "Engineering Manager II, Programmatic Offsite Ads "
+  },
+  "greenhouse:pinterest:7494804": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Pinterest",
+    "title": "Sr. Data Scientist, AI/ML Systems"
   },
   "greenhouse:pinterest:7494896": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -53564,6 +53614,11 @@
     "company": "Roblox",
     "title": "Senior Software Engineer (Full Stack), Ads Experience "
   },
+  "greenhouse:roblox:7848096": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Roblox",
+    "title": "Senior Software Engineer, Studio Platform"
+  },
   "greenhouse:roblox:7848527": {
     "firstSeen": "2026-04-27T17:49:04.219Z",
     "company": "Roblox",
@@ -53618,6 +53673,11 @@
     "firstSeen": "2026-04-28T19:39:45.585Z",
     "company": "Roblox",
     "title": "Senior Frontend Software Engineer, Profile"
+  },
+  "greenhouse:roblox:7862605": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Roblox",
+    "title": "Principal Software Engineer - Storage Cache"
   },
   "greenhouse:rubrik:2146030": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -55513,6 +55573,26 @@
     "firstSeen": "2026-04-24T02:29:27.133Z",
     "company": "Scale AI",
     "title": "Database Engineer"
+  },
+  "greenhouse:scaleai:4689751005": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Scale AI",
+    "title": "AI Infrastructure Engineer - Training Platform"
+  },
+  "greenhouse:scaleai:4689909005": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Scale AI",
+    "title": "Principal Solutions Engineer, Enterprise"
+  },
+  "greenhouse:scaleai:4689917005": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Scale AI",
+    "title": "Enterprise Account Executive (Financial Services)"
+  },
+  "greenhouse:scaleai:4689919005": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Scale AI",
+    "title": "Enterprise Account Executive (Healthcare & Life Sciences)"
   },
   "greenhouse:squarespace:6237810": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -58518,6 +58598,11 @@
     "firstSeen": "2026-04-28T19:39:45.585Z",
     "company": "Stripe",
     "title": "Manager, SMB Account Executives - New Business "
+  },
+  "greenhouse:stripe:7863336": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Stripe",
+    "title": "Sales Engineer (Presales)"
   },
   "greenhouse:thoughtworks:6933235": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -71859,6 +71944,21 @@
     "company": "Bosch",
     "title": "District Sales Manager (MEP Channel)- Ohio Territory - Diablo Tools"
   },
+  "smartrecruiters:BoschGroup:744000123550639": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Bosch",
+    "title": "Project Management Office Leader"
+  },
+  "smartrecruiters:BoschGroup:744000123552479": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Bosch",
+    "title": "Pasante de Ventas para Mobility Aftermarket"
+  },
+  "smartrecruiters:BoschGroup:744000123554719": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Bosch",
+    "title": "Production Supervisor B Shift (Thursday-Saturday, every other Sunday 6am-6pm)"
+  },
   "smartrecruiters:Visa:744000104778816": {
     "firstSeen": "2026-04-25T07:13:07.357Z",
     "company": "Visa Inc",
@@ -75203,6 +75303,11 @@
     "company": "Autodesk",
     "title": "Manager, Brand Management"
   },
+  "workday:autodesk:26WD96968": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Autodesk",
+    "title": "Emerging Solutions Sales Specialist"
+  },
   "workday:autodesk:26WD96972": {
     "firstSeen": "2026-04-21T06:02:25.193Z",
     "company": "Autodesk",
@@ -75443,6 +75548,11 @@
     "company": "Autodesk",
     "title": "Senior Product Manager"
   },
+  "workday:autodesk:26WD97350": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Autodesk",
+    "title": "Sr Product Manager- Export Controls"
+  },
   "workday:autodesk:26WD97357": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Autodesk",
@@ -75532,6 +75642,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Autodesk",
     "title": "Senior Associate Digital Renewal Sales Representative"
+  },
+  "workday:autodesk:26WD97453": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Autodesk",
+    "title": "Project Support Group (PSG) Analyst, Technical Advisory"
   },
   "workday:autodesk:26WD97455": {
     "firstSeen": "2026-04-28T05:58:48.566Z",
@@ -76372,6 +76487,16 @@
     "firstSeen": "2026-04-28T11:04:22.884Z",
     "company": "Cadence",
     "title": "Principal Design Engineer"
+  },
+  "workday:cadence:R54276": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Cadence",
+    "title": "Director of Configuration Management"
+  },
+  "workday:cadence:R54287": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Cadence",
+    "title": "Staff Systems Engineer (Cloud Operations & Support)"
   },
   "workday:cadence:R54298": {
     "firstSeen": "2026-04-28T08:32:09.458Z",
@@ -78345,6 +78470,11 @@
     "company": "Intel",
     "title": "RTL Design Engineer"
   },
+  "workday:intel:JR0281766": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Intel",
+    "title": "Division Supply Planning Analyst"
+  },
   "workday:intel:JR0281841": {
     "firstSeen": "2026-04-22T11:59:47.776Z",
     "company": "Intel",
@@ -79195,6 +79325,11 @@
     "company": "Intel",
     "title": "Pre-Si Systems Intern"
   },
+  "workday:intel:JR0283303": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Intel",
+    "title": "AI Algorithm Research Intern – Neuromorphic Computing"
+  },
   "workday:intel:JR0283304": {
     "firstSeen": "2026-04-24T20:09:34.944Z",
     "company": "Intel",
@@ -79519,6 +79654,11 @@
     "firstSeen": "2026-04-27T08:22:04.778Z",
     "company": "Intel",
     "title": "HR Contact Center Specialist"
+  },
+  "workday:intel:JR0283468": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Intel",
+    "title": "Substrates Supply Manager"
   },
   "workday:intel:JR0283469": {
     "firstSeen": "2026-04-28T05:58:48.566Z",
@@ -80109,6 +80249,11 @@
     "firstSeen": "2026-04-23T17:41:45.053Z",
     "company": "Mastercard",
     "title": "Vice President, Enterprise Strategy"
+  },
+  "workday:mastercard:R-271753": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Mastercard",
+    "title": "Manager, Business Development"
   },
   "workday:mastercard:R-271817": {
     "firstSeen": "2026-04-22T07:12:20.418Z",
@@ -81935,6 +82080,11 @@
     "company": "Mastercard",
     "title": "Junior Technical Project Manager"
   },
+  "workday:mastercard:R-276168": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Mastercard",
+    "title": "Senior Managing Consultant, Advisors & Consulting Services, Strategy & Transformation"
+  },
   "workday:mastercard:R-276169": {
     "firstSeen": "2026-04-24T02:29:27.133Z",
     "company": "Mastercard",
@@ -82034,6 +82184,11 @@
     "firstSeen": "2026-04-28T11:04:22.884Z",
     "company": "Mastercard",
     "title": "Principal Software Development Architect"
+  },
+  "workday:mastercard:R-276257": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Mastercard",
+    "title": "Analyst, Franchise Services"
   },
   "workday:mastercard:R-276259": {
     "firstSeen": "2026-04-23T16:00:36.159Z",
@@ -82364,6 +82519,11 @@
     "firstSeen": "2026-04-23T05:16:43.075Z",
     "company": "Micron",
     "title": "Manager - QMS"
+  },
+  "workday:micron:JR81094": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Micron",
+    "title": "Staff Electrical Failure Analysis Engineer- Storage systems"
   },
   "workday:micron:JR81798": {
     "firstSeen": "2026-04-28T05:58:48.566Z",
@@ -83624,6 +83784,11 @@
     "company": "Micron",
     "title": "Intern - SSD Process Engineer"
   },
+  "workday:micron:JR96530": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Micron",
+    "title": "Member of Technical Staff, AI Engineering"
+  },
   "workday:micron:JR96563": {
     "firstSeen": "2026-04-19T14:09:13.157Z",
     "company": "Micron",
@@ -84203,6 +84368,11 @@
     "firstSeen": "2026-04-20T10:16:06.886Z",
     "company": "Micron",
     "title": "SR ENGINEER, DDEG DESIGN METHODOLOGY"
+  },
+  "workday:micron:JR98099": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Micron",
+    "title": "Principal Engineer, MLE, SMAI"
   },
   "workday:micron:JR98101": {
     "firstSeen": "2026-04-22T05:12:38.592Z",
@@ -85093,6 +85263,11 @@
     "firstSeen": "2026-04-28T13:11:49.392Z",
     "company": "Micron",
     "title": "DRAM Product Engineer"
+  },
+  "workday:micron:JR99676": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Micron",
+    "title": "Principal  Equipment Development Engineer"
   },
   "workday:micron:JR99691": {
     "firstSeen": "2026-04-24T02:29:27.133Z",
@@ -88936,6 +89111,11 @@
     "company": "PayPal",
     "title": "Sr L2 Desktop Support Technician"
   },
+  "workday:paypal:R0136369": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "PayPal",
+    "title": "Manager, Governance & Risk Solutions Engineering"
+  },
   "workday:paypal:R0136371": {
     "firstSeen": "2026-04-23T07:14:22.981Z",
     "company": "PayPal",
@@ -89095,6 +89275,11 @@
     "firstSeen": "2026-04-27T08:22:04.778Z",
     "company": "Red Hat",
     "title": "Consulting Services Account Specialist"
+  },
+  "workday:redhat:R-052077": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Red Hat",
+    "title": "Impact Analyst"
   },
   "workday:redhat:R-052424": {
     "firstSeen": "2026-04-21T15:51:59.911Z",
@@ -89680,6 +89865,11 @@
     "firstSeen": "2026-04-21T11:17:40.182Z",
     "company": "Red Hat",
     "title": "Associate Software Engineer - Ecosystem Engineering"
+  },
+  "workday:redhat:R-056385": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Red Hat",
+    "title": "Senior Platform Consultant"
   },
   "workday:redhat:R-056391": {
     "firstSeen": "2026-04-24T05:22:25.358Z",
@@ -90460,6 +90650,16 @@
     "firstSeen": "2026-04-22T20:53:56.740Z",
     "company": "Salesforce",
     "title": "Summer 2026 Intern - Finance Operations Associate (Dublin)"
+  },
+  "workday:salesforce:JR330016": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Salesforce",
+    "title": "AI Marketing Campaigns Enablement Director"
+  },
+  "workday:salesforce:JR330034": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Salesforce",
+    "title": "Enterprise Account Executive - Tableau - Amsterdam"
   },
   "workday:salesforce:JR330156": {
     "firstSeen": "2026-04-22T07:12:20.418Z",
@@ -92111,6 +92311,11 @@
     "company": "Salesforce",
     "title": "Employee Success Business Partner Director"
   },
+  "workday:salesforce:JR339177": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Salesforce",
+    "title": "Success Marketing, Sr. Analyst"
+  },
   "workday:salesforce:JR339179": {
     "firstSeen": "2026-04-20T19:06:43.880Z",
     "company": "Salesforce",
@@ -92541,6 +92746,11 @@
     "company": "Salesforce",
     "title": "Senior Director, Technical Architecture and Enablement"
   },
+  "workday:salesforce:JR339815": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Salesforce",
+    "title": "Strategic Events Associate Manager"
+  },
   "workday:salesforce:JR339816": {
     "firstSeen": "2026-04-27T17:49:04.219Z",
     "company": "Salesforce",
@@ -92615,6 +92825,11 @@
     "firstSeen": "2026-04-24T19:28:52.807Z",
     "company": "Salesforce",
     "title": "Services Sales Solutions Director - HLS"
+  },
+  "workday:salesforce:JR339944": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Salesforce",
+    "title": "Manager/Sr. Manager Sales Compensation Strategy"
   },
   "workday:salesforce:JR339947": {
     "firstSeen": "2026-04-24T20:09:34.944Z",
@@ -93015,6 +93230,11 @@
     "company": "Target India",
     "title": "Director Credit Risk - Collections Strategy"
   },
+  "workday:target:R0000428858": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Target India",
+    "title": "Food & Beverage Team Leader - Strongsville OH"
+  },
   "workday:target:R0000429433": {
     "firstSeen": "2026-04-22T18:03:08.011Z",
     "company": "Target India",
@@ -93249,6 +93469,11 @@
     "firstSeen": "2026-04-28T08:32:09.458Z",
     "company": "Target India",
     "title": "Lead Operations Research Scientist"
+  },
+  "workday:target:R0000433777": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Target India",
+    "title": "Sr Data Analyst"
   },
   "workday:target:R0000433827": {
     "firstSeen": "2026-04-20T08:05:34.211Z",
@@ -95395,6 +95620,11 @@
     "company": "Target India",
     "title": "Style Team Leader"
   },
+  "workday:target:R0000436669": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Target India",
+    "title": "Manager, Integrated Planning - Roundel Go-To-Market"
+  },
   "workday:target:R0000436670": {
     "firstSeen": "2026-04-27T08:22:04.778Z",
     "company": "Target India",
@@ -95755,6 +95985,11 @@
     "company": "Target India",
     "title": "Target Security Specialist"
   },
+  "workday:target:R0000436849": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Target India",
+    "title": "Assets Protection Specialist - North Dallas, TX"
+  },
   "workday:target:R0000436864": {
     "firstSeen": "2026-04-28T08:32:09.458Z",
     "company": "Target India",
@@ -95909,6 +96144,16 @@
     "firstSeen": "2026-04-28T21:06:03.918Z",
     "company": "Target India",
     "title": "Executive Team Leader of  Assets Protection (Assistant Manager)- Inland Empire"
+  },
+  "workday:target:R0000437018": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Target India",
+    "title": "Maintenance Technician 1 - Regional Distribution Center - Oconomowoc, WI"
+  },
+  "workday:target:R0000437019": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Target India",
+    "title": "Maintenance Technician 1 - Regional Distribution Center - Midlothian, TX"
   },
   "workday:walmart:R-128829": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -96795,6 +97040,11 @@
     "company": "Workday",
     "title": "Sr Corporate Communications Manager"
   },
+  "workday:workday:JR-0105588": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Workday",
+    "title": "Forward Deployed Partner Architect"
+  },
   "workday:workday:JR-0105619": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Workday",
@@ -97503,6 +97753,11 @@
     "firstSeen": "2026-04-24T22:08:30.165Z",
     "company": "Workday",
     "title": "Machine Learning Engineer III / Senior Machine Learning Engineer - AI Platform"
+  },
+  "workday:workday:JR-0106813": {
+    "firstSeen": "2026-04-28T22:31:06.251Z",
+    "company": "Workday",
+    "title": "Solution Consultant- FIN"
   },
   "workday:workday:JR-0106833": {
     "firstSeen": "2026-04-28T13:11:49.392Z",
