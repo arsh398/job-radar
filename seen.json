@@ -5654,6 +5654,11 @@
     "company": "ElevenLabs",
     "title": "Enterprise Solutions Engineer - North America"
   },
+  "ashby:elevenlabs:29152b04-59a4-4f3e-903a-144a012da93e": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "ElevenLabs",
+    "title": "Strategic Business Development - United States"
+  },
   "ashby:elevenlabs:2ab9c007-12fc-4d27-bd6a-f2961bf041c9": {
     "firstSeen": "2026-04-28T22:31:06.251Z",
     "company": "ElevenLabs",
@@ -7343,6 +7348,11 @@
     "firstSeen": "2026-04-21T10:00:31.304Z",
     "company": "Notion",
     "title": "Manager, Customer Success Japan"
+  },
+  "ashby:notion:7ac2e788-159b-411f-b998-36db2fcc1591": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Notion",
+    "title": "Scaled Customer Success Manager - French Speaker"
   },
   "ashby:notion:7d18beb6-d40c-46b5-9734-744e6944fee4": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -14939,6 +14949,11 @@
     "company": "Airbnb",
     "title": "Programs & Business Operations Lead, EMEA"
   },
+  "greenhouse:airbnb:7867435": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Airbnb",
+    "title": "Staff Software Engineer, Unified Data Store"
+  },
   "greenhouse:airbnb:7867679": {
     "firstSeen": "2026-04-29T21:58:19.335Z",
     "company": "Airbnb",
@@ -17214,6 +17229,11 @@
     "company": "Anthropic",
     "title": "Partner Manager DACH/CEE (AI Boutiques)"
   },
+  "greenhouse:anthropic:5165539008": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Anthropic",
+    "title": "Technical Compensation Partner"
+  },
   "greenhouse:anthropic:5165641008": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Anthropic",
@@ -17953,6 +17973,11 @@
     "firstSeen": "2026-04-28T19:39:45.585Z",
     "company": "Anthropic",
     "title": "Staff Software Engineer, Node Infra"
+  },
+  "greenhouse:anthropic:5205495008": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Anthropic",
+    "title": "Incident Response Manager - Product & Engineering"
   },
   "greenhouse:asana:5480143": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -21288,6 +21313,11 @@
     "firstSeen": "2026-04-28T08:32:09.458Z",
     "company": "Celonis",
     "title": "Applied AI Solution Consulting Intern (DACH Market)"
+  },
+  "greenhouse:celonis:7719380003": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Celonis",
+    "title": "Business Development Manager "
   },
   "greenhouse:chime:8112504002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -29653,6 +29683,11 @@
     "firstSeen": "2026-04-28T22:31:06.251Z",
     "company": "Databricks",
     "title": "Solutions Architect - Financial Services (Strategic Data Providers)"
+  },
+  "greenhouse:databricks:8520123002": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Databricks",
+    "title": "Senior Customer Enablement Architect"
   },
   "greenhouse:databricks:8520611002": {
     "firstSeen": "2026-04-29T14:25:16.553Z",
@@ -48999,6 +49034,11 @@
     "company": "Okta",
     "title": "Manager, Sales Conversational Intelligence"
   },
+  "greenhouse:okta:7868659": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Okta",
+    "title": "Director, Public Sector Customer Success "
+  },
   "greenhouse:pagerduty:5634303004": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "PagerDuty",
@@ -52183,6 +52223,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Robinhood",
     "title": "Senior Machine Learning Engineer, Agentic"
+  },
+  "greenhouse:robinhood:7125765": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Robinhood",
+    "title": "Senior Product Manager, Trading Platform"
   },
   "greenhouse:robinhood:7155924": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -56494,6 +56539,11 @@
     "company": "Scale AI",
     "title": "Engagement Manager (Hawaii), Public Sector"
   },
+  "greenhouse:scaleai:4687588005": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Scale AI",
+    "title": "National Security Hackathon 2026 - General Interest"
+  },
   "greenhouse:scaleai:4687591005": {
     "firstSeen": "2026-04-24T19:28:52.807Z",
     "company": "Scale AI",
@@ -58028,6 +58078,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Stripe",
     "title": "Legal Counsel, EMEA Marketing"
+  },
+  "greenhouse:stripe:7559141": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Stripe",
+    "title": "Customer Success Manager, Key Accounts "
   },
   "greenhouse:stripe:7561053": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -73894,6 +73949,16 @@
     "company": "Bosch",
     "title": "Quality Inspector I (AM)"
   },
+  "smartrecruiters:BoschGroup:744000123806630": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Bosch",
+    "title": "Acquisition Manager – Engineering Services (Mobility / Automotive) "
+  },
+  "smartrecruiters:BoschGroup:744000123807249": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Bosch",
+    "title": "Business Development Manager – Victoria / South Australia"
+  },
   "smartrecruiters:Visa:744000104778816": {
     "firstSeen": "2026-04-25T07:13:07.357Z",
     "company": "Visa Inc",
@@ -77467,6 +77532,11 @@
     "company": "Autodesk",
     "title": "Digital Renewal Sales Rep, Hebrew Speaking"
   },
+  "workday:autodesk:26WD97209": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Autodesk",
+    "title": "Senior Business Analytics Manager"
+  },
   "workday:autodesk:26WD97210": {
     "firstSeen": "2026-04-24T23:07:02.821Z",
     "company": "Autodesk",
@@ -78037,6 +78107,11 @@
     "company": "Autodesk",
     "title": "Groom Product Owner - Canada"
   },
+  "workday:autodesk:26WD97917": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Autodesk",
+    "title": "Software Developer"
+  },
   "workday:autodesk:26WD99035": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Autodesk",
@@ -78101,6 +78176,11 @@
     "firstSeen": "2026-04-22T09:07:02.079Z",
     "company": "Cadence",
     "title": "IT- Staff Systems Engineer"
+  },
+  "workday:cadence:R48033": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Cadence",
+    "title": "Signal Integrity Validation Internship (Summer 2025)"
   },
   "workday:cadence:R48413": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -78897,6 +78977,11 @@
     "company": "Cadence",
     "title": "Lead Customer Engagement Engineer - PDK"
   },
+  "workday:cadence:R54600": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Cadence",
+    "title": "Revenue Accounting Manager"
+  },
   "workday:cadence:R54619": {
     "firstSeen": "2026-04-29T20:40:58.155Z",
     "company": "Cadence",
@@ -79481,6 +79566,11 @@
     "firstSeen": "2026-04-24T17:29:56.807Z",
     "company": "CrowdStrike",
     "title": "Agile Delivery Lead (Remote)"
+  },
+  "workday:crowdstrike:R28387": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "CrowdStrike",
+    "title": "Sr. Cloud Security Architect, GCP (Remote)"
   },
   "workday:crowdstrike:R28393": {
     "firstSeen": "2026-04-21T18:05:48.822Z",
@@ -87033,6 +87123,11 @@
     "company": "Micron",
     "title": "NY1 - Wastewater Engineer - FAC"
   },
+  "workday:micron:JR97481": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Micron",
+    "title": "Staff System Engineer"
+  },
   "workday:micron:JR97508": {
     "firstSeen": "2026-04-28T02:43:49.505Z",
     "company": "Micron",
@@ -91211,6 +91306,11 @@
     "company": "Nvidia",
     "title": "Applied AI Engineer - DFT Methodology"
   },
+  "workday:nvidia:JR2016674": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Nvidia",
+    "title": "Senior Software Engineer - Networking"
+  },
   "workday:nvidia:JR2016675": {
     "firstSeen": "2026-04-29T19:27:26.600Z",
     "company": "Nvidia",
@@ -91855,6 +91955,11 @@
     "firstSeen": "2026-04-29T17:57:38.135Z",
     "company": "Nvidia",
     "title": "Senior ASIC Timing Engineer"
+  },
+  "workday:nvidia:JR2017354": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Nvidia",
+    "title": "Senior Package Layout Engineer - Hardware"
   },
   "workday:nvidia:JR2017361": {
     "firstSeen": "2026-04-29T21:58:19.335Z",
@@ -94825,6 +94930,11 @@
     "company": "Salesforce",
     "title": "Account Solution Engineer, Higher Education"
   },
+  "workday:salesforce:JR334732": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Salesforce",
+    "title": "Strategy & Operations Senior Program Manager, Business Process"
+  },
   "workday:salesforce:JR334733": {
     "firstSeen": "2026-04-21T11:17:40.182Z",
     "company": "Salesforce",
@@ -96935,6 +97045,11 @@
     "company": "Salesforce",
     "title": "Director, Technical Consulting"
   },
+  "workday:salesforce:JR340462": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Salesforce",
+    "title": "Senior/Lead/Principal Software Engineer, Agentforce for Supply Chain"
+  },
   "workday:salesforce:JR340471": {
     "firstSeen": "2026-04-29T19:27:26.600Z",
     "company": "Salesforce",
@@ -97498,6 +97613,11 @@
     "firstSeen": "2026-04-20T08:05:34.211Z",
     "company": "Target India",
     "title": "Sr Inventory Specialist"
+  },
+  "workday:target:R0000433916": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Target India",
+    "title": "Executive Team Leader Human Resources (Assistant Manager HR)- St. Paul/Minnesota"
   },
   "workday:target:R0000433998": {
     "firstSeen": "2026-04-23T21:43:31.015Z",
@@ -100359,6 +100479,11 @@
     "company": "Target India",
     "title": "Executive Team Leader Human Resources (Assistant Manager HR) - San Francisco, CA"
   },
+  "workday:target:R0000437097": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Target India",
+    "title": "Sr. Merch Planner – Goodfellow Tops (Hybrid)"
+  },
   "workday:target:R0000437098": {
     "firstSeen": "2026-04-29T20:40:58.155Z",
     "company": "Target India",
@@ -100378,6 +100503,11 @@
     "firstSeen": "2026-04-29T20:40:58.155Z",
     "company": "Target India",
     "title": "Executive Team Leader Human Resources (Assistant Manager HR)- Champlin, MN"
+  },
+  "workday:target:R0000437137": {
+    "firstSeen": "2026-04-29T23:00:50.538Z",
+    "company": "Target India",
+    "title": "Lead UX Designer, Emerging Experiences"
   },
   "workday:walmart:R-128829": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
