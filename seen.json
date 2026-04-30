@@ -1914,6 +1914,11 @@
     "company": "Amazon",
     "title": "Team Lead, GSF Distribution Network"
   },
+  "amazon:98a8a213-7ba5-42e3-9354-f9915ac02983": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "Amazon",
+    "title": "Software Development Engineer, Delivery Choices"
+  },
   "amazon:9920cdbb-b7f7-40bc-bb4f-8d5a3cb69f86": {
     "firstSeen": "2026-04-30T16:58:23.695Z",
     "company": "Amazon",
@@ -6378,6 +6383,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "ElevenLabs",
     "title": "B2B Marketing Lead - ElevenCreative"
+  },
+  "ashby:elevenlabs:bcdc1c00-4e06-4d85-b591-4e2d3083b974": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "ElevenLabs",
+    "title": "Executive Assistant, Enterprise Deployment"
   },
   "ashby:elevenlabs:bd230a18-2ff4-493c-8555-8476bf7de0e4": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -12359,6 +12369,11 @@
     "company": "Zip",
     "title": "Commercial Account Manager"
   },
+  "ashby:zip:1beeef88-ffb0-4c39-8de4-429c98611edb": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "Zip",
+    "title": "AI Solutions Consultant"
+  },
   "ashby:zip:1d199f15-1508-41b4-b5e3-2ac7fd5e4262": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Zip",
@@ -13873,6 +13888,16 @@
     "firstSeen": "2026-04-23T19:06:04.826Z",
     "company": "Affirm",
     "title": "Senior Product Designer"
+  },
+  "greenhouse:affirm:7712659003": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "Affirm",
+    "title": "People Knowledge Experience Manager"
+  },
+  "greenhouse:affirm:7712661003": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "Affirm",
+    "title": "People Knowledge Experience Manager"
   },
   "greenhouse:affirm:7712703003": {
     "firstSeen": "2026-04-30T19:56:10.503Z",
@@ -22348,6 +22373,11 @@
     "firstSeen": "2026-04-30T21:00:08.338Z",
     "company": "Chime",
     "title": "Director, Marketing Strategy & Operations"
+  },
+  "greenhouse:chime:8532591002": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "Chime",
+    "title": "Visual Designer, Lifecycle Marketing"
   },
   "greenhouse:cloudflare:4886734": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -41389,6 +41419,11 @@
     "company": "Grafana Labs",
     "title": "Staff Solutions Engineer | East Coast | Remote"
   },
+  "greenhouse:grafanalabs:5985501004": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "Grafana Labs",
+    "title": "Manager, Observability Architects | West Coast | Remote "
+  },
   "greenhouse:grafanalabs:5985793004": {
     "firstSeen": "2026-04-30T19:56:10.503Z",
     "company": "Grafana Labs",
@@ -47148,6 +47183,11 @@
     "firstSeen": "2026-04-28T17:45:40.634Z",
     "company": "MongoDB",
     "title": "Senior Director, HR Business Partnering"
+  },
+  "greenhouse:mongodb:7859379": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "MongoDB",
+    "title": "Principal Analyst, GTM Operations"
   },
   "greenhouse:mongodb:7860066": {
     "firstSeen": "2026-04-28T21:06:03.918Z",
@@ -60649,6 +60689,11 @@
     "company": "Stripe",
     "title": "Program Manager - GTM"
   },
+  "greenhouse:stripe:7867330": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "Stripe",
+    "title": "Special Projects, Operations Manager"
+  },
   "greenhouse:stripe:7867868": {
     "firstSeen": "2026-04-29T19:27:26.600Z",
     "company": "Stripe",
@@ -61593,6 +61638,11 @@
     "firstSeen": "2026-04-30T18:15:31.523Z",
     "company": "Turing",
     "title": "AI Engineering Lead"
+  },
+  "greenhouse:turing:5985549004": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "Turing",
+    "title": "Senior AI Solutions Engineer"
   },
   "greenhouse:twilio:6372770": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -64528,6 +64578,11 @@
     "firstSeen": "2026-04-30T22:03:58.062Z",
     "company": "xAI",
     "title": "Manager, Logistics (Data Center Operations) "
+  },
+  "greenhouse:xai:5125621007": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "xAI",
+    "title": "Member of Technical Staff - X Search"
   },
   "lever:cred:150186f5-4eaf-4afe-ae08-bb36c71abb83": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -79657,6 +79712,11 @@
     "company": "Autodesk",
     "title": "Principal Vendor Management"
   },
+  "workday:autodesk:26WD97478": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "Autodesk",
+    "title": "Product Owner - AEC Data"
+  },
   "workday:autodesk:26WD97479": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Autodesk",
@@ -80001,6 +80061,11 @@
     "firstSeen": "2026-04-29T23:00:50.538Z",
     "company": "Autodesk",
     "title": "Software Developer"
+  },
+  "workday:autodesk:26WD97922": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "Autodesk",
+    "title": "Manager, Product Management"
   },
   "workday:autodesk:26WD99035": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -81817,6 +81882,11 @@
     "company": "CrowdStrike",
     "title": "Sr. Legal Counsel EMEA, Employment (Remote)"
   },
+  "workday:crowdstrike:R28625": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "CrowdStrike",
+    "title": "Data Engineer, Go to Market (Remote)"
+  },
   "workday:crowdstrike:R28627": {
     "firstSeen": "2026-04-27T08:22:04.778Z",
     "company": "CrowdStrike",
@@ -81965,6 +82035,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "HP",
     "title": "Technical Support Engineer – Bilingual (French and English speaker)"
+  },
+  "workday:hp:3154600": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "HP",
+    "title": "Cybersecurity Compliance Specialist"
   },
   "workday:hp:3155115": {
     "firstSeen": "2026-04-29T14:25:16.553Z",
@@ -82340,6 +82415,11 @@
     "firstSeen": "2026-04-20T08:05:34.211Z",
     "company": "HP",
     "title": "Partner Business Manager"
+  },
+  "workday:hp:3160168": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "HP",
+    "title": "Cybersecurity Policy Writer & Governance Lead"
   },
   "workday:hp:3160195": {
     "firstSeen": "2026-04-30T04:11:26.406Z",
@@ -83808,10 +83888,25 @@
     "company": "Intel",
     "title": "SerDes Circuit Design Engineer"
   },
+  "workday:intel:JR0283241": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "Intel",
+    "title": "WLA Yield Defect Metrology Engineer"
+  },
   "workday:intel:JR0283242": {
     "firstSeen": "2026-04-22T21:50:38.710Z",
     "company": "Intel",
     "title": "Power and Performance Lab Engineer"
+  },
+  "workday:intel:JR0283257": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "Intel",
+    "title": "WLA Yield Defect Metrology Engineer - Shift 7"
+  },
+  "workday:intel:JR0283260": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "Intel",
+    "title": "WLA Yield Defect Metrology Engineer - Shift 5"
   },
   "workday:intel:JR0283261": {
     "firstSeen": "2026-04-30T18:15:31.523Z",
@@ -84433,6 +84528,11 @@
     "company": "Intel",
     "title": "Manufacturing Systems Engineer"
   },
+  "workday:intel:JR0283552": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "Intel",
+    "title": "Silicon Packaging Design Engineer"
+  },
   "workday:intel:JR0283554": {
     "firstSeen": "2026-04-29T10:25:11.496Z",
     "company": "Intel",
@@ -84547,6 +84647,11 @@
     "firstSeen": "2026-04-28T13:11:49.392Z",
     "company": "Mastercard",
     "title": "Senior Platform Engineer - FinOps"
+  },
+  "workday:mastercard:R-254661": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "Mastercard",
+    "title": "Associate Consultant, Strategy & Transformation, Launch Program 2026 - Mexico City, Mexico"
   },
   "workday:mastercard:R-256410": {
     "firstSeen": "2026-04-28T05:58:48.566Z",
@@ -97539,6 +97644,11 @@
     "company": "Salesforce",
     "title": "Success Architect / Senior Success Architect"
   },
+  "workday:salesforce:JR320579": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "Salesforce",
+    "title": "Customer Success Manager, Mulesoft"
+  },
   "workday:salesforce:JR320861": {
     "firstSeen": "2026-04-23T17:41:45.053Z",
     "company": "Salesforce",
@@ -97648,6 +97758,11 @@
     "firstSeen": "2026-04-20T19:06:43.880Z",
     "company": "Salesforce",
     "title": "Named Account Executive, Mid-Market: Non-Profit"
+  },
+  "workday:salesforce:JR324362": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "Salesforce",
+    "title": "Customer Success Manager - Sales/ Service Cloud, Hebrew Speaking"
   },
   "workday:salesforce:JR324787": {
     "firstSeen": "2026-04-24T23:07:02.821Z",
@@ -100719,6 +100834,11 @@
     "company": "Salesforce",
     "title": "Success Architect - B2C Commerce"
   },
+  "workday:salesforce:JR340305": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "Salesforce",
+    "title": "Program Executive - Health & Life Sciences"
+  },
   "workday:salesforce:JR340322": {
     "firstSeen": "2026-04-28T21:06:03.918Z",
     "company": "Salesforce",
@@ -100758,6 +100878,11 @@
     "firstSeen": "2026-04-30T13:08:15.421Z",
     "company": "Salesforce",
     "title": "Lead Solution Engineer"
+  },
+  "workday:salesforce:JR340429": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "Salesforce",
+    "title": "Senior Manager, Quote to Cash Innovation"
   },
   "workday:salesforce:JR340462": {
     "firstSeen": "2026-04-29T23:00:50.538Z",
@@ -104783,6 +104908,11 @@
     "company": "Walmart",
     "title": "Senior, Data Scientist"
   },
+  "workday:walmart:R-2469294": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "Walmart",
+    "title": "Senior, Software Engineer"
+  },
   "workday:walmart:R-2469827": {
     "firstSeen": "2026-04-21T21:43:39.416Z",
     "company": "Walmart",
@@ -105117,6 +105247,11 @@
     "firstSeen": "2026-04-30T22:03:58.062Z",
     "company": "Walmart",
     "title": "Freight Flow Associate-3"
+  },
+  "workday:walmart:R-2496139": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "Walmart",
+    "title": "(USA) Area Manager - Floor"
   },
   "workday:workday:JR-0093733": {
     "firstSeen": "2026-04-21T21:43:39.416Z",
@@ -105507,6 +105642,11 @@
     "firstSeen": "2026-04-20T10:16:06.886Z",
     "company": "Workday",
     "title": "UX Designer III"
+  },
+  "workday:workday:JR-0105390": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "Workday",
+    "title": "Software Development Engineer, SRE (US Federal)"
   },
   "workday:workday:JR-0105395": {
     "firstSeen": "2026-04-27T17:49:04.219Z",
@@ -106431,6 +106571,11 @@
     "firstSeen": "2026-04-27T23:52:26.805Z",
     "company": "Workday",
     "title": "FinOps Specialist"
+  },
+  "workday:workday:JR-0106852": {
+    "firstSeen": "2026-04-30T23:27:41.724Z",
+    "company": "Workday",
+    "title": "Customer Success Manager - Paradox"
   },
   "workday:workday:JR-0106856": {
     "firstSeen": "2026-04-29T14:25:16.553Z",
