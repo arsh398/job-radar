@@ -7314,6 +7314,11 @@
     "company": "Notion",
     "title": "Scaled Customer Success Manager, Japan"
   },
+  "ashby:notion:71cea34b-63aa-4b6f-9977-1f755cc4eaf7": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "Notion",
+    "title": "Manager - Solutions Engineering, APACx"
+  },
   "ashby:notion:72d23f79-08d1-44df-b032-14a91f01887b": {
     "firstSeen": "2026-04-22T20:53:56.740Z",
     "company": "Notion",
@@ -11623,6 +11628,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Supabase",
     "title": "Enterprise Account Executive (EMEA, Sweden)"
+  },
+  "ashby:supabase:bf3628f2-f6e8-414e-a3fd-2f5ff481b60c": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "Supabase",
+    "title": "AWS Tech Lead - Platform Operations"
   },
   "ashby:supabase:c01f7436-1fdd-4a3e-8b96-8cadc33b006e": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -20183,6 +20193,11 @@
     "firstSeen": "2026-04-28T23:54:29.462Z",
     "company": "Brex",
     "title": "Manager, Account Management"
+  },
+  "greenhouse:brex:8530763002": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "Brex",
+    "title": "Revenue Operations Analyst"
   },
   "greenhouse:celonis:5928673003": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -33024,6 +33039,11 @@
     "company": "Discord",
     "title": "Recruiting Data Analyst"
   },
+  "greenhouse:discord:8525770002": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "Discord",
+    "title": "Staff Software Engineer, Mobile Architecture"
+  },
   "greenhouse:dropbox:6330333": {
     "firstSeen": "2026-04-23T07:14:22.981Z",
     "company": "Dropbox",
@@ -42338,6 +42358,16 @@
     "firstSeen": "2026-04-29T17:57:38.135Z",
     "company": "LaunchDarkly",
     "title": "Senior Solutions Engineer - Singapore"
+  },
+  "greenhouse:launchdarkly:7719989003": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "LaunchDarkly",
+    "title": "Commercial Counsel"
+  },
+  "greenhouse:launchdarkly:7720116003": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "LaunchDarkly",
+    "title": "Senior Solutions Engineer - EMEA"
   },
   "greenhouse:lightrun:4765955101": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -54644,6 +54674,11 @@
     "company": "Roblox",
     "title": "Principal Software Engineer - Asset Safety"
   },
+  "greenhouse:roblox:7868390": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "Roblox",
+    "title": "Counsel, Americas - Regulatory & International Legal"
+  },
   "greenhouse:rubrik:2146030": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Rubrik",
@@ -61309,6 +61344,11 @@
     "company": "Twilio",
     "title": "Counsel, Commercial"
   },
+  "greenhouse:twilio:7821458": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "Twilio",
+    "title": "Staff Data Scientist"
+  },
   "greenhouse:twilio:7821462": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Twilio",
@@ -61418,6 +61458,16 @@
     "firstSeen": "2026-04-24T17:29:56.807Z",
     "company": "Twilio",
     "title": "Software Engineer Intern (22nd June - 11th September, remote-US)"
+  },
+  "greenhouse:twilio:7851194": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "Twilio",
+    "title": "Principal Product Manager"
+  },
+  "greenhouse:twilio:7851920": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "Twilio",
+    "title": "Staff, Data Scientist (L4) GTM Data Science & Analytics"
   },
   "greenhouse:twilio:7856700": {
     "firstSeen": "2026-04-28T17:45:40.634Z",
@@ -63433,6 +63483,26 @@
     "firstSeen": "2026-04-29T21:58:19.335Z",
     "company": "xAI",
     "title": "Construction Superintendent - Structural"
+  },
+  "greenhouse:xai:5124616007": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "xAI",
+    "title": "Software Engineer, Data"
+  },
+  "greenhouse:xai:5124647007": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "xAI",
+    "title": "Construction Superintendent (Night Shift) – Electrical"
+  },
+  "greenhouse:xai:5124669007": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "xAI",
+    "title": "Construction Superintendent (Night Shift) – Mechanical"
+  },
+  "greenhouse:xai:5124681007": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "xAI",
+    "title": "Construction Superintendent (Night Shift) – Structural"
   },
   "lever:cred:150186f5-4eaf-4afe-ae08-bb36c71abb83": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -77972,6 +78042,11 @@
     "company": "Autodesk",
     "title": "Executive Assistant - EMEA Channel Leader"
   },
+  "workday:autodesk:26WD97607": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "Autodesk",
+    "title": "Consulting Services Business Development Executive"
+  },
   "workday:autodesk:26WD97612": {
     "firstSeen": "2026-04-22T10:48:14.412Z",
     "company": "Autodesk",
@@ -81434,6 +81509,11 @@
     "company": "Intel",
     "title": "GPU Validation Engineer"
   },
+  "workday:intel:JR0283113": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "Intel",
+    "title": "GPU Logic Design Engineer"
+  },
   "workday:intel:JR0283114": {
     "firstSeen": "2026-04-22T16:58:08.367Z",
     "company": "Intel",
@@ -84143,6 +84223,11 @@
     "firstSeen": "2026-04-20T10:16:06.886Z",
     "company": "Mastercard",
     "title": "Business Strategist"
+  },
+  "workday:mastercard:R-275362": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "Mastercard",
+    "title": "Lead Data Scientist"
   },
   "workday:mastercard:R-275378": {
     "firstSeen": "2026-04-20T19:06:43.880Z",
@@ -88963,6 +89048,11 @@
     "company": "Nvidia",
     "title": "Senior Performance Engineer"
   },
+  "workday:nvidia:JR1997040": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "Nvidia",
+    "title": "Video Editor and Producer, Corporate Communications"
+  },
   "workday:nvidia:JR1997186": {
     "firstSeen": "2026-04-21T06:02:25.193Z",
     "company": "Nvidia",
@@ -90242,6 +90332,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Nvidia",
     "title": "Senior Linux Kernel Systems Software Engineer – CSP Engagements"
+  },
+  "workday:nvidia:JR2015305": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "Nvidia",
+    "title": "Director, Product Platform Retail and CPG Industries"
   },
   "workday:nvidia:JR2015313": {
     "firstSeen": "2026-04-23T05:16:43.075Z",
@@ -91881,6 +91976,11 @@
     "company": "Nvidia",
     "title": "Senior Product Manager - Hardware Infrastructure"
   },
+  "workday:nvidia:JR2017175": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "Nvidia",
+    "title": "Senior ASIC Verification Engineer, Coherent High Speed Interconnect"
+  },
   "workday:nvidia:JR2017180": {
     "firstSeen": "2026-04-29T17:57:38.135Z",
     "company": "Nvidia",
@@ -91935,6 +92035,11 @@
     "firstSeen": "2026-04-29T05:53:53.361Z",
     "company": "Nvidia",
     "title": "Senior Software Engineer, Agentic AI"
+  },
+  "workday:nvidia:JR2017268": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "Nvidia",
+    "title": "Technical Program Manager – GPU Floorplanning"
   },
   "workday:nvidia:JR2017273": {
     "firstSeen": "2026-04-28T23:54:29.462Z",
@@ -93945,6 +94050,11 @@
     "company": "Salesforce",
     "title": "Software Engineering AMTS"
   },
+  "workday:salesforce:JR264377": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "Salesforce",
+    "title": "Business Development Representative"
+  },
   "workday:salesforce:JR273691": {
     "firstSeen": "2026-04-24T05:22:25.358Z",
     "company": "Salesforce",
@@ -94004,6 +94114,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Salesforce",
     "title": "SMB Prime Territory Account Executive - Data Foundation"
+  },
+  "workday:salesforce:JR288974": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "Salesforce",
+    "title": "Cloud Security Architect"
   },
   "workday:salesforce:JR290233": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -100508,6 +100623,11 @@
     "firstSeen": "2026-04-29T23:00:50.538Z",
     "company": "Target India",
     "title": "Lead UX Designer, Emerging Experiences"
+  },
+  "workday:target:R0000437152": {
+    "firstSeen": "2026-04-30T00:14:40.619Z",
+    "company": "Target India",
+    "title": "Facility Attendant (B2)"
   },
   "workday:walmart:R-128829": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
