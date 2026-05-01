@@ -30369,6 +30369,16 @@
     "company": "Databricks",
     "title": "AI Engineer - FDE (Forward Deployed Engineer) - U.S. Federal Sector"
   },
+  "greenhouse:databricks:8532681002": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Databricks",
+    "title": "Staff Software Engineer - AI Research Infrastructure"
+  },
+  "greenhouse:databricks:8532682002": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Databricks",
+    "title": "Staff Software Engineer - AI Research Infrastructure"
+  },
   "greenhouse:datadog:1497543": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Datadog",
@@ -37143,6 +37153,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Fireworks AI",
     "title": "Applied Machine Learning Engineer"
+  },
+  "greenhouse:fireworksai:4005894009": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Fireworks AI",
+    "title": "Member of Technical Staff, Cloud Infrastructure"
   },
   "greenhouse:fireworksai:4006546009": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -44004,6 +44019,11 @@
     "company": "Lyft",
     "title": "Software Engineer, Ad Infra  "
   },
+  "greenhouse:lyft:8532132002": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Lyft",
+    "title": "Senior Illustrator, Design Foundations & AI Transformation"
+  },
   "greenhouse:lyft:8532135002": {
     "firstSeen": "2026-04-30T19:56:10.503Z",
     "company": "Lyft",
@@ -47393,6 +47413,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Neuralink",
     "title": "Software Engineer Intern"
+  },
+  "greenhouse:neuralink:6681863003": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Neuralink",
+    "title": "Signal Processing Engineer"
   },
   "greenhouse:neuralink:6693211003": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -50993,6 +51018,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Pinterest",
     "title": "Sales Director, tvScientific"
+  },
+  "greenhouse:pinterest:7649672": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Pinterest",
+    "title": "Senior Account Manager, tvScientific (Affiliate/CPA)"
   },
   "greenhouse:pinterest:7649674": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -61639,6 +61669,11 @@
     "company": "Turing",
     "title": "AI Engineering Lead"
   },
+  "greenhouse:turing:5985543004": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Turing",
+    "title": "Senior AI Solutions Engineer, Software Engineering"
+  },
   "greenhouse:turing:5985549004": {
     "firstSeen": "2026-04-30T23:27:41.724Z",
     "company": "Turing",
@@ -69264,6 +69299,46 @@
     "company": "Pathfinder Hospitality",
     "title": "Lite Controller Pathfinder Hospitality"
   },
+  "remoteok:1131386": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Axiom",
+    "title": "Sustainability Counsel"
+  },
+  "remoteok:1131387": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Spark Advisors",
+    "title": "VP Product"
+  },
+  "remoteok:1131388": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Renewal by Andersen",
+    "title": "Inside Sales Representative"
+  },
+  "remoteok:1131389": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Ibility",
+    "title": "Integration Test Manager VHA Required"
+  },
+  "remoteok:1131390": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "New Relic",
+    "title": "Executive Briefing Specialst"
+  },
+  "remoteok:1131391": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Apogee Therapeutics",
+    "title": "Senior Manager Clinical Biomarker Operations"
+  },
+  "remoteok:1131392": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Waterworks",
+    "title": "Manager Client Support RH Boutique Partners"
+  },
+  "remoteok:1131393": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Jusbrasil",
+    "title": "Legal Data Analyst Junior Vaga Afirmativa para PCD"
+  },
   "smartrecruiters:BoschGroup:744000121337448": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Bosch",
@@ -75803,6 +75878,11 @@
     "firstSeen": "2026-04-30T21:00:08.338Z",
     "company": "Bosch",
     "title": "LIDER TIME DE PRODUÇÃO PL"
+  },
+  "smartrecruiters:BoschGroup:744000124054089": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Bosch",
+    "title": "Senior Project Purchasing Manager_DCCC"
   },
   "smartrecruiters:Visa:744000104778816": {
     "firstSeen": "2026-04-25T07:13:07.357Z",
@@ -84468,6 +84548,11 @@
     "company": "Intel",
     "title": "CPU Validation Engineer"
   },
+  "workday:intel:JR0283496": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Intel",
+    "title": "Senior Thermal Solutions Architect – Client Platforms"
+  },
   "workday:intel:JR0283499": {
     "firstSeen": "2026-04-30T19:56:10.503Z",
     "company": "Intel",
@@ -92427,6 +92512,11 @@
     "company": "Nvidia",
     "title": "Senior ASIC Design Engineer - Hardware"
   },
+  "workday:nvidia:JR2008564": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Nvidia",
+    "title": "Senior Product Manager, cuEST and cuEquivariance"
+  },
   "workday:nvidia:JR2008574": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Nvidia",
@@ -92466,6 +92556,11 @@
     "firstSeen": "2026-04-22T18:03:08.011Z",
     "company": "Nvidia",
     "title": "Senior System Software Engineer, EDA Efficiency Infrastructure"
+  },
+  "workday:nvidia:JR2009079": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Nvidia",
+    "title": "Senior NPI to Mass Production Engineer"
   },
   "workday:nvidia:JR2009131": {
     "firstSeen": "2026-04-22T09:07:02.079Z",
@@ -92601,6 +92696,11 @@
     "firstSeen": "2026-04-20T02:31:31.176Z",
     "company": "Nvidia",
     "title": "Senior Director, BioNemo Software"
+  },
+  "workday:nvidia:JR2011309": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Nvidia",
+    "title": "Senior System Software Engineer - Dynamo"
   },
   "workday:nvidia:JR2011332": {
     "firstSeen": "2026-04-30T07:10:13.193Z",
@@ -92941,6 +93041,11 @@
     "firstSeen": "2026-04-25T03:39:42.666Z",
     "company": "Nvidia",
     "title": "Technical Project Manager - Finance"
+  },
+  "workday:nvidia:JR2013336": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Nvidia",
+    "title": "ASIC Clocks Verification Engineer - New College Grad 2026"
   },
   "workday:nvidia:JR2013348": {
     "firstSeen": "2026-04-20T22:09:16.861Z",
@@ -93746,6 +93851,11 @@
     "company": "Nvidia",
     "title": "Principal Architect, AI Networking"
   },
+  "workday:nvidia:JR2016102": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Nvidia",
+    "title": "Senior Technical Program Manager - Automotive"
+  },
   "workday:nvidia:JR2016104": {
     "firstSeen": "2026-04-30T16:58:23.695Z",
     "company": "Nvidia",
@@ -93809,6 +93919,11 @@
     "firstSeen": "2026-04-20T05:40:29.144Z",
     "company": "Nvidia",
     "title": "OEM Solutions Architect - AI Full Stack Public Sector"
+  },
+  "workday:nvidia:JR2016198": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Nvidia",
+    "title": "Software Operations Business Analyst"
   },
   "workday:nvidia:JR2016203": {
     "firstSeen": "2026-04-28T21:06:03.918Z",
@@ -94194,6 +94309,11 @@
     "firstSeen": "2026-04-20T02:31:31.176Z",
     "company": "Nvidia",
     "title": "Software QA Engineer"
+  },
+  "workday:nvidia:JR2016540": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Nvidia",
+    "title": "Chip Design Engineer - CPU Subsystem"
   },
   "workday:nvidia:JR2016541": {
     "firstSeen": "2026-04-23T22:42:07.291Z",
@@ -94710,6 +94830,11 @@
     "company": "Nvidia",
     "title": "ASIC Physical Design Methodology Engineer"
   },
+  "workday:nvidia:JR2016814": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Nvidia",
+    "title": "Senior Deep Learning Compiler Engineer"
+  },
   "workday:nvidia:JR2016818": {
     "firstSeen": "2026-04-29T20:40:58.155Z",
     "company": "Nvidia",
@@ -94940,6 +95065,16 @@
     "company": "Nvidia",
     "title": "Senior Product Development Engineer - Boards"
   },
+  "workday:nvidia:JR2016996": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Nvidia",
+    "title": "Senior Chip Design Verification Engineer"
+  },
+  "workday:nvidia:JR2016997": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Nvidia",
+    "title": "Senior Staff Software Engineer - AI Agent Platform"
+  },
   "workday:nvidia:JR2017001": {
     "firstSeen": "2026-04-24T19:28:52.807Z",
     "company": "Nvidia",
@@ -95080,6 +95215,21 @@
     "company": "Nvidia",
     "title": "ASIC Verification Engineer"
   },
+  "workday:nvidia:JR2017117": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Nvidia",
+    "title": "Formal Verification Engineer"
+  },
+  "workday:nvidia:JR2017131": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Nvidia",
+    "title": "Senior Manager, Datacenter Software - Firmware Release"
+  },
+  "workday:nvidia:JR2017132": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Nvidia",
+    "title": "Senior Software Engineer, Data Center Workloads – Infrastructure"
+  },
   "workday:nvidia:JR2017134": {
     "firstSeen": "2026-04-28T08:32:09.458Z",
     "company": "Nvidia",
@@ -95159,6 +95309,11 @@
     "firstSeen": "2026-04-29T20:40:58.155Z",
     "company": "Nvidia",
     "title": "Product Program Manager"
+  },
+  "workday:nvidia:JR2017201": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Nvidia",
+    "title": "Senior AI Compiler Engineer, Algorithms and Code-Generation"
   },
   "workday:nvidia:JR2017206": {
     "firstSeen": "2026-04-28T19:39:45.585Z",
@@ -98469,6 +98624,11 @@
     "company": "Salesforce",
     "title": "Customer Success Manager - Manager/Senior Manager - Global Public Sector - Core (Sales/Services) (FedCiv)"
   },
+  "workday:salesforce:JR333987": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Salesforce",
+    "title": "Associate, Salesforce Ventures"
+  },
   "workday:salesforce:JR334049": {
     "firstSeen": "2026-04-23T16:00:36.159Z",
     "company": "Salesforce",
@@ -99043,6 +99203,11 @@
     "firstSeen": "2026-04-28T17:45:40.634Z",
     "company": "Salesforce",
     "title": "Salesforce Developer Junior (AMTS)"
+  },
+  "workday:salesforce:JR337049": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Salesforce",
+    "title": "Senior Manager, Product Management"
   },
   "workday:salesforce:JR337053": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -100314,6 +100479,11 @@
     "company": "Salesforce",
     "title": "Account Executive – Higher Education (North/Central Italy)"
   },
+  "workday:salesforce:JR339531": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Salesforce",
+    "title": "Success Architect - Tableau"
+  },
   "workday:salesforce:JR339532": {
     "firstSeen": "2026-04-22T14:01:55.467Z",
     "company": "Salesforce",
@@ -100774,6 +100944,11 @@
     "company": "Salesforce",
     "title": "Principal Solution Engineer | Service Cloud"
   },
+  "workday:salesforce:JR340181": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Salesforce",
+    "title": "Financial Planning & Analysis Manager"
+  },
   "workday:salesforce:JR340184": {
     "firstSeen": "2026-04-30T15:27:47.923Z",
     "company": "Salesforce",
@@ -100938,6 +101113,11 @@
     "firstSeen": "2026-04-30T16:58:23.695Z",
     "company": "Salesforce",
     "title": "Lead Agentic Data Systems Engineer"
+  },
+  "workday:salesforce:JR340656": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Salesforce",
+    "title": "Customer Success Manager - Data360 (TS/SCI) Clearance"
   },
   "workday:target:R0000370372": {
     "firstSeen": "2026-04-27T08:22:04.778Z",
@@ -104723,6 +104903,11 @@
     "company": "Target India",
     "title": "Specialty Sales Team Leader"
   },
+  "workday:target:R0000437314": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Target India",
+    "title": "Visual Merchandiser"
+  },
   "workday:walmart:R-128829": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Walmart",
@@ -105252,6 +105437,11 @@
     "firstSeen": "2026-04-30T23:27:41.724Z",
     "company": "Walmart",
     "title": "(USA) Area Manager - Floor"
+  },
+  "workday:walmart:R-2496176": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Walmart",
+    "title": "Staff Pharmacist (Salary) - Sam's (48-Hour Biweekly)"
   },
   "workday:workday:JR-0093733": {
     "firstSeen": "2026-04-21T21:43:39.416Z",
@@ -105971,6 +106161,11 @@
     "firstSeen": "2026-04-21T15:51:59.911Z",
     "company": "Workday",
     "title": "Partner Success"
+  },
+  "workday:workday:JR-0106173": {
+    "firstSeen": "2026-05-01T01:21:26.581Z",
+    "company": "Workday",
+    "title": "Principal Services Executive - Diversified Industries"
   },
   "workday:workday:JR-0106206": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
