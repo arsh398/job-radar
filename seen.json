@@ -15014,6 +15014,11 @@
     "company": "Airbnb",
     "title": "Staff Backend Engineer, Reservations and Additional Products"
   },
+  "greenhouse:airbnb:7765526": {
+    "firstSeen": "2026-05-01T11:05:10.122Z",
+    "company": "Airbnb",
+    "title": "Senior AirCover Specialist"
+  },
   "greenhouse:airbnb:7767281": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Airbnb",
@@ -32859,6 +32864,11 @@
     "company": "Datadog",
     "title": "Commercial Account Executive - LATAM (Portuguese Speaking) - Denver"
   },
+  "greenhouse:datadog:7862489": {
+    "firstSeen": "2026-05-01T11:05:10.122Z",
+    "company": "Datadog",
+    "title": "Technical Account Manager 2 "
+  },
   "greenhouse:datadog:7867135": {
     "firstSeen": "2026-04-29T19:27:26.600Z",
     "company": "Datadog",
@@ -36638,6 +36648,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Figma",
     "title": "Manager, Enterprise Support (London, United Kingdom)"
+  },
+  "greenhouse:figma:5748282004": {
+    "firstSeen": "2026-05-01T11:05:10.122Z",
+    "company": "Figma",
+    "title": "Community Marketing Manager - Figma Weave (New York, United States) "
   },
   "greenhouse:figma:5753194004": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -55684,6 +55699,11 @@
     "company": "Roblox",
     "title": "Counsel, Americas - Regulatory & International Legal"
   },
+  "greenhouse:roblox:7870927": {
+    "firstSeen": "2026-05-01T11:05:10.122Z",
+    "company": "Roblox",
+    "title": "Senior Manager, Policy Communications, EMEA (Short Term)"
+  },
   "greenhouse:rubrik:2146030": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Rubrik",
@@ -64829,6 +64849,11 @@
     "company": "Matillion",
     "title": "Forward Deployed Engineer"
   },
+  "lever:matillion:7f351a9f-b50f-4c2a-a41e-4fda7c387a1d": {
+    "firstSeen": "2026-05-01T11:05:10.122Z",
+    "company": "Matillion",
+    "title": "Commercial Account Manager"
+  },
   "lever:matillion:7f79b67f-ddbd-4526-9c70-0b2bf175e9c2": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Matillion",
@@ -64848,6 +64873,11 @@
     "firstSeen": "2026-04-20T17:57:06.553Z",
     "company": "Matillion",
     "title": "Senior Cloud Operations Analyst"
+  },
+  "lever:matillion:9932b9a3-5d9b-4f86-9e67-83d70a286f71": {
+    "firstSeen": "2026-05-01T11:05:10.122Z",
+    "company": "Matillion",
+    "title": "Solution Architect"
   },
   "lever:matillion:9e298c14-736c-4b0d-aee7-653655f3f5ee": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -66619,6 +66649,11 @@
     "company": "Paytm",
     "title": "Technical Operations"
   },
+  "lever:paytm:46bad05c-9c01-43e5-9056-a46ae4d24b27": {
+    "firstSeen": "2026-05-01T11:05:10.122Z",
+    "company": "Paytm",
+    "title": "Senior Network Engineer"
+  },
   "lever:paytm:46dfc180-d4cf-48b2-b0ab-a3701ca8648d": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Paytm",
@@ -67258,6 +67293,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Paytm",
     "title": "Product Management - Senior Product Manager (AI) - Agent"
+  },
+  "lever:paytm:9d497980-2032-440c-8bac-63fb53938acc": {
+    "firstSeen": "2026-05-01T11:05:10.122Z",
+    "company": "Paytm",
+    "title": "Intern-Talent Acquisition"
   },
   "lever:paytm:9edbfbf9-29ab-480d-9b11-2d81e99a3cf0": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -76013,6 +76053,11 @@
     "firstSeen": "2026-05-01T09:45:01.878Z",
     "company": "Bosch",
     "title": "Project Leader"
+  },
+  "smartrecruiters:BoschGroup:744000124110189": {
+    "firstSeen": "2026-05-01T11:05:10.122Z",
+    "company": "Bosch",
+    "title": "HR Intern"
   },
   "smartrecruiters:Visa:744000104778816": {
     "firstSeen": "2026-04-25T07:13:07.357Z",
@@ -87127,6 +87172,11 @@
     "firstSeen": "2026-04-21T11:17:40.182Z",
     "company": "Mastercard",
     "title": "Manager, Reliability Engineering"
+  },
+  "workday:mastercard:R-275564": {
+    "firstSeen": "2026-05-01T11:05:10.122Z",
+    "company": "Mastercard",
+    "title": "Site Reliability Engineer I-1"
   },
   "workday:mastercard:R-275567": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -98639,6 +98689,11 @@
     "company": "Salesforce",
     "title": "Solution Engineer - Agentforce & Data 360 Specialist"
   },
+  "workday:salesforce:JR331086": {
+    "firstSeen": "2026-05-01T11:05:10.122Z",
+    "company": "Salesforce",
+    "title": "Technical Architect (Informatica MDM)"
+  },
   "workday:salesforce:JR331110": {
     "firstSeen": "2026-04-24T11:56:11.815Z",
     "company": "Salesforce",
@@ -99023,6 +99078,11 @@
     "firstSeen": "2026-04-30T21:00:08.338Z",
     "company": "Salesforce",
     "title": "Senior Financial Analyst"
+  },
+  "workday:salesforce:JR334729": {
+    "firstSeen": "2026-05-01T11:05:10.122Z",
+    "company": "Salesforce",
+    "title": "Sales Operations Senior Analyst"
   },
   "workday:salesforce:JR334732": {
     "firstSeen": "2026-04-29T23:00:50.538Z",
