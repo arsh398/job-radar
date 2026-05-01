@@ -1514,6 +1514,11 @@
     "company": "Amazon",
     "title": "Business Development Manager, Amazon Fuse"
   },
+  "amazon:75532788-ab4f-479d-a6aa-c9fb8d0dcf4c": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "Amazon",
+    "title": "System Development Engineer, Salesforce & AWS Developer, Amazon Shipping"
+  },
   "amazon:7566fd31-3005-48b2-a215-2828c841b494": {
     "firstSeen": "2026-04-24T07:18:08.204Z",
     "company": "Amazon",
@@ -5954,6 +5959,11 @@
     "company": "ElevenLabs",
     "title": "Infrastructure Engineer (Data & Automations)"
   },
+  "ashby:elevenlabs:030ff848-f30b-496a-95c4-5e23ab2e5842": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "ElevenLabs",
+    "title": "Deployment Strategist Lead - Netherlands"
+  },
   "ashby:elevenlabs:03cefd49-972f-45b2-b6c7-9a42d133af0c": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "ElevenLabs",
@@ -6429,6 +6439,11 @@
     "company": "ElevenLabs",
     "title": "Account Executive - North America - Mid-Market"
   },
+  "ashby:elevenlabs:aadb1c7a-c88d-4aa4-8900-a18f5e4934bf": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "ElevenLabs",
+    "title": "Deployment Strategist Lead - Belgium"
+  },
   "ashby:elevenlabs:ab51c926-63fe-43ff-b7f1-7859e6032b12": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "ElevenLabs",
@@ -6468,6 +6483,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "ElevenLabs",
     "title": "GTM Enablement - Outbound"
+  },
+  "ashby:elevenlabs:b5c21eed-3f7a-469f-abf0-118e749f864b": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "ElevenLabs",
+    "title": "Deployment Strategist Lead - Chile"
   },
   "ashby:elevenlabs:b647ad26-3e3a-4e0b-8ef4-6bab2cacd5c7": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -18688,6 +18708,11 @@
     "firstSeen": "2026-04-30T21:00:08.338Z",
     "company": "Anthropic",
     "title": "Staff Infrastructure Engineer, Cluster Infrastructure"
+  },
+  "greenhouse:anthropic:5208193008": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "Anthropic",
+    "title": "Technical Program Manager, Launches  "
   },
   "greenhouse:asana:5480143": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -37454,6 +37479,11 @@
     "company": "Figma",
     "title": "Manager, Data Science - AI Product"
   },
+  "greenhouse:figma:5985022004": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "Figma",
+    "title": "Sales Content Manager"
+  },
   "greenhouse:figma:5985033004": {
     "firstSeen": "2026-04-30T22:03:58.062Z",
     "company": "Figma",
@@ -42419,6 +42449,11 @@
     "company": "Gusto",
     "title": "Legal AI Engineer (Contractor)"
   },
+  "greenhouse:gusto:7858770": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "Gusto",
+    "title": "Compliance Lead, Broker-Dealer & Investment Adviser"
+  },
   "greenhouse:gusto:7858835": {
     "firstSeen": "2026-04-27T20:39:30.089Z",
     "company": "Gusto",
@@ -43248,6 +43283,16 @@
     "firstSeen": "2026-04-30T21:00:08.338Z",
     "company": "Instacart",
     "title": "Senior Security Engineer II"
+  },
+  "greenhouse:instacart:7875516": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "Instacart",
+    "title": "AI Field Consultant"
+  },
+  "greenhouse:instacart:7875518": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "Instacart",
+    "title": "AI Field Consultant"
   },
   "greenhouse:launchdarkly:6078938003": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -47679,6 +47724,11 @@
     "company": "MongoDB",
     "title": "IRM Analyst"
   },
+  "greenhouse:mongodb:7873817": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "MongoDB",
+    "title": "Senior Director, Compensation"
+  },
   "greenhouse:mongodb:7874662": {
     "firstSeen": "2026-05-01T16:31:08.210Z",
     "company": "MongoDB",
@@ -48053,6 +48103,11 @@
     "firstSeen": "2026-04-30T04:11:26.406Z",
     "company": "Neuralink",
     "title": "Network and Systems Engineer"
+  },
+  "greenhouse:neuralink:7722015003": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "Neuralink",
+    "title": "Preclinical Study Coordinator"
   },
   "greenhouse:observeai:4173623008": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -60284,6 +60339,11 @@
     "company": "Stripe",
     "title": "Strategic Programs Lead - User Communications, Advocacy & Escalations"
   },
+  "greenhouse:stripe:7680365": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "Stripe",
+    "title": "Technical Program Manager, Internal Systems"
+  },
   "greenhouse:stripe:7680368": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Stripe",
@@ -61303,6 +61363,16 @@
     "firstSeen": "2026-04-30T19:56:10.503Z",
     "company": "Stripe",
     "title": "Manager, Community Operations"
+  },
+  "greenhouse:stripe:7874562": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "Stripe",
+    "title": "Risk Strategist, Financial Crimes"
+  },
+  "greenhouse:stripe:7874654": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "Stripe",
+    "title": "Data Analyst,  Financial Enablement"
   },
   "greenhouse:stripe:7874965": {
     "firstSeen": "2026-05-01T21:26:25.440Z",
@@ -78324,6 +78394,11 @@
     "company": "Visa Inc",
     "title": "Staff SW Engineer"
   },
+  "smartrecruiters:Visa:744000124190269": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "Visa Inc",
+    "title": "Director, Technology People Strategy & Operations"
+  },
   "workable:apna:01B0CB39DD": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Apna",
@@ -82442,6 +82517,11 @@
     "company": "CrowdStrike",
     "title": "Enterprise Sales Development Representative, Spanish speaking"
   },
+  "workday:crowdstrike:R28337": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "CrowdStrike",
+    "title": "Sr. Analyst, Falcon Complete (Remote)"
+  },
   "workday:crowdstrike:R28347": {
     "firstSeen": "2026-04-20T16:41:00.570Z",
     "company": "CrowdStrike",
@@ -82471,6 +82551,16 @@
     "firstSeen": "2026-04-23T20:31:32.514Z",
     "company": "CrowdStrike",
     "title": "Platform Professional Services Senior Consultant, AI (Remote)"
+  },
+  "workday:crowdstrike:R28384": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "CrowdStrike",
+    "title": "Sr. Security Advisor, Falcon Complete (Remote)"
+  },
+  "workday:crowdstrike:R28385": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "CrowdStrike",
+    "title": "Sr. Security Advisor, Falcon Complete - MSP/MSSP (Remote)"
   },
   "workday:crowdstrike:R28386": {
     "firstSeen": "2026-04-24T17:29:56.807Z",
@@ -82826,6 +82916,11 @@
     "firstSeen": "2026-04-27T17:49:04.219Z",
     "company": "CrowdStrike",
     "title": "Specialist, NG SIEM (Remote)"
+  },
+  "workday:crowdstrike:R28660": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "CrowdStrike",
+    "title": "Principal Engineer, Cloud (Remote)"
   },
   "workday:crowdstrike:R28662": {
     "firstSeen": "2026-04-27T16:26:00.933Z",
@@ -88363,6 +88458,11 @@
     "company": "Mastercard",
     "title": "Vice President, Software Engineering - DMP"
   },
+  "workday:mastercard:R-276021": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "Mastercard",
+    "title": "Director, New Product Development"
+  },
   "workday:mastercard:R-276026": {
     "firstSeen": "2026-04-21T08:17:08.668Z",
     "company": "Mastercard",
@@ -90142,6 +90242,11 @@
     "firstSeen": "2026-04-21T06:02:25.193Z",
     "company": "Micron",
     "title": "Test Technician 1"
+  },
+  "workday:micron:JR92527": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "Micron",
+    "title": "Product Development Engineer"
   },
   "workday:micron:JR92536": {
     "firstSeen": "2026-04-24T23:07:02.821Z",
@@ -94487,6 +94592,11 @@
     "company": "Nvidia",
     "title": "Senior SBIOS Firmware Engineer - Bootloader"
   },
+  "workday:nvidia:JR2014301": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "Nvidia",
+    "title": "Business Intelligence Analyst"
+  },
   "workday:nvidia:JR2014328": {
     "firstSeen": "2026-04-27T23:52:26.805Z",
     "company": "Nvidia",
@@ -96724,6 +96834,11 @@
     "firstSeen": "2026-04-29T23:00:50.538Z",
     "company": "Nvidia",
     "title": "Senior Package Layout Engineer - Hardware"
+  },
+  "workday:nvidia:JR2017355": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "Nvidia",
+    "title": "Manufacturing Engineer, Repair Operations"
   },
   "workday:nvidia:JR2017358": {
     "firstSeen": "2026-05-01T21:26:25.440Z",
@@ -103753,6 +103868,11 @@
     "company": "Target India",
     "title": "Lead Warehouse Worker"
   },
+  "workday:target:R0000435494": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "Target India",
+    "title": "IT Operations Engineer"
+  },
   "workday:target:R0000435497": {
     "firstSeen": "2026-04-22T14:01:55.467Z",
     "company": "Target India",
@@ -106208,6 +106328,11 @@
     "company": "Target India",
     "title": "Assets Protection Team Leader - Blue Ash, OH"
   },
+  "workday:target:R0000436953": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "Target India",
+    "title": "Service & Engagement Team Leader"
+  },
   "workday:target:R0000436957": {
     "firstSeen": "2026-04-28T17:45:40.634Z",
     "company": "Target India",
@@ -106252,6 +106377,11 @@
     "firstSeen": "2026-04-29T21:58:19.335Z",
     "company": "Target India",
     "title": "Food & Beverage Team Leader - Galveston, TX"
+  },
+  "workday:target:R0000436988": {
+    "firstSeen": "2026-05-01T22:12:53.056Z",
+    "company": "Target India",
+    "title": "Specialty Sales Team Leader"
   },
   "workday:target:R0000436989": {
     "firstSeen": "2026-04-28T19:39:45.585Z",
