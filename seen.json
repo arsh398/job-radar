@@ -2224,6 +2224,11 @@
     "company": "Amazon",
     "title": "Account Manager, CA AVS, Paid Selling Partner Services"
   },
+  "amazon:add53ea3-3466-4dc3-87c5-e9b481d7957e": {
+    "firstSeen": "2026-05-01T07:41:15.641Z",
+    "company": "Amazon",
+    "title": "Transaction Risk Investigator"
+  },
   "amazon:ae074484-92b4-40d4-9644-8bb836fcc84b": {
     "firstSeen": "2026-04-23T09:12:45.660Z",
     "company": "Amazon",
@@ -2893,6 +2898,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
     "title": "Marketing manager II"
+  },
+  "amazon:df6219ad-7f5c-4e40-86fb-33df6394c288": {
+    "firstSeen": "2026-05-01T07:41:15.641Z",
+    "company": "Amazon",
+    "title": "Area Manager, Fulfilment centre"
   },
   "amazon:df98c8af-18e4-4ab6-befb-55e31614247b": {
     "firstSeen": "2026-04-24T05:22:25.358Z",
@@ -30404,6 +30414,11 @@
     "company": "Databricks",
     "title": "Sr. Manager, Engineering "
   },
+  "greenhouse:databricks:8532728002": {
+    "firstSeen": "2026-05-01T07:41:15.641Z",
+    "company": "Databricks",
+    "title": "Principal Research Scientist - AI Scaling & Optimization"
+  },
   "greenhouse:datadog:1497543": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Datadog",
@@ -53054,6 +53069,11 @@
     "company": "Reddit",
     "title": "Senior Staff Software Engineer, Indexing & Retrieval Platform"
   },
+  "greenhouse:reddit:7844676": {
+    "firstSeen": "2026-05-01T07:41:15.641Z",
+    "company": "Reddit",
+    "title": "Revenue Growth and Strategy Lead"
+  },
   "greenhouse:reddit:7846885": {
     "firstSeen": "2026-04-23T16:00:36.159Z",
     "company": "Reddit",
@@ -59388,6 +59408,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Stripe",
     "title": "Integration Engineer (Client facing)"
+  },
+  "greenhouse:stripe:7597490": {
+    "firstSeen": "2026-05-01T07:41:15.641Z",
+    "company": "Stripe",
+    "title": "Account Executive - Startups, India"
   },
   "greenhouse:stripe:7597613": {
     "firstSeen": "2026-04-20T08:05:34.211Z",
@@ -66608,6 +66633,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Paytm",
     "title": "Facility Manager"
+  },
+  "lever:paytm:50abecc2-b565-4ae4-830a-d818177e8b80": {
+    "firstSeen": "2026-05-01T07:41:15.641Z",
+    "company": "Paytm",
+    "title": "Account Director- Inference and Agentic AI- Noida/Bangalore"
   },
   "lever:paytm:51206aba-854f-4b11-bcd1-8dec8fdeeaa2": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -75924,6 +75954,11 @@
     "company": "Bosch",
     "title": "FIFO Service Supervisor"
   },
+  "smartrecruiters:BoschGroup:744000124080119": {
+    "firstSeen": "2026-05-01T07:41:15.641Z",
+    "company": "Bosch",
+    "title": "Workshop Service Technician"
+  },
   "smartrecruiters:Visa:744000104778816": {
     "firstSeen": "2026-04-25T07:13:07.357Z",
     "company": "Visa Inc",
@@ -78809,6 +78844,11 @@
     "company": "Adobe",
     "title": "Senior Market Research Specialist"
   },
+  "workday:adobe:R167754": {
+    "firstSeen": "2026-05-01T07:41:15.641Z",
+    "company": "Adobe",
+    "title": "Principal Product Marketing Manager (Acrobat for Students)"
+  },
   "workday:adobe:R167793": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Adobe",
@@ -78893,6 +78933,11 @@
     "firstSeen": "2026-04-28T11:04:22.884Z",
     "company": "Adobe",
     "title": "Compliance Product Owner"
+  },
+  "workday:adobe:R168377": {
+    "firstSeen": "2026-05-01T07:41:15.641Z",
+    "company": "Adobe",
+    "title": "ACS Senior Strategy & Operations Manager - JAPAC"
   },
   "workday:autodesk:25WD85333": {
     "firstSeen": "2026-04-23T10:53:10.068Z",
@@ -80171,6 +80216,11 @@
     "firstSeen": "2026-04-27T21:52:51.325Z",
     "company": "Autodesk",
     "title": "Sr Data Scientist"
+  },
+  "workday:autodesk:26WD97851": {
+    "firstSeen": "2026-05-01T07:41:15.641Z",
+    "company": "Autodesk",
+    "title": "Product Manager"
   },
   "workday:autodesk:26WD97862": {
     "firstSeen": "2026-04-29T16:13:56.511Z",
@@ -82766,6 +82816,11 @@
     "company": "HP",
     "title": "Worldwide Retail Experience Senior Manager"
   },
+  "workday:hp:3161548": {
+    "firstSeen": "2026-05-01T07:41:15.641Z",
+    "company": "HP",
+    "title": "Customer Operations Advisor"
+  },
   "workday:hp:3161551": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "HP",
@@ -85288,6 +85343,11 @@
     "company": "Mastercard",
     "title": "Lead Information Security Engineer"
   },
+  "workday:mastercard:R-270790": {
+    "firstSeen": "2026-05-01T07:41:15.641Z",
+    "company": "Mastercard",
+    "title": "Senior Managing Consultant, Strategy & Transformation, Advisors & Consulting Services"
+  },
   "workday:mastercard:R-270956": {
     "firstSeen": "2026-04-23T07:14:22.981Z",
     "company": "Mastercard",
@@ -85412,6 +85472,11 @@
     "firstSeen": "2026-04-28T22:31:06.251Z",
     "company": "Mastercard",
     "title": "Manager, Business Development"
+  },
+  "workday:mastercard:R-271759": {
+    "firstSeen": "2026-05-01T07:41:15.641Z",
+    "company": "Mastercard",
+    "title": "Security Response Analyst II (Insider Threat)"
   },
   "workday:mastercard:R-271794": {
     "firstSeen": "2026-04-30T15:27:47.923Z",
@@ -86673,6 +86738,11 @@
     "company": "Mastercard",
     "title": "Manager, Account Management"
   },
+  "workday:mastercard:R-275176": {
+    "firstSeen": "2026-05-01T07:41:15.641Z",
+    "company": "Mastercard",
+    "title": "IT Project Manager - Specialist, Customer Success, Dynamic Yield"
+  },
   "workday:mastercard:R-275179": {
     "firstSeen": "2026-04-20T15:04:21.505Z",
     "company": "Mastercard",
@@ -86727,6 +86797,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Mastercard",
     "title": "Business Development Manager, Mastercard Services (German speaking)"
+  },
+  "workday:mastercard:R-275254": {
+    "firstSeen": "2026-05-01T07:41:15.641Z",
+    "company": "Mastercard",
+    "title": "Manager, Finance Business Partner Greek cluster"
   },
   "workday:mastercard:R-275260": {
     "firstSeen": "2026-04-28T19:39:45.585Z",
@@ -87827,6 +87902,11 @@
     "firstSeen": "2026-04-28T13:11:49.392Z",
     "company": "Mastercard",
     "title": "Software Engineer II"
+  },
+  "workday:mastercard:R-276392": {
+    "firstSeen": "2026-05-01T07:41:15.641Z",
+    "company": "Mastercard",
+    "title": "Lead AI Designer– Agentic AI (L6)"
   },
   "workday:mastercard:R-276396": {
     "firstSeen": "2026-04-28T13:11:49.392Z",
@@ -89422,6 +89502,11 @@
     "firstSeen": "2026-04-20T08:05:34.211Z",
     "company": "Micron",
     "title": "IT Engineer (Software Quality & Release)"
+  },
+  "workday:micron:JR94630": {
+    "firstSeen": "2026-05-01T07:41:15.641Z",
+    "company": "Micron",
+    "title": "HVM PEE Bench Operation Equipment Technician (内製修理テクニシャン）"
   },
   "workday:micron:JR94648": {
     "firstSeen": "2026-04-20T20:10:39.388Z",
@@ -92547,6 +92632,11 @@
     "company": "Nvidia",
     "title": "AI Computing Software Development Engineer, TensorRT"
   },
+  "workday:nvidia:JR2008144": {
+    "firstSeen": "2026-05-01T07:41:15.641Z",
+    "company": "Nvidia",
+    "title": "ATE Test Engineer"
+  },
   "workday:nvidia:JR2008177": {
     "firstSeen": "2026-04-29T19:27:26.600Z",
     "company": "Nvidia",
@@ -95470,6 +95560,11 @@
     "company": "Nvidia",
     "title": "Compiler Engineer, Backend- New College Grad 2026"
   },
+  "workday:nvidia:JR2017292": {
+    "firstSeen": "2026-05-01T07:41:15.641Z",
+    "company": "Nvidia",
+    "title": "Senior Industrial Design Engineer"
+  },
   "workday:nvidia:JR2017336": {
     "firstSeen": "2026-04-29T17:57:38.135Z",
     "company": "Nvidia",
@@ -98098,6 +98193,11 @@
     "firstSeen": "2026-04-20T15:04:21.505Z",
     "company": "Salesforce",
     "title": "Technical Architect (Automotive exp mandate)"
+  },
+  "workday:salesforce:JR326384": {
+    "firstSeen": "2026-05-01T07:41:15.641Z",
+    "company": "Salesforce",
+    "title": "Named Account Executive - Tech, Media & Communication Industry"
   },
   "workday:salesforce:JR326821": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
