@@ -854,6 +854,11 @@
     "company": "Amazon",
     "title": "Business Intel Engineer II, Strategy, Tool GTM, Enablement and Planning (STEP) Analytics - Ads"
   },
+  "amazon:43cd5cd9-775d-4ab1-9254-9e4f2124f3df": {
+    "firstSeen": "2026-05-01T23:26:41.167Z",
+    "company": "Amazon",
+    "title": "Food Safety Specialist - IN Ops, India Food Safety"
+  },
   "amazon:4433517f-3084-45f4-a0b6-c421baeb1274": {
     "firstSeen": "2026-04-28T05:58:48.566Z",
     "company": "Amazon",
@@ -2723,6 +2728,11 @@
     "firstSeen": "2026-04-21T06:02:25.193Z",
     "company": "Amazon",
     "title": "Quality Assurance Technician, IN Customer Fulfillment Experience"
+  },
+  "amazon:c89e9a67-e120-4a9e-8e8e-d1a44a1d4344": {
+    "firstSeen": "2026-05-01T23:26:41.167Z",
+    "company": "Amazon",
+    "title": "Software Dev Engineer II, FireTV Devices, Content & Advertising"
   },
   "amazon:c8ad87a3-e2e4-4076-b60a-db082b55a3fe": {
     "firstSeen": "2026-04-27T12:20:26.011Z",
@@ -6313,6 +6323,11 @@
     "firstSeen": "2026-04-30T15:27:47.923Z",
     "company": "ElevenLabs",
     "title": "Account Manager - North America - Strategic Segment"
+  },
+  "ashby:elevenlabs:75f7890c-2d11-4c18-a95f-03ef85e6bd15": {
+    "firstSeen": "2026-05-01T23:26:41.167Z",
+    "company": "ElevenLabs",
+    "title": "Enterprise Account Executive - Singapore"
   },
   "ashby:elevenlabs:7664e3c4-2336-4d1a-90cf-91d1268de10d": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -10348,6 +10363,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Replit",
     "title": "Software Engineer, Mobile"
+  },
+  "ashby:replit:90955595-ac8f-41cc-a001-3c247bccee62": {
+    "firstSeen": "2026-05-01T23:26:41.167Z",
+    "company": "Replit",
+    "title": "Sr. Compensation Manager"
   },
   "ashby:replit:951e0ebb-a957-45fa-8763-d56ba46750b4": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -25999,6 +26019,11 @@
     "company": "Coinbase",
     "title": "Senior Software Engineer, FinOps"
   },
+  "greenhouse:coinbase:7875711": {
+    "firstSeen": "2026-05-01T23:26:41.167Z",
+    "company": "Coinbase",
+    "title": "Internal Audit SOX Associate Manager"
+  },
   "greenhouse:databricks:4513122002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Databricks",
@@ -30333,6 +30358,11 @@
     "firstSeen": "2026-04-18T04:55:32.862Z",
     "company": "Databricks",
     "title": "Solutions Architect"
+  },
+  "greenhouse:databricks:8501023002": {
+    "firstSeen": "2026-05-01T23:26:41.167Z",
+    "company": "Databricks",
+    "title": "Sr. Alliance Director, AI GTM"
   },
   "greenhouse:databricks:8501026002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -43294,6 +43324,11 @@
     "company": "Instacart",
     "title": "AI Field Consultant"
   },
+  "greenhouse:instacart:7875637": {
+    "firstSeen": "2026-05-01T23:26:41.167Z",
+    "company": "Instacart",
+    "title": "Senior Director, Media Analytics, Commercial Strategy & Acceleration"
+  },
   "greenhouse:launchdarkly:6078938003": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "LaunchDarkly",
@@ -50209,6 +50244,11 @@
     "company": "Okta",
     "title": "Senior Identity Specialist"
   },
+  "greenhouse:okta:7833024": {
+    "firstSeen": "2026-05-01T23:26:41.167Z",
+    "company": "Okta",
+    "title": "Vice President of Recruiting "
+  },
   "greenhouse:okta:7833450": {
     "firstSeen": "2026-04-20T20:10:39.388Z",
     "company": "Okta",
@@ -54483,6 +54523,11 @@
     "firstSeen": "2026-05-01T16:31:08.210Z",
     "company": "Robinhood",
     "title": "Fraud Investigator"
+  },
+  "greenhouse:robinhood:7875387": {
+    "firstSeen": "2026-05-01T23:26:41.167Z",
+    "company": "Robinhood",
+    "title": "CFP Relationship Manager"
   },
   "greenhouse:roblox:5171830": {
     "firstSeen": "2026-04-29T21:58:19.335Z",
@@ -61379,6 +61424,11 @@
     "company": "Stripe",
     "title": "PhD Data Scientist, Intern"
   },
+  "greenhouse:stripe:7875540": {
+    "firstSeen": "2026-05-01T23:26:41.167Z",
+    "company": "Stripe",
+    "title": "Accounting Technical Solutions Lead"
+  },
   "greenhouse:thoughtworks:6933235": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Thoughtworks",
@@ -63583,6 +63633,11 @@
     "firstSeen": "2026-04-28T02:43:49.505Z",
     "company": "Twitch",
     "title": "UX Designer II, Community"
+  },
+  "greenhouse:twitch:8525758002": {
+    "firstSeen": "2026-05-01T23:26:41.167Z",
+    "company": "Twitch",
+    "title": "Strategy & Ops Senior Manager"
   },
   "greenhouse:twitch:8527485002": {
     "firstSeen": "2026-04-29T16:13:56.511Z",
@@ -76689,6 +76744,11 @@
     "company": "Bosch",
     "title": "Replenishment Team Lead (1st Shift)"
   },
+  "smartrecruiters:BoschGroup:744000124195200": {
+    "firstSeen": "2026-05-01T23:26:41.167Z",
+    "company": "Bosch",
+    "title": "Manager Payroll "
+  },
   "smartrecruiters:Visa:744000104778816": {
     "firstSeen": "2026-04-25T07:13:07.357Z",
     "company": "Visa Inc",
@@ -85483,6 +85543,11 @@
     "company": "Intel",
     "title": "HR Contact Center Specialist"
   },
+  "workday:intel:JR0283467": {
+    "firstSeen": "2026-05-01T23:26:41.167Z",
+    "company": "Intel",
+    "title": "IAO Change Manager"
+  },
   "workday:intel:JR0283468": {
     "firstSeen": "2026-04-28T22:31:06.251Z",
     "company": "Intel",
@@ -85687,6 +85752,11 @@
     "firstSeen": "2026-04-30T22:03:58.062Z",
     "company": "Intel",
     "title": "Principal Analog Circuit Design Engineer - SerDes"
+  },
+  "workday:intel:JR0283711": {
+    "firstSeen": "2026-05-01T23:26:41.167Z",
+    "company": "Intel",
+    "title": "Quality Program Engineer – Semiconductor"
   },
   "workday:intel:Spotlight Job": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -89593,6 +89663,11 @@
     "company": "Micron",
     "title": "Principal Metrology Engineer, APTD"
   },
+  "workday:micron:JR86563": {
+    "firstSeen": "2026-05-01T23:26:41.167Z",
+    "company": "Micron",
+    "title": "Principal CAD Engineer, Central Engineering"
+  },
   "workday:micron:JR86612": {
     "firstSeen": "2026-04-29T05:53:53.361Z",
     "company": "Micron",
@@ -89622,6 +89697,11 @@
     "firstSeen": "2026-04-23T09:12:45.660Z",
     "company": "Micron",
     "title": "Intern 2026- FE Materials Supplier Manager"
+  },
+  "workday:micron:JR86921": {
+    "firstSeen": "2026-05-01T23:26:41.167Z",
+    "company": "Micron",
+    "title": "Semiconductor Process Engineer, Metrology"
   },
   "workday:micron:JR86988": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
