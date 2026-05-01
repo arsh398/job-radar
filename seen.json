@@ -1354,6 +1354,11 @@
     "company": "Amazon",
     "title": "Manager, Telecom Operations, Amazon Connect"
   },
+  "amazon:6b8bc923-6810-4c80-a9e2-b6f4d085179a": {
+    "firstSeen": "2026-05-01T12:12:05.409Z",
+    "company": "Amazon",
+    "title": "Research Scientist , Trustworthy Shopping Experience (TSE)"
+  },
   "amazon:6c23583c-c00c-4d9c-9967-848d0c0da8dd": {
     "firstSeen": "2026-04-22T11:59:47.776Z",
     "company": "Amazon",
@@ -18549,6 +18554,11 @@
     "company": "Anthropic",
     "title": "Commercial Counsel, Networking & Datacenter Operations"
   },
+  "greenhouse:anthropic:5206456008": {
+    "firstSeen": "2026-05-01T12:12:05.409Z",
+    "company": "Anthropic",
+    "title": "Research Engineer, Search and Knowledge Post-Training"
+  },
   "greenhouse:anthropic:5206978008": {
     "firstSeen": "2026-04-30T21:00:08.338Z",
     "company": "Anthropic",
@@ -35128,6 +35138,11 @@
     "firstSeen": "2026-04-29T20:40:58.155Z",
     "company": "Duolingo",
     "title": "Senior Product Manager, DET"
+  },
+  "greenhouse:duolingo:8532790002": {
+    "firstSeen": "2026-05-01T12:12:05.409Z",
+    "company": "Duolingo",
+    "title": "Director of Communications"
   },
   "greenhouse:elastic:6020362": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -76059,6 +76074,11 @@
     "company": "Bosch",
     "title": "HR Intern"
   },
+  "smartrecruiters:BoschGroup:744000124113314": {
+    "firstSeen": "2026-05-01T12:12:05.409Z",
+    "company": "Bosch",
+    "title": "Administration Officer"
+  },
   "smartrecruiters:Visa:744000104778816": {
     "firstSeen": "2026-04-25T07:13:07.357Z",
     "company": "Visa Inc",
@@ -79727,6 +79747,11 @@
     "company": "Autodesk",
     "title": "Principal Software Developer"
   },
+  "workday:autodesk:26WD97244": {
+    "firstSeen": "2026-05-01T12:12:05.409Z",
+    "company": "Autodesk",
+    "title": "Executive Assistant - Emerging Technology Sales"
+  },
   "workday:autodesk:26WD97250": {
     "firstSeen": "2026-04-20T21:10:47.232Z",
     "company": "Autodesk",
@@ -81356,6 +81381,11 @@
     "firstSeen": "2026-04-24T17:29:56.807Z",
     "company": "CrowdStrike",
     "title": "Vice President, Enterprise AI Strategy and Transformation (Remote)"
+  },
+  "workday:crowdstrike:R26492": {
+    "firstSeen": "2026-05-01T12:12:05.409Z",
+    "company": "CrowdStrike",
+    "title": "Benefits Manager - LATAM (Remote)"
   },
   "workday:crowdstrike:R26514": {
     "firstSeen": "2026-04-22T02:25:27.006Z",
@@ -83242,6 +83272,11 @@
     "firstSeen": "2026-04-23T20:31:32.514Z",
     "company": "Intel",
     "title": "Packaging Module Development Engineer"
+  },
+  "workday:intel:JR0280834": {
+    "firstSeen": "2026-05-01T12:12:05.409Z",
+    "company": "Intel",
+    "title": "SOC Design Verification Engineer"
   },
   "workday:intel:JR0281067": {
     "firstSeen": "2026-04-23T21:43:31.015Z",
@@ -86157,6 +86192,11 @@
     "firstSeen": "2026-04-21T20:52:13.436Z",
     "company": "Mastercard",
     "title": "Manager, Business Development"
+  },
+  "workday:mastercard:R-273891": {
+    "firstSeen": "2026-05-01T12:12:05.409Z",
+    "company": "Mastercard",
+    "title": "Commercial Manager"
   },
   "workday:mastercard:R-273928": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -89452,6 +89492,11 @@
     "firstSeen": "2026-04-21T03:51:07.459Z",
     "company": "Micron",
     "title": "Facilities Control Technician"
+  },
+  "workday:micron:JR93918": {
+    "firstSeen": "2026-05-01T12:12:05.409Z",
+    "company": "Micron",
+    "title": "Engineering Technician - GEL"
   },
   "workday:micron:JR93926": {
     "firstSeen": "2026-04-23T09:12:45.660Z",
@@ -97104,6 +97149,16 @@
     "company": "Red Hat",
     "title": "Consultant"
   },
+  "workday:redhat:R-054369": {
+    "firstSeen": "2026-05-01T12:12:05.409Z",
+    "company": "Red Hat",
+    "title": "Senior UX Researcher AI"
+  },
+  "workday:redhat:R-054371": {
+    "firstSeen": "2026-05-01T12:12:05.409Z",
+    "company": "Red Hat",
+    "title": "UX Researcher - AI"
+  },
   "workday:redhat:R-054532": {
     "firstSeen": "2026-04-23T17:41:45.053Z",
     "company": "Red Hat",
@@ -101453,6 +101508,11 @@
     "firstSeen": "2026-04-30T13:08:15.421Z",
     "company": "Salesforce",
     "title": "Technical Architect"
+  },
+  "workday:salesforce:JR340529": {
+    "firstSeen": "2026-05-01T12:12:05.409Z",
+    "company": "Salesforce",
+    "title": "Lead Solution Engineer - Public Sector"
   },
   "workday:salesforce:JR340530": {
     "firstSeen": "2026-04-30T09:34:29.456Z",
