@@ -789,6 +789,11 @@
     "company": "Amazon",
     "title": "Software Developer - Platform BSP Engineer, SSG"
   },
+  "amazon:3ee09e67-d804-43db-8ebf-a0bc01155877": {
+    "firstSeen": "2026-05-01T09:45:01.878Z",
+    "company": "Amazon",
+    "title": "Associate, ML Data Operations, GO-AI Operations"
+  },
   "amazon:3fa95f3e-26de-4054-8d90-f9c371093580": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
@@ -1224,6 +1229,11 @@
     "company": "Amazon",
     "title": "Principal Software Engineer, Amazon Payments, WW Installments, Amazon Payments"
   },
+  "amazon:6187344a-5896-49cd-9afa-c3e05007371c": {
+    "firstSeen": "2026-05-01T09:45:01.878Z",
+    "company": "Amazon",
+    "title": "Associate, ML Data Operations, GO-AI Operations"
+  },
   "amazon:61be3697-15ac-4059-a03e-a0da4a75508e": {
     "firstSeen": "2026-04-27T08:22:04.778Z",
     "company": "Amazon",
@@ -1639,6 +1649,11 @@
     "company": "Amazon",
     "title": "Software Development Engineer, Rembrandt"
   },
+  "amazon:83616a0e-a05f-458d-ae00-f25b57980bfd": {
+    "firstSeen": "2026-05-01T09:45:01.878Z",
+    "company": "Amazon",
+    "title": "Associate II, ML Data Operations, GO-AI Operations"
+  },
   "amazon:838f419d-7537-4795-9ea6-3605a1245f9e": {
     "firstSeen": "2026-04-20T08:05:34.211Z",
     "company": "Amazon",
@@ -1908,6 +1923,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
     "title": "Software Development Engineer-II, Amazon"
+  },
+  "amazon:96cebb75-577d-4e18-a600-67ae9d740ae1": {
+    "firstSeen": "2026-05-01T09:45:01.878Z",
+    "company": "Amazon",
+    "title": "Print QA Team Manager, Print Quality Assurance"
   },
   "amazon:97631a12-5426-42b4-983c-125b14a73c48": {
     "firstSeen": "2026-04-22T19:46:46.967Z",
@@ -2498,6 +2518,11 @@
     "firstSeen": "2026-04-27T17:49:04.219Z",
     "company": "Amazon",
     "title": "Sr Solutions Architect, Migrations and Modernization"
+  },
+  "amazon:bcfc7294-1628-452e-abf2-8d115417643b": {
+    "firstSeen": "2026-05-01T09:45:01.878Z",
+    "company": "Amazon",
+    "title": "Associate, ML Data Operations, GO-AI Operations"
   },
   "amazon:bd763d88-00d4-4031-b21c-e2e3a1221ee5": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -4168,6 +4193,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Cognition",
     "title": "Partner Deployed Engineer - US"
+  },
+  "ashby:cognition:71165bb4-9bc8-49df-9eca-49c4232f72ff": {
+    "firstSeen": "2026-05-01T09:45:01.878Z",
+    "company": "Cognition",
+    "title": "Security Engineer"
   },
   "ashby:cognition:72d3db28-07d3-4c28-b49f-1bdf6e8e0f10": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -18374,6 +18404,11 @@
     "company": "Anthropic",
     "title": "Senior Manager, Infrastructure Capex Accounting"
   },
+  "greenhouse:anthropic:5196986008": {
+    "firstSeen": "2026-05-01T09:45:01.878Z",
+    "company": "Anthropic",
+    "title": "Partnership Strategy & Operations Lead, International"
+  },
   "greenhouse:anthropic:5197337008": {
     "firstSeen": "2026-04-23T21:43:31.015Z",
     "company": "Anthropic",
@@ -24973,6 +25008,11 @@
     "firstSeen": "2026-04-30T04:11:26.406Z",
     "company": "Cloudflare",
     "title": "People Team Business Partner intern (July to December 2026)"
+  },
+  "greenhouse:cloudflare:7857793": {
+    "firstSeen": "2026-05-01T09:45:01.878Z",
+    "company": "Cloudflare",
+    "title": "Senior Named Account Executive, Digital Natives"
   },
   "greenhouse:cloudflare:7863245": {
     "firstSeen": "2026-04-28T22:31:06.251Z",
@@ -61164,6 +61204,11 @@
     "company": "Thoughtworks",
     "title": "Senior Developer"
   },
+  "greenhouse:thoughtworks:7829903": {
+    "firstSeen": "2026-05-01T09:45:01.878Z",
+    "company": "Thoughtworks",
+    "title": "Senior Technical Business Analyst"
+  },
   "greenhouse:thoughtworks:7829906": {
     "firstSeen": "2026-04-28T08:32:09.458Z",
     "company": "Thoughtworks",
@@ -69404,6 +69449,11 @@
     "company": "Jusbrasil",
     "title": "Legal Data Analyst Junior Vaga Afirmativa para PCD"
   },
+  "remoteok:1131395": {
+    "firstSeen": "2026-05-01T09:45:01.878Z",
+    "company": "Paragon",
+    "title": "Product Marketing Lead"
+  },
   "smartrecruiters:BoschGroup:744000121337448": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Bosch",
@@ -75958,6 +76008,11 @@
     "firstSeen": "2026-05-01T07:41:15.641Z",
     "company": "Bosch",
     "title": "Workshop Service Technician"
+  },
+  "smartrecruiters:BoschGroup:744000124097724": {
+    "firstSeen": "2026-05-01T09:45:01.878Z",
+    "company": "Bosch",
+    "title": "Project Leader"
   },
   "smartrecruiters:Visa:744000104778816": {
     "firstSeen": "2026-04-25T07:13:07.357Z",
@@ -87768,6 +87823,11 @@
     "company": "Mastercard",
     "title": "Senior Product Data Analyst"
   },
+  "workday:mastercard:R-276219": {
+    "firstSeen": "2026-05-01T09:45:01.878Z",
+    "company": "Mastercard",
+    "title": "Software Engineer II (Backend / Platform – Agentic AI)"
+  },
   "workday:mastercard:R-276225": {
     "firstSeen": "2026-04-28T11:04:22.884Z",
     "company": "Mastercard",
@@ -92637,6 +92697,11 @@
     "company": "Nvidia",
     "title": "ATE Test Engineer"
   },
+  "workday:nvidia:JR2008150": {
+    "firstSeen": "2026-05-01T09:45:01.878Z",
+    "company": "Nvidia",
+    "title": "Senior Developer Relations Manager"
+  },
   "workday:nvidia:JR2008177": {
     "firstSeen": "2026-04-29T19:27:26.600Z",
     "company": "Nvidia",
@@ -96654,6 +96719,11 @@
     "company": "PayPal",
     "title": "Specialist, Ads Operations"
   },
+  "workday:paypal:R0136471": {
+    "firstSeen": "2026-05-01T09:45:01.878Z",
+    "company": "PayPal",
+    "title": "Sr Manager, Global Strategic Accounts"
+  },
   "workday:paypal:R0136482": {
     "firstSeen": "2026-04-24T09:17:05.832Z",
     "company": "PayPal",
@@ -97344,10 +97414,20 @@
     "company": "Red Hat",
     "title": "Training Services Account Specialist"
   },
+  "workday:redhat:R-056223": {
+    "firstSeen": "2026-05-01T09:45:01.878Z",
+    "company": "Red Hat",
+    "title": "Principal Software Engineer - Llama Stack and Testing (EMEA)"
+  },
   "workday:redhat:R-056224": {
     "firstSeen": "2026-04-24T19:28:52.807Z",
     "company": "Red Hat",
     "title": "Marketing Automation & Operations Lead"
+  },
+  "workday:redhat:R-056238": {
+    "firstSeen": "2026-05-01T09:45:01.878Z",
+    "company": "Red Hat",
+    "title": "Account Executive - Banking"
   },
   "workday:redhat:R-056246": {
     "firstSeen": "2026-04-27T21:52:51.325Z",
@@ -98174,6 +98254,11 @@
     "company": "Salesforce",
     "title": "Lead Backend Software Engineer"
   },
+  "workday:salesforce:JR325995": {
+    "firstSeen": "2026-05-01T09:45:01.878Z",
+    "company": "Salesforce",
+    "title": "Senior Customer Success Manager - Data & Analytics"
+  },
   "workday:salesforce:JR326105": {
     "firstSeen": "2026-04-29T10:25:11.496Z",
     "company": "Salesforce",
@@ -98548,6 +98633,11 @@
     "firstSeen": "2026-04-28T21:06:03.918Z",
     "company": "Salesforce",
     "title": "Customer Success Manager-2"
+  },
+  "workday:salesforce:JR331066": {
+    "firstSeen": "2026-05-01T09:45:01.878Z",
+    "company": "Salesforce",
+    "title": "Solution Engineer - Agentforce & Data 360 Specialist"
   },
   "workday:salesforce:JR331110": {
     "firstSeen": "2026-04-24T11:56:11.815Z",
@@ -99513,6 +99603,11 @@
     "firstSeen": "2026-04-21T15:51:59.911Z",
     "company": "Salesforce",
     "title": "Adoption & Retention Product Manager"
+  },
+  "workday:salesforce:JR337672": {
+    "firstSeen": "2026-05-01T09:45:01.878Z",
+    "company": "Salesforce",
+    "title": "Senior Success Architect - Agentforce/Data360"
   },
   "workday:salesforce:JR337682": {
     "firstSeen": "2026-04-27T17:49:04.219Z",
@@ -104033,6 +104128,11 @@
     "company": "Target India",
     "title": "General Merchandise Team Leader- (West Valley Phoenix, AZ)"
   },
+  "workday:target:R0000436565": {
+    "firstSeen": "2026-05-01T09:45:01.878Z",
+    "company": "Target India",
+    "title": "Target Security Specialist"
+  },
   "workday:target:R0000436566": {
     "firstSeen": "2026-04-24T19:28:52.807Z",
     "company": "Target India",
@@ -105117,6 +105217,11 @@
     "firstSeen": "2026-04-30T19:56:10.503Z",
     "company": "Target India",
     "title": "Buyer, License Kids Home"
+  },
+  "workday:target:R0000437262": {
+    "firstSeen": "2026-05-01T09:45:01.878Z",
+    "company": "Target India",
+    "title": "General Merchandise Team Leader"
   },
   "workday:target:R0000437269": {
     "firstSeen": "2026-04-30T19:56:10.503Z",
