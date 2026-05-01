@@ -21209,6 +21209,11 @@
     "company": "Celonis",
     "title": "Principal Enterprise Architect"
   },
+  "greenhouse:celonis:7618714003": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Celonis",
+    "title": "Senior Value Engineer "
+  },
   "greenhouse:celonis:7618717003": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Celonis",
@@ -21458,6 +21463,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Celonis",
     "title": "Client Value Partner (CVP) "
+  },
+  "greenhouse:celonis:7669268003": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Celonis",
+    "title": "Manager of Value Engineering "
   },
   "greenhouse:celonis:7672261003": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -22638,6 +22648,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Cloudflare",
     "title": "Software Engineer- Resiliency"
+  },
+  "greenhouse:cloudflare:6988014": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Cloudflare",
+    "title": " Business Development Representative (BDR), LATAM Spanish Speaking"
   },
   "greenhouse:cloudflare:6991269": {
     "firstSeen": "2026-04-20T13:26:29.603Z",
@@ -25063,6 +25078,11 @@
     "firstSeen": "2026-04-30T04:11:26.406Z",
     "company": "Cloudflare",
     "title": "Public Policy Intern, APJC (July to December 2026)"
+  },
+  "greenhouse:cloudflare:7864156": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Cloudflare",
+    "title": "Senior Solutions Engineer, Majors, Raleigh, NC"
   },
   "greenhouse:cloudflare:7867723": {
     "firstSeen": "2026-04-30T16:58:23.695Z",
@@ -30498,6 +30518,11 @@
     "firstSeen": "2026-05-01T07:41:15.641Z",
     "company": "Databricks",
     "title": "Principal Research Scientist - AI Scaling & Optimization"
+  },
+  "greenhouse:databricks:8532800002": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Databricks",
+    "title": "Director, Enterprise FSI"
   },
   "greenhouse:databricks:8532835002": {
     "firstSeen": "2026-05-01T14:00:36.823Z",
@@ -36384,6 +36409,16 @@
     "company": "Elastic",
     "title": "Enterprise Account Executive - Vancouver, Canada"
   },
+  "greenhouse:elastic:7866805": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Elastic",
+    "title": "Lead GenAI Cloud Developer"
+  },
+  "greenhouse:elastic:7874506": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Elastic",
+    "title": "Lead GenAI Cloud Developer"
+  },
   "greenhouse:figma:5220003004": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Figma",
@@ -38494,6 +38529,16 @@
     "company": "Fivetran",
     "title": "Senior Software Engineer - Databases"
   },
+  "greenhouse:fivetran:7721817003": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Fivetran",
+    "title": "Account Executive, Commercial - EMEA"
+  },
+  "greenhouse:fivetran:7721820003": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Fivetran",
+    "title": "Account Executive, Commercial - EMEA"
+  },
   "greenhouse:gitlab:8157520002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "GitLab",
@@ -39649,6 +39694,11 @@
     "company": "GitLab",
     "title": "Solutions Architect, Financial Services"
   },
+  "greenhouse:gitlab:8532929002": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "GitLab",
+    "title": "Senior Solutions Architect - West"
+  },
   "greenhouse:gleanwork:4006731005": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Glean",
@@ -40598,6 +40648,11 @@
     "firstSeen": "2026-04-30T18:15:31.523Z",
     "company": "Glean",
     "title": "Commercial Account Executive, East"
+  },
+  "greenhouse:gleanwork:4689979005": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Glean",
+    "title": "Strategic Account Executive"
   },
   "greenhouse:grafanalabs:5592708004": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -46273,6 +46328,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "MongoDB",
     "title": "Financial Planning & Analysis Manager"
+  },
+  "greenhouse:mongodb:7681772": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "MongoDB",
+    "title": "Technical Services Engineer"
   },
   "greenhouse:mongodb:7683484": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -60814,6 +60874,11 @@
     "company": "Stripe",
     "title": "Account Executive, Platforms (Hunter)"
   },
+  "greenhouse:stripe:7859196": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Stripe",
+    "title": "Account Executive, Manager (Key Accounts)"
+  },
   "greenhouse:stripe:7859849": {
     "firstSeen": "2026-04-28T21:06:03.918Z",
     "company": "Stripe",
@@ -69549,6 +69614,11 @@
     "company": "Paragon",
     "title": "Product Marketing Lead"
   },
+  "remoteok:1131398": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Sanctuary Computer",
+    "title": "Senior Frontend Developer"
+  },
   "smartrecruiters:BoschGroup:744000121337448": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Bosch",
@@ -76133,6 +76203,11 @@
     "firstSeen": "2026-05-01T14:00:36.823Z",
     "company": "Bosch",
     "title": "Shipping and Receiving Supervisor"
+  },
+  "smartrecruiters:BoschGroup:744000124136329": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Bosch",
+    "title": "Manufacturing Engineer I"
   },
   "smartrecruiters:Visa:744000104778816": {
     "firstSeen": "2026-04-25T07:13:07.357Z",
@@ -83998,6 +84073,11 @@
     "company": "Intel",
     "title": "GPU Design Verification Engineer"
   },
+  "workday:intel:JR0283121": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Intel",
+    "title": "GPU Power Architect"
+  },
   "workday:intel:JR0283125": {
     "firstSeen": "2026-04-21T03:51:07.459Z",
     "company": "Intel",
@@ -85583,6 +85663,11 @@
     "company": "Mastercard",
     "title": "Senior Technical Program Manager-2"
   },
+  "workday:mastercard:R-271340": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Mastercard",
+    "title": "Director, Technical Pre-Engagement (Innovation Consulting)"
+  },
   "workday:mastercard:R-271342": {
     "firstSeen": "2026-04-21T10:00:31.304Z",
     "company": "Mastercard",
@@ -86097,6 +86182,11 @@
     "firstSeen": "2026-04-30T09:34:29.456Z",
     "company": "Mastercard",
     "title": "Principal DevOps Engineer - Decision Management Platform"
+  },
+  "workday:mastercard:R-273432": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Mastercard",
+    "title": "Software Development Engineer II - Data and Analytics"
   },
   "workday:mastercard:R-273444": {
     "firstSeen": "2026-04-27T08:22:04.778Z",
@@ -87523,6 +87613,11 @@
     "company": "Mastercard",
     "title": "Consultant, Advisors & Consulting Services, Strategy & Transformation"
   },
+  "workday:mastercard:R-275814": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Mastercard",
+    "title": "Senior Software Test Engineer  - Fraud Platform"
+  },
   "workday:mastercard:R-275816": {
     "firstSeen": "2026-04-20T08:05:34.211Z",
     "company": "Mastercard",
@@ -87977,6 +88072,11 @@
     "firstSeen": "2026-04-28T11:04:22.884Z",
     "company": "Mastercard",
     "title": "Principal Software Development Architect"
+  },
+  "workday:mastercard:R-276226": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Mastercard",
+    "title": "Senior Backend Software Engineer"
   },
   "workday:mastercard:R-276257": {
     "firstSeen": "2026-04-28T22:31:06.251Z",
@@ -88813,6 +88913,11 @@
     "company": "Micron",
     "title": "SR ENGINEER, FE CENTRAL QE CHANGE CONTROL"
   },
+  "workday:micron:JR87056": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Micron",
+    "title": "CMOS Device Integration Team - DMTS"
+  },
   "workday:micron:JR87184": {
     "firstSeen": "2026-04-30T07:10:13.193Z",
     "company": "Micron",
@@ -88827,6 +88932,11 @@
     "firstSeen": "2026-04-30T04:11:26.406Z",
     "company": "Micron",
     "title": "【立即應徵，優先校園現場面試 Apply Now! Campus Interview First 】2026 Spring Campus Hiring 春季校園徵才專區"
+  },
+  "workday:micron:JR87299": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Micron",
+    "title": "Process Integration Engineer - DRAM, DMTS"
   },
   "workday:micron:JR87337": {
     "firstSeen": "2026-04-21T15:51:59.911Z",
@@ -88932,6 +89042,11 @@
     "firstSeen": "2026-04-22T21:50:38.710Z",
     "company": "Micron",
     "title": "Senior Engineer - Memory Cell Test Structure Design and Layout"
+  },
+  "workday:micron:JR88132": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Micron",
+    "title": "Process Integration Engineer - DRAM R&D"
   },
   "workday:micron:JR88173": {
     "firstSeen": "2026-04-30T15:27:47.923Z",
@@ -89172,6 +89287,11 @@
     "firstSeen": "2026-04-20T08:05:34.211Z",
     "company": "Micron",
     "title": "Member of Technical Staff (MTS), Machine Learning, SMAI"
+  },
+  "workday:micron:JR90433": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Micron",
+    "title": "Engineer, DRAM DEVICE & CELL TECHNOLOGY"
   },
   "workday:micron:JR90443": {
     "firstSeen": "2026-04-24T05:22:25.358Z",
@@ -89422,6 +89542,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Micron",
     "title": "HBM Hardware Emulation Architect"
+  },
+  "workday:micron:JR93094": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Micron",
+    "title": "DFT Engineer (Design for Testability) - Staff"
   },
   "workday:micron:JR93102": {
     "firstSeen": "2026-04-29T08:14:05.366Z",
@@ -90761,6 +90886,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Micron",
     "title": "Contract TA Operations Specialist – Events, Candidate Experience & Reporting"
+  },
+  "workday:micron:JR97973": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Micron",
+    "title": "Design Verification Quality Engineer"
   },
   "workday:micron:JR97975": {
     "firstSeen": "2026-04-29T17:57:38.135Z",
@@ -97279,6 +97409,11 @@
     "company": "Red Hat",
     "title": "Junior Solution Architect, Partner Ecosystem"
   },
+  "workday:redhat:R-054554": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Red Hat",
+    "title": "Junior Consultant"
+  },
   "workday:redhat:R-054560": {
     "firstSeen": "2026-04-28T15:43:55.621Z",
     "company": "Red Hat",
@@ -97868,6 +98003,11 @@
     "firstSeen": "2026-04-20T16:41:00.570Z",
     "company": "Red Hat",
     "title": "Principal Software Engineer - RHIVOS - Waterford - Customer Engagement Lead"
+  },
+  "workday:redhat:R-056589": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Red Hat",
+    "title": "Senior Technical Project Manager - FSI Consulting"
   },
   "workday:redhat:R-056592": {
     "firstSeen": "2026-04-29T05:53:53.361Z",
@@ -98599,6 +98739,11 @@
     "company": "Salesforce",
     "title": "Software Engineer (SWE/SWE II), AI Platform- Slack"
   },
+  "workday:salesforce:JR328759": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Salesforce",
+    "title": "Partner Technical Architect - Agentforce"
+  },
   "workday:salesforce:JR328865": {
     "firstSeen": "2026-04-19T16:01:52.750Z",
     "company": "Salesforce",
@@ -99013,6 +99158,11 @@
     "firstSeen": "2026-04-27T08:22:04.778Z",
     "company": "Salesforce",
     "title": "Sales Development Representative, Philippines market (Based in Singapore)"
+  },
+  "workday:salesforce:JR332588": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Salesforce",
+    "title": "Customer Succes Manager, Senior Manager-Mulesoft"
   },
   "workday:salesforce:JR332606": {
     "firstSeen": "2026-04-20T13:26:29.603Z",
@@ -101368,6 +101518,11 @@
     "firstSeen": "2026-04-27T21:52:51.325Z",
     "company": "Salesforce",
     "title": "Senior Manager/Director, Business Operations & Systems"
+  },
+  "workday:salesforce:JR339972": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Salesforce",
+    "title": "Senior Threat Assessment Engineer"
   },
   "workday:salesforce:JR339975": {
     "firstSeen": "2026-04-26T08:00:54.926Z",
@@ -105453,6 +105608,11 @@
     "company": "Target India",
     "title": "Buyer, License Kids Home"
   },
+  "workday:target:R0000437259": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Target India",
+    "title": "Assets Protection Team Leader"
+  },
   "workday:target:R0000437262": {
     "firstSeen": "2026-05-01T09:45:01.878Z",
     "company": "Target India",
@@ -105478,15 +105638,40 @@
     "company": "Target India",
     "title": "Visual merchandiser"
   },
+  "workday:target:R0000437274": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Target India",
+    "title": "Executive Team Leader Human Resources (Assistant Manager HR)- Denver Metro, CO"
+  },
+  "workday:target:R0000437282": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Target India",
+    "title": "Director Learning and Development"
+  },
   "workday:target:R0000437284": {
     "firstSeen": "2026-04-30T21:00:08.338Z",
     "company": "Target India",
     "title": "Specialty Sales Team Leader"
   },
+  "workday:target:R0000437297": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Target India",
+    "title": "Store Director (Store Manager) - Muncie Area"
+  },
   "workday:target:R0000437314": {
     "firstSeen": "2026-05-01T01:21:26.581Z",
     "company": "Target India",
     "title": "Visual Merchandiser"
+  },
+  "workday:target:R0000437345": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Target India",
+    "title": "Food & Beverage Team Leader - Tomball, TX"
+  },
+  "workday:target:R0000437351": {
+    "firstSeen": "2026-05-01T15:03:59.800Z",
+    "company": "Target India",
+    "title": "Food & Beverage Team Leader"
   },
   "workday:walmart:R-128829": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
