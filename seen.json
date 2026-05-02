@@ -1029,6 +1029,11 @@
     "company": "Amazon",
     "title": "Manager I, Operations"
   },
+  "amazon:514781a4-940a-477a-b056-4f0e26776969": {
+    "firstSeen": "2026-05-02T03:59:47.223Z",
+    "company": "Amazon",
+    "title": "Software Dev Manager, Device Troubleshooting, Logs"
+  },
   "amazon:52156fac-892c-49ba-9102-419ee46226a4": {
     "firstSeen": "2026-04-24T13:23:06.904Z",
     "company": "Amazon",
@@ -4929,6 +4934,11 @@
     "company": "Cursor",
     "title": "Recruiting Coordination Lead"
   },
+  "ashby:cursor:57b0e9ff-a10d-47e0-8039-2bf1605add74": {
+    "firstSeen": "2026-05-02T03:59:47.223Z",
+    "company": "Cursor",
+    "title": "GVP, Healthcare"
+  },
   "ashby:cursor:59b8511c-3fd5-42c3-87ca-41d3990438ab": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Cursor",
@@ -5049,6 +5059,11 @@
     "company": "Cursor",
     "title": "Commercial Account Executive"
   },
+  "ashby:cursor:938b4d0a-e127-4490-a369-06c42c58acdd": {
+    "firstSeen": "2026-05-02T03:59:47.223Z",
+    "company": "Cursor",
+    "title": "GVP, SLED"
+  },
   "ashby:cursor:94cc6684-9dbf-43f9-8ffc-405614e64ddd": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Cursor",
@@ -5063,6 +5078,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Cursor",
     "title": "Growth"
+  },
+  "ashby:cursor:a5c8aa0f-1bf4-4ef0-802b-9af416c4db21": {
+    "firstSeen": "2026-05-02T03:59:47.223Z",
+    "company": "Cursor",
+    "title": "GVP, Aerospace"
   },
   "ashby:cursor:aca52072-00b0-4c2b-9371-18689910cd14": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -15679,6 +15699,11 @@
     "company": "Airbnb",
     "title": "Associate Principal, SF&A - CBO"
   },
+  "greenhouse:airbnb:7875833": {
+    "firstSeen": "2026-05-02T03:59:47.223Z",
+    "company": "Airbnb",
+    "title": "Lead UX Writer"
+  },
   "greenhouse:airtable:7892134002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Airtable",
@@ -18734,10 +18759,40 @@
     "company": "Anthropic",
     "title": "Staff Infrastructure Engineer, Cluster Infrastructure"
   },
+  "greenhouse:anthropic:5207760008": {
+    "firstSeen": "2026-05-02T03:59:47.223Z",
+    "company": "Anthropic",
+    "title": "Compliance Governance & Oversight Lead"
+  },
+  "greenhouse:anthropic:5207835008": {
+    "firstSeen": "2026-05-02T03:59:47.223Z",
+    "company": "Anthropic",
+    "title": "Corporate Compliance Officer"
+  },
+  "greenhouse:anthropic:5208130008": {
+    "firstSeen": "2026-05-02T03:59:47.223Z",
+    "company": "Anthropic",
+    "title": "Sanctions & Export Controls Compliance Officer"
+  },
+  "greenhouse:anthropic:5208136008": {
+    "firstSeen": "2026-05-02T03:59:47.223Z",
+    "company": "Anthropic",
+    "title": "Privacy Governance Lead "
+  },
   "greenhouse:anthropic:5208193008": {
     "firstSeen": "2026-05-01T22:12:53.056Z",
     "company": "Anthropic",
     "title": "Technical Program Manager, Launches  "
+  },
+  "greenhouse:anthropic:5208205008": {
+    "firstSeen": "2026-05-02T03:59:47.223Z",
+    "company": "Anthropic",
+    "title": "Content Moderation Specialist"
+  },
+  "greenhouse:anthropic:5208218008": {
+    "firstSeen": "2026-05-02T03:59:47.223Z",
+    "company": "Anthropic",
+    "title": "AI Compliance Officer"
   },
   "greenhouse:asana:5480143": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
@@ -48299,6 +48354,11 @@
     "company": "Okta",
     "title": "Senior Software Engineer - Lifecycle Management"
   },
+  "greenhouse:okta:6883420": {
+    "firstSeen": "2026-05-02T03:59:47.223Z",
+    "company": "Okta",
+    "title": "Staff Software Engineer"
+  },
   "greenhouse:okta:6883425": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Okta",
@@ -70134,6 +70194,41 @@
     "company": "Vonage",
     "title": "Strategic Business Development Consultant"
   },
+  "remoteok:1131406": {
+    "firstSeen": "2026-05-02T03:59:47.223Z",
+    "company": "Nutrafol",
+    "title": "Supply Chain Manager"
+  },
+  "remoteok:1131407": {
+    "firstSeen": "2026-05-02T03:59:47.223Z",
+    "company": "Geotab",
+    "title": "Senior Software Developer Burnaby"
+  },
+  "remoteok:1131408": {
+    "firstSeen": "2026-05-02T03:59:47.223Z",
+    "company": "SugarAI",
+    "title": "Senior Sales Enablement Manager"
+  },
+  "remoteok:1131409": {
+    "firstSeen": "2026-05-02T03:59:47.223Z",
+    "company": "BenchPrep",
+    "title": "Strategic Success Manager"
+  },
+  "remoteok:1131410": {
+    "firstSeen": "2026-05-02T03:59:47.223Z",
+    "company": "Murmuration",
+    "title": "Data Success Manager"
+  },
+  "remoteok:1131411": {
+    "firstSeen": "2026-05-02T03:59:47.223Z",
+    "company": "JumpCloud",
+    "title": "Vice President of Global Customer Success &amp; Support"
+  },
+  "remoteok:1131412": {
+    "firstSeen": "2026-05-02T03:59:47.223Z",
+    "company": "Lush Handmade Cosmetics",
+    "title": "US Payroll Administrator"
+  },
   "smartrecruiters:BoschGroup:744000121337448": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Bosch",
@@ -86842,6 +86937,11 @@
     "firstSeen": "2026-04-21T14:15:53.104Z",
     "company": "Mastercard",
     "title": "Senior Network Engineer"
+  },
+  "workday:mastercard:R-273174": {
+    "firstSeen": "2026-05-02T03:59:47.223Z",
+    "company": "Mastercard",
+    "title": "Director, Platform Engineering"
   },
   "workday:mastercard:R-273182": {
     "firstSeen": "2026-04-23T17:41:45.053Z",
