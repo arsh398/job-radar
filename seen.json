@@ -22674,6 +22674,11 @@
     "company": "Chime",
     "title": "Offline Media Planner"
   },
+  "greenhouse:chime:8522059002": {
+    "firstSeen": "2026-05-02T19:34:34.829Z",
+    "company": "Chime",
+    "title": "Engineering Manager, Growth Engineering"
+  },
   "greenhouse:chime:8525098002": {
     "firstSeen": "2026-04-28T15:43:55.621Z",
     "company": "Chime",
@@ -90362,6 +90367,11 @@
     "firstSeen": "2026-04-28T11:04:22.884Z",
     "company": "Micron",
     "title": "ENGINEER -  PEE DRY ETCH"
+  },
+  "workday:micron:JR90826": {
+    "firstSeen": "2026-05-02T19:34:34.829Z",
+    "company": "Micron",
+    "title": "Analytical Chemistry Laboratory Technician"
   },
   "workday:micron:JR90828": {
     "firstSeen": "2026-04-24T19:28:52.807Z",
