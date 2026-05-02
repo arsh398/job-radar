@@ -2959,6 +2959,11 @@
     "company": "Amazon",
     "title": "Ml Data associate II, ABDAI"
   },
+  "amazon:db5e99c8-0d47-4186-b76a-24046bc59489": {
+    "firstSeen": "2026-05-02T10:50:34.268Z",
+    "company": "Amazon",
+    "title": "Cluster Operations Manager, AMZL"
+  },
   "amazon:dc2f5900-810d-4930-ab8b-b0abf242a4e9": {
     "firstSeen": "2026-04-28T05:58:48.566Z",
     "company": "Amazon",
@@ -29464,6 +29469,11 @@
     "company": "Databricks",
     "title": "Sr. Solutions Engineer"
   },
+  "greenhouse:databricks:8455752002": {
+    "firstSeen": "2026-05-02T10:50:34.268Z",
+    "company": "Databricks",
+    "title": "Solutions Architect (Pre-sales)"
+  },
   "greenhouse:databricks:8456277002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Databricks",
@@ -30449,6 +30459,11 @@
     "company": "Databricks",
     "title": "Director, Enterprise Sales - Italy"
   },
+  "greenhouse:databricks:8501390002": {
+    "firstSeen": "2026-05-02T10:50:34.268Z",
+    "company": "Databricks",
+    "title": "AI Solutions Architect (Pre-sales) - Strategic Accounts"
+  },
   "greenhouse:databricks:8501500002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Databricks",
@@ -30578,6 +30593,11 @@
     "firstSeen": "2026-04-23T10:53:10.068Z",
     "company": "Databricks",
     "title": "Enterprise Account Executive, New Business"
+  },
+  "greenhouse:databricks:8509693002": {
+    "firstSeen": "2026-05-02T10:50:34.268Z",
+    "company": "Databricks",
+    "title": "Senior Solutions Engineer (Pre-Sales) - Healthcare & Life Sciences"
   },
   "greenhouse:databricks:8509766002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
