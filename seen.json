@@ -76864,6 +76864,11 @@
     "company": "Bosch",
     "title": "Manager Payroll "
   },
+  "smartrecruiters:BoschGroup:744000124232559": {
+    "firstSeen": "2026-05-02T08:06:56.582Z",
+    "company": "Bosch",
+    "title": "Group Leader Process and Equipment in Final Test Sensors"
+  },
   "smartrecruiters:Visa:744000104778816": {
     "firstSeen": "2026-04-25T07:13:07.357Z",
     "company": "Visa Inc",
@@ -103083,6 +103088,11 @@
     "firstSeen": "2026-05-01T16:31:08.210Z",
     "company": "Salesforce",
     "title": "Senior Account Executive, Army"
+  },
+  "workday:salesforce:JR340796": {
+    "firstSeen": "2026-05-02T08:06:56.582Z",
+    "company": "Salesforce",
+    "title": "Senior Technical Consultants"
   },
   "workday:target:R0000370372": {
     "firstSeen": "2026-04-27T08:22:04.778Z",
