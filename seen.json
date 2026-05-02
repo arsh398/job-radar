@@ -564,6 +564,11 @@
     "company": "Amazon",
     "title": "Business Intelligence Engineer, Amazon Last Mile"
   },
+  "amazon:2d1f98c8-031d-4eab-b9d1-3e521fd8e43f": {
+    "firstSeen": "2026-05-02T18:08:59.144Z",
+    "company": "Amazon",
+    "title": "Regional Sales Manager, Amazon Freight, IN, Amazon Freight, IN"
+  },
   "amazon:2d2253cd-1713-464b-a569-8cf0b1e9b97c": {
     "firstSeen": "2026-04-30T19:56:10.503Z",
     "company": "Amazon",
@@ -18728,6 +18733,11 @@
     "firstSeen": "2026-04-28T15:43:55.621Z",
     "company": "Anthropic",
     "title": "Regulatory Counsel, Content & Frontier AI Regulation"
+  },
+  "greenhouse:anthropic:5202386008": {
+    "firstSeen": "2026-05-02T18:08:59.144Z",
+    "company": "Anthropic",
+    "title": "Finance & Strategy, GTM (ASEAN)"
   },
   "greenhouse:anthropic:5203545008": {
     "firstSeen": "2026-04-29T17:57:38.135Z",
