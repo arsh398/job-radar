@@ -87313,6 +87313,11 @@
     "company": "Mastercard",
     "title": "Director, Government Affairs & Policy"
   },
+  "workday:mastercard:R-274229": {
+    "firstSeen": "2026-05-02T16:09:25.593Z",
+    "company": "Mastercard",
+    "title": "Lead Software Engineer (C/C++)"
+  },
   "workday:mastercard:R-274234": {
     "firstSeen": "2026-04-22T16:58:08.367Z",
     "company": "Mastercard",
@@ -107187,6 +107192,11 @@
     "firstSeen": "2026-05-01T20:27:59.226Z",
     "company": "Target India",
     "title": "Service & Engagement Team Leader (Small Format store) - Denver, CO"
+  },
+  "workday:target:R0000437400": {
+    "firstSeen": "2026-05-02T16:09:25.593Z",
+    "company": "Target India",
+    "title": "Food & Beverage Team Leader"
   },
   "workday:target:R0000437426": {
     "firstSeen": "2026-05-01T21:26:25.440Z",
