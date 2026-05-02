@@ -81717,6 +81717,11 @@
     "company": "Cadence",
     "title": "IT Staff Storage Engineer"
   },
+  "workday:cadence:R53947": {
+    "firstSeen": "2026-05-02T21:38:53.998Z",
+    "company": "Cadence",
+    "title": "Digital Flow Enablement Solutions Architect"
+  },
   "workday:cadence:R53957": {
     "firstSeen": "2026-04-27T22:50:50.939Z",
     "company": "Cadence",
@@ -85952,6 +85957,16 @@
     "firstSeen": "2026-04-30T22:03:58.062Z",
     "company": "Intel",
     "title": "Principal Analog Circuit Design Engineer - SerDes"
+  },
+  "workday:intel:JR0283698": {
+    "firstSeen": "2026-05-02T21:38:53.998Z",
+    "company": "Intel",
+    "title": "Senior Clock Architecture & Design Engineer"
+  },
+  "workday:intel:JR0283699": {
+    "firstSeen": "2026-05-02T21:38:53.998Z",
+    "company": "Intel",
+    "title": "Clocking / Physical Design Engineer"
   },
   "workday:intel:JR0283711": {
     "firstSeen": "2026-05-01T23:26:41.167Z",
@@ -96524,6 +96539,11 @@
     "firstSeen": "2026-05-01T05:07:19.539Z",
     "company": "Nvidia",
     "title": "Senior Tool and Test Development Engineer - DataCenter System Software"
+  },
+  "workday:nvidia:JR2016828": {
+    "firstSeen": "2026-05-02T21:38:53.998Z",
+    "company": "Nvidia",
+    "title": "DevOps Engineer"
   },
   "workday:nvidia:JR2016829": {
     "firstSeen": "2026-04-22T16:58:08.367Z",
@@ -107362,6 +107382,11 @@
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Walmart",
     "title": "Senior, Data Scientist"
+  },
+  "workday:walmart:R-2443061": {
+    "firstSeen": "2026-05-02T21:38:53.998Z",
+    "company": "Walmart",
+    "title": "Sam's Club Team Manager - Visalia, CA - New Club Opportunity!"
   },
   "workday:walmart:R-2446902": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
