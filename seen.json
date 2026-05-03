@@ -58344,6 +58344,11 @@
     "company": "Scale AI",
     "title": "SWE Fellow - Human Frontier Collective (Canada)"
   },
+  "greenhouse:scaleai:4691908005": {
+    "firstSeen": "2026-05-03T17:23:47.776Z",
+    "company": "Scale AI",
+    "title": "Technical Program Manager, Public Sector Engineering"
+  },
   "greenhouse:squarespace:6237810": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Squarespace",
@@ -61423,6 +61428,11 @@
     "firstSeen": "2026-04-29T20:40:58.155Z",
     "company": "Stripe",
     "title": "International Accounting Lead"
+  },
+  "greenhouse:stripe:7839662": {
+    "firstSeen": "2026-05-03T17:23:47.776Z",
+    "company": "Stripe",
+    "title": "Customer Success Analyst"
   },
   "greenhouse:stripe:7841757": {
     "firstSeen": "2026-04-23T05:16:43.075Z",
@@ -77034,6 +77044,16 @@
     "company": "Bosch",
     "title": "HW Integrator"
   },
+  "smartrecruiters:BoschGroup:744000124301738": {
+    "firstSeen": "2026-05-03T17:23:47.776Z",
+    "company": "Bosch",
+    "title": "Hardware Developmnet Engineer_VM_1_2025"
+  },
+  "smartrecruiters:BoschGroup:744000124301848": {
+    "firstSeen": "2026-05-03T17:23:47.776Z",
+    "company": "Bosch",
+    "title": "Change Management"
+  },
   "smartrecruiters:Visa:744000104778816": {
     "firstSeen": "2026-04-25T07:13:07.357Z",
     "company": "Visa Inc",
@@ -86303,6 +86323,15 @@
     "company": "Mastercard",
     "title": "Manager Software Engineer (Python, Hadoop )"
   },
+  "workday:mastercard:R-267596": {
+    "firstSeen": "2026-05-03T17:23:47.776Z",
+    "company": "Mastercard",
+    "title": "Lead Software Development Engineer – Technical Advisor"
+  },
+  "workday:mastercard:R-267655": {
+    "firstSeen": "2026-05-03T17:23:47.776Z",
+    "company": "Mastercard"
+  },
   "workday:mastercard:R-267743": {
     "firstSeen": "2026-04-29T14:25:16.553Z",
     "company": "Mastercard",
@@ -86733,6 +86762,11 @@
     "company": "Mastercard",
     "title": "Senior Analyst, Partnerships Systems Operations Tech Stack"
   },
+  "workday:mastercard:R-271466": {
+    "firstSeen": "2026-05-03T17:23:47.776Z",
+    "company": "Mastercard",
+    "title": "Manager, Product Management - Technical"
+  },
   "workday:mastercard:R-271470": {
     "firstSeen": "2026-04-21T10:00:31.304Z",
     "company": "Mastercard",
@@ -86927,6 +86961,11 @@
     "firstSeen": "2026-04-21T08:17:08.668Z",
     "company": "Mastercard",
     "title": "Manager, Product Management"
+  },
+  "workday:mastercard:R-272417": {
+    "firstSeen": "2026-05-03T17:23:47.776Z",
+    "company": "Mastercard",
+    "title": "Director, Technical Program Management"
   },
   "workday:mastercard:R-272420": {
     "firstSeen": "2026-04-29T02:43:31.114Z",
@@ -87177,6 +87216,11 @@
     "firstSeen": "2026-04-22T22:45:08.249Z",
     "company": "Mastercard",
     "title": "Senior Business Analyst"
+  },
+  "workday:mastercard:R-273306": {
+    "firstSeen": "2026-05-03T17:23:47.776Z",
+    "company": "Mastercard",
+    "title": "Lead Data Engineer - Data Pipelines"
   },
   "workday:mastercard:R-273318": {
     "firstSeen": "2026-04-30T15:27:47.923Z",
@@ -93812,6 +93856,11 @@
     "company": "Nvidia",
     "title": "Software Engineering Manager - GPU Communications Libraries"
   },
+  "workday:nvidia:JR1980127": {
+    "firstSeen": "2026-05-03T17:23:47.776Z",
+    "company": "Nvidia",
+    "title": "Distinguished Software Architect - Deep Learning and HPC Communications"
+  },
   "workday:nvidia:JR1980272": {
     "firstSeen": "2026-04-28T13:11:49.392Z",
     "company": "Nvidia",
@@ -95481,6 +95530,11 @@
     "firstSeen": "2026-04-26T17:37:06.552Z",
     "company": "Nvidia",
     "title": "Manager, Board Product Engineering - Ops"
+  },
+  "workday:nvidia:JR2015843": {
+    "firstSeen": "2026-05-03T17:23:47.776Z",
+    "company": "Nvidia",
+    "title": "Senior Product Engineer - Board Products"
   },
   "workday:nvidia:JR2015853": {
     "firstSeen": "2026-04-29T16:13:56.511Z",
