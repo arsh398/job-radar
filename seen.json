@@ -924,6 +924,11 @@
     "company": "Amazon",
     "title": "Application Engineer, AWS Quick"
   },
+  "amazon:47e4b8d9-f434-4386-836e-6f5f90122281": {
+    "firstSeen": "2026-05-03T14:29:03.524Z",
+    "company": "Amazon",
+    "title": "Associate, ML Data Operations, GO-AI Operations"
+  },
   "amazon:4869712f-f823-4e4a-bd2a-70407506700c": {
     "firstSeen": "2026-04-20T16:41:00.570Z",
     "company": "Amazon",
@@ -77014,6 +77019,11 @@
     "company": "Bosch",
     "title": "Intern, Supply Chain Project Assistant - Data Analytics / Project Management"
   },
+  "smartrecruiters:BoschGroup:744000124298349": {
+    "firstSeen": "2026-05-03T14:29:03.524Z",
+    "company": "Bosch",
+    "title": "HW Integrator"
+  },
   "smartrecruiters:Visa:744000104778816": {
     "firstSeen": "2026-04-25T07:13:07.357Z",
     "company": "Visa Inc",
@@ -99488,6 +99498,11 @@
     "firstSeen": "2026-04-27T19:18:17.160Z",
     "company": "Red Hat",
     "title": "Principal Product Operations Engineer"
+  },
+  "workday:redhat:R-056760": {
+    "firstSeen": "2026-05-03T14:29:03.524Z",
+    "company": "Red Hat",
+    "title": "Site Reliability Engineer (Python, AWS, Openshift/Kubernetes)"
   },
   "workday:redhat:R-056790": {
     "firstSeen": "2026-04-22T05:12:38.592Z",
