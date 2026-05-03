@@ -30659,6 +30659,11 @@
     "company": "Databricks",
     "title": "Deployment Strategist"
   },
+  "greenhouse:databricks:8517059002": {
+    "firstSeen": "2026-05-03T10:53:56.001Z",
+    "company": "Databricks",
+    "title": "Manager, Delivery Solutions Architects"
+  },
   "greenhouse:databricks:8517065002": {
     "firstSeen": "2026-04-24T11:56:11.815Z",
     "company": "Databricks",
@@ -86012,6 +86017,11 @@
     "firstSeen": "2026-04-30T09:34:29.456Z",
     "company": "Intel",
     "title": "Graduate Talent (IP Design Verification Engineer)"
+  },
+  "workday:intel:JR0283619": {
+    "firstSeen": "2026-05-03T10:53:56.001Z",
+    "company": "Intel",
+    "title": "EV Lab Student"
   },
   "workday:intel:JR0283620": {
     "firstSeen": "2026-04-30T04:11:26.406Z",
