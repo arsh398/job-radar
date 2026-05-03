@@ -2104,6 +2104,11 @@
     "company": "Amazon",
     "title": "Program Specialist, Seller Reimbursement "
   },
+  "amazon:a03c21e6-cd0c-4e3f-b593-a0ad594d6b87": {
+    "firstSeen": "2026-05-03T16:08:33.865Z",
+    "company": "Amazon",
+    "title": "Associate, ML Data Operations, GO-AI Operations"
+  },
   "amazon:a0Rar000002XZkDEAW": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Amazon",
@@ -28938,6 +28943,11 @@
     "firstSeen": "2026-04-29T17:57:38.135Z",
     "company": "Databricks",
     "title": "Solutions Architect, Hunter - Digital Native Business"
+  },
+  "greenhouse:databricks:8432827002": {
+    "firstSeen": "2026-05-03T16:08:33.865Z",
+    "company": "Databricks",
+    "title": "Sr. Big Data Engineer"
   },
   "greenhouse:databricks:8433583002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
