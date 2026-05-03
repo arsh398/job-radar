@@ -22224,6 +22224,16 @@
     "company": "Celonis",
     "title": "Client Account Lead - AI-Driven Transformation & Process Intelligence"
   },
+  "greenhouse:celonis:7722860003": {
+    "firstSeen": "2026-05-03T20:40:49.796Z",
+    "company": "Celonis",
+    "title": "Senior Strategic Value & Process Optimisation Consultant"
+  },
+  "greenhouse:celonis:7722861003": {
+    "firstSeen": "2026-05-03T20:40:49.796Z",
+    "company": "Celonis",
+    "title": "Senior Strategic Value & Process Optimisation Consultant"
+  },
   "greenhouse:chime:8112504002": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Chime",
@@ -94220,6 +94230,11 @@
     "firstSeen": "2026-04-27T19:18:17.160Z",
     "company": "Nvidia",
     "title": "Senior Silicon and System Product Lead"
+  },
+  "workday:nvidia:JR2006471": {
+    "firstSeen": "2026-05-03T20:40:49.796Z",
+    "company": "Nvidia",
+    "title": "Network and System Verification Engineer, E2E"
   },
   "workday:nvidia:JR2006503": {
     "firstSeen": "2026-04-20T05:40:29.144Z",
