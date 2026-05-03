@@ -57354,6 +57354,11 @@
     "company": "Rubrik",
     "title": "Enterprise Security Engineer - FedRAMP"
   },
+  "greenhouse:rubrik:7867357": {
+    "firstSeen": "2026-05-03T08:05:03.444Z",
+    "company": "Rubrik",
+    "title": "Senior Information Security Engineer – Data"
+  },
   "greenhouse:scaleai:4281519005": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Scale AI",
@@ -84185,6 +84190,11 @@
     "company": "HP",
     "title": "Financial Analyst 1"
   },
+  "workday:hp:UNI3420": {
+    "firstSeen": "2026-05-03T08:05:03.444Z",
+    "company": "HP",
+    "title": "Financial Analyst 1"
+  },
   "workday:hp:UNI3439": {
     "firstSeen": "2026-04-28T11:04:22.884Z",
     "company": "HP",
@@ -84197,6 +84207,11 @@
   },
   "workday:hp:UNI3681": {
     "firstSeen": "2026-04-29T14:25:16.553Z",
+    "company": "HP",
+    "title": "Customer Solution Center Rep 2 - Technical"
+  },
+  "workday:hp:UNI3688": {
+    "firstSeen": "2026-05-03T08:05:03.444Z",
     "company": "HP",
     "title": "Customer Solution Center Rep 2 - Technical"
   },
@@ -94382,6 +94397,11 @@
     "company": "Nvidia",
     "title": "Solutions Architect - Gen AI"
   },
+  "workday:nvidia:JR2010782": {
+    "firstSeen": "2026-05-03T08:05:03.444Z",
+    "company": "Nvidia",
+    "title": "Senior Inception Partner Manager – Physical AI"
+  },
   "workday:nvidia:JR2010826": {
     "firstSeen": "2026-04-29T17:57:38.135Z",
     "company": "Nvidia",
@@ -103064,6 +103084,11 @@
     "company": "Salesforce",
     "title": "UKI Reseller Lead"
   },
+  "workday:salesforce:JR340208": {
+    "firstSeen": "2026-05-03T08:05:03.444Z",
+    "company": "Salesforce",
+    "title": "Student Product Manager Intern – Israel"
+  },
   "workday:salesforce:JR340212": {
     "firstSeen": "2026-04-28T11:04:22.884Z",
     "company": "Salesforce",
@@ -107097,6 +107122,11 @@
     "firstSeen": "2026-05-01T16:31:08.210Z",
     "company": "Target India",
     "title": "Specialty Sales Team Leader"
+  },
+  "workday:target:R0000437184": {
+    "firstSeen": "2026-05-03T08:05:03.444Z",
+    "company": "Target India",
+    "title": "Closing Team Leader"
   },
   "workday:target:R0000437186": {
     "firstSeen": "2026-04-30T15:27:47.923Z",
