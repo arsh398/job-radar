@@ -10684,6 +10684,11 @@
     "company": "Sarvam AI",
     "title": "Manager, Finance"
   },
+  "ashby:sarvam:79bb725b-83d4-400c-a207-e2b0a7ccec68": {
+    "firstSeen": "2026-05-03T22:39:11.246Z",
+    "company": "Sarvam AI",
+    "title": "Product Designer (AI Native)"
+  },
   "ashby:sarvam:7c42207a-bb56-413c-839f-9ad692df840e": {
     "firstSeen": "2026-04-18T00:19:38.507Z",
     "company": "Sarvam AI",
@@ -88207,6 +88212,11 @@
     "company": "Mastercard",
     "title": "Principal, Software Engineer"
   },
+  "workday:mastercard:R-275221": {
+    "firstSeen": "2026-05-03T22:39:11.246Z",
+    "company": "Mastercard",
+    "title": "Manager , Solution Strategy (Denmark)"
+  },
   "workday:mastercard:R-275223": {
     "firstSeen": "2026-04-29T10:25:11.496Z",
     "company": "Mastercard",
@@ -88781,6 +88791,11 @@
     "firstSeen": "2026-04-24T13:23:06.904Z",
     "company": "Mastercard",
     "title": "Principal Software Engineer, Senior Architect"
+  },
+  "workday:mastercard:R-275821": {
+    "firstSeen": "2026-05-03T22:39:11.246Z",
+    "company": "Mastercard",
+    "title": "Manager, Solution Strategy (Norway)"
   },
   "workday:mastercard:R-275823": {
     "firstSeen": "2026-04-22T15:50:57.008Z",
