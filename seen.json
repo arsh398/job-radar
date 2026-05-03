@@ -80144,6 +80144,11 @@
     "company": "Autodesk",
     "title": "AP Analyst"
   },
+  "workday:autodesk:25WD94306": {
+    "firstSeen": "2026-05-03T19:33:10.877Z",
+    "company": "Autodesk",
+    "title": "Principal Product Owner - Civil Infrastructure"
+  },
   "workday:autodesk:25WD94322": {
     "firstSeen": "2026-04-23T07:14:22.981Z",
     "company": "Autodesk",
@@ -94141,6 +94146,11 @@
     "company": "Nvidia",
     "title": "Senior Mask Design Engineer - Hardware"
   },
+  "workday:nvidia:JR2004947": {
+    "firstSeen": "2026-05-03T19:33:10.877Z",
+    "company": "Nvidia",
+    "title": "Manager, Network Service Delivery and Operations Support"
+  },
   "workday:nvidia:JR2004966": {
     "firstSeen": "2026-04-20T05:40:29.144Z",
     "company": "Nvidia",
@@ -94845,6 +94855,16 @@
     "firstSeen": "2026-04-20T22:09:16.861Z",
     "company": "Nvidia",
     "title": "Senior Scientific Machine Learning Engineer – Earth-2"
+  },
+  "workday:nvidia:JR2012884": {
+    "firstSeen": "2026-05-03T19:33:10.877Z",
+    "company": "Nvidia",
+    "title": "Senior Packaging Technical Engineer - Hardware"
+  },
+  "workday:nvidia:JR2012886": {
+    "firstSeen": "2026-05-03T19:33:10.877Z",
+    "company": "Nvidia",
+    "title": "Senior Package Layout Engineer - Hardware"
   },
   "workday:nvidia:JR2012991": {
     "firstSeen": "2026-04-21T06:02:25.193Z",
@@ -96799,6 +96819,11 @@
     "company": "Nvidia",
     "title": "Global Service Supply Planner"
   },
+  "workday:nvidia:JR2016882": {
+    "firstSeen": "2026-05-03T19:33:10.877Z",
+    "company": "Nvidia",
+    "title": "System Software Engineer - Data Center Diagnostics"
+  },
   "workday:nvidia:JR2016885": {
     "firstSeen": "2026-04-24T05:22:25.358Z",
     "company": "Nvidia",
@@ -98678,6 +98703,11 @@
     "company": "Red Hat",
     "title": "Technical Writer 2"
   },
+  "workday:redhat:R-052994": {
+    "firstSeen": "2026-05-03T19:33:10.877Z",
+    "company": "Red Hat",
+    "title": "Senior Software Engineer - Red Hat OpenStack NFV Architecture (Ireland)"
+  },
   "workday:redhat:R-053025": {
     "firstSeen": "2026-04-23T11:58:55.333Z",
     "company": "Red Hat",
@@ -99428,6 +99458,11 @@
     "company": "Red Hat",
     "title": "OpenShift Senior Software Engineer"
   },
+  "workday:redhat:R-056489": {
+    "firstSeen": "2026-05-03T19:33:10.877Z",
+    "company": "Red Hat",
+    "title": "Associate Consultant"
+  },
   "workday:redhat:R-056495": {
     "firstSeen": "2026-04-27T20:39:30.089Z",
     "company": "Red Hat",
@@ -99567,6 +99602,11 @@
     "firstSeen": "2026-04-27T19:18:17.160Z",
     "company": "Red Hat",
     "title": "Principal Product Operations Engineer"
+  },
+  "workday:redhat:R-056759": {
+    "firstSeen": "2026-05-03T19:33:10.877Z",
+    "company": "Red Hat",
+    "title": "Senior Site Reliability Engineer - OpenShift-Based Platform  (Python, AWS,  Openshift/Kubernetes)"
   },
   "workday:redhat:R-056760": {
     "firstSeen": "2026-05-03T14:29:03.524Z",
@@ -108056,6 +108096,11 @@
     "firstSeen": "2026-05-03T02:43:41.827Z",
     "company": "Walmart",
     "title": "Asset Protection Associate (Security License Required)"
+  },
+  "workday:walmart:R-2498406": {
+    "firstSeen": "2026-05-03T19:33:10.877Z",
+    "company": "Walmart",
+    "title": "(USA) Tire & Battery Technician - Automotive"
   },
   "workday:workday:JR-0093733": {
     "firstSeen": "2026-04-21T21:43:39.416Z",
